@@ -22,7 +22,7 @@ Bu kural kalıcıdır; kullanıcının her oturumda tekrar belirtmesine gerek yo
 
 ## Teknoloji ve Yapı
 
-Git deposu değil. Bağımlılık yok: saf HTML/JS ve yalnız standart kütüphaneli Python 3.
+Git deposu (origin: github.com/merterkarabulut-wq/LGS-Hata). Bağımlılık yok: saf HTML/JS ve yalnız standart kütüphaneli Python 3.
 
 Dış veri (projenin dışında, kullanıcı yönetir):
 - `/home/merterk/Belgeler/LGS/LGS_Takip.xlsx` — ana takip tablosu (Üniteler, Setler, Tekrar, Kaynaklar sayfaları).
