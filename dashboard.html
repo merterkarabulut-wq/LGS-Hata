@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duru LGS Paneli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<script src="data/veri.js"></script>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #faf9f5;
+  --surface: #ffffff;
+  --surface-2: #f0eee6;
+  --border: #e5e2d7;
+  --text: #141413;
+  --text-2: #5e5d59;
+  --muted: #8a8880;
+  --accent: #d97757;
+  --accent-strong: #c15f3c;
+  --accent-soft: #f6e6dd;
+  --good: #0ca30c;
+  --crit: #d03b3b;
+  --warn: #fab219;
+  --pending: #cfccc1;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300;
+  --shadow: 0 1px 2px rgba(20,20,19,.04), 0 2px 8px rgba(20,20,19,.04);
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #262624; --surface: #30302e; --surface-2: #3a3936; --border: #46453f;
+    --text: #f5f4ee; --text-2: #c3c2b7; --muted: #97958c;
+    --accent-soft: #4a3229; --pending: #5d5c57;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #262624; --surface: #30302e; --surface-2: #3a3936; --border: #46453f;
+  --text: #f5f4ee; --text-2: #c3c2b7; --muted: #97958c;
+  --accent-soft: #4a3229; --pending: #5d5c57;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300;
+  --shadow: none;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font: 14px/1.5 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; letter-spacing: -.01em; }
+h1 { font-size: 34px; line-height: 1.15; }
+h2 { font-size: 19px; }
+h3 { font-size: 15px; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Üst bar */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.topbar-in {
+  max-width: 1200px; margin: 0 auto; padding: 10px 24px;
+  display: flex; align-items: center; gap: 16px;
+}
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--serif); font-size: 18px; font-weight: 500; }
+.brand svg { color: var(--accent); }
+.seg {
+  margin: 0 auto; display: inline-flex; padding: 3px; gap: 2px;
+  background: var(--surface-2); border-radius: 10px;
+}
+.seg button {
+  border: 0; background: none; padding: 7px 16px; border-radius: 8px;
+  color: var(--text-2); font-weight: 500; white-space: nowrap;
+}
+.seg button[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+.icon-btn {
+  width: 34px; height: 34px; display: grid; place-items: center;
+  border: 1px solid var(--border); background: var(--surface); border-radius: 9px; color: var(--text-2);
+}
+
+main { max-width: 1200px; margin: 0 auto; padding: 28px 24px 64px; }
+.view[hidden] { display: none; }
+.page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+.eyebrow { color: var(--muted); font-size: 12.5px; letter-spacing: .02em; }
+.sub { color: var(--text-2); margin-top: 6px; }
+
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.c12 { grid-column: span 12; } .c8 { grid-column: span 8; } .c7 { grid-column: span 7; }
+.c6 { grid-column: span 6; } .c5 { grid-column: span 5; } .c4 { grid-column: span 4; }
+@media (max-width: 900px) { .c8, .c7, .c6, .c5, .c4 { grid-column: span 12; } }
+
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 20px; box-shadow: var(--shadow); min-width: 0;
+}
+.card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+.card-head p { margin: 2px 0 0; color: var(--muted); font-size: 12.5px; }
+.card.accent { background: var(--accent-soft); border-color: transparent; }
+
+/* KPI */
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 900px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.kpi .label { color: var(--text-2); font-size: 12.5px; }
+.kpi .value { font-family: var(--serif); font-size: 34px; line-height: 1.1; margin-top: 6px; font-variant-numeric: tabular-nums; }
+.kpi .value small { font-size: 16px; color: var(--muted); margin-left: 4px; }
+.kpi .note { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+.kpi .note b { color: var(--text-2); font-weight: 500; }
+
+.countdown { display: flex; align-items: baseline; gap: 8px; }
+.countdown .n { font-family: var(--serif); font-size: 44px; line-height: 1; color: var(--accent-strong); font-variant-numeric: tabular-nums; }
+:root[data-theme="dark"] .countdown .n { color: var(--accent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .countdown .n { color: var(--accent); } }
+
+/* Grafik ortak */
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; overflow: visible; }
+.chart text { font-family: var(--sans); font-size: 11.5px; fill: var(--muted); }
+.chart .lbl { fill: var(--text-2); font-size: 12.5px; }
+.chart .val { fill: var(--text); font-size: 12px; font-weight: 500; }
+.chart .grid-l { stroke: var(--border); stroke-width: 1; }
+.chart .base { stroke: var(--muted); stroke-width: 1; opacity: .5; }
+.chart .hit { fill: transparent; }
+.chart svg.hovering .mark:not(.hov) { opacity: .4; }
+.chart .mark { transition: opacity .12s; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 12px; font-size: 12.5px; color: var(--text-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+details.table-view { margin-top: 10px; }
+details.table-view summary { color: var(--muted); font-size: 12.5px; cursor: pointer; width: max-content; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tip {
+  position: fixed; z-index: 50; pointer-events: none;
+  background: var(--text); color: var(--bg); border-radius: 8px; padding: 8px 10px;
+  font-size: 12.5px; line-height: 1.45; max-width: 260px; box-shadow: 0 4px 16px rgba(0,0,0,.18);
+  opacity: 0; transition: opacity .1s;
+}
+.tip.on { opacity: 1; }
+.tip b { font-weight: 600; }
+.tip .row { display: flex; align-items: center; gap: 6px; }
+.tip i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+/* Rozet, çip */
+.chip {
+  display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 999px;
+  font-size: 12px; background: var(--surface-2); color: var(--text-2); white-space: nowrap;
+}
+.chip.code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 11.5px; }
+.chip.late { background: color-mix(in srgb, var(--crit) 14%, transparent); color: var(--crit); }
+.chip.ok { background: color-mix(in srgb, var(--good) 14%, transparent); color: var(--good); }
+.chip.bad { background: color-mix(in srgb, var(--crit) 14%, transparent); color: var(--crit); }
+.chip.acc { background: var(--accent-soft); color: var(--accent-strong); }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
+
+.filters { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.filters button {
+  border: 1px solid var(--border); background: var(--surface); padding: 5px 12px; border-radius: 999px;
+  font-size: 12.5px; color: var(--text-2); display: inline-flex; align-items: center; gap: 6px;
+}
+.filters button[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+.btn {
+  border: 1px solid var(--border); background: var(--surface); padding: 7px 14px; border-radius: 9px;
+  font-weight: 500; font-size: 13px; display: inline-flex; align-items: center; gap: 6px;
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); }
+.btn.ghost { border-color: transparent; background: none; color: var(--text-2); }
+.btn.sm { padding: 4px 10px; font-size: 12.5px; }
+
+/* Ünite haritası */
+.units { display: grid; gap: 2px; }
+.unit {
+  display: grid; grid-template-columns: 22px minmax(0, 1fr) 120px 110px; gap: 12px; align-items: center;
+  padding: 9px 4px; border-bottom: 1px solid var(--border);
+}
+.unit:last-child { border-bottom: 0; }
+.unit .no { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.unit .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.unit.idle .name { color: var(--muted); }
+.unit .meter { height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; }
+.unit .meter i { display: block; height: 100%; border-radius: 3px; }
+.unit .mcount { font-size: 12px; color: var(--muted); margin-top: 3px; }
+@media (max-width: 640px) { .unit { grid-template-columns: 22px minmax(0, 1fr) 90px; } .unit .next { display: none; } }
+.ders-sum { display: flex; gap: 14px; flex-wrap: wrap; color: var(--text-2); font-size: 13px; margin-bottom: 10px; }
+
+/* Zaman çizelgesi */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { position: relative; padding: 0 0 16px 22px; }
+.timeline li::before { content: ""; position: absolute; left: 5px; top: 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.timeline li::after { content: ""; position: absolute; left: 8px; top: 18px; bottom: 2px; width: 1px; background: var(--border); }
+.timeline li:last-child::after { display: none; }
+.timeline .when { font-size: 12px; color: var(--muted); }
+.timeline .what { font-weight: 500; }
+.timeline .sets { color: var(--text-2); font-size: 13px; }
+.timeline .note { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+.scroll { max-height: 420px; overflow: auto; padding-right: 4px; }
+
+/* Duru'dan gelenler */
+.feed { list-style: none; margin: 0; padding: 0; }
+.feed li { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 13px; flex-wrap: wrap; }
+.feed li:last-child { border-bottom: 0; }
+.feed .konu { color: var(--text-2); flex: 1; min-width: 120px; }
+.empty { color: var(--muted); font-size: 13px; padding: 18px 0; text-align: center; }
+
+textarea, input[type="date"], input[type="number"], select {
+  width: 100%; border: 1px solid var(--border); background: var(--bg); border-radius: 9px; padding: 8px 10px;
+}
+textarea { resize: vertical; min-height: 84px; }
+.field { display: grid; gap: 4px; margin-bottom: 12px; }
+.field label { font-size: 12.5px; color: var(--text-2); }
+.row-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.saved { color: var(--good); font-size: 12.5px; }
+
+/* ---- Duru görünümü ---- */
+.hello { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; }
+@media (max-width: 700px) { .hello { grid-template-columns: 1fr; } }
+.hello h1 { font-size: 40px; }
+.hello .sub { font-size: 15px; }
+.big-count { text-align: center; padding: 18px 26px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); }
+.big-count .n { font-family: var(--serif); font-size: 56px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.big-count .t { color: var(--text-2); margin-top: 4px; }
+.note-card { display: flex; gap: 14px; align-items: flex-start; }
+.note-card .q { font-family: var(--serif); font-size: 17px; line-height: 1.45; white-space: pre-wrap; }
+.note-card .who { font-size: 12.5px; color: var(--text-2); margin-top: 6px; }
+
+.progress { height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--accent); border-radius: 4px; transition: width .3s; }
+.today-head { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.today-head .progress { flex: 1; }
+.today-head .pct { font-variant-numeric: tabular-nums; color: var(--text-2); font-size: 13px; white-space: nowrap; }
+
+.group-title { display: flex; align-items: center; gap: 8px; margin: 16px 0 8px; font-weight: 600; font-size: 13px; color: var(--text-2); }
+.group-title:first-child { margin-top: 0; }
+.q-item {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center;
+  padding: 11px 12px; border: 1px solid var(--border); border-radius: 11px; margin-bottom: 6px; background: var(--bg);
+}
+.q-item .meta { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-bottom: 3px; }
+.q-item .konu { font-size: 14px; }
+.q-item .acts { display: flex; gap: 6px; }
+.q-item .acts button { border: 1px solid var(--border); background: var(--surface); border-radius: 9px; padding: 6px 11px; font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 5px; }
+.q-item .acts .yes:hover { border-color: var(--good); color: var(--good); }
+.q-item .acts .no:hover { border-color: var(--crit); color: var(--crit); }
+.q-item.done { background: none; opacity: .75; }
+.more { width: 100%; border: 1px dashed var(--border); background: none; border-radius: 11px; padding: 8px; color: var(--text-2); font-size: 13px; margin-bottom: 6px; }
+.more:hover { border-color: var(--accent); color: var(--accent-strong); }
+.q-item.done .konu { text-decoration: line-through; text-decoration-color: var(--muted); }
+@media (max-width: 560px) { .q-item { grid-template-columns: 1fr; } }
+
+.timer { display: grid; justify-items: center; gap: 14px; }
+.timer .ring { position: relative; width: 200px; height: 200px; }
+.timer .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.timer .ring .in { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; }
+.timer .clock { font-family: var(--serif); font-size: 44px; font-variant-numeric: tabular-nums; line-height: 1; }
+.timer .mode { color: var(--muted); font-size: 12.5px; margin-top: 6px; }
+.timer .presets { display: flex; gap: 6px; }
+.timer select { width: auto; }
+.daygoal { width: 100%; }
+.daygoal .top { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--text-2); margin-bottom: 6px; }
+
+.week { display: flex; gap: 6px; justify-content: space-between; margin-top: 4px; }
+.week div { flex: 1; text-align: center; font-size: 11.5px; color: var(--muted); }
+.week i { display: block; height: 28px; border-radius: 7px; background: var(--surface-2); margin-bottom: 4px; }
+.week i.on { background: var(--accent); }
+.week i.today { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.upcoming { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.upcoming div { text-align: center; padding: 10px 4px; border-radius: 10px; background: var(--bg); border: 1px solid var(--border); }
+.upcoming .d { font-size: 11.5px; color: var(--muted); }
+.upcoming .n { font-family: var(--serif); font-size: 22px; font-variant-numeric: tabular-nums; }
+.upcoming .n.zero { color: var(--muted); }
+
+.next-sets { display: grid; gap: 8px; }
+.next-sets .ns { display: flex; align-items: center; gap: 10px; font-size: 13.5px; }
+.next-sets .ns .u { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; }
+.badge { text-align: center; padding: 14px 8px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); }
+.badge svg { color: var(--accent); }
+.badge .bt { font-weight: 600; font-size: 13px; margin-top: 6px; }
+.badge .bd { font-size: 11.5px; color: var(--muted); }
+.badge.locked { opacity: .45; }
+.badge.locked svg { color: var(--muted); }
+
+.banner { padding: 16px 20px; border-radius: 12px; background: var(--accent-soft); margin-bottom: 20px; }
+.banner code { font-size: 12.5px; }
+@media (max-width: 640px) {
+  .topbar-in { padding: 10px 16px; gap: 10px; }
+  .brand span { display: none; }
+  main { padding: 20px 16px 48px; }
+  .seg button { padding: 7px 10px; }
+  h1, .hello h1 { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l1.6 6.1L19 4.6l-3.4 5.4L22 12l-6.4 1.9 3.4 5.5-5.4-3.5L12 22l-1.6-6.1L5 19.4l3.4-5.5L2 12l6.4-2-3.4-5.4 5.4 3.5z"/></svg>
+      <span>Duru LGS</span>
+    </div>
+    <nav class="seg" role="tablist" aria-label="Görünüm">
+      <button role="tab" id="tab-veli" aria-selected="false" data-view="veli">Veli Paneli</button>
+      <button role="tab" id="tab-duru" aria-selected="false" data-view="duru">Duru'nun Alanı</button>
+    </nav>
+    <button class="icon-btn" id="theme-btn" title="Açık / koyu tema" aria-label="Temayı değiştir">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div id="no-data" class="banner" hidden>
+    <b>Veri bulunamadı.</b> Bu sayfa <code>data/veri.js</code> dosyasını okur. Proje klasöründe şunu çalıştırın:
+    <code>python3 -I scripts/veri_js.py data</code>
+  </div>
+
+  <!-- ============ VELİ PANELİ ============ -->
+  <section class="view" id="view-veli" role="tabpanel" aria-labelledby="tab-veli" hidden>
+    <div class="page-head">
+      <div>
+        <div class="eyebrow" id="v-date"></div>
+        <h1>Genel bakış</h1>
+        <div class="sub">Hatalı sorular, tekrar takvimi ve ünite ilerlemesi tek yerde.</div>
+      </div>
+      <div class="countdown" title="LGS tarihi Ayarlar bölümünden değiştirilebilir">
+        <span class="n" id="v-count"></span><span class="sub" id="v-count-t"></span>
+      </div>
+    </div>
+
+    <div class="kpis" id="v-kpis"></div>
+
+    <div class="grid" style="margin-top:16px">
+      <div class="card c7">
+        <div class="card-head">
+          <div><h2>Derslere göre tekrar durumu</h2><p>Her hatalı sorunun en son tekrar sonucu</p></div>
+        </div>
+        <div class="legend" id="lg-durum"></div>
+        <div class="chart" id="ch-durum"></div>
+        <details class="table-view"><summary>Tablo olarak göster</summary><div id="tb-durum"></div></details>
+      </div>
+      <div class="card c5">
+        <div class="card-head">
+          <div><h2>Tekrar takvimi</h2><p>Önümüzdeki 21 günde sırası gelen sorular</p></div>
+        </div>
+        <div class="chart" id="ch-takvim"></div>
+        <details class="table-view"><summary>Tablo olarak göster</summary><div id="tb-takvim"></div></details>
+      </div>
+
+      <div class="card c7">
+        <div class="card-head">
+          <div><h2>Setlere eklenen hatalı sorular</h2><p>Set açılış tarihine göre, derse göre yığılmış</p></div>
+        </div>
+        <div class="legend" id="lg-set"></div>
+        <div class="chart" id="ch-set"></div>
+        <details class="table-view"><summary>Tablo olarak göster</summary><div id="tb-set"></div></details>
+      </div>
+      <div class="card c5">
+        <div class="card-head">
+          <div><h2>Çalışma süresi</h2><p>Son 7 gün · Duru'nun odak sayacından</p></div>
+          <span class="chip" id="v-hedef-chip"></span>
+        </div>
+        <div class="chart" id="ch-calisma"></div>
+        <details class="table-view"><summary>Tablo olarak göster</summary><div id="tb-calisma"></div></details>
+      </div>
+
+      <div class="card c12">
+        <div class="card-head">
+          <div><h2>Ünite haritası</h2><p>LGS kapsamındaki üniteler, açılan setler ve sıradaki adım</p></div>
+        </div>
+        <div class="filters" id="u-filters" role="group" aria-label="Ders filtresi"></div>
+        <div class="ders-sum" id="u-sum"></div>
+        <div class="units" id="u-list"></div>
+      </div>
+
+      <div class="card c6">
+        <div class="card-head">
+          <div><h2>Duru'dan gelenler</h2><p>Duru'nun bu tarayıcıda işaretlediği tekrar sonuçları — Excel'e işlenmeyi bekler</p></div>
+          <div class="row-actions">
+            <button class="btn sm" id="feed-copy">Metni kopyala</button>
+            <button class="btn sm ghost" id="feed-clear">İşlendi, temizle</button>
+          </div>
+        </div>
+        <div class="scroll" style="max-height:340px"><ul class="feed" id="feed"></ul></div>
+      </div>
+
+      <div class="card c6">
+        <div class="card-head"><div><h2>Kaynak günlüğü</h2><p>Yüklenen fotoğraflar ve işlendikleri setler</p></div></div>
+        <div class="scroll" style="max-height:340px"><ul class="timeline" id="kaynak"></ul></div>
+      </div>
+
+      <div class="card c6">
+        <div class="card-head"><div><h2>Duru'ya not</h2><p>Duru kendi alanını açtığında en üstte görür</p></div></div>
+        <textarea id="note-in" placeholder="Örn. Bugün matematik tekrarlarını bitirirsen akşam film bizden!"></textarea>
+        <div class="row-actions" style="margin-top:10px">
+          <button class="btn primary" id="note-save">Notu kaydet</button>
+          <button class="btn ghost" id="note-del">Notu kaldır</button>
+          <span class="saved" id="note-ok" hidden>Kaydedildi</span>
+        </div>
+      </div>
+
+      <div class="card c6">
+        <div class="card-head"><div><h2>Ayarlar</h2><p>Bu tarayıcıya kaydedilir</p></div></div>
+        <div class="grid" style="gap:12px">
+          <div class="field c6"><label for="set-lgs">LGS tarihi</label><input type="date" id="set-lgs"></div>
+          <div class="field c6"><label for="set-hedef">Günlük çalışma hedefi (dk)</label><input type="number" id="set-hedef" min="10" max="600" step="10"></div>
+        </div>
+        <div class="row-actions">
+          <button class="btn" id="exp">Tarayıcı verisini indir</button>
+          <label class="btn" for="imp">Yedekten yükle</label><input type="file" id="imp" accept="application/json" hidden>
+        </div>
+        <p class="eyebrow" style="margin:12px 0 0">Excel verisi: <span id="v-guncel"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DURU'NUN ALANI ============ -->
+  <section class="view" id="view-duru" role="tabpanel" aria-labelledby="tab-duru" hidden>
+    <div class="hello">
+      <div>
+        <div class="eyebrow" id="d-date"></div>
+        <h1 id="d-hello">Merhaba Duru</h1>
+        <div class="sub" id="d-motto"></div>
+      </div>
+      <div class="big-count"><div class="n" id="d-count"></div><div class="t">gün kaldı · LGS</div></div>
+    </div>
+
+    <div class="grid" style="margin-top:22px">
+      <div class="card accent c12 note-card" id="d-note" hidden>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--accent-strong);flex:none;margin-top:3px" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div><div class="q" id="d-note-t"></div><div class="who" id="d-note-w"></div></div>
+      </div>
+
+      <div class="card c8">
+        <div class="card-head">
+          <div><h2>Bugünün tekrarları</h2><p>Soruyu tekrar çöz, sonra dürüstçe işaretle — yanlışlar bir hafta sonra yeniden gelir</p></div>
+        </div>
+        <div class="today-head"><div class="progress"><i id="d-prog"></i></div><span class="pct" id="d-prog-t"></span></div>
+        <div id="d-list"></div>
+      </div>
+
+      <div class="card c4">
+        <div class="card-head"><div><h2>Odak sayacı</h2><p>Biten her odak turu kaydedilir</p></div></div>
+        <div class="timer">
+          <div class="ring">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <circle cx="100" cy="100" r="88" fill="none" stroke="var(--surface-2)" stroke-width="10"/>
+              <circle id="t-arc" cx="100" cy="100" r="88" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="552.9" stroke-dashoffset="0"/>
+            </svg>
+            <div class="in"><div class="clock" id="t-clock">25:00</div><div class="mode" id="t-mode">Odak</div></div>
+          </div>
+          <div class="presets" role="group" aria-label="Süre">
+            <button class="btn sm" data-min="25">25 dk</button>
+            <button class="btn sm" data-min="40">40 dk</button>
+            <button class="btn sm" data-min="15">15 dk</button>
+          </div>
+          <select id="t-ders" aria-label="Çalışılan ders"></select>
+          <div class="row-actions">
+            <button class="btn primary" id="t-start">Başla</button>
+            <button class="btn" id="t-stop">Bitir</button>
+          </div>
+          <div class="daygoal">
+            <div class="top"><span>Bugün</span><span id="t-today"></span></div>
+            <div class="progress"><i id="t-today-bar"></i></div>
+          </div>
+          <div class="daygoal">
+            <div class="top"><span>Bu hafta</span><span id="d-streak"></span></div>
+            <div class="week" id="d-week"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card c7">
+        <div class="card-head"><div><h2>Yaklaşan tekrarlar</h2><p>Önümüzdeki 7 gün</p></div></div>
+        <div class="upcoming" id="d-up"></div>
+      </div>
+      <div class="card c5">
+        <div class="card-head"><div><h2>Sıradaki setlerin</h2><p>Çalıştığın ünitelerde bir sonraki adım</p></div></div>
+        <div class="next-sets scroll" style="max-height:220px" id="d-next"></div>
+      </div>
+
+      <div class="card c12">
+        <div class="card-head"><div><h2>Rozetlerin</h2><p>Çalıştıkça açılır</p></div></div>
+        <div class="badges" id="d-badges"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+'use strict';
+const V = window.LGS_VERI;
+const DERSLER = [
+  { ad: 'Matematik', kisa: 'Matematik', renk: 'var(--s1)' },
+  { ad: 'Türkçe', kisa: 'Türkçe', renk: 'var(--s2)' },
+  { ad: 'Fen Bilimleri', kisa: 'Fen', renk: 'var(--s3)' },
+  { ad: 'T.C. İnkılap Tarihi ve Atatürkçülük', kisa: 'İnkılap', renk: 'var(--s4)' },
+  { ad: 'Din Kültürü ve Ahlak Bilgisi', kisa: 'Din', renk: 'var(--s5)' },
+  { ad: 'İngilizce', kisa: 'İngilizce', renk: 'var(--s6)' },
+];
+const DERS = Object.fromEntries(DERSLER.map(d => [d.ad, d]));
+const DURUM = [
+  { k: 'doğru', ad: 'Doğru', renk: 'var(--good)' },
+  { k: 'yanlış', ad: 'Yanlış', renk: 'var(--crit)' },
+  { k: 'bekliyor', ad: 'Bekliyor', renk: 'var(--pending)' },
+];
+
+/* ---------- Tarayıcı kaydı ---------- */
+const KEY = 'duruLGS.v1';
+const varsayilan = () => ({ sonuc: {}, calisma: [], veliNotu: '', veliNotuTarih: '', lgs: '2027-06-13', hedefDk: 90, tema: null, gorunum: 'veli' });
+let S = varsayilan();
+try { S = { ...S, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; } catch (e) {}
+function kaydet() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+
+/* ---------- Yardımcılar ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const tarih = s => new Date(s + 'T00:00:00');
+const gunEkle = (s, n) => { const d = tarih(s); d.setDate(d.getDate() + n); return iso(d); };
+const gunFark = (a, b) => Math.round((tarih(b) - tarih(a)) / 864e5);
+const kisaTarih = s => tarih(s).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short' });
+const uzunTarih = s => tarih(s).toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+const gunAdi = s => tarih(s).toLocaleDateString('tr-TR', { weekday: 'short' });
+const uniteAdi = u => u.replace(/^\d+\s*-\s*/, '');
+const uniteNo = u => (u.match(/^(\d+)/) || [])[1] || '';
+let BUGUN = iso(new Date());
+
+/* Excel'deki durum + Duru'nun bu tarayıcıda işaretledikleri */
+function tekrarlar() {
+  return V.tekrar.map(r => {
+    const s1 = S.sonuc[r.kod + '|1'], s2 = S.sonuc[r.kod + '|2'];
+    const t1 = s1 ? s1.d : r.t1_durum, t2 = s2 ? s2.d : r.t2_durum;
+    // Yanlış yapılan soru bir hafta sonra yeniden sorulur (Excel'deki uygulamayla aynı).
+    const t2Tarih = s1 && s1.d === 'yanlış' ? gunEkle(s1.t, 7) : r.t2_tarih;
+    let asama = 0, gun = null;
+    if (t1 === 'bekliyor') { asama = 1; gun = r.t1_tarih; }
+    else if (t2 === 'bekliyor') { asama = 2; gun = t2Tarih; }
+    const son = t2 !== 'bekliyor' ? t2 : t1 !== 'bekliyor' ? t1 : 'bekliyor';
+    return { ...r, t1, t2, s1, s2, asama, gun, son };
+  });
+}
+function gunlukDk(g) { return S.calisma.filter(c => c.t === g).reduce((a, c) => a + c.dk, 0); }
+function aktifGun(g) { return gunlukDk(g) > 0 || Object.values(S.sonuc).some(s => s.t === g); }
+function seri() {
+  let n = 0, g = aktifGun(BUGUN) ? BUGUN : gunEkle(BUGUN, -1);
+  while (aktifGun(g)) { n++; g = gunEkle(g, -1); }
+  return n;
+}
+function kalanGun() { return Math.max(0, gunFark(BUGUN, S.lgs)); }
+
+/* ---------- Tooltip ---------- */
+const tip = $('tip');
+function tipGoster(e, html) {
+  tip.innerHTML = html; tip.classList.add('on');
+  const r = tip.getBoundingClientRect();
+  let x = e.clientX + 14, y = e.clientY + 14;
+  if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 14;
+  if (y + r.height > innerHeight - 8) y = e.clientY - r.height - 14;
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+}
+function tipGizle() { tip.classList.remove('on'); }
+function hoverBagla(el, items, html) {
+  const svg = el.querySelector('svg');
+  el.onmousemove = e => {
+    const h = e.target.closest('[data-i]');
+    svg.querySelectorAll('.hov').forEach(n => n.classList.remove('hov'));
+    if (!h) { svg.classList.remove('hovering'); return tipGizle(); }
+    const i = +h.dataset.i;
+    svg.classList.add('hovering');
+    svg.querySelectorAll(`.mark[data-g="${i}"]`).forEach(n => n.classList.add('hov'));
+    tipGoster(e, html(items[i]));
+  };
+  el.onmouseleave = () => { svg.classList.remove('hovering'); svg.querySelectorAll('.hov').forEach(n => n.classList.remove('hov')); tipGizle(); };
+}
+const tipSatir = (renk, ad, v) => `<div class="row"><i style="background:${renk}"></i>${esc(ad)}: <b>${v}</b></div>`;
+
+/* ---------- Grafikler ---------- */
+function adimBul(m) {
+  const x = Math.max(1, m / 4), p = 10 ** Math.floor(Math.log10(x)), n = x / p;
+  return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10) * p;
+}
+function ustYuvarlak(x, y, w, h, r) {
+  r = Math.min(r, w / 2, h);
+  return `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`;
+}
+function sagYuvarlak(x, y, w, h, r) {
+  r = Math.min(r, h / 2, w);
+  return `M${x},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h - r}Q${x + w},${y + h} ${x + w - r},${y + h}H${x}Z`;
+}
+
+/* Yığılmış sütun grafiği: items = [{etiket, segs:[{v, renk, ad}], ...}] */
+function sutunGrafik(el, items, { h = 210, hedef = null, tipHtml, etiketHepsi = false } = {}) {
+  const W = el.clientWidth || 400, padL = 32, padR = 6, padT = 12, padB = 26;
+  const pw = W - padL - padR, ph = h - padT - padB;
+  const tot = items.map(it => it.segs.reduce((a, s) => a + s.v, 0));
+  const step = adimBul(Math.max(...tot, hedef || 0, 1));
+  const top = Math.max(step, Math.ceil(Math.max(...tot, hedef || 0, 1) / step) * step);
+  const yy = v => padT + ph - (v / top) * ph;
+  const slot = pw / items.length, bw = Math.max(4, Math.min(30, slot * 0.64));
+  let s = `<svg viewBox="0 0 ${W} ${h}" height="${h}" role="img">`;
+  for (let v = 0; v <= top; v += step) {
+    s += `<line class="${v ? 'grid-l' : 'base'}" x1="${padL}" x2="${W - padR}" y1="${yy(v)}" y2="${yy(v)}"/>`;
+    s += `<text x="${padL - 8}" y="${yy(v) + 4}" text-anchor="end">${v}</text>`;
+  }
+  const her = Math.max(1, Math.ceil(items.length / (pw / 46)));
+  items.forEach((it, i) => {
+    const cx = padL + slot * i + slot / 2, x = cx - bw / 2;
+    let taban = yy(0);
+    const dolu = it.segs.filter(sg => sg.v > 0);
+    dolu.forEach((sg, j) => {
+      const hh = (sg.v / top) * ph, gap = j ? 2 : 0;
+      const y = taban - hh;
+      const hEff = Math.max(0, hh - gap);
+      s += j === dolu.length - 1
+        ? `<path class="mark" data-g="${i}" d="${ustYuvarlak(x, y, bw, hEff, 4)}" fill="${sg.renk}"/>`
+        : `<rect class="mark" data-g="${i}" x="${x}" y="${y}" width="${bw}" height="${hEff}" fill="${sg.renk}"/>`;
+      taban = y;
+    });
+    if ((etiketHepsi || i % her === 0 || it.zorunlu) && it.etiket)
+      s += `<text x="${cx}" y="${h - 8}" text-anchor="middle" ${it.vurgu ? 'class="lbl"' : ''}>${esc(it.etiket)}</text>`;
+    s += `<rect class="hit" data-i="${i}" x="${padL + slot * i}" y="${padT}" width="${slot}" height="${ph}"/>`;
+  });
+  if (hedef) {
+    s += `<line x1="${padL}" x2="${W - padR}" y1="${yy(hedef)}" y2="${yy(hedef)}" stroke="var(--text-2)" stroke-dasharray="4 4" opacity=".7"/>`;
+    s += `<text x="${W - padR}" y="${yy(hedef) - 6}" text-anchor="end">hedef ${hedef} dk</text>`;
+  }
+  el.innerHTML = s + '</svg>';
+  hoverBagla(el, items, tipHtml);
+}
+
+function durumGrafik() {
+  const T = tekrarlar();
+  const rows = DERSLER.map(d => {
+    const xs = T.filter(r => r.ders === d.ad);
+    const c = Object.fromEntries(DURUM.map(u => [u.k, xs.filter(r => r.son === u.k).length]));
+    return { d, c, top: xs.length };
+  });
+  const el = $('ch-durum');
+  const W = el.clientWidth || 500, labW = 76, sagW = 34, rowH = 34, barH = 14;
+  const H = rows.length * rowH;
+  const max = Math.max(...rows.map(r => r.top), 1);
+  const k = (W - labW - sagW) / max;
+  let s = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Derslere göre tekrar durumu">`;
+  rows.forEach((r, i) => {
+    const y = i * rowH + (rowH - barH) / 2;
+    s += `<text class="lbl" x="0" y="${y + barH - 2}">${esc(r.d.kisa)}</text>`;
+    let x = labW;
+    const dolu = DURUM.filter(u => r.c[u.k] > 0);
+    dolu.forEach((u, j) => {
+      const w = r.c[u.k] * k, son = j === dolu.length - 1, wEff = Math.max(1, w - (son ? 0 : 2));
+      s += son
+        ? `<path class="mark" data-g="${i}" d="${sagYuvarlak(x, y, wEff, barH, 4)}" fill="${u.renk}"/>`
+        : `<rect class="mark" data-g="${i}" x="${x}" y="${y}" width="${wEff}" height="${barH}" fill="${u.renk}"/>`;
+      x += w;
+    });
+    if (!r.top) s += `<line class="base" x1="${labW}" x2="${labW}" y1="${y}" y2="${y + barH}"/>`;
+    s += `<text class="val" x="${x + 8}" y="${y + barH - 2}">${r.top}</text>`;
+    s += `<rect class="hit" data-i="${i}" x="0" y="${i * rowH}" width="${W}" height="${rowH}"/>`;
+  });
+  el.innerHTML = s + '</svg>';
+  hoverBagla(el, rows, r => `<b>${esc(r.d.ad)}</b> · ${r.top} soru` + DURUM.map(u => tipSatir(u.renk, u.ad, r.c[u.k])).join(''));
+  $('lg-durum').innerHTML = DURUM.map(u => `<span><i style="background:${u.renk}"></i>${u.ad}</span>`).join('');
+  $('tb-durum').innerHTML = `<table><tr><th>Ders</th>${DURUM.map(u => `<th class="num">${u.ad}</th>`).join('')}<th class="num">Toplam</th></tr>` +
+    rows.map(r => `<tr><td>${esc(r.d.kisa)}</td>${DURUM.map(u => `<td class="num">${r.c[u.k]}</td>`).join('')}<td class="num">${r.top}</td></tr>`).join('') + '</table>';
+}
+
+function takvimGrafik() {
+  const T = tekrarlar().filter(r => r.asama && r.gun);
+  const gec = T.filter(r => r.gun < BUGUN);
+  const items = [];
+  if (gec.length) items.push({ etiket: 'Gecikmiş', zorunlu: true, vurgu: true, segs: [{ v: gec.length, renk: 'var(--crit)' }], xs: gec, ad: 'Gecikmiş' });
+  for (let i = 0; i < 21; i++) {
+    const g = gunEkle(BUGUN, i), xs = T.filter(r => r.gun === g);
+    items.push({ etiket: i ? kisaTarih(g) : 'Bugün', zorunlu: !i, vurgu: !i, segs: [{ v: xs.length, renk: 'var(--accent)' }], xs, ad: i ? uzunTarih(g) : 'Bugün' });
+  }
+  sutunGrafik($('ch-takvim'), items, {
+    tipHtml: it => `<b>${esc(it.ad)}</b><br>${it.xs.length} soru` +
+      DERSLER.map(d => [d, it.xs.filter(r => r.ders === d.ad).length]).filter(([, n]) => n).map(([d, n]) => tipSatir(d.renk, d.kisa, n)).join(''),
+  });
+  $('tb-takvim').innerHTML = `<table><tr><th>Gün</th><th class="num">Soru</th></tr>` +
+    items.filter(it => it.xs.length).map(it => `<tr><td>${esc(it.ad)}</td><td class="num">${it.xs.length}</td></tr>`).join('') + '</table>';
+}
+
+function setGrafik() {
+  const gunler = [...new Set(V.setler.map(s => s.tarih).filter(Boolean))].sort();
+  const items = gunler.map(g => {
+    const xs = V.setler.filter(s => s.tarih === g);
+    return {
+      etiket: kisaTarih(g), g, xs,
+      segs: DERSLER.map(d => ({ v: xs.filter(s => s.ders === d.ad).reduce((a, s) => a + s.soru_sayisi, 0), renk: d.renk, ad: d.kisa })),
+    };
+  });
+  const kullanilan = DERSLER.filter(d => V.setler.some(s => s.ders === d.ad));
+  $('lg-set').innerHTML = kullanilan.map(d => `<span><i style="background:${d.renk}"></i>${d.kisa}</span>`).join('');
+  sutunGrafik($('ch-set'), items, {
+    etiketHepsi: items.length <= 10,
+    tipHtml: it => `<b>${esc(uzunTarih(it.g))}</b>` + it.xs.map(s => `<div class="row"><i style="background:${DERS[s.ders]?.renk}"></i>${esc(uniteAdi(s.unite))} · ${esc(s.set)}: <b>${s.soru_sayisi}</b></div>`).join(''),
+  });
+  $('tb-set').innerHTML = `<table><tr><th>Tarih</th><th>Ders</th><th>Ünite</th><th>Set</th><th class="num">Soru</th></tr>` +
+    V.setler.map(s => `<tr><td>${s.tarih ? kisaTarih(s.tarih) : '—'}</td><td>${esc(DERS[s.ders]?.kisa || s.ders)}</td><td>${esc(uniteAdi(s.unite))}</td><td>${esc(s.set)}</td><td class="num">${s.soru_sayisi}</td></tr>`).join('') + '</table>';
+}
+
+function calismaGrafik() {
+  const items = [];
+  for (let i = 6; i >= 0; i--) {
+    const g = gunEkle(BUGUN, -i), dk = gunlukDk(g);
+    const dersDk = DERSLER.map(d => ({ d, v: S.calisma.filter(c => c.t === g && c.ders === d.ad).reduce((a, c) => a + c.dk, 0) }));
+    items.push({ etiket: i ? gunAdi(g) : 'Bugün', vurgu: !i, g, dk, dersDk, segs: [{ v: dk, renk: 'var(--accent)' }] });
+  }
+  const hafta = items.reduce((a, it) => a + it.dk, 0);
+  $('v-hedef-chip').textContent = `7 gün: ${Math.floor(hafta / 60)} sa ${hafta % 60} dk`;
+  sutunGrafik($('ch-calisma'), items, {
+    etiketHepsi: true, hedef: S.hedefDk,
+    tipHtml: it => `<b>${esc(uzunTarih(it.g))}</b><br>${it.dk} dk` + it.dersDk.filter(x => x.v).map(x => tipSatir(x.d.renk, x.d.kisa, x.v + ' dk')).join(''),
+  });
+  $('tb-calisma').innerHTML = `<table><tr><th>Gün</th><th class="num">Dakika</th></tr>` +
+    items.map(it => `<tr><td>${esc(uzunTarih(it.g))}</td><td class="num">${it.dk}</td></tr>`).join('') + '</table>';
+}
+
+/* ---------- Veli paneli ---------- */
+let uniteFiltre = 'Matematik';
+function veliCiz() {
+  const T = tekrarlar();
+  $('v-date').textContent = uzunTarih(BUGUN);
+  $('v-count').textContent = kalanGun();
+  $('v-count-t').textContent = `gün kaldı · LGS ${tarih(S.lgs).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}`;
+  $('v-guncel').textContent = V.guncelleme || '—';
+
+  const sonuclar = T.flatMap(r => [r.t1, r.t2]).filter(x => x !== 'bekliyor');
+  const dogru = sonuclar.filter(x => x === 'doğru').length;
+  const oran = sonuclar.length ? Math.round(dogru / sonuclar.length * 100) : 0;
+  const due = T.filter(r => r.asama && r.gun && r.gun <= BUGUN);
+  const gec = due.filter(r => r.gun < BUGUN).length;
+  const basl = V.uniteler.filter(u => u.son_set && u.son_set !== '—').length;
+  const ozet = V.uniteler.filter(u => u.konu_ozeti).length;
+  const kpi = (label, value, note) => `<div class="card kpi"><div class="label">${label}</div><div class="value">${value}</div><div class="note">${note}</div></div>`;
+  $('v-kpis').innerHTML =
+    kpi('Takipteki hatalı soru', T.length, `<b>${V.setler.length}</b> sette toplandı`) +
+    kpi('Tekrar başarısı', `${oran}<small>%</small>`, `<b>${dogru}</b> doğru / ${sonuclar.length} tekrar`) +
+    kpi('Bugün sırası gelen', due.length, gec ? `<b style="color:var(--crit)">${gec}</b> tanesi gecikmiş` : 'Gecikmiş tekrar yok') +
+    kpi('Başlanan ünite', `${basl}<small>/ ${V.uniteler.length}</small>`, `<b>${ozet}</b> ünitede konu özeti var`);
+
+  durumGrafik(); takvimGrafik(); setGrafik(); calismaGrafik();
+  uniteCiz(); feedCiz(); kaynakCiz();
+  $('note-in').value = S.veliNotu;
+  $('set-lgs').value = S.lgs;
+  $('set-hedef').value = S.hedefDk;
+}
+
+function uniteCiz() {
+  $('u-filters').innerHTML = DERSLER.map(d =>
+    `<button aria-pressed="${d.ad === uniteFiltre}" data-ders="${esc(d.ad)}"><span class="dot" style="background:${d.renk}"></span>${d.kisa}</button>`).join('');
+  const us = V.uniteler.filter(u => u.ders === uniteFiltre);
+  const maxH = Math.max(1, ...V.uniteler.map(u => u.hatali_soru));
+  const renk = DERS[uniteFiltre].renk;
+  const basl = us.filter(u => u.son_set !== '—').length;
+  const top = us.reduce((a, u) => a + u.hatali_soru, 0);
+  const T = tekrarlar().filter(r => r.ders === uniteFiltre);
+  $('u-sum').innerHTML = `<span><b>${basl}</b> / ${us.length} ünite başladı</span><span><b>${top}</b> hatalı soru setlerde</span><span><b>${T.filter(r => r.son === 'doğru').length}</b> soru tekrarda doğru</span>`;
+  $('u-list').innerHTML = us.map(u => {
+    const aktif = u.son_set !== '—';
+    return `<div class="unit ${aktif ? '' : 'idle'}">
+      <span class="no">${uniteNo(u.unite)}</span>
+      <div style="min-width:0">
+        <div class="name" title="${esc(u.setler || '')}">${esc(uniteAdi(u.unite))}</div>
+        <div style="display:flex;gap:6px;margin-top:3px;flex-wrap:wrap">
+          ${aktif ? `<span class="chip">Son: ${esc(u.son_set)}</span>` : '<span class="chip">Başlanmadı</span>'}
+          ${u.konu_ozeti ? '<span class="chip acc">Konu özeti ✓</span>' : ''}
+        </div>
+      </div>
+      <div>
+        <div class="meter"><i style="width:${u.hatali_soru / maxH * 100}%;background:${renk}"></i></div>
+        <div class="mcount">${u.hatali_soru} hatalı soru</div>
+      </div>
+      <div class="next"><span class="chip ${aktif ? 'acc' : ''}">Sıradaki: ${esc(u.siradaki_set)}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function feedSatirlari() {
+  const T = Object.fromEntries(V.tekrar.map(r => [r.kod, r]));
+  return Object.entries(S.sonuc).map(([k, s]) => {
+    const [kod, a] = k.split('|');
+    return { kod, asama: +a, ...s, r: T[kod] };
+  }).sort((x, y) => (y.t + y.kod).localeCompare(x.t + x.kod));
+}
+function feedCiz() {
+  const xs = feedSatirlari();
+  $('feed').innerHTML = xs.length ? xs.map(x => `<li>
+      <span class="chip code">${esc(x.kod)}</span>
+      <span class="chip">${x.asama}. tekrar</span>
+      <span class="konu">${esc(x.r?.konu || '')}</span>
+      <span class="chip ${x.d === 'doğru' ? 'ok' : 'bad'}">${x.d === 'doğru' ? '✓ Doğru' : '✕ Yanlış'}</span>
+      <span class="eyebrow">${kisaTarih(x.t)}</span></li>`).join('')
+    : '<li class="empty" style="display:block">Henüz Duru\'dan yeni sonuç yok.</li>';
+}
+
+function kaynakCiz() {
+  $('kaynak').innerHTML = [...V.kaynaklar].reverse().map(k => `<li>
+    <div class="when">${k.tarih ? uzunTarih(k.tarih) : ''} · ${esc(k.islendi)}</div>
+    <div class="what">${esc(k.yukleme)}</div>
+    <div class="sets">${esc(k.setler)}</div>
+    ${k.not ? `<div class="note">${esc(k.not)}</div>` : ''}</li>`).join('');
+}
+
+/* ---------- Duru'nun alanı ---------- */
+const acikDersler = new Set();
+const MOTTOLAR = [
+  'Her doğru tekrar, sınav günü bir soru daha demek.',
+  'Yanlışlar senin haritan — onları bulan sensin.',
+  'Küçük adımlar, her gün. Seri bozulmasın!',
+  'Bugün yaptığın tekrar, yarın hatırladığın bilgi.',
+  'Odaklan, işaretle, dinlen. Bu kadar.',
+];
+function duruCiz() {
+  const T = tekrarlar();
+  $('d-date').textContent = uzunTarih(BUGUN);
+  const saat = new Date().getHours();
+  $('d-hello').textContent = (saat < 12 ? 'Günaydın' : saat < 18 ? 'Merhaba' : 'İyi akşamlar') + ', Duru';
+  $('d-motto').textContent = MOTTOLAR[tarih(BUGUN).getDate() % MOTTOLAR.length];
+  $('d-count').textContent = kalanGun();
+
+  $('d-note').hidden = !S.veliNotu;
+  $('d-note-t').textContent = S.veliNotu;
+  $('d-note-w').textContent = S.veliNotuTarih ? `Ailenden not · ${kisaTarih(S.veliNotuTarih)}` : 'Ailenden not';
+
+  // Bugünün listesi: sırası gelenler + bugün işaretlenenler
+  const due = T.filter(r => r.asama && r.gun && r.gun <= BUGUN);
+  const bitti = [];
+  T.forEach(r => {
+    if (r.s1 && r.s1.t === BUGUN) bitti.push({ r, asama: 1, d: r.s1.d });
+    if (r.s2 && r.s2.t === BUGUN) bitti.push({ r, asama: 2, d: r.s2.d });
+  });
+  const toplam = due.length + bitti.length;
+  $('d-prog').style.width = (toplam ? bitti.length / toplam * 100 : 0) + '%';
+  $('d-prog-t').textContent = toplam ? `${bitti.length} / ${toplam} tamamlandı` : '';
+
+  let html = '';
+  DERSLER.forEach(d => {
+    const bek = due.filter(r => r.ders === d.ad).sort((a, b) => a.gun.localeCompare(b.gun));
+    const tam = bitti.filter(b => b.r.ders === d.ad);
+    if (!bek.length && !tam.length) return;
+    html += `<div class="group-title"><span class="dot" style="background:${d.renk}"></span>${d.kisa}<span class="eyebrow" style="font-weight:400">${bek.length} kaldı</span></div>`;
+    const gorunen = acikDersler.has(d.ad) ? bek : bek.slice(0, 4);
+    html += gorunen.map(r => `<div class="q-item">
+        <div><div class="meta"><span class="chip code">${esc(r.kod)}</span><span class="chip">${r.asama}. tekrar</span>
+          ${r.gun < BUGUN ? `<span class="chip late">${gunFark(r.gun, BUGUN)} gün gecikti</span>` : ''}</div>
+          <div class="konu">${esc(r.konu)}</div></div>
+        <div class="acts">
+          <button class="yes" data-kod="${esc(r.kod)}" data-a="${r.asama}" data-d="doğru">✓ Doğru</button>
+          <button class="no" data-kod="${esc(r.kod)}" data-a="${r.asama}" data-d="yanlış">✕ Yanlış</button>
+        </div></div>`).join('');
+    if (bek.length > gorunen.length) html += `<button class="more" data-more="${esc(d.ad)}">+ ${bek.length - gorunen.length} soru daha göster</button>`;
+    html += tam.map(b => `<div class="q-item done">
+        <div><div class="meta"><span class="chip code">${esc(b.r.kod)}</span><span class="chip ${b.d === 'doğru' ? 'ok' : 'bad'}">${b.d === 'doğru' ? '✓ Doğru' : '✕ Yanlış — 1 hafta sonra tekrar'}</span></div>
+          <div class="konu">${esc(b.r.konu)}</div></div>
+        <div class="acts"><button class="undo" data-kod="${esc(b.r.kod)}" data-a="${b.asama}">Geri al</button></div></div>`).join('');
+  });
+  $('d-list').innerHTML = html || `<div class="empty">Bugün için tekrar yok. Harika iş! Yeni setler eklendikçe burada görünecek.</div>`;
+
+  // Yaklaşan 7 gün
+  let up = '';
+  for (let i = 1; i <= 7; i++) {
+    const g = gunEkle(BUGUN, i), n = T.filter(r => r.asama && r.gun === g).length;
+    up += `<div title="${esc(uzunTarih(g))}"><div class="d">${gunAdi(g)}</div><div class="n ${n ? '' : 'zero'}">${n}</div><div class="d">${kisaTarih(g)}</div></div>`;
+  }
+  $('d-up').innerHTML = up;
+
+  $('d-next').innerHTML = V.uniteler.filter(u => u.son_set !== '—').map(u => `<div class="ns">
+      <span class="dot" style="background:${DERS[u.ders]?.renk}"></span>
+      <span class="u"><span class="eyebrow">${esc(DERS[u.ders]?.kisa)}</span> · ${esc(uniteAdi(u.unite))}</span>
+      <span class="chip acc">${esc(u.siradaki_set)}</span></div>`).join('');
+
+  rozetCiz(T);
+  zamanlayiciGunluk();
+}
+
+function rozetCiz(T) {
+  const dogru = T.flatMap(r => [r.t1, r.t2]).filter(x => x === 'doğru').length;
+  const dk = S.calisma.reduce((a, c) => a + c.dk, 0);
+  const donus = T.some(r => r.t1 === 'yanlış' && r.t2 === 'doğru');
+  const tumDers = DERSLER.every(d => T.some(r => r.ders === d.ad && r.son === 'doğru'));
+  const ikon = '<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.6 6.1L19 4.6l-3.4 5.4L22 12l-6.4 1.9 3.4 5.5-5.4-3.5L12 22l-1.6-6.1L5 19.4l3.4-5.5L2 12l6.4-2-3.4-5.4 5.4 3.5z"/></svg>';
+  const R = [
+    ['İlk adım', 'İlk doğru tekrar', dogru >= 1],
+    ['10 doğru', 'Tekrarda 10 doğru', dogru >= 10],
+    ['50 doğru', 'Tekrarda 50 doğru', dogru >= 50],
+    ['3 gün seri', '3 gün üst üste çalış', seri() >= 3],
+    ['Odak ustası', 'Toplam 5 saat odak', dk >= 300],
+    ['Hata avcısı', 'Yanlışı 2. tekrarda düzelt', donus],
+    ['Her dersten', 'Her derste en az 1 doğru', tumDers],
+  ];
+  $('d-badges').innerHTML = R.map(([t, d, ok]) => `<div class="badge ${ok ? '' : 'locked'}" title="${ok ? 'Kazanıldı' : 'Henüz kilitli'}">${ikon}<div class="bt">${t}</div><div class="bd">${d}</div></div>`).join('');
+}
+
+/* ---------- Odak sayacı ---------- */
+const Z = { dk: 25, mod: 'odak', kalan: 25 * 60, bitis: null, id: null, baslangicKalan: 25 * 60 };
+const CEVRE = 2 * Math.PI * 88;
+function zamanlayiciCiz() {
+  const k = Math.max(0, Math.round(Z.kalan));
+  $('t-clock').textContent = `${String(Math.floor(k / 60)).padStart(2, '0')}:${String(k % 60).padStart(2, '0')}`;
+  $('t-mode').textContent = Z.mod === 'odak' ? 'Odak' : 'Mola';
+  const top = Z.mod === 'odak' ? Z.dk * 60 : 5 * 60;
+  $('t-arc').style.strokeDashoffset = CEVRE * (1 - k / top);
+  $('t-arc').style.stroke = Z.mod === 'odak' ? 'var(--accent)' : 'var(--good)';
+  $('t-start').textContent = Z.id ? 'Duraklat' : (Z.kalan < top ? 'Devam' : 'Başla');
+  document.title = Z.id ? `${$('t-clock').textContent} · Duru LGS` : 'Duru LGS Paneli';
+}
+function zamanlayiciGunluk() {
+  const dk = gunlukDk(BUGUN);
+  $('t-today').textContent = `${dk} / ${S.hedefDk} dk`;
+  $('t-today-bar').style.width = Math.min(100, dk / S.hedefDk * 100) + '%';
+  const n = seri();
+  $('d-streak').textContent = n ? `${n} günlük seri` : 'Seriyi bugün başlat';
+  let w = '';
+  for (let i = 6; i >= 0; i--) {
+    const g = gunEkle(BUGUN, -i);
+    w += `<div><i class="${aktifGun(g) ? 'on' : ''} ${i ? '' : 'today'}" title="${esc(uzunTarih(g))}"></i>${gunAdi(g)}</div>`;
+  }
+  $('d-week').innerHTML = w;
+}
+function dkKaydet(dk) {
+  if (dk < 1) return;
+  S.calisma.push({ t: BUGUN, ders: $('t-ders').value, dk });
+  kaydet(); zamanlayiciGunluk(); rozetCiz(tekrarlar());
+}
+function bip() {
+  try {
+    const a = new (window.AudioContext || window.webkitAudioContext)();
+    [0, .25, .5].forEach(t => {
+      const o = a.createOscillator(), g = a.createGain();
+      o.frequency.value = 880; g.gain.setValueAtTime(.15, a.currentTime + t); g.gain.exponentialRampToValueAtTime(.001, a.currentTime + t + .2);
+      o.connect(g).connect(a.destination); o.start(a.currentTime + t); o.stop(a.currentTime + t + .2);
+    });
+  } catch (e) {}
+}
+function tik() {
+  Z.kalan = (Z.bitis - Date.now()) / 1000;
+  if (Z.kalan <= 0) {
+    clearInterval(Z.id); Z.id = null; bip();
+    if (Z.mod === 'odak') { dkKaydet(Z.dk); Z.mod = 'mola'; Z.kalan = 5 * 60; }
+    else { Z.mod = 'odak'; Z.kalan = Z.dk * 60; }
+    Z.baslangicKalan = Z.kalan;
+  }
+  zamanlayiciCiz();
+}
+$('t-start').onclick = () => {
+  if (Z.id) { clearInterval(Z.id); Z.id = null; tik(); return zamanlayiciCiz(); }
+  Z.bitis = Date.now() + Z.kalan * 1000;
+  Z.id = setInterval(tik, 250);
+  zamanlayiciCiz();
+};
+$('t-stop').onclick = () => {
+  if (Z.mod === 'odak') dkKaydet(Math.floor((Z.dk * 60 - Math.max(0, Z.kalan)) / 60));
+  clearInterval(Z.id); Z.id = null; Z.mod = 'odak'; Z.kalan = Z.dk * 60;
+  zamanlayiciCiz();
+};
+document.querySelectorAll('.presets button').forEach(b => b.onclick = () => {
+  if (Z.id) return;
+  Z.dk = +b.dataset.min; Z.mod = 'odak'; Z.kalan = Z.dk * 60;
+  zamanlayiciCiz();
+});
+$('t-ders').innerHTML = DERSLER.map(d => `<option value="${esc(d.ad)}">${d.kisa}</option>`).join('');
+
+/* ---------- Olaylar ---------- */
+$('d-list').addEventListener('click', e => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  if (b.dataset.more) { acikDersler.add(b.dataset.more); return duruCiz(); }
+  const k = b.dataset.kod + '|' + b.dataset.a;
+  if (b.classList.contains('undo')) {
+    delete S.sonuc[k];
+    if (b.dataset.a === '1') delete S.sonuc[b.dataset.kod + '|2'];
+  } else S.sonuc[k] = { d: b.dataset.d, t: BUGUN };
+  kaydet(); duruCiz();
+});
+$('u-filters').addEventListener('click', e => {
+  const b = e.target.closest('button');
+  if (b) { uniteFiltre = b.dataset.ders; uniteCiz(); }
+});
+$('feed-copy').onclick = async () => {
+  const txt = feedSatirlari().map(x => `${x.kod}\t${x.asama}. tekrar\t${x.d}\t${x.t.split('-').reverse().join('.')}`).join('\n');
+  try { await navigator.clipboard.writeText(txt || 'Yeni sonuç yok'); $('feed-copy').textContent = 'Kopyalandı'; }
+  catch (e) { prompt('Metni kopyalayın:', txt); }
+  setTimeout(() => $('feed-copy').textContent = 'Metni kopyala', 1500);
+};
+$('feed-clear').onclick = () => {
+  if (!Object.keys(S.sonuc).length) return;
+  if (!confirm('Bu sonuçları Excel\'e işlediniz ve veri.js güncellendi mi? Liste temizlenecek.')) return;
+  S.sonuc = {}; kaydet(); veliCiz();
+};
+$('note-save').onclick = () => {
+  S.veliNotu = $('note-in').value.trim(); S.veliNotuTarih = BUGUN; kaydet();
+  $('note-ok').hidden = false; setTimeout(() => $('note-ok').hidden = true, 1500);
+};
+$('note-del').onclick = () => { S.veliNotu = ''; $('note-in').value = ''; kaydet(); };
+$('set-lgs').onchange = e => { if (e.target.value) { S.lgs = e.target.value; kaydet(); veliCiz(); } };
+$('set-hedef').onchange = e => { const v = +e.target.value; if (v >= 10) { S.hedefDk = v; kaydet(); calismaGrafik(); } };
+$('exp').onclick = () => {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' }));
+  a.download = `duru-lgs-yedek-${BUGUN}.json`; a.click();
+};
+$('imp').onchange = async e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  try { S = { ...varsayilan(), ...JSON.parse(await f.text()) }; kaydet(); goster(S.gorunum); }
+  catch (err) { alert('Yedek dosyası okunamadı.'); }
+};
+
+/* ---------- Tema ve görünüm ---------- */
+function temaUygula() { S.tema ? document.documentElement.setAttribute('data-theme', S.tema) : document.documentElement.removeAttribute('data-theme'); }
+$('theme-btn').onclick = () => {
+  const koyu = S.tema ? S.tema === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  S.tema = koyu ? 'light' : 'dark'; kaydet(); temaUygula();
+};
+function goster(v) {
+  if (!V) { $('no-data').hidden = false; return; }
+  S.gorunum = v; kaydet();
+  if (location.hash !== '#' + v) history.replaceState(null, '', '#' + v);
+  document.querySelectorAll('.seg button').forEach(b => b.setAttribute('aria-selected', b.dataset.view === v));
+  $('view-veli').hidden = v !== 'veli';
+  $('view-duru').hidden = v !== 'duru';
+  BUGUN = iso(new Date());
+  v === 'veli' ? veliCiz() : duruCiz();
+}
+document.querySelectorAll('.seg button').forEach(b => b.onclick = () => goster(b.dataset.view));
+addEventListener('hashchange', () => { const h = location.hash.slice(1); if (h === 'veli' || h === 'duru') goster(h); });
+// Grafikler kutularının genişliği değiştikçe yeniden çizilir (pencere, mobil, ilk yerleşim).
+let rz, sonGenislik = 0;
+new ResizeObserver(([g]) => {
+  if (!g.contentRect.width || g.contentRect.width === sonGenislik) return;
+  sonGenislik = g.contentRect.width;
+  clearTimeout(rz);
+  rz = setTimeout(() => { if (V && S.gorunum === 'veli') { durumGrafik(); takvimGrafik(); setGrafik(); calismaGrafik(); } }, 80);
+}).observe($('ch-durum'));
+
+temaUygula();
+zamanlayiciCiz();
+const ilk = location.hash.slice(1);
+goster(ilk === 'veli' || ilk === 'duru' ? ilk : S.gorunum);
+</script>
+</body>
+</html>

@@ -1,0 +1,1300 @@
+{
+ "id": "fen-mev",
+ "ders": "Fen Bilimleri",
+ "unite": "01 - Mevsimler ve İklim",
+ "baslik": "Mevsimler ve İklim",
+ "anlatim": [
+  {
+   "baslik": "Dik ve eğik ışın",
+   "metin": "Güneş ışınları yere dik gelirse ışın dar bir alana düşer: enerji çok, sıcaklık yüksek, gölge kısa olur. Eğik gelirse aynı ışın geniş bir alana yayılır: birim alana düşen enerji az, gölge uzun olur. Bunu 'gölge, ışının dikliğinin tersidir' diye hatırla. Mevsimlerin nedeni Dünya'nın Güneş'e uzaklığı değil, eksen eğikliğidir."
+  },
+  {
+   "baslik": "Dört önemli tarih",
+   "metin": "21 Mart ve 23 Eylül'de ışınlar Ekvator'a dik gelir ve gece ile gündüz eşittir. 21 Haziran'da ışınlar Yengeç Dönencesi'ne, 21 Aralık'ta Oğlak Dönencesi'ne dik gelir. Kuzey Yarım Küre'de 21 Haziran yazın, 21 Aralık kışın başlangıcıdır. Güney Yarım Küre'de her şey tersidir; önce yarım küreyi bul, sonra tabloya bak."
+  },
+  {
+   "baslik": "Gündüz süresi ve kutuplar",
+   "metin": "Kuzey Yarım Küre'de 21 Mart ile 23 Eylül arasında gündüz 12 saatten uzundur ve 21 Haziran'da en uzun olur. 23 Eylül'den sonra gündüz 12 saatten kısa olmaya başlar. 'Kısalmaya başlar' ile '12 saatten kısa olmaya başlar' aynı tarih değildir. Kutuplarda yılda bir kez 6 ay gündüz, 6 ay gece yaşanır; 21 Mart ve 23 Eylül'de Güneş ufukta döner."
+  },
+  {
+   "baslik": "Gölge ve yarım küre",
+   "metin": "Öğle vakti Güneş güneydeyse gölge kuzeye düşer; bu Türkiye gibi Kuzey Yarım Küre'dir. Güneş kuzeydeyse gölge güneye düşer ve yer Güney Yarım Küre'dedir. Kuzey'de yıl içinde gölgenin en kısa olduğu gün 21 Haziran'dır. En yüksek öğle Güneş'i o yerin yaz başlangıcıdır."
+  },
+  {
+   "baslik": "Hava olayı mı, iklim mi?",
+   "metin": "Bir kez olan şeyleri anlatan ifadeler (bugün, yarın, dün, oldu, bu yıl, beklenen) hava olayıdır; bunu meteorologlar inceler. Her yıl tekrarlanan ya da genel durumu anlatan ifadeler (genellikle, yıl boyunca, ortalama, 35–40 yıllık) iklimdir; bunu klimatologlar inceler. Karar kelimeye göre değil süreye göre verilir: 'kar' hem hava olayı hem iklim olabilir."
+  },
+  {
+   "baslik": "Çiy, kırağı, sis ve kar",
+   "metin": "Çiy, 0 °C üstündeki soğuk yüzeylerde su buharının sıvılaşıp damlacık olmasıdır. Kırağı, 0 °C altında su buharının doğrudan katılaşıp yüzeyde buz oluşturmasıdır. Sis, yere yakın havada asılı su damlacıklarıdır. Kar ve dolu bulutta oluşup yağış olarak düşer. Metinde 'yüzey' geçiyorsa çiy ya da kırağı düşün."
+  },
+  {
+   "baslik": "Basınç, rüzgâr ve meltem",
+   "metin": "Sıcak hava genleşip hafifler, yükselir ve alçak basınç oluşur; bulut ve yağış görülür. Soğuk hava yoğun ve ağırdır, alçalır ve yüksek basınç oluşur; hava açık olur. Rüzgâr yüksek basınçtan alçak basınca doğru eser. Sıcaklık ile basınç sıralaması birbirinin tersidir: en sıcak bölge en alçak basınca sahiptir. Gündüz kara, denize göre daha çabuk ısınır; hava karada yükselir, denizden karaya deniz meltemi eser. Gece ve akşam kara çabuk soğur; karadan denize kara meltemi eser. Rüzgârın adı geldiği yerden alınır: denizden gelen deniz meltemi, karadan gelen kara meltemidir."
+  },
+  {
+   "baslik": "Sera etkisi",
+   "metin": "Sera gazları (karbondioksit, metan, su buharı) yeryüzünden yansıyan ısının bir kısmını tutar. CO₂ arttıkça tutulan ısı ve sıcaklık artar. Fosil yakıtlar, orman yangınları ve ormansızlaşma CO₂'yi artırır. Ağaçlandırma, yenilenebilir enerji ve enerji tasarrufu ise CO₂'yi azaltmaya yardım eder."
+  }
+ ],
+ "tuyolar": [
+  "Işın dik gelince gölge kısalır ve enerji artar; Kuzey Yarım Küre'de 'en uzun gündüz' ile 'en uzun gölge' aynı gün olmaz.",
+  "Güney Yarım Küre'de her şey Kuzey'in tersidir; önce yarım küreyi bul, sonra tarihe bak.",
+  "Gece ile gündüz eşitliği yılda iki kez (21 Mart, 23 Eylül) olur; bu bilgiyle tarih kesin bulunamaz.",
+  "'En az / en çok enerji' yalnızca 21 Aralık ve 21 Haziran için geçerlidir; 'en soğuk ay' (Ocak–Şubat) ile karıştırma.",
+  "'Kesinlikle / her yerinde' içeren şık tek bir karşı örnekle çürür; 'olabilir' içeren şık tek bir örnekle doğrulanır.",
+  "Hava olayı mı iklim mi? Tek soru sor: bu cümle bir kez mi oluyor, her yıl mı tekrarlanıyor?",
+  "Rüzgârgülünde en uzun kol, rüzgârın en sık geldiği yöndür.",
+  "Soru kökündeki 'söylenemez / değildir' gibi olumsuzlukları daire içine al ve ✗ olanı seç.",
+  "'Bilgi yok' yazdığın bir şık doğru olamaz.",
+  "'Kısalmaya başlar' ile '12 saatten kısa olmaya başlar' aynı tarih değildir."
+ ],
+ "hatalar": [
+  {
+   "kod": "FEN-MI-1",
+   "altKonu": "Hava olayları (çiy, kırağı, sis, kar)",
+   "soru": "Seracılıkta önlenmeye çalışılan, su buharının doğrudan katılaşmasıyla oluşan hava olayı hangisidir?",
+   "hata": "Kırağı yerine kar'ı seçti. İkisi de buz kristali, ama kar bulutta oluşup düşer; kırağı yeryüzündeki soğuk yüzeylerde oluşur.",
+   "dogruYol": "'Nerede oluşuyor?' diye sor. Yüzeyde ve 0 °C altında katı oluşuyorsa kırağıdır. Metindeki 'soğuk yüzeylerle temas' ifadesi ayırt edicidir."
+  },
+  {
+   "kod": "FEN-MI-2",
+   "altKonu": "Basınç ve rüzgâr",
+   "soru": "P (açık hava, alçalıcı hareket, yüksek basınç) ve R (bulutlu, yükselici hareket, alçak basınç) bölgeleri hakkında hangisi doğrudur?",
+   "hata": "D şıkkındaki ifadenin P için yanlış olduğunu fark etmedi; bölge harfini gözden kaçırmış ya da 'güneşli hava ısınır, yükselir' düşüncesi metindeki alçalıcı bilgisinin önüne geçmiş olabilir.",
+   "dogruYol": "Her şıkta önce hangi bölgeden söz edildiğini bul, sonra o bölgenin basıncını ve hava hareketini karşılaştır. Yüksek basınç alçalıcı ve açık havadır; alçak basınç yükselici ve bulutludur."
+  },
+  {
+   "kod": "FEN-MI-3",
+   "altKonu": "Basınç ve rüzgâr",
+   "soru": "Aynı yükseklikteki K, L, M bölgelerinin basınç grafiğine göre I (sıcaklık L > M > K), II (rüzgâr M'den K'ya) ve III (yağış en fazla K'de) ifadelerinden hangileri doğrudur?",
+   "hata": "Sıcaklık ile basıncı aynı yönde düşündü ('basınç yüksekse sıcaklık da yüksek'); bu yüzden I'i doğru saydı.",
+   "dogruYol": "Sıcaklık ve basınç sıralaması birbirinin tersidir. Sıcak hava genleşip yükselir ve alçak basınç oluşturur; soğuk hava yoğun olduğu için yüksek basınç oluşturur. Grafikte en uzun basınç sütunu en soğuk bölgedir."
+  },
+  {
+   "kod": "FEN-MI-7",
+   "altKonu": "Meltem",
+   "soru": "Deniz ve kıyı sıcaklık tablosuna göre meltemle ilgili hangisi doğrudur?",
+   "hata": "Okları doğru bulmasına rağmen rüzgârın adını karıştırdı ya da okları çizip şıkları adına göre karşılaştırmadan seçti.",
+   "dogruYol": "Rüzgâra geldiği yerin adı verilir: denizden gelen deniz meltemi, karadan gelen kara meltemidir. Soğuk taraf yüksek basınçtır ve rüzgâr oradan çıkar."
+  },
+  {
+   "kod": "FEN-MI-21",
+   "altKonu": "Basınç ve rüzgâr",
+   "soru": "Yoğunluğu K'de en fazla, L'de orta, M'de en az olan komşu üç şehir arasında oluşacak rüzgârların yönlerini çiz.",
+   "hata": "Üç ikili yerine ok zinciri (K → L → M) mantığıyla düşündü ve K → M rüzgârını atladı. M için 'ABA' yazdı; alçak basınçta hava yükseldiği için 'ABY' olmalıydı.",
+   "dogruYol": "'A, B ve C arasında' ifadesinde önce tüm ikilileri listele (AB, AC, BC) ve her ikili için bir ok çiz. Ok yüksek basınçtan alçak basınca doğru olur."
+  },
+  {
+   "kod": "FEN-MI-4",
+   "altKonu": "Rüzgârgülü",
+   "soru": "Rüzgârgülü diyagramına göre hangisi söylenemez?",
+   "hata": "Kökteki olumsuzluğu ('söylenemez') gözden kaçırdı ve doğru olan ifadeyi işaretledi. Kırmızı alanın uzandığı yönü rüzgârın gittiği yön sanmış olabilir.",
+   "dogruYol": "Soru kökündeki olumsuzluğu daire içine al, her şıkka ✓ / ✗ koy ve ✗ olanı seç. Rüzgârgülünde en uzun kol rüzgârın en sık geldiği yöndür."
+  },
+  {
+   "kod": "FEN-MI-5",
+   "altKonu": "Dik ve eğik ışın",
+   "soru": "Eşit ışınların aydınlattığı X (Kuzey) ve Y (Güney) alanlarında (Y > X) kesinlikle doğru olan ifadeler hangileridir?",
+   "hata": "III'ü ('Kuzey'de daha büyük alan aydınlanır') reddetti; 'Y büyük' ifadesini aydınlanan alan olarak yorumladı. Oysa alanın büyüklüğü ışının eğikliğini gösterir, aydınlanan alanı değil.",
+   "dogruYol": "Işınların düştüğü alan büyükse ışın eğiktir ve birim alana düşen enerji azdır. Aydınlanan alan ve gündüz süresi tarihe bağlıdır: 21 Haziran'da Kuzey'de gündüz uzun, aydınlanan alan büyüktür."
+  },
+  {
+   "kod": "FEN-MI-6",
+   "altKonu": "Günizi",
+   "soru": "Günizi fotoğrafına bakan bir öğrencinin yorumlarından hangisi yanlıştır?",
+   "hata": "B şıkkını yanlış saydı: L'den M'ye giderken sonbahar yaşanmasını çelişki sandı. 'En soğuk ay' ile 'en az enerji' tarihini karıştırdığı için C'yi de doğru saymış olabilir.",
+   "dogruYol": "Günizinde önce iki ucu bul: 21 Haziran (en çok enerji) ve 21 Aralık (en az enerji). 'En az / en çok enerji' yalnızca bu iki güne aittir; en soğuk günler sıcaklık gecikmesi yüzünden Ocak–Şubat'a denk gelir."
+  },
+  {
+   "kod": "FEN-MI-8",
+   "altKonu": "Gölge ve gündüz süresi",
+   "soru": "21 Aralık ve 21 Haziran için I (21 Aralık'ta Güney'in her yerinde gölge sıfır), II (21 Haziran'da Kuzey'de gölge en uzun) ve III (21 Aralık'tan sonra Kuzey'de gece kısalır) ifadelerinden hangileri doğrudur?",
+   "hata": "'En uzun gündüz' (21 Haziran, Kuzey) ile 'en uzun gölge'yi karıştırdı. 21 Haziran'da Kuzey'de her şeyin 'en uzun' olduğunu sandı.",
+   "dogruYol": "21 Haziran (Kuzey): ışın en dik, gölge en kısa, gündüz en uzun, enerji en çok. 21 Aralık (Kuzey): ışın en eğik, gölge en uzun, gece en uzun, enerji en az. Gölge, ışının diklik derecesinin tersidir."
+  },
+  {
+   "kod": "FEN-MI-9",
+   "altKonu": "Yarım küre ve tarihler",
+   "soru": "Kuzey Yarım Küre'den Güney Yarım Küre'ye giden bir gezginin valizi için I, II ve III öncüllerinden hangileri doğrudur?",
+   "hata": "Üç öncüle de doğru işareti koymasına rağmen şıkta 'I ve II'yi seçti; öncül–şık eşleştirmesinde hata yaptı. Gidilen yerin kış olduğu öncülünü karıştırmış olabilir.",
+   "dogruYol": "✓ koyduğun öncülleri yan yana yaz (I ✓ II ✓ III ✓) ve şıkla kelimesi kelimesine karşılaştır. Kışlık eşya gidilen yerin mevsimini söyler."
+  },
+  {
+   "kod": "FEN-MI-11",
+   "altKonu": "Yarım küre ve tarihler",
+   "soru": "Öğle vakti Güneş'in K, L, M konumlarına göre kesinlikle tespit edilemeyen durum hangisidir?",
+   "hata": "Yarım küreyi (D şıkkı) tespit edilemez sandı; oysa gölge yönünden Güney Yarım Küre belirlenir. L'yi tek bir tarih sandı ve gece = gündüz'ün yılda iki kez olduğunu hesaba katmadı.",
+   "dogruYol": "'Tarih bulunabilir mi?' sorusunda olayın yılda kaç kez olduğuna bak: en uzun gündüz / gece bir kez olur (tarih kesin); gece = gündüz iki kez olur (tarih kesin değil). Şekle ok çizerek gölgenin yönünden yarım küreyi bul."
+  },
+  {
+   "kod": "FEN-MI-12",
+   "altKonu": "Yarım küre ve tarihler",
+   "soru": "A ve B şehirlerinin aylık ortalama sıcaklık grafiğine göre Dünya üzerindeki konumları hangisindeki gibi olabilir?",
+   "hata": "Grafikten A'nın Kuzey Yarım Küre'de olduğunu doğru buldu, ama bu bilgiyi Dünya çiziminde Ekvator'a göre konumlandıramadı.",
+   "dogruYol": "Önce grafikten karar ver (Temmuz tepesi = Kuzey, Ocak tepesi = Güney). Sonra her seçenekte Ekvator çizgisini kalınlaştır, noktaları K / G diye etiketle ve kararınla uymayanı ele."
+  },
+  {
+   "kod": "FEN-MI-16",
+   "altKonu": "Yarım küre ve tarihler",
+   "soru": "I (Kuzey'de gündüz 12 saatten kısa olmaya başlar), II (Güney'de en uzun gece) ve III (Güney'de gece = gündüz) cümlelerinde anlatılan tarihler hangisinde doğru verilmiştir?",
+   "hata": "'Kısalmaya başlar' (21 Haziran) ile '12 saatten kısa olmaya başlar' (23 Eylül) farkını yakalayamadı; daire içine aldığı koşulu cevabına uygulamadı.",
+   "dogruYol": "'Kısalmaya başlar' ≠ '12 saatten kısa olur'. Kuzey'de 21 Mart–23 Eylül arası gündüz 12 saatten uzundur, 23 Eylül–21 Mart arası kısadır. Daire içine aldığın koşulu cevabına geri koy."
+  },
+  {
+   "kod": "FEN-MI-17",
+   "altKonu": "Yarım küre ve tarihler",
+   "soru": "21 Mart ve 23 Eylül'de hangisi gerçekleşmez?",
+   "hata": "'Bahar' kelimesinin yalnızca ilkbahar anlamına geldiğini düşündü (sonbahar da bahar sayılır). Kutuplarda ekinoks günündeki durumu da eksik biliyordu.",
+   "dogruYol": "Ekinoks kartı: ışın Ekvator'a dik; kutuplar hariç her yerde gece = gündüz; kutuplarda Güneş ufukta döner; Kuzey'de ilkbahar, Güney'de sonbahar başlar. 'Bahar' = ilkbahar ve sonbahar (geçiş mevsimleri)."
+  },
+  {
+   "kod": "FEN-MI-19",
+   "altKonu": "Dik ve eğik ışın",
+   "soru": "El feneri deneyinde Düzenek I (eğik ışın) ve Düzenek II (dik ışın) için hangi yer–tarih eşleşmesi olabilir?",
+   "hata": "'Olabilir' şıkkında tek bir örnek yettiğini görmedi; B'yi 'Kuzey'in her yerine dik gelmez' diye eledi. A'da 21 Aralık = eğik kuralını Güney'deki Oğlak Dönencesi'ne uyguladı; oysa o gün orada ışın diktir.",
+   "dogruYol": "'Olabilir' şıkkında TEK bir örnek ara; 'her zaman / kesinlikle' şıkkında TEK bir karşı örnek ara. 21 Aralık'ta kış yalnızca Kuzey için geçerlidir; Oğlak Dönencesi'nde o gün ışın diktir."
+  },
+  {
+   "kod": "FEN-MI-10",
+   "altKonu": "Hava durumu ve iklim",
+   "soru": "Kart etkinliğinde ön yüzü ve arka yüzü verilen kartlardan hangisinde bilgi hatalıdır?",
+   "hata": "Meteoroloji ile klimatolojiyi karıştırdı: Ardahan kartındaki klimatolog eşleşmesi doğruyken yanlış sandı; İzmir kartındaki 'ortalama' ifadesinin iklim olduğunu ve bilim dalının klimatoloji olması gerektiğini görmedi.",
+   "dogruYol": "Hava durumu: kısa süre, dar alan, tahmin → meteoroloji / meteorolog. İklim: uzun yıllar ortalaması, geniş alan → klimatoloji / klimatolog. Hafıza: KLİMA → KLİMatoloji → iKLİM."
+  },
+  {
+   "kod": "FEN-MI-13",
+   "altKonu": "Hava durumu ve iklim",
+   "soru": "I, III ve IV iklim, II hava olayı olarak gruplandırılan ifadelerin hangisi için doğru eşleşme verilmiştir?",
+   "hata": "İklim ile hava olayını karıştırdı; 'beklenen' kelimesini genel bir durum sandı ya da III'ün hangi sütunda olduğunu kontrol etmeden ifadeye odaklandı.",
+   "dogruYol": "İki adım uygula: (1) numaranın sütununu şıkkın yanına yaz (III → İ); (2) ifadeyi kendin sınıflandır. Tek olay, 'oldu', 'bekleniyor' → hava olayı (H); 'geçer', 'genellikle', 'ortalama' → iklim (İ). İki harf aynıysa şık doğrudur."
+  },
+  {
+   "kod": "FEN-MI-14",
+   "altKonu": "Hava durumu ve iklim",
+   "soru": "Tabloya eklenecek 8. örnekle iklim ve hava olayı örnek sayıları nasıl eşitlenir?",
+   "hata": "İklim ile hava olayını kelimeye göre ayırdı: 'kar' geçtiği için A'yı hava olayı saydı. Süreye bakmadığı için 2 ve 6 numaralı satırları da yanlış sınıflandırdı.",
+   "dogruYol": "Tek soru sor: BİR KEZ mi, HER YIL mı? Bir kez (bugün, bu yıl, bir haftadır) → hava olayı; her yıl, genellikle, yıl boyunca → iklim. Karar kelimeye değil süreye göre verilir."
+  },
+  {
+   "kod": "FEN-MI-20",
+   "altKonu": "Hava durumu ve iklim",
+   "soru": "Verilen ifadeleri iklim ya da hava olayı olarak sınıflandır (ç maddesi: 'Atmosferde meydana gelen olaylardır').",
+   "hata": "On maddenin dokuzunu doğru sınıflandırdı; ç maddesini ('Atmosferde meydana gelen olaylardır') iklim sandı. 'Atmosfer' kelimesini geniş, genel bir kavram gibi yorumladı.",
+   "dogruYol": "'Atmosferde meydana gelen olaylar' hava olayının tanımıdır. İklim ise bu olayların uzun yıllık ortalamasıdır ve 'ortalama, uzun yıllar, geniş alan' gibi ifadelerle anlatılır."
+  },
+  {
+   "kod": "FEN-MI-18",
+   "altKonu": "Sera etkisi",
+   "soru": "CO₂ eklenen K erlenmayerinin daha sıcak çıktığı deneyin yorumlarından hangisi doğrudur?",
+   "hata": "B'yi doğru gerekçeyle buldu, ama D şıkkında 'bilgi yok' diye kararsız kalıp 'ışınların daha az soğrulması' ifadesini seçti. CO₂'nin ısıyı tutup soğurmayı artırdığını hatırlaması gerekirdi.",
+   "dogruYol": "'Bilgi yok' yazdığın şık doğru olamaz. Sera gazları yeryüzünden yansıyan ısıyı tutar; CO₂ arttıkça ısı tutulur ve sıcaklık yükselir. CO₂ kaynakları: fosil yakıtlar, orman yangınları ve ormansızlaşma."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "fen-mev-001",
+   "altKonu": "Hava olayları (çiy, kırağı, sis, kar)",
+   "kaynakKod": "FEN-MI-1",
+   "tur": "benzer",
+   "metin": "Sonbaharda, sıcaklığın 0 °C'nin üzerinde olduğu bir sabah bitki yapraklarında su damlacıkları görülüyor. Bu hava olayı hangisidir?",
+   "secenekler": [
+    "Kırağı",
+    "Çiy",
+    "Sis",
+    "Dolu"
+   ],
+   "dogru": "B",
+   "cozum": "Sıcaklık 0 °C üzerinde olduğu için su buharı sıvılaşır ve yüzeyde damlacık oluşturur: çiy. Kırağı 0 °C altında katı olarak oluşur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-002",
+   "altKonu": "Hava olayları (çiy, kırağı, sis, kar)",
+   "kaynakKod": "FEN-MI-1",
+   "tur": "benzer",
+   "metin": "Kırağıyı kardan ayıran özellik hangisidir?",
+   "secenekler": [
+    "Su buharının katılaşmasıyla oluşması",
+    "Sıfırın altındaki sıcaklıklarda oluşması",
+    "Yeryüzündeki soğuk yüzeyler üzerinde oluşması",
+    "Buz kristalleri hâlinde olması"
+   ],
+   "dogru": "C",
+   "cozum": "Kar bulutta oluşup yağış olarak düşer; kırağı yeryüzündeki soğuk yüzeylerde oluşur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-003",
+   "altKonu": "Hava olayları (çiy, kırağı, sis, kar)",
+   "kaynakKod": "FEN-MI-1",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi gökyüzünden düşen bir yağış türü DEĞİLDİR?",
+   "secenekler": [
+    "Yağmur",
+    "Kar",
+    "Dolu",
+    "Kırağı"
+   ],
+   "dogru": "D",
+   "cozum": "Kırağı yeryüzünde oluşur, gökten düşmez.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-004",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-2",
+   "tur": "benzer",
+   "metin": "Yüksek basınç alanı için aşağıdakilerden hangisi yanlıştır?",
+   "secenekler": [
+    "Hava alçalıcı hareket yapar.",
+    "Hava genellikle açıktır.",
+    "Bulut oluşumu kolaydır.",
+    "Rüzgâr buradan çevreye doğru eser."
+   ],
+   "dogru": "C",
+   "cozum": "Yüksek basınçta hava alçalır ve açık hava görülür; bulutlanma yükselici hava olan alçak basınçta olur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-005",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-2",
+   "tur": "benzer",
+   "metin": "K bölgesinde yüksek basınç, L bölgesinde alçak basınç vardır. Bu iki bölge arasında rüzgâr hangi yönde eser?",
+   "secenekler": [
+    "K'dan L'ye",
+    "L'den K'ya",
+    "Rüzgâr oluşmaz",
+    "Önce K'dan L'ye, sonra L'den K'ya"
+   ],
+   "dogru": "A",
+   "cozum": "Rüzgâr yüksek basınçtan alçak basınca doğru eser: K'dan L'ye.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-006",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-2",
+   "tur": "benzer",
+   "metin": "Bir bölgede yükselici hava hareketi gözleniyorsa aşağıdakilerden hangisi beklenir?",
+   "secenekler": [
+    "Yüksek basınç",
+    "Açık ve güneşli hava",
+    "Bulutlanma ve yağış",
+    "Rüzgârın bu bölgeden dışarı esmesi"
+   ],
+   "dogru": "C",
+   "cozum": "Yükselici hava alçak basınç oluşturur; bulutlanma ve yağış beklenir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-007",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-3",
+   "tur": "benzer",
+   "metin": "Aynı yükseklikteki X ve Y bölgelerinde X'in basıncı Y'ninkinden yüksektir. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "X, Y'den daha sıcaktır.",
+    "Rüzgâr Y'den X'e eser.",
+    "X, Y'den daha soğuktur.",
+    "Yağış ihtimali X'te daha fazladır."
+   ],
+   "dogru": "C",
+   "cozum": "Yüksek basınç soğuk ve yoğun havayı gösterir; rüzgâr X'ten Y'ye eser ve yağış Y'de daha olasıdır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-008",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-3",
+   "tur": "benzer",
+   "metin": "Aynı yükseklikteki T, R ve S bölgelerinin sıcaklıkları arasında T > R > S ilişkisi vardır. Bu bölgelerin hava basınçları arasındaki ilişki hangisidir?",
+   "secenekler": [
+    "T > R > S",
+    "S > R > T",
+    "R > S > T",
+    "T > S > R"
+   ],
+   "dogru": "B",
+   "cozum": "Sıcaklık ve basınç sıralaması ters olduğu için en sıcak T en alçak basınca sahiptir: S > R > T.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-009",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-3",
+   "tur": "benzer",
+   "metin": "Asıl soru 3'teki grafiğe göre L en yüksek, M orta, K en düşük basınca sahiptir. Buna göre L ve K bölgeleri arasında rüzgâr hangi yönde eser ve hangi bölgede hava daha açıktır?",
+   "secenekler": [
+    "L'den K'ya – L",
+    "K'dan L'ye – K",
+    "L'den K'ya – K",
+    "K'dan L'ye – L"
+   ],
+   "dogru": "A",
+   "cozum": "Rüzgâr yüksek basınçtan (L) alçak basınca (K) eser. Yüksek basınç alanında hava alçalır ve ısınır, bulut oluşmaz; bu yüzden hava L'de açıktır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-010",
+   "altKonu": "Meltem",
+   "kaynakKod": "FEN-MI-7",
+   "tur": "benzer",
+   "metin": "Bir sahilde öğle saatinde kıyının sıcaklığı 30 °C, denizin sıcaklığı 24 °C'dir. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "Kıyıda yüksek basınç vardır.",
+    "Rüzgâr karadan denize eser.",
+    "Deniz meltemi etkilidir.",
+    "Denizin üzerindeki hava daha az yoğundur."
+   ],
+   "dogru": "C",
+   "cozum": "Kıyı sıcak olduğu için orada alçak basınç oluşur; rüzgâr denizden kıyıya eser: deniz meltemi.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-011",
+   "altKonu": "Meltem",
+   "kaynakKod": "FEN-MI-7",
+   "tur": "benzer",
+   "metin": "Kara meltemi için hangisi doğrudur?",
+   "secenekler": [
+    "Gündüz, kara denizden sıcakken oluşur.",
+    "Denizden karaya doğru eser.",
+    "Kara üzerinde alçak basınç vardır.",
+    "Kara denizden daha soğukken, karadan denize doğru eser."
+   ],
+   "dogru": "D",
+   "cozum": "Kara soğuyunca üzerinde yüksek basınç oluşur ve rüzgâr karadan denize eser.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-012",
+   "altKonu": "Meltem",
+   "kaynakKod": "FEN-MI-7",
+   "tur": "benzer",
+   "metin": "Gece saatlerinde ölçümde deniz 26 °C, kıyı 21 °C ölçülmüştür. Rüzgârın yönü ve adı hangisidir?",
+   "secenekler": [
+    "Denizden karaya – deniz meltemi",
+    "Karadan denize – kara meltemi",
+    "Karadan denize – deniz meltemi",
+    "Denizden karaya – kara meltemi"
+   ],
+   "dogru": "B",
+   "cozum": "Kıyı (kara) daha soğuk olduğu için rüzgâr karadan denize eser ve adı kara meltemidir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-013",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-21",
+   "tur": "benzer",
+   "metin": "Komşu X, Y, Z bölgelerinde basınç X > Z > Y'dir. Bu bölgeler arasında kaç farklı yönde rüzgâr oluşur ve aşağıdakilerden hangisi bunlardan biri değildir?",
+   "secenekler": [
+    "X → Y",
+    "X → Z",
+    "Z → Y",
+    "Y → Z"
+   ],
+   "dogru": "D",
+   "cozum": "Rüzgâr yüksek basınçtan alçak basınca eser: X → Y, X → Z ve Z → Y oluşur; Y → Z oluşmaz.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-014",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-21",
+   "tur": "benzer",
+   "metin": "Alçak basınç alanı için hangisi doğrudur?",
+   "secenekler": [
+    "Hava alçalır.",
+    "Hava yükselir.",
+    "Hava yoğunluğu en fazladır.",
+    "Rüzgâr buradan çevreye eser."
+   ],
+   "dogru": "B",
+   "cozum": "Alçak basınçta hava yükselir; rüzgâr çevreden buraya doğru eser.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-015",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-21",
+   "tur": "benzer",
+   "metin": "Komşu dört bölgenin her biri diğer üçüyle sınırdaştır ve basınçları farklıdır. Bu bölgeler arasında kaç rüzgâr yönü çizilir?",
+   "secenekler": [
+    "3",
+    "4",
+    "6",
+    "8"
+   ],
+   "dogru": "C",
+   "cozum": "Dört bölgenin ikili kombinasyonu 6'dır; her ikili için bir rüzgâr oku çizilir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-016",
+   "altKonu": "Rüzgârgülü",
+   "kaynakKod": "FEN-MI-4",
+   "tur": "benzer",
+   "metin": "Bir rüzgârgülünde en büyük alan kuzeydoğu yönündedir. Buna göre bu bölgede rüzgâr en sık hangi yönden eser?",
+   "secenekler": [
+    "Güneybatı",
+    "Kuzeydoğu",
+    "Güneydoğu",
+    "Kuzeybatı"
+   ],
+   "dogru": "B",
+   "cozum": "Rüzgârgülünde en geniş alan rüzgârın en sık geldiği yöndür: kuzeydoğu.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-017",
+   "altKonu": "Rüzgârgülü",
+   "kaynakKod": "FEN-MI-4",
+   "tur": "benzer",
+   "metin": "'Poyraz' kuzeydoğudan esen rüzgârdır. Poyraz estiğinde hava hangi yöne doğru hareket eder?",
+   "secenekler": [
+    "Kuzeydoğuya",
+    "Güneybatıya",
+    "Kuzeybatıya",
+    "Güneydoğuya"
+   ],
+   "dogru": "B",
+   "cozum": "Rüzgâr kuzeydoğudan geliyorsa hava güneybatıya doğru hareket eder.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-018",
+   "altKonu": "Rüzgârgülü",
+   "kaynakKod": "FEN-MI-4",
+   "tur": "benzer",
+   "metin": "Asıl soru 6'daki rüzgârgülünde en geniş kırmızı alan batı ve kuzeybatıdadır; doğu ve kuzeyde orta, güneyde küçük alanlar vardır ve tüm yönlerde kırmızı alan bulunur. Buna göre hangisi söylenebilir?",
+   "secenekler": [
+    "Rüzgâr en sık güneyden eser.",
+    "Bölgede hiç güney rüzgârı esmez.",
+    "Batıdan esen rüzgârlar güneyden esenlerden daha sıktır.",
+    "Rüzgâr yalnızca dört ana yönden eser."
+   ],
+   "dogru": "C",
+   "cozum": "Batı alanı güney alanından çok daha büyüktür; batıdan esen rüzgâr daha sıktır. Tüm yönlerde kırmızı alan olduğu için B ve D yanlıştır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-019",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-5",
+   "tur": "benzer",
+   "metin": "Eşit miktardaki güneş ışınlarının düştüğü alan genişledikçe hangisi olur?",
+   "secenekler": [
+    "Işınlar diklesir, birim alana düşen enerji artar.",
+    "Işınlar eğikleşir, birim alana düşen enerji azalır.",
+    "Işınlar eğikleşir, birim alana düşen enerji artar.",
+    "Işınlar diklesir, birim alana düşen enerji azalır."
+   ],
+   "dogru": "B",
+   "cozum": "Alan genişledikçe ışın eğikleşir ve birim alana düşen enerji azalır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-020",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-5",
+   "tur": "benzer",
+   "metin": "21 Haziran için hangisi yanlıştır?",
+   "secenekler": [
+    "Kuzey Yarım Küre'de en uzun gündüz yaşanır.",
+    "Güney Yarım Küre'de en uzun gece yaşanır.",
+    "Güneş ışınları Yengeç Dönencesi'ne dik gelir.",
+    "Güney Yarım Küre'de gündüzler gecelerden uzundur."
+   ],
+   "dogru": "D",
+   "cozum": "21 Haziran'da Güney Yarım Küre'de gece en uzundur; gündüzler kısadır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-021",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-5",
+   "tur": "benzer",
+   "metin": "21 Aralık için hangisi doğrudur?",
+   "secenekler": [
+    "Kuzey Yarım Küre'de daha büyük alan aydınlanır.",
+    "Güney Yarım Küre'de gündüzler gecelerden uzundur.",
+    "Güneş ışınları Yengeç Dönencesi'ne dik gelir.",
+    "Kuzey Yarım Küre'de yaz başlar."
+   ],
+   "dogru": "B",
+   "cozum": "21 Aralık'ta Güney'de yaz başlar ve gündüzler uzundur; ışınlar Oğlak Dönencesi'ne dik gelir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-022",
+   "altKonu": "Günizi",
+   "kaynakKod": "FEN-MI-6",
+   "tur": "benzer",
+   "metin": "Kuzey Yarım Küre'de birim yüzeye düşen güneş enerjisinin en az olduğu tarih hangisidir?",
+   "secenekler": [
+    "21 Mart",
+    "21 Haziran",
+    "21 Aralık",
+    "15 Şubat"
+   ],
+   "dogru": "C",
+   "cozum": "Kuzey'de en az enerji 21 Aralık'ta gelir; en soğuk günler bundan sonra gelse de gelen enerji en az bu gündür.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-023",
+   "altKonu": "Günizi",
+   "kaynakKod": "FEN-MI-6",
+   "tur": "benzer",
+   "metin": "Türkiye'de Ocak ayı çoğu zaman Aralık ayından daha soğuktur. Bunun nedeni hangisidir?",
+   "secenekler": [
+    "Ocak'ta güneş ışınları 21 Aralık'tan daha eğik gelir.",
+    "Yer, 21 Aralık'tan sonra da aldığından fazla ısı kaybetmeye devam eder.",
+    "Ocak'ta Dünya Güneş'ten en uzak konumdadır.",
+    "Ocak'ta gündüzler en kısadır."
+   ],
+   "dogru": "B",
+   "cozum": "Sıcaklık gecikir: en az enerji 21 Aralık'ta gelse de yer ısı kaybetmeye devam eder.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-024",
+   "altKonu": "Günizi",
+   "kaynakKod": "FEN-MI-6",
+   "tur": "benzer",
+   "metin": "Günizinde Güneş'in 21 Haziran'dan 21 Aralık'a doğru ilerlediği yolda aşağıdakilerden hangisi gözlenir (Kuzey Yarım Küre)?",
+   "secenekler": [
+    "Gündüzler giderek uzar.",
+    "Işınlar giderek dikleşir.",
+    "Birim yüzeye düşen enerji giderek azalır.",
+    "İlkbahar mevsimi yaşanır."
+   ],
+   "dogru": "C",
+   "cozum": "21 Haziran'dan 21 Aralık'a ışınlar eğikleşir, birim yüzeye düşen enerji azalır; gündüzler kısalır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-025",
+   "altKonu": "Gölge ve gündüz süresi",
+   "kaynakKod": "FEN-MI-8",
+   "tur": "benzer",
+   "metin": "Ankara'da öğle vakti bir bayrak direğinin gölgesi yıl içinde en kısa hangi tarihte olur?",
+   "secenekler": [
+    "21 Mart",
+    "21 Haziran",
+    "23 Eylül",
+    "21 Aralık"
+   ],
+   "dogru": "B",
+   "cozum": "Kuzey Yarım Küre'de 21 Haziran'da ışınlar en diktir; gölge en kısadır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-026",
+   "altKonu": "Gölge ve gündüz süresi",
+   "kaynakKod": "FEN-MI-8",
+   "tur": "benzer",
+   "metin": "21 Aralık için hangisi doğrudur?",
+   "secenekler": [
+    "Kuzey Yarım Küre'de gölge boyu en kısadır.",
+    "Güneş ışınları Yengeç Dönencesi'ne dik gelir.",
+    "Kuzey Yarım Küre'de en uzun gece yaşanır.",
+    "Güney Yarım Küre'de kış başlar."
+   ],
+   "dogru": "C",
+   "cozum": "21 Aralık, Kuzey'de en uzun gecedir; ışınlar Oğlak Dönencesi'ne dik gelir ve Güney'de yaz başlar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-027",
+   "altKonu": "Gölge ve gündüz süresi",
+   "kaynakKod": "FEN-MI-8",
+   "tur": "benzer",
+   "metin": "Öğle vakti gölge boyunun sıfır olabilmesi için hangisi gerekir?",
+   "secenekler": [
+    "Güneş ışınlarının o yere dik gelmesi",
+    "Gündüzün geceden uzun olması",
+    "O yerin Kuzey Yarım Küre'de olması",
+    "Yaz mevsiminin yaşanması"
+   ],
+   "dogru": "A",
+   "cozum": "Gölgenin sıfır olması için ışınlar yere dik gelmelidir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-028",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-9",
+   "tur": "benzer",
+   "metin": "Kuzey Yarım Küre'de yaşayan biri 15 Temmuz'da Güney Yarım Küre'ye gidecektir. Valizine ne koyması uygundur?",
+   "secenekler": [
+    "Şort ve tişört",
+    "Kalın mont ve bere",
+    "Mayo ve güneş gözlüğü",
+    "Sandalet"
+   ],
+   "dogru": "B",
+   "cozum": "15 Temmuz'da Güney Yarım Küre'de kış yaşanır; kalın kıyafet uygundur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-029",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-9",
+   "tur": "benzer",
+   "metin": "10 Ocak'ta Avustralya'dan (Güney Yarım Küre) Türkiye'ye gelen biri için hangisi yanlıştır?",
+   "secenekler": [
+    "Avustralya'da yaz yaşanmaktadır.",
+    "Türkiye'de gündüzler Avustralya'dakinden kısadır.",
+    "Türkiye'de birim yüzeye düşen enerji Avustralya'dakinden fazladır.",
+    "Türkiye'de kış yaşanmaktadır."
+   ],
+   "dogru": "C",
+   "cozum": "10 Ocak'ta Türkiye'de ışınlar eğiktir; birim yüzeye düşen enerji Avustralya'dan azdır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-031",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-11",
+   "tur": "benzer",
+   "metin": "Gece ve gündüz sürelerinin eşit olduğu tarihler hangileridir?",
+   "secenekler": [
+    "21 Haziran – 21 Aralık",
+    "21 Mart – 23 Eylül",
+    "21 Mart – 21 Haziran",
+    "23 Eylül – 21 Aralık"
+   ],
+   "dogru": "B",
+   "cozum": "Gece ile gündüz eşit süreli olur: 21 Mart ve 23 Eylül.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-032",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-11",
+   "tur": "benzer",
+   "metin": "Bir şehirde öğle vakti cisimlerin gölgesi kuzeye düşmektedir. Bu şehirde yılın en uzun gündüzü hangi tarihte yaşanır?",
+   "secenekler": [
+    "21 Mart",
+    "21 Haziran",
+    "23 Eylül",
+    "21 Aralık"
+   ],
+   "dogru": "B",
+   "cozum": "Gölge kuzeye düşüyorsa şehir Kuzey Yarım Küre'dedir; en uzun gündüz 21 Haziran'dadır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-033",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-11",
+   "tur": "benzer",
+   "metin": "Güney Yarım Küre'deki bir şehir için 21 Haziran'la ilgili hangisi doğrudur?",
+   "secenekler": [
+    "En uzun gündüz yaşanır.",
+    "Yaz mevsimi başlar.",
+    "En uzun gece yaşanır.",
+    "Gece ve gündüz eşittir."
+   ],
+   "dogru": "C",
+   "cozum": "Güney'de 21 Haziran kış başlangıcıdır ve en uzun gece bu gündür.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-034",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-12",
+   "tur": "benzer",
+   "metin": "Bir şehrin en sıcak ayı Ocak, en soğuk ayı Temmuz'dur. Bu şehir için hangisi doğrudur?",
+   "secenekler": [
+    "Kuzey Yarım Küre'dedir.",
+    "Güney Yarım Küre'dedir.",
+    "Ekvator üzerindedir.",
+    "Yengeç Dönencesi'nin kuzeyindedir."
+   ],
+   "dogru": "B",
+   "cozum": "Ocak tepesi Güney Yarım Küre'yi gösterir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-035",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-12",
+   "tur": "benzer",
+   "metin": "Ekvator üzerindeki bir şehrin aylık ortalama sıcaklık grafiği için hangisi beklenir?",
+   "secenekler": [
+    "Temmuz'da çok yüksek, Ocak'ta çok düşük",
+    "Ocak'ta çok yüksek, Temmuz'da çok düşük",
+    "Yıl boyunca yüksek ve az değişen",
+    "Yıl boyunca 0 °C'nin altında"
+   ],
+   "dogru": "C",
+   "cozum": "Ekvator'da sıcaklık yıl boyunca yüksek ve neredeyse düzdür.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-036",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-12",
+   "tur": "benzer",
+   "metin": "K şehrinde Temmuz, L şehrinde Ocak en sıcak aydır. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "K ve L aynı yarım küre üzerindedir.",
+    "K Kuzey, L Güney Yarım Küre'dedir.",
+    "K Güney, L Kuzey Yarım Küre'dedir.",
+    "İkisi de Ekvator üzerindedir."
+   ],
+   "dogru": "B",
+   "cozum": "Temmuz tepesi Kuzey, Ocak tepesi Güney Yarım Küre'dir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-037",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-16",
+   "tur": "benzer",
+   "metin": "Kuzey Yarım Küre'de gündüzlerin 12 saatten uzun olmaya başladığı tarih hangisidir?",
+   "secenekler": [
+    "21 Mart",
+    "21 Haziran",
+    "23 Eylül",
+    "21 Aralık"
+   ],
+   "dogru": "A",
+   "cozum": "21 Mart'tan sonra Kuzey'de gündüz 12 saatten uzun olur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-038",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-16",
+   "tur": "benzer",
+   "metin": "Kuzey Yarım Küre'de 21 Haziran'dan sonraki ilk gün için hangisi doğrudur?",
+   "secenekler": [
+    "Gündüz 12 saatten kısadır.",
+    "Gündüz bir önceki günden biraz kısadır ama 12 saatten uzundur.",
+    "Gece ve gündüz eşittir.",
+    "Gündüz bir önceki günden uzundur."
+   ],
+   "dogru": "B",
+   "cozum": "21 Haziran'dan sonra gündüzler kısalmaya başlar ama 23 Eylül'e kadar 12 saatten uzun kalır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-039",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-16",
+   "tur": "benzer",
+   "metin": "Güney Yarım Küre'de gündüzlerin kısalmaya başladığı tarih hangisidir?",
+   "secenekler": [
+    "21 Mart",
+    "21 Haziran",
+    "23 Eylül",
+    "21 Aralık"
+   ],
+   "dogru": "D",
+   "cozum": "Güney'de gündüzler en uzun gün olan 21 Aralık'tan sonra kısalmaya başlar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-040",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-17",
+   "tur": "benzer",
+   "metin": "Kuzey Kutbu'nda 21 Mart ile 23 Eylül arasında ne yaşanır?",
+   "secenekler": [
+    "12 saat gece, 12 saat gündüz",
+    "Sürekli gündüz",
+    "Sürekli gece",
+    "Her gün gece biraz uzar"
+   ],
+   "dogru": "B",
+   "cozum": "Kuzey Kutbu'nda bu dönemde Güneş batmaz; sürekli gündüz yaşanır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-041",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-17",
+   "tur": "benzer",
+   "metin": "21 Mart için hangisi yanlıştır?",
+   "secenekler": [
+    "Güneş ışınları Ekvator'a dik gelir.",
+    "Kuzey Yarım Küre'de ilkbahar başlar.",
+    "Güney Yarım Küre'de ilkbahar başlar.",
+    "Kutuplar hariç her yerde gece ve gündüz eşittir."
+   ],
+   "dogru": "C",
+   "cozum": "21 Mart'ta Güney Yarım Küre'de sonbahar başlar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-042",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-17",
+   "tur": "benzer",
+   "metin": "23 Eylül'de Güney Yarım Küre'de hangi mevsim başlar?",
+   "secenekler": [
+    "Yaz",
+    "Kış",
+    "İlkbahar",
+    "Sonbahar"
+   ],
+   "dogru": "C",
+   "cozum": "23 Eylül'de Kuzey'de sonbahar, Güney'de ilkbahar başlar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-043",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-19",
+   "tur": "benzer",
+   "metin": "21 Aralık'ta güneş ışınları hangi çizgiye dik gelir?",
+   "secenekler": [
+    "Ekvator",
+    "Yengeç Dönencesi",
+    "Oğlak Dönencesi",
+    "Kuzey Kutup Dairesi"
+   ],
+   "dogru": "C",
+   "cozum": "21 Aralık'ta ışın Oğlak Dönencesi'ne diktir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-044",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-19",
+   "tur": "benzer",
+   "metin": "Asıl soru 15'te Düzenek I, fener 15 cm yükseklikten eğik; Düzenek II dik tutulmuştur. Buna göre Düzenek I hangisini temsil edebilir?",
+   "secenekler": [
+    "21 Haziran'da Yengeç Dönencesi'ndeki bir şehir",
+    "21 Mart'ta Ekvator'daki bir şehir",
+    "21 Aralık'ta Kuzey Yarım Küre'deki Ankara",
+    "21 Aralık'ta Oğlak Dönencesi'ndeki bir şehir"
+   ],
+   "dogru": "C",
+   "cozum": "Eğik ışın Kuzey'de 21 Aralık'ta görülür; Oğlak Dönencesi'nde 21 Aralık'ta ışın diktir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-045",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-19",
+   "tur": "benzer",
+   "metin": "'Güney Yarım Küre'deki bir şehirde 21 Aralık'ta ışınlar dik gelebilir.' ifadesi için hangisi doğrudur?",
+   "secenekler": [
+    "Yanlıştır; 21 Aralık kıştır.",
+    "Doğrudur; Oğlak Dönencesi'ndeki bir şehir örnektir.",
+    "Yanlıştır; ışınlar yalnızca Ekvator'a dik gelir.",
+    "Doğrudur; Güney Yarım Küre'nin her yerine dik gelir."
+   ],
+   "dogru": "B",
+   "cozum": "'Olabilir' ifadesinde bir örnek yeter: Oğlak Dönencesi'ndeki bir şehir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-046",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-10",
+   "tur": "benzer",
+   "metin": "'Antalya'da yazlar sıcak ve kurak geçer.' ifadesiyle ilgilenen bilim dalı ve uzmanı hangisidir?",
+   "secenekler": [
+    "Meteoroloji – meteorolog",
+    "Klimatoloji – klimatolog",
+    "Meteoroloji – klimatolog",
+    "Klimatoloji – meteorolog"
+   ],
+   "dogru": "B",
+   "cozum": "Yazların genellikle sıcak ve kurak geçmesi bir iklim bilgisidir; bilim dalı klimatoloji, uzmanı klimatologdur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-047",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-10",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi hava durumuna örnektir?",
+   "secenekler": [
+    "Karadeniz'de her mevsim yağış görülür.",
+    "Erzurum'da kışlar uzun ve soğuktur.",
+    "Yarın İzmir'de sağanak yağış bekleniyor.",
+    "Akdeniz ikliminde yazlar kuraktır."
+   ],
+   "dogru": "C",
+   "cozum": "'Yarın ... bekleniyor' tek bir olayı anlatır; bu hava durumudur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-048",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-10",
+   "tur": "benzer",
+   "metin": "İklim için hangisi yanlıştır?",
+   "secenekler": [
+    "Uzun yıllar boyunca yapılan gözlemlerin ortalamasıdır.",
+    "Geniş bir alanı kapsar.",
+    "Meteorologlar tarafından incelenir.",
+    "Kısa sürede değişmez."
+   ],
+   "dogru": "C",
+   "cozum": "İklimi klimatologlar inceler; meteorologlar hava durumunu inceler.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-049",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-13",
+   "tur": "benzer",
+   "metin": "'Dün akşam İzmir'de dolu yağdı.' ifadesi için hangisi doğrudur?",
+   "secenekler": [
+    "İklimle ilgilidir, klimatoloji inceler.",
+    "Hava olayıdır, meteoroloji inceler.",
+    "İklimle ilgilidir, meteoroloji inceler.",
+    "Hava olayıdır, klimatoloji inceler."
+   ],
+   "dogru": "B",
+   "cozum": "'Dün akşam' tek bir olaydır; hava olayıdır ve meteoroloji inceler.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-050",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-13",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi iklime örnektir?",
+   "secenekler": [
+    "Yarın Trabzon'da sağanak bekleniyor.",
+    "Bu sabah Ankara'da sis vardı.",
+    "Karadeniz Bölgesi'nde her mevsim yağış görülür.",
+    "Hafta sonu İstanbul'da rüzgâr hızı artacak."
+   ],
+   "dogru": "C",
+   "cozum": "'Her mevsim görülür' tekrar eden genel bir durumdur; iklimdir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-051",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-13",
+   "tur": "benzer",
+   "metin": "Bir tabloda I iklim, II hava olayı olarak gruplandırılmıştır. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "I: 'Bugün hava parçalı bulutlu.'",
+    "II: 'Doğu Anadolu'da kışlar uzun sürer.'",
+    "I: 'Ege'de kışlar ılık ve yağışlı geçer.'",
+    "II: 'Akdeniz'de yazlar kuraktır.'"
+   ],
+   "dogru": "C",
+   "cozum": "'Ege'de kışlar ılık ve yağışlı geçer' genel bir durumdur; I (iklim) grubuna uyar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-052",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-14",
+   "tur": "benzer",
+   "metin": "Hangisi iklime örnektir?",
+   "secenekler": [
+    "Geçen kış Erzurum'da kar bir hafta yağdı.",
+    "Erzurum'da kar örtüsü her yıl kışın uzun süre yerde kalır.",
+    "Yarın Erzurum'da kar bekleniyor.",
+    "Bu sabah Erzurum'da yollar buzlandı."
+   ],
+   "dogru": "B",
+   "cozum": "'Her yıl' tekrar eden genel bir durumdur; iklimdir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-053",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-14",
+   "tur": "benzer",
+   "metin": "'Bu yıl Ankara'da Mart ayı çok yağışlı geçti.' ifadesi için hangisi doğrudur?",
+   "secenekler": [
+    "Tek bir döneme ait olduğu için hava olayıdır.",
+    "Bir ay sürdüğü için iklimdir.",
+    "Yağış içerdiği için iklimdir.",
+    "Ankara'da geçtiği için iklimdir."
+   ],
+   "dogru": "A",
+   "cozum": "Bu yıla ait tek bir döneme ait olduğu için hava olayıdır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-054",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-14",
+   "tur": "benzer",
+   "metin": "Bir listede 3 hava olayı, 2 iklim örneği vardır. Hangi ifade eklenirse iki türün örnek sayısı eşitlenir?",
+   "secenekler": [
+    "Yarın Rize'de sis bekleniyor.",
+    "Akdeniz'de kışlar ılık ve yağışlı geçer.",
+    "Dün İstanbul'da fırtına çıktı.",
+    "Bugün Konya'da hava açık."
+   ],
+   "dogru": "B",
+   "cozum": "İklim örneği eklenmelidir; 'Akdeniz'de kışlar ılık ve yağışlı geçer' genel bir durumdur ve sayıyı 3–3 yapar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-055",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-20",
+   "tur": "benzer",
+   "metin": "'Atmosferde meydana gelen yağmur, kar, rüzgâr gibi olaylar' hangi kavramın tanımıdır?",
+   "secenekler": [
+    "İklim",
+    "Hava olayı",
+    "Klimatoloji",
+    "Mevsim"
+   ],
+   "dogru": "B",
+   "cozum": "Atmosferde meydana gelen olaylar hava olayının tanımıdır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-056",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-20",
+   "tur": "benzer",
+   "metin": "Hangisi iklim tanımında yer ALMAZ?",
+   "secenekler": [
+    "Uzun yıllar",
+    "Geniş alan",
+    "Ortalama",
+    "Kısa süre"
+   ],
+   "dogru": "D",
+   "cozum": "İklim uzun süreye ve ortalamaya dayanır; kısa süre hava olayına aittir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-057",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-20",
+   "tur": "benzer",
+   "metin": "Meteorologların incelediği konu hangisidir?",
+   "secenekler": [
+    "35–40 yıllık sıcaklık ortalamaları",
+    "Yarınki rüzgâr hızı",
+    "Bölgelerin iklim tipleri",
+    "İklim değişikliğinin uzun dönem etkileri"
+   ],
+   "dogru": "B",
+   "cozum": "Yarınki rüzgâr hızı kısa vadeli hava durumudur; meteoroloji konusudur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-058",
+   "altKonu": "Sera etkisi",
+   "kaynakKod": "FEN-MI-18",
+   "tur": "benzer",
+   "metin": "Hangisi atmosferdeki CO₂ miktarını artırmaz?",
+   "secenekler": [
+    "Kömür yakılması",
+    "Orman yangınları",
+    "Ağaçlandırma",
+    "Petrol kullanımı"
+   ],
+   "dogru": "C",
+   "cozum": "Ağaçlandırma CO₂'yi azaltır; diğerleri CO₂'yi artırır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-059",
+   "altKonu": "Sera etkisi",
+   "kaynakKod": "FEN-MI-18",
+   "tur": "benzer",
+   "metin": "Sera gazları için hangisi doğrudur?",
+   "secenekler": [
+    "Güneş ışınlarının yeryüzüne ulaşmasını engeller.",
+    "Yeryüzünden yansıyan ısının bir kısmını tutar.",
+    "Atmosferi soğutur.",
+    "Yalnızca CO₂'den oluşur."
+   ],
+   "dogru": "B",
+   "cozum": "Sera gazları yeryüzünden yansıyan ısının bir kısmını tutar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-060",
+   "altKonu": "Sera etkisi",
+   "kaynakKod": "FEN-MI-18",
+   "tur": "benzer",
+   "metin": "Asıl soru 20'deki deneyde CO₂ eklenmeyen L erlenmayerinin (yalnız termometre) görevi nedir?",
+   "secenekler": [
+    "CO₂ kaynağıdır.",
+    "Karşılaştırma (kontrol) düzeneğidir.",
+    "Işık kaynağıdır.",
+    "Sera etkisini artırır."
+   ],
+   "dogru": "B",
+   "cozum": "CO₂ eklenmeyen düzenek kontrol düzeneğidir; K ile karşılaştırma yapılmasını sağlar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-061",
+   "altKonu": "Gölge ve gündüz süresi",
+   "kaynakKod": "FEN-MI-8",
+   "tur": "alistirma",
+   "metin": "Türkiye'deki bir şehirde bir bayrak direğinin öğle gölgesi 21 Mart, 21 Haziran ve 21 Aralık'ta ölçülüyor. Gölge boylarının uzundan kısaya sıralaması hangisidir?",
+   "secenekler": [
+    "21 Aralık > 21 Mart > 21 Haziran",
+    "21 Haziran > 21 Mart > 21 Aralık",
+    "21 Mart > 21 Haziran > 21 Aralık",
+    "Üçü eşittir."
+   ],
+   "dogru": "A",
+   "cozum": "Türkiye'de 21 Aralık'ta gölge en uzun, 21 Haziran'da en kısadır; 21 Mart ikisinin arasındadır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-062",
+   "altKonu": "Hava durumu ve iklim",
+   "kaynakKod": "FEN-MI-13",
+   "tur": "alistirma",
+   "metin": "Aşağıdaki ifadelerden hangisi iklimle ilgilidir?",
+   "secenekler": [
+    "Bugün Van'da kar yağışı bekleniyor.",
+    "Van'da kışlar uzun ve karlı geçer.",
+    "Dün Van'da yollar buz tuttu.",
+    "Bu yılın ocak ayı Van'da az karlı geçti."
+   ],
+   "dogru": "B",
+   "cozum": "'Her kış' tekrar eden genel bir durumdur; iklimdir.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-063",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-9",
+   "tur": "alistirma",
+   "metin": "Bir şehrin aylık ortalama sıcaklığı ocak ayında 26 °C, temmuz ayında 12 °C'dir. Bu şehir için hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    "Şehir Kuzey Yarım Küre'dedir.",
+    "21 Haziran'da şehirde en uzun gündüz yaşanır.",
+    "21 Aralık'ta şehirde yaz mevsimi başlar.",
+    "Şehir Ekvator üzerindedir."
+   ],
+   "dogru": "C",
+   "cozum": "Ocak en sıcak olduğu için şehir Güney Yarım Küre'dedir; 21 Aralık'ta orada yaz başlar.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-064",
+   "altKonu": "Basınç ve rüzgâr",
+   "kaynakKod": "FEN-MI-3",
+   "tur": "alistirma",
+   "metin": "Aynı yükseklikteki K, L ve M bölgelerinde hava basıncı K > M > L şeklindedir. Buna göre hangisi yanlıştır?",
+   "secenekler": [
+    "En sıcak bölge L'dir.",
+    "Rüzgâr K'den L'ye doğru eser.",
+    "Yağış ihtimali en fazla L'dedir.",
+    "M bölgesi K bölgesinden daha soğuktur."
+   ],
+   "dogru": "D",
+   "cozum": "Basınç sıralaması sıcaklığın tersidir; M, K'dan düşük basınçlı, yani daha sıcaktır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-065",
+   "altKonu": "Meltem",
+   "kaynakKod": "FEN-MI-7",
+   "tur": "alistirma",
+   "metin": "Bir sahilde akşam yapılan ölçümde kara 18 °C, deniz 23 °C ölçülmüştür. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "Rüzgâr karadan denize eser, adı kara meltemidir.",
+    "Deniz meltemi eser.",
+    "Kara üzerinde alçak basınç vardır.",
+    "Deniz üzerindeki hava karadakinden daha yoğundur."
+   ],
+   "dogru": "A",
+   "cozum": "Kara soğuk olduğu için üzerinde yüksek basınç oluşur ve rüzgâr karadan denize eser: kara meltemi.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-066",
+   "altKonu": "Yarım küre ve tarihler",
+   "kaynakKod": "FEN-MI-17",
+   "tur": "alistirma",
+   "metin": "21 Mart ve 23 Eylül tarihleri için hangisi yanlıştır?",
+   "secenekler": [
+    "Güneş ışınları Ekvator'a dik gelir.",
+    "Kutuplar hariç her yerde gece ve gündüz eşittir.",
+    "Aydınlanma çemberi iki kutup noktasından geçer.",
+    "İki yarım kürede de aynı mevsim başlar."
+   ],
+   "dogru": "D",
+   "cozum": "21 Mart'ta Kuzey'de ilkbahar, Güney'de sonbahar başlar; iki yarım kürede mevsimler farklıdır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-067",
+   "altKonu": "Sera etkisi",
+   "kaynakKod": "FEN-MI-18",
+   "tur": "alistirma",
+   "metin": "Aşağıdakilerden hangisi atmosferdeki karbondioksit miktarını azaltmaya yardımcı olur?",
+   "secenekler": [
+    "Kömürle ısınma",
+    "Orman yangınları",
+    "Ağaçlandırma çalışmaları",
+    "Özel araç kullanımının artması"
+   ],
+   "dogru": "C",
+   "cozum": "Ağaçlar CO₂ tutar; ağaçlandırma CO₂ miktarını azaltmaya yardımcı olur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-068",
+   "altKonu": "Dik ve eğik ışın",
+   "kaynakKod": "FEN-MI-19",
+   "tur": "alistirma",
+   "metin": "21 Haziran'da güneş ışınlarının dik geldiği bir şehirle ilgili hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    "Şehir Güney Yarım Küre'dedir.",
+    "Şehir Yengeç Dönencesi üzerindedir.",
+    "Şehirde o gün gece ve gündüz eşittir.",
+    "Şehirde o gün kış mevsimi başlar."
+   ],
+   "dogru": "B",
+   "cozum": "21 Haziran'da ışın dik olarak yalnızca Yengeç Dönencesi'ne düşer; diğer şıklar bu tarih için yanlıştır.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-069",
+   "altKonu": "Günizi",
+   "kaynakKod": "FEN-MI-6",
+   "tur": "alistirma",
+   "metin": "Türkiye'de bir yıl boyunca her gün öğle saatinde çekilen Güneş fotoğraflarında Güneş en yüksekte hangi tarihte görünür?",
+   "secenekler": [
+    "21 Mart",
+    "23 Eylül",
+    "21 Aralık",
+    "21 Haziran"
+   ],
+   "dogru": "D",
+   "cozum": "Türkiye Kuzey Yarım Küre'dedir; öğle Güneş'i en yüksek 21 Haziran'da olur.",
+   "emin": true
+  },
+  {
+   "id": "fen-mev-070",
+   "altKonu": "Rüzgârgülü",
+   "kaynakKod": "FEN-MI-4",
+   "tur": "alistirma",
+   "metin": "Bir bölgeye ait rüzgârgülünde en uzun kol kuzeydoğu yönündedir. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "Rüzgâr en sık kuzeydoğudan eser.",
+    "Rüzgâr en sık güneybatıdan eser.",
+    "Rüzgâr en sık kuzeydoğuya doğru eser.",
+    "Bölgede hiç güney rüzgârı esmez."
+   ],
+   "dogru": "A",
+   "cozum": "En uzun kol rüzgârın en sık geldiği yöndür; 'kuzeydoğuya doğru' ifadesi yönü ters okur.",
+   "emin": true
+  }
+ ]
+}

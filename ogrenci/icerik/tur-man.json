@@ -1,0 +1,26 @@
+{
+  "id": "tur-man",
+  "ders": "Türkçe",
+  "unite": "08 - Sözel Mantık ve Muhakeme - Görsel Okuma",
+  "baslik": "Sözel Mantık",
+  "anlatim": [
+    {"baslik": "“Kesinlikle söylenebilir” soruları", "metin": "“Kesinlikle” sorulan bir soruda doğru şık her durumda doğru olmalıdır. Bunun için koşulların zorunlu kıldığı kişi ya da durumdan başla. Tek bir senaryoya bakıp karar verme."},
+    {"baslik": "Yerleşim kurma ve bozma", "metin": "Önce koşulları bozmayan bir yerleşim (tablo) kur. Tablonda doğru çıkan her şık için “Bunu bozan başka bir yerleşim kurabilir miyim?” diye dene. Bozulamayan şık cevaptır. Tablonda birden fazla şık doğru çıkıyorsa iş bitmemiştir."},
+    {"baslik": "Kişi–alan eşleştirme", "metin": "Her koşulu tek tek işle ve kullandığın koşulun üstünü çiz. Örneğin bir alanda yalnız bir kişinin olduğu bilgisi, o kişiyi o alana sabitler. Bu sabitlemeyle tabloyu adım adım kur."},
+    {"baslik": "“Olabilir” ile “kesinlikle” farkı", "metin": "“Olabilir” sorusunda tek bir örnek yeter; “kesinlikle” sorusunda ise bütün olası durumlarda doğru olmalıdır. Soruda “en, tek, ana, her zaman, yalnızca, kesinlikle” gibi büyütücü kelimeler varsa metinde gerçekten bu güçte olup olmadığını kontrol et."}
+  ],
+  "tuyolar": [
+    "“Kesinlikle söylenebilir” sorusunda tek bir yerleşime bakmak yetmez; her şık için bozma denemesi yap.",
+    "Koşulların zorunlu kıldığı kişiden başla; örneğin bir alanda yalnız biri varsa onu o alana sabitle.",
+    "“Olabilir” bir örnek yeter; “kesinlikle” her durumda doğru olmalıdır.",
+    "Kendi tablonda birden fazla şık doğru çıkıyorsa ve soru “kesinlikle” diyorsa, bozma denemesini her şık için ayrıca yap."
+  ],
+  "hatalar": [
+    {"kod": "TUR-SÖZM-1", "altKonu": "Kişi–alan eşleştirme", "soru": "Yedi kişinin beş alanda kitap toplamasına ilişkin koşullara göre hangi yargının kesinlikle söylenebileceği", "hata": "Yalnızca kendi kurduğu tek yerleşime bakarak şıkları değerlendirdi. Tablosunda A, B ve C doğru çıkmıştı; “kesinlikle” sorulduğu için bozma denemesi yapmadı. Cevabı A oldu; doğrusu C.", "dogruYol": "Önce koşulların zorunlu kıldığı kişiden başla (Can: dört alan yasak, bilim kalır). Sonra her doğru şık için onu bozacak bir yerleşim kurmayı dene; bozulamayan şık cevaptır."}
+  ],
+  "sorular": [
+    {"id": "tur-man-001", "altKonu": "Kişi–alan eşleştirme", "kaynakKod": "TUR-SÖZM-1", "tur": "benzer", "metin": "K, L, M, N dört kişidir; her biri resim, müzik ve tiyatro kulüplerinden en az birine katılacaktır. Tiyatroya yalnız K katılacaktır. L yalnızca bir kulübe katılacak ve bu kulüp müzik değildir. M, K ile aynı kulübe katılmayacaktır. Hangisi kesinlikle doğrudur?", "secenekler": ["L resim kulübüne katılacaktır.", "M müzik kulübüne katılacaktır.", "N resim kulübüne katılacaktır.", "K müzik kulübüne katılacaktır."], "dogru": "A", "cozum": "Tiyatroya yalnız K katılır, dolayısıyla L tiyatroya katılamaz. L yalnızca bir kulübe katılıyor ve bu kulüp müzik değil; L resim kulübündedir.", "emin": true},
+    {"id": "tur-man-002", "altKonu": "“Kesinlikle” ve “olabilir” ayrımı", "kaynakKod": "TUR-SÖZM-1", "tur": "benzer", "metin": "Bir sözel mantık sorusunda kurduğun tabloda A ve C şıkları doğru çıktı. Soru “kesinlikle söylenebilir” diyorsa ne yapmalısın?", "secenekler": ["İlk doğru çıkan şıkkı işaretlemeliyim.", "Her iki şık için koşulları bozmadan farklı bir yerleşim kurmayı denemeliyim.", "Soruyu boş bırakmalıyım.", "Uzun olan şıkkı seçmeliyim."], "dogru": "B", "cozum": "“Kesinlikle” sorusunda doğru şık her durumda doğru olmalıdır. Tablonda doğru çıkan şıkları bozacak bir yerleşim denenir; bozulamayan şık cevaptır.", "emin": true},
+    {"id": "tur-man-003", "altKonu": "Kişi–alan eşleştirme", "kaynakKod": "TUR-SÖZM-1", "tur": "benzer", "metin": "Asıl soruya göre: Aslı, Barış, Can, Demir, Erkan, Fırat ve Gamze bilim, sanat, edebiyat, tarih ve spor alanlarında kitap toplayacaktır. Spor alanındaki kitapları bir kişi toplayacaktır. Fırat, spor alanındaki kitapları toplayan kişi değildir. Buna göre sporu toplayan kişi aşağıdakilerden hangisi OLAMAZ?", "secenekler": ["Barış", "Erkan", "Gamze", "Fırat"], "dogru": "D", "cozum": "Sporu bir kişi toplar ve bu kişi Fırat olamaz. Barış, Erkan ve Gamze sporu toplayabilir.", "emin": true}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "mat-kk",
+ "ders": "Matematik",
+ "unite": "03 - Kareköklü İfadeler",
+ "baslik": "Kareköklü İfadeler",
+ "anlatim": [
+  {
+   "baslik": "Tam kare ve karekök",
+   "metin": "Bir tam sayının karesine tam kare denir: 0² = 0, 1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25 gibi. Bir sayının karekökü, karesi o sayıya eşit olan negatif olmayan sayıdır. Örneğin √16 = 4, çünkü 4² = 16."
+  },
+  {
+   "baslik": "Karekök ne zaman tam sayı olur?",
+   "metin": "Sayı bir tam sayının karesiyse karekökü de tam sayıdır. √8, √12 ve √50 tam sayı değildir, çünkü bu sayılar tam kare değildir. Bir sayının tam kare olup olmadığını anlamak için iki tam kare arasına (örneğin 36 ile 49 arasına) bakabilirsin."
+  },
+  {
+   "baslik": "0 ve 1 unutulmasın",
+   "metin": "√0 = 0 ve √1 = 1 tam sayıdır. Karekökü tam sayı olan sayıları sayarken 0'ı atlamak en sık yapılan hatalardan biridir. 0 ile 30 arasında (0 ve 30 dâhil) karekökü tam sayı olan 6 sayı vardır: 0, 1, 4, 9, 16 ve 25."
+  },
+  {
+   "baslik": "Sayarken sistemli tara",
+   "metin": "Karekök sorularında sayıları 0'dan başlayarak tek tek tara. Her sayının bir tam sayının karesi olup olmadığına bak. Bulduğun listeyi tam kare listesiyle (0, 1, 4, 9, 16, 25, 36, ...) karşılaştırarak kontrol et."
+  }
+ ],
+ "tuyolar": [
+  "Karekökü tam sayı olan sayılar tam karelerdir; saymaya 0'dan başla, √0 = 0 de bir tam sayıdır.",
+  "Bir şıktaki sayıların hepsinin karekökünün tam sayı olduğunu iddia ediyorsan her sayıyı tek tek kontrol et; tek bir tam kare olmayan sayı şıkkı eler.",
+  "Soru 'kaç tane' diye soruyorsa bulduğun listeyi sayarken 0'ı ve 1'i de say."
+ ],
+ "hatalar": [
+  {
+   "kod": "MAT-KK-1",
+   "altKonu": "Tam kare ve karekök",
+   "soru": "Rakam kartları: üzerindeki rakamın karekökü tam sayı olan kaç kart vardır? (Veli analizinde yer alan soru)",
+   "hata": "Listeyi 0'dan başlayarak taramadı, 0'ı aday olarak düşünmedi ve A (3) seçti. Karekökü tam sayı olan rakamlar 0, 1, 4, 9 idi.",
+   "dogruYol": "Sayarken en baştan (0 dâhil) tek tek tara: √0 = 0, √1 = 1, √4 = 2, √9 = 3 tam sayıdır; toplam 4 kart."
+  }
+ ],
+ "sorular": []
+}

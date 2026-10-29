@@ -1,0 +1,2409 @@
+{
+ "id": "mat-ck",
+ "ders": "Matematik",
+ "unite": "01 - Çarpanlar ve Katlar",
+ "baslik": "Çarpanlar ve Katlar",
+ "anlatim": [
+  {
+   "baslik": "EBOB: en büyük ortak bölen",
+   "metin": "EBOB, iki ya da daha çok sayıyı hiç artmadan ve karıştırmadan eşit parçalara ayırmanın en büyük parça boyudur. Örneğin 72 kg un ve 54 kg şeker için EBOB(72, 54) = 18 kg; her torbaya 18 kg konur. Bulduğun EBOB bir parçanın büyüklüğüdür; kaç parça olduğunu bulmak için her sayıyı EBOB'a bölüp topla (72 ÷ 18 + 54 ÷ 18 = 7 torba)."
+  },
+  {
+   "baslik": "EKOK ve zaman problemleri",
+   "metin": "EKOK, olayların birlikte tekrarlandığı en kısa süredir. Örneğin 8, 12 ve 20 dakikada bir yanan üç lamba 120 dakikada bir birlikte yanar. Zaman sorularında önce ilk ortak anı bul (olaylar 0'da değil de sonra başlıyorsa o an), sonra her seferinde EKOK kadar ekle. 'Aynı anda başlatılarak … kaç defa' sorularında başlangıç anı da sayılır."
+  },
+  {
+   "baslik": "Parça ve kesim farkı",
+   "metin": "Bir çubuğu n eşit parçaya ayırmak için n − 1 kesim gerekir. Tahtalar ayrı ayrı kesiliyorsa her tahta için kesim sayısını ayrı hesapla, sonra topla. Parça sayısı ile kesim sayısını karıştırma; süre sorularında kesim sayısıyla çarp."
+  },
+  {
+   "baslik": "Şartları sırayla uygula",
+   "metin": "Sorudaki şartları numaralandır. Başka bir iş için ayrılan kısım (iki yan ayak, yarım miktar, dara) en başta çıkarılır; sonra kalan kısma EBOB ya da EKOK uygulanır. Şıkkı bulduktan sonra şarta geri koy: 'en az', 'en fazla', '100'den az' gibi küçük şartlar sık tuzak olur."
+  },
+  {
+   "baslik": "Aralarında asal sayılar",
+   "metin": "İki sayı aralarında asalsa EBOB'ları 1'dir ve EKOK'ları çarpımlarına eşittir: EKOK(K, L) = K · L. Böyle bir soruda her asal çarpan yalnızca bir sayıda bulunur. 'Aralarında asal değil' şartında iki sayının ortak bir asal çarpanı olmalıdır; adayları tek tek bu şarta göre kontrol et."
+  },
+  {
+   "baslik": "Asal çarpanlara ayırma",
+   "metin": "Asal çarpanlara ayırırken en küçük asaldan başla (2, 3, 5, 7, 11, 13 ...) ve bölünebilme kurallarını kullan. Bir sayının 2, 3, 5, 7'ye bölünmemesi onun asal olduğunu göstermez: 143 = 11 · 13. Her parçayı asal olana kadar ayır. Rakamları toplamı 3'ün katı olan sayılar 3'e bölünür (1089 → 1 + 0 + 8 + 9 = 18)."
+  },
+  {
+   "baslik": "Asal çarpanlarla EBOB ve EKOK",
+   "metin": "Asal çarpan gösteriminde EBOB için her asalın EN KÜÇÜK üssü, EKOK için EN BÜYÜK üssü alınır. Verilen bir EBOB ya da EKOK'u asal çarpanlarına ayırıp üsleri karşılaştır; sayıları açıp hesaplama. Örneğin EBOB(2³·3·7², 2²·3²·7) = 2²·3·7 = 84."
+  },
+  {
+   "baslik": "Bir sayının çarpanları",
+   "metin": "Çarpanlar çiftler hâlinde gelir: 1 ve sayının kendisi, 2 ve sayının bölümü ... Bu eşleşmeyi kullanarak eksik çarpanı bulabilirsin: 1 · Y = 2 · 57 = 3 · X = 6 · 19 gibi. En büyük ve en küçük sorularında tüm adayları tablo yaparak listele; 'doğru' ile 'yanlış' sorularında ne saydığını ayrıca kontrol et."
+  }
+ ],
+ "tuyolar": [
+  "EBOB parçanın büyüklüğünü verir; kaç parça olduğu için bir adım daha vardır: böl ve topla. Sonuca birimini yaz (18 kg mı, 7 torba mı?).",
+  "EKOK bir ARALIKTIR, bir AN değildir: önce ilk ortak anı bul, sonra EKOK'u ekle.",
+  "n parça = n − 1 kesim; tahtalar ayrı kesiliyorsa her tahta için ayrı hesapla.",
+  "Asal çarpan gösteriminde EBOB → en KÜÇÜK üs, EKOK → en BÜYÜK üs.",
+  "Aralarında asal sayılarda EBOB = 1 ve EKOK = çarpım; yasak çarpanları listele ve adayları tek tek tik.",
+  "Asal çarpanlara ayırmayı sonuna kadar götür; her parça asal olmadan bitirme.",
+  "'En büyük / en küçük' sorularında tüm adayları tabloya yaz, sonra karşılaştır.",
+  "Sonuç şıklarda yoksa işlemi baştan kontrol et; toplamayı çıkararak, bölmeyi çarparak doğrula."
+ ],
+ "hatalar": [
+  {
+   "kod": "MAT-ÇK-1",
+   "altKonu": "EBOB – EKOK",
+   "soru": "72 kg un ve 54 kg şeker, karıştırılmadan ve artmadan eş torbalara; en az kaç torba?",
+   "hata": "Torbadaki miktarı (18 kg) torba sayısıyla karıştırdı; EBOB'u doğru buldu ama torba sayısını bulmadı (D: 18 seçti).",
+   "dogruYol": "EBOB ile torbadaki miktarı bul (18 kg), sonra her maddeyi bu miktara böl ve topla: 4 + 3 = 7 torba."
+  },
+  {
+   "kod": "MAT-ÇK-7",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Bölme merdiveni ile A ve B sayılarının EBOB'u kaçtır?",
+   "hata": "Merdivende küçük bir işlem hatası yaptı (H = 5 · 3 = 15 yerine 13); hata yukarı taşındı ve EBOB 6 çıktı. Şüphelendiği sayıyı hemen kontrol etmedi.",
+   "dogruYol": "Merdivendeki her sayının bölenine gerçekten bölündüğünü kontrol et; EBOB, iki sayının birlikte bölündüğü satırların bölenlerinin çarpımıdır."
+  },
+  {
+   "kod": "MAT-ÇK-8",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Üç ahşap kalastan iki yan ayak (1,5 m'lik) ayrıldıktan sonra kalanlarla eşit boyda basamaklar; merdiven en az kaç basamaklı?",
+   "hata": "İki yan ayak şartını en başta uygulamadı; üç kalasın tamamını basamak sayıp ayakları sonradan çıkarmaya çalıştı (D: 12 seçti).",
+   "dogruYol": "Şartları numaralandır; ayrılan parçaları (iki yan ayak) en başta çıkar, sonra kalanların EBOB'unu al: EBOB(90, 150) = 30 → 3 + 5 = 8 basamak."
+  },
+  {
+   "kod": "MAT-ÇK-9",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Selin ve Kaan'ın kumbarası (yüzde ve sabit aylık tutarlar); kalan paralar eşit, fiyatlar 5000 TL'den az; toplam en fazla kaç TL?",
+   "hata": "Çok adımlı problemde çözüm yolunu kuramadı; EKOK(180, 240) = 720'yi buldu ama yüzde ve '5000'den az' şartını birleştiremedi, boş bıraktı.",
+   "dogruYol": "Bilinmeyene harf ver: kalan para 720'nin katıdır; Selin'in kalanı fiyatın %90'ı, Kaan'ınki %80'i. Şartı sağlayan en büyük katı seç: 3600 → 4000 + 4500 = 8500 TL."
+  },
+  {
+   "kod": "MAT-ÇK-10",
+   "altKonu": "EBOB – EKOK",
+   "soru": "A = 2⁴ · 3 · 5ˣ ve B = 2ʸ · 3² · 5³ sayılarının EBOB'u 120 ise y − x kaçtır?",
+   "hata": "Üslü sayıları açıp hesaplamaya çalıştı; EBOB'da en küçük üslerin alındığını kullanamadı (B: −1 seçti).",
+   "dogruYol": "EBOB'da her asalın en küçük üssü alınır: 120 = 2³ · 3 · 5 → y = 3, x = 1 → y − x = 2."
+  },
+  {
+   "kod": "MAT-ÇK-12",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Üç makine 6, 7 ve 9 dakikada 100 sayfa basıyor; 200 sayfalık kitap için 14 saat boyunca üçü birlikte kaç defa ilk sayfayı basmaya başlar?",
+   "hata": "Başlangıç anını (0. dakika) saymadı; 4 yerine 3 buldu (B: 3 seçti).",
+   "dogruYol": "'Aynı anda başlatılarak … kaç defa' sorularında başlangıç anı da sayılır: 0, 252, 504, 756 → 4 kez (1008 > 840)."
+  },
+  {
+   "kod": "MAT-ÇK-13",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Halterin iki tarafı eşit yüklü; sağda 6 kg, solda 7 kg'lık diskler ve 3 kg'lık çubuk. Halterin tamamının ağırlığı kaç kg?",
+   "hata": "Toplamda yalnızca bir tarafı ekledi (42 + 3 = 45); iki tarafın da 42 kg olduğunu kendi kâğıdında yazdığı hâlde toplamı kontrol etmedi (A: 45 seçti).",
+   "dogruYol": "Halterin tamamı = sol taraf + sağ taraf + çubuk = 42 + 42 + 3 = 87 kg."
+  },
+  {
+   "kod": "MAT-ÇK-15",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Silgi ve kalem birim fiyatları; toplam en az kaç adet silgi ve kalem alındı? (Kalemin birim fiyatı 20 TL'den az.)",
+   "hata": "Doğru değerleri (silgi 16 TL, kalem 14 TL) buldu, ancak adetleri hesaplarken kaydı; C (34) seçti.",
+   "dogruYol": "En az adet için birim fiyat olabildiğince büyük olmalı: silgi için EBOB(96, 112) = 16, kalem için 20'den küçük en büyük ortak bölen 14. Adetler: 13 + 16 = 29."
+  },
+  {
+   "kod": "MAT-ÇK-18",
+   "altKonu": "EBOB – EKOK",
+   "soru": "A = K · 3 · 5 ve B = 2² · L · M, EKOK(A, B) = 600 ise K + L + M kaçtır?",
+   "hata": "600'ün bölen çiftlerini tek tek yazarak uzun yola girdi; süre yetmedi ve boş bıraktı.",
+   "dogruYol": "EKOK'u asal çarpanlarına ayır (600 = 2³ · 3 · 5²) ve üslere bak: K = 2³ = 8, L = 3, M = 5² = 25; toplam 36."
+  },
+  {
+   "kod": "MAT-ÇK-20",
+   "altKonu": "EBOB – EKOK",
+   "soru": "İki tahta en büyük eşit parçalara ayrı ayrı kesiliyor; toplam kesim süresi 240 saniye ise bir kesim kaç saniye sürer?",
+   "hata": "Parça sayısı ile kesim sayısını karıştırdı; 240'ı toplam parça sayısına (12) böldü (A: 20 seçti).",
+   "dogruYol": "n parça için n − 1 kesim gerekir: EBOB(150, 210) = 30 → 5 ve 7 parça → 4 + 6 = 10 kesim; 240 ÷ 10 = 24 saniye."
+  },
+  {
+   "kod": "MAT-ÇK-21",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Sekiz şeklinde pistte iki araba O noktasında ikinci kez kaçıncı saniyede karşılaşır? (Sol yol 20 saniye/5 parça, sağ yol 16 saniye/4 parça.)",
+   "hata": "İlk karşılaşmanın 8. saniyede olduğunu buldu ama ikinci karşılaşmayı 80. saniye aldı; 8 + 80 toplamını yapmadı (A: 1 dk 20 sn seçti).",
+   "dogruYol": "Zaman çizelgesi: ilk karşılaşma 8. saniye, sonra her EKOK(20, 16) = 80 saniyede bir; ikinci karşılaşma 8 + 80 = 88 sn = 1 dk 28 sn."
+  },
+  {
+   "kod": "MAT-ÇK-22",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Kare şeklinde bir halı 15 cm ve 16 cm'lik çubuklarla tam kaplanabiliyorsa halının en az çevresi kaç cm'dir?",
+   "hata": "Kenarı (240 cm) buldu ama çevre istendiği hâlde 4 ile çarpmadı; boş bıraktı.",
+   "dogruYol": "Sorulan büyüklüğü işaretle: kenar 240 cm ise çevre 4 · 240 = 960 cm."
+  },
+  {
+   "kod": "MAT-ÇK-2",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "2×2 tablonun satır ve sütun toplamları verilmiş; aynı satır ve sütundaki sayılar aralarında asal. x + y kaçtır?",
+   "hata": "Şeklin altındaki 'aralarında asal' şartını kontrol etmedi (21–12, 7–21, 3–12 ortak bölen içeriyor); C (19) seçti.",
+   "dogruYol": "Tüm şartları numaralandır ve her adayı komşu bütün çiftlere göre kontrol et; bu soruda yalnızca x = 3, y = 8 tutar (toplam 11)."
+  },
+  {
+   "kod": "MAT-ÇK-3",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "Okul numaraları: Ali 24, Ece 40, Can 77. Deniz'in numarası farklı iki basamaklı bir sayıdır; Ali ve Ece ile aralarında asal, Can ile aralarında asal değildir. Kaç farklı değer alabilir?",
+   "hata": "91'i saydı; ancak 91, Sezgi'nin numarası olduğu için ve 7 ortak çarpanı nedeniyle elenmeliydi. Şartları birleştirmedi (B: 2 seçti).",
+   "dogruYol": "Her adayı tüm şartlara tek tek tikle: 11, 49 ve 91 için kontrol et; 'farklı olan' şartını ve yasak çarpan listesini birlikte uygula."
+  },
+  {
+   "kod": "MAT-ÇK-5",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "A4 iki basamaklı sayısı ile 35 aralarında asal değildir. A'nın alabileceği değerlerin toplamı kaçtır?",
+   "hata": "A'ların toplamı yerine tahmini bir değer seçti (D: 13 seçti); adayları 7 ile tek tek test etmedi.",
+   "dogruYol": "35 = 5 · 7; A4 sayısı 5'e bölünmez (4 ile biter), 7'ye bölünmeli: 14 ve 84 → A = 1 ve 8 → toplam 9."
+  },
+  {
+   "kod": "MAT-ÇK-11",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "K ve L aralarında asal doğal sayılardır; EKOK(K, L) = 112 ise K + L en az kaç olur?",
+   "hata": "Aralarında asal sayılarda EKOK'un çarpım olduğunu kullanamadı; 112 ÷ 2 işlemini yanlış yaptı; boş bıraktı.",
+   "dogruYol": "Aralarında asal sayılarda EKOK = K · L; 112 = 2⁴ · 7 → 16 ve 7 → toplam 23."
+  },
+  {
+   "kod": "MAT-ÇK-14",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "İki dörtgenin ortak köşesi ve köşe çarpımları x ve y aralarında asal; x + y en az kaçtır?",
+   "hata": "Yerleşimi doğru kurdu (2, 1, 5, 7, 11) ama son hesapta yanlış işlem yaptı (18 · 5 = 80); sonuç şıklarda olmadığı için boş bıraktı.",
+   "dogruYol": "Yerleşimden sonra x ve y'yi ayrı satırlarda çarp ve toplamı kontrol et: x = 72, y = 385 → 457."
+  },
+  {
+   "kod": "MAT-ÇK-24",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "A ve B bitkilerinin uzaması iki asal çarpanlı ve aralarında asal; son boyların toplamının en az değeri kaçtır?",
+   "hata": "B'nin son boyunu uzama gibi kullandı; B'nin ilk boyunu (20 cm) çıkarmadı (D: 121 seçti).",
+   "dogruYol": "Uzama = son boy − ilk boy. A'nın uzaması 21 = 3 · 7, B'ninki 55 = 5 · 11 → B'nin son boyu 65 cm; toplam 36 + 65 = 101 cm."
+  },
+  {
+   "kod": "MAT-ÇK-4",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "soru": "Çerçeve iç alanlarından (324, 361, 484, 900 dm²) hangisi yalnız bir farklı asal çarpana sahip olduğu için 'asimetrik eser'dir?",
+   "hata": "1089'u asal sanıp 1. ve 2. çerçeveyi eledi (7'ye bölünmeyince bıraktı); A (4. çerçeve) seçti.",
+   "dogruYol": "Kare alanlarda önce kenarı çarpanlarına ayır: 1089 = 33² = 3² · 11² (iki asal); tek asal çarpanlı alan 289 = 17² → 3. çerçeve."
+  },
+  {
+   "kod": "MAT-ÇK-16",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "soru": "2ᵃ · 3ᵇ biçiminde yazılabilen iki basamaklı en büyük sayının rakamları toplamı kaçtır?",
+   "hata": "3'ün kuvvetini en büyük tutup yalnız 2'nin kuvvetini değiştirdi; 2⁵ · 3 = 96 denemedi (A: 9 seçti, 54 → 9).",
+   "dogruYol": "Tüm adayları tabloda listele: 12, 18, 24, 36, 48, 54, 72, 96; en büyük 96 → rakamlar toplamı 15."
+  },
+  {
+   "kod": "MAT-ÇK-17",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "soru": "Okçuluk hedeflerinin puanı farklı asal çarpanların toplamıdır; hangi hedef en çok puanı verir?",
+   "hata": "143'ü çarpanlarına ayıramadı (11 ve 13'ü denemeden bıraktı); B (2. hedef) seçti.",
+   "dogruYol": "Asal çarpanlara ayırmada sırayla 2, 3, 5, 7, 11, 13 dene: 143 = 11 · 13 → puan 24, en çok puan budur."
+  },
+  {
+   "kod": "MAT-ÇK-23",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "soru": "'Toplam asal sayı' tanımına göre (farklı asal bölenlerinin toplamı asal olan sayı) hangisi toplam asal sayıdır?",
+   "hata": "78 = 2 · 39 deyip 39'u asal sandı (2 + 39 = 41 zannetti); D (78) seçti.",
+   "dogruYol": "Asal çarpanlara sonuna kadar ayır: 68 = 2² · 17 → 2 + 17 = 19 asal (doğru); 78 = 2 · 3 · 13 → 18 asal değil."
+  },
+  {
+   "kod": "MAT-ÇK-6",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "soru": "Çarpan listesinde eksik çarpanlar (1·Y = 2·57 = 3·X = 6·19); X + Y'nin çarpanı hangisi?",
+   "hata": "114 + 38'i 162 olarak hesapladı (doğrusu 152); sonucu şıklarla kontrol etmedi (D: 12 seçti).",
+   "dogruYol": "Y = 114, X = 38, X + Y = 152 = 2³ · 19; çarpanları arasında 4 var. Toplamı tersinden kontrol et: 152 − 38 = 114."
+  },
+  {
+   "kod": "MAT-ÇK-19",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "soru": "Çarpan tablosunda (36, 45, 50, 119 ve 56, 30, 91 gibi satırlar) kaç tanesinin çarpanları doğru verilmiştir?",
+   "hata": "Soru DOĞRU olanların sayısını sorduğu hâlde hatalı olanları saydı; 3 bulup C seçti.",
+   "dogruYol": "Soru kökündeki 'doğru' kelimesinin altını çiz; her satırı tek tek kontrol et: yalnız 49 = 1 · 7 · 49 doğrudur; sayı 1'dir."
+  },
+  {
+   "kod": "MAT-ÇK-25",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Samsun otobüs seferleri: iki yöne 2. kez aynı anda kalkış saati (A 40 dk, B 50 dk aralıklı).",
+   "hata": "EKOK'u ilk ortak kalkışa (13.50) değil, saatin gösterdiği ana (11.00) ekledi; B (14.20) seçti.",
+   "dogruYol": "Önce ilk ortak kalkışı bul (13.50), sonra EKOK(40, 50) = 200 dakika ekle: 13.50 + 3 sa 20 dk = 17.10."
+  },
+  {
+   "kod": "MAT-ÇK-26",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Atlas Bey'in kibrit kutuları: EKOK ile düzendeki toplam kutu sayısı.",
+   "hata": "Bulduğu 10 değerini (blok sayısı k) toplam kutu sayısı sandı; A (10) seçti.",
+   "dogruYol": "Bilinmeyen k neyin sayısı? Bir blokta 3 yatay + 7 dikey = 10 kutu; k = 10 ise toplam 100 kutu."
+  },
+  {
+   "kod": "MAT-ÇK-27",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Mimar Hasan Bey'in gökdeleni: kat yüksekliği EBOB ile, en az kat sayısı.",
+   "hata": "EBOB'u (25 br) bulduktan sonra kat sayısı yerine kat yüksekliğini verdi; C (25) seçti.",
+   "dogruYol": "Sonuca birimini yaz: 25 br kat yüksekliğidir; kat sayısı 575 ÷ 25 = 23."
+  },
+  {
+   "kod": "MAT-ÇK-28",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Terazi dengesi, 5 kg ve 8 kg ağırlıklar, dara ile toplam ağırlık.",
+   "hata": "Toplamda kefelerden yalnızca birini ekledi (40 + 2 = 42); B (42) seçti.",
+   "dogruYol": "Toplam = sol kefe + sağ kefe + dara = 40 + 40 + 2 = 82 kg."
+  },
+  {
+   "kod": "MAT-ÇK-29",
+   "altKonu": "EBOB – EKOK",
+   "soru": "K ve L kartları: EBOB'tan a + b'nin en küçük değeri.",
+   "hata": "Bulduğu 6 sonucunu şıkla eşleştirirken D (5) işaretledi; şık eşleştirme hatası yaptı.",
+   "dogruYol": "İşaretlemeden önce bulduğun sonucu şıkla kelimesi kelimesine eşleştir: a = 2, b = 4 → 6."
+  },
+  {
+   "kod": "MAT-ÇK-30",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Zeytinyağı; yarısı 250 mL, yarısı 400 mL şişelere; toplam şişe 100'den az, en fazla litre.",
+   "hata": "Toplam şişe şartını iki şişe türü birlikte kontrol etmedi; 40 L → 130 şişe (A: 40 seçti); ayrıca 4000 ÷ 250 hesabını yanlış yaptı.",
+   "dogruYol": "Bilinmeyene harf ver: yarı = 2000k mL; toplam şişe 13k < 100 → k ≤ 7 → 28 L."
+  },
+  {
+   "kod": "MAT-ÇK-31",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Emel Hanım ve Hasan Bey'in nöbetleri: bir yılda en fazla kaç kez birlikte?",
+   "hata": "Yılın ilk gününü (1. gün) saymadı; 365 ÷ 105 ile yetindi (A: 3 seçti).",
+   "dogruYol": "En fazla için ilk ortak nöbeti yılın ilk gününe koy: 1, 106, 211, 316 → 4 kez."
+  },
+  {
+   "kod": "MAT-ÇK-32",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Okuldaki öğrenciler 15'erli ve 18'erli gruplarda artıyor (kalanlı EKOK); 400'den fazla en küçük öğrenci sayısı.",
+   "hata": "Kalanların 13 ve 16 olduğunu, eksiklerin 2 olduğunu fark etmeden 450'yi seçti; 450 ÷ 15 kalan 0 verir.",
+   "dogruYol": "Eksikler 15 − 13 = 2 ve 18 − 16 = 2; N + 2, EKOK(15, 18) = 90'ın katıdır: N = 90k − 2; 400'den büyük en küçük değer 448."
+  },
+  {
+   "kod": "MAT-ÇK-20",
+   "altKonu": "EBOB – EKOK",
+   "soru": "İki tahta (150 cm ve 210 cm), eşit ve en büyük parçalar; toplam kesim süresi 240 sn; bir kesim kaç sn? (Tekrar testi hata analizi)",
+   "hata": "240'ı parça sayısıyla ya da karışık bir sayıyla böldü (A: 20 seçti); parça ve kesim kavramları karışıyor.",
+   "dogruYol": "n parça için n − 1 kesim; EBOB(150, 210) = 30 → 5 ve 7 parça → 4 + 6 = 10 kesim; 240 ÷ 10 = 24 sn."
+  },
+  {
+   "kod": "MAT-ÇK-21",
+   "altKonu": "EBOB – EKOK",
+   "soru": "Sekiz şeklinde pistte arabaların O noktasında ikinci kez karşılaşması (tekrar testi hata analizi).",
+   "hata": "İlk karşılaşmanın 8. saniyede olduğunu gözden kaçırdı; 2. karşılaşmayı 80. saniye sandı (A: 1 dk 20 sn seçti).",
+   "dogruYol": "Zaman çizelgesi: 0 → 8 (ilk) → 88 (ikinci). EKOK bir aralık, an değil; ilk ana eklenir."
+  },
+  {
+   "kod": "MAT-ÇK-14",
+   "altKonu": "Aralarında asal sayılar",
+   "soru": "İki dörtgen; ortak köşe; x ve y aralarında asal; x + y en az kaç? (Tekrar testi hata analizi)",
+   "hata": "Yerleşim doğru; son hesapta çarpmada hata yaptı (18 · 5 = 80, doğrusu 90); sonuç şıklarda olmadığı için boş bıraktı.",
+   "dogruYol": "x ve y'yi ayrı satırlarda çarp: x = 72, y = 385; toplam 457. Her çarpmayı tersinden kontrol et."
+  },
+  {
+   "kod": "MAT-ÇK-16",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "soru": "2ᵃ · 3ᵇ biçiminde yazılabilen iki basamaklı en büyük sayının rakamları toplamı kaçtır? (Tekrar testi hata analizi)",
+   "hata": "3'ün kuvvetini en büyük tutup yalnız 2'yi değiştirdi; A (9) seçti (54 → 9).",
+   "dogruYol": "Tüm adayları tabloya yaz: 12, 18, 24, 36, 48, 54, 72, 96; en büyük 96 → 15."
+  },
+  {
+   "kod": "MAT-ÇK-23",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "soru": "'Toplam asal sayı' tanımına göre hangisi toplam asal sayıdır? (Tekrar testi hata analizi)",
+   "hata": "78 = 2 · 39 deyip 39'u asal sandı (2 + 39 = 41 zannetti); D (78) seçti.",
+   "dogruYol": "Asal çarpanlarına sonuna kadar ayır: 68 = 2² · 17 → 19 asal; 78 = 2 · 3 · 13 → 18 asal değil."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "mat-ck-001",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-1",
+   "tur": "benzer",
+   "metin": "48 L zeytinyağı ve 60 L ayçiçek yağı, karıştırılmadan ve artmayacak şekilde eş şişelere doldurulacaktır. En az kaç şişe gerekir?",
+   "secenekler": [
+    "9",
+    "12",
+    "15",
+    "20"
+   ],
+   "dogru": "A",
+   "cozum": "EBOB(48, 60) = 12 L. 48 ÷ 12 = 4 ve 60 ÷ 12 = 5; toplam 9 şişe.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-002",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-1",
+   "tur": "benzer",
+   "metin": "90 kg pirinç ve 60 kg bulgur, karıştırılmadan ve artmayacak şekilde eş torbalara doldurulacaktır. En az torba sayısında her torbaya kaç kg konur?",
+   "secenekler": [
+    "5",
+    "10",
+    "15",
+    "30"
+   ],
+   "dogru": "D",
+   "cozum": "EBOB(90, 60) = 30 kg. Torba sayısı 3 + 2 = 5 olur; her torbaya 30 kg konur.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-003",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-1",
+   "tur": "benzer",
+   "metin": "24 kırmızı, 36 mavi ve 60 siyah kalem, renkler karıştırılmadan ve artmayacak şekilde eş paketlere konulacaktır. En az kaç paket gerekir?",
+   "secenekler": [
+    "6",
+    "10",
+    "12",
+    "20"
+   ],
+   "dogru": "B",
+   "cozum": "EBOB(24, 36, 60) = 12. Paket sayısı 2 + 3 + 5 = 10.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-004",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-7",
+   "tur": "benzer",
+   "metin": "Bölme merdiveni: A, B sayılarından başlanıp 2 ile bölünerek C, D; C, D'den 2 ile bölünerek E, D; E, D'den 3 ile bölünerek F, G; F, G'den 3 ile bölünerek 1, H; 1, H'den 7 ile bölünerek _, 1 elde ediliyor. Buna göre B kaçtır?",
+   "secenekler": [
+    "63",
+    "84",
+    "126",
+    "252"
+   ],
+   "dogru": "C",
+   "cozum": "Alttan yukarı: H = 7, G = 21, D = 63 ve B = 126 bulunur.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-005",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-7",
+   "tur": "benzer",
+   "metin": "Aynı bölme merdiveni algoritmasına göre A ve B sayılarının EKOK'u kaçtır?",
+   "secenekler": [
+    "126",
+    "252",
+    "504",
+    "18"
+   ],
+   "dogru": "B",
+   "cozum": "A = 2² · 3² = 36, B = 126 = 2 · 3² · 7. EKOK = 2² · 3² · 7 = 252.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-006",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-7",
+   "tur": "benzer",
+   "metin": "60 ve 84 sayılarının EBOB'u kaçtır?",
+   "secenekler": [
+    "6",
+    "12",
+    "24",
+    "42"
+   ],
+   "dogru": "B",
+   "cozum": "60 = 2² · 3 · 5 ve 84 = 2² · 3 · 7; EBOB = 2² · 3 = 12.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-007",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-8",
+   "tur": "benzer",
+   "metin": "80 cm, 120 cm ve 200 cm'lik üç kalas var. 1 m'lik iki yan ayak için 200 cm'lik kalas ikiye kesilecek; kalan kalaslar hiç artmadan eşit boyda basamaklara ayrılacak. Merdiven en az kaç basamaklı olur?",
+   "secenekler": [
+    "4",
+    "5",
+    "8",
+    "10"
+   ],
+   "dogru": "B",
+   "cozum": "200 cm'lik kalas iki yan ayak için kullanılır. EBOB(80, 120) = 40 cm; 80 ÷ 40 = 2 ve 120 ÷ 40 = 3, toplam 5 basamak.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-008",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-8",
+   "tur": "benzer",
+   "metin": "60 cm, 90 cm ve 150 cm'lik üç kalastan 150 cm'lik olan, 75 cm'lik iki yan ayak için ikiye kesilecek; kalanlar hiç artmadan eşit ve en az sayıda basamak olacak şekilde kesilecek. Her basamak kaç cm olur?",
+   "secenekler": [
+    "10",
+    "15",
+    "30",
+    "45"
+   ],
+   "dogru": "C",
+   "cozum": "Kalanlar 60 cm ve 90 cm'dir. EBOB(60, 90) = 30 cm.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-009",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-8",
+   "tur": "benzer",
+   "metin": "72 cm, 96 cm ve 120 cm'lik üç çubuk var. 120 cm'lik çubuk olduğu gibi çerçevenin bir kenarı yapılacak; diğer iki çubuk hiç artmadan eşit ve en az sayıda parçaya kesilecek. Kaç parça elde edilir?",
+   "secenekler": [
+    "5",
+    "7",
+    "9",
+    "12"
+   ],
+   "dogru": "B",
+   "cozum": "EBOB(72, 96) = 24 cm. 72 ÷ 24 = 3 ve 96 ÷ 24 = 4; toplam 7 parça.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-010",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-9",
+   "tur": "benzer",
+   "metin": "Selin her ay 180 TL, Kaan her ay 240 TL biriktiriyor. İkisinin biriktirdiği paranın eşit olabileceği en küçük miktar kaç TL'dir?",
+   "secenekler": [
+    "360",
+    "720",
+    "1440",
+    "4320"
+   ],
+   "dogru": "B",
+   "cozum": "Biriktirilen paranın eşit olabilmesi için EKOK(180, 240) = 720 TL gerekir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-011",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-9",
+   "tur": "benzer",
+   "metin": "Bir bisikletin fiyatının %10'u ödendikten sonra kalan borç 3600 TL ise bisikletin fiyatı kaç TL'dir?",
+   "secenekler": [
+    "3240",
+    "3960",
+    "4000",
+    "4500"
+   ],
+   "dogru": "C",
+   "cozum": "Kalan borç fiyatın %90'ıdır: 3600 ÷ 0,9 = 4000 TL.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-012",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-9",
+   "tur": "benzer",
+   "metin": "Ali ilk ay bilgisayar fiyatının %25'ini, sonra her ay 150 TL; Ayşe ilk ay tablet fiyatının %40'ını, sonra her ay 200 TL biriktiriyor. İlk aydan sonra kalan miktarlar eşit, iki fiyat da 3000 TL'den az. Fiyatlar toplamı en fazla kaç TL?",
+   "secenekler": [
+    "3000",
+    "3600",
+    "4200",
+    "4800"
+   ],
+   "dogru": "B",
+   "cozum": "Kalan miktar 150 ve 200'ün ortak katıdır (EKOK 600). Kalan 1200 alınırsa fiyatlar 1600 ve 2000 olur; toplam 3600 TL. Daha büyük katta fiyatlardan biri 3000'i aşar.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-013",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-10",
+   "tur": "benzer",
+   "metin": "A = 2³ · 3ˣ · 7² ve B = 2⁵ · 3² · 7ʸ sayıları için EBOB(A, B) = 168 ise x + y kaçtır?",
+   "secenekler": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "dogru": "A",
+   "cozum": "168 = 2³ · 3 · 7; x = 1 ve y = 1. x + y = 2.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-014",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-10",
+   "tur": "benzer",
+   "metin": "A = 2² · 3ˣ ve B = 2ʸ · 3 sayıları için EKOK(A, B) = 72 ise x · y kaçtır?",
+   "secenekler": [
+    "5",
+    "6",
+    "8",
+    "9"
+   ],
+   "dogru": "B",
+   "cozum": "72 = 2³ · 3²; y = 3 ve x = 2. x · y = 6.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-015",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-10",
+   "tur": "benzer",
+   "metin": "A = 2³ · 5² ve B = 2² · 5⁴ ise EBOB(A, B) kaçtır?",
+   "secenekler": [
+    "100",
+    "200",
+    "500",
+    "2500"
+   ],
+   "dogru": "A",
+   "cozum": "EBOB = 2² · 5² = 100.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-016",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-12",
+   "tur": "benzer",
+   "metin": "Üç lamba 8, 12 ve 20 dakikada bir yanmaktadır. Üçü saat 09.00'da birlikte yandığına göre 09.00 ile 15.00 arasında (09.00 ve 15.00 dâhil) kaç kez birlikte yanarlar?",
+   "secenekler": [
+    "4",
+    "3",
+    "5",
+    "6"
+   ],
+   "dogru": "A",
+   "cozum": "EKOK(8, 12, 20) = 120 dakikadır. 360 dakika içinde 0, 120, 240, 360 anlarında 4 kez birlikte yanarlar.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-017",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-12",
+   "tur": "benzer",
+   "metin": "Aynı lambalar 09.00'da birlikte yandıktan sonra, 15.00'e kadar (15.00 dâhil) kaç kez DAHA birlikte yanarlar?",
+   "secenekler": [
+    "3",
+    "4",
+    "2",
+    "6"
+   ],
+   "dogru": "A",
+   "cozum": "Başlangıç hariç: 120, 240 ve 360. dakikalarda, yani 3 kez.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-018",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-12",
+   "tur": "benzer",
+   "metin": "Bir basımevindeki makinelerden 1.si 5 dakikada, 2.si 8 dakikada, 3.sü 10 dakikada 100 sayfa basmaktadır. 200 sayfalık kitap için üçü aynı anda başlatılıp 6 saat çalıştırılıyor. İlk sayfayı kaç defa birlikte basmaya başlarlar?",
+   "secenekler": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "dogru": "B",
+   "cozum": "Makineler 200 sayfayı 10, 16 ve 20 dakikada basar; EKOK(10, 16, 20) = 80 dakika. 360 dakika içinde 0, 80, 160, 240, 320 anlarında 5 kez.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-019",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-13",
+   "tur": "benzer",
+   "metin": "Halterin sağına 4 kg'lık, soluna 10 kg'lık diskler takılıyor; çubuk 5 kg. Halterin ağırlığı en az kaç kg'dır?",
+   "secenekler": [
+    "25",
+    "40",
+    "45",
+    "50"
+   ],
+   "dogru": "C",
+   "cozum": "Her taraf EKOK(4, 10) = 20 kg; toplam 20 + 20 + 5 = 45 kg.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-020",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-13",
+   "tur": "benzer",
+   "metin": "Halterin sağına 8 kg'lık, soluna 12 kg'lık diskler takılıyor. İki taraf eşit ve mümkün olan en hafif şekilde yüklendiğinde toplam kaç disk kullanılır?",
+   "secenekler": [
+    "2",
+    "3",
+    "5",
+    "24"
+   ],
+   "dogru": "C",
+   "cozum": "Her taraf EKOK(8, 12) = 24 kg olur; sağda 3, solda 2 disk; toplam 5 disk.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-021",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-13",
+   "tur": "benzer",
+   "metin": "Halterin sağına 5 kg'lık, soluna 3 kg'lık diskler takılıyor; çubuk 10 kg. Halterin ağırlığı 100 kg'dan az olduğuna göre en fazla kaç kg olabilir?",
+   "secenekler": [
+    "40",
+    "70",
+    "85",
+    "100"
+   ],
+   "dogru": "B",
+   "cozum": "Her taraf 15'in katıdır; toplam 2 · 15k + 10 < 100 için k ≤ 2. k = 2 için 2 · 30 + 10 = 70 kg.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-022",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-15",
+   "tur": "benzer",
+   "metin": "Ali 72 TL'lik, Veli 108 TL'lik silgi; Ali 90 TL'lik, Veli 60 TL'lik kalem aldı. Birim fiyatlar tam sayı ve kalemin birim fiyatı 25 TL'den az. Toplam en az kaç adet silgi ve kalem alınmıştır?",
+   "secenekler": [
+    "15",
+    "10",
+    "18",
+    "20"
+   ],
+   "dogru": "A",
+   "cozum": "Silgi birim fiyatı EBOB(72, 108) = 36 TL; 2 + 3 = 5 silgi. Kalem birim fiyatı EBOB(90, 60) = 30'un 25'ten küçük en büyük böleni olan 15 TL; 6 + 4 = 10 kalem. Toplam 15.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-023",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-15",
+   "tur": "benzer",
+   "metin": "96 TL ve 112 TL'ye aynı fiyatlı silgilerden alınmıştır. Birim fiyat tam sayı ise bir silginin fiyatı en fazla kaç TL'dir?",
+   "secenekler": [
+    "8",
+    "14",
+    "16",
+    "32"
+   ],
+   "dogru": "C",
+   "cozum": "Birim fiyat 96 ve 112'yi bölmelidir; en büyük değer EBOB(96, 112) = 16 TL.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-024",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-15",
+   "tur": "benzer",
+   "metin": "84 ve 140'ın ortak bölenlerinden 20'den küçük en büyüğü kaçtır?",
+   "secenekler": [
+    "7",
+    "12",
+    "14",
+    "28"
+   ],
+   "dogru": "C",
+   "cozum": "EBOB(84, 140) = 28; 28'in 20'den küçük en büyük böleni 14'tür.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-025",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-18",
+   "tur": "benzer",
+   "metin": "A = K · 3 · 7 ve B = 2 · L · M (asal çarpanların üslü gösterimi). EKOK(A, B) = 504 ise K + L + M kaçtır?",
+   "secenekler": [
+    "18",
+    "24",
+    "26",
+    "32"
+   ],
+   "dogru": "B",
+   "cozum": "504 = 2³ · 3² · 7. K = 2³ = 8, L = 3² = 9, M = 7; toplam 24.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-026",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-18",
+   "tur": "benzer",
+   "metin": "A = 2ᵃ · 3³ · 5 ve B = 2⁴ · 3ᵇ · 5² sayıları için EBOB(A, B) = 180 ise a + b kaçtır?",
+   "secenekler": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "dogru": "B",
+   "cozum": "180 = 2² · 3² · 5. min(a, 4) = 2 → a = 2; min(3, b) = 2 → b = 2. a + b = 4.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-027",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-18",
+   "tur": "benzer",
+   "metin": "A = 2ˣ · 3 ve B = 2 · 3ʸ sayıları için EBOB(A, B) = 6 ve EKOK(A, B) = 72 ise x + y kaçtır?",
+   "secenekler": [
+    "5",
+    "4",
+    "6",
+    "7"
+   ],
+   "dogru": "A",
+   "cozum": "72 = 2³ · 3² (EKOK) → x = 3, y = 2; EBOB = 2 · 3 = 6 ile uyumlu. x + y = 5.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-028",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-20",
+   "tur": "benzer",
+   "metin": "120 cm ve 180 cm'lik iki tahta en büyük eşit parçalara ayrı ayrı kesiliyor. Her kesim 15 saniye sürüyorsa toplam kesim süresi kaç saniyedir?",
+   "secenekler": [
+    "30",
+    "45",
+    "60",
+    "75"
+   ],
+   "dogru": "B",
+   "cozum": "EBOB(120, 180) = 60 cm. 120 cm → 2 parça → 1 kesim; 180 cm → 3 parça → 2 kesim. Toplam 3 kesim · 15 = 45 saniye.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-029",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-20",
+   "tur": "benzer",
+   "metin": "Bir tahtayı 6 eşit parçaya ayırmak için kaç kesim yapılır?",
+   "secenekler": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "dogru": "B",
+   "cozum": "6 parça için 6 − 1 = 5 kesim gerekir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-030",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-20",
+   "tur": "benzer",
+   "metin": "84 cm ve 126 cm'lik iki tahta en büyük eşit parçalara ayrı ayrı kesiliyor ve toplam kesim süresi 90 saniye. Bir kesim kaç saniye sürmüştür?",
+   "secenekler": [
+    "15",
+    "18",
+    "30",
+    "45"
+   ],
+   "dogru": "C",
+   "cozum": "EBOB(84, 126) = 42 cm. 84 cm → 2 parça → 1 kesim; 126 cm → 3 parça → 2 kesim. Toplam 3 kesim; 90 ÷ 3 = 30 saniye.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-031",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-21",
+   "tur": "benzer",
+   "metin": "Aynı pistte A arabası turu 30 saniyede, B arabası 24 saniyede tamamlıyor (parça sayıları aynı). Arabalar O noktasında ikinci kez kaçıncı saniyede karşılaşır?",
+   "secenekler": [
+    "2 dk",
+    "2 dk 12 sn",
+    "2 dk 24 sn",
+    "1 dk 12 sn"
+   ],
+   "dogru": "B",
+   "cozum": "İlk karşılaşma 12. saniyededir (parça süresi 6 saniye, iki parça). Sonraki karşılaşmalar EKOK(30, 24) = 120 saniye arayla olur: 12 + 120 = 132 saniye = 2 dk 12 sn.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-032",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-21",
+   "tur": "benzer",
+   "metin": "İki koşucu bir noktadan ilk kez 10. saniyede birlikte geçiyor. Biri turunu 12, diğeri 18 saniyede tamamlıyorsa bu noktadan ikinci kez birlikte kaçıncı saniyede geçerler?",
+   "secenekler": [
+    "26",
+    "36",
+    "46",
+    "56"
+   ],
+   "dogru": "C",
+   "cozum": "İlk ortak an 10. saniye; EKOK(12, 18) = 36. İkinci ortak an 10 + 36 = 46. saniye.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-033",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-21",
+   "tur": "benzer",
+   "metin": "Asıl soruda (Sekiz şeklinde pist) sol yol 20 saniye ve 5 parça, sağ yol 16 saniye ve 4 parça sürüyor; arabalar O noktasına ilk kez 8. saniyede varıyor. Buna göre arabalar O noktasında ÜÇÜNCÜ kez ne zaman karşılaşır?",
+   "secenekler": [
+    "2 dk 40 sn",
+    "2 dk 48 sn",
+    "2 dk 28 sn",
+    "3 dk"
+   ],
+   "dogru": "B",
+   "cozum": "İlk karşılaşma 8. saniyede, sonra her 80 saniyede bir. Üçüncü karşılaşma 8 + 2 · 80 = 168 saniye = 2 dk 48 sn.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-034",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-22",
+   "tur": "benzer",
+   "metin": "Kare şeklindeki bir halının kenarı hem 12 cm'lik hem 18 cm'lik çubuklarla tam olarak kaplanabiliyor. Halının çevresi en az kaç cm'dir?",
+   "secenekler": [
+    "36",
+    "72",
+    "144",
+    "216"
+   ],
+   "dogru": "C",
+   "cozum": "Kenar EKOK(12, 18) = 36 cm'dir. Çevre 4 · 36 = 144 cm.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-035",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-22",
+   "tur": "benzer",
+   "metin": "Dikdörtgen bir masanın kısa kenarı hem 6 hem 8 cm'lik çubuklarla, uzun kenarı hem 10 hem 15 cm'lik çubuklarla tam olarak kaplanabiliyor. Masanın çevresi en az kaç cm'dir?",
+   "secenekler": [
+    "54",
+    "108",
+    "120",
+    "240"
+   ],
+   "dogru": "B",
+   "cozum": "Kısa kenar EKOK(6, 8) = 24 cm, uzun kenar EKOK(10, 15) = 30 cm. Çevre 2 · (24 + 30) = 108 cm.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-036",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-22",
+   "tur": "benzer",
+   "metin": "Asıl soruda kare halının kenarı hem 15 cm'lik hem 16 cm'lik çubuklarla tam kaplanabiliyor. Buna göre halının alanı en az kaç cm²'dir?",
+   "secenekler": [
+    "240",
+    "960",
+    "14 400",
+    "57 600"
+   ],
+   "dogru": "D",
+   "cozum": "Kenar EKOK(15, 16) = 240 cm; alan 240 · 240 = 57 600 cm².",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-037",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-2",
+   "tur": "benzer",
+   "metin": "2×2 tabloda satır toplamları üstte 13, altta 26; sütun toplamları solda 24, sağda 15'tir. Sol üst x, sağ alt y'dir. Her satır ve sütundaki iki sayı 1'den büyük doğal sayılardır ve aralarında asaldır. x + y kaçtır?",
+   "secenekler": [
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "dogru": "C",
+   "cozum": "Tek çözüm tablo 5 | 8 / 19 | 7'dir: satır toplamları 13 ve 26, sütun toplamları 24 ve 15. x = 5, y = 7; x + y = 12.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-038",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-2",
+   "tur": "benzer",
+   "metin": "Aşağıdaki sayı çiftlerinden hangisi aralarında asaldır?",
+   "secenekler": [
+    "14 ve 21",
+    "15 ve 28",
+    "18 ve 27",
+    "22 ve 33"
+   ],
+   "dogru": "B",
+   "cozum": "15 = 3 · 5 ve 28 = 2² · 7; ortak asal çarpan yoktur.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-039",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-2",
+   "tur": "benzer",
+   "metin": "a ve b, 1'den büyük, aralarında asal iki doğal sayıdır ve a + b = 16. a · b en çok kaçtır?",
+   "secenekler": [
+    "39",
+    "55",
+    "63",
+    "64"
+   ],
+   "dogru": "C",
+   "cozum": "Aralarında asal çiftler (3, 13), (5, 11), (7, 9); en büyük çarpım 7 · 9 = 63. 8 · 8 aralarında asal değildir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-040",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-3",
+   "tur": "benzer",
+   "metin": "Ali'nin okul numarası 24, Ece'nin 40, Can'ın 77'dir. Deniz'in numarası bunlardan farklı iki basamaklı bir sayıdır; Ali ve Ece'nin numaralarıyla aralarında asal, Can'ın numarasıyla aralarında asal değildir. Deniz'in numarası kaç farklı değer alabilir?",
+   "secenekler": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "dogru": "B",
+   "cozum": "Can'ın numarasıyla (7 ya da 11) ortak çarpan, Ali ve Ece ile (2, 3, 5) ortak çarpan yok: 11, 49, 91. Üç değer vardır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-041",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-3",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi 35 ile aralarında asal DEĞİLDİR?",
+   "secenekler": [
+    "12",
+    "18",
+    "42",
+    "66"
+   ],
+   "dogru": "C",
+   "cozum": "42 = 2 · 3 · 7 ve 35 = 5 · 7 ortak çarpan 7 içerir. 12, 18 ve 66 aralarında asaldır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-042",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-3",
+   "tur": "benzer",
+   "metin": "İki basamaklı bir sayı 12 ile aralarında asal, 25 ile aralarında asal değildir. Bu sayı en az kaçtır?",
+   "secenekler": [
+    "10",
+    "15",
+    "25",
+    "35"
+   ],
+   "dogru": "C",
+   "cozum": "12 ile aralarında asal olmak için sayı 2 ve 3'e bölünmemelidir; 25 ile ortak çarpan için 5'e bölünmelidir. En küçük iki basamaklı aday 25'tir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-043",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-5",
+   "tur": "benzer",
+   "metin": "A5 iki basamaklı doğal sayısı ile 21 aralarında asal değildir. A'nın alabileceği değerlerin toplamı kaçtır?",
+   "secenekler": [
+    "8",
+    "12",
+    "15",
+    "18"
+   ],
+   "dogru": "C",
+   "cozum": "A5 sayısı 3 ya da 7 ile bölünmelidir: 15, 35, 45, 75 → A = 1, 3, 4, 7; toplam 15.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-044",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-5",
+   "tur": "benzer",
+   "metin": "3A iki basamaklı doğal sayısı ile 10 aralarında asaldır. A kaç farklı değer alabilir?",
+   "secenekler": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "dogru": "B",
+   "cozum": "3A sayısı 2 ve 5'e bölünmemelidir: 31, 33, 37, 39 → 4 değer.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-045",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-5",
+   "tur": "benzer",
+   "metin": "A7 iki basamaklı doğal sayısı ile 15 aralarında asal değildir. A en çok kaçtır?",
+   "secenekler": [
+    "2",
+    "5",
+    "8",
+    "9"
+   ],
+   "dogru": "C",
+   "cozum": "A7 sayısı 5'e bölünemez (7 ile biter); 3 ile bölünmelidir: 27, 57, 87 → en büyük A = 8.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-046",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-11",
+   "tur": "benzer",
+   "metin": "K ve L aralarında asal, EKOK(K, L) = 90 ise K + L en az kaçtır?",
+   "secenekler": [
+    "19",
+    "23",
+    "47",
+    "91"
+   ],
+   "dogru": "A",
+   "cozum": "90 = 2 · 3² · 5; K = 9 ve L = 10 alınır; K + L = 19.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-047",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-11",
+   "tur": "benzer",
+   "metin": "K ve L aralarında asal ve K · L = 60 ise EKOK(K, L) kaçtır?",
+   "secenekler": [
+    "12",
+    "30",
+    "60",
+    "120"
+   ],
+   "dogru": "C",
+   "cozum": "Aralarında asal sayılarda EKOK = K · L = 60.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-048",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-11",
+   "tur": "benzer",
+   "metin": "1'den büyük K ve L aralarında asaldır, K > L ve EKOK(K, L) = 84 ise K − L en az kaçtır?",
+   "secenekler": [
+    "5",
+    "17",
+    "25",
+    "83"
+   ],
+   "dogru": "A",
+   "cozum": "84 = 2² · 3 · 7 → K = 12 ve L = 7; K − L = 5.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-049",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-14",
+   "tur": "benzer",
+   "metin": "Asıl soruda iki dörtgenin ortak köşesi vardır ve her dörtgenin dört köşe sayısının çarpımı (x ve y) aralarında asaldır. Bu kez sol dörtgenin üst köşesinde 8, alt köşesinde 3 yazılıdır; diğer kurallar aynıdır. x + y en az kaçtır?",
+   "secenekler": [
+    "385",
+    "433",
+    "457",
+    "529"
+   ],
+   "dogru": "B",
+   "cozum": "Ortak köşe 1 olmalıdır. Sol dörtgen için x = 8 · 3 · 2 · 1 = 48; sağ dörtgen için y = 5 · 7 · 11 · 1 = 385. x + y = 433.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-050",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-14",
+   "tur": "benzer",
+   "metin": "x = a · b · c · d ve y = d · e · f · g sayıları aralarında asaldır (a, b, c, d, e, f, g doğal sayılar). Buna göre d kaçtır?",
+   "secenekler": [
+    "0",
+    "1",
+    "2",
+    "Bulunamaz"
+   ],
+   "dogru": "B",
+   "cozum": "d hem x'i hem y'yi böldüğünden aralarında asallık için d = 1 olmalıdır. d = 0 olsaydı x = y = 0 olurdu.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-051",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-14",
+   "tur": "benzer",
+   "metin": "a, b, c birbirinden farklı, 1'den büyük ve her biri 6 ile aralarında asal doğal sayılardır. a · b · c en az kaçtır?",
+   "secenekler": [
+    "105",
+    "210",
+    "385",
+    "1001"
+   ],
+   "dogru": "C",
+   "cozum": "6 = 2 · 3 ile aralarında asal olmak için 2 ve 3'e bölünmemeli: 5, 7, 11. 5 · 7 · 11 = 385.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-052",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-24",
+   "tur": "benzer",
+   "metin": "A bitkisi 15 cm'den 36 cm'ye, B bitkisi 10 cm'den ? cm'ye uzamıştır. Uzama miktarları iki asal çarpanı olan aralarında asal iki sayıdır; son durumda B'nin boyu A'dan fazladır ve son boylar aralarında asaldır. Son boyların toplamı en az kaç cm'dir?",
+   "secenekler": [
+    "89",
+    "95",
+    "101",
+    "113"
+   ],
+   "dogru": "C",
+   "cozum": "A'nın uzaması 21 = 3 · 7; B'nin uzaması 55 = 5 · 11 → B'nin son boyu 65 cm. Toplam 36 + 65 = 101 cm.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-053",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-24",
+   "tur": "benzer",
+   "metin": "Bir bitki 20 cm'den 59 cm'ye uzamıştır. Uzama miktarının asal çarpanları hangileridir?",
+   "secenekler": [
+    "Yalnız 59",
+    "3 ve 13",
+    "3 ve 19",
+    "5 ve 7"
+   ],
+   "dogru": "B",
+   "cozum": "Uzama 59 − 20 = 39 = 3 · 13.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-054",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-24",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisinin tam olarak 2 farklı asal çarpanı vardır?",
+   "secenekler": [
+    "30",
+    "37",
+    "39",
+    "49"
+   ],
+   "dogru": "C",
+   "cozum": "30 = 2 · 3 · 5 (3 asal); 37 asal (1); 39 = 3 · 13 (2 asal); 49 = 7² (1 asal).",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-055",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-4",
+   "tur": "benzer",
+   "metin": "Asıl soruya göre iç alanı yalnızca bir farklı asal çarpanı olan çerçeve 'asimetrik eser'dir. 1. çerçeve 324 dm², 2. çerçeve 361 dm², 3. çerçeve 484 dm², 4. çerçeve 900 dm² iç alana sahip olduğuna göre hangisi asimetrik eserdir?",
+   "secenekler": [
+    "1. çerçeve",
+    "2. çerçeve",
+    "3. çerçeve",
+    "4. çerçeve"
+   ],
+   "dogru": "B",
+   "cozum": "361 = 19² yalnız tek asal çarpanlıdır. 324 = 2² · 3⁴, 484 = 2² · 11², 900 = 2² · 3² · 5² çok asallıdır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-056",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-4",
+   "tur": "benzer",
+   "metin": "2025 sayısının farklı asal çarpanlarının sayısı kaçtır?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "B",
+   "cozum": "2025 = 3⁴ · 5² olduğundan iki farklı asal çarpan vardır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-057",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-4",
+   "tur": "benzer",
+   "metin": "729 sayısının farklı asal çarpanlarının sayısı kaçtır?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "6"
+   ],
+   "dogru": "A",
+   "cozum": "729 = 3⁶; tek bir asal çarpan vardır. (6, üs değeridir; çarpan sayısı değildir.)",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-058",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-16",
+   "tur": "benzer",
+   "metin": "a ve b pozitif tam sayılar. 2ᵃ · 5ᵇ şeklinde yazılabilen iki basamaklı en büyük sayı kaçtır?",
+   "secenekler": [
+    "50",
+    "64",
+    "80",
+    "100"
+   ],
+   "dogru": "C",
+   "cozum": "2ᵃ · 5 için 10, 20, 40, 80; 2ᵃ · 25 için 50 (100 üç basamaklıdır). En büyük iki basamaklı sayı 80'dir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-059",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-16",
+   "tur": "benzer",
+   "metin": "a ve b pozitif tam sayılar. 2ᵃ · 3ᵇ şeklinde yazılabilen kaç tane iki basamaklı sayı vardır?",
+   "secenekler": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "dogru": "C",
+   "cozum": "12, 18, 24, 36, 48, 54, 72, 96: toplam 8 sayı.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-060",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-16",
+   "tur": "benzer",
+   "metin": "a ve b pozitif tam sayılar. 3ᵃ · 5ᵇ şeklinde yazılabilen iki basamaklı en büyük sayının rakamları toplamı kaçtır?",
+   "secenekler": [
+    "9",
+    "12",
+    "13",
+    "18"
+   ],
+   "dogru": "B",
+   "cozum": "15, 45 ve 75 iki basamaklı adaylardır; en büyük 75 ve rakamları toplamı 7 + 5 = 12.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-061",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-17",
+   "tur": "benzer",
+   "metin": "Aynı kurala göre hedefler 60, 77, 98 ve 121 ise en fazla puanı hangisi kazandırır?",
+   "secenekler": [
+    "60",
+    "77",
+    "98",
+    "121"
+   ],
+   "dogru": "B",
+   "cozum": "Puanlar: 60 → 2 + 3 + 5 = 10; 77 → 7 + 11 = 18; 98 → 2 + 7 = 9; 121 → 11 (bir kez sayılır). En çok puan 77'dedir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-062",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-17",
+   "tur": "benzer",
+   "metin": "221 sayısının farklı asal çarpanlarının toplamı kaçtır?",
+   "secenekler": [
+    "17",
+    "30",
+    "34",
+    "221"
+   ],
+   "dogru": "B",
+   "cozum": "221 = 13 · 17; 13 + 17 = 30.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-063",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-17",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi asal sayı değildir?",
+   "secenekler": [
+    "131",
+    "137",
+    "143",
+    "149"
+   ],
+   "dogru": "C",
+   "cozum": "143 = 11 · 13 asal değildir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-064",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-23",
+   "tur": "benzer",
+   "metin": "Farklı asal bölenlerinin toplamı asal olan sayılara 'toplam asal sayı' denir. Aynı tanıma göre hangisi bir toplam asal sayıdır?",
+   "secenekler": [
+    "30",
+    "42",
+    "20",
+    "66"
+   ],
+   "dogru": "C",
+   "cozum": "20 = 2² · 5 → 2 + 5 = 7, asal. 30 → 10, 42 → 12, 66 → 16 asal değildir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-065",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-23",
+   "tur": "benzer",
+   "metin": "Aynı tanıma göre hangisi bir toplam asal sayı DEĞİLDİR?",
+   "secenekler": [
+    "12",
+    "18",
+    "28",
+    "50"
+   ],
+   "dogru": "C",
+   "cozum": "28 = 2² · 7 → 2 + 7 = 9, asal değil. Diğerleri 5, 5 ve 7 verir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-066",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-23",
+   "tur": "benzer",
+   "metin": "102 sayısının farklı asal bölenlerinin toplamı kaçtır?",
+   "secenekler": [
+    "19",
+    "22",
+    "36",
+    "53"
+   ],
+   "dogru": "B",
+   "cozum": "102 = 2 · 3 · 17; 2 + 3 + 17 = 22.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-067",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-6",
+   "tur": "benzer",
+   "metin": "Bir sayının çarpanları küçükten büyüğe: 1, 2, 3, 6, 13, X, 39, Y. Hangisi X + Y'nin bir çarpanıdır?",
+   "secenekler": [
+    "6",
+    "8",
+    "12",
+    "18"
+   ],
+   "dogru": "B",
+   "cozum": "Sayı 78'dir: Y = 78, X = 26. X + Y = 104 = 8 · 13; 8 bir çarpandır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-068",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-6",
+   "tur": "benzer",
+   "metin": "Bir sayının çarpanları küçükten büyüğe: 1, 3, 5, X, 25, Y. X + Y kaçtır?",
+   "secenekler": [
+    "80",
+    "90",
+    "100",
+    "105"
+   ],
+   "dogru": "B",
+   "cozum": "Sayı 75'tir: çarpanlar 1, 3, 5, 15, 25, 75. X = 15, Y = 75; X + Y = 90.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-069",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-6",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi 152'nin bir çarpanı değildir?",
+   "secenekler": [
+    "4",
+    "8",
+    "19",
+    "12"
+   ],
+   "dogru": "D",
+   "cozum": "152 = 2³ · 19; çarpanları 1, 2, 4, 8, 19, 38, 76, 152. 12 bir çarpan değildir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-070",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-19",
+   "tur": "benzer",
+   "metin": "Tabloda 36: 1, 2, 3, 4, 6, 8, 9, 12, 18, 36; 45: 1, 3, 5, 9, 15, 45; 50: 1, 2, 5, 10, 25, 50; 119: 1, 119 yazılıdır. Kaç tanesinin çarpanlarının tamamı doğru verilmiştir?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "B",
+   "cozum": "45 ve 50 doğrudur. 36 listesinde 8 bir çarpan değildir; 119'un listesinde 7 ve 17 eksiktir. Doğru olan 2 tane.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-071",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-19",
+   "tur": "benzer",
+   "metin": "Aynı tabloda hangi sayının çarpanlarında EKSİK vardır?",
+   "secenekler": [
+    "36",
+    "45",
+    "50",
+    "119"
+   ],
+   "dogru": "D",
+   "cozum": "119 = 7 · 17; listede 7 ve 17 yoktur.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-072",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-19",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi 133'ün bir çarpanıdır?",
+   "secenekler": [
+    "3",
+    "7",
+    "11",
+    "13"
+   ],
+   "dogru": "B",
+   "cozum": "133 = 7 · 19; 7 bir çarpandır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-073",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-25",
+   "tur": "benzer",
+   "metin": "Saat 10.00'da A otobüsünün kalkmasına 20 dk, B otobüsünün kalkmasına 30 dk vardır. A 40 dakikada bir, B 30 dakikada bir kalkıyor. İki otobüs 2. kez aynı anda kaçta kalkar?",
+   "secenekler": [
+    "12.00",
+    "13.00",
+    "11.00",
+    "14.00"
+   ],
+   "dogru": "B",
+   "cozum": "İlk ortak kalkış 11.00'dir. EKOK(40, 30) = 120 dakika; ikinci ortak kalkış 13.00.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-074",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-25",
+   "tur": "benzer",
+   "metin": "İki otobüs ilk kez 13.50'de aynı anda kalkıyor; biri 40, diğeri 50 dakikada bir kalkıyor. 3. kez aynı anda kaçta kalkarlar?",
+   "secenekler": [
+    "17.10",
+    "20.30",
+    "19.30",
+    "16.10"
+   ],
+   "dogru": "B",
+   "cozum": "EKOK(40, 50) = 200 dakika. 3. kez 13.50 + 2 · 200 dk = 20.30.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-075",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-25",
+   "tur": "benzer",
+   "metin": "Saat 9.00'da A otobüsünün kalkmasına 10 dk, B otobüsünün kalkmasına 30 dk vardır. A 20 dakikada bir, B 30 dakikada bir kalkıyor. İlk kez aynı anda kaçta kalkarlar?",
+   "secenekler": [
+    "9.30",
+    "10.00",
+    "10.30",
+    "9.10"
+   ],
+   "dogru": "A",
+   "cozum": "A: 9.10, 9.30, ...; B: 9.30, ... İlk ortak kalkış 9.30.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-076",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-26",
+   "tur": "benzer",
+   "metin": "Atlas Bey, özdeş kibrit kutularını aralarında boşluk kalmayacak şekilde altta dikey ve üstte yatay olarak dizmiştir. Yatay kutuda 30 mm, dikey kutuda 20 mm genişlik vardır; yatay kutularda 10, dikey kutularda 12 çöp bulunur. Dikeylerdeki toplam çöp, yataylardakinden 160 fazla ise toplam kaç kutu vardır?",
+   "secenekler": [
+    "10",
+    "30",
+    "50",
+    "60"
+   ],
+   "dogru": "C",
+   "cozum": "EKOK(30, 20) = 60 mm; bir blokta 2 yatay ve 3 dikey kutu vardır. k blok için 36k − 20k = 16k = 160 → k = 10; toplam 5k = 50 kutu.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-077",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-26",
+   "tur": "benzer",
+   "metin": "Asıl soruda (Atlas Bey'in kibrit kutuları) yatay kutunun uzunluğu 56 mm, dikey kutunun genişliği 24 mm; iki sıra aynı uzunlukta başlayıp bitiyor. Yatay kutularda 16, dikey kutularda 18 çöp var ve dikeylerdeki toplam çöp yataylardakinden 780 fazladır. Asıl sorudaki düzende Atlas Bey'in kaç tane YATAY kutusu vardır?",
+   "secenekler": [
+    "10",
+    "30",
+    "70",
+    "100"
+   ],
+   "dogru": "B",
+   "cozum": "EKOK(56, 24) = 168 mm; bir blokta 3 yatay ve 7 dikey kutu vardır. 126k − 48k = 78k = 780 → k = 10; yatay kutu sayısı 3k = 30.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-078",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-26",
+   "tur": "benzer",
+   "metin": "40 mm ve 60 mm uzunluğundaki kutular iki ayrı sıraya, sıralar aynı uzunlukta olacak şekilde diziliyor. Bir sıranın uzunluğu en az kaç mm'dir?",
+   "secenekler": [
+    "20",
+    "100",
+    "120",
+    "240"
+   ],
+   "dogru": "C",
+   "cozum": "EKOK(40, 60) = 120 mm.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-079",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-27",
+   "tur": "benzer",
+   "metin": "Bir binanın toplam yüksekliği 360 br, katlardan birinin tavanının zeminden yüksekliği 135 br'dir. Kat yükseklikleri eşit ve tam sayı ise bina en az kaç katlıdır?",
+   "secenekler": [
+    "8",
+    "45",
+    "9",
+    "24"
+   ],
+   "dogru": "A",
+   "cozum": "EBOB(360, 135) = 45 br; 360 ÷ 45 = 8 kat.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-080",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-27",
+   "tur": "benzer",
+   "metin": "Asıl soruda gökdelenin toplam yüksekliği 575 br, katlardan birinin tavanı zeminden 250 br yüksekliktedir. Kat yükseklikleri eşit ve tam sayı ise bir katın yüksekliği en fazla kaç br olabilir?",
+   "secenekler": [
+    "5",
+    "23",
+    "25",
+    "50"
+   ],
+   "dogru": "C",
+   "cozum": "EBOB(575, 250) = 25 br.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-081",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-27",
+   "tur": "benzer",
+   "metin": "Bir binanın toplam yüksekliği 420 br, katlardan birinin tavanının zeminden yüksekliği 180 br'dir. Kat yükseklikleri eşit, tam sayı ve 20 br'den az ise bina en az kaç katlıdır?",
+   "secenekler": [
+    "7",
+    "21",
+    "28",
+    "42"
+   ],
+   "dogru": "C",
+   "cozum": "EBOB(420, 180) = 60; 20'den küçük en büyük bölen 15 br; 420 ÷ 15 = 28 kat.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-082",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-28",
+   "tur": "benzer",
+   "metin": "Bir terazinin sol kefesine sadece 6 kg'lık, sağ kefesine sadece 9 kg'lık ağırlıklar konarak denge sağlanıyor. Dara 3 kg ise terazinin toplam ağırlığı en az kaç kg'dır?",
+   "secenekler": [
+    "18",
+    "21",
+    "36",
+    "39"
+   ],
+   "dogru": "D",
+   "cozum": "Kefeler EKOK(6, 9) = 18 kg; toplam 18 + 18 + 3 = 39 kg.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-083",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-28",
+   "tur": "benzer",
+   "metin": "Sol kefeye 4 kg'lık, sağ kefeye 6 kg'lık ağırlıklarla en hafif dengede toplam kaç ağırlık kullanılır?",
+   "secenekler": [
+    "2",
+    "5",
+    "10",
+    "12"
+   ],
+   "dogru": "B",
+   "cozum": "EKOK(4, 6) = 12 kg; sol kefede 3, sağ kefede 2 ağırlık; toplam 5.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-084",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-28",
+   "tur": "benzer",
+   "metin": "Sol kefeye 3 kg'lık, sağ kefeye 4 kg'lık ağırlıklar konuyor; Ahmet dengeyi bir kez sağlıyor, sonra iki kefeye de aynı miktarda ekleyerek ikinci en hafif dengeyi kuruyor. Dara 5 kg ise toplam ağırlık kaç kg'dır?",
+   "secenekler": [
+    "29",
+    "48",
+    "53",
+    "24"
+   ],
+   "dogru": "C",
+   "cozum": "İlk denge her kefede 12 kg'dır; ikinci en hafif denge her kefede 24 kg'dır. Toplam 24 + 24 + 5 = 53 kg.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-085",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-29",
+   "tur": "benzer",
+   "metin": "K = 2³ · 3ᵃ, L = 2ᵇ · 3² ve EBOB(K, L) = 2² · 3² ise a + b en az kaçtır?",
+   "secenekler": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "dogru": "B",
+   "cozum": "2 için min(3, b) = 2 → b = 2; 3 için min(a, 2) = 2 → a ≥ 2. En az a + b = 4.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-086",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-29",
+   "tur": "benzer",
+   "metin": "K = 2ᵃ · 5³, L = 2⁴ · 5ᵇ ve EKOK(K, L) = 2⁴ · 5³ ise a + b en çok kaçtır?",
+   "secenekler": [
+    "4",
+    "6",
+    "7",
+    "8"
+   ],
+   "dogru": "C",
+   "cozum": "2 için max(a, 4) = 4 → a ≤ 4; 5 için max(3, b) = 3 → b ≤ 3. En çok a + b = 7.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-087",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-29",
+   "tur": "benzer",
+   "metin": "K = 3ᵃ · 7, L = 3² · 7ᵇ ve EBOB(K, L) = 3² · 7 ise a + b en az kaçtır?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "C",
+   "cozum": "3 için min(a, 2) = 2 → a ≥ 2; 7 için min(1, b) = 1 → b ≥ 1. En az a + b = 3.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-088",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-30",
+   "tur": "benzer",
+   "metin": "Üretilen zeytinyağının yarısı 300 mL'lik, yarısı 500 mL'lik şişelere dolduruluyor. Toplam şişe sayısı 50'den az ise en fazla kaç litre üretilmiştir?",
+   "secenekler": [
+    "9",
+    "12",
+    "18",
+    "24"
+   ],
+   "dogru": "C",
+   "cozum": "Yarı miktar EKOK(300, 500) = 1500 mL'nin katı: 1500k. Şişe sayısı 5k + 3k = 8k < 50 → k ≤ 6. Toplam 2 · 1500 · 6 = 18 000 mL = 18 L.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-089",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-30",
+   "tur": "benzer",
+   "metin": "Asıl soruda (Ali Bey) yağın yarısı 250 mL'lik, yarısı 400 mL'lik şişelere dolduruluyor ve toplam şişe sayısı 100'den azdır. Buna göre Ali Bey en fazla kaç şişe elde etmiştir?",
+   "secenekler": [
+    "91",
+    "98",
+    "99",
+    "84"
+   ],
+   "dogru": "A",
+   "cozum": "Yarı miktar 2000k mL; şişe sayısı 8k + 5k = 13k. 13k < 100 için en büyük k = 7; 13 · 7 = 91 şişe.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-090",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-30",
+   "tur": "benzer",
+   "metin": "Bir miktar zeytinyağının tamamı 250 mL'lik şişelere de, tamamı 400 mL'lik şişelere de hiç artmadan doldurulabiliyor. Bu zeytinyağı en az kaç litredir?",
+   "secenekler": [
+    "1",
+    "2",
+    "4",
+    "10"
+   ],
+   "dogru": "B",
+   "cozum": "EKOK(250, 400) = 2000 mL = 2 L.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-091",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-31",
+   "tur": "benzer",
+   "metin": "İki hemşire 8 ve 12 günde bir nöbet tutuyor. 30 günlük bir ayda en fazla kaç kez birlikte nöbet tutarlar?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "B",
+   "cozum": "EKOK(8, 12) = 24 gün. İlk ortak nöbet 1. günde, sonraki 25. günde: 2 kez.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-092",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-31",
+   "tur": "benzer",
+   "metin": "İki görevli 20 ve 30 günde bir nöbet tutuyor. 365 günlük bir yılda en fazla kaç kez birlikte nöbet tutarlar?",
+   "secenekler": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "dogru": "C",
+   "cozum": "EKOK(20, 30) = 60 gün. Ortak günler 1, 61, 121, 181, 241, 301, 361: toplam 7 kez.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-093",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-31",
+   "tur": "benzer",
+   "metin": "Asıl soruda iki doktor 15 ve 21 günde bir nöbet tutmaktadır. Bu doktorlar ilk kez 1 Mart'ta (yılın 60. günü, 365 günlük yıl) birlikte nöbet tutuyor. O yıl 31 Aralık'a kadar toplam kaç kez birlikte nöbet tutarlar?",
+   "secenekler": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "dogru": "B",
+   "cozum": "EKOK(15, 21) = 105 gün. Ortak günler 60, 165, 270 olur; 375 > 365. Toplam 3 kez.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-094",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-32",
+   "tur": "benzer",
+   "metin": "Bir sınıftaki kalemler 12'şerli paketlenince 10, 16'şarlı paketlenince 14 kalem artıyor. Kalem sayısı 100'den fazla ise en az kaçtır?",
+   "secenekler": [
+    "142",
+    "144",
+    "146",
+    "94"
+   ],
+   "dogru": "A",
+   "cozum": "Her iki durumda da 2 eksik vardır: N + 2, 12 ve 16'nın ortak katıdır; EKOK = 48. N = 48k − 2 ve N > 100 için k = 3; N = 142.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-095",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-32",
+   "tur": "benzer",
+   "metin": "Bir kutudaki bilyeler 6'şar ve 8'er sayıldığında her seferinde 2 bilye artıyor. Bilye sayısı 50'den fazla ise en az kaçtır?",
+   "secenekler": [
+    "72",
+    "74",
+    "76",
+    "50"
+   ],
+   "dogru": "B",
+   "cozum": "Her iki bölmede de kalan 2 olduğundan N − 2, 6 ve 8'in ortak katıdır (EKOK = 24): N = 24k + 2; 50'den büyük en küçük değer 74 (k = 3).",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-096",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-32",
+   "tur": "benzer",
+   "metin": "Bir sayı 9'a bölündüğünde 8, 12'ye bölündüğünde 11 kalanını veriyor. Bu koşulu sağlayan iki basamaklı en büyük sayı kaçtır?",
+   "secenekler": [
+    "35",
+    "71",
+    "72",
+    "107"
+   ],
+   "dogru": "B",
+   "cozum": "N + 1, 9 ve 12'nin ortak katıdır (EKOK = 36): N = 36k − 1. İki basamaklı en büyük değer 36 · 2 − 1 = 71.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-097",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-1",
+   "tur": "tekrar",
+   "metin": "56 kg nohut, 84 kg mercimek ve 140 kg fasulye; çeşitler birbirine karıştırılmadan ve hiç artmayacak şekilde eş paketlere doldurulacaktır. Her pakette yalnız bir çeşit bulunacak ve bütün paketler eşit kütlede olacaktır. Bu iş için en az kaç pakete ihtiyaç vardır?",
+   "secenekler": [
+    "10",
+    "28",
+    "56",
+    "112"
+   ],
+   "dogru": "A",
+   "cozum": "Paket kütlesi EBOB(56, 84, 140) = 28 kg'dır. 56 ÷ 28 = 2, 84 ÷ 28 = 3, 140 ÷ 28 = 5; toplam 10 paket.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-098",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-21",
+   "tur": "tekrar",
+   "metin": "Bir gösteride K ve L ışıldakları kullanılıyor. K ışıldağı gösterinin 4. saniyesinde ilk kez yanıyor, sonra her 12 saniyede bir yanıyor. L ışıldağı 10. saniyede ilk kez yanıyor, sonra her 18 saniyede bir yanıyor. İki ışıldak aynı anda 3. kez yandığında gösterinin kaçıncı saniyesindedir?",
+   "secenekler": [
+    "100",
+    "108",
+    "136",
+    "144"
+   ],
+   "dogru": "A",
+   "cozum": "K: 4, 16, 28, 40, ...; L: 10, 28, 46, 64, ... İlk ortak an 28; EKOK(12, 18) = 36 ile ortak anlar 28, 64, 100. Üçüncüsü 100. saniye.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-099",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-10",
+   "tur": "tekrar",
+   "metin": "A = 2ˣ · 3² · 7 ve B = 2³ · 3ʸ · 7² sayıları için EBOB(A, B) = 252 ve EKOK(A, B) = 10 584 olduğuna göre x + y kaçtır?",
+   "secenekler": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "dogru": "B",
+   "cozum": "252 = 2² · 3² · 7 → x = 2 (EBOB'da küçük üs). 10 584 = 2³ · 3³ · 7² → y = 3 (EKOK'ta büyük üs). x + y = 5.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-100",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-20",
+   "tur": "tekrar",
+   "metin": "Uzunluğu 3 m 60 cm olan bir kumaş şeridi, her biri 24 cm olan eş parçalara ayrılacaktır. Kesimler tek tek, art arda yapılmaktadır. Her kesim 8 saniye sürdüğüne göre kesimler başladıktan sonra bütün kesimler kaç saniyede biter?",
+   "secenekler": [
+    "136",
+    "128",
+    "120",
+    "112"
+   ],
+   "dogru": "D",
+   "cozum": "360 ÷ 24 = 15 parça; tek şeritte 14 kesim; 14 · 8 = 112 saniye.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-101",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-8",
+   "tur": "tekrar",
+   "metin": "Bir marangoz 108 cm, 144 cm ve 360 cm uzunluğunda üç çıtanın tamamını kullanarak bir merdiven yapacaktır. 360 cm'lik çıtayı 90 cm'lik dört eş parçaya keserek merdivenin yan kenarlarını oluşturacaktır. Diğer iki çıtayı ise hiç artık kalmayacak ve parça sayısı en az olacak biçimde eşit uzunlukta parçalara ayırıp basamak yapacaktır. Buna göre bu merdiven kaç basamaklı olur?",
+   "secenekler": [
+    "7",
+    "9",
+    "12",
+    "17"
+   ],
+   "dogru": "A",
+   "cozum": "Yan kenarlar 4 · 90 = 360 cm'lik çıtanın tamamıdır. EBOB(108, 144) = 36 cm; 3 + 4 = 7 basamak.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-102",
+   "altKonu": "Bilimsel gösterim",
+   "kaynakKod": "MAT-ÜS-4",
+   "tur": "tekrar",
+   "metin": "Bir mikroçipin kütlesi 0,004 miligramdır. Bu kütlenin kilogram cinsinden bilimsel gösterimi aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "4 · 10⁻³",
+    "4 · 10⁻⁶",
+    "4 · 10⁻⁹",
+    "4 · 10⁻¹²"
+   ],
+   "dogru": "C",
+   "cozum": "0,004 mg = 4 · 10⁻³ mg; 1 mg = 10⁻⁶ kg olduğundan 4 · 10⁻⁹ kg.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-103",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-12",
+   "tur": "tekrar",
+   "metin": "Bir fabrikada üç makine sırasıyla her 12, 15 ve 20 dakikada bir ürün çıkarmaktadır. Makineler sabah 08.00'de aynı anda ürün çıkarmış ve aynı biçimde çalışmayı sürdürmüştür. 08.00 ve 18.00 dahil olmak üzere bu iki saat arasında üç makine kaç kez aynı anda ürün çıkarır?",
+   "secenekler": [
+    "11",
+    "10",
+    "9",
+    "8"
+   ],
+   "dogru": "A",
+   "cozum": "EKOK(12, 15, 20) = 60 dk; 600 dk içinde 0, 60, ..., 600 anları: başlangıç dâhil 11 kez.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-104",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-21",
+   "tur": "tekrar",
+   "metin": "Dairesel bir bisiklet pistinde Ela, kontrol noktasından ilk kez 5. dakikada, Mert ise ilk kez 17. dakikada geçiyor. Ela turu 12 dakikada, Mert 15 dakikada tamamlıyor. İkisi kontrol noktasından 4. kez aynı anda geçtiğinde kaçıncı dakikadır?",
+   "secenekler": [
+    "300",
+    "257",
+    "240",
+    "197"
+   ],
+   "dogru": "D",
+   "cozum": "İlk ortak an 17. dakika; EKOK(12, 15) = 60. Ortak anlar 17, 77, 137, 197.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-105",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-15",
+   "tur": "tekrar",
+   "metin": "Pınar Hanım ile Hakan Bey bir toptancıdan bardak ve tabak almıştır. Pınar Hanım 84 TL'lik bardak ve 150 TL'lik tabak, Hakan Bey 126 TL'lik bardak ve 90 TL'lik tabak için ödeme yapmıştır. Aynı ürünün birim fiyatı iki kişi için de aynıdır ve fiyatlar tam sayıdır. Bir tabağın birim fiyatı 25 TL'den azdır. Buna göre ikisi toplam en az kaç adet bardak ve tabak almıştır?",
+   "secenekler": [
+    "13",
+    "15",
+    "17",
+    "21"
+   ],
+   "dogru": "D",
+   "cozum": "Bardak birim fiyatı EBOB(84, 126) = 42 TL → 5 adet. Tabak birim fiyatı 30'un 25'ten küçük en büyük böleni olan 15 TL → 16 adet. Toplam 21.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-106",
+   "altKonu": "Üslü ifadelerle işlemler",
+   "kaynakKod": "MAT-ÜS-8",
+   "tur": "tekrar",
+   "metin": "Bir limanda büyük çuvalın kütlesi 4³ kg, küçük çuvalın kütlesi 2⁵ kg'dır. 1. depoya 6⁴ adet büyük çuval yüklenmiştir. 2. depoya yüklenen küçük çuvalların toplam kütlesi, 1. depodaki büyük çuvalların toplam kütlesine eşittir. 2. depoda ayrıca 1000 adet büyük çuval da bulunduğuna göre 2. depoda toplam kaç çuval vardır?",
+   "secenekler": [
+    "4 592",
+    "3 592",
+    "3 092",
+    "2 592"
+   ],
+   "dogru": "B",
+   "cozum": "1. deponun kütlesi 4³ · 6⁴ = 2¹⁰ · 3⁴ kg; küçük çuval sayısı 2¹⁰ · 3⁴ ÷ 2⁵ = 2592. Toplam 2592 + 1000 = 3592.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-107",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-2",
+   "tur": "tekrar",
+   "metin": "K ve L aralarında asal doğal sayılardır. EKOK(K, L) = 180 olduğuna göre K + L toplamı en az kaçtır?",
+   "secenekler": [
+    "25",
+    "27",
+    "28",
+    "29"
+   ],
+   "dogru": "D",
+   "cozum": "K · L = 180 = 2² · 3² · 5. Aralarında asal çiftler (4, 45), (9, 20), (5, 36), (1, 180) toplamları 49, 29, 41, 181; en az 29.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-108",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-14",
+   "tur": "tekrar",
+   "metin": "İki üçgen bir köşeyi (O) ortak kullanıyor; toplam 5 köşe dairesi var. Sol üçgenin köşelerindeki daireler: 6, 4 ve O. Sağ üçgenin köşelerindeki daireler: O, K ve L. Dairelere birbirinden farklı birer doğal sayı yazılacak; 6 ve 4 verilmiştir. Sol üçgenin köşelerindeki sayıların çarpımı x, sağ üçgeninki y'dir. x ve y aralarında asal olduğuna göre x + y en az kaçtır?",
+   "secenekler": [
+    "59",
+    "53",
+    "49",
+    "39"
+   ],
+   "dogru": "A",
+   "cozum": "O = 1, x = 6 · 4 · 1 = 24. K ve L için 5 ve 7 seçilir; y = 1 · 5 · 7 = 35. x + y = 59.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-109",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-4",
+   "tur": "tekrar",
+   "metin": "Aşağıdaki sayılardan hangisinin farklı asal çarpanlarının sayısı en fazladır?",
+   "secenekler": [
+    "900",
+    "1 001",
+    "1 024",
+    "1 155"
+   ],
+   "dogru": "D",
+   "cozum": "900 (3 asal), 1001 (3 asal), 1024 = 2¹⁰ (1 asal), 1155 = 3 · 5 · 7 · 11 (4 asal). En fazla 1155'tedir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-110",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-20",
+   "tur": "tekrar",
+   "metin": "480 m uzunluğundaki doğrusal bir yolun hem başına hem sonuna direk gelecek şekilde, ardışık iki direk arası 12 m olacak biçimde aydınlatma direkleri dikilecektir. Bir direğin maliyeti 150 TL olduğuna göre toplam maliyet kaç TL'dir?",
+   "secenekler": [
+    "6 150",
+    "6 000",
+    "5 850",
+    "5 700"
+   ],
+   "dogru": "A",
+   "cozum": "480 ÷ 12 = 40 aralık; iki ucu da direkli olduğundan 41 direk. 41 · 150 = 6150 TL.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-111",
+   "altKonu": "Üslü ifadelerde örüntü",
+   "kaynakKod": "MAT-ÜS-1",
+   "tur": "tekrar",
+   "metin": "Bir laboratuvarda bir bakteri kültüründe 1. saatte 5, 2. saatte 15, 3. saatte 45 hücre vardır. Hücre sayısı her saat bir önceki saatteki sayının aynı katına çıkarak artmayı sürdürürse 12. saatte kaç hücre olur?",
+   "secenekler": [
+    "3¹²",
+    "5 · 3¹¹",
+    "5 · 3¹²",
+    "15¹¹"
+   ],
+   "dogru": "B",
+   "cozum": "Her saat 3 katına çıkıyor; n. saatte 5 · 3ⁿ⁻¹ hücre. 12. saatte 5 · 3¹¹.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-112",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-16",
+   "tur": "tekrar",
+   "metin": "a ve b birer pozitif tam sayı olmak üzere 2ᵃ · 7ᵇ biçiminde yazılabilen üç basamaklı en büyük doğal sayı kaçtır?",
+   "secenekler": [
+    "686",
+    "784",
+    "832",
+    "896"
+   ],
+   "dogru": "D",
+   "cozum": "b = 1: 7 · 2⁷ = 896; b = 2: 49 · 2⁴ = 784; b = 3: 343 · 2 = 686. En büyüğü 896.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-114",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-23",
+   "tur": "tekrar",
+   "metin": "Hasan Öğretmen tahtaya şunu yazdı: 'Farklı asal bölenlerinin toplamı 24 olan pozitif tam sayılara kesin sayı denir. Örneğin 95 bir kesin sayıdır; çünkü asal bölenleri 5 ve 19'dur, 5 + 19 = 24.' Buna göre aşağıdakilerden hangisi bir kesin sayıdır?",
+   "secenekler": [
+    "87",
+    "91",
+    "119",
+    "133"
+   ],
+   "dogru": "C",
+   "cozum": "87 → 32; 91 → 20; 119 = 7 · 17 → 24 ✓; 133 → 26. Doğru şık 119.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-115",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-9",
+   "tur": "tekrar",
+   "metin": "Ali, bilgisayar fiyatının %20'sini ilk ay öder, sonra her ay 45 TL öder. Berk, tablet fiyatının %40'ını ilk ay öder, sonra her ay 60 TL öder. İlk aydan sonra ikisinin de ödemesi gereken kalan para birbirine eşittir ve ikisi de kalan parayı tam sayıda aylık ödemeyle, artık para kalmadan bitirir. İki aygıtın fiyatı da 2000 TL'den az olduğuna göre fiyatların toplamı en fazla kaç TL'dir?",
+   "secenekler": [
+    "525",
+    "2 625",
+    "3 150",
+    "3 675"
+   ],
+   "dogru": "C",
+   "cozum": "Kalan R = 180k (EKOK(45, 60) = 180). Ali'nin fiyatı 225k, Berk'in fiyatı 300k; 300k < 2000 için k ≤ 6. Fiyatlar 1350 + 1800 = 3150 TL.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-116",
+   "altKonu": "Bilimsel gösterim",
+   "kaynakKod": "MAT-ÜS-4",
+   "tur": "tekrar",
+   "metin": "Bir virüsün çapı 0,00007 milimetredir. Bu uzunluğun bilimsel gösterimi kilometre cinsinden aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "7 · 10⁻¹¹",
+    "7 · 10⁻⁵",
+    "7 · 10⁻⁸",
+    "7 · 10⁻¹⁴"
+   ],
+   "dogru": "A",
+   "cozum": "0,00007 mm = 7 · 10⁻⁵ mm; 1 mm = 10⁻⁶ km; 7 · 10⁻¹¹ km.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-117",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-13",
+   "tur": "tekrar",
+   "metin": "Bir halterin sağ bölümüne 15 kg'lık, sol bölümüne 6 kg'lık diskler takılarak iki tarafın ağırlığı eşitlenecektir. Demir çubuğun ağırlığı 12 kg olduğuna göre bu şartlara uygun bir halterin ağırlığı en az kaç kg'dır?",
+   "secenekler": [
+    "42",
+    "60",
+    "72",
+    "84"
+   ],
+   "dogru": "C",
+   "cozum": "Her taraf EKOK(15, 6) = 30 kg; toplam 30 + 30 + 12 = 72 kg.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-118",
+   "altKonu": "Üslü ifadelerle işlemler",
+   "kaynakKod": "MAT-ÜS-8",
+   "tur": "tekrar",
+   "metin": "Bir kargo firmasında büyük paketin kütlesi 8² kg, küçük paketin kütlesi 2³ kg'dır. 1. araçta 10⁵ adet büyük paket vardır. 2. araçtaki küçük paketlerin toplam kütlesi, 1. araçtaki büyük paketlerin toplam kütlesine eşittir. 2. araçta ayrıca 250 000 adet büyük paket de bulunduğuna göre 2. araçtaki küçük paketler, büyük paketlerden kaç adet fazladır?",
+   "secenekler": [
+    "1 300 000",
+    "1 050 000",
+    "800 000",
+    "550 000"
+   ],
+   "dogru": "D",
+   "cozum": "1. aracın kütlesi 2⁶ · 10⁵ = 2¹¹ · 5⁵ kg; küçük paket sayısı 2⁸ · 5⁵ = 800 000. Fark 800 000 − 250 000 = 550 000.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-119",
+   "altKonu": "EBOB – EKOK",
+   "kaynakKod": "MAT-ÇK-22",
+   "tur": "tekrar",
+   "metin": "Boyutları 15 cm × 20 cm olan özdeş dikdörtgen kartlar, hepsi aynı yönde olacak ve boşluk kalmayacak biçimde yan yana ve alt alta döşenerek kare şeklinde bir pano oluşturulacaktır. Bu pano en az kaç cm çevreli olur?",
+   "secenekler": [
+    "300",
+    "240",
+    "120",
+    "60"
+   ],
+   "dogru": "B",
+   "cozum": "Kenar EKOK(15, 20) = 60 cm; çevre 4 · 60 = 240 cm.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-120",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-14",
+   "tur": "tekrar",
+   "metin": "b, c ve d birbirinden farklı doğal sayılardır. x = 12 · b · c ve y = 35 · b · d sayıları aralarında asal olduğuna göre x + y en az kaçtır?",
+   "secenekler": [
+    "199",
+    "193",
+    "187",
+    "175"
+   ],
+   "dogru": "A",
+   "cozum": "b = 1; c = 2 → x = 24; d = 5 → y = 175. x + y = 199.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-121",
+   "altKonu": "Aralarında asal sayılar",
+   "kaynakKod": "MAT-ÇK-5",
+   "tur": "tekrar",
+   "metin": "Onlar basamağı 3, birler basamağı A olan iki basamaklı '3A' doğal sayısı ile 14, aralarında asal değildir. Buna göre A'nın alabileceği değerlerin toplamı kaçtır?",
+   "secenekler": [
+    "20",
+    "25",
+    "30",
+    "36"
+   ],
+   "dogru": "B",
+   "cozum": "3A sayısı 2 ya da 7 ile bölünmeli: A = 0, 2, 4, 6, 8 (çift) ve A = 5 (35). Toplam 25.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-122",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-16",
+   "tur": "tekrar",
+   "metin": "a ve b birer pozitif tam sayı olmak üzere 2ᵃ · 3ᵇ biçiminde yazılabilen 150'den küçük kaç farklı doğal sayı vardır?",
+   "secenekler": [
+    "12",
+    "11",
+    "10",
+    "9"
+   ],
+   "dogru": "B",
+   "cozum": "b = 1: 6, 12, 24, 48, 96; b = 2: 18, 36, 72, 144; b = 3: 54, 108. Toplam 11.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-123",
+   "altKonu": "Bir sayının çarpanları (bölenleri)",
+   "kaynakKod": "MAT-ÇK-6",
+   "tur": "tekrar",
+   "metin": "Bir sayının çarpanları küçükten büyüğe doğru şöyle sıralanmıştır: 1, 2, 3, 4, 6, 8, X, 16, 24, Y. Buna göre aşağıdakilerden hangisi X + Y toplamının bir çarpanıdır?",
+   "secenekler": [
+    "8",
+    "9",
+    "12",
+    "16"
+   ],
+   "dogru": "C",
+   "cozum": "Y = 48 (1 · 48), X = 12 (4 · 12 = 48). X + Y = 60; 12 bir çarpandır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-124",
+   "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
+   "kaynakKod": "MAT-ÇK-23",
+   "tur": "tekrar",
+   "metin": "Aşağıdaki sayılardan hangisinin farklı asal çarpanlarının toplamı en büyüktür?",
+   "secenekler": [
+    "119",
+    "129",
+    "133",
+    "143"
+   ],
+   "dogru": "B",
+   "cozum": "119 → 24; 129 = 3 · 43 → 46; 133 → 26; 143 → 24. En büyük 46: 129.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-125",
+   "altKonu": "Negatif üslü sayılar",
+   "kaynakKod": "MAT-ÜS-6",
+   "tur": "tekrar",
+   "metin": "x = (−2)⁻⁴, y = −2⁻⁴ ve z = (−2)⁻³ sayıları veriliyor. Bu sayıların küçükten büyüğe doğru sıralaması aşağıdakilerden hangisidir?",
+   "secenekler": [
+    "y < z < x",
+    "x < y < z",
+    "z < y < x",
+    "z < x < y"
+   ],
+   "dogru": "C",
+   "cozum": "x = 1/16, y = −1/16, z = −1/8; z < y < x.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-126",
+   "altKonu": "Üslü ifadelerle işlemler",
+   "kaynakKod": "MAT-ÜS-7",
+   "tur": "tekrar",
+   "metin": "Bir fabrikada üretilen 10⁸ adet boncuk, 5⁶ eş kutuya eşit olarak dağıtılıyor. Bu kutulardan 4 tanesindeki toplam boncuk sayısı kaçtır?",
+   "secenekler": [
+    "2⁸ · 5²",
+    "2¹⁰ · 5⁸",
+    "2¹⁰ · 5²",
+    "2⁸ · 5⁸"
+   ],
+   "dogru": "C",
+   "cozum": "Bir kutu 10⁸ ÷ 5⁶ = 2⁸ · 5²; dört kutu 2¹⁰ · 5².",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-127",
+   "altKonu": "Tam kare ve karekök",
+   "kaynakKod": "MAT-KK-1",
+   "tur": "tekrar",
+   "metin": "Bir torbada üzerlerinde 0'dan 30'a kadar (0 ve 30 dâhil) tam sayıların yazılı olduğu 31 top vardır. Bu toplardan kaç tanesinin üzerindeki sayının karekökü bir tam sayıdır?",
+   "secenekler": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "dogru": "B",
+   "cozum": "Tam kareler 0, 1, 4, 9, 16, 25 (6 tane); √0 = 0 de tam sayıdır.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-128",
+   "altKonu": "Tam kare ve karekök",
+   "kaynakKod": "MAT-KK-1",
+   "tur": "tekrar",
+   "metin": "Aşağıdakilerin hangisinde verilen sayıların TÜMÜNÜN karekökü bir tam sayıdır?",
+   "secenekler": [
+    "1, 8, 25",
+    "4, 9, 12",
+    "0, 16, 36",
+    "1, 49, 50"
+   ],
+   "dogru": "C",
+   "cozum": "0 = 0², 16 = 4², 36 = 6²; 8, 12 ve 50 tam kare değildir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-129",
+   "altKonu": "Üslü ifadelerde işaret ve sıfırıncı kuvvet",
+   "kaynakKod": "MAT-ÜS-14",
+   "tur": "tekrar",
+   "metin": "(−1)⁷ · (−1)⁰ · (−1)⁻⁴ · (−1)⁻³ işleminin sonucu kaçtır?",
+   "secenekler": [
+    "−1",
+    "0",
+    "1",
+    "2"
+   ],
+   "dogru": "C",
+   "cozum": "Üsler toplamı 7 + 0 − 4 − 3 = 0; sonuç (−1)⁰ = 1.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-130",
+   "altKonu": "Üslü ifadelerde işaret ve sıfırıncı kuvvet",
+   "kaynakKod": "MAT-ÜS-14",
+   "tur": "tekrar",
+   "metin": "Aşağıdaki işlemlerden hangisinin sonucu 0'dır?",
+   "secenekler": [
+    "5⁰ − 1⁷",
+    "(−3)⁰",
+    "0¹ + 2⁰",
+    "(−1)⁰ · 4⁰"
+   ],
+   "dogru": "A",
+   "cozum": "5⁰ − 1⁷ = 1 − 1 = 0. Diğer şıkların sonucu 1'dir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-131",
+   "altKonu": "Negatif üslü sayılar",
+   "kaynakKod": "MAT-ÜS-15",
+   "tur": "tekrar",
+   "metin": "Aşağıdaki ifadelerden hangisinin değeri −1 ile 0 arasında değildir?",
+   "secenekler": [
+    "(−3)⁻³",
+    "−(−2)⁻⁴",
+    "−(−6⁻¹)",
+    "−5⁻²"
+   ],
+   "dogru": "C",
+   "cozum": "(−3)⁻³ = −1/27, −(−2)⁻⁴ = −1/16, −5⁻² = −1/25 değerleri −1 ile 0 arasındadır. −(−6⁻¹) = +1/6 pozitiftir.",
+   "emin": true
+  },
+  {
+   "id": "mat-ck-132",
+   "altKonu": "Negatif üslü sayılar",
+   "kaynakKod": "MAT-ÜS-15",
+   "tur": "tekrar",
+   "metin": "−(−4)⁻² + (−4)⁻¹ işleminin sonucu kaçtır?",
+   "secenekler": [
+    "−5/16",
+    "−3/16",
+    "3/16",
+    "5/16"
+   ],
+   "dogru": "A",
+   "cozum": "(−4)⁻² = 1/16, dıştaki eksiyle −1/16; (−4)⁻¹ = −4/16. Toplam −5/16.",
+   "emin": true
+  }
+ ]
+}

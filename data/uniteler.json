@@ -1,0 +1,425 @@
+[
+ {
+  "ders": "Matematik",
+  "unite": "01 - Çarpanlar ve Katlar",
+  "son_set": "Set 3",
+  "setler": "Set 1 (21.10.2026), Set 2 (22.10.2026), Set 3 (23.10.2026)",
+  "hatali_soru": 32,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 4"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "02 - Üslü İfadeler",
+  "son_set": "Set 3",
+  "setler": "Set 1 (21.10.2026), Set 2 (22.10.2026), Set 3 (23.10.2026); Set 3’e 2 soru eklendi (29.10.2026)",
+  "hatali_soru": 14,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 4"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "03 - Kareköklü İfadeler",
+  "son_set": "Set 3 (ortak tekrar seti)",
+  "setler": "Set 3 (26.10.2026 – Matematik ortak tekrar setine eklendi)",
+  "hatali_soru": 1,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 4"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "04 - Veri Analizi",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "05 - Basit Olayların Olma Olasılığı",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "06 - Cebirsel İfadeler ve Özdeşlikler",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "07 - Doğrusal Denklemler",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "08 - Eşitsizlikler",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "09 - Üçgenler",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "10 - Dönüşüm Geometrisi",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Matematik",
+  "unite": "11 - Geometrik Cisimler",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "01 - Sözcükte Anlam",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 10,
+  "konu_ozeti": true,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "02 - Cümlede Anlam",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 3,
+  "konu_ozeti": true,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "03 - Paragrafta Anlam",
+  "son_set": "Set 2",
+  "setler": "Set 1 (22.10.2026), Set 2 (25.10.2026)",
+  "hatali_soru": 15,
+  "konu_ozeti": true,
+  "siradaki_set": "Set 3"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "04 - Fiilimsiler",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 2,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "05 - Cümlenin Ögeleri",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "06 - Anlatım Bozuklukları",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "07 - Yazım Kuralları ve Noktalama İşaretleri",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 1,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Türkçe",
+  "unite": "08 - Sözel Mantık ve Muhakeme - Görsel Okuma",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 1,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "01 - Mevsimler ve İklim",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 20,
+  "konu_ozeti": true,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "02 - DNA ve Genetik Kod",
+  "son_set": "Set 1",
+  "setler": "Set 1 (22.10.2026)",
+  "hatali_soru": 3,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "03 - Basınç",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "04 - Madde ve Endüstri",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "05 - Basit Makineler",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "06 - Enerji Dönüşümleri ve Çevre Bilimi",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Fen Bilimleri",
+  "unite": "07 - Elektrik Yükleri ve Elektrik Enerjisi",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "unite": "01 - Bir Kahraman Doğuyor",
+  "son_set": "Set 1",
+  "setler": "Set 1 (26.10.2026)",
+  "hatali_soru": 3,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "unite": "02 - Millî Uyanış - Bağımsızlık Yolunda Atılan Adımlar",
+  "son_set": "Set 1",
+  "setler": "Set 1 (26.10.2026)",
+  "hatali_soru": 1,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "unite": "03 - Millî Bir Destan - Ya İstiklal Ya Ölüm!",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "unite": "04 - Atatürkçülük ve Çağdaşlaşan Türkiye",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "unite": "05 - Demokratikleşme Çabaları - Atatürk Dönemi Türk Dış Politikası",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "unite": "06 - Atatürk'ün Ölümü ve Sonrası",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Din Kültürü ve Ahlak Bilgisi",
+  "unite": "01 - Kader İnancı",
+  "son_set": "Set 1",
+  "setler": "Set 1 (26.10.2026); Set 1’e 1 soru eklendi (29.10.2026)",
+  "hatali_soru": 9,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "Din Kültürü ve Ahlak Bilgisi",
+  "unite": "02 - Zekât ve Sadaka",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Din Kültürü ve Ahlak Bilgisi",
+  "unite": "03 - Din ve Hayat",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Din Kültürü ve Ahlak Bilgisi",
+  "unite": "04 - Hz. Muhammed'in (s.a.v.) Örnekliği",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "Din Kültürü ve Ahlak Bilgisi",
+  "unite": "05 - Kur'an-ı Kerim ve Özellikleri",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 1 - Friendship",
+  "son_set": "Set 1",
+  "setler": "Set 1 (26.10.2026); Set 1’e 1 soru eklendi (29.10.2026)",
+  "hatali_soru": 3,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 2"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 2 - Teen Life",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 3 - In The Kitchen",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 4 - On The Phone",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 5 - The Internet",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 6 - Adventures",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 7 - Tourism",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 8 - Chores",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 9 - Science",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ },
+ {
+  "ders": "İngilizce",
+  "unite": "Unit 10 - Natural Forces",
+  "son_set": "—",
+  "setler": "",
+  "hatali_soru": 0,
+  "konu_ozeti": false,
+  "siradaki_set": "Set 1"
+ }
+]

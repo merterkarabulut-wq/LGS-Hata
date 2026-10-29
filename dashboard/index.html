@@ -1,0 +1,500 @@
+<meta name="dash-one-writer">
+<style>
+  .lx { font-family: var(--font-anthropic-sans); display: grid; gap: var(--cds-gap-xl); font-variant-numeric: tabular-nums; }
+  .lx-head { display: grid; gap: var(--cds-gap-xs); }
+  .lx-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .lx-lede { margin: 0; font-size: var(--cds-font-size-body); max-width: 70ch; }
+  .lx .lx-lede b { font-weight: 600; }
+  .lx-meta { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .lx-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr)); gap: var(--cds-gap-md); }
+  .lx-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+  .lx-tile.lx-focus { border-color: var(--color-warn); }
+  .lx-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .02em; }
+  .lx-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; }
+  .lx .lx-big b { font-weight: 400; }
+  .lx-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .lx-section { display: grid; gap: var(--cds-gap-md); }
+  .lx-section > h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .lx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+  .lx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+  .lx-card.lx-wide { grid-column: 1 / -1; }
+  .lx-card h3 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .lx-note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .lx-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+  .lx-chip { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-radius: 999px; border: 1px solid var(--color-border-line); background: transparent; color: var(--color-fg); cursor: pointer; }
+  .lx-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+  .lx-chip:focus-visible, .lx-cell:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .lx-scroll { max-height: 26rem; overflow: auto; }
+  .lx table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+  .lx th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); position: sticky; top: 0; background: var(--color-panel); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .lx td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .lx td.lx-num, .lx th.lx-num { text-align: right; }
+  .lx td.lx-nowrap { white-space: nowrap; }
+  .lx tr.lx-late td:first-child { box-shadow: inset 3px 0 0 var(--color-warn); }
+  .lx tr.lx-wrong td.lx-prev { color: var(--color-bad); }
+  @container (max-width: 34rem) { .lx .lx-hide-narrow { display: none; } }
+  .lx-card { container-type: inline-size; }
+  .lx-chart { position: relative; min-height: 200px; }
+  .lx-chart svg { display: block; }
+  .lx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .lx-sw { display: inline-block; width: .7rem; height: .7rem; border-radius: 2px; margin-right: .35rem; vertical-align: -1px; }
+  .lx-sw-ok { background: var(--color-ok); }
+  .lx-sw-bad { background: var(--color-bad); }
+  .lx-sw-wait { background: var(--cds-chart-muted); }
+  .lx-sw-warn { background: var(--color-warn); }
+  .lx-sw-acc { background: var(--cds-chart-muted); }
+  .lx-bars { position: relative; display: grid; gap: var(--cds-gap-sm); min-height: 200px; align-content: start; }
+  .lx-bar-row { display: grid; grid-template-columns: 6.5rem 1fr 2.5rem; gap: var(--cds-gap-sm); align-items: center; font-size: var(--cds-font-size-caption); }
+  .lx-bar-track { display: flex; height: 18px; }
+  .lx-bar-seg { height: 100%; }
+  .lx-bar-seg:first-child { border-radius: 3px 0 0 3px; }
+  .lx-bar-seg:last-child { border-radius: 0 3px 3px 0; }
+  .lx-bar-seg:only-child { border-radius: 3px; }
+  .lx-map { position: relative; display: grid; gap: var(--cds-gap-md); min-height: 200px; }
+  .lx-map-row { display: grid; grid-template-columns: 9rem 1fr; gap: var(--cds-gap-sm); align-items: center; }
+  .lx-map-name { font-size: var(--cds-font-size-caption); display: grid; }
+  .lx-map-name span:last-child { color: var(--color-fg-muted); }
+  .lx-cells { display: flex; flex-wrap: wrap; gap: 4px; }
+  .lx-cell { width: 30px; height: 30px; border-radius: 4px; display: grid; place-items: center; font-size: 11px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); cursor: default; }
+  .lx-cell.lx-on { border-color: transparent; color: var(--color-bg); font-weight: 600; }
+  @media (max-width: 30rem) { .lx-map-row { grid-template-columns: 1fr; } }
+  .lx-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 16rem; }
+  .lx-tip div:first-child { color: var(--cds-text-secondary); }
+  .lx [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  .lx [data-dash-source-state=empty] { color: transparent; }
+  .lx-fail { display: flex; align-items: center; justify-content: center; gap: .4rem; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .lx-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+</style>
+
+<div class="lx">
+  <header class="lx-head">
+    <h1 id="baslik">Duru LGS Takip</h1>
+    <p class="lx-lede">Bugün <b data-draw="bugun-lede" data-source="siradaki">—</b> soru tekrar bekliyor. En çok hatalı soru <b data-draw="encok-ders" data-source="ozet" data-field="en_cok_ders" data-row="0">—</b> dersinde (<b data-draw="encok-sayi" data-source="ozet" data-field="en_cok_sayi" data-row="0">—</b> soru).</p>
+    <p class="lx-meta">Kaynak: LGS_Takip.xlsx · son işlenen yükleme <span data-draw="son-yukleme" data-source="kaynaklar">—</span></p>
+  </header>
+
+  <div class="lx-tiles" id="ozet">
+    <div class="lx-tile lx-focus">
+      <span class="lx-label">Bugün yapılacak tekrar</span>
+      <span class="lx-big" data-draw="bugun" data-source="siradaki">—</span>
+      <span class="lx-sub">gecikmiş dahil · <span data-draw="hafta" data-source="siradaki">—</span> soru önümüzdeki 7 günde</span>
+    </div>
+    <div class="lx-tile">
+      <span class="lx-label">Toplam hatalı soru</span>
+      <span class="lx-big" data-draw="hatali" data-source="ozet" data-field="hatali_soru" data-row="0">—</span>
+      <span class="lx-sub">tüm setlerde, soru koduyla takipte</span>
+    </div>
+    <div class="lx-tile">
+      <span class="lx-label">1. tekrarda doğru</span>
+      <span class="lx-big">%<b data-draw="basari" data-source="ozet" data-field="t1_basari_yuzde" data-row="0">—</b></span>
+      <span class="lx-sub"><span data-draw="t1-dogru" data-source="ozet" data-field="t1_dogru" data-row="0">—</span> doğru, <span data-draw="t1-yanlis" data-source="ozet" data-field="t1_yanlis" data-row="0">—</span> yanlış (çözülen tekrarlar)</span>
+    </div>
+    <div class="lx-tile">
+      <span class="lx-label">Hata gelen ünite</span>
+      <span class="lx-big"><b data-draw="baslanan" data-source="ozet" data-field="baslanan_unite" data-row="0">—</b> / <span data-draw="toplam-unite" data-source="ozet" data-field="toplam_unite" data-row="0">—</span></span>
+      <span class="lx-sub">6 dersin 8. sınıf üniteleri</span>
+    </div>
+    <div class="lx-tile">
+      <span class="lx-label">Hazırlanan set</span>
+      <span class="lx-big" data-draw="set-sayisi" data-source="ozet" data-field="set_sayisi" data-row="0">—</span>
+      <span class="lx-sub">sorular, çözümler ve benzer sorular</span>
+    </div>
+  </div>
+
+  <section class="lx-section" id="tekrar">
+    <h2>Tekrar planı</h2>
+    <div class="lx-grid">
+      <div class="lx-card">
+        <h3>Sıradaki tekrarlar</h3>
+        <p class="lx-note">Her soru için bir sonraki tekrar. Sol kenarı sarı olanların tarihi geçti.</p>
+        <div class="lx-chips" role="group" aria-label="Zaman aralığı">
+          <button type="button" class="lx-chip" data-aralik="bugun" aria-pressed="true">Bugün ve gecikmiş</button>
+          <button type="button" class="lx-chip" data-aralik="hafta" aria-pressed="false">7 gün</button>
+          <button type="button" class="lx-chip" data-aralik="tumu" aria-pressed="false">Tümü</button>
+        </div>
+        <div class="lx-scroll">
+          <table data-source="siradaki" data-row-key="kod" aria-label="Sıradaki tekrarlar">
+            <thead><tr>
+              <th data-field="kod">Kod</th>
+              <th data-field="konu">Konu</th>
+              <th data-field="asama">Tekrar</th>
+              <th data-field="onceki" class="lx-hide-narrow">Önceki sonuç</th>
+              <th data-field="tarih_metin">Tarih</th>
+            </tr></thead>
+            <tbody data-draw="tekrar-tablo"></tbody>
+          </table>
+        </div>
+        <p class="lx-note lx-bos" hidden>Bu aralıkta bekleyen tekrar yok.</p>
+      </div>
+      <div class="lx-card">
+        <h3>Tekrar takvimi</h3>
+        <p class="lx-note">Günlere göre bekleyen tekrar sayısı. Tarihi geçenler sarı; tarihi yazılmamış sorular grafikte yok.</p>
+        <div class="lx-chart" data-draw="takvim" data-source="siradaki"></div>
+        <div class="lx-legend"><span><i class="lx-sw lx-sw-warn"></i>Tarihi geçti</span><span><i class="lx-sw" data-draw="takvim-sw"></i>Bekliyor</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lx-section" id="dersler">
+    <h2>Derslere göre</h2>
+    <div class="lx-grid">
+      <div class="lx-card">
+        <h3>Hatalı sorular ve 1. tekrar sonucu</h3>
+        <p class="lx-note">Her dersteki hatalı soru sayısı; renkler ilk tekrarın sonucunu gösterir.</p>
+        <div class="lx-bars" data-draw="ders-bar" data-source="ders_ozet"></div>
+        <div class="lx-legend"><span><i class="lx-sw lx-sw-ok"></i>Doğru</span><span><i class="lx-sw lx-sw-bad"></i>Yanlış</span><span><i class="lx-sw lx-sw-wait"></i>Henüz tekrar edilmedi</span></div>
+      </div>
+      <div class="lx-card">
+        <h3>Ünite haritası</h3>
+        <p class="lx-note">Her kare bir ünite; içindeki sayı o üniteden gelen hatalı soru. Ayrıntı için üzerine gelin.</p>
+        <div class="lx-map" data-draw="unite-harita" data-source="uniteler"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lx-section" id="kayitlar">
+    <h2>Kayıtlar</h2>
+    <div class="lx-grid">
+      <div class="lx-card lx-wide">
+        <h3>Setler</h3>
+        <p class="lx-note">Her setin klasöründe Sorular, Çözümler ve Hata Analizi, Benzer Sorular dosyaları var.</p>
+        <div class="lx-scroll">
+          <table data-source="setler" data-row-key="no" aria-label="Setler">
+            <thead><tr>
+              <th data-field="tarih_metin">Tarih</th>
+              <th data-field="ders" class="lx-hide-narrow">Ders</th>
+              <th data-field="unite">Ünite</th>
+              <th data-field="set">Set</th>
+              <th data-field="soru_sayisi" class="lx-num">Soru</th>
+              <th data-field="icerik" class="lx-hide-narrow">İçerik</th>
+            </tr></thead>
+            <tbody data-draw="set-tablo"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="lx-card lx-wide">
+        <h3>İşlenen yüklemeler</h3>
+        <p class="lx-note">00 - Kaynaklar klasörüne ya da sohbete gelen fotoğraflar ve onlardan çıkan setler.</p>
+        <div class="lx-scroll">
+          <table data-source="kaynaklar" data-row-key="no" aria-label="İşlenen yüklemeler">
+            <thead><tr>
+              <th data-field="tarih_metin">Tarih</th>
+              <th data-field="yukleme">Yükleme</th>
+              <th data-field="setler">Oluşturulan setler</th>
+              <th data-field="not" class="lx-hide-narrow">Not</th>
+            </tr></thead>
+            <tbody data-draw="yukleme-tablo"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  dash.calc('ozet', {
+    title: 'Genel özet',
+    description: 'Ünitelerdeki hatalı soruların toplamı, hata gelen ünite sayısı, set sayısı ve 1. tekrar sonuçları.',
+    inputs: ['uniteler', 'setler', 'tekrar'],
+    fn: (uniteler, setler, tekrar) => {
+      const dersToplam = {};
+      uniteler.forEach((u) => { dersToplam[u.ders] = (dersToplam[u.ders] || 0) + Number(u.hatali_soru); });
+      const enCok = Object.entries(dersToplam).sort((a, b) => b[1] - a[1])[0] || ['', 0];
+      const cozulen = tekrar.filter((r) => r.t1_durum !== 'bekliyor');
+      const dogru = cozulen.filter((r) => r.t1_durum === 'doğru').length;
+      return [{
+        hatali_soru: uniteler.reduce((s, u) => s + Number(u.hatali_soru), 0),
+        baslanan_unite: uniteler.filter((u) => Number(u.hatali_soru) > 0).length,
+        toplam_unite: uniteler.length,
+        set_sayisi: setler.length,
+        t1_dogru: dogru,
+        t1_yanlis: cozulen.length - dogru,
+        t1_basari_yuzde: cozulen.length ? Math.round(100 * dogru / cozulen.length) : 0,
+        en_cok_ders: enCok[0],
+        en_cok_sayi: enCok[1],
+      }];
+    },
+  });
+
+  dash.calc('siradaki', {
+    title: 'Sıradaki tekrarlar',
+    description: 'Her sorunun bekleyen ilk tekrarı: 1. tekrar yapılmadıysa o, yapıldıysa 2. tekrar; tarihe göre sıralı.',
+    inputs: ['tekrar'],
+    fn: (tekrar) => tekrar.flatMap((r) => {
+      if (r.t1_durum === 'bekliyor') return [{kod: r.kod, ders: r.ders, konu: r.konu, asama: '1. tekrar', onceki: 'İlk tekrar', tarih: r.t1_tarih || '', tarih_metin: r.t1}];
+      if (r.t2_durum === 'bekliyor') return [{kod: r.kod, ders: r.ders, konu: r.konu, asama: '2. tekrar', onceki: r.t1_durum === 'yanlış' ? '1. tekrarda yanlış' : '1. tekrarda doğru', tarih: r.t2_tarih || '', tarih_metin: r.t2}];
+      return [];
+    }).sort((a, b) => (a.tarih || '9999').localeCompare(b.tarih || '9999')),
+  });
+
+  dash.calc('ders_ozet', {
+    title: 'Ders özeti',
+    description: 'Her ders için ünite sayısı, hatalı soru sayısı ve 1. tekrar sonuçlarının dağılımı.',
+    inputs: ['uniteler', 'tekrar'],
+    fn: (uniteler, tekrar) => {
+      const dersler = [...new Set(uniteler.map((u) => u.ders))];
+      return dersler.map((ders) => {
+        const u = uniteler.filter((x) => x.ders === ders);
+        const t = tekrar.filter((x) => x.ders === ders);
+        return {
+          ders,
+          unite_toplam: u.length,
+          unite_baslanan: u.filter((x) => Number(x.hatali_soru) > 0).length,
+          hatali_soru: u.reduce((s, x) => s + Number(x.hatali_soru), 0),
+          dogru: t.filter((x) => x.t1_durum === 'doğru').length,
+          yanlis: t.filter((x) => x.t1_durum === 'yanlış').length,
+          bekliyor: t.filter((x) => x.t1_durum === 'bekliyor').length,
+        };
+      });
+    },
+  });
+</script>
+
+<script>
+  const pad = (n) => String(n).padStart(2, '0');
+  const now = new Date();
+  const AY = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'];
+  window.lx = {
+    today: `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`,
+    addDays: (iso, n) => { const d = new Date(iso + 'T12:00:00'); d.setDate(d.getDate() + n); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; },
+    gun: (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${d} ${AY[m - 1]}`; },
+    kisa: {'Matematik': 'Matematik', 'Türkçe': 'Türkçe', 'Fen Bilimleri': 'Fen', 'T.C. İnkılap Tarihi ve Atatürkçülük': 'İnkılap', 'Din Kültürü ve Ahlak Bilgisi': 'Din Kültürü', 'İngilizce': 'İngilizce'},
+    aralik: 'bugun',
+    fail: (el) => { const p = document.createElement('div'); p.className = 'lx-fail'; p.textContent = 'Yüklenemedi'; el.replaceChildren(p); },
+    tip: (box) => {
+      let t = box.querySelector(':scope > .lx-tip');
+      if (!t) { t = document.createElement('div'); t.className = 'lx-tip'; t.hidden = true; box.appendChild(t); }
+      return {
+        show: (lines, x, y) => {
+          t.replaceChildren(...lines.map((s) => { const d = document.createElement('div'); d.textContent = s; return d; }));
+          t.hidden = false;
+          const bw = box.clientWidth, tw = t.offsetWidth, th = t.offsetHeight;
+          t.style.left = Math.max(0, Math.min(bw - tw, x + 12)) + 'px';
+          t.style.top = Math.max(0, y - th - 8) + 'px';
+        },
+        hide: () => { t.hidden = true; },
+      };
+    },
+  };
+
+  // Sıradaki tekrarlardan bugüne göre hesaplananlar.
+  const bekleyen = () => {
+    const s = dash.data('siradaki');
+    return s.status === 'ok' ? s.data : null;
+  };
+  const sayi = (fn) => (el) => {
+    const rows = bekleyen();
+    if (!rows) { el.textContent = '—'; return; }
+    el.textContent = String(rows.filter(fn).length);
+  };
+  const bugunMu = (r) => r.tarih && r.tarih <= lx.today;
+  dash.draw('bugun', sayi(bugunMu));
+  dash.draw('bugun-lede', sayi(bugunMu));
+  dash.draw('hafta', sayi((r) => r.tarih && r.tarih > lx.today && r.tarih <= lx.addDays(lx.today, 7)));
+
+  const alan = (name, field, fmt = String) => dash.draw(name, (el) => {
+    const o = dash.data('ozet');
+    el.textContent = o.status === 'ok' && o.data[0] ? fmt(o.data[0][field]) : '—';
+  });
+  alan('hatali', 'hatali_soru');
+  alan('basari', 't1_basari_yuzde');
+  alan('t1-dogru', 't1_dogru');
+  alan('t1-yanlis', 't1_yanlis');
+  alan('baslanan', 'baslanan_unite');
+  alan('toplam-unite', 'toplam_unite');
+  alan('set-sayisi', 'set_sayisi');
+  alan('encok-ders', 'en_cok_ders');
+  alan('encok-sayi', 'en_cok_sayi');
+
+  dash.draw('son-yukleme', (el) => {
+    const k = dash.data('kaynaklar');
+    const d = k.status === 'ok' ? k.data.map((r) => r.tarih).filter(Boolean).sort().pop() : null;
+    el.textContent = d ? lx.gun(d) + ' ' + d.slice(0, 4) : '—';
+  });
+
+  document.querySelectorAll('.lx-chip[data-aralik]').forEach((b) => {
+    b.addEventListener('click', () => {
+      lx.aralik = b.dataset.aralik;
+      document.querySelectorAll('.lx-chip[data-aralik]').forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+      dash.draw('tekrar-tablo');
+    });
+  });
+</script>
+
+<script>
+  const hucre = (tr, text, cls) => { const td = document.createElement('td'); td.textContent = text == null ? '' : String(text); if (cls) td.className = cls; tr.appendChild(td); return td; };
+
+  dash.draw('tekrar-tablo', (tb) => {
+    const s = dash.data('siradaki');
+    const bos = document.querySelectorAll('.lx-bos');
+    if (s.status !== 'ok') { tb.replaceChildren(); bos.forEach((p) => { p.hidden = true; }); return; }
+    const son = lx.addDays(lx.today, 7);
+    const rows = s.data.filter((r) => lx.aralik === 'tumu' ? true
+      : lx.aralik === 'hafta' ? (r.tarih && r.tarih <= son)
+      : (r.tarih && r.tarih <= lx.today));
+    tb.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      if (r.tarih && r.tarih < lx.today) tr.className = 'lx-late';
+      if (r.onceki === '1. tekrarda yanlış') tr.classList.add('lx-wrong');
+      hucre(tr, r.kod, 'lx-nowrap');
+      hucre(tr, r.konu);
+      hucre(tr, r.asama, 'lx-nowrap');
+      hucre(tr, r.onceki, 'lx-prev lx-hide-narrow');
+      hucre(tr, r.tarih_metin, 'lx-nowrap');
+      return tr;
+    }));
+    bos.forEach((p) => { p.hidden = rows.length > 0; });
+  });
+
+  dash.draw('set-tablo', (tb) => {
+    const s = dash.data('setler');
+    if (s.status !== 'ok') { tb.replaceChildren(); return; }
+    const rows = [...s.data].sort((a, b) => (b.tarih || '').localeCompare(a.tarih || '') || b.no - a.no);
+    tb.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = String(r.no);
+      hucre(tr, r.tarih_metin, 'lx-nowrap');
+      hucre(tr, r.ders, 'lx-hide-narrow');
+      hucre(tr, r.unite);
+      hucre(tr, r.set, 'lx-nowrap');
+      hucre(tr, r.soru_sayisi, 'lx-num');
+      hucre(tr, r.icerik, 'lx-hide-narrow');
+      return tr;
+    }));
+  });
+
+  dash.draw('yukleme-tablo', (tb) => {
+    const s = dash.data('kaynaklar');
+    if (s.status !== 'ok') { tb.replaceChildren(); return; }
+    const rows = [...s.data].sort((a, b) => b.no - a.no);
+    tb.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = String(r.no);
+      hucre(tr, r.tarih_metin, 'lx-nowrap');
+      hucre(tr, r.yukleme);
+      hucre(tr, r.setler);
+      hucre(tr, r.not, 'lx-hide-narrow');
+      return tr;
+    }));
+  });
+</script>
+
+<script>
+  dash.draw('takvim-sw', (el) => { el.style.background = dash.colors[0]; });
+
+  dash.draw('takvim', (el) => {
+    const s = dash.data('siradaki');
+    if (s.status === 'error') { lx.fail(el); return; }
+    if (s.status !== 'ok') { el.replaceChildren(); return; }
+    const sayim = d3.rollup(s.data.filter((r) => r.tarih), (v) => v.length, (r) => r.tarih);
+    if (!sayim.size) { el.replaceChildren(); return; }
+    const ilk = d3.min([...sayim.keys()]), son = d3.max([...sayim.keys(), lx.today]);
+    const gunler = [];
+    for (let d = ilk; d <= son; d = lx.addDays(d, 1)) gunler.push(d);
+    const W = Math.max(280, el.clientWidth), H = 200;
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Günlere göre bekleyen tekrar sayısı');
+    const ymax = d3.max([...sayim.values()]);
+    const y = d3.scaleLinear([0, ymax], [H - 24, 12]).nice();
+    const yt = y.ticks(4).filter(Number.isInteger);
+    const probe = svg.append('text').attr('font-size', 11).text(String(d3.max(yt)));
+    document.body.appendChild(svg.node());
+    const ml = probe.node().getComputedTextLength() + 10;
+    svg.node().remove(); probe.remove();
+    const x = d3.scaleBand(gunler, [ml, W - 4]).paddingInner(0.25);
+    svg.append('g').selectAll('line').data(yt).join('line')
+      .attr('x1', ml).attr('x2', W - 4).attr('y1', (d) => y(d)).attr('y2', (d) => y(d))
+      .attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(yt).join('text')
+      .attr('x', ml - 6).attr('y', (d) => y(d)).attr('dy', '0.32em').attr('text-anchor', 'end')
+      .attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text((d) => d);
+    const adim = Math.max(1, Math.ceil(gunler.length / Math.max(2, Math.floor((W - ml) / 56))));
+    svg.append('g').selectAll('text').data(gunler.filter((d, i) => i % adim === 0)).join('text')
+      .attr('x', (d) => x(d) + x.bandwidth() / 2).attr('y', H - 6).attr('text-anchor', 'middle')
+      .attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text((d) => lx.gun(d));
+    const bw = Math.min(32, x.bandwidth());
+    const bars = svg.append('g').selectAll('rect').data([...sayim]).join('rect')
+      .attr('x', ([d]) => x(d) + (x.bandwidth() - bw) / 2).attr('width', bw)
+      .attr('y', ([, n]) => y(n)).attr('height', ([, n]) => y(0) - y(n)).attr('rx', 3)
+      .attr('fill', ([d]) => d < lx.today ? 'var(--color-warn)' : dash.colors[0]);
+    if (x(lx.today) != null) {
+      const tx = x(lx.today) + x.bandwidth() / 2;
+      svg.append('line').attr('x1', tx).attr('x2', tx).attr('y1', 4).attr('y2', y(0))
+        .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('x', tx + 4).attr('y', 10).attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('Bugün');
+    }
+    svg.append('line').attr('x1', ml).attr('x2', W - 4).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+    el.replaceChildren(svg.node());
+    const tip = lx.tip(el);
+    bars.on('pointerenter pointermove', (ev, [d, n]) => {
+      const [px, py] = d3.pointer(ev, el);
+      tip.show([lx.gun(d) + (d === lx.today ? ' (bugün)' : d < lx.today ? ' (geçti)' : ''), `${n} soru`], px, py);
+    }).on('pointerleave', tip.hide);
+  });
+
+  dash.draw('ders-bar', (el) => {
+    const s = dash.data('ders_ozet');
+    if (s.status === 'error') { lx.fail(el); return; }
+    if (s.status !== 'ok') { el.replaceChildren(); return; }
+    const max = d3.max(s.data, (r) => r.hatali_soru) || 1;
+    const tip = lx.tip(el);
+    const rows = s.data.map((r) => {
+      const row = document.createElement('div');
+      row.className = 'lx-bar-row';
+      const ad = document.createElement('span'); ad.textContent = lx.kisa[r.ders] || r.ders;
+      const track = document.createElement('div'); track.className = 'lx-bar-track';
+      [['dogru', 'var(--color-ok)'], ['yanlis', 'var(--color-bad)'], ['bekliyor', 'var(--cds-chart-muted)']].forEach(([k, c]) => {
+        if (!r[k]) return;
+        const seg = document.createElement('div'); seg.className = 'lx-bar-seg';
+        seg.style.width = (100 * r[k] / max) + '%'; seg.style.background = c;
+        track.appendChild(seg);
+      });
+      const n = document.createElement('span'); n.textContent = String(r.hatali_soru); n.style.textAlign = 'right';
+      row.append(ad, track, n);
+      row.addEventListener('pointermove', (ev) => {
+        const [px, py] = d3.pointer(ev, el);
+        tip.show([r.ders, `${r.hatali_soru} hatalı soru · ${r.unite_baslanan}/${r.unite_toplam} ünite`, `1. tekrar: ${r.dogru} doğru, ${r.yanlis} yanlış, ${r.bekliyor} bekliyor`], px, py);
+      });
+      row.addEventListener('pointerleave', tip.hide);
+      return row;
+    });
+    el.replaceChildren(...rows, el.querySelector(':scope > .lx-tip') || document.createElement('span'));
+  });
+
+  dash.draw('unite-harita', (el) => {
+    const s = dash.data('uniteler');
+    if (s.status === 'error') { lx.fail(el); return; }
+    if (s.status !== 'ok') { el.replaceChildren(); return; }
+    const max = d3.max(s.data, (r) => Number(r.hatali_soru)) || 1;
+    const op = d3.scaleSqrt([1, max], [0.35, 1]);
+    const tip = lx.tip(el);
+    const dersler = d3.groups(s.data, (r) => r.ders);
+    const rows = dersler.map(([ders, us]) => {
+      const row = document.createElement('div'); row.className = 'lx-map-row';
+      const ad = document.createElement('div'); ad.className = 'lx-map-name';
+      const a1 = document.createElement('span'); a1.textContent = lx.kisa[ders] || ders;
+      const a2 = document.createElement('span'); a2.textContent = `${us.filter((u) => Number(u.hatali_soru) > 0).length} / ${us.length} ünite`;
+      ad.append(a1, a2);
+      const cells = document.createElement('div'); cells.className = 'lx-cells';
+      us.forEach((u) => {
+        const n = Number(u.hatali_soru);
+        const c = document.createElement('div'); c.className = 'lx-cell' + (n ? ' lx-on' : '');
+        c.tabIndex = 0;
+        c.setAttribute('aria-label', `${u.unite}: ${n} hatalı soru`);
+        if (n) { c.style.background = dash.colors[0]; c.style.opacity = op(n); c.textContent = String(n); }
+        const lines = [u.unite, n ? `${n} hatalı soru · son: ${u.son_set}` : 'Henüz hatalı soru gelmedi', `Sıradaki: ${u.siradaki_set}${u.konu_ozeti ? ' · konu özeti var' : ''}`];
+        const show = (ev) => {
+          const r = c.getBoundingClientRect(), b = el.getBoundingClientRect();
+          tip.show(lines, r.left - b.left, r.top - b.top);
+        };
+        c.addEventListener('pointerenter', show);
+        c.addEventListener('focus', show);
+        c.addEventListener('pointerleave', tip.hide);
+        c.addEventListener('blur', tip.hide);
+        cells.appendChild(c);
+      });
+      row.append(ad, cells);
+      return row;
+    });
+    el.replaceChildren(...rows, el.querySelector(':scope > .lx-tip') || document.createElement('span'));
+  });
+</script>
