@@ -22,7 +22,7 @@ Bu kural kalıcıdır; kullanıcının her oturumda tekrar belirtmesine gerek yo
 
 ## Teknoloji ve Yapı
 
-Git deposu (origin: github.com/merterkarabulut-wq/LGS-Hata). Bağımlılık yok: saf HTML/JS ve yalnız standart kütüphaneli Python 3.
+Git deposu; uzak depo GitHub: `origin` → https://github.com/merterkarabulut-wq/LGS-Hata (dal: `main`; `.claude/worktrees/` git dışı). Bağımlılık yok: saf HTML/JS ve yalnız standart kütüphaneli Python 3.
 
 Dış veri (projenin dışında, kullanıcı yönetir):
 - `/home/merterk/Belgeler/LGS/LGS_Takip.xlsx` — ana takip tablosu (Üniteler, Setler, Tekrar, Kaynaklar sayfaları).
@@ -33,11 +33,12 @@ Proje dosyaları:
 - `scripts/veri_js.py` — `data/*.json`'u `data/veri.js` içinde `window.LGS_VERI` olarak toplar (file:// altında fetch çalışmadığı için). `veri.js` elle düzenlenmez.
 - `dashboard/index.html` — claude.ai'deki "Duru LGS Takip" Dashboard artifact'ının sayfa kaynağı (veri artifact'ın kendi deposunda, `datasets/<id>`).
 - `dashboard.html` — yerel, iki görünümlü panel: `#veli` (Veli Paneli) ve `#duru` (Duru'nun Alanı). `data/veri.js`'i okur; Duru'nun işaretlemeleri tarayıcı localStorage'ında (`duruLGS.v1`).
-- `ogrenci/` — "Duru'nun Çalışma Masası": konu anlatımı, hata kartları, alıştırma/sınav motoru ve veli ödev paneli olan claude.ai artifact'ı (yapım aşamasında).
+- `ogrenci/` — "Duru'nun Çalışma Masası": konu anlatımı, hata kartları, alıştırma/sınav motoru ve veli ödev paneli olan claude.ai artifact'ı (yayında: https://claude.ai/artifact/EEZAAeYsUN212z1rogUtj8).
   - `ogrenci/SARTNAME.md` — sayfanın tam şartnamesi (db koleksiyonları: konular, bankalar, odevler, denemeler, ayarlar; veli = artifact sahibi).
   - `ogrenci/icerik/_GOREV.md` — PDF'lerden ünite JSON'u çıkarma görevi ve şeması.
-  - `ogrenci/icerik/<id>.json` — ünite başına içerik (`<ders kısaltması>-<ünite kısaltması>`, ör. `fen-mev`, `tur-fii`, `ink-kah`).
-  - `ogrenci/index.html` — sayfa (henüz yazılmadı).
+  - `ogrenci/icerik/<id>.json` — ünite başına içerik (`<ders kısaltması>-<ünite kısaltması>`). 15 ünite hazır: din-kad, fen-dna, fen-mev, ing-fri, ink-kah, ink-mil, mat-ck, mat-kk, mat-us, tur-cum, tur-fii, tur-man, tur-par, tur-soz, tur-yaz.
+  - `ogrenci/index.html` — sayfa kaynağı (`#duru` öğrenci görünümü, `#veli` yalnız sahibe görünür).
+- `scripts/icerik_hazirla.py` — ünite JSON'larını artifact db'ye yazılacak `konular`/`bankalar` belgelerine hazırlar.
 
 ## Komutlar
 
@@ -47,6 +48,9 @@ python3 -I scripts/xlsx_to_json.py /home/merterk/Belgeler/LGS/LGS_Takip.xlsx dat
 
 # Ünite JSON'u doğrula
 python3 -I -c "import json,sys;json.load(open(sys.argv[1]))" ogrenci/icerik/<id>.json
+
+# Ünite JSON'larını Çalışma Masası db'sine hazırla (sonra db batch yazımı)
+python3 -I scripts/icerik_hazirla.py ogrenci/icerik <çıktı klasörü>
 
 # PDF metni oku (bozuk üs/kesir/şekilde sayfayı Read ile görsel oku, tahmin etme)
 pdftotext -layout "<dosya>.pdf" -
@@ -58,4 +62,5 @@ pdftotext -layout "<dosya>.pdf" -
 - Soru cevapları mutlaka cevap anahtarından gelir; emin olunmayan sorular `"emin": false` işaretlenir.
 - Artifact sayfalarında veri metni `textContent` ile basılır, `innerHTML` ile değil.
 - Python scriptleri `-I` ile çalıştırılır.
-- **Oturum kapanışı:** Kullanıcı "oturumu kapatıyorum" dediğinde o oturumda değişen/öğrenilen her şeye göre bu `CLAUDE.md` ve memory dosyaları (`MEMORY.md` dizini dahil) güncellenir; ardından ne güncellendiği kısaca söylenip "Güncelledim, kapatabilirsin." denir.
+- Çalışma Masası konu belgeleri yeniden yazılırken `durum`/`veliNotu` ezilmez (update kullan); soru id'leri sabit kalır (denemelerde saklanıyor).
+- **Oturum kapanışı:** Kullanıcı "oturumu kapatıyorum" dediğinde o oturumda değişen/öğrenilen her şeye göre bu `CLAUDE.md` ve memory dosyaları (`MEMORY.md` dizini dahil) güncellenir; ardından kullanıcıya **"Projeyi GitHub'a da göndereyim mi?"** diye sorulur; "evet" derse değişiklikler commit'lenip `origin`'e push edilir (sormadan push edilmez). En son ne güncellendiği (ve push yapıldıysa) kısaca söylenip "Güncelledim, kapatabilirsin." denir.
