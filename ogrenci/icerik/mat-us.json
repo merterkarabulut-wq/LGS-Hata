@@ -51,154 +51,461 @@
    "altKonu": "Örüntü ve üs",
    "soru": "Pascal üçgeninde 20. satırdaki sayıların toplamı kaçtır?",
    "hata": "Satır toplamlarının 2 katına çıktığını gördü ama üs = satır no − 1 ilişkisini kurmadı; üssü iki birim fazla sayıp 2²¹ seçti. Sayma yöntemine güvendi.",
-   "dogruYol": "Satır n'in toplamı 2ⁿ⁻¹'dir; formülü 4. satırda test et (2³ = 8), sonra 20. satıra uygula: 2¹⁹."
+   "dogruYol": "Satır n'in toplamı 2ⁿ⁻¹'dir; formülü 4. satırda test et (2³ = 8), sonra 20. satıra uygula: 2¹⁹.",
+   "gorsel": [
+    "sorular/MAT-US-1.png"
+   ],
+   "cevap": "B) 2¹⁹",
+   "senin": "D) 2²¹",
+   "cozum": [
+    "Satır toplamlarını yaz: 1. satır 1, 2. satır 2, 3. satır 4, 4. satır 8 → her satır bir öncekinin 2 katı.",
+    "Tablo: 1. satır → 2⁰, 2. satır → 2¹, 3. satır → 2², 4. satır → 2³. Üs = satır no − 1.",
+    "Formülü bilinen satırda test et: 4. satır → 2⁴⁻¹ = 2³ = 8 ✓.",
+    "20. satır → 2²⁰⁻¹ = 2¹⁹."
+   ],
+   "hataAnaliz": "Doğru üs 19 iken 21 buldun, iki birim kaydın: üs = satır no − 1 ilişkisini kurmadın. 2'leri altına tek tek yazarak saymaya çalıştın; sayma yöntemi hataya açıktır.",
+   "tuyo": "Sıra no – toplam – üs tablosu kur; formülü 1. ve 4. satırda test et.",
+   "dikkat": "Kuralı bulunca hemen 20'ye uygulama; önce bildiğin satırlarda dene (4. satır → 2³ = 8 ✓). 2'leri tek tek yazarak sayma, tabloyla düşün."
   },
   {
    "kod": "MAT-ÜS-2",
    "altKonu": "Örüntü ve sıra numarası",
    "soru": "Eray'ın kare deseni makinesinde 39. sırada oluşan karelerle ilgili doğru ifade hangisidir?",
    "hata": "Kenara yazdığı 2¹⁹ sonucunu şıkla kelimesi kelimesine karşılaştırmadı; sıra numarasındaki +1'i kare sayısına karıştırıp 2¹⁹ + 1 seçti.",
-   "dogruYol": "Bulduğun sonucu şıkla karşılaştır; sıra numarası hesabındaki +1 kare sayısı değildir."
+   "dogruYol": "Bulduğun sonucu şıkla karşılaştır; sıra numarası hesabındaki +1 kare sayısı değildir.",
+   "gorsel": [
+    "sorular/MAT-US-2.png"
+   ],
+   "cevap": "A) 2¹⁹ tane ve sarı renklidir",
+   "senin": "B) 2¹⁹ + 1 tane ve sarı renklidir",
+   "cozum": [
+    "Deseni incele: 1. sıra 1, 2. sıra 2, 3. sıra 2, 4. sıra 4, 5. sıra 4, 6. sıra 8, 7. sıra 8. Çift sıra kırmızı, tek sıra sarı.",
+    "2k. ve (2k+1). sıralarda 2ᵏ kare var.",
+    "39 = 2 · 19 + 1 → k = 19 → 2¹⁹ kare. 39 tek sayı olduğu için renk sarı.",
+    "Cevap: 2¹⁹ tane ve sarı."
+   ],
+   "hataAnaliz": "Bulduğun 2¹⁹'u şıkla birebir karşılaştırmadın; 39 = 2 · 19 + 1'deki \"+1\"i kare sayısına karıştırmış olabilirsin.",
+   "tuyo": "Kenara yazdığın sonucu şıkla kelimesi kelimesine karşılaştır. Ara hesaptaki sayıları (sıra no hesabındaki +1) sonuçla karıştırma.",
+   "dikkat": "\"2¹⁹\" ile \"2¹⁹ + 1\" farklı sayılar. Sıra numarasını yazarken çıkan +1, kare sayısı değildir."
   },
   {
    "kod": "MAT-ÜS-3",
    "altKonu": "Negatif üs ve kare zemin",
    "soru": "4×4 kare zeminde aşağı ×2, sağa ×(4)⁻² kuralına göre A sayısı B sayısının kaç katıdır?",
    "hata": "A/B = 2⁹ = 512 değerini buldu ama şıklardaki farklı tabanlı ifadeleri (4³, 128, 16², 8³) eşleştiremedi ve boş bıraktı.",
-   "dogruYol": "Şıkları ortak tabana çevir: 4³ = 2⁶, 128 = 2⁷, 16² = 2⁸, 8³ = 2⁹."
+   "dogruYol": "Şıkları ortak tabana çevir: 4³ = 2⁶, 128 = 2⁷, 16² = 2⁸, 8³ = 2⁹.",
+   "gorsel": [
+    "sorular/MAT-US-3.png"
+   ],
+   "cevap": "D) 8³",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "Aşağı inince ×2 (kutu, aşağısının yarısı). Sağa gidince ×16, çünkü (4)⁻² = 1/16 (kutu = sağındakinin 1/16'sı).",
+    "B sol alt, A sağ üst köşede. B'den A'ya: 3 kez sağa (×16³ = 2¹²), 3 kez yukarı (÷2³).",
+    "A / B = 2¹² ÷ 2³ = 2⁹ = 512.",
+    "Şıkları 2 tabanına çevir: 4³ = 2⁶, 128 = 2⁷, 16² = 2⁸, 8³ = 2⁹ → D."
+   ],
+   "hataAnaliz": "A / B = 2⁹'u bulup şıklardaki farklı tabanlı ifadelerle (4³, 128, 16², 8³) eşleştiremedin, boş bıraktın. Şıkların altındaki karalamalar çevirmeyi denediğini gösteriyor; süre de etkili olmuş olabilir.",
+   "tuyo": "Şıkları ortak tabana çevir: 4³ = 2⁶, 128 = 2⁷, 16² = 2⁸, 8³ = 2⁹.",
+   "dikkat": "Negatif üs → ters çevir: (4)⁻² = 1/16. \"x, y'nin 1/16 katı\" → y = 16x. Şıklar farklı tabanlarda verilmişse hepsini aynı tabana (2) çevirip karşılaştır."
   },
   {
    "kod": "MAT-ÜS-6",
    "altKonu": "Negatif taban ve negatif üs",
    "soru": "Kartların değerine göre A, B, C kutularına ayrılması yapılıyor; son kart hangisi olabilir?",
    "hata": "(−5)⁻² = 1/25 değerini 'negatif taban, negatif değer' sanıp A kutusuna koydu; hesapladığı hâlde kutu etiketini güncellemedi, sayım bozuldu.",
-   "dogruYol": "Üs çiftse sonuç pozitif, tekse tabanın işareti korunur; kartı hesapladıktan sonra kutu etiketini kontrol et."
+   "dogruYol": "Üs çiftse sonuç pozitif, tekse tabanın işareti korunur; kartı hesapladıktan sonra kutu etiketini kontrol et.",
+   "gorsel": [
+    "sorular/MAT-US-6.png"
+   ],
+   "cevap": "A) (−5)⁻³",
+   "senin": "B) (−3)⁻²",
+   "cozum": [
+    "Her kartın değerini hesapla ve kutusunu bul: (−5)⁻² = 1/25 → C; (−2)⁶ = 64 → B; (−4)⁻³ = −1/64 → A; (−2)⁻² = 1/4 → C.",
+    "(−1)⁻¹ = −1 → B; (−9)⁰ = 1 → B; 6⁻² = 1/36 → C; (−10)⁻¹ = −1/10 → A.",
+    "Sayım: A: 2 kart, B: 3 kart, C: 3 kart. Kutulardaki kart sayıları eşit olacağına göre son kart A'ya (−1 ile 0 arası) gitmeli.",
+    "Şıklarda (−5)⁻³ = −1/125 → −1 ile 0 arasında ✓. Cevap A."
+   ],
+   "hataAnaliz": "(−5)⁻²'yi \"negatif taban → negatif değer\" diye A'ya koydun; oysa çift üs (−2) sonucu pozitif yapar → 1/25, C kutusu. Aynı kartı sonra doğru hesapladığın hâlde etiketi güncellemedin. Tek etiket hatası sayımı A: 3, C: 2 yaptı ve seni yanlış şıkka götürdü.",
+   "tuyo": "\"Üs çiftse sonuç pozitif, tekse tabanın işareti korunur\" (negatif üs de dahil: (−5)⁻² → üs −2 çift → pozitif). Hesapladığın değerle verdiğin etiketi karşılaştır.",
+   "dikkat": "Negatif üs işareti değiştirmez, sadece ters çevirir. İşareti ÜSSÜN tek/çift oluşu belirler. Etiket verdikten sonra bir kartın değerini yeniden hesaplarsan etiketi de kontrol et."
   },
   {
    "kod": "MAT-ÜS-7",
    "altKonu": "Üslü ifadelerle çarpma ve bölme",
    "soru": "Harun ve Emre'nin bilye torbalarında Harun'un aldığı toplam bilye sayısı kaçtır?",
    "hata": "Soru toplamı sorarken bir torbadaki bilye sayısını (5⁴) işaretledi; 16 torbayla çarpma adımını yapmadı.",
-   "dogruYol": "Bulduğun şey bir torba mı, toplam mı diye sor; bir torba × torba sayısı = toplam."
+   "dogruYol": "Bulduğun şey bir torba mı, toplam mı diye sor; bir torba × torba sayısı = toplam.",
+   "gorsel": [
+    "sorular/MAT-US-7.png"
+   ],
+   "cevap": "B) 10⁴",
+   "senin": "A) 5⁴",
+   "cozum": [
+    "Toplam 41 torba, Harun 16 torba aldı → Emre 41 − 16 = 25 = 5² torba aldı.",
+    "Bir torbadaki bilye: 5⁶ ÷ 5² = 5⁴.",
+    "Harun'un toplam bilyesi = 16 · 5⁴ = 2⁴ · 5⁴.",
+    "aᵏ · bᵏ = (a · b)ᵏ kuralıyla: 2⁴ · 5⁴ = (2 · 5)⁴ = 10⁴."
+   ],
+   "hataAnaliz": "Soru Harun'un TOPLAM bilye sayısını soruyordu; sen BİR TORBADAKİ bilye sayısını (5⁴) işaretledin. 16 ile çarpma adımı kaldı. MAT-ÇK-1 (torbadaki miktar ↔ torba sayısı) ile aynı örüntü.",
+   "tuyo": "Kendine sor: \"Bulduğum bir torba mı, toplam mı? Kimin için?\" Ara sonuca \"bir torba\" yazdıysan ve soru \"toplam\" diyorsa bir adım daha var.",
+   "dikkat": "Bir torba × torba sayısı = toplam. 16 · 5⁴'ü sadeleştirmek için 16 = 2⁴ yaz ve aᵏ · bᵏ = (a · b)ᵏ kuralını kullan → 10⁴."
   },
   {
    "kod": "MAT-ÜS-8",
    "altKonu": "Kütle eşitliğinden adet bulma",
    "soru": "Limandaki konteynerlerde 2. gemiye toplam kaç adet konteyner yüklenmiştir?",
    "hata": "25 000 küçük konteyner sayısını doğru buldu ama 2. gemideki 10 000 büyük konteyneri toplama eklemedi; 30 000 seçti. (Kitap anahtarı C (25 000) diyor; doğrusu A (35 000).)",
-   "dogruYol": "Soru 'toplam' diyorsa tabloda gemiye ait tüm konteyner türlerini topla; bulduğun sayının ara sonuç olup olmadığını kontrol et."
+   "dogruYol": "Soru 'toplam' diyorsa tabloda gemiye ait tüm konteyner türlerini topla; bulduğun sayının ara sonuç olup olmadığını kontrol et.",
+   "gorsel": [
+    "sorular/MAT-US-8.png"
+   ],
+   "cevap": "A) 35 000",
+   "senin": "B) 30 000",
+   "cozum": [
+    "Her şeyi 2 ve 5'in kuvvetlerine çevir: 8⁵ = 2¹⁵, 4⁶ = 2¹².",
+    "1. geminin büyük konteynerlerinin toplam kütlesi = 5⁵ · 8⁵ = 5⁵ · 2¹⁵.",
+    "Bu kütle 2. gemideki küçük konteynerlerin kütlesine eşit: küçük adet = 5⁵ · 2¹⁵ ÷ 4⁶ = 5⁵ · 2¹⁵ ÷ 2¹² = 5⁵ · 2³ = 3125 · 8 = 25 000.",
+    "2. gemide ayrıca 10⁴ = 10 000 büyük konteyner var.",
+    "2. geminin toplamı = 10 000 + 25 000 = 35 000. Not Kitabın cevap anahtarında hata olabilir: kitapta C) 25 000 işaretli, ama bu yalnızca küçük konteyner sayısı. Soru \"toplam\" dediği için doğrusu A) 35 000."
+   ],
+   "hataAnaliz": "Son adımda takıldın: 25 000'i bulduktan sonra 2. gemideki 10⁴ büyük konteyneri ekleyerek 35 000'e ulaşman gerekiyordu. 30 000'e nasıl ulaştığın net değil.",
+   "tuyo": "Soru küçükleri mi soruyor, TOPLAMI mı? Tablodaki tüm hücreleri doldur ve gemi satırını topla.",
+   "dikkat": "Kütle eşitliğinden adet bulunur; \"toplam adet\" için aynı gemideki diğer tür konteynerleri de ekle."
   },
   {
    "kod": "MAT-ÜS-4",
    "altKonu": "Bilimsel gösterim ve birim dönüşümü",
    "soru": "Bir incir yaprağının kütlesi 0,8 gramdır; kilogram cinsinden bilimsel gösterimi hangisidir?",
    "hata": "Soru kilogram istediği hâlde birim dönüşümü yapmadı; 0,8'i gram olarak bilimsel gösterime çevirip 8 · 10⁻¹ seçti.",
-   "dogruYol": "Önce birimi çevir (1 kg = 10³ g), sonra bilimsel gösterime geç; cevabının yanına birimini yaz."
+   "dogruYol": "Önce birimi çevir (1 kg = 10³ g), sonra bilimsel gösterime geç; cevabının yanına birimini yaz.",
+   "gorsel": [
+    "sorular/MAT-US-4.png"
+   ],
+   "cevap": "D) 8 · 10⁻⁴",
+   "senin": "A) 8 · 10⁻¹",
+   "cozum": [
+    "Soru KİLOGRAM cinsinden istiyor, kütle gram verilmiş. Önce birimi çevir.",
+    "1 kg = 1000 g → gramı kilograma çevirmek için 1000'e böl: 0,8 g = 0,8 ÷ 1000 kg = 0,0008 kg.",
+    "Bilimsel gösterim: 0,0008 = 8 · 10⁻⁴ kg."
+   ],
+   "hataAnaliz": "Birim dönüşümünü yapmadın: soru \"kilogram cinsinden\" diyor, sen 0,8 GRAM'ı doğrudan çevirdin. A şıkkı gram cinsinden doğru olan değer; yani tuzak.",
+   "tuyo": "Soru kökündeki birimin altını çiz; verilen birimle istenen birim aynı mı? Önce birim çevir, sonra bilimsel gösterime geç.",
+   "dikkat": "1 kg = 1000 g = 10³ g. Gram → kilogram: 10³'e böl (üs 3 azalır). 8 · 10⁻¹ g = 8 · 10⁻¹ · 10⁻³ kg = 8 · 10⁻⁴ kg."
   },
   {
    "kod": "MAT-ÜS-9",
    "altKonu": "Negatif üs ve aralık",
    "soru": "2⁻¹ < x < 2² aralığındaki tam sayılar için 3ˣ değerleri toplamı kaçtır?",
    "hata": "Uç değer olan 0'ı aralığa dahil etti (3⁰ = 1); 1 + 3 + 9 + 27 = 40 buldu.",
-   "dogruYol": "Uç değerleri ondalık yaz (0,5 ve 4); < işareti uç değeri dahil etmez; 0, 1/2'den küçüktür."
+   "dogruYol": "Uç değerleri ondalık yaz (0,5 ve 4); < işareti uç değeri dahil etmez; 0, 1/2'den küçüktür.",
+   "gorsel": [
+    "sorular/MAT-US-9.png"
+   ],
+   "cevap": "C) 39",
+   "senin": "D) 40",
+   "cozum": [
+    "2⁻¹ = 1/2 ve 2² = 4. Sayı doğrusunda 1/2 < x < 4.",
+    "x tam sayı → x = 1, 2, 3 (0, 1/2'den küçük olduğu için aralıkta değil).",
+    "3¹ + 3² + 3³ = 3 + 9 + 27 = 39."
+   ],
+   "hataAnaliz": "0 < 1/2 olduğu için x = 0 aralıkta değil; sen 0'ı da listeye ekledin (3⁰ = 1) ve 1 + 3 + 9 + 27 = 40 buldun.",
+   "tuyo": "Aralık sorularında sayı doğrusu çiz; uç değerleri ondalık yaz (0,5 ve 4) ve her adayı \"aralıkta mı?\" diye tikle.",
+   "dikkat": "< işareti uç değeri dahil etmez. 0, 1/2'den küçüktür. Listeyi yazdıktan sonra en küçük ve en büyük adayı tekrar kontrol et."
   },
   {
    "kod": "MAT-ÜS-10",
    "altKonu": "Doğal sayılar ve sıfırıncı kuvvet",
    "soru": "a ve b doğal sayılar, a = 64ᵇ eşitliğine göre a + b'nin alabileceği en küçük değer kaçtır?",
    "hata": "b'yi 1'den başlattı; doğal sayılar kümesinin 0'ı içerdiğini ve 64⁰ = 1 olduğunu kullanmadı; 65 seçti.",
-   "dogruYol": "Doğal sayılar 0'dan başlar; en küçük değer sorularında önce kümenin en küçük elemanını dene."
+   "dogruYol": "Doğal sayılar 0'dan başlar; en küçük değer sorularında önce kümenin en küçük elemanını dene.",
+   "gorsel": [
+    "sorular/MAT-US-10.png"
+   ],
+   "cevap": "A) 1",
+   "senin": "C) 65",
+   "cozum": [
+    "Doğal sayılar 0'dan başlar: 0, 1, 2, 3, ...",
+    "\"En küçük\" soruluyor, önce en küçük değeri dene: b = 0 → a = 64⁰ = 1.",
+    "a + b = 1 + 0 = 1. (Her sayının 0. kuvveti 1'dir.)"
+   ],
+   "hataAnaliz": "0'ın doğal sayı olduğunu ve 64⁰ = 1 olduğunu kullanmadın; b'yi 1'den başlattın. (Soru \"pozitif tam sayı\" deseydi 65 doğru olurdu.)",
+   "tuyo": "Kümeleri karşılaştır: doğal sayı (0, 1, 2...), pozitif tam sayı (1, 2, 3...), tam sayı (... −1, 0, 1 ...). \"En küçük\" sorularında önce kümenin en küçük elemanını dene.",
+   "dikkat": "\"Doğal sayı\" gördüğünde ilk aday 0'dır. \"En küçük\" sorularında b = 0 dene. MAT-ÜS-9'da 0'ı yanlışlıkla dahil ettin, burada dışarıda bıraktın: 0 ile ilgili kararlarda sayı kümesi tanımına ve sınıra bak."
   },
   {
    "kod": "MAT-ÜS-11",
    "altKonu": "Negatif üs ve parantez",
    "soru": "−3⁻⁴ = 1/a ve 5ᵇ = 1/125 kartlarına göre a + b kaçtır?",
    "hata": "Parantez olmadığı hâlde eksiyi tabana katıp a = 81 buldu; sonucu 78 olarak işaretledi.",
-   "dogruYol": "Parantez yoksa eksi en son yazılır: −3⁻⁴ = −1/81, dolayısıyla a = −81."
+   "dogruYol": "Parantez yoksa eksi en son yazılır: −3⁻⁴ = −1/81, dolayısıyla a = −81.",
+   "gorsel": [
+    "sorular/MAT-US-11.png"
+   ],
+   "cevap": "A) −84",
+   "senin": "C) 78",
+   "cozum": [
+    "Kart 1: −3⁻⁴ = −(3⁻⁴) = −1/81 (parantez yok, eksi dışarıda). −1/81 = 1/a → a = −81.",
+    "Kart 2: 5ᵇ = 1/125 = 5⁻³ → b = −3.",
+    "a + b = −81 + (−3) = −84."
+   ],
+   "hataAnaliz": "Parantez yokken üs yalnızca 3'e etki eder, eksi işareti dışarıda kalır: −3⁻⁴ = −(1/81). Sen tabanı −3 kabul edip çift üsle pozitif yaptın (a = 81). MAT-ÜS-6 ile aynı kavram ailesi; burada ters yönde: parantez YOKKEN negatif taban sandın.",
+   "tuyo": "Karşılaştırma tablosu: (−3)⁴ = 81, −3⁴ = −81, (−3)⁻⁴ = 1/81, −3⁻⁴ = −1/81. Kural: \"Parantez yoksa eksi en son yazılır.\"",
+   "dikkat": "Üs, hemen solundaki sayıya ya da paranteze aittir. −3⁴'te üs yalnızca 3'ündür. Eksiyi tabana katmak için parantez şarttır."
   },
   {
    "kod": "MAT-ÜS-12",
    "altKonu": "Şekil ve üslü ifadeler",
    "soru": "8 eş dikdörtgenle oluşturulan mavi dikdörtgenin çevresi kaç cm'dir?",
    "hata": "Kenarları a ve 3a olarak doğru modelledi ve çevreyi 20a buldu; ama 20 · 2⁵ = 5 · 2⁷ sadeleştirmesinde takılıp soruyu boş bıraktı.",
-   "dogruYol": "Kurduysan bitir: şıklar üslü biçimdeyse sonucu aynı biçime getir (20 = 5 · 2²)."
+   "dogruYol": "Kurduysan bitir: şıklar üslü biçimdeyse sonucu aynı biçime getir (20 = 5 · 2²).",
+   "gorsel": [
+    "sorular/MAT-US-12.png"
+   ],
+   "cevap": "C) 5 · 2⁷",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "Eş dikdörtgenin kısa kenarı a, uzun kenarı 3a olsun.",
+    "Şekil 1'in uzun kenarı: 3a + a + a + 3a = 8a = 2⁸ → a = 2⁵.",
+    "Şekil 2'de mavi dikdörtgen: genişlik 9a − 2a = 7a, yükseklik 3a → çevre = 2 · (7a + 3a) = 20a.",
+    "Çevre = 20 · 2⁵ = 5 · 2² · 2⁵ = 5 · 2⁷ (= 640 cm)."
+   ],
+   "hataAnaliz": "Kurgu doğru olduğu hâlde işaretlemedin. 20 · 2⁵ → 5 · 2⁷ sadeleştirmesinde takılmış olabilirsin. Mantığı kurup sonucu işaretlemeye yetişememe, MAT-ÇK-14, -18, -22 ve MAT-ÜS-3'te de vardı.",
+   "tuyo": "Zamanlı çalışmada \"kurduysan bitir\" kuralı koy. Sonucu şıkların biçimine çevirme alıştırması yap (20 = 5 · 2²). Bulduğun sayıyı (640) şıkları hesaplayarak da karşılaştırabilirsin.",
+   "dikkat": "Şekil sorularında kenarlara harf ver (a, 3a). Şıklar üslü biçimdeyse sonucu da aynı biçime getir: 20 · 2⁵ = 5 · 4 · 2⁵ = 5 · 2⁷."
   },
   {
    "kod": "MAT-ÜS-13",
    "altKonu": "Üslü ifadelerle oran ve tablo",
    "soru": "Uçurtmaların alan ve ip uzunluğu tablosuna göre hangisi yanlıştır?",
    "hata": "'Beril'in alanı, Ceren'in alanının … katı' şıkkında oranı ters aldı (Ceren ÷ Beril); doğru olan A şıkkını yanlış sanıp A'yı işaretledi.",
-   "dogruYol": "'x, y'nin kaç katıdır?' sorusunda kesir x ÷ y'dir; cümledeki sıra kesirdeki sıradır. 'Yanlıştır' sorularında her şıkka ✓ / ✗ koy."
+   "dogruYol": "'x, y'nin kaç katıdır?' sorusunda kesir x ÷ y'dir; cümledeki sıra kesirdeki sıradır. 'Yanlıştır' sorularında her şıkka ✓ / ✗ koy.",
+   "gorsel": [
+    "sorular/MAT-US-13.png"
+   ],
+   "cevap": "D",
+   "senin": "A",
+   "cozum": [
+    "Hepsini 2'nin kuvvetine çevir (alan / ip): Aydan 2¹³ / 4⁴ = 2⁸; Beril 8⁴ = 2¹² / 2⁷; Ceren 2¹³ / 8³ = 2⁹; Deniz 16³ = 2¹² / 32² = 2¹⁰.",
+    "A: Beril'in alanı ÷ Ceren'in alanı = 2¹² ÷ 2¹³ = 2⁻¹ → doğru.",
+    "B: Alanlar eşit (2¹³), Aydan'ın ipi daha kısa → daha yakın → daha büyük görünür → doğru.",
+    "C: Alanlar eşit (2¹²), Deniz'in ipi daha uzun → daha uzak → daha küçük görünür → doğru.",
+    "D: Aydan'ın ipi ÷ Deniz'in ipi = 2⁸ ÷ 2¹⁰ = 2⁻², \"2² katı\" değil → YANLIŞ. Cevap D."
+   ],
+   "hataAnaliz": "Oranın yönünü karıştırdın: \"x, y'nin kaç katıdır\" = x ÷ y. A'yı kontrol ederken Ceren ÷ Beril (2¹³ / 2¹² = 2¹) hesapladın; doğrusu Beril ÷ Ceren = 2⁻¹. Böylece doğru olan A'yı yanlış sandın. \"Hangisi yanlıştır\" sorusunda her şıkkı tek tek kontrol etmek gerekir.",
+   "tuyo": "\"x, y'nin kaç katıdır?\" → kesir kur: x ÜSTE, y ALTA. Cümledeki sıra = kesirdeki sıra. \"Yanlıştır\" sorularında her şıkkın yanına ✓/✗ koy; tek ✗ kalmalı.",
+   "dikkat": "Cümlede önce gelen isim PAYDIR: \"Beril'in alanı, Ceren'in alanının … katı\" → Beril / Ceren. Görünüş: alan eşitse ipi kısa olan (yakın) büyük görünür."
   },
   {
    "kod": "MAT-ÜS-4",
    "altKonu": "Bilimsel gösterim ve birim dönüşümü (tekrar testi)",
    "soru": "Tekrar testi: 0,8 gramın kilogram cinsinden bilimsel gösterimi hangisidir?",
    "hata": "Tekrar çözümde yine birim dönüşümünü yapmadı; gram cinsinden doğru olan A şıkkı tuzağına düştü (ilk seferde A seçildi).",
-   "dogruYol": "Önce birimi çevir, sonra bilimsel gösterime geç; soru kökündeki birimin altını çiz."
+   "dogruYol": "Önce birimi çevir, sonra bilimsel gösterime geç; soru kökündeki birimin altını çiz.",
+   "gorsel": [
+    "sorular/MAT-US-4.png"
+   ],
+   "cevap": "D) 8 · 10⁻⁴",
+   "senin": "A) 8 · 10⁻¹",
+   "cozum": [
+    "Soru KİLOGRAM cinsinden istiyor, kütle gram verilmiş. Önce birimi çevir.",
+    "1 kg = 1000 g → gramı kilograma çevirmek için 1000'e böl: 0,8 g = 0,8 ÷ 1000 kg = 0,0008 kg.",
+    "Bilimsel gösterim: 0,0008 = 8 · 10⁻⁴ kg."
+   ],
+   "hataAnaliz": "Birim dönüşümünü yapmadın: soru \"kilogram cinsinden\" diyor, sen 0,8 GRAM'ı doğrudan çevirdin. A şıkkı gram cinsinden doğru olan değer; yani tuzak.",
+   "tuyo": "Soru kökündeki birimin altını çiz; verilen birimle istenen birim aynı mı? Önce birim çevir, sonra bilimsel gösterime geç.",
+   "dikkat": "1 kg = 1000 g = 10³ g. Gram → kilogram: 10³'e böl (üs 3 azalır). 8 · 10⁻¹ g = 8 · 10⁻¹ · 10⁻³ kg = 8 · 10⁻⁴ kg."
   },
   {
    "kod": "MAT-ÜS-8",
    "altKonu": "Kütle eşitliğinden adet bulma (tekrar testi)",
    "soru": "Tekrar testi: Limandaki konteynerlerde 2. gemiye toplam kaç adet konteyner yüklenmiştir?",
    "hata": "2. gemideki 10 000 büyük konteyneri toplama eklemedi; ara sonuç olan küçük konteyner sayısını (25 000) seçti.",
-   "dogruYol": "Son adımda soru kökünü yeniden oku: TOPLAM mı, sadece biri mi? Bulduğun sayı ara sonuç mu?"
+   "dogruYol": "Son adımda soru kökünü yeniden oku: TOPLAM mı, sadece biri mi? Bulduğun sayı ara sonuç mu?",
+   "gorsel": [
+    "sorular/MAT-US-8.png"
+   ],
+   "cevap": "A) 35 000",
+   "senin": "B) 30 000",
+   "cozum": [
+    "Her şeyi 2 ve 5'in kuvvetlerine çevir: 8⁵ = 2¹⁵, 4⁶ = 2¹².",
+    "1. geminin büyük konteynerlerinin toplam kütlesi = 5⁵ · 8⁵ = 5⁵ · 2¹⁵.",
+    "Bu kütle 2. gemideki küçük konteynerlerin kütlesine eşit: küçük adet = 5⁵ · 2¹⁵ ÷ 4⁶ = 5⁵ · 2¹⁵ ÷ 2¹² = 5⁵ · 2³ = 3125 · 8 = 25 000.",
+    "2. gemide ayrıca 10⁴ = 10 000 büyük konteyner var.",
+    "2. geminin toplamı = 10 000 + 25 000 = 35 000. Not Kitabın cevap anahtarında hata olabilir: kitapta C) 25 000 işaretli, ama bu yalnızca küçük konteyner sayısı. Soru \"toplam\" dediği için doğrusu A) 35 000."
+   ],
+   "hataAnaliz": "Son adımda takıldın: 25 000'i bulduktan sonra 2. gemideki 10⁴ büyük konteyneri ekleyerek 35 000'e ulaşman gerekiyordu. 30 000'e nasıl ulaştığın net değil.",
+   "tuyo": "Soru küçükleri mi soruyor, TOPLAMI mı? Tablodaki tüm hücreleri doldur ve gemi satırını topla.",
+   "dikkat": "Kütle eşitliğinden adet bulunur; \"toplam adet\" için aynı gemideki diğer tür konteynerleri de ekle."
   },
   {
    "kod": "MAT-ÇK-20",
    "altKonu": "Kesim ve parça sayısı",
    "soru": "Uzunlukları 150 cm ve 210 cm olan iki tahta en büyük eş parçalara ayrılıyor; toplam kesim süresi 240 saniye ise bir kesim kaç saniyedir?",
    "hata": "240'ı parça sayısıyla ya da karışık bir sayıyla böldü (A: 20); parça ve kesim kavramlarını karıştırdı.",
-   "dogruYol": "n parçaya bölmek için n − 1 kesim gerekir; emin değilsen çizerek say."
+   "dogruYol": "n parçaya bölmek için n − 1 kesim gerekir; emin değilsen çizerek say.",
+   "gorsel": [
+    "sorular/MAT-CK-20.png"
+   ],
+   "cevap": "B) 24",
+   "senin": "A) 20",
+   "cozum": [
+    "EBOB(150, 210) = 30 cm (en büyük eş parça).",
+    "150 cm → 150 ÷ 30 = 5 parça → 4 kesim. 210 cm → 7 parça → 6 kesim.",
+    "Toplam kesim = 4 + 6 = 10.",
+    "Bir kesim = 240 ÷ 10 = 24 saniye."
+   ],
+   "hataAnaliz": "Parça sayısıyla kesim sayısını karıştırdın. 240 ÷ 20 = 12 diyerek toplam parça sayısıyla (5 + 7 = 12) böldün; oysa süreyi kesim sayısına (10) bölmek gerekiyordu.",
+   "tuyo": "Bir çubuğu 3 parçaya ayırmak için 2 kesim gerekir; n parça için n − 1 kesim. Her tahta için parça ve kesim sayısını ayrı sütunlara yaz.",
+   "dikkat": "Parça ≠ kesim. Bir tahtayı n eşit parçaya ayırmak için n − 1 kesim gerekir. Tahtalar AYRI AYRI kesiliyorsa her tahta için 1 çıkar."
   },
   {
    "kod": "MAT-ÇK-21",
    "altKonu": "İlk karşılaşma ve EKOK",
    "soru": "Sekiz şeklindeki pistte iki arabanın O noktasında ikinci kez karşılaşma anı kaçıncı saniyedir?",
    "hata": "O noktasına ilk varışı 8. saniye olarak buldu ama ikinci karşılaşmayı 80. saniye sanıp 8 saniyelik başlangıcı eklemedi (A: 1 dk 20 sn).",
-   "dogruYol": "Önce İLK birlikte olunan anı bul, sonra her seferinde EKOK ekle; EKOK bir aralıktır, bir an değildir."
+   "dogruYol": "Önce İLK birlikte olunan anı bul, sonra her seferinde EKOK ekle; EKOK bir aralıktır, bir an değildir.",
+   "gorsel": [
+    "sorular/MAT-CK-21.png"
+   ],
+   "cevap": "C) 1 dakika 28 saniye",
+   "senin": "A) 1 dakika 20 saniye",
+   "cozum": [
+    "Sol yol: 20 ÷ 5 = 4 sn/parça. A'dan O'ya 2 parça = 8 sn.",
+    "Sağ yol: 16 ÷ 4 = 4 sn/parça. B'den O'ya 2 parça = 8 sn.",
+    "İki araba da O'ya 8. saniyede varır → ilk karşılaşma 8. saniye.",
+    "Sonraki karşılaşmalar EKOK(20, 16) = 80 saniye arayla olur.",
+    "İkinci karşılaşma = 8 + 80 = 88 sn = 1 dk 28 sn."
+   ],
+   "hataAnaliz": "İlk karşılaşmanın 8. saniyede olduğunu bulduğun hâlde ikinci karşılaşmayı 80. saniye aldın; 8 + 80 toplamasını yapmadın. MAT-ÇK-12'deki hatayla aynı aile: \"olaylar ne zaman başlıyor?\" kontrolü.",
+   "tuyo": "Zaman çizelgesi çiz: 0 → 8 (1. karşılaşma) → 88 (2.) → 168 (3.). EKOK bir \"aralık\"tır, \"an\" değildir; anı bulmak için ilk karşılaşma anına eklenir.",
+   "dikkat": "Olaylar 0. saniyede değil 8. saniyede başlıyorsa her karşılaşma anı = ilk an + EKOK · k. Bulduğun ara sonuç (80) şıklarda tuzak olarak durur."
   },
   {
    "kod": "MAT-ÇK-14",
    "altKonu": "Aralarında asal çarpanlar",
    "soru": "İki dörtgenin köşe çarpımları x ve y aralarında asal olacak biçimde x + y en az kaçtır?",
    "hata": "Köşelere sayıları doğru yerleştirdi ama son çarpmada hata yaptı (18 · 5 = 80); sonuç şıklarda olmadığı için boş bıraktı.",
-   "dogruYol": "Yerleşim bitince x ve y'yi ayrı satırlarda hesapla; her çarpmayı tersinden kontrol et, sonra topla."
+   "dogruYol": "Yerleşim bitince x ve y'yi ayrı satırlarda hesapla; her çarpmayı tersinden kontrol et, sonra topla.",
+   "gorsel": [
+    "sorular/MAT-CK-14.png"
+   ],
+   "cevap": "B) 457",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "İki dörtgenin ORTAK köşesi hem x'i hem y'yi böler. x ve y aralarında asal olduğundan ortak köşe 1 olmalı.",
+    "Sol dörtgen: 9, 4, 1 ve bir sayı daha. En küçük uygun farklı sayı 2 → x = 9 · 4 · 2 · 1 = 72.",
+    "Sağ dörtgen: 1 ile birlikte üç sayı daha. x = 72 = 2³·3² ile aralarında asal olmak için 2 ve 3'e bölünmeyen, daha önce kullanılmamış en küçük sayılar: 5, 7, 11 → y = 1 · 5 · 7 · 11 = 385.",
+    "x + y = 72 + 385 = 457."
+   ],
+   "hataAnaliz": "Doğru yerleşimden sonra son hesapta takıldın: x = 72, y = 385 ve toplam 457 yerine karalamanda 466, 427, 426 gibi sonuçlar ve 18 · 5 = 80 (doğrusu 90) var. Sonuç şıklarda olmayınca rastgele işaretlemeyip boş bırakman olumlu bir davranış.",
+   "tuyo": "Çarpımları adım adım yaz (5 · 7 = 35, 35 · 11 = 385) ve toplamı tersinden kontrol et. Bulduğun sonuç şıklarda yoksa işlemi baştan yap.",
+   "dikkat": "Ortak köşe (iki sayının ortak çarpanı) varsa ve sayılar aralarında asalsa o ortak çarpan 1 olmak zorunda. \"En az\" için sol tarafı en küçük sayılarla, sağ tarafı sol tarafın asal çarpanlarını içermeyen en küçük sayılarla doldur."
   },
   {
    "kod": "MAT-ÇK-16",
    "altKonu": "En büyük sayı ve tarama",
    "soru": "2ᵃ · 3ᵇ biçiminde yazılabilen iki basamaklı en büyük sayının rakamları toplamı kaçtır?",
    "hata": "3'ün kuvvetini en büyük tutup yalnızca 2'yi değiştirdi (54 buldu, A: 9); 3'ü küçültüp 2'yi büyütmeyi denemedi.",
-   "dogruYol": "En büyük ya da en küçük sorularında bütün adayları tabloyla listele, sonra seç."
+   "dogruYol": "En büyük ya da en küçük sorularında bütün adayları tabloyla listele, sonra seç.",
+   "gorsel": [
+    "sorular/MAT-CK-16.png"
+   ],
+   "cevap": "C) 15",
+   "senin": "A) 9",
+   "cozum": [
+    "a ve b en az 1: 2ᵃ · 3ᵇ biçimindeki iki basamaklı sayıları sistemli yaz.",
+    "b = 1: 6 · 2ᵃ → 12, 24, 48, 96. b = 2: 9 · 2ᵃ → 18, 36, 72. b = 3: 27 · 2ᵃ → 54 (108 üç basamaklı).",
+    "Hepsi: 12, 18, 24, 36, 48, 54, 72, 96. En büyüğü 96 = 2⁵ · 3.",
+    "Rakamlar toplamı = 9 + 6 = 15."
+   ],
+   "hataAnaliz": "3'ün kuvvetini en büyük tutup (27) yalnızca 2'nin kuvvetini değiştirdin; 3'ün kuvvetini küçültüp 2'ninkini büyütmeyi (2⁵ · 3 = 96) denemedin. \"En büyük\" için tek bir tabanı büyütmenin yeteceğini varsaydın.",
+   "tuyo": "Sistemli tablo kur: b = 1, 2, 3 için 2ᵃ'yı iki basamak sınırına kadar büyüt; her satırın en büyüğünü yaz, sonra karşılaştır.",
+   "dikkat": "\"En büyük\" sorularında tek bir yolu değil, TÜM durumları tablo hâlinde dene. Büyük tabanın büyük kuvveti her zaman en büyük sonucu vermez."
   },
   {
    "kod": "MAT-ÇK-23",
    "altKonu": "Asal çarpanlara ayırma",
    "soru": "Farklı asal bölenlerinin toplamı asal olan sayı hangisidir?",
    "hata": "78 = 2 · 39 deyip 39'u asal sandı; çarpanlarına ayırmayı yarıda bırakıp D (78) şıkkını seçti.",
-   "dogruYol": "Her parçayı asal olana kadar ayır; 3 (rakamlar toplamı) ve 7 ile bölünmeyi mutlaka dene."
+   "dogruYol": "Her parçayı asal olana kadar ayır; 3 (rakamlar toplamı) ve 7 ile bölünmeyi mutlaka dene.",
+   "gorsel": [
+    "sorular/MAT-CK-23.png"
+   ],
+   "cevap": "B) 68",
+   "senin": "D) 78",
+   "cozum": [
+    "\"Toplam asal sayı\": farklı asal bölenlerinin toplamı asal olmalı. Her şıkkı çarpanlarına ayır.",
+    "55 = 5 · 11 → 5 + 11 = 16 (asal değil).",
+    "68 = 2² · 17 → 2 + 17 = 19 (asal) ✓.",
+    "69 = 3 · 23 → 26 (asal değil).",
+    "78 = 2 · 3 · 13 → 2 + 3 + 13 = 18 (asal değil).",
+    "Cevap 68."
+   ],
+   "hataAnaliz": "Büyük olasılıkla 78 = 2 · 39 deyip 39'u asal sandın (2 + 39 = 41 asal olurdu). Oysa 39 = 3 · 13. MAT-ÇK-4 (1089) ve MAT-ÇK-17 (143) ile aynı örüntü: çarpanlara ayırmayı sona kadar götürmemek.",
+   "tuyo": "Asal çarpanlara ayırmayı sona kadar götür; elde kalan her sayının asal olup olmadığını kontrol et (39 → rakamlar toplamı 12 → 3'e bölünür). Karalama yap.",
+   "dikkat": "\"Bölen\" bulmak yetmez, ASAL bölen bulmak gerekir. Her parçayı asal olana kadar ayır. Yeni tanım verilen sorularda tanımı örnek üzerinde bir kez daha uygula. Bir Sayının Çarpanları (Bölenleri)"
   },
   {
    "kod": "MAT-KK-1",
    "altKonu": "Tam kare ve karekök",
    "soru": "Rakam kartlarından kaç tanesinin üzerindeki rakamın karekökü tam sayıdır?",
    "hata": "0'ı aday olarak düşünmedi; √0 = 0 bir tam sayı olduğu hâlde A (3) seçti.",
-   "dogruYol": "Sayarken listeyi 0'dan başlayarak tara; √0 = 0 ve √1 = 1 tam sayıdır."
+   "dogruYol": "Sayarken listeyi 0'dan başlayarak tara; √0 = 0 ve √1 = 1 tam sayıdır.",
+   "gorsel": [
+    "sorular/MAT-KK-1.png"
+   ],
+   "cevap": "B) 4",
+   "senin": "A) 3",
+   "cozum": [
+    "Karekökü tam sayı olan sayılar tam karelerdir: 0² = 0, 1² = 1, 2² = 4, 3² = 9.",
+    "Kartları 0'dan başlayarak tek tek tara: 0 ✓, 1 ✓, 2 ✗, 3 ✗, 4 ✓, 5–8 ✗, 9 ✓.",
+    "√0 = 0, √1 = 1, √4 = 2, √9 = 3 → 4 kart. Cevap B."
+   ],
+   "hataAnaliz": "0'ı aday olarak hiç düşünmedin. √0 = 0 bir tam sayıdır. Listeyi baştan (0'dan) taramadın; ÇK-16 ve ÇK-23'teki “taramayı yarıda bırakma” alışkanlığının yeni bir görünümü.",
+   "tuyo": "Sayarken listeyi EN BAŞTAN tara: 0 ve 1 de tam karedir. 0–100 arası tam kareler: 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100."
   },
   {
    "kod": "MAT-ÜS-14",
    "altKonu": "Sıfırıncı kuvvet",
    "soru": "(−1)'in kuvvetlerinin çarpımı hangi ifadenin sonucuyla aynıdır?",
    "hata": "(−1)⁰'ı 0 aldı; çarpım 0 çıkınca şıkkı kendi sonucuna uydurmaya çalıştı.",
-   "dogruYol": "Sıfırdan farklı her sayının 0. kuvveti 1'dir; sonuç şıklarda yoksa şıkkı değiştirmek yerine işlemi yeniden kontrol et."
+   "dogruYol": "Sıfırdan farklı her sayının 0. kuvveti 1'dir; sonuç şıklarda yoksa şıkkı değiştirmek yerine işlemi yeniden kontrol et.",
+   "gorsel": [
+    "sorular/MAT-US-14.png"
+   ],
+   "cevap": "D) (−1)−12",
+   "senin": "B) 2−4 (şıkkın yanına “· 0” ekledin)",
+   "cozum": [
+    "(−1)'in çift kuvveti 1, tek kuvveti −1'dir. Negatif üslerde de aynı: (−1)−1 = −1, (−1)−2 = 1.",
+    "Sıfırdan farklı her sayının 0. kuvveti 1'dir: (−1)0 = 1.",
+    "1 · (−1) · 1 · (−1) · 1 = 1. Kısa yol: üsler toplamı 100 + 101 + 0 − 1 − 2 = 198 çift → 1.",
+    "Şıklar: A) −1 − 1 = −2 (parantez yok: −110 = −1). B) 2−4 = 1/16. C) (−1)41 = −1. D) (−1)−12 = 1 ✓."
+   ],
+   "hataAnaliz": "(−1)0'ı 0 aldın (kâğıda “1 · −1 · 0” yazmışsın). Çarpım 0 çıkınca B şıkkının yanına “· 0” ekleyip şıkkı kendi sonucuna uydurdun. Sıfırıncı kuvvet MAT-ÜS-10'da da çıkmıştı.",
+   "tuyo": "23 ÷ 23 = 1 ve üs kuralıyla 23 − 3 = 20 → bu yüzden 20 = 1. (−1)'in kuvvetlerinde yalnızca üssün tek mi çift mi olduğuna bak; istersen üsleri toplayıp karar ver.",
+   "dikkat": "Sonucun hiçbir şıkka uymuyorsa şıkkı değiştirme, işlemini yeniden kontrol et. −110 ile (−1)10 farklıdır: parantez yoksa üs yalnızca 1'in üzerindedir."
   },
   {
    "kod": "MAT-ÜS-15",
    "altKonu": "Negatif üs ve parantez",
    "soru": "Negatif üslü ifadelerden hangileri −1 ile 0 arasındadır?",
    "hata": "−(−4)⁻² ifadesinde iki eksinin birbirini götürdüğünü düşündü; üssün yalnızca parantez içine ait olduğunu unutup II'yi eledi.",
-   "dogruYol": "Önce parantezin kuvveti, sonra dıştaki eksi: −(−4)⁻² = −1/16. Her ifadenin işaretini ayrı yaz."
+   "dogruYol": "Önce parantezin kuvveti, sonra dıştaki eksi: −(−4)⁻² = −1/16. Her ifadenin işaretini ayrı yaz.",
+   "gorsel": [
+    "sorular/MAT-US-15.png"
+   ],
+   "cevap": "C) I ve II",
+   "senin": "A) Yalnız I",
+   "cozum": [
+    "I: (−4)−3 = 1 / (−4)3 = −1/64 → −1 ile 0 arasında ✓.",
+    "II: önce (−4)−2 = 1/16 (çift üs, pozitif), sonra dıştaki eksi → −1/16 ✓.",
+    "III: 5−2 = 1/25; parantez içi −1/25; dıştaki eksiyle +1/25 → pozitif ✗.",
+    "IV: (−1/3)−1 = −3 → −1'den küçük ✗. Cevap C) I ve II."
+   ],
+   "hataAnaliz": "II'yi eledin. −(−4)−2 ifadesindeki iki eksiyi “birbirini götürür” saydın. Oysa üs yalnızca parantezin içine aittir: önce (−4)−2 = +1/16, sonra dıştaki eksi → −1/16. Set 1'deki MAT-ÜS-11 ile aynı aile.",
+   "tuyo": "Önce parantezin kuvveti, sonra dıştaki eksi. Her ifadenin yanına önce İŞARETİNİ (+ / −), sonra büyüklüğünü yaz.",
+   "dikkat": "“−1 ile 0 arasında” = negatif VE büyüklüğü 1'den küçük. −3 negatiftir ama −1'den küçüktür."
   }
  ],
  "sorular": [

@@ -90,11 +90,20 @@ button{font:inherit;color:inherit}
 .ders-chip{display:inline-flex;align-items:center;gap:6px;padding:1px 10px;border-radius:999px;font-size:.8rem;font-weight:700;background:color-mix(in srgb,var(--c) 16%,var(--surface));border:1px solid color-mix(in srgb,var(--c) 50%,var(--line))}
 .ders-chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
 .ders-baslik{display:flex;align-items:center;gap:10px;margin:22px 0 10px;padding-left:10px;border-left:6px solid var(--c)}
+.ders-izgara{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:12px;margin-top:12px}
+@media (max-width:560px){.ders-izgara{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ders-izgara .bos-yer{visibility:hidden}
+.ders-kart{display:flex;flex-direction:column;gap:6px;height:100%;min-height:110px;box-sizing:border-box;text-decoration:none;color:var(--fg);background:color-mix(in srgb,var(--c) 8%,var(--surface));border:1.5px solid var(--line);border-left:8px solid var(--c);border-radius:4px 14px 14px 4px;padding:14px 16px}
+.ders-kart:hover{border-color:var(--c);box-shadow:0 3px 0 -1px color-mix(in srgb,var(--c) 40%,transparent)}
+.ders-kart h3{font-size:1.15rem}
+.ders-ust{display:block;width:100%;box-sizing:border-box;background:var(--c);border:2px solid var(--c);border-radius:14px;padding:14px 20px;margin:6px 0 16px;box-shadow:0 3px 0 -1px color-mix(in srgb,var(--c) 45%,transparent)}
+.ders-ust h2{margin:0;color:var(--surface);font-size:1.6rem;font-weight:800;letter-spacing:.01em}
 .konu-izgara{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
 .konu-kart{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--fg);background:var(--surface);border:1.5px solid var(--line);border-left:6px solid var(--c);border-radius:4px 14px 14px 4px;padding:12px 14px;min-width:0}
 .konu-kart:hover{border-color:var(--c);box-shadow:0 3px 0 -1px color-mix(in srgb,var(--c) 40%,transparent)}
 .konu-kart.soluk{opacity:.62}
 .konu-kart h3{font-size:1.05rem}
+.unite-no{margin-right:8px;font-size:.78rem;font-weight:700;color:var(--muted);white-space:nowrap}
 .konu-meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.86rem;color:var(--muted)}
 .ilerleme{height:8px;border-radius:4px;background:var(--surface2);overflow:hidden}
 .ilerleme i{display:block;height:100%;background:var(--accent);border-radius:4px}
@@ -122,19 +131,46 @@ button{font:inherit;color:inherit}
 /* konu sayfası */
 .geri{display:inline-block;margin-bottom:10px;font-weight:700}
 .konu-bas{margin-bottom:14px}
-.konu-bas .satir{margin-top:6px}
+.konu-bas h1 .unite-no{font-size:.95rem;vertical-align:middle;margin-right:10px}
 .sekmeler{display:flex;gap:4px;border-bottom:2px solid var(--line);overflow-x:auto;margin-bottom:16px;scrollbar-width:thin}
 .sekmeler button{flex:none;background:none;border:0;border-bottom:4px solid transparent;margin-bottom:-2px;padding:10px 14px;cursor:pointer;font-weight:700;color:var(--muted);min-height:44px}
 .sekmeler button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
 .kart{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
 .defter{border-left:4px solid var(--bubble);border-radius:4px 12px 12px 4px}
 .grup-baslik{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin:20px 0 8px}
+.hata-grup{display:grid;grid-template-columns:1.2em minmax(0,1fr) 5.5em;align-items:center;gap:10px;margin:6px 0;padding:8px 10px!important;border-bottom:1px solid var(--line)!important}
+.hata-grup h3{margin:0}
+.hata-grup .sayi-rozet{text-align:center;justify-self:stretch}
+.hata-grup,.cip{--lamba:#d97706;--lamba-isik:rgba(245,158,11,.55)}
+@media (prefers-color-scheme: dark){.hata-grup,.cip{--lamba:#ffc233;--lamba-isik:rgba(255,190,40,.75)}}
+:root[data-theme="dark"] .hata-grup,:root[data-theme="dark"] .cip{--lamba:#ffc233;--lamba-isik:rgba(255,190,40,.75)}
+:root[data-theme="light"] .hata-grup,:root[data-theme="light"] .cip{--lamba:#d97706;--lamba-isik:rgba(245,158,11,.55)}
+.hata-grup[aria-current="true"] h3{font-weight:800;color:var(--lamba);text-shadow:none}
+.hata-grup[aria-current="true"] .sayi-rozet{color:var(--lamba);font-weight:800;text-shadow:none}
+.hata-grup[aria-current="true"] .ok{color:var(--lamba);font-weight:800;text-shadow:0 0 6px var(--lamba-isik)}
 .sayi-rozet{font-size:.8rem;font-weight:700;background:var(--surface2);border-radius:999px;padding:1px 10px}
 .kod{font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--muted)}
 .etiket{font-weight:700;font-size:.86rem;color:var(--muted);display:block;margin-top:8px}
 .tuyo-kutu{background:var(--hl);border-radius:8px;padding:12px 16px;margin-top:14px}
 .tuyo-kutu ul{margin:6px 0 0;padding-left:20px}
 .tuyo-kutu li{margin-bottom:4px}
+.hata-kart{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,9fr);gap:16px;align-items:start}
+.hata-sol{display:flex;flex-direction:column;gap:8px;min-width:0}
+.hata-sol img{display:block;width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:8px}
+.hata-sag{min-width:0}
+.hata-kutu{border-radius:8px;padding:8px 12px;margin-top:8px;font-weight:600}
+.hata-kutu.dogru{background:var(--ok-bg);color:var(--ok)}
+.hata-kutu.yanlis{background:var(--bad-bg);color:var(--bad)}
+.hata-kutu .etiket{color:inherit;margin:0 0 2px;font-weight:700}
+.hata-kutu p{margin:0}
+.hata-tuyo{background:var(--hl);border-radius:8px;padding:10px 14px;margin-top:10px}
+.hata-tuyo .etiket{color:inherit;margin:0 0 2px}
+.hata-tuyo p{margin:0}
+.hata-cozum{margin-top:10px}
+.hata-cozum summary{cursor:pointer;font-weight:700;color:var(--accent)}
+.hata-cozum ol{margin:6px 0 0;padding-left:22px}
+.hata-cozum li{margin-bottom:4px}
+@media (max-width:760px){.hata-kart{grid-template-columns:minmax(0,1fr)}}
 .veli-not{background:var(--hl);border-radius:8px;padding:10px 14px;margin-bottom:14px}
 .veli-not strong{font-family:var(--f-baslik)}
 
@@ -159,7 +195,7 @@ button{font:inherit;color:inherit}
 .geri-bildirim strong{display:block;font-family:var(--f-baslik)}
 .cipler{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
 .cip{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 14px;cursor:pointer;min-height:38px}
-.cip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:700}
+.cip[aria-pressed="true"]{background:var(--surface);border-color:var(--lamba);color:var(--lamba);font-weight:800;box-shadow:0 0 8px var(--lamba-isik)}
 
 /* sınav */
 .sinav-ust{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;margin-bottom:12px}
@@ -305,13 +341,15 @@ function hataMesaji(e, onek) {
 
 /* ============ Durum ============ */
 const S = {
+  detay: {}, sira: {}, hataAcik: new Set(), anlatimAcik: new Set(), hataAdim: {},
+  incelemeler: new Map(), kendiInc: {}, yerelGorulen: {}, incYaziyor: false, incBekle: new Set(),
   db: null, dbYok: false, user: null, sahip: false, uid: null, kimlikHazir: false,
   konular: [], konularHazir: false, denemeler: [], denemelerHazir: false, odevler: [], odevlerHazir: false,
   ayar: { lgsTarihi: "2027-06-13" }, okumaHata: null,
   grup: new Map(), // konuId -> Duru'nun denemeleri (yeniden eskiye)
   route: { ad: "duru", id: null }, sekme: lsGet(LS_SEKME) || "hatalar",
   banka: {}, bankaSira: Promise.resolve(), onyuk: new Set(),
-  sinav: null, taslak: null, alis: null, alisFiltre: "", kur: { adet: 10, sureli: false },
+  sinav: null, taslak: null, alis: null, alisFiltre: "", karneAcik: null, sinavGizli: false, pushAnahtar: null, kur: { adet: 10, sureli: true },
   profiller: {}, profIstek: new Set(), bildirim: null,
   veli: { acik: null, form: null, notTaslak: {}, iptalOnay: null, lgsTaslak: null },
   yaziyor: {}
@@ -336,6 +374,59 @@ function indeksle() {
     S.grup.get(d.konuId).push(d);
   }
 }
+/* ----- İnceleme kaydı (görülen hatalar) ----- */
+function incelemeAyir(belgeler) {
+  S.incelemeler = new Map(); S.kendiInc = {};
+  for (const d of belgeler) {
+    if (d.veliDenemesi && d.kullanici !== S.uid) continue; // velinin denemesi Duru'nun ilerlemesini tamamlamasın
+    const g = d.gorulen || {};
+    if (!S.incelemeler.has(d.konuId)) S.incelemeler.set(d.konuId, {});
+    const m = S.incelemeler.get(d.konuId);
+    for (const [a, z] of Object.entries(g)) if (!m[a] || String(z) > String(m[a])) m[a] = z;
+    if (S.uid && d.kullanici === S.uid) S.kendiInc[d.konuId] = { ...g };
+  }
+}
+function gorulenHarita(konuId) {
+  const m = { ...(S.incelemeler.get(konuId) || {}) };
+  for (const [a, z] of Object.entries(S.yerelGorulen[konuId] || {})) if (!m[a] || String(z) > String(m[a])) m[a] = z;
+  return m;
+}
+function hataAnahtarlari(k) {
+  const say = new Map();
+  return (k.hatalar || []).map((x, i) => {
+    const kod = x.kod || ("hata-" + i);
+    const n = (say.get(kod) || 0) + 1; say.set(kod, n);
+    return n === 1 ? kod : kod + "#" + n;
+  });
+}
+function hataAnahtari(k, i) { return hataAnahtarlari(k)[i]; }
+async function incelemeYaz() {
+  if (S.incYaziyor || !S.denemelerHazir) return; // önceki kayıt okunmadan yazma (set eskiyi ezer)
+  S.incYaziyor = true;
+  try {
+    while (S.incBekle.size) {
+      const konuId = [...S.incBekle][0]; S.incBekle.delete(konuId);
+      if (!S.uid || !S.db) continue;
+      const gorulen = { ...(S.kendiInc[konuId] || {}), ...(S.yerelGorulen[konuId] || {}) };
+      const belge = { tur: "inceleme", konuId, kullanici: S.uid, veliDenemesi: S.sahip, gorulen, bitis: new Date().toISOString() };
+      try { await S.db.doc("denemeler/inceleme-" + konuId + "-" + S.uid).set(belge); S.kendiInc[konuId] = gorulen; }
+      catch (e) { bildir("hata", hataMesaji(e, "İlerleme kaydedilemedi")); }
+    }
+  } finally { S.incYaziyor = false; }
+}
+function hataGoruldu(k, anah) {
+  if (gorulenHarita(k.id)[anah]) return;
+  if (!S.yerelGorulen[k.id]) S.yerelGorulen[k.id] = {};
+  S.yerelGorulen[k.id][anah] = new Date().toISOString();
+  if (S.uid && S.db) { S.incBekle.add(k.id); incelemeYaz(); }
+}
+function hataDurum(k) {
+  const anahs = hataAnahtarlari(k); const g = gorulenHarita(k.id);
+  const gorulen = anahs.filter((a) => g[a]).length;
+  const tamam = anahs.length > 0 && gorulen === anahs.length;
+  const tarih = tamam ? anahs.map((a) => g[a]).reduce((m, z) => (String(z) > String(m) ? z : m), "") : null;
+  return { toplam: anahs.length, gorulen, tamam, tarih };
+}
 function abone() {
   const db = S.db;
   const hata = (ad) => (e) => { S.okumaHata = hataMesaji(e, "Veri okunamadı"); S[ad + "Hazir"] = true; render(); };
@@ -346,8 +437,11 @@ function abone() {
     S.konularHazir = true; render();
   }, hata("konular"));
   db.collection("denemeler").orderBy("bitis", "desc").limit(500).onSnapshot((snap) => {
-    S.denemeler = snap.docs.map((d) => ({ ...d.data(), id: d.id }));
+    const hepsi = snap.docs.map((d) => ({ ...d.data(), id: d.id }));
+    S.denemeler = hepsi.filter((d) => d.tur !== "inceleme"); // inceleme belgeleri deneme sayılmaz
+    incelemeAyir(hepsi.filter((d) => d.tur === "inceleme"));
     indeksle(); S.denemelerHazir = true; render();
+    if (S.incBekle.size) incelemeYaz();
   }, hata("denemeler"));
   db.collection("odevler").onSnapshot((snap) => {
     S.odevler = snap.docs.map((d) => ({ ...d.data(), id: d.id }));
@@ -454,9 +548,48 @@ function denemeKaydi(konuId, tur, odevId, ids, cevaplar, sureSn, baslangic) {
 /* ============ Sınav motoru ============ */
 let zamanlayici = null;
 function gecenSn(s) { return s.bitti ? (s.sureSn || 0) : (s.oncekiSn || 0) + (Date.now() - (s.baslMs || Date.now())) / 1000; }
+/* ===== Gezinme katmanı: tarayıcı geçmişi ===== */
+function ekranDurumu() {
+  const k = S.route.ad === "konu" ? konuBul(S.route.id) : null;
+  const adim = k && S.hataAdim[k.id] !== undefined ? S.hataAdim[k.id] : null;
+  return { sekme: S.sekme, hataAdim: adim, alis: !!S.alis, alisFiltre: S.alis ? S.alis.altKonu || "" : S.alisFiltre || "",
+    karneAcik: S.karneAcik || null, sinav: !!(S.sinav && !S.sinavGizli) };
+}
+function ekranEtiketle() {
+  // yalnız değiştiyse yaz: tarayıcılar sık replaceState çağrısını kısıtlıyor
+  const ui = ekranDurumu();
+  try {
+    const eski = history.state && history.state.ui;
+    if (eski && JSON.stringify(eski) === JSON.stringify(ui)) return;
+    history.replaceState({ ui }, "", location.hash);
+  } catch (e) { /* geçmiş kullanılamıyor */ }
+}
+// state'i değiştirir, geçmişe yeni kayıt ekler (aynı hash), çizer
+function ilerle(degistir, anahtar) {
+  degistir();
+  S.pushAnahtar = anahtar || null;
+  try { history.pushState({ ui: ekranDurumu() }, "", location.hash); } catch (e) { /* geçmiş kullanılamıyor */ }
+  render();
+}
+// "geri" düğmeleri: kayıt ilerle ile eklendiyse geçmişte de bir adım geri git, değilse yerinde kapat
+function geriAl(anahtar, kapat) {
+  const geriGit = S.pushAnahtar === anahtar;
+  kapat(); S.pushAnahtar = null; render();
+  if (geriGit) { try { history.back(); } catch (e) { /* yoksay */ } }
+}
+function ekranUygula(ui) {
+  if (S.route.ad !== "konu") return;
+  const k = konuBul(S.route.id);
+  if (["hatalar", "alistirma", "sinav"].includes(ui.sekme)) { S.sekme = ui.sekme; lsSet(LS_SEKME, ui.sekme); }
+  if (k) { if (ui.hataAdim == null) delete S.hataAdim[k.id]; else S.hataAdim[k.id] = ui.hataAdim; }
+  if (S.alis && !ui.alis) alisKapat();
+  if (!S.alis) S.alisFiltre = ui.alisFiltre || "";
+  S.karneAcik = ui.karneAcik || null;
+  S.sinavGizli = !ui.sinav;
+}
 function sinavKopya(s) {
   return { mod: s.mod, konuId: s.konuId, odevId: s.odevId, soruIds: s.soruIds, cevaplar: s.cevaplar, i: s.i,
-    baslangic: s.baslangic, oncekiSn: gecenSn(s), sureLimitSn: s.sureLimitSn, bitti: s.bitti, sureSn: s.sureSn, sonuc: s.sonuc, rec: s.rec, kayit: s.kayit };
+    baslangic: s.baslangic, oncekiSn: gecenSn(s), sureLimitSn: s.sureLimitSn, bitti: s.bitti, sureSn: s.sureSn, sonuc: s.sonuc, rec: s.rec, kayit: s.kayit, benzer: s.benzer };
 }
 function taslakYaz() {
   const s = S.sinav; if (!s || s.bitti) return;
@@ -497,13 +630,14 @@ function soruSec(konuId, n) {
   for (const id of kalan) { if (secilen.length >= n) break; secilen.push(id); }
   return karistir(secilen.slice(0, n));
 }
-function sinavBaslat(mod, konuId, ids, odev) {
+function sinavBaslat(mod, konuId, ids, odev, ekstra) {
   const sureLimit = mod === "odev" ? (typeof odev.sureDk === "number" && odev.sureDk > 0 ? Math.round(odev.sureDk * 60) : null)
     : (S.kur.sureli ? Math.round(ids.length * 90) : null);
   const cevaplar = {}; ids.forEach((id) => { cevaplar[id] = null; });
   S.sinav = { mod, konuId, odevId: odev ? odev.id : null, soruIds: ids, cevaplar, i: 0, baslangic: new Date().toISOString(),
-    oncekiSn: 0, baslMs: Date.now(), sureLimitSn: sureLimit, bitti: false, onay: false };
-  S.taslak = null; taslakYaz(); sayacBaslat(); render();
+    oncekiSn: 0, baslMs: Date.now(), sureLimitSn: sureLimit, bitti: false, onay: false, benzer: !!(ekstra && ekstra.benzer) };
+  S.karneAcik = null; S.taslak = null; S.sinavGizli = false; taslakYaz(); sayacBaslat();
+  if (S.route.ad === "konu" && S.route.id === rotaId(konuId)) ilerle(() => {}, "sinav"); else render();
 }
 function sinavBitir() {
   const s = S.sinav; if (!s || s.bitti) return;
@@ -512,9 +646,11 @@ function sinavBitir() {
   lsDel(LS_TASLAK); S.taslak = null;
   const b = S.banka[s.konuId];
   s.sonuc = hesapla(s, b.harita);
-  denemeKaydet(s, denemeKaydi(s.konuId, s.mod, s.odevId, s.soruIds, s.cevaplar, s.sureSn, s.baslangic));
+  const rec = denemeKaydi(s.konuId, s.mod, s.odevId, s.soruIds, s.cevaplar, s.sureSn, s.baslangic);
+  if (s.benzer) rec.benzerDeneme = true;
+  denemeKaydet(s, rec);
 }
-function sinavSil() { S.sinav = null; S.taslak = null; lsDel(LS_TASLAK); render(); }
+function sinavSil() { S.sinav = null; S.sinavGizli = false; S.taslak = null; lsDel(LS_TASLAK); render(); }
 async function taslakDevam() {
   const t = S.taslak; if (!t) return;
   await bankaYukle(t.konuId);
@@ -523,7 +659,7 @@ async function taslakDevam() {
   const ids = t.soruIds.filter((id) => b.harita[id]);
   if (!ids.length) { sinavSil(); return; }
   S.sinav = { ...t, soruIds: ids, i: Math.min(t.i || 0, ids.length - 1), baslMs: Date.now(), bitti: false, onay: false };
-  S.taslak = null; sayacBaslat();
+  S.taslak = null; S.sinavGizli = false; sayacBaslat();
   S.sekme = "sinav";
   location.hash = "#konu-" + rotaId(t.konuId); render();
 }
@@ -541,21 +677,57 @@ function odevBaslat(o) {
 }
 
 /* ============ Alıştırma ============ */
+function soruAltKonu(konuId, q) {
+  const ha = S.sira[konuId]?.sorular?.[q.altKonu];
+  const sira = altKonuSirasiId(konuId);
+  return ha && sira.includes(ha) ? ha : (q.altKonu || "Genel");
+}
+// Alıştırma çipleri: önce hata alt konusu sırası (sorusu olanlar), sonra eşlenmemiş gruplar
+function alisAltKonular(konuId, liste) {
+  const var_ = new Set(liste.map((q) => soruAltKonu(konuId, q)));
+  const sira = altKonuSirasiId(konuId).filter((ad) => var_.has(ad));
+  const kalan = [];
+  for (const q of liste) { const ad = soruAltKonu(konuId, q); if (!sira.includes(ad) && !kalan.includes(ad)) kalan.push(ad); }
+  return [...sira, ...kalan];
+}
 function alisBaslat(konuId) {
   const b = S.banka[konuId];
   const sr = soruSonuclari(S.grup.get(konuId) || [], b.harita);
-  const havuz = b.liste.filter((q) => !S.alisFiltre || q.altKonu === S.alisFiltre);
-  const y = [], n = [], r = [];
-  for (const q of havuz) { const x = sr.get(q.id); if (!x) n.push(q.id); else if (x.son !== "d") y.push(q.id); else r.push(q.id); }
-  S.alis = { konuId, altKonu: S.alisFiltre, kuyruk: [...karistir(y), ...karistir(n), ...karistir(r)], i: 0, cevaplar: {},
+  const havuz = b.liste.filter((q) => !S.alisFiltre || soruAltKonu(konuId, q) === S.alisFiltre);
+  const bloklar = new Map(); // hata alt konusu -> sorular (filtresizken alt konu sırasıyla)
+  if (S.alisFiltre) bloklar.set(S.alisFiltre, havuz);
+  else {
+    const sira = alisAltKonular(konuId, b.liste);
+    for (const ad of sira) bloklar.set(ad, []);
+    for (const q of havuz) bloklar.get(soruAltKonu(konuId, q)).push(q);
+  }
+  const kuyruk = [];
+  for (const blok of bloklar.values()) {
+    const y = [], n = [], r = [];
+    for (const q of blok) { const x = sr.get(q.id); if (!x) n.push(q.id); else if (x.son !== "d") y.push(q.id); else r.push(q.id); }
+    kuyruk.push(...karistir(y), ...karistir(n), ...karistir(r));
+  }
+  S.alis = { konuId, altKonu: S.alisFiltre, kuyruk, i: 0, cevaplar: {},
     baslangic: new Date().toISOString(), t0: Date.now(), bitti: false };
-  render();
+}
+function alisSatir(konuId, ad) {
+  const a = S.alis;
+  if (a && !a.bitti && Object.values(a.cevaplar).some((x) => x != null)) alisBitir(true);
+  const yeni = !a;
+  S.alis = null; S.alisFiltre = ad;
+  if (yeni) ilerle(() => alisBaslat(konuId), "alis"); else { alisBaslat(konuId); render(); }
 }
 function alisCevap(L) {
   const a = S.alis; const id = a.kuyruk[a.i];
   if (a.cevaplar[id] != null) return;
   a.cevaplar[id] = L; render();
 }
+function alisKapat() {
+  const a = S.alis;
+  if (a && !a.bitti && Object.values(a.cevaplar).some((x) => x != null)) alisBitir(true);
+  S.alis = null;
+}
+function alisSecimeDon() { geriAl("alis", alisKapat); }
 function alisBitir(sessiz) {
   const a = S.alis; if (!a || a.bitti) return;
   a.bitti = true;
@@ -699,7 +871,7 @@ function taslakSeridi() {
   if (!aktif && !S.taslak) return null;
   if (aktif) {
     return h("div", { class: "serit", role: "status" }, h("span", { text: "Yarım kalan sınavın var: " + konuAdi(aktif.konuId) }),
-      h("div", { class: "satir" }, h("a", { class: "btn kucuk", href: "#konu-" + rotaId(aktif.konuId), onclick: () => { S.sekme = "sinav"; } }, "Devam et"),
+      h("div", { class: "satir" }, h("a", { class: "btn kucuk", href: "#konu-" + rotaId(aktif.konuId), onclick: (e) => { S.sekme = "sinav"; S.sinavGizli = false; if (location.hash === "#konu-" + rotaId(aktif.konuId)) { e.preventDefault(); ilerle(() => {}, "sinav"); } } }, "Devam et"),
         h("button", { type: "button", class: "btn kucuk ikincil", k: "taslak-sil", onclick: sinavSil }, "Sil")));
   }
   return h("div", { class: "serit", role: "status" }, h("span", { text: "Yarım kalan sınavın var: " + konuAdi(S.taslak.konuId) }),
@@ -733,58 +905,209 @@ function odevlerBolumu() {
   }
   return sec;
 }
+function uniteNo(k) {
+  const m = String(k.unite || "").match(/^\s*(?:unit\s*)?(\d+)/i);
+  return m ? (/^\s*unit/i.test(k.unite) ? "Unit " + Number(m[1]) : Number(m[1]) + ". Ünite") : "";
+}
 function konuKarti(k) {
+  const hd = hataDurum(k);
   const dl = S.grup.get(k.id) || [];
   const son = dl.find((d) => d.tur !== "alistirma");
   const son3 = dl.slice(0, 3);
   const ort = son3.length ? son3.reduce((t, d) => t + oran(d), 0) / son3.length : null;
   return h("a", { class: "konu-kart d-" + dersId(k.ders) + (k.durum === "tamamlandi" ? " soluk" : ""), href: "#konu-" + rotaId(k.id) },
-    h("h3", { text: k.baslik || k.id }),
-    k.unite ? h("span", { class: "kucuk soluk-yazi", text: k.unite }) : null,
-    durumRozet(k.durum),
+    h("h3", {}, uniteNo(k) ? h("span", { class: "unite-no", text: uniteNo(k) }) : null, h("span", { text: k.baslik || k.id })),
     h("div", { class: "konu-meta" },
-      h("span", { text: (k.hatalar || []).length + " hata" }),
+      (k.hatalar || []).length ? h("span", { text: hd.tamam ? "Hatalar ✓" : hd.gorulen + "/" + hd.toplam + " hata incelendi" }) : h("span", { text: "Hata yok" }),
       h("span", { text: son ? "Son sınav: " + son.dogru + "/" + ((son.dogru || 0) + (son.yanlis || 0) + (son.bos || 0)) : "Henüz sınav yok" })),
     h("div", { class: "ilerleme", role: "img", "aria-label": ort == null ? "Henüz deneme yok" : "Son " + son3.length + " denemenin doğru oranı " + yuzde(ort) },
       ort != null ? h("i", { style: { width: Math.round(ort * 100) + "%" } }) : null));
 }
-function konuListesi() {
-  const sec = h("section", { class: "bolum" });
-  if (S.dbYok) return bosDurum("Bu görünümde veri açılamıyor", "Sayfayı Claude içinde, giriş yaparak açmayı dene.");
-  if (S.okumaHata && !S.konularHazir) return h("div", { class: "geri-bildirim hata", role: "alert" }, h("strong", { text: S.okumaHata }));
-  if (!S.konularHazir) return h("div", { class: "iskelet", role: "status" }, h("span", { class: "soluk-yazi", text: "Konular yükleniyor…" }), h("i"), h("i"), h("i"));
-  if (!S.konular.length) return bosDurum("Henüz konu eklenmedi", "Konular eklendiğinde ders ders burada görünecek.");
+function dersIzgarasi(kart) {
+  const gruplar = dersGruplari();
+  const ana = ["tr", "mat", "fen", "ink", "din", "ing"];
+  const out = ana.map((id) => { const g = gruplar.find((x) => x.id === id); return g ? kart(g) : h("div", { class: "bos-yer", "aria-hidden": "true" }); });
+  for (const g of gruplar) if (!ana.includes(g.id)) out.push(kart(g));
+  return h("div", { class: "ders-izgara" }, out);
+}
+function dersGruplari() {
+  const out = [];
   for (const ders of DERSLER) {
     const liste = S.konular.filter((k) => dersId(k.ders) === ders.id);
     if (!liste.length) continue;
     liste.sort((a, b) => (a.durum === "tamamlandi") - (b.durum === "tamamlandi"));
-    const adi = ders.id === "diger" ? "Diğer" : (liste[0].ders || ders.ad);
-    sec.append(h("div", { class: "ders-baslik d-" + ders.id }, h("h2", { text: adi })),
-      h("div", { class: "konu-izgara" }, liste.map(konuKarti)));
+    out.push({ id: ders.id, adi: ders.id === "diger" ? "Diğer" : (liste[0].ders || ders.ad), liste });
   }
+  return out;
+}
+function konuDurumKontrol() {
+  if (S.dbYok) return bosDurum("Bu görünümde veri açılamıyor", "Sayfayı Claude içinde, giriş yaparak açmayı dene.");
+  if (S.okumaHata && !S.konularHazir) return h("div", { class: "geri-bildirim hata", role: "alert" }, h("strong", { text: S.okumaHata }));
+  if (!S.konularHazir) return h("div", { class: "iskelet", role: "status" }, h("span", { class: "soluk-yazi", text: "Konular yükleniyor…" }), h("i"), h("i"), h("i"));
+  if (!S.konular.length) return bosDurum("Henüz konu eklenmedi", "Konular eklendiğinde ders ders burada görünecek.");
+  return null;
+}
+function konuListesi() {
+  const dur = konuDurumKontrol(); if (dur) return dur;
+  const sec = h("section", { class: "bolum" }, h("h2", { text: "Derslerim" }));
+  sec.append(dersIzgarasi((g) => {
+    const tamam = g.liste.filter((k) => k.durum === "tamamlandi").length;
+    const hata = g.liste.reduce((t, k) => t + (k.hatalar || []).length, 0);
+    return h("a", { class: "ders-kart d-" + g.id, href: "#ders-" + g.id },
+      h("h3", { text: g.adi }),
+      h("div", { class: "konu-meta" }, h("span", { text: g.liste.length + " konu" }), h("span", { text: hata + " hata" }),
+        tamam ? h("span", { text: tamam + " tamamlandı" }) : null));
+  }));
   return sec;
+}
+function dersSayfasi() {
+  const geri = h("a", { class: "geri", href: "#duru", text: "← Tüm dersler" });
+  const dur = konuDurumKontrol(); if (dur) return h("div", {}, geri, dur);
+  const g = dersGruplari().find((x) => x.id === S.route.id);
+  if (!g) return h("div", {}, geri, bosDurum("Bu derste konu yok", "Bağlantı eski olabilir."));
+  return h("section", { class: "bolum" }, geri,
+    h("div", { class: "ders-ust d-" + g.id }, h("h2", { text: g.adi })),
+    h("div", { class: "konu-izgara" }, g.liste.map(konuKarti)));
 }
 function duruAnaSayfa() {
   return h("div", {}, taslakSeridi(), kahraman(), odevlerBolumu(), konuListesi());
 }
 
 /* ----- Konu sayfası ----- */
+function altKonuSirasi(k) {
+  const gruplar = new Map();
+  for (const x of k.hatalar || []) { const a = x.altKonu || "Genel"; gruplar.set(a, (gruplar.get(a) || 0) + 1); }
+  return [...gruplar.entries()].sort((a, b) => b[1] - a[1]).map(([ad]) => ad);
+}
+function altKonuSirasiId(konuId) {
+  const k = S.konular.find((x) => x.id === konuId);
+  return k ? altKonuSirasi(k) : [];
+}
+function hataKarti(x) {
+  x = { ...(S.detay[x.kod] || {}), ...x };
+  const etiketli = (ad, metin, sinif) => metin ? h("div", { class: sinif }, h("span", { class: "etiket", text: ad }), h("p", { class: "metin", text: metin })) : null;
+  const sol = h("div", { class: "hata-sol" },
+    (x.gorsel || []).length
+      ? x.gorsel.map((u) => h("img", { src: u, alt: "Soru " + (x.kod || ""), loading: "lazy" }))
+      : h("p", { class: "metin", text: x.soru || "" }));
+  const sag = h("div", { class: "hata-sag" },
+    h("span", { class: "kod", text: x.kod || "" }),
+    etiketli("Doğru cevap", x.cevap, "hata-kutu dogru"),
+    etiketli("Senin cevabın", x.senin, "hata-kutu yanlis"),
+    x.hataAnaliz || x.hata ? h("span", { class: "etiket", text: "Hatan neydi?" }) : null,
+    x.hataAnaliz || x.hata ? h("p", { class: "metin", text: x.hataAnaliz || x.hata }) : null,
+    x.dogruYol ? h("span", { class: "etiket", text: "Doğru yol" }) : null,
+    x.dogruYol ? h("p", { class: "metin", text: x.dogruYol }) : null,
+    etiketli("Tüyo", x.tuyo, "hata-tuyo"),
+    x.dikkat ? h("span", { class: "etiket", text: "Dikkat" }) : null,
+    x.dikkat ? h("p", { class: "metin", text: x.dikkat }) : null,
+    (x.cozum || []).length ? h("details", { class: "hata-cozum" },
+      h("summary", { text: "Çözümü göster" }),
+      h("ol", {}, x.cozum.map((a) => h("li", { class: "metin", text: a })))) : null);
+  return h("div", { class: "kart defter hata-kart" }, sol, sag);
+}
+// Ortak konu satırları: satirlar = [{ id, ad, say, toplam }], aktifId = vurgulanan satır, tikla(satir)
+function konuSatirlari(satirlar, aktifId, tikla) {
+  const kap = h("div", {});
+  satirlar.forEach((s, i) => {
+    const aktif = s.id === aktifId;
+    kap.append(h("button", { type: "button", class: "grup-baslik hata-grup", k: "konu-satir-" + i, "aria-current": aktif ? "true" : null,
+      style: { width: "100%", textAlign: "left", cursor: "pointer", background: "none", border: "none", font: "inherit", color: "inherit" },
+      onclick: () => tikla(s) },
+      h("span", { class: "ok", "aria-hidden": "true", text: s.toplam > 0 && s.say === s.toplam ? "✓" : "•" }),
+      h("h3", { text: s.ad }), h("span", { class: "sayi-rozet", text: s.say + "/" + s.toplam })));
+  });
+  return kap;
+}
 function sekmeHatalar(k) {
   const kok = h("div", {});
+  if (k.veliNotu) kok.append(h("div", { class: "veli-not" }, h("strong", { text: "Babandan not" }), h("p", { class: "metin", text: k.veliNotu })));
   const hatalar = k.hatalar || [];
-  if (!hatalar.length) kok.append(bosDurum("Kayıtlı hata yok", "Bu konuda henüz işaretlenmiş bir hatan yok."));
-  const gruplar = new Map();
-  for (const x of hatalar) { const a = x.altKonu || "Genel"; if (!gruplar.has(a)) gruplar.set(a, []); gruplar.get(a).push(x); }
-  [...gruplar.entries()].sort((a, b) => b[1].length - a[1].length).forEach(([ad, liste]) => {
-    kok.append(h("div", { class: "grup-baslik" }, h("h3", { text: ad }), h("span", { class: "sayi-rozet", text: liste.length + " hata" })));
-    for (const x of liste) {
-      kok.append(h("div", { class: "kart defter" },
-        h("span", { class: "kod", text: x.kod || "" }),
-        h("p", { class: "metin", text: x.soru || "" }),
-        h("span", { class: "etiket", text: "Ne oldu?" }), h("p", { class: "metin", text: x.hata || "" }),
-        h("span", { class: "etiket", text: "Doğru yol" }), h("p", { class: "metin", text: x.dogruYol || "" })));
+  const anahs = hataAnahtarlari(k);
+  const adlar = altKonuSirasi(k);
+  const anahtar = (ad) => k.id + "|" + ad;
+  // adım listesi: alt konu başlık sırası, her başlıkta k.hatalar sırası
+  const adimlar = [];
+  for (const ad of adlar) hatalar.forEach((x, i) => { if ((x.altKonu || "Genel") === ad) adimlar.push({ x, ad, anah: anahs[i] }); });
+  const M = adimlar.length;
+  const gh = gorulenHarita(k.id);
+  const gorulenSay = adimlar.filter((a) => gh[a.anah]).length;
+  const tamam = M > 0 && gorulenSay === M;
+  let adim = S.hataAdim[k.id];
+  if (M) {
+    if (adim === -1 && !tamam) adim = undefined; // yeni hata geldi: kart kapalı
+    if (adim >= M) adim = M - 1;
+    if (adim === undefined) delete S.hataAdim[k.id]; else S.hataAdim[k.id] = adim;
+  }
+  // anlatım bölümleri ve tüyolar: alt konuya eşle (eşlenmeyenler genel notlara)
+  const esl = S.sira[k.id] || {};
+  const gecerli = (ha) => (ha && adlar.includes(ha) ? ha : null);
+  const anlatimOf = new Map(); const genelAn = []; const genelTuyo = [];
+  for (const b of k.anlatim || []) { const ha = gecerli(esl.anlatim?.[b.baslik]); if (ha) { if (!anlatimOf.has(ha)) anlatimOf.set(ha, []); anlatimOf.get(ha).push(b); } else genelAn.push(b); }
+  for (const t of k.tuyolar || []) { const ha = gecerli(esl.tuyolar?.[t]); if (!ha) genelTuyo.push(t); }
+  const GENEL = "Genel notlar ve tüyolar";
+  const genelAnahtar = k.id + "|#genel";
+  const genelSayi = genelAn.length + genelTuyo.length;
+  const anlatimKartlari = (liste) => liste.length ? [h("h3", { style: { margin: "14px 0 8px" }, text: "Kısa anlatım" }), ...liste.map((b) => h("div", { class: "kart defter" }, h("h4", { text: b.baslik || "" }), h("p", { class: "metin", text: b.metin || "" })))] : [];
+  const tuyoKutusu = (liste) => liste.length ? [h("div", { class: "tuyo-kutu" }, h("h3", { text: "Tüyolar" }), h("ul", {}, liste.map((t) => h("li", { class: "metin", text: t }))))] : [];
+  const git = (i) => { S.hataAdim[k.id] = i; render(); };
+  const kapat = () => { geriAl("hata", () => { delete S.hataAdim[k.id]; }); window.scrollTo({ top: 0 }); };
+  const geriDugme = h("div", { style: { margin: "0 0 8px" } }, h("button", { type: "button", class: "btn kucuk ikincil", k: "hata-basliklara", onclick: kapat }, "← Başlıklara dön"));
+  if (!M) kok.append(bosDurum("Kayıtlı hata yok", "Bu konuda henüz işaretlenmiş bir hatan yok."));
+  else {
+    kok.append(h("div", { style: { margin: "4px 0 14px" } },
+      h("div", { class: "satir", style: { justifyContent: "space-between", alignItems: "center", marginBottom: "6px" } },
+        h("span", { text: gorulenSay + " / " + M + " hata gözden geçirildi" }),
+        tamam ? h("span", { class: "rozet tamam", text: "Tamamlandı ✓" }) : null),
+      h("div", { class: "ilerleme", role: "img", "aria-label": gorulenSay + " / " + M + " hata gözden geçirildi" },
+        h("i", { style: { width: Math.round(gorulenSay / M * 100) + "%" } }))));
+    if (adim === undefined) {
+      kok.append(h("p", { text: "Bir başlık seç." }));
+    } else if (adim === -1) {
+      kok.append(geriDugme, h("div", { class: "kart" }, h("h2", { text: "Tüm hataları gözden geçirdin ✓" }),
+        h("div", { class: "satir" },
+          h("button", { type: "button", class: "btn", k: "hata-bastan", onclick: () => git(0) }, "Baştan gözden geçir"),
+          h("button", { type: "button", class: "btn ikincil", k: "hata-basliklara-2", onclick: kapat }, "Başlıklara dön"))));
+    } else {
+      const a = adimlar[adim];
+      const akey = anahtar(a.ad);
+      const an = anlatimOf.get(a.ad) || [];
+      const anAcik = S.anlatimAcik.has(akey);
+      kok.append(geriDugme, h("div", { class: "kucuk", style: { margin: "0 0 6px", color: "var(--accent)", fontWeight: "700" }, text: a.ad + " · Hata " + (adim + 1) + " / " + M }), hataKarti(a.x));
+      if (an.length) {
+        kok.append(h("button", { type: "button", class: "grup-baslik hata-grup", k: "anlatim-ac", "aria-expanded": String(anAcik), "aria-controls": "hata-anlatim", style: { width: "100%", textAlign: "left", cursor: "pointer", background: "none", border: "none", font: "inherit", color: "inherit" },
+          onclick: () => { if (anAcik) S.anlatimAcik.delete(akey); else S.anlatimAcik.add(akey); render(); } },
+          h("span", { class: "ok", "aria-hidden": "true", text: anAcik ? "▾" : "▸" }), h("h3", { text: "Bu konunun kısa anlatımı" }), h("span")));
+        const ic = h("div", { id: "hata-anlatim" });
+        if (anAcik) ic.append(...anlatimKartlari(an)); else ic.hidden = true;
+        kok.append(ic);
+      }
+      const son = adim === M - 1;
+      kok.append(h("div", { class: "satir", style: { margin: "14px 0" } },
+        h("button", { type: "button", class: "btn ikincil", k: "hata-geri", disabled: adim === 0 ? true : null, onclick: () => git(adim - 1) }, "← Geri"),
+        h("button", { type: "button", class: "btn", k: "hata-ileri", onclick: () => {
+          hataGoruldu(k, a.anah);
+          if (son) { const g2 = gorulenHarita(k.id); const i0 = adimlar.findIndex((z) => !g2[z.anah]); git(i0 < 0 ? -1 : i0); }
+          else git(adim + 1);
+        } }, son ? "Bitir ✓" : "İleri →")));
     }
-  });
+    // konu başlıkları (ortak satırlar)
+    const suAd = adim !== undefined && adim >= 0 && adimlar[adim] ? adimlar[adim].ad : null;
+    const satirlar = adlar.map((ad) => {
+      const iler = adimlar.map((z, j) => ({ z, j })).filter((o) => o.z.ad === ad);
+      return { id: ad, ad, say: iler.filter((o) => gh[o.z.anah]).length, toplam: iler.length, hedef: iler.length ? (iler.find((o) => !gh[o.z.anah]) || iler[0]).j : -1 };
+    }).filter((r) => r.toplam > 0);
+    kok.append(h("div", { style: { marginTop: "14px" } }, konuSatirlari(satirlar, suAd, (r) => { if (adim === undefined) ilerle(() => { S.hataAdim[k.id] = r.hedef; }, "hata"); else git(r.hedef); window.scrollTo({ top: 0 }); })));
+  }
+  if (genelSayi) {
+    const acik = S.hataAcik.has(genelAnahtar);
+    kok.append(h("button", { type: "button", class: "grup-baslik hata-grup", k: "hata-grup-genel", "aria-expanded": String(acik), "aria-controls": "hata-grup-genel-" + rotaId(k.id), style: { width: "100%", textAlign: "left", cursor: "pointer", background: "none", border: "none", font: "inherit", color: "inherit", marginTop: "14px" },
+      onclick: () => { if (acik) S.hataAcik.delete(genelAnahtar); else S.hataAcik.add(genelAnahtar); render(); } },
+      h("span", { class: "ok", "aria-hidden": "true", text: acik ? "▾" : "▸" }), h("h3", { text: GENEL }), h("span", { class: "sayi-rozet", text: genelSayi + " not" })));
+    const ic = h("div", { id: "hata-grup-genel-" + rotaId(k.id) });
+    if (acik) ic.append(...anlatimKartlari(genelAn), ...tuyoKutusu(genelTuyo)); else ic.hidden = true;
+    kok.append(ic);
+  }
   kok.append(h("h2", { style: { marginTop: "28px" }, text: "Sınavlarda kaçırdıkların" }));
   const dur = bankaDurumu(k);
   if (dur) { kok.append(dur); return kok; }
@@ -813,28 +1136,59 @@ function sonucKarti(q, c) {
     q.cozum ? h("p", { class: "metin", text: q.cozum }) : null,
     q.emin === false ? h("p", { class: "kucuk soluk-yazi", text: "Bu sorunun cevap anahtarı kontrol ediliyor." }) : null);
 }
-function sekmeAnlatim(k) {
-  const kok = h("div", {});
-  if (k.veliNotu) kok.append(h("div", { class: "veli-not" }, h("strong", { text: "Babandan not" }), h("p", { class: "metin", text: k.veliNotu })));
-  const an = k.anlatim || [];
-  if (!an.length) kok.append(bosDurum("Anlatım henüz eklenmedi"));
-  for (const b of an) kok.append(h("div", { class: "kart defter" }, h("h3", { text: b.baslik || "" }), h("p", { class: "metin", text: b.metin || "" })));
-  if ((k.tuyolar || []).length) kok.append(h("div", { class: "tuyo-kutu" }, h("h3", { text: "Tüyolar" }), h("ul", {}, k.tuyolar.map((t) => h("li", { class: "metin", text: t })))));
-  return kok;
+function alisIlkMap(k) {
+  const ilk = new Map(); // soru id -> ilk cevaplandığı deneme bitis
+  for (const d of S.grup.get(k.id) || []) {
+    if (d.tur !== "alistirma") continue;
+    for (const id of d.soruIds || []) {
+      if ((d.cevaplar || {})[id] == null) continue;
+      if (!ilk.has(id) || String(d.bitis) < ilk.get(id)) ilk.set(id, String(d.bitis));
+    }
+  }
+  return ilk;
+}
+function alisDurum(k) {
+  const b = S.banka[k.id]; if (!b || b.durum !== "hazir") return null;
+  const ilk = alisIlkMap(k);
+  let cozulen = 0, tarih = null;
+  for (const q of b.liste) { const z = ilk.get(q.id); if (z) { cozulen++; if (!tarih || z > tarih) tarih = z; } }
+  const toplam = b.liste.length; const tamam = toplam > 0 && cozulen === toplam;
+  return { toplam, cozulen, tamam, tarih: tamam ? tarih : null };
+}
+function sinavDurum(k) {
+  const hd = hataDurum(k); const ad = alisDurum(k);
+  if (!ad) return null;
+  const hataOk = hd.tamam || hd.toplam === 0; // hatası olmayan konuda bu şart aranmaz
+  const esik = [hd.tarih, ad.tarih].filter(Boolean).reduce((m, z) => (z > m ? z : m), "");
+  const sinavlar = (S.grup.get(k.id) || []).filter((d) => (d.tur === "sinav" || d.tur === "odev") && String(d.bitis) > esik);
+  const son = sinavlar.reduce((m, d) => (!m || String(d.bitis) > m ? String(d.bitis) : m), null);
+  return { hataOk, alisOk: ad.tamam, tamam: hataOk && ad.tamam && !!son, son };
 }
 function sekmeAlistirma(k) {
   const dur = bankaDurumu(k); if (dur) return dur;
   const b = S.banka[k.id]; const a = S.alis && S.alis.konuId === k.id ? S.alis : null;
-  if (!a) {
-    const altlar = [...new Set(b.liste.map((q) => q.altKonu).filter(Boolean))];
-    const n = b.liste.filter((q) => !S.alisFiltre || q.altKonu === S.alisFiltre).length;
-    const kok = h("div", {}, h("p", { text: "Alt konu seç, sonra sorulara başla. Daha önce yanlış yaptıkların ve hiç görmediklerin öne gelir." }));
-    const cipler = h("div", { class: "cipler", role: "group", "aria-label": "Alt konu filtresi" });
-    for (const ad of ["", ...altlar]) {
-      cipler.append(h("button", { type: "button", class: "cip", k: "cip-" + ad, "aria-pressed": String(S.alisFiltre === ad), onclick: () => { S.alisFiltre = ad; render(); } }, ad || "Hepsi"));
+  const satirlariYap = () => {
+    const ilk = alisIlkMap(k);
+    const say = (liste) => liste.filter((q) => ilk.has(q.id)).length;
+    const r = [{ id: "", ad: "Tüm sorular", say: say(b.liste), toplam: b.liste.length }];
+    for (const ad of alisAltKonular(k.id, b.liste)) {
+      const l = b.liste.filter((q) => soruAltKonu(k.id, q) === ad);
+      r.push({ id: ad, ad, say: say(l), toplam: l.length });
     }
-    kok.append(cipler, h("button", { type: "button", class: "btn", k: "alis-basla", disabled: n ? null : true, onclick: () => alisBaslat(k.id) }, "Başla (" + n + " soru)"));
-    return kok;
+    return r;
+  };
+  const tikla = (r) => { alisSatir(k.id, r.id); window.scrollTo({ top: 0 }); };
+  if (!a) {
+    const ad0 = alisDurum(k);
+    return h("div", {},
+      ad0 ? h("div", { style: { margin: "0 0 14px" } },
+        h("div", { class: "satir", style: { justifyContent: "space-between", alignItems: "center", marginBottom: "6px" } },
+          h("span", { text: ad0.cozulen + " / " + ad0.toplam + " soru çözüldü" }),
+          ad0.tamam ? h("span", { class: "rozet tamam", text: "Tamamlandı ✓" }) : null),
+        h("div", { class: "ilerleme", role: "img", "aria-label": ad0.cozulen + " / " + ad0.toplam + " soru çözüldü" },
+          h("i", { style: { width: (ad0.toplam ? Math.round(ad0.cozulen / ad0.toplam * 100) : 0) + "%" } }))) : null,
+      h("p", { text: "Bir başlık seç." }),
+      konuSatirlari(satirlariYap(), null, tikla));
   }
   if (a.bitti || a.i >= a.kuyruk.length) {
     if (!a.bitti) alisBitir(false);
@@ -843,18 +1197,30 @@ function sekmeAlistirma(k) {
     return h("div", { class: "kart" }, h("h2", { text: "Oturum bitti" }),
       h("p", { text: ids.length ? ids.length + " soru çözdün, " + d + " doğru (" + yuzde(d / ids.length) + ")." : "Bu oturumda soru çözmedin." }),
       kayitDurumu(a),
-      h("button", { type: "button", class: "btn", k: "alis-yeni", onclick: () => { S.alis = null; render(); } }, "Yeni oturum"));
+      h("button", { type: "button", class: "btn", k: "alis-yeni", onclick: () => geriAl("alis", () => { S.alis = null; }) }, "Başlıklara dön"));
   }
   const id = a.kuyruk[a.i]; const q = b.harita[id]; const secili = a.cevaplar[id] || null; const cevaplandi = secili != null;
+  const n = a.kuyruk.length;
   const cevapSayisi = Object.values(a.cevaplar).filter((x) => x != null).length;
+  const son = a.i + 1 >= n;
   return h("div", {},
-    h("div", { class: "soru-ust" }, h("span", { text: "Soru " + (a.i + 1) + " / " + a.kuyruk.length + (a.altKonu ? " · " + a.altKonu : "") }),
-      h("button", { type: "button", class: "btn kucuk ikincil", k: "alis-bitir", disabled: cevapSayisi ? null : true, onclick: () => alisBitir(false) }, "Bitir")),
+    h("div", { style: { margin: "0 0 8px" } }, h("button", { type: "button", class: "btn kucuk ikincil", k: "alis-sec-don", onclick: alisSecimeDon }, "← Başlıklara dön")),
+    h("div", { style: { margin: "0 0 12px" } },
+      h("div", { class: "satir", style: { justifyContent: "space-between", alignItems: "center", marginBottom: "6px" } },
+        h("span", { style: { color: "var(--accent)", fontWeight: "700" }, text: a.altKonu || "Tüm sorular" }),
+        h("span", { text: "Soru " + (a.i + 1) + " / " + n })),
+      h("div", { class: "ilerleme", role: "img", "aria-label": cevapSayisi + " / " + n + " soru cevaplandı" },
+        h("i", { style: { width: (n ? Math.round(cevapSayisi / n * 100) : 0) + "%" } }))),
     h("div", { class: "soru-kart" },
-      h("div", { class: "soru-ust" }, h("span", { text: q.altKonu || "" })),
+      h("div", { class: "soru-ust" }, h("span", { text: soruAltKonu(a.konuId, q) })),
       soruGovde(q, secili, cevaplandi, alisCevap),
       cevaplandi ? cozumKutusu(q, secili === q.dogru) : null),
-    cevaplandi ? h("button", { type: "button", class: "btn", k: "alis-sonraki", onclick: () => { a.i++; render(); } }, a.i + 1 >= a.kuyruk.length ? "Oturumu bitir" : "Sonraki") : null);
+    h("div", { class: "satir", style: { margin: "14px 0" } },
+      h("button", { type: "button", class: "btn ikincil", k: "alis-geri", disabled: a.i === 0 ? true : null, onclick: () => { a.i--; render(); } }, "← Geri"),
+      son
+        ? h("button", { type: "button", class: "btn", k: "alis-sonraki", onclick: () => { alisBitir(false); } }, "Bitir ✓")
+        : h("button", { type: "button", class: "btn", k: "alis-sonraki", onclick: () => { a.i++; render(); } }, "İleri →")),
+    konuSatirlari(satirlariYap(), a.altKonu || "", tikla));
 }
 
 /* ----- Sınav sekmesi ----- */
@@ -865,6 +1231,12 @@ function sinavKurulum(k) {
   if (N < 20 && !secenekler.some((s) => s.n === N)) secenekler.push({ n: N, ad: "Hepsi (" + N + ")" });
   if (!secenekler.some((s) => s.n === S.kur.adet)) S.kur.adet = secenekler[0].n;
   const kok = h("div", {});
+  const sd = sinavDurum(k);
+  if (sd) {
+    kok.append(sd.tamam
+      ? h("div", { style: { margin: "0 0 12px" } }, h("span", { class: "rozet tamam", text: "Tamamlandı ✓ (son sınav: " + tarihSaat(sd.son) + ")" }))
+      : h("p", { class: "soluk-yazi", style: { margin: "0 0 12px" }, text: !sd.hataOk || !sd.alisOk ? "Önce hatalarını ve alıştırmaları tamamla." : "Yeni eklenenlerden sonra bir sınav çöz." }));
+  }
   const bekleyen = bekleyenOdevler().filter((o) => o.konuId === k.id);
   for (const o of bekleyen) {
     kok.append(h("div", { class: "odev" }, h("div", {}, h("h3", { text: o.baslik || "Tekrar çalışması" }), h("span", { class: "kucuk soluk-yazi", text: "Bekleyen ödev · " + (o.soruIds || []).length + " soru" })),
@@ -878,11 +1250,17 @@ function sinavKurulum(k) {
       h("input", { type: "checkbox", id: "sinav-sureli", checked: S.kur.sureli, style: { width: "20px", height: "20px" }, onchange: (e) => { S.kur.sureli = e.target.checked; render(); } }),
       h("label", { for: "sinav-sureli", text: "Süreli olsun (soru başına 1,5 dk → toplam " + say(S.kur.adet * 1.5) + " dk)" })),
     h("button", { type: "button", class: "btn", k: "sinav-basla", onclick: () => sinavBaslat("sinav", k.id, soruSec(k.id, S.kur.adet)) }, "Sınavı başlat")));
-  const gecmis = (S.grup.get(k.id) || []).filter((d) => d.tur !== "alistirma").slice(0, 5);
+  const gecmis = (S.grup.get(k.id) || []).filter((d) => d.tur === "sinav" || d.tur === "odev").slice(0, 10);
   if (gecmis.length) {
-    kok.append(h("h3", { style: { margin: "18px 0 6px" }, text: "Geçmiş sınavların" }));
-    for (const d of gecmis) kok.append(h("div", { class: "etkinlik" }, h("div", { class: "ust-satir" }, h("b", { text: tarihSaat(d.bitis) }),
-      h("span", { text: d.dogru + " D · " + d.yanlis + " Y · " + d.bos + " B · net " + netMetni((d.dogru || 0) - (d.yanlis || 0) / 3) }))));
+    kok.append(h("h3", { style: { margin: "18px 0 6px" }, text: "Geçmiş karneler" }));
+    for (const d of gecmis) {
+      const t = (d.dogru || 0) + (d.yanlis || 0) + (d.bos || 0);
+      kok.append(h("button", { type: "button", class: "etkinlik", k: "karne-" + d.id, onclick: () => { ilerle(() => { S.karneAcik = d.id; }, "karne"); window.scrollTo({ top: 0 }); },
+        style: { width: "100%", textAlign: "left", cursor: "pointer", background: "none", border: "none", borderBottom: "1px solid var(--line)", font: "inherit", color: "inherit" } },
+        h("div", { class: "ust-satir" }, h("b", { text: tarihSaat(d.bitis) }),
+          h("span", { text: (d.dogru || 0) + "/" + (d.yanlis || 0) + "/" + (d.bos || 0) }),
+          h("span", { text: "Puan " + (t ? Math.round((d.dogru || 0) / t * 100) : 0) }))));
+    }
   }
   return kok;
 }
@@ -916,29 +1294,108 @@ function sinavCalisiyor(k, s) {
     h("p", { class: "etiket", text: "Optik form · " + cevapli + " / " + n + " cevaplandı" }), optik,
     h("button", { type: "button", class: "btn", k: "sinav-bitir", onclick: () => { s.onay = true; render(); } }, "Sınavı bitir"), onay);
 }
-function sinavSonuc(k, s) {
-  const r = s.sonuc; const n = r.dogru + r.yanlis + r.bos;
-  const kok = h("div", {}, h("h2", { text: "Sonuç" }),
-    h("div", { class: "karolar" }, karo(String(r.dogru), "doğru"), karo(String(r.yanlis), "yanlış"), karo(String(r.bos), "boş"),
-      karo(netMetni(r.net), "net (D − Y/3)"), karo(sureMetni(s.sureSn), "süre")),
-    h("p", { class: "soluk-yazi", style: { marginTop: "8px" }, text: n + " sorudan " + yuzde(n ? r.dogru / n : 0) + " doğru." }),
-    kayitDurumu(s));
-  if (r.belirsiz) kok.append(h("p", { class: "kucuk soluk-yazi", text: "Bazı soruların cevap anahtarı kontrol ediliyor." }));
-  kok.append(h("h3", { style: { margin: "18px 0 6px" }, text: "Alt konu bazında" }),
-    h("div", { class: "kaydir" }, h("table", {},
-      h("thead", {}, h("tr", {}, ["Alt konu", "Soru", "D", "Y", "B", "Başarı"].map((t) => h("th", { text: t })))),
-      h("tbody", {}, r.altKonu.map(([ad, a]) => h("tr", {}, h("td", { text: ad }), h("td", { text: String(a.top) }), h("td", { text: String(a.d) }), h("td", { text: String(a.y) }), h("td", { text: String(a.b) }), h("td", { text: yuzde(a.d / a.top) })))))));
-  if (r.yanlislar.length) {
-    kok.append(h("h3", { style: { margin: "20px 0 8px" }, text: "Yanlışların ve boşların" }));
-    r.yanlislar.forEach(({ q, c }) => kok.append(sonucKarti(q, c)));
+function benzerSecimi(k, deneme) {
+  const b = S.banka[k.id];
+  const haric = new Set(deneme.soruIds || []);
+  const sr = soruSonuclari(S.grup.get(k.id) || [], b.harita);
+  const yanlislar = [];
+  for (const id of deneme.soruIds || []) { const q = b.harita[id]; if (q && (deneme.cevaplar || {})[id] !== q.dogru) yanlislar.push(q); }
+  const sirala = (liste) => {
+    const yeni = [], zayif = [], diger = [];
+    for (const x of liste) { const r = sr.get(x.id); if (!r) yeni.push(x.id); else if (r.son !== "d") zayif.push(x.id); else diger.push(x.id); }
+    return [...karistir(yeni), ...karistir(zayif), ...karistir(diger)];
+  };
+  const adaylar = yanlislar.map((q) => {
+    const havuz = b.liste.filter((x) => !haric.has(x.id));
+    const kodlu = q.kaynakKod ? havuz.filter((x) => x.kaynakKod === q.kaynakKod) : [];
+    const ak = soruAltKonu(k.id, q);
+    const altli = havuz.filter((x) => !kodlu.includes(x) && soruAltKonu(k.id, x) === ak);
+    return [...sirala(kodlu), ...sirala(altli)];
+  });
+  const ilkAday = adaylar.map((l) => l.length > 0);
+  const secilen = [];
+  for (let tur = 0; tur < 2; tur++) {
+    yanlislar.forEach((q, i) => {
+      if (secilen.length >= 15) return;
+      const id = adaylar[i].find((x) => !secilen.includes(x));
+      if (id !== undefined && secilen.length < 15) { secilen.push(id); adaylar[i] = adaylar[i].filter((x) => x !== id); }
+    });
   }
+  yanlislar.forEach((q, i) => {
+    if (!adaylar[i].length && !secilen.includes(q.id) && secilen.length < 15 && !ilkAday[i]) secilen.push(q.id);
+  });
+  return karistir(secilen);
+}
+function benzerBaslat(k, deneme) {
+  if (S.sinav && !S.sinav.bitti) { bildir("hata", "Önce yarım kalan sınavını bitir ya da sil."); render(); return; }
+  const ids = benzerSecimi(k, deneme);
+  if (!ids.length) { bildir("hata", "Benzer soru bulunamadı."); render(); return; }
+  S.sinav = null;
+  sinavBaslat("sinav", k.id, ids, null, { benzer: true });
+}
+function karne(k, deneme, ekstra) {
+  const b = S.banka[k.id]; const harita = b.harita;
+  let d = 0, y = 0, bo = 0; const ak = new Map(); const yanlislar = [];
+  for (const id of deneme.soruIds || []) {
+    const q = harita[id]; if (!q) continue;
+    const c = (deneme.cevaplar || {})[id] || null;
+    const ad = soruAltKonu(k.id, q);
+    const a = ak.get(ad) || { top: 0, d: 0, y: 0, b: 0 }; ak.set(ad, a); a.top++;
+    if (c == null) { bo++; a.b++; yanlislar.push({ q, c }); }
+    else if (c === q.dogru) { d++; a.d++; }
+    else { y++; a.y++; yanlislar.push({ q, c }); }
+  }
+  const n = d + y + bo;
+  const puan = n ? Math.round(d / n * 100) : 0;
+  const kok = h("div", {},
+    h("h2", { style: { marginBottom: "2px" }, text: "Sınav Karnesi" }),
+    h("p", { class: "soluk-yazi", style: { margin: "0 0 4px" }, text: konuAdi(k.id) + (deneme.bitis ? " · " + tarihSaat(deneme.bitis) : "") }),
+    deneme.benzerDeneme ? h("p", { class: "kucuk", style: { margin: "0 0 8px", color: "var(--accent)", fontWeight: "700" }, text: "Benzer sorularla tekrar" }) : null,
+    h("div", { class: "karolar" }, karo(String(puan), "puan (100 üzerinden)"), karo(netMetni(d - y / 3), "net (D − Y/3)"), karo(String(d), "doğru"),
+      karo(String(y), "yanlış"), karo(String(bo), "boş"), karo(sureMetni(deneme.sureSn || 0), "süre")));
+  if (ekstra) kok.append(...ekstra);
+  const satirlar = [...ak.entries()];
+  if (satirlar.length) {
+    kok.append(h("h3", { style: { margin: "18px 0 6px" }, text: "Alt konu bazında" }),
+      h("div", { class: "kaydir" }, h("table", {},
+        h("thead", {}, h("tr", {}, ["Alt konu", "Soru", "D", "Y", "B", "Başarı"].map((t) => h("th", { text: t })))),
+        h("tbody", {}, satirlar.map(([ad, a]) => h("tr", {}, h("td", { text: ad }), h("td", { text: String(a.top) }), h("td", { text: String(a.d) }), h("td", { text: String(a.y) }), h("td", { text: String(a.b) }), h("td", { text: yuzde(a.d / a.top) })))))));
+    const yeterli = satirlar.filter(([, a]) => a.top >= 2).map(([ad, a]) => ({ ad, o: a.d / a.top }));
+    if (yeterli.length >= 2) {
+      const en = yeterli.reduce((m, x) => (x.o > m.o ? x : m)); const az = yeterli.reduce((m, x) => (x.o < m.o ? x : m));
+      if (en.o !== az.o) kok.append(h("p", { style: { marginTop: "10px" }, text: "En başarılı olduğun alt konu: " + en.ad + " (" + yuzde(en.o) + "). En çok çalışman gereken: " + az.ad + " (" + yuzde(az.o) + ")." }));
+    }
+  }
+  if (yanlislar.length) {
+    kok.append(h("h3", { style: { margin: "20px 0 8px" }, text: "Yanlışların ve boşların" }));
+    yanlislar.forEach(({ q, c }) => kok.append(sonucKarti(q, c)));
+    kok.append(h("div", { class: "satir", style: { marginTop: "16px" } },
+      h("button", { type: "button", class: "btn ikincil", k: "benzer-dene", onclick: () => benzerBaslat(k, deneme) }, "Benzer sorularla yeniden dene")));
+  }
+  return kok;
+}
+function sinavSonuc(k, s) {
+  const r = s.sonuc;
+  const deneme = s.rec || { soruIds: s.soruIds, cevaplar: s.cevaplar, sureSn: s.sureSn, bitis: new Date().toISOString(), tur: s.mod, benzerDeneme: !!s.benzer };
+  const ekstra = [kayitDurumu(s)];
+  if (r.belirsiz) ekstra.push(h("p", { class: "kucuk soluk-yazi", text: "Bazı soruların cevap anahtarı kontrol ediliyor." }));
+  const kok = karne(k, deneme, ekstra);
   kok.append(h("div", { class: "satir", style: { marginTop: "16px" } },
-    h("button", { type: "button", class: "btn", k: "sinav-kapat", onclick: () => { S.sinav = null; render(); } }, "Yeni sınav")));
+    h("button", { type: "button", class: "btn", k: "sinav-kapat", onclick: () => geriAl("sinav", () => { S.sinav = null; S.sinavGizli = false; }) }, "Yeni sınav")));
+  return kok;
+}
+function sinavGecmisKarne(k, deneme) {
+  const kok = karne(k, deneme);
+  kok.prepend(h("div", { style: { margin: "0 0 10px" } }, h("button", { type: "button", class: "btn kucuk ikincil", k: "karne-geri", onclick: () => geriAl("karne", () => { S.karneAcik = null; }) }, "← Geri")));
   return kok;
 }
 function sekmeSinav(k) {
-  const s = S.sinav && S.sinav.konuId === k.id ? S.sinav : null;
-  if (!s) return sinavKurulum(k);
+  const s = S.sinav && !S.sinavGizli && S.sinav.konuId === k.id ? S.sinav : null;
+  if (!s) {
+    const acik = S.karneAcik ? (S.grup.get(k.id) || []).find((d) => d.id === S.karneAcik) : null;
+    const dur0 = bankaDurumu(k); if (dur0) return dur0;
+    return acik ? sinavGecmisKarne(k, acik) : sinavKurulum(k);
+  }
   const dur = bankaDurumu(k); if (dur) return dur;
   return s.bitti ? sinavSonuc(k, s) : sinavCalisiyor(k, s);
 }
@@ -946,19 +1403,19 @@ function sekmeSinav(k) {
 function konuSayfasi() {
   const k = konuBul(S.route.id);
   if (!S.konularHazir) return h("div", { class: "iskelet", role: "status" }, h("span", { class: "soluk-yazi", text: "Konular yükleniyor…" }), h("i"), h("i"));
-  if (!k) return h("div", {}, h("a", { class: "geri", href: "#duru", text: "← Tüm konular" }), bosDurum("Bu konu bulunamadı", "Bağlantı eski olabilir."));
-  const sekmeler = [["hatalar", "Hatalarım"], ["anlatim", "Kısa anlatım"], ["alistirma", "Alıştırma"], ["sinav", "Sınav"]];
+  if (!k) return h("div", {}, h("a", { class: "geri", href: "#duru", text: "← Tüm dersler" }), bosDurum("Bu konu bulunamadı", "Bağlantı eski olabilir."));
+  const sekmeler = [["hatalar", "Hatalarım"], ["alistirma", "Alıştırma"], ["sinav", "Sınav"]];
   if (!sekmeler.some((x) => x[0] === S.sekme)) S.sekme = "hatalar";
+  const tamamlar = { hatalar: hataDurum(k).tamam, alistirma: !!(alisDurum(k) || {}).tamam, sinav: !!(sinavDurum(k) || {}).tamam };
   const bar = h("div", { class: "sekmeler", role: "tablist", "aria-label": "Konu bölümleri" },
     sekmeler.map(([id, ad]) => h("button", { type: "button", role: "tab", id: "sekme-" + id, "aria-selected": String(S.sekme === id), "aria-controls": "panel", k: "sekme-" + id,
-      onclick: () => { S.sekme = id; lsSet(LS_SEKME, id); render(); } }, ad)));
+      onclick: () => { if (S.sekme === id) return; ilerle(() => { S.sekme = id; lsSet(LS_SEKME, id); }, "sekme"); } }, ad + (tamamlar[id] ? " ✓" : ""))));
   if (["hatalar", "alistirma", "sinav"].includes(S.sekme)) bankaYukle(k.id);
-  const icerik = { hatalar: sekmeHatalar, anlatim: sekmeAnlatim, alistirma: sekmeAlistirma, sinav: sekmeSinav }[S.sekme](k);
+  const icerik = { hatalar: sekmeHatalar, alistirma: sekmeAlistirma, sinav: sekmeSinav }[S.sekme](k);
   return h("div", { class: "d-" + dersId(k.ders) },
     taslakSeridi(),
-    h("a", { class: "geri", href: "#duru", text: "← Tüm konular" }),
-    h("div", { class: "konu-bas" }, h("h1", { text: k.baslik || k.id }),
-      h("div", { class: "satir" }, dersChip(k.ders), k.unite ? h("span", { class: "kucuk soluk-yazi", text: k.unite }) : null, durumRozet(k.durum))),
+    h("a", { class: "geri", href: "#ders-" + dersId(k.ders), text: "← " + (k.ders || "Ders") + " konuları" }),
+    h("div", { class: "konu-bas" }, h("h1", {}, uniteNo(k) ? h("span", { class: "unite-no", text: uniteNo(k) }) : null, h("span", { text: k.baslik || k.id }))),
     bar, h("div", { id: "panel", role: "tabpanel", "aria-labelledby": "sekme-" + S.sekme }, icerik));
 }
 
@@ -1098,16 +1555,27 @@ function veliAyarlar() {
 function veliSayfasi() {
   if (S.dbYok) return bosDurum("Bu görünümde veri açılamıyor");
   veliHazirlik();
-  const kok = h("div", {}, h("div", { class: "kahraman" }, h("h1", { text: "Veli paneli" }), veliOzet()), veliEtkinlik());
-  const tablo = h("section", { class: "bolum" }, h("h2", { text: "Konular" }));
+  const kok = S.route.id ? h("div", {}) : h("div", {}, h("div", { class: "kahraman" }, h("h1", { text: "Veli Paneli" }), veliOzet()), veliEtkinlik());
+  const tablo = h("section", { class: "bolum" });
+  const g = S.route.id ? dersGruplari().find((x) => x.id === S.route.id) : null;
+  if (S.route.id) tablo.append(h("a", { class: "geri", href: "#veli", text: "← Tüm dersler" }));
   if (!S.konularHazir) tablo.append(h("p", { class: "soluk-yazi", text: "Konular yükleniyor…" }));
   else if (!S.konular.length) tablo.append(bosDurum("Henüz konu eklenmedi"));
-  for (const ders of DERSLER) {
-    const liste = S.konular.filter((k) => dersId(k.ders) === ders.id);
-    if (!liste.length) continue;
-    tablo.append(h("div", { class: "ders-baslik d-" + ders.id }, h("h3", { text: liste[0].ders || ders.ad })), ...liste.map(veliKonuSatiri));
+  else if (S.route.id && !g) tablo.append(bosDurum("Bu derste konu yok", "Bağlantı eski olabilir."));
+  else if (g) tablo.append(h("div", { class: "ders-ust d-" + g.id }, h("h2", { text: g.adi })), ...g.liste.map(veliKonuSatiri));
+  else {
+    tablo.append(h("h2", { text: "Dersler" }), dersIzgarasi((x) => {
+      const den = x.liste.reduce((t, k) => t + (S.grup.get(k.id) || []).length, 0);
+      const hata = x.liste.reduce((t, k) => t + (k.hatalar || []).length, 0);
+      const tamam = x.liste.filter((k) => k.durum === "tamamlandi").length;
+      return h("a", { class: "ders-kart d-" + x.id, href: "#veli-" + x.id },
+        h("h3", { text: x.adi }),
+        h("div", { class: "konu-meta" }, h("span", { text: x.liste.length + " konu" }), h("span", { text: den + " deneme" }), h("span", { text: hata + " hata" }),
+          tamam ? h("span", { text: tamam + " tamamlandı" }) : null));
+    }));
   }
-  kok.append(tablo, veliAyarlar());
+  kok.append(tablo);
+  if (!S.route.id) kok.append(veliAyarlar());
   return kok;
 }
 
@@ -1117,12 +1585,13 @@ function sayfa() {
   const ust = h("header", { class: "ust" },
     h("a", { class: "marka", href: "#duru" }, h("span", { class: "marka-bal", "aria-hidden": "true" }, h("i"), h("i"), h("i")), h("span", { text: "Duru'nun Çalışma Masası" })),
     S.sahip ? h("nav", { class: "ana-sekme", "aria-label": "Görünüm" },
-      h("a", { href: "#duru", "aria-current": duruAktif ? "page" : null, text: "Duru'nun alanı" }),
-      h("a", { href: "#veli", "aria-current": !duruAktif ? "page" : null, text: "Veli paneli" })) : null);
+      h("a", { href: "#duru", "aria-current": duruAktif ? "page" : null, text: "Duru'nun Paneli" }),
+      h("a", { href: "#veli", "aria-current": !duruAktif ? "page" : null, text: "Veli Paneli" })) : null);
   const bild = S.bildirim ? h("div", { class: "bildirim " + S.bildirim.tur, role: S.bildirim.tur === "hata" ? "alert" : "status" },
     h("span", { text: S.bildirim.metin }), h("button", { type: "button", "aria-label": "Kapat", k: "bildirim-kapat", onclick: () => { S.bildirim = null; render(); } }, "×")) : null;
   let icerik;
   if (S.route.ad === "veli") icerik = !S.kimlikHazir ? h("div", { class: "iskelet", role: "status" }, h("span", { class: "soluk-yazi", text: "Yükleniyor…" }), h("i")) : veliSayfasi();
+  else if (S.route.ad === "ders") icerik = dersSayfasi();
   else if (S.route.ad === "konu") icerik = S.dbYok ? konuListesi() : konuSayfasi();
   else icerik = duruAnaSayfa();
   return h("div", {}, ust, bild, icerik);
@@ -1139,18 +1608,29 @@ function render() {
       try { if (anahtar.s != null && yeni.setSelectionRange) yeni.setSelectionRange(anahtar.s, anahtar.e); } catch (e) { /* tarih/sayı alanı */ }
     }
   }
+  ekranEtiketle();
 }
 function rotaOku() {
   const x = location.hash.replace(/^#/, "");
   if (x === "veli") return { ad: "veli", id: null };
+  if (x.startsWith("veli-")) return { ad: "veli", id: x.slice(5) };
   if (x.startsWith("konu-")) return { ad: "konu", id: x.slice(5) };
+  if (x.startsWith("ders-")) return { ad: "ders", id: x.slice(5) };
   return { ad: "duru", id: null };
 }
-function rotaDegisti() {
+let sonHash = location.hash;
+// hashchange ve popstate ikisi de tetiklenebilir: rota değişimini yalnız ilk gelen işler (sonHash ile)
+function gezinti(e) {
+  if (location.hash !== sonHash) { S.pushAnahtar = null; rotaDegisti(e.state && e.state.ui ? e.state.ui : null); }
+  else if (e.type === "popstate" && e.state && e.state.ui) { S.pushAnahtar = null; ekranUygula(e.state.ui); render(); }
+}
+function rotaDegisti(ui) {
   S.route = rotaOku();
   if (S.route.ad === "veli" && S.kimlikHazir && !S.sahip) { history.replaceState(null, "", "#duru"); S.route = { ad: "duru", id: null }; }
+  sonHash = location.hash;
   if (S.alis && !S.alis.bitti && (S.route.ad !== "konu" || rotaId(S.alis.konuId) !== S.route.id)) alisBitir(true);
   else if (S.alis && S.alis.bitti && (S.route.ad !== "konu" || rotaId(S.alis.konuId) !== S.route.id)) S.alis = null;
+  if (ui) ekranUygula(ui);
   window.scrollTo(0, 0);
   render();
 }
@@ -1160,15 +1640,18 @@ async function basla(veri) {
   if (veri.sinav) { S.sinav = { ...veri.sinav, baslMs: Date.now() }; if (!S.sinav.bitti) sayacBaslat(); }
   else { const t = taslakOku(); if (t) S.taslak = t; }
   if (veri.sekme) S.sekme = veri.sekme;
+  fetch("sira.json").then((r) => r.ok ? r.json() : {}).then((d) => { S.sira = d && typeof d === "object" ? d : {}; render(); }).catch(() => { /* eşleme yoksa eşlenmemiş sayılır */ });
+  fetch("sorular/detay.json").then((r) => r.ok ? r.json() : {}).then((d) => { S.detay = d || {}; render(); }).catch(() => { /* ayrıntılar yoksa eski kart */ });
   S.route = rotaOku();
-  window.addEventListener("hashchange", rotaDegisti);
+  window.addEventListener("hashchange", gezinti);
+  window.addEventListener("popstate", gezinti);
   window.addEventListener("pagehide", taslakYaz);
   document.addEventListener("visibilitychange", () => { if (document.hidden) taslakYaz(); });
   render();
   S.user = await kullan("user");
   try { S.sahip = (await (S.user ? S.user.isOwner() : false)) || false; S.uid = S.user ? await S.user.id() : null; } catch (e) { S.sahip = false; }
   S.kimlikHazir = true;
-  if (S.route.ad === "veli" && !S.sahip) { history.replaceState(null, "", "#duru"); S.route = { ad: "duru", id: null }; }
+  if (S.route.ad === "veli" && !S.sahip) { history.replaceState(null, "", "#duru"); S.route = { ad: "duru", id: null }; sonHash = location.hash; }
   S.db = await kullan("db");
   if (!S.db) { S.dbYok = true; S.konularHazir = true; S.denemelerHazir = true; S.odevlerHazir = true; render(); return; }
   render();

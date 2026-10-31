@@ -1,33 +1,180 @@
 {
-  "id": "tur-fii",
-  "ders": "Türkçe",
-  "unite": "04 - Fiilimsiler",
-  "baslik": "Fiilimsiler",
-  "anlatim": [
-    {"baslik": "Fiilimsi nedir?", "metin": "Fiilimsiler, fiilden türemiş ama cümlede yüklem olamayan kelimelerdir. Üç türü vardır: isim-fiil, sıfat-fiil ve zarf-fiil. Çekimli bir fiil (yüklem) fiilimsi değildir. Örneğin “gelme!” bir emirdir, “gelmesi” ise isim-fiildir."},
-    {"baslik": "İsim-fiil", "metin": "İsim-fiil; -ma/-me, -mak/-mek, -ış/-iş/-uş/-üş eklerinden biriyle oluşur: karşılamak, dolmasını, gelişi. Ekten sonra başka ekler gelebilir (dolma-sı-nı, gel-iş-i). Kelimenin yerine “o iş” koyabiliyorsan isim-fiildir: “dolmasını bekledik” → “o işi bekledik”. “-mak için” kalıbındaki -mak da isim-fiildir."},
-    {"baslik": "Sıfat-fiil", "metin": "Sıfat-fiil; -an/-en, -ası, -mez, -ar, -dik, -ecek, -miş ekleriyle oluşur ve bir ismi niteler: gelen misafir, gezilecek yer. Sıfat-fiilden sonra bir isim varsa sıfat görevindedir ve adlaşmamıştır."},
-    {"baslik": "Zarf-fiil", "metin": "Zarf-fiil; -ken, -ip, -erek, -ince, -meden, -dikçe, -eli ekleriyle oluşur ve fiile zarf gibi anlam katar: beklerken, koşarak. Cümlede fiilimsi taraması yaparken bu eklere de bak."},
-    {"baslik": "Adlaşmış sıfat-fiil", "metin": "Sıfat-fiilin nitelediği isim düşer ve sıfat-fiil onun yerine geçerek isim gibi kullanılırsa adlaşmış olur: söyleyen (söyleyen kişi), istediğini (istediği şeyi). Sıfat-fiilden sonra isim geliyorsa adlaşmamıştır: koşar adımlar, çıkmaz sokak."},
-    {"baslik": "Fiilimsi taraması", "metin": "Cümledeki her fiil kökünü bul ve ekine bak. Ekine göre türünü belirle; yüklem olan çekimli fiili fiilimsi sayma. Akış şemalarında her ifadeyi bu kontrolle D (doğru) ya da Y (yanlış) olarak işaretle."}
-  ],
-  "tuyolar": [
-    "Kelimenin yerine “o iş” koyabiliyorsan isim-fiildir.",
-    "“-mak için” kalıbındaki -mak isim-fiildir.",
-    "Sıfat-fiilden sonra isim varsa adlaşmamıştır (koşar adımlar); isim düşmüşse adlaşmıştır (söyleyen-ler).",
-    "Çekimli fiil (yüklem) fiilimsi değildir; “gelme!” (emir) ile “gelmesi” (isim-fiil) farklıdır.",
-    "“Kim? ne?” sorusuna cevap veren sıfat-fiil çoğu zaman adlaşmıştır (söyleyen = söyleyen kişi)."
-  ],
-  "hatalar": [
-    {"kod": "TUR-FİL-1", "altKonu": "İsim-fiil", "soru": "“Gelen misafirleri karşılamak için dışarı çıktı” cümlesiyle başlayan fiilimsi akış şemasında D/Y yollarını izleyerek hangi sonuca ulaşılacağı", "hata": "İsim-fiilleri tanıyamadı: “karşılamak” (-mak) ve “dolmasını” (-ma + iyelik + hâl eki) isim-fiil olduğu halde ikisini de kaçırdı. Cevabı III oldu; doğrusu II.", "dogruYol": "-ma/-mak eki alan ve yerine “o iş” konabilen kelime isim-fiildir. “-mak için” kalıbındaki -mak da isim-fiildir. Akış şemasında her ifadeyi bu ölçüte göre D/Y olarak işaretle."},
-    {"kod": "TUR-FİL-2", "altKonu": "Adlaşmış sıfat-fiil", "soru": "Hangi cümlede sıfat-fiil adlaşmıştır (koşar adımlar, çıkmaz sokak, söyleyen, geçen yıllar)?", "hata": "Sıfat-fiil + isim yapısı (koşar adımlar) ile ismi düşmüş sıfat-fiil (söyleyen) ayrımını tersine kurdu. Cevabı A oldu; doğrusu C.", "dogruYol": "Sıfat-fiilden sonra isim varsa adlaşmamıştır. İsim düşmüşse ve sıfat-fiil “kim? ne?” sorusunun cevabıysa (söyleyen = söyleyen kişi) adlaşmıştır."}
-  ],
-  "sorular": [
-    {"id": "tur-fii-001", "altKonu": "İsim-fiil", "kaynakKod": "TUR-FİL-1", "tur": "benzer", "metin": "“Kitap okumayı çok severim.” cümlesindeki fiilimsi ve türü hangisidir?", "secenekler": ["severim – isim-fiil", "okumayı – isim-fiil", "okumayı – sıfat-fiil", "Cümlede fiilimsi yoktur."], "dogru": "B", "cozum": "“Okumayı” fiilinde -ma eki ve hâl eki (-yı) vardır; isim-fiildir. “Severim” yüklem olan çekimli bir fiildir, fiilimsi değildir.", "emin": true},
-    {"id": "tur-fii-002", "altKonu": "İsim-fiil", "kaynakKod": "TUR-FİL-1", "tur": "benzer", "metin": "Hangi cümlede isim-fiil yoktur?", "secenekler": ["Erken kalkmak ona zor gelir.", "Onun gülüşü herkesi etkiledi.", "Koşarak eve geldi.", "Onu görmek beni çok sevindirdi."], "dogru": "C", "cozum": "“Koşarak” zarf-fiildir (-arak eki). “Kalkmak”, “gülüşü” (-ış) ve “görmek” isim-fiildir.", "emin": true},
-    {"id": "tur-fii-003", "altKonu": "İsim-fiil", "kaynakKod": "TUR-FİL-1", "tur": "benzer", "metin": "“Ders çalışmak için kütüphaneye giden öğrenciler sessizce oturdu.” cümlesinde kaç fiilimsi vardır?", "secenekler": ["1", "2", "3", "4"], "dogru": "B", "cozum": "“Çalışmak” isim-fiil, “giden” sıfat-fiildir. “Sessizce” bir zarftır, fiilimsi değildir; “oturdu” yüklemdir.", "emin": true},
-    {"id": "tur-fii-004", "altKonu": "Adlaşmış sıfat-fiil", "kaynakKod": "TUR-FİL-2", "tur": "benzer", "metin": "“Gelenler salonda oturuyordu.” cümlesindeki sıfat-fiil için hangisi doğrudur?", "secenekler": ["Adlaşmıştır, “gelen kişiler” anlamındadır.", "Bir ismi nitelemektedir.", "İsim-fiildir.", "Zarf-fiildir."], "dogru": "A", "cozum": "“Gelenler”de sıfat-fiilin nitelediği isim (kişiler) düşmüş, sıfat-fiil onun yerine geçmiştir; bu yüzden adlaşmıştır.", "emin": true},
-    {"id": "tur-fii-005", "altKonu": "Adlaşmış sıfat-fiil", "kaynakKod": "TUR-FİL-2", "tur": "benzer", "metin": "Hangisinde sıfat-fiil adlaşmamıştır?", "secenekler": ["Okuyanlar bilir.", "Kırılan camı değiştirdik.", "Bilmediğini sor.", "Çalışan kazanır."], "dogru": "B", "cozum": "“Kırılan cam”da sıfat-fiil (kırılan) bir ismi (cam) niteliyor; isim düşmediği için adlaşmamıştır. Diğer üçünde isim düşmüş ve sıfat-fiil onun yerine geçmiştir.", "emin": true},
-    {"id": "tur-fii-006", "altKonu": "Adlaşmış sıfat-fiil", "kaynakKod": "TUR-FİL-2", "tur": "benzer", "metin": "“Ağlamayan çocuğa meme vermezler.” ve “Ağlamayana meme vermezler.” cümlelerindeki “ağlamayan” için hangisi doğrudur?", "secenekler": ["İkisinde de adlaşmıştır.", "Birincide sıfat görevinde, ikincide adlaşmıştır.", "İkisinde de isim-fiildir.", "Birincide adlaşmış, ikincide sıfat görevindedir."], "dogru": "B", "cozum": "Birinci cümlede “ağlamayan”dan sonra “çocuk” ismi geldiği için sıfat görevindedir. İkincide isim düşmüştür (ağlayan kişi), yani adlaşmıştır.", "emin": true}
-  ]
+ "id": "tur-fii",
+ "ders": "Türkçe",
+ "unite": "04 - Fiilimsiler",
+ "baslik": "Fiilimsiler",
+ "anlatim": [
+  {
+   "baslik": "Fiilimsi nedir?",
+   "metin": "Fiilimsiler, fiilden türemiş ama cümlede yüklem olamayan kelimelerdir. Üç türü vardır: isim-fiil, sıfat-fiil ve zarf-fiil. Çekimli bir fiil (yüklem) fiilimsi değildir. Örneğin “gelme!” bir emirdir, “gelmesi” ise isim-fiildir."
+  },
+  {
+   "baslik": "İsim-fiil",
+   "metin": "İsim-fiil; -ma/-me, -mak/-mek, -ış/-iş/-uş/-üş eklerinden biriyle oluşur: karşılamak, dolmasını, gelişi. Ekten sonra başka ekler gelebilir (dolma-sı-nı, gel-iş-i). Kelimenin yerine “o iş” koyabiliyorsan isim-fiildir: “dolmasını bekledik” → “o işi bekledik”. “-mak için” kalıbındaki -mak da isim-fiildir."
+  },
+  {
+   "baslik": "Sıfat-fiil",
+   "metin": "Sıfat-fiil; -an/-en, -ası, -mez, -ar, -dik, -ecek, -miş ekleriyle oluşur ve bir ismi niteler: gelen misafir, gezilecek yer. Sıfat-fiilden sonra bir isim varsa sıfat görevindedir ve adlaşmamıştır."
+  },
+  {
+   "baslik": "Zarf-fiil",
+   "metin": "Zarf-fiil; -ken, -ip, -erek, -ince, -meden, -dikçe, -eli ekleriyle oluşur ve fiile zarf gibi anlam katar: beklerken, koşarak. Cümlede fiilimsi taraması yaparken bu eklere de bak."
+  },
+  {
+   "baslik": "Adlaşmış sıfat-fiil",
+   "metin": "Sıfat-fiilin nitelediği isim düşer ve sıfat-fiil onun yerine geçerek isim gibi kullanılırsa adlaşmış olur: söyleyen (söyleyen kişi), istediğini (istediği şeyi). Sıfat-fiilden sonra isim geliyorsa adlaşmamıştır: koşar adımlar, çıkmaz sokak."
+  },
+  {
+   "baslik": "Fiilimsi taraması",
+   "metin": "Cümledeki her fiil kökünü bul ve ekine bak. Ekine göre türünü belirle; yüklem olan çekimli fiili fiilimsi sayma. Akış şemalarında her ifadeyi bu kontrolle D (doğru) ya da Y (yanlış) olarak işaretle."
+  }
+ ],
+ "tuyolar": [
+  "Kelimenin yerine “o iş” koyabiliyorsan isim-fiildir.",
+  "“-mak için” kalıbındaki -mak isim-fiildir.",
+  "Sıfat-fiilden sonra isim varsa adlaşmamıştır (koşar adımlar); isim düşmüşse adlaşmıştır (söyleyen-ler).",
+  "Çekimli fiil (yüklem) fiilimsi değildir; “gelme!” (emir) ile “gelmesi” (isim-fiil) farklıdır.",
+  "“Kim? ne?” sorusuna cevap veren sıfat-fiil çoğu zaman adlaşmıştır (söyleyen = söyleyen kişi)."
+ ],
+ "hatalar": [
+  {
+   "kod": "TUR-FİL-1",
+   "altKonu": "İsim-fiil",
+   "soru": "“Gelen misafirleri karşılamak için dışarı çıktı” cümlesiyle başlayan fiilimsi akış şemasında D/Y yollarını izleyerek hangi sonuca ulaşılacağı",
+   "hata": "İsim-fiilleri tanıyamadı: “karşılamak” (-mak) ve “dolmasını” (-ma + iyelik + hâl eki) isim-fiil olduğu halde ikisini de kaçırdı. Cevabı III oldu; doğrusu II.",
+   "dogruYol": "-ma/-mak eki alan ve yerine “o iş” konabilen kelime isim-fiildir. “-mak için” kalıbındaki -mak da isim-fiildir. Akış şemasında her ifadeyi bu ölçüte göre D/Y olarak işaretle.",
+   "gorsel": [
+    "sorular/TUR-FIL-1.png"
+   ],
+   "cevap": "B) II",
+   "senin": "C) III",
+   "cozum": [
+    "İlk cümle: \"Gelen misafirleri karşılamak için dışarı çıktı.\" \"Gelen\" = sıfat-fiil (-en), \"karşılamak\" = isim-fiil (-mak). İki fiilimsi var → D yolu.",
+    "D yolundaki cümle: \"Gezilecek yerleri daha önceden planlamıştı.\" \"Gezilecek\" = sıfat-fiil (-ecek) → \"Sıfat-fiil vardır\" doğru → D.",
+    "Bu yol II'ye çıkar. Cevap B."
+   ],
+   "hataAnaliz": "İsim-fiilleri tanıyamadın, aynı soruda iki tane kaçırdın: (1) \"karşılamak\" (-mak; \"için\" ile kullanılsa da isim-fiildir), (2) Y yolundaki \"dolmasını\" (-ma + iyelik + hâl eki alsa da isim-fiildir). Bu yüzden III'ü seçtin; Y yolunda bile doğrusu IV olurdu.",
+   "tuyo": "İsim-fiil ekleri: -ma, -me / -mak, -mek / -ış, -iş, -uş, -üş. Ekten sonra başka ek gelebilir (dolma-sı-nı, gel-iş-i, okuma-ya). \"-mak için\" kalıbındaki -mak da isim-fiildir. Test: Kelimenin yerine \"o iş\" koyabiliyorsan isim-fiildir (dolmasını bekledik → \"o işi bekledik\").",
+   "dikkat": "Fiilimsi taraması: cümledeki her fiil kökünü bul, ekine bak. -an/-en, -ası, -mez, -ar, -dik, -ecek, -miş → sıfat-fiil. -ma/-mak/-ış → isim-fiil. -ken, -ip, -erek, -ince, -meden, -dikçe, -eli → zarf-fiil. Yüklem olan çekimli fiil fiilimsi değildir. \"Gelme!\" (emir) ile \"gelmesi\" (isim-fiil) farklıdır."
+  },
+  {
+   "kod": "TUR-FİL-2",
+   "altKonu": "Adlaşmış sıfat-fiil",
+   "soru": "Hangi cümlede sıfat-fiil adlaşmıştır (koşar adımlar, çıkmaz sokak, söyleyen, geçen yıllar)?",
+   "hata": "Sıfat-fiil + isim yapısı (koşar adımlar) ile ismi düşmüş sıfat-fiil (söyleyen) ayrımını tersine kurdu. Cevabı A oldu; doğrusu C.",
+   "dogruYol": "Sıfat-fiilden sonra isim varsa adlaşmamıştır. İsim düşmüşse ve sıfat-fiil “kim? ne?” sorusunun cevabıysa (söyleyen = söyleyen kişi) adlaşmıştır.",
+   "gorsel": [
+    "sorular/TUR-FIL-2.png"
+   ],
+   "cevap": "C",
+   "senin": "A",
+   "cozum": [
+    "Adlaşmış sıfat-fiil: sıfat-fiilin nitelediği isim düşmüş, sıfat-fiil onun yerine geçmiş.",
+    "Test: Sıfat-fiilden sonra bir İSİM var mı? Varsa → sıfat görevinde, adlaşmamış.",
+    "I: koşar ADIMLAR; II: çıkmaz SOKAK; IV: geçen YILLAR → sonrasında isim var → adlaşmamış ✗.",
+    "III: \"istediğini\" (istediği şeyi), \"söyleyen\" (söyleyen kişi), \"istemediğini\" → arkalarında isim yok, isim yerine geçmişler → adlaşmış ✓."
+   ],
+   "hataAnaliz": "\"Sıfat-fiil + isim\" (koşar adımlar) ile \"ismi düşmüş sıfat-fiil\" (söyleyen) ayrımını tersine kurdun. TUR-FİL-1'den sonra fiilimsilerde ikinci karışıklık.",
+   "tuyo": "Test: Sıfat-fiilden sonra bir İSİM var mı? Varsa → sıfat görevinde (adlaşmamış). Yoksa ve sıfat-fiile çoğul/hâl eki gelmişse (söyleyen-ler, istediği-ni) → adlaşmış. \"Kim? ne?\" sorusuna cevap veriyorsa adlaşmıştır: \"söyleyen\" = söyleyen kişi.",
+   "dikkat": "Adlaşmış sıfat-fiil = isim düştü, ek ona geldi: gelen-ler, okuduğu-nu, söyleyen. Adlaşmamış: gelen misafir, okuduğu kitap."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "tur-fii-001",
+   "altKonu": "İsim-fiil",
+   "kaynakKod": "TUR-FİL-1",
+   "tur": "benzer",
+   "metin": "“Kitap okumayı çok severim.” cümlesindeki fiilimsi ve türü hangisidir?",
+   "secenekler": [
+    "severim – isim-fiil",
+    "okumayı – isim-fiil",
+    "okumayı – sıfat-fiil",
+    "Cümlede fiilimsi yoktur."
+   ],
+   "dogru": "B",
+   "cozum": "“Okumayı” fiilinde -ma eki ve hâl eki (-yı) vardır; isim-fiildir. “Severim” yüklem olan çekimli bir fiildir, fiilimsi değildir.",
+   "emin": true
+  },
+  {
+   "id": "tur-fii-002",
+   "altKonu": "İsim-fiil",
+   "kaynakKod": "TUR-FİL-1",
+   "tur": "benzer",
+   "metin": "Hangi cümlede isim-fiil yoktur?",
+   "secenekler": [
+    "Erken kalkmak ona zor gelir.",
+    "Onun gülüşü herkesi etkiledi.",
+    "Koşarak eve geldi.",
+    "Onu görmek beni çok sevindirdi."
+   ],
+   "dogru": "C",
+   "cozum": "“Koşarak” zarf-fiildir (-arak eki). “Kalkmak”, “gülüşü” (-ış) ve “görmek” isim-fiildir.",
+   "emin": true
+  },
+  {
+   "id": "tur-fii-003",
+   "altKonu": "İsim-fiil",
+   "kaynakKod": "TUR-FİL-1",
+   "tur": "benzer",
+   "metin": "“Ders çalışmak için kütüphaneye giden öğrenciler sessizce oturdu.” cümlesinde kaç fiilimsi vardır?",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "B",
+   "cozum": "“Çalışmak” isim-fiil, “giden” sıfat-fiildir. “Sessizce” bir zarftır, fiilimsi değildir; “oturdu” yüklemdir.",
+   "emin": true
+  },
+  {
+   "id": "tur-fii-004",
+   "altKonu": "Adlaşmış sıfat-fiil",
+   "kaynakKod": "TUR-FİL-2",
+   "tur": "benzer",
+   "metin": "“Gelenler salonda oturuyordu.” cümlesindeki sıfat-fiil için hangisi doğrudur?",
+   "secenekler": [
+    "Adlaşmıştır, “gelen kişiler” anlamındadır.",
+    "Bir ismi nitelemektedir.",
+    "İsim-fiildir.",
+    "Zarf-fiildir."
+   ],
+   "dogru": "A",
+   "cozum": "“Gelenler”de sıfat-fiilin nitelediği isim (kişiler) düşmüş, sıfat-fiil onun yerine geçmiştir; bu yüzden adlaşmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-fii-005",
+   "altKonu": "Adlaşmış sıfat-fiil",
+   "kaynakKod": "TUR-FİL-2",
+   "tur": "benzer",
+   "metin": "Hangisinde sıfat-fiil adlaşmamıştır?",
+   "secenekler": [
+    "Okuyanlar bilir.",
+    "Kırılan camı değiştirdik.",
+    "Bilmediğini sor.",
+    "Çalışan kazanır."
+   ],
+   "dogru": "B",
+   "cozum": "“Kırılan cam”da sıfat-fiil (kırılan) bir ismi (cam) niteliyor; isim düşmediği için adlaşmamıştır. Diğer üçünde isim düşmüş ve sıfat-fiil onun yerine geçmiştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-fii-006",
+   "altKonu": "Adlaşmış sıfat-fiil",
+   "kaynakKod": "TUR-FİL-2",
+   "tur": "benzer",
+   "metin": "“Ağlamayan çocuğa meme vermezler.” ve “Ağlamayana meme vermezler.” cümlelerindeki “ağlamayan” için hangisi doğrudur?",
+   "secenekler": [
+    "İkisinde de adlaşmıştır.",
+    "Birincide sıfat görevinde, ikincide adlaşmıştır.",
+    "İkisinde de isim-fiildir.",
+    "Birincide adlaşmış, ikincide sıfat görevindedir."
+   ],
+   "dogru": "B",
+   "cozum": "Birinci cümlede “ağlamayan”dan sonra “çocuk” ismi geldiği için sıfat görevindedir. İkincide isim düşmüştür (ağlayan kişi), yani adlaşmıştır.",
+   "emin": true
+  }
+ ]
 }

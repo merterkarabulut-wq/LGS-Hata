@@ -1,25 +1,103 @@
 {
-  "id": "ink-mil",
-  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
-  "unite": "02 - Millî Uyanış - Bağımsızlık Yolunda Atılan Adımlar",
-  "baslik": "Millî Uyanış",
-  "anlatim": [
-    {"baslik": "Birinci Dünya Savaşı'nın görünen nedeni", "metin": "Savaşın kıvılcımı, 28 Haziran 1914'te Saraybosna'da Avusturya-Macaristan veliahdinin ve eşinin bir Sırp milliyetçisi tarafından öldürülmesidir. Bu olay savaşı başlatan görünen nedendir; ancak tek neden değildir."},
-    {"baslik": "Birinci Dünya Savaşı'nın asıl nedenleri", "metin": "Savaşın asıl nedenleri arasında sömürgecilik, devletler arasındaki ekonomik ve siyasi rekabet, milliyetçilik ve bloklaşma sayılır. Bu nedenler, suikastın kendisinden bağımsız olarak savaşa zemin hazırlamıştır."},
-    {"baslik": "“Bu bilgiye göre” soruları", "metin": "Bu tür sorularda yalnızca verilen metin konuşur; kendi bildiğin doğru bir bilgi metinde yoksa o yargıya ulaşılabilir sayılmaz. Her yargıyı parçalara ayır ve her parçanın anahtar kelimesini metinde ara."},
-    {"baslik": "Ulaşılabilir ve ulaşılamaz yargılar", "metin": "“Ulaşılabilir” sorusunda metnin dayanağı olan yargılar doğrudur. “Ulaşılamaz” sorusunda ise metinden çıkmayan yargı cevaptır. Metinde açıkça söylenen ile metinden çıkarılabilen yargılar aynı kabul edilebilir."}
-  ],
-  "tuyolar": [
-    "“Bu bilgiye göre” sorusunda kendi bildiğin doğru bilgi değil, sadece metin konuşur.",
-    "Her öncülün anahtar kelimesini metinde ara; metinde yoksa o öncül ulaşılabilir değildir.",
-    "Birinci Dünya Savaşı'nın görünen nedeni suikast (1914), asıl nedenleri ekonomik ve siyasi rekabettir; metinde hangisi yazıyorsa onu esas al."
-  ],
-  "hatalar": [
-    {"kod": "İNK-MİL-1", "altKonu": "Birinci Dünya Savaşı", "soru": "Saraybosna suikastı ve savaşın asıl nedenini anlatan metinden I, II ve III yargılarından hangilerine ulaşılabileceği", "hata": "Sömürgeciliğin Birinci Dünya Savaşı'nın nedenlerinden biri olduğunu bildiği için II'yi doğru kabul etti. Oysa soruda “bu bilgiye göre” denmişti ve sömürgecilik metinde geçmiyordu. Cevabı B oldu; doğrusu A (yalnız I).", "dogruYol": "“Bu bilgiye göre” sorusunda yalnız metindeki bilgiler kullanılır. Her yargının metinde karşılığını ara; karşılığı yoksa, kitaptan bildiğin doğru olsa bile seçme."}
-  ],
-  "sorular": [
-    {"id": "ink-mil-001", "altKonu": "Birinci Dünya Savaşı'nın nedenleri", "kaynakKod": "İNK-MİL-1", "tur": "benzer", "metin": "“Sanayi İnkılabı'yla üretim arttı; Avrupa devletleri ham madde ve pazar arayışına girdi.” Bu bilgiye göre hangisine ulaşılabilir?", "secenekler": ["Sanayi İnkılabı ham madde ihtiyacını artırmıştır.", "Birinci Dünya Savaşı 1914'te başlamıştır.", "Osmanlı Devleti sanayileşmiştir.", "Avrupa'da milliyetçilik yayılmıştır."], "dogru": "A", "cozum": "Metin, üretim artışının ham madde ve pazar arayışını doğurduğunu söyler; bu da ham madde ihtiyacının arttığı anlamına gelir. B, C ve D metinde yer almaz.", "emin": true},
-    {"id": "ink-mil-002", "altKonu": "Birinci Dünya Savaşı'nın nedenleri", "kaynakKod": "İNK-MİL-1", "tur": "benzer", "metin": "Osmanlı Devleti, kaybettiği toprakları geri almak amacıyla Birinci Dünya Savaşı'na İttifak Devletleri yanında girmiştir. Bu bilgiye göre hangisine ULAŞILAMAZ?", "secenekler": ["Osmanlı savaşa bir amaçla girmiştir.", "Osmanlı İttifak grubunda yer almıştır.", "Osmanlı savaştan yenik çıkmıştır.", "Osmanlı daha önce toprak kaybetmiştir."], "dogru": "C", "cozum": "Metin savaşa giriş amacını ve ittifak tarafını anlatır; “kaybettiği toprakları” ifadesi daha önce toprak kaybedildiğini gösterir. Savaşın sonucu olan yenilgi metinde yoktur.", "emin": true},
-    {"id": "ink-mil-003", "altKonu": "“Bu bilgiye göre” soruları", "kaynakKod": "İNK-MİL-1", "tur": "benzer", "metin": "“Bu bilgiye göre” ifadesi olan bir soruda aşağıdakilerden hangisi doğru bir yaklaşımdır?", "secenekler": ["Konu hakkında bildiğin her doğru bilgiyi kabul etmek", "Yalnız metinde yazan ya da metinden çıkan yargıları kabul etmek", "En uzun şıkkı seçmek", "Tarih bilgisi en çok olan şıkkı seçmek"], "dogru": "B", "cozum": "“Bu bilgiye göre” sorularında yalnız metin konuşur. Kendi bilginle doğru olsa bile metinde karşılığı olmayan yargı kabul edilmez.", "emin": true}
-  ]
+ "id": "ink-mil",
+ "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+ "unite": "02 - Millî Uyanış - Bağımsızlık Yolunda Atılan Adımlar",
+ "baslik": "Millî Uyanış",
+ "anlatim": [
+  {
+   "baslik": "Birinci Dünya Savaşı'nın görünen nedeni",
+   "metin": "Savaşın kıvılcımı, 28 Haziran 1914'te Saraybosna'da Avusturya-Macaristan veliahdinin ve eşinin bir Sırp milliyetçisi tarafından öldürülmesidir. Bu olay savaşı başlatan görünen nedendir; ancak tek neden değildir."
+  },
+  {
+   "baslik": "Birinci Dünya Savaşı'nın asıl nedenleri",
+   "metin": "Savaşın asıl nedenleri arasında sömürgecilik, devletler arasındaki ekonomik ve siyasi rekabet, milliyetçilik ve bloklaşma sayılır. Bu nedenler, suikastın kendisinden bağımsız olarak savaşa zemin hazırlamıştır."
+  },
+  {
+   "baslik": "“Bu bilgiye göre” soruları",
+   "metin": "Bu tür sorularda yalnızca verilen metin konuşur; kendi bildiğin doğru bir bilgi metinde yoksa o yargıya ulaşılabilir sayılmaz. Her yargıyı parçalara ayır ve her parçanın anahtar kelimesini metinde ara."
+  },
+  {
+   "baslik": "Ulaşılabilir ve ulaşılamaz yargılar",
+   "metin": "“Ulaşılabilir” sorusunda metnin dayanağı olan yargılar doğrudur. “Ulaşılamaz” sorusunda ise metinden çıkmayan yargı cevaptır. Metinde açıkça söylenen ile metinden çıkarılabilen yargılar aynı kabul edilebilir."
+  }
+ ],
+ "tuyolar": [
+  "“Bu bilgiye göre” sorusunda kendi bildiğin doğru bilgi değil, sadece metin konuşur.",
+  "Her öncülün anahtar kelimesini metinde ara; metinde yoksa o öncül ulaşılabilir değildir.",
+  "Birinci Dünya Savaşı'nın görünen nedeni suikast (1914), asıl nedenleri ekonomik ve siyasi rekabettir; metinde hangisi yazıyorsa onu esas al."
+ ],
+ "hatalar": [
+  {
+   "kod": "İNK-MİL-1",
+   "altKonu": "Birinci Dünya Savaşı",
+   "soru": "Saraybosna suikastı ve savaşın asıl nedenini anlatan metinden I, II ve III yargılarından hangilerine ulaşılabileceği",
+   "hata": "Sömürgeciliğin Birinci Dünya Savaşı'nın nedenlerinden biri olduğunu bildiği için II'yi doğru kabul etti. Oysa soruda “bu bilgiye göre” denmişti ve sömürgecilik metinde geçmiyordu. Cevabı B oldu; doğrusu A (yalnız I).",
+   "dogruYol": "“Bu bilgiye göre” sorusunda yalnız metindeki bilgiler kullanılır. Her yargının metinde karşılığını ara; karşılığı yoksa, kitaptan bildiğin doğru olsa bile seçme.",
+   "gorsel": [
+    "sorular/INK-MIL-1.png"
+   ],
+   "cevap": "A) Yalnız I",
+   "senin": "B) I ve II (teyit bekleniyor)",
+   "cozum": [
+    "\"Bu bilgiye göre\" → yalnız metin konuşur.",
+    "I: Suikast (görünen neden) + \"asıl neden\" ekonomik ve siyasi rekabet → birden fazla neden ✓.",
+    "II: Metin asıl nedeni \"ekonomik ve siyasi rekabet\" diye veriyor; \"sömürgecilik\" metinde yok ✗.",
+    "III: Metin başlama nedeni olarak SUİKASTI gösteriyor; suikastçının milliyetçi olması milliyetçiliği neden yapmaz ✗.",
+    "Cevap A."
+   ],
+   "hataAnaliz": "Sömürgeciliğin Birinci Dünya Savaşı'nın nedenlerinden biri olduğunu biliyorsun; bu bilgi doğru! Ama soru \"Bu bilgiye göre\" diyor ve metinde sömürgecilik geçmiyor. Kendi bilgini metnin önüne koydun.",
+   "tuyo": "\"Bu bilgiye göre / metne göre\" sorularında her öncülün anahtar kelimesini metinde ara. Kitaptan bildiğin doğru bilgi, metinde yoksa seçilmez.",
+   "dikkat": "Birinci Dünya Savaşı: görünen neden = Saraybosna suikastı (1914). Asıl nedenler = sömürgecilik, ekonomik-siyasi rekabet, milliyetçilik, bloklaşma. Ama sadece metindekiler sayılır."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "ink-mil-001",
+   "altKonu": "Birinci Dünya Savaşı'nın nedenleri",
+   "kaynakKod": "İNK-MİL-1",
+   "tur": "benzer",
+   "metin": "“Sanayi İnkılabı'yla üretim arttı; Avrupa devletleri ham madde ve pazar arayışına girdi.” Bu bilgiye göre hangisine ulaşılabilir?",
+   "secenekler": [
+    "Sanayi İnkılabı ham madde ihtiyacını artırmıştır.",
+    "Birinci Dünya Savaşı 1914'te başlamıştır.",
+    "Osmanlı Devleti sanayileşmiştir.",
+    "Avrupa'da milliyetçilik yayılmıştır."
+   ],
+   "dogru": "A",
+   "cozum": "Metin, üretim artışının ham madde ve pazar arayışını doğurduğunu söyler; bu da ham madde ihtiyacının arttığı anlamına gelir. B, C ve D metinde yer almaz.",
+   "emin": true
+  },
+  {
+   "id": "ink-mil-002",
+   "altKonu": "Birinci Dünya Savaşı'nın nedenleri",
+   "kaynakKod": "İNK-MİL-1",
+   "tur": "benzer",
+   "metin": "Osmanlı Devleti, kaybettiği toprakları geri almak amacıyla Birinci Dünya Savaşı'na İttifak Devletleri yanında girmiştir. Bu bilgiye göre hangisine ULAŞILAMAZ?",
+   "secenekler": [
+    "Osmanlı savaşa bir amaçla girmiştir.",
+    "Osmanlı İttifak grubunda yer almıştır.",
+    "Osmanlı savaştan yenik çıkmıştır.",
+    "Osmanlı daha önce toprak kaybetmiştir."
+   ],
+   "dogru": "C",
+   "cozum": "Metin savaşa giriş amacını ve ittifak tarafını anlatır; “kaybettiği toprakları” ifadesi daha önce toprak kaybedildiğini gösterir. Savaşın sonucu olan yenilgi metinde yoktur.",
+   "emin": true
+  },
+  {
+   "id": "ink-mil-003",
+   "altKonu": "“Bu bilgiye göre” soruları",
+   "kaynakKod": "İNK-MİL-1",
+   "tur": "benzer",
+   "metin": "“Bu bilgiye göre” ifadesi olan bir soruda aşağıdakilerden hangisi doğru bir yaklaşımdır?",
+   "secenekler": [
+    "Konu hakkında bildiğin her doğru bilgiyi kabul etmek",
+    "Yalnız metinde yazan ya da metinden çıkan yargıları kabul etmek",
+    "En uzun şıkkı seçmek",
+    "Tarih bilgisi en çok olan şıkkı seçmek"
+   ],
+   "dogru": "B",
+   "cozum": "“Bu bilgiye göre” sorularında yalnız metin konuşur. Kendi bilginle doğru olsa bile metinde karşılığı olmayan yargı kabul edilmez.",
+   "emin": true
+  }
+ ]
 }

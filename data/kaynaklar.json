@@ -79,5 +79,23 @@
   "not": "Yeni set açılmadı; sorular mevcut setlere eklendi. WhatsApp fotoğrafları soru numarasıyla adlandırıldı. 1.jpeg = KK-1 fotoğrafının kopyası (zaten işlenmiş).",
   "no": 9,
   "tarih_metin": "29.10.2026"
+ },
+ {
+  "yukleme": "00 - Kaynaklar\\31.10.2026",
+  "tarih": "2026-10-31",
+  "islendi": "Evet",
+  "setler": "MAT ÇK Set 4, MAT KK Set 4 (yeni); TUR Sözcükte Anlam Set 1 (+11–12), TUR Paragrafta Anlam Set 1 (+11), İNK Millî Uyanış Set 1 (+2), DİN Kader İnancı Set 1 (+10), FEN DNA Set 1 (+4–5), FEN Mevsimler Set 1 (+21–26)",
+  "not": "Kural: Çalışmaya başlanmamış ünitelerde yeni set açılmaz, sorular mevcut sete eklenir; matematik bir tur çözüldüğü için yeni set. 15 fotoğraf, 16 soru. DİN-KAD-10 ve TUR-MTÜR-4 doğru ama “Emin değilim” işaretli.",
+  "no": 10,
+  "tarih_metin": "31.10.2026"
+ },
+ {
+  "yukleme": "Sohbet – matematik setleri tek sete indirildi",
+  "tarih": "2026-10-31",
+  "islendi": "Evet",
+  "setler": "MAT ÇK Set 1 (34 soru), MAT ÜS Set 1 (14), MAT KK Set 1 (2), Matematik\\Yeniden Dene",
+  "not": "Eski Set 2/3/4 dosyaları çöp kutusunda; fotoğraflar yeni numaralara göre yeniden adlandırıldı.",
+  "no": 11,
+  "tarih_metin": "31.10.2026"
  }
 ]

@@ -2,29 +2,29 @@
  {
   "ders": "Matematik",
   "unite": "01 - Çarpanlar ve Katlar",
-  "son_set": "Set 3",
-  "setler": "Set 1 (21.10.2026), Set 2 (22.10.2026), Set 3 (23.10.2026)",
-  "hatali_soru": 32,
+  "son_set": "Set 1",
+  "setler": "Set 1 (21.10.2026; 31.10.2026’da eski Set 2 → Soru 25–32 ve Set 4 → Soru 33–34 ile birleştirildi)",
+  "hatali_soru": 34,
   "konu_ozeti": false,
-  "siradaki_set": "Set 4"
+  "siradaki_set": "Set 2"
  },
  {
   "ders": "Matematik",
   "unite": "02 - Üslü İfadeler",
-  "son_set": "Set 3",
-  "setler": "Set 1 (21.10.2026), Set 2 (22.10.2026), Set 3 (23.10.2026); Set 3’e 2 soru eklendi (29.10.2026)",
+  "son_set": "Set 1",
+  "setler": "Set 1 (21.10.2026; 31.10.2026’da eski Set 2 → Soru 8–12, ÜS-14/15 → Soru 13–14 ile birleştirildi)",
   "hatali_soru": 14,
   "konu_ozeti": false,
-  "siradaki_set": "Set 4"
+  "siradaki_set": "Set 2"
  },
  {
   "ders": "Matematik",
   "unite": "03 - Kareköklü İfadeler",
-  "son_set": "Set 3 (ortak tekrar seti)",
-  "setler": "Set 3 (26.10.2026 – Matematik ortak tekrar setine eklendi)",
-  "hatali_soru": 1,
+  "son_set": "Set 1",
+  "setler": "Set 1 (31.10.2026: Soru 1 = KK-1, Soru 2 = KK-2)",
+  "hatali_soru": 2,
   "konu_ozeti": false,
-  "siradaki_set": "Set 4"
+  "siradaki_set": "Set 2"
  },
  {
   "ders": "Matematik",
@@ -102,8 +102,8 @@
   "ders": "Türkçe",
   "unite": "01 - Sözcükte Anlam",
   "son_set": "Set 1",
-  "setler": "Set 1 (22.10.2026)",
-  "hatali_soru": 10,
+  "setler": "Set 1 (22.10.2026); Set 1’e 2 soru eklendi (31.10.2026)",
+  "hatali_soru": 12,
   "konu_ozeti": true,
   "siradaki_set": "Set 2"
  },
@@ -120,8 +120,8 @@
   "ders": "Türkçe",
   "unite": "03 - Paragrafta Anlam",
   "son_set": "Set 2",
-  "setler": "Set 1 (22.10.2026), Set 2 (25.10.2026)",
-  "hatali_soru": 15,
+  "setler": "Set 1 (22.10.2026), Set 2 (25.10.2026); Set 1’e 1 soru eklendi (31.10.2026)",
+  "hatali_soru": 16,
   "konu_ozeti": true,
   "siradaki_set": "Set 3"
  },
@@ -174,8 +174,8 @@
   "ders": "Fen Bilimleri",
   "unite": "01 - Mevsimler ve İklim",
   "son_set": "Set 1",
-  "setler": "Set 1 (22.10.2026)",
-  "hatali_soru": 20,
+  "setler": "Set 1 (22.10.2026); Set 1’e 6 soru eklendi (31.10.2026)",
+  "hatali_soru": 26,
   "konu_ozeti": true,
   "siradaki_set": "Set 2"
  },
@@ -183,8 +183,8 @@
   "ders": "Fen Bilimleri",
   "unite": "02 - DNA ve Genetik Kod",
   "son_set": "Set 1",
-  "setler": "Set 1 (22.10.2026)",
-  "hatali_soru": 3,
+  "setler": "Set 1 (22.10.2026); Set 1’e 2 soru eklendi (31.10.2026)",
+  "hatali_soru": 5,
   "konu_ozeti": false,
   "siradaki_set": "Set 2"
  },
@@ -246,8 +246,8 @@
   "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
   "unite": "02 - Millî Uyanış - Bağımsızlık Yolunda Atılan Adımlar",
   "son_set": "Set 1",
-  "setler": "Set 1 (26.10.2026)",
-  "hatali_soru": 1,
+  "setler": "Set 1 (26.10.2026); Set 1’e 1 soru eklendi (31.10.2026)",
+  "hatali_soru": 2,
   "konu_ozeti": false,
   "siradaki_set": "Set 2"
  },
@@ -291,8 +291,8 @@
   "ders": "Din Kültürü ve Ahlak Bilgisi",
   "unite": "01 - Kader İnancı",
   "son_set": "Set 1",
-  "setler": "Set 1 (26.10.2026); Set 1’e 1 soru eklendi (29.10.2026)",
-  "hatali_soru": 9,
+  "setler": "Set 1 (26.10.2026); Set 1’e 1 soru eklendi (29.10.2026); Set 1’e 1 soru eklendi (31.10.2026)",
+  "hatali_soru": 10,
   "konu_ozeti": false,
   "siradaki_set": "Set 2"
  },

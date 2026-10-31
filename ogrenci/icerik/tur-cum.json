@@ -1,99 +1,713 @@
 {
-  "id": "tur-cum",
-  "ders": "Türkçe",
-  "unite": "02 - Cümlede Anlam",
-  "baslik": "Cümlede Anlam",
-  "anlatim": [
-    {
-      "baslik": "Neden, sonuç, koşul ve amaç",
-      "metin": "Cümleler arasındaki anlam ilişkisi bağlaçlar ve eklerle kurulur. Neden ilişkisinde “çünkü”, “-dığı için”, “-den dolayı” kullanılır (Çok yorulduğum için erken uyudum). Sonuç ilişkisinde “bu yüzden”, “bu nedenle”, “böylece” gelir (Yol kapandı, bu yüzden okula gidemedik). Koşul ilişkisinde “-se/-sa”, “-dıkça”, “şartıyla”, “-mesi hâlinde” kullanılır ve olay henüz gerçekleşmemiştir (Erken çıkarsan treni yakalarsın). Amaç ilişkisinde “için” ya da “-mek amacıyla” gelir (Sınavı kazanmak için çalışıyor)."
-    },
-    {
-      "baslik": "“İçin” neden mi, amaç mı?",
-      "metin": "“İçin”den önceki olay gerçekleşmiş bir sebepse bu neden anlamıdır (yorulduğum için = yorulduğumdan). Henüz olmamış, istenen bir hedefse amaç anlamıdır (kazanmak için = kazanmak amacıyla). Ayırt etmek için “için” yerine “olduğundan” koy: anlam tutuyorsa neden, tutmuyorsa amaçtır. Örnek: “Konuyu anlamadığı için ona yardım ettim” (neden), “Konuyu anlaması için ona yardım ettim” (amaç)."
-    },
-    {
-      "baslik": "Tasarı ve beklenti",
-      "metin": "Tasarı, kişinin kendi yapmayı düşündüğü bir şeyi anlatır; “planlıyorum”, “düşünüyorum”, “niyetim var” gibi ifadelerle kurulur. Beklenti ise bir şeyin olmasını ummaktır; “umarım”, “umuyorum”, “inşallah” ile anlatılır. Kendi yapacağın bir işi planlıyorsan tasarıdır; bir şeyin olmasını umuyorsan beklentidir."
-    },
-    {
-      "baslik": "Azımsama, küçümseme, sitem ve pişmanlık",
-      "metin": "Azımsama, bir miktarı az bulmaktır; “bu kadarcık”, “sadece”, “ancak” ile kurulur. Küçümseme ise bir kişiyi ya da şeyi değersiz görmektir. Sitem, kırgınlıkla yapılan serzenişdir (“Herkese pay verdin, bir tek beni görmezden geldin!”). Pişmanlık “keşke” ve “-meseydim” ile anlatılır (Keşke o gün sana kızmasaydım)."
-    },
-    {
-      "baslik": "Özlem, beğeni ve yargı türleri",
-      "metin": "Özlem, bir şeyin yokluğunu duymaktır (“Çocukluğumun sokaklarını çok özledim.”). Beğeni, bir şeyin güzelliğine ya da etkileyiciliğine duyulan hayranlıktır (“Ressamın renkleri kullanışı çok etkileyici.”). Öznel yargı, kişiden kişiye değişen görüştür; “bence”, “bana göre” ile kurulur. Nesnel yargı ölçülebilen ya da kanıtlanabilen bilgidir (Su, deniz seviyesinde 100 °C’de kaynar)."
-    }
-  ],
-  "tuyolar": [
-    "“Çünkü” ile başlayan cümle kendinden önceki cümlenin nedenidir, sonucu değildir.",
-    "“-dıkça” ve “-se/-sa” ekleri koşul bildirir; olay henüz gerçekleşmemişse koşuldur.",
-    "Neden gerçekleşmiş bir sebeptir (“-dığı için”); amaç ise henüz olmamış, istenen bir hedeftir (“-mek için”).",
-    "“İçin” sözcüğünde “olduğundan” koyup anlam tutuyorsa neden, tutmuyorsa amaçtır.",
-    "Dizeleri ya da cümleleri “… için / … olduğundan” ile bağlayabiliyorsan neden; “-se/-sa” ile bağlanıyorsa koşuldur.",
-    "Plan tasarıdır, umut beklentidir: “planlıyorum” ile “umarım” birbirine karıştırılmamalıdır.",
-    "Miktarı az bulmak azımsamadır (“bu kadarcık”), birini değersiz görmek küçümsemedir.",
-    "Sitem kırgınlıkla yapılan serzenişdir; pişmanlık “keşke” ve “-meseydim” ile anlatılır."
-  ],
-  "hatalar": [
-    {
-      "kod": "TUR-CÜM-1",
-      "altKonu": "Neden, sonuç, koşul ve amaç",
-      "soru": "Albedo metninin numaralı cümleleriyle ilgili, söylenemeyen seçeneğin bulunması.",
-      "hata": "“Çünkü” ile başlayan III. cümlenin II. cümledeki yargının nedeni olduğunu görmedi; IV. cümledeki “-dıkça” ekinin koşul bildirdiğini tanımadığı için D şıkkını seçti.",
-      "dogruYol": "Bağlaç tablosunu kullan: çünkü, -dığı için → neden; bu yüzden → sonuç; -se/-sa, -dıkça → koşul; için, -mek amacıyla → amaç. Cevap: III. cümle II. cümlenin sonucudur demek söylenemez."
-    },
-    {
-      "kod": "TUR-CÜM-3",
-      "altKonu": "Neden ve koşul ayrımı",
-      "soru": "Hangi dizede birinci dizenin ikinci dizedeki yargının nedeni olduğu.",
-      "hata": "D şıkkındaki “duysam” sözündeki -se/-sa koşul ekini görmesine rağmen “kokular duyarsam ölürüm” biçimindeki ilişkiyi neden–sonuç sandı.",
-      "dogruYol": "Dizeleri “için / olduğundan” ile bağla: anlamlıysa neden. “-se/-sa” ile bağlanıyor ve olay henüz gerçekleşmemişse koşuldur. Cevap: A (derde tutulduğum için içim savruluyor)."
-    },
-    {
-      "kod": "TUR-CÜM-2",
-      "altKonu": "Duygu ve yargı bildiren cümleler",
-      "soru": "Anlam özelliği verilen cümlelerden hangisinin verilen kavrama uygun olmadığı.",
-      "hata": "I. cümledeki “planlıyorum” ifadesinin tasarı olduğunu görmeyip beklenti etiketini kabul etti; II. cümledeki “bu kadarcık” ifadesini küçümseme sanarak B şıkkını seçti.",
-      "dogruYol": "Tasarı kendi yapacağın şeyi planlamaktır; beklenti bir şeyin olmasını ummaktır. Miktarı az bulmak azımsama, birini değersiz görmek küçümsemedir. Cevap: A (I)."
-    }
-  ],
-  "sorular": [
-    {"id": "tur-cum-001", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "benzer", "metin": "“Sınavdan yüksek not aldı. Çünkü her gün düzenli çalışmıştı.” İkinci cümle birinciye göre neyi bildirir?", "secenekler": ["Sonuç", "Neden", "Koşul", "Amaç"], "dogru": "B", "cozum": "“Çünkü” ile başlayan cümle, kendinden önceki yargının nedenini verir.", "emin": true},
-    {"id": "tur-cum-002", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "benzer", "metin": "“Kitap okudukça kelime dağarcığın genişler.” cümlesinde “-dıkça” hangi anlamı katar?", "secenekler": ["Amaç", "Koşul (ölçü)", "Karşılaştırma", "Neden"], "dogru": "B", "cozum": "“-dıkça” ölçü–koşul anlamı katar: okudukça genişler.", "emin": true},
-    {"id": "tur-cum-003", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "benzer", "metin": "“Yağmur çok yağdı, bu yüzden maç ertelendi.” cümlesinde “maç ertelendi” bölümü neyi bildirir?", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "B", "cozum": "“Bu yüzden” ile bağlanan ikinci bölüm, yağmurun sonucudur.", "emin": true},
-    {"id": "tur-cum-004", "altKonu": "Neden ve koşul ayrımı", "kaynakKod": "TUR-CÜM-3", "tur": "benzer", "metin": "“Erken kalkarsan otobüsü kaçırmazsın.” cümlesinde hangi anlam ilişkisi vardır?", "secenekler": ["Neden–sonuç", "Koşul–sonuç", "Amaç–sonuç", "Karşılaştırma"], "dogru": "B", "cozum": "“-arsan” koşul ekidir; erken kalkmak henüz gerçekleşmemiş bir şarta bağlıdır.", "emin": true},
-    {"id": "tur-cum-005", "altKonu": "Neden ve koşul ayrımı", "kaynakKod": "TUR-CÜM-3", "tur": "benzer", "metin": "“Çok yorulduğu için erkenden uyudu.” cümlesinde hangi anlam ilişkisi vardır?", "secenekler": ["Neden–sonuç", "Koşul–sonuç", "Amaç–sonuç", "Benzetme"], "dogru": "A", "cozum": "“Çok yorulduğu için” gerçekleşmiş bir neden, “erkenden uyudu” ise sonuçtur.", "emin": true},
-    {"id": "tur-cum-006", "altKonu": "Neden ve koşul ayrımı", "kaynakKod": "TUR-CÜM-3", "tur": "benzer", "metin": "Hangisinde neden–sonuç ilişkisi vardır?", "secenekler": ["Ders çalışırsan başarırsın.", "Yağmur yağdığından maç ertelendi.", "Kazanmak için çalışıyor.", "Hava güzel olursa pikniğe gideriz."], "dogru": "B", "cozum": "“Yağmur yağdığından” gerçekleşmiş bir nedendir; maç ertelenmiştir.", "emin": true},
-    {"id": "tur-cum-007", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "benzer", "metin": "“Yaz tatilinde dedemin köyüne gitmeyi düşünüyorum.” cümlesinde hangi anlam vardır?", "secenekler": ["Beklenti", "Tasarı", "Pişmanlık", "Sitem"], "dogru": "B", "cozum": "“Düşünüyorum” ifadesi kişinin kendi yapmayı planladığı bir şeyi anlatır: tasarıdır.", "emin": true},
-    {"id": "tur-cum-008", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "benzer", "metin": "“Bu kadar emeğe karşılık sadece iki ekmek mi?” cümlesinde hangi anlam vardır?", "secenekler": ["Azımsama", "Beğeni", "Tasarı", "Özlem"], "dogru": "A", "cozum": "“Sadece” ile miktar az bulunmuştur: azımsamadır.", "emin": true},
-    {"id": "tur-cum-009", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "benzer", "metin": "“Umarım bu yıl takımımız şampiyon olur.” cümlesinde hangi anlam vardır?", "secenekler": ["Tasarı", "Beklenti (umut)", "Küçümseme", "Pişmanlık"], "dogru": "B", "cozum": "“Umarım” bir şeyin olmasını ummak, yani beklentidir.", "emin": true},
-    {"id": "tur-cum-010", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm (« » içindeki kısım) hangi anlam ilişkisini bildiriyor?\nCümle: Sınavdan yüksek not aldı, «çünkü her gün düzenli çalışmıştı».", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "A", "cozum": "“Çünkü” ile bağlanan kısım, yüksek notun nedenidir.", "emin": true},
-    {"id": "tur-cum-011", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Kitap okudukça» kelime dağarcığın genişler.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "C", "cozum": "“-dıkça” ölçü–koşul ekidir.", "emin": true},
-    {"id": "tur-cum-012", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Sağlıklı kalmak için» her sabah yürüyüş yapıyor.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "D", "cozum": "Sağlıklı kalmak henüz olmamış, istenen bir hedeftir: amaçtır.", "emin": true},
-    {"id": "tur-cum-013", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Yol kapandı, «bu yüzden okula gidemedik».", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "B", "cozum": "Yolun kapanması, okula gidilememesinin nedenidir; kalın bölüm sonuçtur.", "emin": true},
-    {"id": "tur-cum-014", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Erken yatarsan» sabah dinç kalkarsın.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "C", "cozum": "“-arsan” ekiyle kurulan kısım şarta bağlıdır: koşuldur.", "emin": true},
-    {"id": "tur-cum-015", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Hava çok soğuk olduğundan «sokaklar bomboştu».", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "B", "cozum": "Havanın soğuk olması nedendir; sokakların boş olması sonuçtur.", "emin": true},
-    {"id": "tur-cum-016", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Ödevini bitirmen şartıyla» dışarı çıkabilirsin.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "C", "cozum": "“Şartıyla” ile kurulan kısım koşul bildirir.", "emin": true},
-    {"id": "tur-cum-017", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Takımının kazanması için» bütün gün tezahürat yaptı.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "D", "cozum": "Kazanmak henüz olmamış bir hedeftir: amaçtır.", "emin": true},
-    {"id": "tur-cum-018", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Çok yorulduğum için» erken uyudum.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "A", "cozum": "Gerçekleşmiş bir sebep olduğu için neden bildirir.", "emin": true},
-    {"id": "tur-cum-019", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Ders notlarını düzenli tuttu, «böylece sınavda zorlanmadı».", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "B", "cozum": "“Böylece” ile bağlanan kısım sonuç bildirir.", "emin": true},
-    {"id": "tur-cum-020", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Işığı kapatmak amacıyla» anahtara uzandı.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "D", "cozum": "“-mek amacıyla” ile kurulan kısım amaç bildirir.", "emin": true},
-    {"id": "tur-cum-021", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Sesin kısık olduğundan» seni duyamadım.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "A", "cozum": "“-dığından” ile bağlanan gerçekleşmiş sebeptir: neden.", "emin": true},
-    {"id": "tur-cum-022", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Zamanında ilaç içmezse» hastalığı uzar.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "C", "cozum": "“-mezse” ekiyle kurulan kısım şarta bağlıdır: koşuldur.", "emin": true},
-    {"id": "tur-cum-023", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Pil bittiği için «telefon kapandı».", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "B", "cozum": "Pilin bitmesi nedendir; telefonun kapanması sonuçtur.", "emin": true},
-    {"id": "tur-cum-024", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Yeterince uyumadığı için» derste sürekli esniyordu.", "secenekler": ["Neden", "Sonuç", "Koşul", "Amaç"], "dogru": "A", "cozum": "Gerçekleşmiş bir sebep olduğu için neden bildirir.", "emin": true},
-    {"id": "tur-cum-025", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun (A tasarı, B beklenti, C azımsama, D küçümseme, E sitem, F pişmanlık, G özlem, H beğeni).\nCümle: Sen mi bu işi başaracaksın, kendine bir bak!", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "D", "cozum": "Bir kişiyi değersiz görme vardır: küçümseme.", "emin": true},
-    {"id": "tur-cum-026", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Ressamın renkleri kullanışı gerçekten çok etkileyici.", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "H", "cozum": "Bir şeyin etkileyiciliğine hayranlık duyulmuştur: beğeni.", "emin": true},
-    {"id": "tur-cum-027", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Hafta sonu ailemle piknik yapmayı düşünüyorum.", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "A", "cozum": "Kendi yapılacak bir plan anlatılmıştır: tasarı.", "emin": true},
-    {"id": "tur-cum-028", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Keşke o gün sana kızmasaydım.", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "F", "cozum": "“Keşke” ve “-masaydım” pişmanlık bildirir.", "emin": true},
-    {"id": "tur-cum-029", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Umarım yarınki sınavda sorular kolay çıkar.", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "B", "cozum": "“Umarım” ile bir şeyin olması umulmaktadır: beklenti.", "emin": true},
-    {"id": "tur-cum-030", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Keşke zamanında çalışsaydım, şimdi bu kadar zorlanmazdım.", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "F", "cozum": "“Keşke” ve geçmiş bir fırsatın kaçırılması pişmanlıktır.", "emin": true},
-    {"id": "tur-cum-031", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Bunca yıldır bir kere olsun aramadın beni!", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "E", "cozum": "Kırgınlıkla yapılan serzeniş sitemdir.", "emin": true},
-    {"id": "tur-cum-032", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Çocukluğumun geçtiği o sokakları ne çok özledim.", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "G", "cozum": "Bir şeyin yokluğunu duymak özlemdir.", "emin": true},
-    {"id": "tur-cum-033", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Bu kadarcık yemekle bu kalabalık doyar mı?", "secenekler": ["tasarı", "beklenti", "azımsama", "küçümseme", "sitem", "pişmanlık", "özlem", "beğeni"], "dogru": "C", "cozum": "“Bu kadarcık” ile bir miktarın az bulunduğu azımsamadır.", "emin": true},
-    {"id": "tur-cum-034", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Yargı öznel mi (Ö) nesnel mi (N)?\nCümle: Bence bu film yılın en sıkıcı filmiydi.", "secenekler": ["Öznel", "Nesnel"], "dogru": "A", "cozum": "“Bence” ile kişisel bir görüş bildirilmiştir: öznel.", "emin": true},
-    {"id": "tur-cum-035", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Yargı öznel mi (Ö) nesnel mi (N)?\nCümle: Ankara, Türkiye’nin başkentidir.", "secenekler": ["Öznel", "Nesnel"], "dogru": "B", "cozum": "Herkesin kanıtlayabileceği bir bilgidir: nesnel.", "emin": true},
-    {"id": "tur-cum-036", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Yargı öznel mi (Ö) nesnel mi (N)?\nCümle: Bu müzenin en etkileyici salonu, bana göre, ikinci kattakidir.", "secenekler": ["Öznel", "Nesnel"], "dogru": "A", "cozum": "“Bana göre” ile kişiye göre değişen bir görüş bildirilmiştir: öznel.", "emin": true}
-  ]
+ "id": "tur-cum",
+ "ders": "Türkçe",
+ "unite": "02 - Cümlede Anlam",
+ "baslik": "Cümlede Anlam",
+ "anlatim": [
+  {
+   "baslik": "Neden, sonuç, koşul ve amaç",
+   "metin": "Cümleler arasındaki anlam ilişkisi bağlaçlar ve eklerle kurulur. Neden ilişkisinde “çünkü”, “-dığı için”, “-den dolayı” kullanılır (Çok yorulduğum için erken uyudum). Sonuç ilişkisinde “bu yüzden”, “bu nedenle”, “böylece” gelir (Yol kapandı, bu yüzden okula gidemedik). Koşul ilişkisinde “-se/-sa”, “-dıkça”, “şartıyla”, “-mesi hâlinde” kullanılır ve olay henüz gerçekleşmemiştir (Erken çıkarsan treni yakalarsın). Amaç ilişkisinde “için” ya da “-mek amacıyla” gelir (Sınavı kazanmak için çalışıyor)."
+  },
+  {
+   "baslik": "“İçin” neden mi, amaç mı?",
+   "metin": "“İçin”den önceki olay gerçekleşmiş bir sebepse bu neden anlamıdır (yorulduğum için = yorulduğumdan). Henüz olmamış, istenen bir hedefse amaç anlamıdır (kazanmak için = kazanmak amacıyla). Ayırt etmek için “için” yerine “olduğundan” koy: anlam tutuyorsa neden, tutmuyorsa amaçtır. Örnek: “Konuyu anlamadığı için ona yardım ettim” (neden), “Konuyu anlaması için ona yardım ettim” (amaç)."
+  },
+  {
+   "baslik": "Tasarı ve beklenti",
+   "metin": "Tasarı, kişinin kendi yapmayı düşündüğü bir şeyi anlatır; “planlıyorum”, “düşünüyorum”, “niyetim var” gibi ifadelerle kurulur. Beklenti ise bir şeyin olmasını ummaktır; “umarım”, “umuyorum”, “inşallah” ile anlatılır. Kendi yapacağın bir işi planlıyorsan tasarıdır; bir şeyin olmasını umuyorsan beklentidir."
+  },
+  {
+   "baslik": "Azımsama, küçümseme, sitem ve pişmanlık",
+   "metin": "Azımsama, bir miktarı az bulmaktır; “bu kadarcık”, “sadece”, “ancak” ile kurulur. Küçümseme ise bir kişiyi ya da şeyi değersiz görmektir. Sitem, kırgınlıkla yapılan serzenişdir (“Herkese pay verdin, bir tek beni görmezden geldin!”). Pişmanlık “keşke” ve “-meseydim” ile anlatılır (Keşke o gün sana kızmasaydım)."
+  },
+  {
+   "baslik": "Özlem, beğeni ve yargı türleri",
+   "metin": "Özlem, bir şeyin yokluğunu duymaktır (“Çocukluğumun sokaklarını çok özledim.”). Beğeni, bir şeyin güzelliğine ya da etkileyiciliğine duyulan hayranlıktır (“Ressamın renkleri kullanışı çok etkileyici.”). Öznel yargı, kişiden kişiye değişen görüştür; “bence”, “bana göre” ile kurulur. Nesnel yargı ölçülebilen ya da kanıtlanabilen bilgidir (Su, deniz seviyesinde 100 °C’de kaynar)."
+  }
+ ],
+ "tuyolar": [
+  "“Çünkü” ile başlayan cümle kendinden önceki cümlenin nedenidir, sonucu değildir.",
+  "“-dıkça” ve “-se/-sa” ekleri koşul bildirir; olay henüz gerçekleşmemişse koşuldur.",
+  "Neden gerçekleşmiş bir sebeptir (“-dığı için”); amaç ise henüz olmamış, istenen bir hedeftir (“-mek için”).",
+  "“İçin” sözcüğünde “olduğundan” koyup anlam tutuyorsa neden, tutmuyorsa amaçtır.",
+  "Dizeleri ya da cümleleri “… için / … olduğundan” ile bağlayabiliyorsan neden; “-se/-sa” ile bağlanıyorsa koşuldur.",
+  "Plan tasarıdır, umut beklentidir: “planlıyorum” ile “umarım” birbirine karıştırılmamalıdır.",
+  "Miktarı az bulmak azımsamadır (“bu kadarcık”), birini değersiz görmek küçümsemedir.",
+  "Sitem kırgınlıkla yapılan serzenişdir; pişmanlık “keşke” ve “-meseydim” ile anlatılır."
+ ],
+ "hatalar": [
+  {
+   "kod": "TUR-CÜM-1",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "soru": "Albedo metninin numaralı cümleleriyle ilgili, söylenemeyen seçeneğin bulunması.",
+   "hata": "“Çünkü” ile başlayan III. cümlenin II. cümledeki yargının nedeni olduğunu görmedi; IV. cümledeki “-dıkça” ekinin koşul bildirdiğini tanımadığı için D şıkkını seçti.",
+   "dogruYol": "Bağlaç tablosunu kullan: çünkü, -dığı için → neden; bu yüzden → sonuç; -se/-sa, -dıkça → koşul; için, -mek amacıyla → amaç. Cevap: III. cümle II. cümlenin sonucudur demek söylenemez.",
+   "gorsel": [
+    "sorular/TUR-CUM-1.png"
+   ],
+   "cevap": "C",
+   "senin": "D",
+   "cozum": [
+    "Soru kökü olumsuz: \"söylenemez\". Her şıkka ✓/✗ koy.",
+    "A: I. cümle albedonun ne olduğunu açıklıyor (tanım) ✓.",
+    "B: II. cümle albedo azalmasının nedenini veriyor (artan sıcaklıklar) ✓.",
+    "D: IV. cümlede \"albedo etkisi düştükçe\" → yargı bir koşula bağlı ✓.",
+    "C: III. cümle \"Çünkü\" ile başlıyor: II'deki yargının GEREKÇESİ/nedenidir, sonucu değildir → C söylenemez ✗. Cevap C."
+   ],
+   "hataAnaliz": "(1) \"Çünkü\" ile başlayan cümlenin NEDEN (gerekçe) bildirdiğini görmedin. (2) \"-dıkça\" ekinin koşul bildirdiğini tanımadın. TUR-CÜM-3 ile aynı aile.",
+   "tuyo": "Bağlaç–anlam tablosu: \"çünkü, -dığı için, -den dolayı\" → NEDEN. \"bu yüzden, bu nedenle, böylece\" → SONUÇ. \"-se/-sa, -dıkça, -mesi hâlinde, şartıyla\" → KOŞUL. \"için, -mek amacıyla\" → AMAÇ. Önce bağlacın/ekin altını çiz, sonra tabloya bak.",
+   "dikkat": "\"Çünkü\" cümlesi kendinden önceki cümlenin nedenidir, sonucu değil."
+  },
+  {
+   "kod": "TUR-CÜM-3",
+   "altKonu": "Neden ve koşul ayrımı",
+   "soru": "Hangi dizede birinci dizenin ikinci dizedeki yargının nedeni olduğu.",
+   "hata": "D şıkkındaki “duysam” sözündeki -se/-sa koşul ekini görmesine rağmen “kokular duyarsam ölürüm” biçimindeki ilişkiyi neden–sonuç sandı.",
+   "dogruYol": "Dizeleri “için / olduğundan” ile bağla: anlamlıysa neden. “-se/-sa” ile bağlanıyor ve olay henüz gerçekleşmemişse koşuldur. Cevap: A (derde tutulduğum için içim savruluyor).",
+   "gorsel": [
+    "sorular/TUR-CUM-3.png"
+   ],
+   "cevap": "A",
+   "senin": "D",
+   "cozum": [
+    "Test: Dizeleri \"... için / ... olduğundan\" ile bağla; anlamlıysa NEDEN.",
+    "A: Onulmaz bir derde tutulduğum İÇİN içim harman gibi savruluyor ✓ → neden–sonuç.",
+    "D: \"Duysam\" → -se/-sa koşul ekidir: \"Kokular duyarsam özleminden ölürüm.\" Olay henüz gerçekleşmemiş, şarta bağlı → KOŞUL–sonuç, neden değil ✗.",
+    "Cevap A."
+   ],
+   "hataAnaliz": "Kendi yazdığın \"duyARSA\" ifadesindeki koşul ekini (-se/-sa) görmene rağmen bunu neden–sonuç saydın. TUR-CÜM-1 ile aynı aile (koşulu tanımama).",
+   "tuyo": "Dizeleri \"... için / ... olduğundan\" ile bağla; anlamlıysa NEDEN. \"... -se/-sa\" ile bağlanıyorsa ve olay henüz gerçekleşmemişse → KOŞUL (kokular duyarsam ölürüm).",
+   "dikkat": "Neden = gerçekleşmiş bir sebep (\"-dığı için\"). Koşul = gerçekleşmesi şarta bağlı (\"-se/-sa\"). Kendi notunda \"-se/-sa\" yazıyorsan cevap koşuldur. Duygu ve yargı bildiren cümleler (tasarı, beklenti, azımsama, sitem …)"
+  },
+  {
+   "kod": "TUR-CÜM-2",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "soru": "Anlam özelliği verilen cümlelerden hangisinin verilen kavrama uygun olmadığı.",
+   "hata": "I. cümledeki “planlıyorum” ifadesinin tasarı olduğunu görmeyip beklenti etiketini kabul etti; II. cümledeki “bu kadarcık” ifadesini küçümseme sanarak B şıkkını seçti.",
+   "dogruYol": "Tasarı kendi yapacağın şeyi planlamaktır; beklenti bir şeyin olmasını ummaktır. Miktarı az bulmak azımsama, birini değersiz görmek küçümsemedir. Cevap: A (I).",
+   "gorsel": [
+    "sorular/TUR-CUM-2.png"
+   ],
+   "cevap": "A) I",
+   "senin": "B) II",
+   "cozum": [
+    "Her cümlenin anahtar kelimesini bul ve etiketle karşılaştır.",
+    "I: \"Bir toplantı yapmayı planlıyorum\" → bir plan/niyet var → TASARI. Etiket \"beklenti\" olduğu için uygun değil ✗.",
+    "II: \"Bu kadarcık ücret\" → miktarı az bulmak → azımsama ✓.",
+    "III: Şairin dilini beğenmek → beğeni ✓. IV: \"Bir tek beni görmezden geldin!\" → kırgınlık → sitem ✓.",
+    "Beklenti, bir şeyin olmasını ummaktır (örn. \"Bu toplantıdan güzel kararlar çıkmasını umuyorum.\")."
+   ],
+   "hataAnaliz": "İki karışıklık oldu: (1) tasarı ↔ beklenti; (2) azımsama ↔ küçümseme. \"Bu kadarcık ücret\" bir MİKTARI az bulmaktır (azımsama); küçümseme ise bir kişiyi ya da şeyi değersiz görmektir. II'yi \"küçümseme olmalı\" diye yanlış saydın.",
+   "tuyo": "Anlam özellikleri kartı: Tasarı → planlıyorum, düşünüyorum. Beklenti → umuyorum, inşallah. Azımsama → bu kadarcık, sadece, ancak (miktar az bulunur). Küçümseme → kişiyi/şeyi değersiz görme (\"Sen kim, şarkı söylemek kim!\"). Sitem → kırgınlıkla serzeniş. Pişmanlık → keşke, -meseydim.",
+   "dikkat": "Plan = tasarı, umut = beklenti. Miktarı az bulmak = azımsama; birini değersiz görmek = küçümseme."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "tur-cum-001",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "benzer",
+   "metin": "“Sınavdan yüksek not aldı. Çünkü her gün düzenli çalışmıştı.” İkinci cümle birinciye göre neyi bildirir?",
+   "secenekler": [
+    "Sonuç",
+    "Neden",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "B",
+   "cozum": "“Çünkü” ile başlayan cümle, kendinden önceki yargının nedenini verir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-002",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "benzer",
+   "metin": "“Kitap okudukça kelime dağarcığın genişler.” cümlesinde “-dıkça” hangi anlamı katar?",
+   "secenekler": [
+    "Amaç",
+    "Koşul (ölçü)",
+    "Karşılaştırma",
+    "Neden"
+   ],
+   "dogru": "B",
+   "cozum": "“-dıkça” ölçü–koşul anlamı katar: okudukça genişler.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-003",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "benzer",
+   "metin": "“Yağmur çok yağdı, bu yüzden maç ertelendi.” cümlesinde “maç ertelendi” bölümü neyi bildirir?",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "B",
+   "cozum": "“Bu yüzden” ile bağlanan ikinci bölüm, yağmurun sonucudur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-004",
+   "altKonu": "Neden ve koşul ayrımı",
+   "kaynakKod": "TUR-CÜM-3",
+   "tur": "benzer",
+   "metin": "“Erken kalkarsan otobüsü kaçırmazsın.” cümlesinde hangi anlam ilişkisi vardır?",
+   "secenekler": [
+    "Neden–sonuç",
+    "Koşul–sonuç",
+    "Amaç–sonuç",
+    "Karşılaştırma"
+   ],
+   "dogru": "B",
+   "cozum": "“-arsan” koşul ekidir; erken kalkmak henüz gerçekleşmemiş bir şarta bağlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-005",
+   "altKonu": "Neden ve koşul ayrımı",
+   "kaynakKod": "TUR-CÜM-3",
+   "tur": "benzer",
+   "metin": "“Çok yorulduğu için erkenden uyudu.” cümlesinde hangi anlam ilişkisi vardır?",
+   "secenekler": [
+    "Neden–sonuç",
+    "Koşul–sonuç",
+    "Amaç–sonuç",
+    "Benzetme"
+   ],
+   "dogru": "A",
+   "cozum": "“Çok yorulduğu için” gerçekleşmiş bir neden, “erkenden uyudu” ise sonuçtur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-006",
+   "altKonu": "Neden ve koşul ayrımı",
+   "kaynakKod": "TUR-CÜM-3",
+   "tur": "benzer",
+   "metin": "Hangisinde neden–sonuç ilişkisi vardır?",
+   "secenekler": [
+    "Ders çalışırsan başarırsın.",
+    "Yağmur yağdığından maç ertelendi.",
+    "Kazanmak için çalışıyor.",
+    "Hava güzel olursa pikniğe gideriz."
+   ],
+   "dogru": "B",
+   "cozum": "“Yağmur yağdığından” gerçekleşmiş bir nedendir; maç ertelenmiştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-007",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "benzer",
+   "metin": "“Yaz tatilinde dedemin köyüne gitmeyi düşünüyorum.” cümlesinde hangi anlam vardır?",
+   "secenekler": [
+    "Beklenti",
+    "Tasarı",
+    "Pişmanlık",
+    "Sitem"
+   ],
+   "dogru": "B",
+   "cozum": "“Düşünüyorum” ifadesi kişinin kendi yapmayı planladığı bir şeyi anlatır: tasarıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-008",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "benzer",
+   "metin": "“Bu kadar emeğe karşılık sadece iki ekmek mi?” cümlesinde hangi anlam vardır?",
+   "secenekler": [
+    "Azımsama",
+    "Beğeni",
+    "Tasarı",
+    "Özlem"
+   ],
+   "dogru": "A",
+   "cozum": "“Sadece” ile miktar az bulunmuştur: azımsamadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-009",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "benzer",
+   "metin": "“Umarım bu yıl takımımız şampiyon olur.” cümlesinde hangi anlam vardır?",
+   "secenekler": [
+    "Tasarı",
+    "Beklenti (umut)",
+    "Küçümseme",
+    "Pişmanlık"
+   ],
+   "dogru": "B",
+   "cozum": "“Umarım” bir şeyin olmasını ummak, yani beklentidir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-010",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm (« » içindeki kısım) hangi anlam ilişkisini bildiriyor?\nCümle: Sınavdan yüksek not aldı, «çünkü her gün düzenli çalışmıştı».",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "A",
+   "cozum": "“Çünkü” ile bağlanan kısım, yüksek notun nedenidir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-011",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Kitap okudukça» kelime dağarcığın genişler.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "C",
+   "cozum": "“-dıkça” ölçü–koşul ekidir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-012",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Sağlıklı kalmak için» her sabah yürüyüş yapıyor.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "D",
+   "cozum": "Sağlıklı kalmak henüz olmamış, istenen bir hedeftir: amaçtır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-013",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Yol kapandı, «bu yüzden okula gidemedik».",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "B",
+   "cozum": "Yolun kapanması, okula gidilememesinin nedenidir; kalın bölüm sonuçtur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-014",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Erken yatarsan» sabah dinç kalkarsın.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "C",
+   "cozum": "“-arsan” ekiyle kurulan kısım şarta bağlıdır: koşuldur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-015",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Hava çok soğuk olduğundan «sokaklar bomboştu».",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "B",
+   "cozum": "Havanın soğuk olması nedendir; sokakların boş olması sonuçtur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-016",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Ödevini bitirmen şartıyla» dışarı çıkabilirsin.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "C",
+   "cozum": "“Şartıyla” ile kurulan kısım koşul bildirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-017",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Takımının kazanması için» bütün gün tezahürat yaptı.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "D",
+   "cozum": "Kazanmak henüz olmamış bir hedeftir: amaçtır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-018",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Çok yorulduğum için» erken uyudum.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "A",
+   "cozum": "Gerçekleşmiş bir sebep olduğu için neden bildirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-019",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Ders notlarını düzenli tuttu, «böylece sınavda zorlanmadı».",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "B",
+   "cozum": "“Böylece” ile bağlanan kısım sonuç bildirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-020",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Işığı kapatmak amacıyla» anahtara uzandı.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "D",
+   "cozum": "“-mek amacıyla” ile kurulan kısım amaç bildirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-021",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Sesin kısık olduğundan» seni duyamadım.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "A",
+   "cozum": "“-dığından” ile bağlanan gerçekleşmiş sebeptir: neden.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-022",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Zamanında ilaç içmezse» hastalığı uzar.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "C",
+   "cozum": "“-mezse” ekiyle kurulan kısım şarta bağlıdır: koşuldur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-023",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: Pil bittiği için «telefon kapandı».",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "B",
+   "cozum": "Pilin bitmesi nedendir; telefonun kapanması sonuçtur.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-024",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Cümledeki kalın yazılan bölüm hangi anlam ilişkisini bildiriyor?\nCümle: «Yeterince uyumadığı için» derste sürekli esniyordu.",
+   "secenekler": [
+    "Neden",
+    "Sonuç",
+    "Koşul",
+    "Amaç"
+   ],
+   "dogru": "A",
+   "cozum": "Gerçekleşmiş bir sebep olduğu için neden bildirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-025",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun (A tasarı, B beklenti, C azımsama, D küçümseme, E sitem, F pişmanlık, G özlem, H beğeni).\nCümle: Sen mi bu işi başaracaksın, kendine bir bak!",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "D",
+   "cozum": "Bir kişiyi değersiz görme vardır: küçümseme.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-026",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Ressamın renkleri kullanışı gerçekten çok etkileyici.",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "H",
+   "cozum": "Bir şeyin etkileyiciliğine hayranlık duyulmuştur: beğeni.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-027",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Hafta sonu ailemle piknik yapmayı düşünüyorum.",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "A",
+   "cozum": "Kendi yapılacak bir plan anlatılmıştır: tasarı.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-028",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Keşke o gün sana kızmasaydım.",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "F",
+   "cozum": "“Keşke” ve “-masaydım” pişmanlık bildirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-029",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Umarım yarınki sınavda sorular kolay çıkar.",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "B",
+   "cozum": "“Umarım” ile bir şeyin olması umulmaktadır: beklenti.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-030",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Keşke zamanında çalışsaydım, şimdi bu kadar zorlanmazdım.",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "F",
+   "cozum": "“Keşke” ve geçmiş bir fırsatın kaçırılması pişmanlıktır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-031",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Bunca yıldır bir kere olsun aramadın beni!",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "E",
+   "cozum": "Kırgınlıkla yapılan serzeniş sitemdir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-032",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Çocukluğumun geçtiği o sokakları ne çok özledim.",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "G",
+   "cozum": "Bir şeyin yokluğunu duymak özlemdir.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-033",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Bu kadarcık yemekle bu kalabalık doyar mı?",
+   "secenekler": [
+    "tasarı",
+    "beklenti",
+    "azımsama",
+    "küçümseme",
+    "sitem",
+    "pişmanlık",
+    "özlem",
+    "beğeni"
+   ],
+   "dogru": "C",
+   "cozum": "“Bu kadarcık” ile bir miktarın az bulunduğu azımsamadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-034",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Yargı öznel mi (Ö) nesnel mi (N)?\nCümle: Bence bu film yılın en sıkıcı filmiydi.",
+   "secenekler": [
+    "Öznel",
+    "Nesnel"
+   ],
+   "dogru": "A",
+   "cozum": "“Bence” ile kişisel bir görüş bildirilmiştir: öznel.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-035",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Yargı öznel mi (Ö) nesnel mi (N)?\nCümle: Ankara, Türkiye’nin başkentidir.",
+   "secenekler": [
+    "Öznel",
+    "Nesnel"
+   ],
+   "dogru": "B",
+   "cozum": "Herkesin kanıtlayabileceği bir bilgidir: nesnel.",
+   "emin": true
+  },
+  {
+   "id": "tur-cum-036",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Yargı öznel mi (Ö) nesnel mi (N)?\nCümle: Bu müzenin en etkileyici salonu, bana göre, ikinci kattakidir.",
+   "secenekler": [
+    "Öznel",
+    "Nesnel"
+   ],
+   "dogru": "A",
+   "cozum": "“Bana göre” ile kişiye göre değişen bir görüş bildirilmiştir: öznel.",
+   "emin": true
+  }
+ ]
 }

@@ -55,140 +55,431 @@
    "altKonu": "Hava olayları (çiy, kırağı, sis, kar)",
    "soru": "Seracılıkta önlenmeye çalışılan, su buharının doğrudan katılaşmasıyla oluşan hava olayı hangisidir?",
    "hata": "Kırağı yerine kar'ı seçti. İkisi de buz kristali, ama kar bulutta oluşup düşer; kırağı yeryüzündeki soğuk yüzeylerde oluşur.",
-   "dogruYol": "'Nerede oluşuyor?' diye sor. Yüzeyde ve 0 °C altında katı oluşuyorsa kırağıdır. Metindeki 'soğuk yüzeylerle temas' ifadesi ayırt edicidir."
+   "dogruYol": "'Nerede oluşuyor?' diye sor. Yüzeyde ve 0 °C altında katı oluşuyorsa kırağıdır. Metindeki 'soğuk yüzeylerle temas' ifadesi ayırt edicidir.",
+   "gorsel": [
+    "sorular/FEN-MI-1.png"
+   ],
+   "cevap": "D) Kırağı",
+   "senin": "C) Kar",
+   "cozum": [
+    "Metindeki ipuçları: \"doğrudan katılaşarak\" (buhar → katı), \"beyaz buz kristalleri\", \"soğuk yüzeylerle temas\", sıfır derecenin altı.",
+    "Sis ve çiy sıvı damlacıklardır → olamaz.",
+    "Kar da buz kristalidir ama bulutta oluşup yağış olarak düşer. Burada kristaller yeryüzündeki soğuk yüzeylerde (yaprak, cam, bitki) oluşuyor → kırağı."
+   ],
+   "hataAnaliz": "Kırağı ile karı karıştırdın. İkisi de buz kristali; fark OLUŞTUKLARI YERDE: kar bulutta oluşup düşer, kırağı yeryüzündeki soğuk yüzeylerde oluşur. Metindeki \"soğuk yüzeylerle temas ettiğinde\" ifadesi ayırt edici ipucuydu.",
+   "tuyo": "Karşılaştırma tablosu: çiy (buhar → sıvı, yüzeyde, 0 °C üstü), kırağı (buhar → katı, yüzeyde, 0 °C altı), sis (yere yakın havada asılı damlacıklar), kar (bulutta buz kristali → yağış). Sor: \"Nerede oluşuyor? Hangi hâlde?\"",
+   "dikkat": "\"Yüzey\" kelimesi → çiy ya da kırağı. \"Bulut / yağış / düşer\" → yağmur, kar, dolu. Sıcaklık 0 °C altı ve katı → kırağı."
   },
   {
    "kod": "FEN-MI-2",
    "altKonu": "Basınç ve rüzgâr",
    "soru": "P (açık hava, alçalıcı hareket, yüksek basınç) ve R (bulutlu, yükselici hareket, alçak basınç) bölgeleri hakkında hangisi doğrudur?",
    "hata": "D şıkkındaki ifadenin P için yanlış olduğunu fark etmedi; bölge harfini gözden kaçırmış ya da 'güneşli hava ısınır, yükselir' düşüncesi metindeki alçalıcı bilgisinin önüne geçmiş olabilir.",
-   "dogruYol": "Her şıkta önce hangi bölgeden söz edildiğini bul, sonra o bölgenin basıncını ve hava hareketini karşılaştır. Yüksek basınç alçalıcı ve açık havadır; alçak basınç yükselici ve bulutludur."
+   "dogruYol": "Her şıkta önce hangi bölgeden söz edildiğini bul, sonra o bölgenin basıncını ve hava hareketini karşılaştır. Yüksek basınç alçalıcı ve açık havadır; alçak basınç yükselici ve bulutludur.",
+   "gorsel": [
+    "sorular/FEN-MI-2.png"
+   ],
+   "cevap": "A",
+   "senin": "D",
+   "cozum": [
+    "P: alçalıcı hava → YÜKSEK basınç, hava açık. R: yükselici hava → ALÇAK basınç, hava bulutlu.",
+    "A: R'nin basıncı P'den düşüktür → doğru ✓.",
+    "B: Rüzgâr yüksek basınçtan alçak basınca eser, yani P'den R'ye → şıktaki yön ters ✗.",
+    "C: Bulutlanma yükselici havanın olduğu R'de → ✗.",
+    "D: Yükselen hava R'dedir; P'de hava alçalıyor → ✗."
+   ],
+   "hataAnaliz": "D şıkkındaki ifade R için doğru, P için yanlış. Şıktaki bölge harfi gözünden kaçmış olabilir. Ya da \"güneşli → hava ısınır → yükselir\" günlük düşüncesi metindeki \"alçalıcı\" bilgisinin önüne geçmiş olabilir.",
+   "tuyo": "Her şıkta önce HANGİ BÖLGEDEN bahsedildiğinin altını çiz; sonra kendi notunla (P: YB-alçalıcı, R: AB-yükselici) karşılaştır. Metin bilgisi her zaman günlük tahminden önce gelir.",
+   "dikkat": "Yüksek basınç → alçalıcı hava → açık hava → rüzgâr buradan ÇIKAR. Alçak basınç → yükselici hava → bulut/yağış → rüzgâr buraya GELİR."
   },
   {
    "kod": "FEN-MI-3",
    "altKonu": "Basınç ve rüzgâr",
    "soru": "Aynı yükseklikteki K, L, M bölgelerinin basınç grafiğine göre I (sıcaklık L > M > K), II (rüzgâr M'den K'ya) ve III (yağış en fazla K'de) ifadelerinden hangileri doğrudur?",
    "hata": "Sıcaklık ile basıncı aynı yönde düşündü ('basınç yüksekse sıcaklık da yüksek'); bu yüzden I'i doğru saydı.",
-   "dogruYol": "Sıcaklık ve basınç sıralaması birbirinin tersidir. Sıcak hava genleşip yükselir ve alçak basınç oluşturur; soğuk hava yoğun olduğu için yüksek basınç oluşturur. Grafikte en uzun basınç sütunu en soğuk bölgedir."
+   "dogruYol": "Sıcaklık ve basınç sıralaması birbirinin tersidir. Sıcak hava genleşip yükselir ve alçak basınç oluşturur; soğuk hava yoğun olduğu için yüksek basınç oluşturur. Grafikte en uzun basınç sütunu en soğuk bölgedir.",
+   "gorsel": [
+    "sorular/FEN-MI-3.png"
+   ],
+   "cevap": "C) II ve III",
+   "senin": "D) I, II ve III",
+   "cozum": [
+    "Basınç: L > M > K. Aynı yükseklikte sıcak hava genleşip yükselir → alçak basınç; soğuk hava yoğun, alçalır → yüksek basınç.",
+    "I: Sıcaklık sıralaması basıncın TERSİ: K > M > L. \"L > M > K\" yanlış ✗.",
+    "II: Rüzgâr yüksek basınçtan (M) alçak basınca (K) eser → doğru ✓.",
+    "III: En alçak basınç K → yükselici hava → yağış ihtimali en çok K'de → doğru ✓."
+   ],
+   "hataAnaliz": "Sıcaklık ile basıncı ters kurdun (\"basınç yüksekse sıcaklık da yüksek\"). Aynı yükseklikteki bölgelerde sıcaklık arttıkça basınç AZALIR.",
+   "tuyo": "Zincir kuralı: Sıcak → hava genleşir, hafifler → yükselir → ALÇAK basınç → bulut, yağış. Soğuk → hava yoğun, ağır → alçalır → YÜKSEK basınç → açık hava. Sıcaklık ve basınç sıralamaları birbirinin tersidir.",
+   "dikkat": "Grafikte en uzun basınç sütunu = en SOĞUK bölge. Rüzgâr uzun sütundan kısa sütuna eser. En kısa sütunda yağış beklenir."
   },
   {
    "kod": "FEN-MI-7",
    "altKonu": "Meltem",
    "soru": "Deniz ve kıyı sıcaklık tablosuna göre meltemle ilgili hangisi doğrudur?",
    "hata": "Okları doğru bulmasına rağmen rüzgârın adını karıştırdı ya da okları çizip şıkları adına göre karşılaştırmadan seçti.",
-   "dogruYol": "Rüzgâra geldiği yerin adı verilir: denizden gelen deniz meltemi, karadan gelen kara meltemidir. Soğuk taraf yüksek basınçtır ve rüzgâr oradan çıkar."
+   "dogruYol": "Rüzgâra geldiği yerin adı verilir: denizden gelen deniz meltemi, karadan gelen kara meltemidir. Soğuk taraf yüksek basınçtır ve rüzgâr oradan çıkar.",
+   "gorsel": [
+    "sorular/FEN-MI-7.png"
+   ],
+   "cevap": "D",
+   "senin": "C",
+   "cozum": [
+    "Her satırda soğuk tarafı bul. Soğuk = yoğun hava = yüksek basınç. Rüzgâr soğuktan (yüksek basınçtan) sıcağa eser.",
+    "30 Ağustos 19.00: kıyı 27 °C < deniz 30 °C → kıyı daha soğuk, hava daha yoğun, yüksek basınç → D doğru ✓.",
+    "A: 24 Mart'ta kıyı daha sıcak → rüzgâr denizden kıyıya → deniz meltemi; \"kara meltemi\" ✗.",
+    "B: 4 Haziran'da kıyı sıcak → kıyıda ALÇAK basınç; şıkta tersi yazıyor ✗.",
+    "C: 13 Temmuz 19.00'da kıyı 25 < deniz 27 → rüzgâr karadan denize → kara meltemi; \"deniz meltemi\" ✗."
+   ],
+   "hataAnaliz": "Oklar doğru olduğu hâlde şıkta ad karışmış görünüyor. İki olasılık var: (1) Rüzgârın ADI: kıyıdan denize esen rüzgâra \"denize gidiyor\" diye \"deniz meltemi\" demek; oysa rüzgâra GELDİĞİ yerin adı verilir. (2) Okları doğru çizip C'deki adı okla karşılaştırmadan seçmek.",
+   "tuyo": "Rüzgâra her zaman GELDİĞİ yerin adı verilir: denizden gelen → deniz meltemi, karadan gelen → kara meltemi. Tabloya ok çizdiysen okun KUYRUĞUNDAKİ yerin adını yaz ve şıkla kelimesi kelimesine karşılaştır.",
+   "dikkat": "Soğuk taraf = yoğun hava = yüksek basınç = rüzgâr buradan ÇIKAR, adı da buradan gelir. Gündüz kara çabuk ısınır → deniz meltemi; gece/akşam kara çabuk soğur → kara meltemi."
   },
   {
    "kod": "FEN-MI-21",
    "altKonu": "Basınç ve rüzgâr",
    "soru": "Yoğunluğu K'de en fazla, L'de orta, M'de en az olan komşu üç şehir arasında oluşacak rüzgârların yönlerini çiz.",
    "hata": "Üç ikili yerine ok zinciri (K → L → M) mantığıyla düşündü ve K → M rüzgârını atladı. M için 'ABA' yazdı; alçak basınçta hava yükseldiği için 'ABY' olmalıydı.",
-   "dogruYol": "'A, B ve C arasında' ifadesinde önce tüm ikilileri listele (AB, AC, BC) ve her ikili için bir ok çiz. Ok yüksek basınçtan alçak basınca doğru olur."
+   "dogruYol": "'A, B ve C arasında' ifadesinde önce tüm ikilileri listele (AB, AC, BC) ve her ikili için bir ok çiz. Ok yüksek basınçtan alçak basınca doğru olur.",
+   "gorsel": [
+    "sorular/FEN-MI-21.png"
+   ],
+   "cevap": "K → L, K → M ve L → M (üç ok)",
+   "senin": "K → L ve L → M oklarını çizdin",
+   "cozum": [
+    "Hava yoğunluğu: K en sık, L orta, M en seyrek → basınç K > L > M (K yüksek, M alçak basınç).",
+    "Rüzgâr yüksek basınçtan alçak basınca eser.",
+    "\"K, L ve M arasında\" = üç ikili: K–L, K–M, L–M. Üç ok çizilir: K → L, K → M, L → M."
+   ],
+   "hataAnaliz": "\"K, L ve M arasında\" = üç ikili demek. Ok zinciri gibi düşünüp (K → L → M) doğrudan K → M rüzgârını atladın. Ayrıca M için \"ABA\" yazmışsın; alçak basınçta hava YÜKSELİR, yani \"ABY\" olmalıydı.",
+   "tuyo": "\"A, B ve C arasında\" ifadesinde önce tüm ikilileri listele (AB, AC, BC) ve her ikili için bir ok çiz. Kontrol listesi 2. madde: \"Tüm şartları buldum mu?\"",
+   "dikkat": "Komşu 3 bölge → 3 ok. Yüksek basınç: hava alçalır (YB-A). Alçak basınç: hava yükselir (AB-Y)."
   },
   {
    "kod": "FEN-MI-4",
    "altKonu": "Rüzgârgülü",
    "soru": "Rüzgârgülü diyagramına göre hangisi söylenemez?",
    "hata": "Kökteki olumsuzluğu ('söylenemez') gözden kaçırdı ve doğru olan ifadeyi işaretledi. Kırmızı alanın uzandığı yönü rüzgârın gittiği yön sanmış olabilir.",
-   "dogruYol": "Soru kökündeki olumsuzluğu daire içine al, her şıkka ✓ / ✗ koy ve ✗ olanı seç. Rüzgârgülünde en uzun kol rüzgârın en sık geldiği yöndür."
+   "dogruYol": "Soru kökündeki olumsuzluğu daire içine al, her şıkka ✓ / ✗ koy ve ✗ olanı seç. Rüzgârgülünde en uzun kol rüzgârın en sık geldiği yöndür.",
+   "gorsel": [
+    "sorular/FEN-MI-4.png"
+   ],
+   "cevap": "C",
+   "senin": "A",
+   "cozum": [
+    "Soru kökü: \"söylenemez\". Yani yanlış olan şıkkı bulacaksın; her şıkka ✓ / ✗ koy.",
+    "Rüzgârgülünde en geniş alan batı ve kuzeybatıda → rüzgâr en sık batıdan esiyor. A: ✓ söylenir.",
+    "Her yönde kırmızı alan var → B: ✓ söylenir.",
+    "Güneyde alan küçük, güney en az esen yönlerden → C: \"en sık güney\" ✗ söylenemez.",
+    "Doğu ve kuzey alanları benzer → D: ✓ söylenir. Cevap C."
+   ],
+   "hataAnaliz": "Büyük olasılıkla soru kökü \"söylenemez\" iken doğru olan ifadeyi (A) işaretledin (MAT-ÇK-19'daki doğru/yanlış karışması gibi). Başka bir ihtimal: kırmızı alanın uzandığı yönü rüzgârın GİTTİĞİ yön sanmak.",
+   "tuyo": "Soru kökündeki olumsuzluğu (söylenemez / yanlıştır / değildir) daire içine al ve her şıkka ✓/✗ koy; ✗ olanı seç. Rüzgârgülünde en uzun kol = rüzgârın EN SIK GELDİĞİ yön.",
+   "dikkat": "\"Batı rüzgârı\" = batıdan GELEN rüzgâr. Rüzgârgülünde alan büyüdükçe o yönden esme sıklığı artar. Mevsimlerin oluşumu (ışınların geliş açısı, aydınlanma, günizi)"
   },
   {
    "kod": "FEN-MI-5",
    "altKonu": "Dik ve eğik ışın",
    "soru": "Eşit ışınların aydınlattığı X (Kuzey) ve Y (Güney) alanlarında (Y > X) kesinlikle doğru olan ifadeler hangileridir?",
    "hata": "III'ü ('Kuzey'de daha büyük alan aydınlanır') reddetti; 'Y büyük' ifadesini aydınlanan alan olarak yorumladı. Oysa alanın büyüklüğü ışının eğikliğini gösterir, aydınlanan alanı değil.",
-   "dogruYol": "Işınların düştüğü alan büyükse ışın eğiktir ve birim alana düşen enerji azdır. Aydınlanan alan ve gündüz süresi tarihe bağlıdır: 21 Haziran'da Kuzey'de gündüz uzun, aydınlanan alan büyüktür."
+   "dogruYol": "Işınların düştüğü alan büyükse ışın eğiktir ve birim alana düşen enerji azdır. Aydınlanan alan ve gündüz süresi tarihe bağlıdır: 21 Haziran'da Kuzey'de gündüz uzun, aydınlanan alan büyüktür.",
+   "gorsel": [
+    "sorular/FEN-MI-5.png"
+   ],
+   "cevap": "B) I ve III",
+   "senin": "A) Yalnız I",
+   "cozum": [
+    "Eşit ışın demetleri: Y > X → aynı ışın güneyde (Y) daha geniş alana yayılıyor → güneyde ışın eğik, kuzeyde (X) daha dik.",
+    "Bu, 21 Haziran'a karşılık gelir.",
+    "I: Dik gelen ışın birim alana daha çok enerji bırakır → Kuzey daha fazla enerji alır ✓.",
+    "III: 21 Haziran'da Kuzey'de gündüz uzun, aydınlanan alan daha büyük ✓.",
+    "II: 21 Haziran mevsim GEÇİŞ günüdür (Kuzey'de yaz yeni başlıyor). Soru \"kesinlikle\" dediği için II alınmaz ✗.",
+    "Cevap: I ve III."
+   ],
+   "hataAnaliz": "İki kavram karıştı: \"aynı ışınların düştüğü alan\" (Y > X: eğiklik ölçüsü) ile \"aydınlanan toplam alan / gündüz süresi\". Y büyük diye \"güneyde daha büyük alan aydınlanır\" yorumuyla III'ü reddetmiş olabilirsin.",
+   "tuyo": "İki kavramı ayır: (1) Işınların düştüğü alan büyük → ışın EĞİK → birim alana düşen enerji AZ. (2) Aydınlanan alan / gündüz süresi tarihe bağlı: 21 Haziran'da Kuzey'de gündüz uzun, aydınlanan alan büyük. Tarihi bulduysan gündüz–gece bilgisini tarihten çıkar.",
+   "dikkat": "Y > X sana tarihi söyler (21 Haziran), aydınlanma miktarını değil. Aydınlanma çemberi 21 Haziran'da Kuzey Kutbu'nun ötesine geçer → Kuzey'de daha büyük alan aydınlanır."
   },
   {
    "kod": "FEN-MI-6",
    "altKonu": "Günizi",
    "soru": "Günizi fotoğrafına bakan bir öğrencinin yorumlarından hangisi yanlıştır?",
    "hata": "B şıkkını yanlış saydı: L'den M'ye giderken sonbahar yaşanmasını çelişki sandı. 'En soğuk ay' ile 'en az enerji' tarihini karıştırdığı için C'yi de doğru saymış olabilir.",
-   "dogruYol": "Günizinde önce iki ucu bul: 21 Haziran (en çok enerji) ve 21 Aralık (en az enerji). 'En az / en çok enerji' yalnızca bu iki güne aittir; en soğuk günler sıcaklık gecikmesi yüzünden Ocak–Şubat'a denk gelir."
+   "dogruYol": "Günizinde önce iki ucu bul: 21 Haziran (en çok enerji) ve 21 Aralık (en az enerji). 'En az / en çok enerji' yalnızca bu iki güne aittir; en soğuk günler sıcaklık gecikmesi yüzünden Ocak–Şubat'a denk gelir.",
+   "gorsel": [
+    "sorular/FEN-MI-6.png"
+   ],
+   "cevap": "C",
+   "senin": "B",
+   "cozum": [
+    "Önce günizinin iki ucunu bul: 21 Haziran (en dik ışın, en çok enerji) ve 21 Aralık (en eğik ışın, en az enerji).",
+    "Ok yönüyle sıra: 21 Haziran → K (Ağustos) → L (Ekim) → 21 Aralık → M (Şubat) → N (Nisan–Mayıs) → 21 Haziran.",
+    "A: K yaza yakın, L sonbahara yakın → K'da ışınlar daha dik, birim yüzey daha çok ısınır ✓.",
+    "B: L'den 21 Aralık'a giderken sonbahar yaşanır ✓.",
+    "D: N, ilkbahar aylarında → ağaçlar çiçeklenir ✓.",
+    "C: En az enerji 21 Aralık'ta; M bu tarihten SONRA. M'de enerji en az değil → C yanlış. Cevap C."
+   ],
+   "hataAnaliz": "\"En soğuk ay\" (Ocak–Şubat) ile \"en az enerji alınan gün\" (21 Aralık) karışmış olabilir. M'ye Şubat yazdığın için C'yi \"en soğuk = en az enerji\" diye doğru saymış olabilirsin. Ayrıca B'deki \"L'den M'ye giderken sonbahar yaşanır\" ifadesini yolun bir kısmı kış olduğu için yanlış saymış olabilirsin.",
+   "tuyo": "Günizinde önce iki ucu bul: 21 Haziran ve 21 Aralık. \"En\" içeren her ifadeyi bu iki uçla karşılaştır. Sıcaklık gecikir: en soğuk günler 21 Aralık'tan sonra gelir (yer ısı kaybetmeye devam eder); ama gelen enerji en az 21 Aralık'tadır.",
+   "dikkat": "\"Enerji EN AZ / EN ÇOK\" → sadece 21 Aralık / 21 Haziran (Kuzey Yarım Küre). \"En soğuk / en sıcak\" ≠ \"en az / en çok enerji\". Mevsim ifadelerinde \"yaşanır\" = o yolun bir kısmında yaşanması yeterli olabilir; şıkkı ancak açıkça çelişiyorsa ele."
   },
   {
    "kod": "FEN-MI-8",
    "altKonu": "Gölge ve gündüz süresi",
    "soru": "21 Aralık ve 21 Haziran için I (21 Aralık'ta Güney'in her yerinde gölge sıfır), II (21 Haziran'da Kuzey'de gölge en uzun) ve III (21 Aralık'tan sonra Kuzey'de gece kısalır) ifadelerinden hangileri doğrudur?",
    "hata": "'En uzun gündüz' (21 Haziran, Kuzey) ile 'en uzun gölge'yi karıştırdı. 21 Haziran'da Kuzey'de her şeyin 'en uzun' olduğunu sandı.",
-   "dogruYol": "21 Haziran (Kuzey): ışın en dik, gölge en kısa, gündüz en uzun, enerji en çok. 21 Aralık (Kuzey): ışın en eğik, gölge en uzun, gece en uzun, enerji en az. Gölge, ışının diklik derecesinin tersidir."
+   "dogruYol": "21 Haziran (Kuzey): ışın en dik, gölge en kısa, gündüz en uzun, enerji en çok. 21 Aralık (Kuzey): ışın en eğik, gölge en uzun, gece en uzun, enerji en az. Gölge, ışının diklik derecesinin tersidir.",
+   "gorsel": [
+    "sorular/FEN-MI-8.png"
+   ],
+   "cevap": "A) Yalnız III",
+   "senin": "C) II ve III",
+   "cozum": [
+    "I: 21 Aralık'ta gölge yalnızca Oğlak Dönencesi'nde sıfırdır; \"Güney Yarım Küre'nin her yerinde\" değil ✗.",
+    "II: 21 Haziran'da Kuzey'de ışınlar en dik → gölge boyu en KISA; \"en uzun\" ✗.",
+    "III: 21 Aralık, Kuzey'de en uzun gece; sonrasında geceler kısalmaya başlar ✓.",
+    "Cevap: yalnız III."
+   ],
+   "hataAnaliz": "\"En uzun gündüz\" (21 Haziran, Kuzey) ile \"en uzun gölge\"yi karıştırdın. 21 Haziran'da Kuzey'de her şey \"en uzun\" sanılmış; oysa ışın dikleştikçe gölge KISALIR.",
+   "tuyo": "21 Haziran (Kuzey): ışın en dik, gölge en kısa, gündüz en uzun, enerji en çok. 21 Aralık (Kuzey): ışın en eğik, gölge en uzun, gece en uzun, enerji en az. Ezber cümlesi: \"Işın dik → gölge kısa.\" Kalemi masaya dik/eğik tutup el fenerinde denemek kalıcı olur.",
+   "dikkat": "Gölge, ışının diklik derecesinin TERSİDİR. \"Gündüz uzun\" ile \"gölge uzun\" aynı gün olmaz (Kuzey Yarım Küre). \"Her yerinde\" gibi kesinlik ifadeleri (I) çoğunlukla şıkkı yanlış yapar."
   },
   {
    "kod": "FEN-MI-9",
    "altKonu": "Yarım küre ve tarihler",
    "soru": "Kuzey Yarım Küre'den Güney Yarım Küre'ye giden bir gezginin valizi için I, II ve III öncüllerinden hangileri doğrudur?",
    "hata": "Üç öncüle de doğru işareti koymasına rağmen şıkta 'I ve II'yi seçti; öncül–şık eşleştirmesinde hata yaptı. Gidilen yerin kış olduğu öncülünü karıştırmış olabilir.",
-   "dogruYol": "✓ koyduğun öncülleri yan yana yaz (I ✓ II ✓ III ✓) ve şıkla kelimesi kelimesine karşılaştır. Kışlık eşya gidilen yerin mevsimini söyler."
+   "dogruYol": "✓ koyduğun öncülleri yan yana yaz (I ✓ II ✓ III ✓) ve şıkla kelimesi kelimesine karşılaştır. Kışlık eşya gidilen yerin mevsimini söyler.",
+   "gorsel": [
+    "sorular/FEN-MI-9.png"
+   ],
+   "cevap": "D) I, II ve III",
+   "senin": "A) I ve II",
+   "cozum": [
+    "Valizde kışlık eşya var → gidilen yerde kış, yaşanılan yerde yaz.",
+    "I: 20 Ocak'ta Güney'de yaz, Kuzey'de kış. Güney'den Kuzey'e gidiş tutarlı ✓.",
+    "II: Yaz yaşanan yerde gündüz süresi daha uzun ✓.",
+    "III: Kış olan yerde ışınlar eğik → birim yüzeye düşen enerji daha az ✓.",
+    "Üçü de doğru → I, II ve III."
+   ],
+   "hataAnaliz": "Üç öncüle ✓ koyduğun hâlde \"I, II ve III\" yerine \"I ve II\"yi işaretledin; şık eşleştirme. III'te \"gideceği\" ile \"yaşadığı\" ülkeyi son anda karıştırmış da olabilirsin.",
+   "tuyo": "✓ koyduğun öncülleri yan yana yaz (I ✓ II ✓ III ✓ → I, II ve III) ve şıkla kelimesi kelimesine karşılaştır. Uzun öncüllerde \"yaşadığı = yaz\", \"gideceği = kış\" etiketini öncülün üzerine yaz.",
+   "dikkat": "Valizdeki kışlık eşya gidilen yerin mevsimini söyler. Kış olan yer → ışın eğik, enerji az, gündüz kısa. Bütün öncüllere ✓ koyduysan cevap \"I, II ve III\"tür."
   },
   {
    "kod": "FEN-MI-11",
    "altKonu": "Yarım küre ve tarihler",
    "soru": "Öğle vakti Güneş'in K, L, M konumlarına göre kesinlikle tespit edilemeyen durum hangisidir?",
    "hata": "Yarım küreyi (D şıkkı) tespit edilemez sandı; oysa gölge yönünden Güney Yarım Küre belirlenir. L'yi tek bir tarih sandı ve gece = gündüz'ün yılda iki kez olduğunu hesaba katmadı.",
-   "dogruYol": "'Tarih bulunabilir mi?' sorusunda olayın yılda kaç kez olduğuna bak: en uzun gündüz / gece bir kez olur (tarih kesin); gece = gündüz iki kez olur (tarih kesin değil). Şekle ok çizerek gölgenin yönünden yarım küreyi bul."
+   "dogruYol": "'Tarih bulunabilir mi?' sorusunda olayın yılda kaç kez olduğuna bak: en uzun gündüz / gece bir kez olur (tarih kesin); gece = gündüz iki kez olur (tarih kesin değil). Şekle ok çizerek gölgenin yönünden yarım küreyi bul.",
+   "gorsel": [
+    "sorular/FEN-MI-11.png"
+   ],
+   "cevap": "B",
+   "senin": "D",
+   "cozum": [
+    "Kuralı oku: gölge yönü yarım küreyi verir. Güneş öğle vakti KUZEY tarafında → gölge güneye düşer → şehir Güney Yarım Küre'de (D tespit edilir).",
+    "Güney Yarım Küre'de en uzun gündüz 21 Aralık → K'nın tarihi bellidir (A tespit edilir).",
+    "K = yaz başlangıcı, M (21 Haziran) = kış başlangıcı → C tespit edilir.",
+    "L: gece = gündüz yılda İKİ kez olur (21 Mart ve 23 Eylül) → L'nin tarihi kesin bulunamaz → B."
+   ],
+   "hataAnaliz": "Gece–gündüz eşitliğinin yılda İKİ tarihte (21 Mart, 23 Eylül) olduğunu hesaba katmadın; L'yi tek tarih sandın. Ayrıca metindeki kuralı (gölge yönü → yarım küre) şekle uygulamadın: Güneş kuzeyde, yani gölge güneye düşüyor.",
+   "tuyo": "\"Tarih bulunabilir mi?\" sorularında olayın yılda kaç kez yaşandığını sor: en uzun gündüz / en uzun gece → 1 kez (tarih kesin); gece = gündüz → 2 kez (tarih kesin değil). Şekle ok çiz: Güneş → cisim → gölge.",
+   "dikkat": "Güneş öğlen kuzeydeyse gölge güneye düşer → Güney Yarım Küre (Türkiye'de Güneş öğlen güneydedir, gölge kuzeye düşer). Güney Yarım Küre'de en uzun gündüz 21 Aralık, en uzun gece 21 Haziran."
   },
   {
    "kod": "FEN-MI-12",
    "altKonu": "Yarım küre ve tarihler",
    "soru": "A ve B şehirlerinin aylık ortalama sıcaklık grafiğine göre Dünya üzerindeki konumları hangisindeki gibi olabilir?",
    "hata": "Grafikten A'nın Kuzey Yarım Küre'de olduğunu doğru buldu, ama bu bilgiyi Dünya çiziminde Ekvator'a göre konumlandıramadı.",
-   "dogruYol": "Önce grafikten karar ver (Temmuz tepesi = Kuzey, Ocak tepesi = Güney). Sonra her seçenekte Ekvator çizgisini kalınlaştır, noktaları K / G diye etiketle ve kararınla uymayanı ele."
+   "dogruYol": "Önce grafikten karar ver (Temmuz tepesi = Kuzey, Ocak tepesi = Güney). Sonra her seçenekte Ekvator çizgisini kalınlaştır, noktaları K / G diye etiketle ve kararınla uymayanı ele.",
+   "gorsel": [
+    "sorular/FEN-MI-12.png"
+   ],
+   "cevap": "C",
+   "senin": "D",
+   "cozum": [
+    "Grafikten karar ver: A Temmuz'da en sıcak → Kuzey Yarım Küre. B Ocak'ta en sıcak → Güney Yarım Küre.",
+    "Her seçenekte Ekvator çizgisini kalınlaştır, noktaları K / G diye etiketle.",
+    "A Ekvator'un kuzeyinde, B güneyinde olan tek seçenek C."
+   ],
+   "hataAnaliz": "Dünya çizimlerinde noktaların Ekvator çizgisinin hangi tarafında olduğunu okuyamamış olabilirsin (eğik eksen ve eğik çizgiler yanıltıcı). Doğru bulduğun \"A kuzeyde\" bilgisini şekle aktaramadın. \"Ekvatorla ilgili bilgi yok\" notun, sorunun şehirlerin Ekvator'a göre konumunu sorduğunu fark etmediğini düşündürüyor.",
+   "tuyo": "Önce grafikten karar ver (Temmuz'da sıcak → Kuzey, Ocak'ta sıcak → Güney), sonra her seçenekte Ekvator çizgisini kalemle kalınlaştır ve noktaları \"K / G\" diye etiketle. Kararınla uyuşmayanı ele.",
+   "dikkat": "Grafikte iki eğri birbirinin tersi gidiyorsa şehirler farklı yarım kürededir. Hangi ayda tepe yaptığına bak: Temmuz tepesi = Kuzey, Ocak tepesi = Güney. Ekvator'daki bir şehirde eğri neredeyse düz olur."
   },
   {
    "kod": "FEN-MI-16",
    "altKonu": "Yarım küre ve tarihler",
    "soru": "I (Kuzey'de gündüz 12 saatten kısa olmaya başlar), II (Güney'de en uzun gece) ve III (Güney'de gece = gündüz) cümlelerinde anlatılan tarihler hangisinde doğru verilmiştir?",
    "hata": "'Kısalmaya başlar' (21 Haziran) ile '12 saatten kısa olmaya başlar' (23 Eylül) farkını yakalayamadı; daire içine aldığı koşulu cevabına uygulamadı.",
-   "dogruYol": "'Kısalmaya başlar' ≠ '12 saatten kısa olur'. Kuzey'de 21 Mart–23 Eylül arası gündüz 12 saatten uzundur, 23 Eylül–21 Mart arası kısadır. Daire içine aldığın koşulu cevabına geri koy."
+   "dogruYol": "'Kısalmaya başlar' ≠ '12 saatten kısa olur'. Kuzey'de 21 Mart–23 Eylül arası gündüz 12 saatten uzundur, 23 Eylül–21 Mart arası kısadır. Daire içine aldığın koşulu cevabına geri koy.",
+   "gorsel": [
+    "sorular/FEN-MI-16.png"
+   ],
+   "cevap": "D",
+   "senin": "B",
+   "cozum": [
+    "Kuzey Yarım Küre'de gündüz süresi: 21 Mart (12 sa) → 21 Haziran (en uzun) → 23 Eylül (12 sa) → 21 Aralık (en kısa).",
+    "I: Gündüzün 12 saatten KISA olmaya başladığı tarih 23 Eylül. (21 Haziran'dan sonra gündüz kısalır ama hâlâ 12 saatten uzundur.)",
+    "II: Güney Yarım Küre'de en uzun gece 21 Haziran.",
+    "III: Güney Yarım Küre'de gece = gündüz → 21 Mart (veya 23 Eylül).",
+    "Sıra 23 Eylül / 21 Haziran / 21 Mart → D."
+   ],
+   "hataAnaliz": "\"Gündüz kısalmaya başlar\" (21 Haziran) ile \"gündüz 12 saatten KISA olmaya başlar\" (23 Eylül) farkını yakalayamadın. \"12 saat\"i daire içine aldığın hâlde koşulu cevabına uygulamadın.",
+   "tuyo": "Daire içine aldığın koşulu cevabına geri koy: \"21 Haziran'dan sonraki gün gündüz 12 saatten kısa mı?\" → Hayır, hâlâ yaklaşık 15 saat. Zaman çizelgesi çiz: 21 Mart (12) → 21 Haziran (en uzun) → 23 Eylül (12) → 21 Aralık (en kısa).",
+   "dikkat": "\"Kısalmaya başlar\" ≠ \"12 saatten kısa olur\". Kuzey'de gündüz: 21 Mart–23 Eylül arası 12 saatten UZUN, 23 Eylül–21 Mart arası 12 saatten KISA."
   },
   {
    "kod": "FEN-MI-17",
    "altKonu": "Yarım küre ve tarihler",
    "soru": "21 Mart ve 23 Eylül'de hangisi gerçekleşmez?",
    "hata": "'Bahar' kelimesinin yalnızca ilkbahar anlamına geldiğini düşündü (sonbahar da bahar sayılır). Kutuplarda ekinoks günündeki durumu da eksik biliyordu.",
-   "dogruYol": "Ekinoks kartı: ışın Ekvator'a dik; kutuplar hariç her yerde gece = gündüz; kutuplarda Güneş ufukta döner; Kuzey'de ilkbahar, Güney'de sonbahar başlar. 'Bahar' = ilkbahar ve sonbahar (geçiş mevsimleri)."
+   "dogruYol": "Ekinoks kartı: ışın Ekvator'a dik; kutuplar hariç her yerde gece = gündüz; kutuplarda Güneş ufukta döner; Kuzey'de ilkbahar, Güney'de sonbahar başlar. 'Bahar' = ilkbahar ve sonbahar (geçiş mevsimleri).",
+   "gorsel": [
+    "sorular/FEN-MI-17.png"
+   ],
+   "cevap": "C",
+   "senin": "D",
+   "cozum": [
+    "Soru \"gerçekleşmez\" diyor → yanlış olan şıkkı bul.",
+    "A: Ekinokslarda ışınlar Ekvator'a dik düşer ✓.",
+    "B: Gece ve gündüz süreleri eşit olur ✓ (kitap bunu doğru sayıyor).",
+    "C: Kutuplarda normal bir \"12 saat gece, 12 saat gündüz\" yaşanmaz; Güneş gün boyu ufuk çizgisinde döner. Kutuplarda yılda bir kez 6 ay gündüz, 6 ay gece vardır → C gerçekleşmez.",
+    "D: \"Bahar\" = ilkbahar VE sonbahar (geçiş mevsimleri). 21 Mart, Kuzey'de ilkbahar, Güney'de sonbahar başlangıcıdır ✓."
+   ],
+   "hataAnaliz": "İki eksik vardı: (1) Kutup noktalarının ekinoks günündeki durumu (Güneş ufukta, kutuplarda 6 ay gündüz – 6 ay gece). (2) \"Bahar\" kelimesinin ilkbahar + sonbahar (geçiş mevsimi) anlamına geldiği.",
+   "tuyo": "Ekinoks kartı: Işın Ekvator'a dik; kutuplar hariç her yerde gece = gündüz; kutuplarda Güneş ufukta; Kuzey'de ilkbahar, Güney'de sonbahar (ikisi de \"bahar\" = geçiş mevsimi). Kutuplar için ayrı kural: 21 Mart–23 Eylül Kuzey Kutbu'nda sürekli gündüz, Güney Kutbu'nda sürekli gece; sonraki 6 ay tersi.",
+   "dikkat": "Kutuplar ekinoks kurallarının istisnasıdır. \"Bahar\" kelimesi soruda geçiyorsa ilkbahar da sonbahar da olabilir."
   },
   {
    "kod": "FEN-MI-19",
    "altKonu": "Dik ve eğik ışın",
    "soru": "El feneri deneyinde Düzenek I (eğik ışın) ve Düzenek II (dik ışın) için hangi yer–tarih eşleşmesi olabilir?",
    "hata": "'Olabilir' şıkkında tek bir örnek yettiğini görmedi; B'yi 'Kuzey'in her yerine dik gelmez' diye eledi. A'da 21 Aralık = eğik kuralını Güney'deki Oğlak Dönencesi'ne uyguladı; oysa o gün orada ışın diktir.",
-   "dogruYol": "'Olabilir' şıkkında TEK bir örnek ara; 'her zaman / kesinlikle' şıkkında TEK bir karşı örnek ara. 21 Aralık'ta kış yalnızca Kuzey için geçerlidir; Oğlak Dönencesi'nde o gün ışın diktir."
+   "dogruYol": "'Olabilir' şıkkında TEK bir örnek ara; 'her zaman / kesinlikle' şıkkında TEK bir karşı örnek ara. 21 Aralık'ta kış yalnızca Kuzey için geçerlidir; Oğlak Dönencesi'nde o gün ışın diktir.",
+   "gorsel": [
+    "sorular/FEN-MI-19.png"
+   ],
+   "cevap": "B",
+   "senin": "A",
+   "cozum": [
+    "Dik ışın eşleşmeleri: 21 Mart ve 23 Eylül → Ekvator; 21 Haziran → Yengeç Dönencesi; 21 Aralık → Oğlak Dönencesi.",
+    "B: \"Olabilir\" → bir örnek yeter. 21 Haziran'da ışın Yengeç Dönencesi'ne dik gelir; Yengeç Kuzey Yarım Küre'de → Düzenek II (dik) olabilir ✓.",
+    "A ✗: 21 Aralık'ta Oğlak Dönencesi'ne ışın DİK gelir; Düzenek I eğik.",
+    "C ✗: 21 Mart'ta Ekvator'a ışın DİK gelir; Düzenek I eğik.",
+    "D ✗: Kuzey Kutbu'na 23 Eylül'de ışın en eğik (ufukta) gelir, dik olamaz."
+   ],
+   "hataAnaliz": "\"Olabilir\" şıkkında bir örnek yetiyor, sen B'yi büyük olasılıkla \"Kuzey Yarım Küre'nin her yerine dik gelmez\" diye eledin. Ayrıca A'da \"21 Aralık = kış = eğik\" kuralını Güney Yarım Küre'deki Oğlak Dönencesi'ne uyguladın; oysa o gün orada ışın DİK gelir. FEN-DNA-1 ve FEN-DNA-3 ile aynı \"olabilir ↔ her zaman\" ailesi.",
+   "tuyo": "\"Olabilir\" şıkkında TEK bir örnek ara: \"Kuzey Yarım Küre'de 21 Haziran'da ışının dik geldiği bir yer var mı?\" → Yengeç Dönencesi → evet. \"Her zaman / kesinlikle\" şıkkında ise TEK bir karşı örnek ara. Tarih–dik ışın: 21 Mart ve 23 Eylül → Ekvator; 21 Haziran → Yengeç; 21 Aralık → Oğlak.",
+   "dikkat": "21 Aralık \"kış\" sadece Kuzey için; Oğlak Dönencesi'nde o gün ışın dik, yaz başlıyor. \"Olabilir\" = bir örnek yeter; \"kesinlikle\" = hiç karşı örnek olmamalı. İklim ve hava durumu (meteoroloji, klimatoloji)"
   },
   {
    "kod": "FEN-MI-10",
    "altKonu": "Hava durumu ve iklim",
    "soru": "Kart etkinliğinde ön yüzü ve arka yüzü verilen kartlardan hangisinde bilgi hatalıdır?",
    "hata": "Meteoroloji ile klimatolojiyi karıştırdı: Ardahan kartındaki klimatolog eşleşmesi doğruyken yanlış sandı; İzmir kartındaki 'ortalama' ifadesinin iklim olduğunu ve bilim dalının klimatoloji olması gerektiğini görmedi.",
-   "dogruYol": "Hava durumu: kısa süre, dar alan, tahmin → meteoroloji / meteorolog. İklim: uzun yıllar ortalaması, geniş alan → klimatoloji / klimatolog. Hafıza: KLİMA → KLİMatoloji → iKLİM."
+   "dogruYol": "Hava durumu: kısa süre, dar alan, tahmin → meteoroloji / meteorolog. İklim: uzun yıllar ortalaması, geniş alan → klimatoloji / klimatolog. Hafıza: KLİMA → KLİMatoloji → iKLİM.",
+   "gorsel": [
+    "sorular/FEN-MI-10.png"
+   ],
+   "cevap": "C",
+   "senin": "B",
+   "cozum": [
+    "Önce ön yüzü sınıflandır (iklim mi, hava durumu mu?), sonra arka yüzün o kavrama uyup uymadığına bak.",
+    "A: \"Önümüzdeki birkaç gün kar yağacak\" → hava durumu; arka: tahmin sonuçları ✓.",
+    "B: \"Ardahan'da kış soğuk ve kar yağışlı geçer\" → iklim; arka: klimatolog ✓.",
+    "C: \"İzmir'in kış mevsimi sıcaklık ORTALAMASI\" → iklim; ama arka yüzde \"meteoroloji\" yazıyor. İklimle ilgilenen bilim dalı klimatolojidir → C hatalı.",
+    "D: \"Akşam bastıran sis\" → hava durumu; arka: günün belirli saatlerinde gözlem ✓."
+   ],
+   "hataAnaliz": "Meteoroloji/meteorolog (hava durumu) ile klimatoloji/klimatolog (iklim) karıştı. Ardahan iklim örneğine \"klimatolog\" eşleşmesi doğruydu ama sen yanlış sandın; C'deki \"ortalama\" ifadesinin iklim olduğunu görmedin.",
+   "tuyo": "Karşılaştırma tablosu: Hava durumu → kısa süre, dar alan, \"bugün / yarın / birkaç gün\", tahmin; bilim dalı meteoroloji, uzmanı meteorolog. İklim → uzun yıllar (30–35 yıl) ortalaması, geniş alan, \"genellikle / mevsimi / ortalaması\"; bilim dalı klimatoloji, uzmanı klimatolog. Hafıza: KLİMA → KLİMatoloji → iKLİM.",
+   "dikkat": "Önce ön yüzü sınıflandır, sonra arka yüzün uyup uymadığına bak. \"Ortalama\", \"genellikle\", \"… mevsimi … geçer\" → iklim."
   },
   {
    "kod": "FEN-MI-13",
    "altKonu": "Hava durumu ve iklim",
    "soru": "I, III ve IV iklim, II hava olayı olarak gruplandırılan ifadelerin hangisi için doğru eşleşme verilmiştir?",
    "hata": "İklim ile hava olayını karıştırdı; 'beklenen' kelimesini genel bir durum sandı ya da III'ün hangi sütunda olduğunu kontrol etmeden ifadeye odaklandı.",
-   "dogruYol": "İki adım uygula: (1) numaranın sütununu şıkkın yanına yaz (III → İ); (2) ifadeyi kendin sınıflandır. Tek olay, 'oldu', 'bekleniyor' → hava olayı (H); 'geçer', 'genellikle', 'ortalama' → iklim (İ). İki harf aynıysa şık doğrudur."
+   "dogruYol": "İki adım uygula: (1) numaranın sütununu şıkkın yanına yaz (III → İ); (2) ifadeyi kendin sınıflandır. Tek olay, 'oldu', 'bekleniyor' → hava olayı (H); 'geçer', 'genellikle', 'ortalama' → iklim (İ). İki harf aynıysa şık doğrudur.",
+   "gorsel": [
+    "sorular/FEN-MI-13.png"
+   ],
+   "cevap": "D",
+   "senin": "C",
+   "cozum": [
+    "Tabloya göre I, III, IV iklim sütununda; II hava olayı sütununda.",
+    "Her şıkta iki adım: (1) numaranın hangi sütunda olduğunu yaz, (2) ifadeyi kendin sınıflandır. İki harf aynıysa şık doğrudur.",
+    "A: I = iklim, ama \"Bugün ... yağmur bekleniyor\" → hava olayı ✗.",
+    "B: II = hava olayı, ama \"kışlar ... geçer\" → iklim ✗.",
+    "C: III = iklim, ama \"Beklenen sis ... aksamalar oldu\" → tek olay, hava olayı ✗.",
+    "D: IV = iklim ve \"Akdeniz'de yazlar sıcak ve kurak geçmektedir\" → iklim ✓."
+   ],
+   "hataAnaliz": "İklim ile hava olayını karıştırdın (FEN-MI-10 ile aynı gün). \"Beklenen sis\" ifadesindeki \"beklenen\" kelimesini sürekli/genel bir durum gibi algılamış olabilirsin; ya da III'ün hangi sütunda olduğunu (iklim) kontrol etmeden ifadeye odaklandın.",
+   "tuyo": "İki adımlı kontrol: (1) Numaranın tabloda hangi sütunda olduğunu şıkkın yanına yaz (III → İ). (2) İfadeyi kendin sınıflandır (tek olay / bugün / oldu → H; genellikle / ... geçer / ortalama → İ). İki harf aynıysa şık doğru.",
+   "dikkat": "Geçmiş zamanlı tek bir olay (\"oldu\", \"neden oldu\") ya da tahmin (\"bekleniyor\", \"beklenen\") → hava olayı. Geniş zamanlı genel durum (\"geçer\", \"geçmektedir\", \"görülür\") → iklim."
   },
   {
    "kod": "FEN-MI-14",
    "altKonu": "Hava durumu ve iklim",
    "soru": "Tabloya eklenecek 8. örnekle iklim ve hava olayı örnek sayıları nasıl eşitlenir?",
    "hata": "İklim ile hava olayını kelimeye göre ayırdı: 'kar' geçtiği için A'yı hava olayı saydı. Süreye bakmadığı için 2 ve 6 numaralı satırları da yanlış sınıflandırdı.",
-   "dogruYol": "Tek soru sor: BİR KEZ mi, HER YIL mı? Bir kez (bugün, bu yıl, bir haftadır) → hava olayı; her yıl, genellikle, yıl boyunca → iklim. Karar kelimeye değil süreye göre verilir."
+   "dogruYol": "Tek soru sor: BİR KEZ mi, HER YIL mı? Bir kez (bugün, bu yıl, bir haftadır) → hava olayı; her yıl, genellikle, yıl boyunca → iklim. Karar kelimeye değil süreye göre verilir.",
+   "gorsel": [
+    "sorular/FEN-MI-14.png"
+   ],
+   "cevap": "A",
+   "senin": "C",
+   "cozum": [
+    "Her satırı süreye göre sınıflandır. Hava olayı (bir kez): 1, 3, 4, 6 → 4 tane. İklim (her yıl): 2, 5, 7 → 3 tane.",
+    "6 numara \"BU YILIN yaz ayları\" diyor → tek bir döneme ait → hava olayı.",
+    "Sayıları eşitlemek için 8. satır İKLİM olmalı.",
+    "A: \"Ağrı'da kar yaklaşık altı ay yerde kalır\" → her yıl tekrarlanan genel durum → iklim ✓. B, C, D tek olay/tahmin → hava olayı."
+   ],
+   "hataAnaliz": "İklim ile hava olayını KELİMEYE göre ayırdın, SÜREYE göre değil: \"kar\" geçtiği için A'yı hava olayı saydın, \"yıl boyunca\" geçmesine rağmen 2'yi H, \"bu yılın yaz ayları\" için 6'yı İ yazdın. 2 ve 6'daki hatalar sayımda birbirini götürdü; asıl kayıp A'da oldu. (FEN-MI-10, -13, -14: aynı karışıklığın üçüncüsü.)",
+   "tuyo": "Tek soru sor: \"Bu cümle BİR KEZ olan bir şeyi mi anlatıyor, HER YIL tekrarlanan bir şeyi mi?\" Bir kez (bugün, yarın, dün, bu yıl, bir haftadır) → hava olayı. Her yıl / genellikle / yıl boyunca → iklim. \"Kar, yağmur, sis\" iki türde de geçebilir; karar SÜREYLE verilir.",
+   "dikkat": "\"Bu yılın yaz ayları\" uzun görünse de tek bir yıla ait → hava olayı. \"Yıl boyunca\", \"genellikle\", \"altı ay yerde kalır\" (her yıl) → iklim."
   },
   {
    "kod": "FEN-MI-20",
    "altKonu": "Hava durumu ve iklim",
    "soru": "Verilen ifadeleri iklim ya da hava olayı olarak sınıflandır (ç maddesi: 'Atmosferde meydana gelen olaylardır').",
    "hata": "On maddenin dokuzunu doğru sınıflandırdı; ç maddesini ('Atmosferde meydana gelen olaylardır') iklim sandı. 'Atmosfer' kelimesini geniş, genel bir kavram gibi yorumladı.",
-   "dogruYol": "'Atmosferde meydana gelen olaylar' hava olayının tanımıdır. İklim ise bu olayların uzun yıllık ortalamasıdır ve 'ortalama, uzun yıllar, geniş alan' gibi ifadelerle anlatılır."
+   "dogruYol": "'Atmosferde meydana gelen olaylar' hava olayının tanımıdır. İklim ise bu olayların uzun yıllık ortalamasıdır ve 'ortalama, uzun yıllar, geniş alan' gibi ifadelerle anlatılır.",
+   "gorsel": [
+    "sorular/FEN-MI-20.png"
+   ],
+   "cevap": "İklim: a, c, g, ğ. Hava olayı: b, ç, d, e, f, h.",
+   "senin": "ç maddesini \"İklim\" olarak işaretledin; diğer 9 madde doğru",
+   "cozum": [
+    "İklim: a (yazlar sıcak ve kurak geçer), c (klimatologlar inceler), g (kış ayları kar yağışlı geçer), ğ (35–40 yıllık ortalama).",
+    "Hava olayı: b (dar alan, kısa süre), d (yarın), e (sabah kırağı görüldü), f (günlük 07.00–14.00–21.00 gözlemi), h (akşam %80 kar bekleniyor).",
+    "ç: \"Atmosferde meydana gelen olaylardır\" = hava olaylarının TANIMI. Yağmur, kar, rüzgâr, sis atmosferde olur → hava olayı."
+   ],
+   "hataAnaliz": "\"Atmosfer\" kelimesini geniş/genel bir kavram sanıp ç'yi iklime bağladın. Oysa hava olayları atmosferde meydana gelir; iklim ise bu olayların UZUN YILLAR ortalamasıdır.",
+   "tuyo": "İki tanım cümlesini aklında tut: \"Hava olayları: atmosferde meydana gelen olaylardır (yağmur, kar, rüzgâr, sis...).\" \"İklim: geniş bir bölgede hava olaylarının 35–40 yıllık ortalamasıdır.\" İklim tanımında her zaman \"ortalama / uzun süre / geniş alan\" geçer.",
+   "dikkat": "\"Atmosferde meydana gelen olay\" → hava olayı. \"Ortalaması, uzun yıllar\" → iklim."
   },
   {
    "kod": "FEN-MI-18",
    "altKonu": "Sera etkisi",
    "soru": "CO₂ eklenen K erlenmayerinin daha sıcak çıktığı deneyin yorumlarından hangisi doğrudur?",
    "hata": "B'yi doğru gerekçeyle buldu, ama D şıkkında 'bilgi yok' diye kararsız kalıp 'ışınların daha az soğrulması' ifadesini seçti. CO₂'nin ısıyı tutup soğurmayı artırdığını hatırlaması gerekirdi.",
-   "dogruYol": "'Bilgi yok' yazdığın şık doğru olamaz. Sera gazları yeryüzünden yansıyan ısıyı tutar; CO₂ arttıkça ısı tutulur ve sıcaklık yükselir. CO₂ kaynakları: fosil yakıtlar, orman yangınları ve ormansızlaşma."
+   "dogruYol": "'Bilgi yok' yazdığın şık doğru olamaz. Sera gazları yeryüzünden yansıyan ısıyı tutar; CO₂ arttıkça ısı tutulur ve sıcaklık yükselir. CO₂ kaynakları: fosil yakıtlar, orman yangınları ve ormansızlaşma.",
+   "gorsel": [
+    "sorular/FEN-MI-18.png"
+   ],
+   "cevap": "B",
+   "senin": "D",
+   "cozum": [
+    "Her şıkka ✓/✗ ve kısa gerekçe yaz.",
+    "A: Deneyde yalnızca CO₂ var; metan, su buharı, ormansızlaşma gibi etkenler yok → \"tüm faktörler\" ✗.",
+    "B: Fosil yakıtlar (kömür, petrol, doğal gaz) yanınca CO₂ açığa çıkar → K'ya eklenen gaz fosil yakıtlardan gelebilir ✓.",
+    "C: CO₂ sera etkisini ARTIRIR, azaltmaz ✗.",
+    "D: CO₂ ısıyı daha fazla tutar/soğurur; \"ışınların daha az soğrulması\" tersidir ✗. Cevap B."
+   ],
+   "hataAnaliz": "B'yi doğru gerekçeyle bulduğun hâlde D'de \"bilgi yok\" diye kararsız kalıp D'yi işaretlemiş olabilirsin. D için kavram: CO₂ ısıyı tutar → soğurma ARTAR. Bu bilgi sera etkisi tanımından çıkar; \"bilgi yok\" değil.",
+   "tuyo": "Bir şıkka \"bilgi yok / emin değilim\" yazdıysan o şık doğru olamaz. Gerekçesini yazıp ✓ koyduğun şıkkı işaretle. Sera etkisi: sera gazları (CO₂, metan, su buharı) yeryüzünden yansıyan ısıyı tutar → sıcaklık artar.",
+   "dikkat": "\"Bilgi yok\" = o şık \"doğrudur\" denemez. CO₂ ↑ → ısı tutma ↑ → sıcaklık ↑. CO₂ kaynakları: fosil yakıtlar, orman yangınları, ormansızlaşma."
   }
  ],
  "sorular": [

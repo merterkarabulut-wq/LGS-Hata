@@ -1,228 +1,1467 @@
 {
-  "id": "tur-par",
-  "ders": "Türkçe",
-  "unite": "03 - Paragrafta Anlam",
-  "baslik": "Paragrafta Anlam",
-  "anlatim": [
-    {
-      "baslik": "Ana düşünce",
-      "metin": "Ana düşünce, paragrafın vurgulanmak istenen, metnin tamamını kapsayan düşüncesidir. Her paragrafın son cümlesine ve “bu yüzden, bu nedenle, … gerekir” gibi sonuç bağlayan ifadelere bak. Metnin en çok yer ayırdığı bilgiyi ara; giriş cümleleri çoğunlukla arka plandır. Şıkta “en, tek, ana, her zaman, kesinlikle, yalnızca” gibi büyütücü sözler varsa metinde aynı güçte bir ifade olup olmadığını kontrol et."
-    },
-    {
-      "baslik": "Paragraftan çıkarım: ulaşılabilir ve ulaşılamaz",
-      "metin": "Soru kökündeki “ulaşılamaz, söylenemez, çıkarılamaz” ifadelerini daire içine al. Her şıkkın metindeki karşılığını yanına yaz; aynı kelime şart değil, aynı anlam yeter. Küçük zarflara dikkat et: “bir kez daha” önce de olduğunu, “nihayet” ya da “ilk kez” ise önce olmadığını gösterir; bu tür zarflar çelişki yaratır."
-    },
-    {
-      "baslik": "“Olabilir” ve “kesinlikle”; “metne göre” soruları",
-      "metin": "“Olabilir” ifadesi için bir geçerli örnek yeter; “kesinlikle” ya da “her zaman” için ise hiç karşı örnek olmamalıdır. “Bu açıklamaya göre” ya da “metne göre” sorularında yalnızca metin konuşur; önce metnin söylediği nedeni yaz, sonra her öncülün bu nedene dokunup dokunmadığına bak. Fen ya da genel kültür bilgisi, metinde dayanağı yoksa cevap olamaz."
-    },
-    {
-      "baslik": "Anlatım biçimleri",
-      "metin": "Açıklayıcı anlatım bilgi verir ve nesneldir; tanım ve nesnel cümleler içerir. Tartışmacı anlatım görüş savunur; “bence, -malıyız, -malısınız” gibi öğüt ifadeleri, okura seslenme, soru sorma ve karşı görüşe cevap içerir. Öyküleyici anlatım olay, kişi, zaman ve sıralı eylemlerle kurulur. Betimleyici anlatım görünüş, renk, ses ve koku anlatır; sıfatlar yoğundur. Açıklayıcı bir metne öğüt ya da okura seslenen bir cümle eklenirse anlatım biçimi tartışmacıya döner."
-    },
-    {
-      "baslik": "Düşünceyi geliştirme yolları",
-      "metin": "Tanımlama “… nedir?” sorusunu yanıtlar ve “… denir, … demektir” gibi kalıplarla kurulabilir; cümle içine gömülü de olabilir. Tanık gösterme, bir kişinin sözünü ya da görüşünü alıntılamaktır; tırnak işareti tek başına tanık gösterme değildir. Karşılaştırma “daha, en, -den farklı olarak, oysa” ile kurulur. Örnekleme “örneğin, mesela” ile, sayısal veri ise sayı ve yüzde ile verilir. Benzetme “gibi, sanki” ile kurulur."
-    },
-    {
-      "baslik": "Metin türleri ve hikâye unsurları",
-      "metin": "Deneme kişisel ve samimi bir dille, evrensel bir konuyu (hayat, insan, zaman) işler; kesin hüküm vermez. Köşe yazısı gazetede güncel bir konuyu (olay, gündem) yazarın görüşüyle yorumlar. Makale bir düşünceyi kanıtlarla savunur. Hikâyenin unsurları olay, kişi (varlıklar dahil), zaman ve mekândır; girişte kısaca anlatılan geçmiş arka plandır, asıl olay metnin çoğunu kaplar. Minimal hikâye çok kısa olup mesaj kaygısı taşımaz; yalnızca bir anın saptamasıdır."
-    },
-    {
-      "baslik": "Boşluk tamamlama",
-      "metin": "Her boşluk için metinden ipucu kelimeyi bul, boşluğun yanına yaz ve şıktaki kelimeyi ipucuyla birebir eşleştir. Yakın anlamlı iki kelime kalırsa “hangisi ipucunu tam karşılıyor?” diye sor. Örneğin “derinliklerinde, ayrıntısına kadar” ipucu “derinlemesine” ile, “henüz o dönemlerden … tahlil etmiş” ipucu “ileri görüşlü” ile eşleşir; “yenilikçi” ise yeni şeyler getiren demektir."
-    }
-  ],
-  "tuyolar": [
-    "Ana düşünce metnin tamamını kapsar; her paragrafta yalnızca bir cümlenin altını çiz ve sonuç bağlayıcılarını takip et.",
-    "Şıktaki büyütücü sözler (en, tek, ana, her zaman, yalnızca, kesinlikle) metinde aynı güçte yoksa o şık kapsam dışıdır.",
-    "“Bir kez daha” önce de olduğunu, “nihayet / ilk kez” ise önce olmadığını gösterir; bu zarflar ulaşılamaz sorularında çelişki kaynağıdır.",
-    "“Olabilir” için bir örnek yeter; “kesinlikle / her zaman” için hiç karşı örnek olmamalıdır.",
-    "“Metne göre” sorusunda yalnızca metin konuşur; fen ya da genel kültür bilgisi cevap olamaz.",
-    "Öğüt (-malısınız), okura seslenme ve retorik soru anlatım biçimini tartışmacıya çevirir; açıklayıcı metinde bunlar biçimi değiştirir.",
-    "Tanımlama cümle içine gömülü olabilir; tırnak işareti tek başına tanık gösterme değildir, bir kişinin sözü alıntılanmalıdır.",
-    "İkileme yan yana gelen sözcük çiftidir (eğri büğrü); “öyle şirin, öyle masum” bir tekrardır.",
-    "Hikâye unsurlarını sırayla bul: kişi, mekân, zaman, olay; girişteki geçmiş arka plandır.",
-    "Minimal hikâyede “mesaj yok mu?” diye sorup her metnin yanına ✓ ya da ✗ koy.",
-    "Deneme evrensel konuyu kişisel bir dille işler; köşe yazısı gazetede güncel bir konuyu yorumlar.",
-    "Boşluk tamamlamada ipucu kelimeyi metinden bul ve şıkla birebir eşle; ileri görüşlü ile yenilikçi aynı değildir.",
-    "Asıl yargı için “oysa, ama, fakat” sonrasındaki cümleye bak; metinde geçmeyen kavram içeren şık çeldiricidir.",
-    "Öneri (yemelidir, yararlıdır) ile zorunluluk (mutlaka, şarttır) ayrılır; “uygun değildir” sorusunda tüm ögeleri uygun olmayan şık cevaptır."
-  ],
-  "hatalar": [
-    {
-      "kod": "TUR-PAR-1",
-      "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
-      "soru": "Saygın Soysal parçasından hangisine ulaşılamayacağı.",
-      "hata": "“Sinemamız” ile “Türk sineması”nın aynı anlama geldiğini eşleştiremediği için A şıkkını ulaşılamaz sandı; C şıkkındaki “nihayet” ile metindeki “bir kez daha” arasındaki çelişkiyi görmedi.",
-      "dogruYol": "Her şıkkın metindeki karşılığını yaz; aynı kelime değil aynı anlam yeter. “Nihayet / ilk kez” gibi zarflar “bir kez daha” ile çelişiyorsa o şık ulaşılamazdır. Cevap: C."
-    },
-    {
-      "kod": "TUR-PAR-7",
-      "altKonu": "Metne göre sorusu",
-      "soru": "Küresel ısınma metnine göre soruna yönelik çözüm olabilecek fikirler (I–III).",
-      "hata": "III. fikri (yeşil alanlar) Fen bilgisiyle doğru buldu ve metnin önüne kendi bilgisini koydu; “metne göre” koşulunu uygulamadı.",
-      "dogruYol": "Önce metnin verdiği nedeni yaz (yüksek karbondioksitli yakıtların kullanımı), sonra her fikrin bu nedene doğrudan dokunup dokunmadığına bak. Cevap: I ve II."
-    },
-    {
-      "kod": "TUR-PAR-2",
-      "altKonu": "Ana düşünce",
-      "soru": "Dil ve dilin kuralları parçasında asıl anlatılmak istenen düşünce.",
-      "hata": "İlk cümledeki “dil kültürün en önemli ögesidir” bilgisini “dildeki bozulma kültürel yozlaşmanın en temel sebebidir” biçiminde metinde olmayan bir genellemeye çevirdi; metnin vardığı sonucu (kurallara uyulursa bozulma olmaz) gözden kaçırdı.",
-      "dogruYol": "Ana düşünce metnin vardığı sonuçtadır; son cümleleri ve “bu yüzden, çünkü” bağlayıcılarını takip et. Şıktaki “en temel, tek” gibi sözleri metinde ara. Cevap: C."
-    },
-    {
-      "kod": "TUR-PAR-6",
-      "altKonu": "Ana düşünce (vurgulanan)",
-      "soru": "Video oyunu oynama bozukluğu parçasında vurgulanmak istenen düşünce.",
-      "hata": "A şıkkındaki “video oyunları hastalık sınıfına alındı” ifadesini; oyun bozukluğu yerine oyunları öznesine koyarak, girişteki 50 yıllık ayrıntıya takılıp seçti.",
-      "dogruYol": "Paragrafı giriş (arka plan) ve gövde diye ikiye böl; şıkkı gövdeyle karşılaştır ve öznenin metinle aynı olup olmadığına bak. Cevap: B."
-    },
-    {
-      "kod": "TUR-PAR-3",
-      "altKonu": "Düşünceyi geliştirme yolları",
-      "soru": "Fes ve “püsküllü bela” parçasının anlatımıyla ilgili söylenebilecek özellik.",
-      "hata": "Tanımlamayı yalnızca “X … -dır” kalıbında aradığı için cümle içine gömülü “püsküllü bela” tanımını görmedi ve tanımlamayı kabul etmeyip A şıkkını seçti.",
-      "dogruYol": "Tanımlama “… nedir?” sorusuna cevap veren, kalıba bağlı olmayan açıklamadır. Tanık gösterme bir kişinin sözünün alıntılanmasıdır. Cevap: C (tanımlama)."
-    },
-    {
-      "kod": "TUR-PAR-5",
-      "altKonu": "Anlatım biçimi",
-      "soru": "Dijital bilgi çağı parçası hangi cümleyle tamamlanırsa anlatım biçimi değişmez.",
-      "hata": "B şıkkındaki “uzaklaşmalısınız” öğüdünün ve okura seslenmenin anlatımı tartışmacıya çevirdiğini fark etmedi; bu yüzden B'yi “anlatım değişmez” diye seçti.",
-      "dogruYol": "Açıklayıcı metinde öğüt (-malısınız), okura seslenme ve retorik soru anlatım biçimini tartışmacıya çevirir; bilgi vermeye devam eden şık doğru cevaptır. Cevap: C."
-    },
-    {
-      "kod": "TUR-PAR-4",
-      "altKonu": "Boşluk tamamlama",
-      "soru": "Peyami Safa parçasında boşluklara düşüncenin akışına göre gelecek sözcükler.",
-      "hata": "İlk boşluğu “çekinmeden” ile doldurdu, ikinci boşlukta “yenilikçi” ile “ileri görüşlü” arasındaki farkı ayırt edemedi; “henüz o dönemlerden” ipucunu kullanmadı.",
-      "dogruYol": "Her boşluk için metinden ipucu kelimeyi bul (derinlik, ayrıntı → derinlemesine; henüz o dönemden → ileri görüşlü) ve şıkla birebir eşle. Cevap: D."
-    },
-    {
-      "kod": "TUR-MTÜR-1",
-      "altKonu": "Hikâye unsurları",
-      "soru": "Kırlangıçlar hikâyesinde hikâye unsurlarıyla ilgili yanlış olan ifade.",
-      "hata": "Cevabı büyük olasılıkla doğru buldu (D) ama emin değildi; kırlangıçların yolculuğunun girişteki arka plan olduğunu ayırt etmek için yeterince dikkat etmedi.",
-      "dogruYol": "Hikâye unsurlarını sırayla bul: kişiler, mekân, zaman, olay. Olay metnin çoğunu kaplayandır; girişteki geçmiş arka plandır. Cevap: D."
-    },
-    {
-      "kod": "TUR-MTÜR-2",
-      "altKonu": "Minimal hikâye",
-      "soru": "Hangi metinlerin minimal hikâye örneği olduğu.",
-      "hata": "Mesaj kaygısı taşımama ölçütünü ters uyguladı; mesaj içeren I ve II'yi seçti, mesaj taşımayan III'ü dışarıda bıraktı.",
-      "dogruYol": "Ölçütü soruya çevir: “Mesaj yok mu?” Her metnin yanına ✓ ya da ✗ koy, sonra ✓ olanları şıkla eşleştir. Cevap: yalnız III."
-    },
-    {
-      "kod": "TUR-MTÜR-3",
-      "altKonu": "Deneme ve köşe yazısı",
-      "soru": "Sessizlik ve gürültü üzerine parçanın hangi metin türünden alındığı.",
-      "hata": "Kişisel görüş (“bence”) içeren her metni köşe yazısı sandı; konunun evrensel (hayat, insan ruhu) olduğunu ve güncel bir olaya dayanmadığını dikkate almadı.",
-      "dogruYol": "Konu güncel mi (haber, olay, gündem) → köşe yazısı. Konu evrensel mi (hayat, insan, zaman) → deneme. Cevap: A (deneme)."
-    },
-    {
-      "kod": "TUR-PAR-8",
-      "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
-      "soru": "Kapıdaki küçük çocuk parçasıyla ilgili söylenemeyecek ifade.",
-      "hata": "Betimleyici cümleleri görünce parçada olay olmadığını düşündü ve “olay ağırlıklı” şıkkını söylenemez saydı; “öyle … öyle” tekrarını ikileme sandı.",
-      "dogruYol": "Her şıkkın yanına metinden bir örnek yaz; örnek bulamadığın şık “söylenemez”in cevabıdır. İkileme yan yana gelen sözcük çiftidir (eğri büğrü). Cevap: D."
-    },
-    {
-      "kod": "TUR-PAR-9",
-      "altKonu": "Ana düşünce",
-      "soru": "Köy enstitüleri parçasının ana düşüncesi.",
-      "hata": "Yalnızca ilk cümleyi karşılayan A şıkkını seçti; metnin sonundaki zor koşullara ilişkin vurguyu ve metnin bütününü kapsamadı.",
-      "dogruYol": "Şıklara bakmadan metni tek cümleyle kendin özetle; “Bir dakika”, “sakın unutmayın” gibi vurgulardan sonraki cümleyi özete kat. Ana düşünce metnin bütününü kapsar. Cevap: B."
-    },
-    {
-      "kod": "TUR-PAR-10",
-      "altKonu": "Asıl yargı",
-      "soru": "Doğal kaynaklar parçasında üzerinde durulan asıl yargı.",
-      "hata": "Metinde geçmeyen “kalkınma” ve “enerji” sözcüklerini içeren şıkları doğru bilgiler diye değerlendirdi; “doğru olan” ile “metnin söylediği”ni karıştırdı.",
-      "dogruYol": "Asıl yargıyı “oysa” sonrasındaki cümlelerde ara; şıkta metinde olmayan bir anahtar sözcük varsa o şık çeldiricidir. Cevap: B."
-    },
-    {
-      "kod": "TUR-PAR-11",
-      "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
-      "soru": "Einstein ve eğitim parçasından hangi yargıya ulaşılamayacağı.",
-      "hata": "Seçeneklerdeki “her yönden gelişmiş” abartısını yakalamadı; D şıkkındaki “seviyeli ilişki” ile metindeki “saygılı tartışma”nın aynı anlama geldiğini görmedi.",
-      "dogruYol": "Kesin ve abartılı sözcükleri (her yönden, tamamen, kesinlikle, bütün) altını çiz; metinde aynı güçte bir ifade yoksa şık ulaşılamazdır. Farklı sözcüklerle verilen aynı anlamı eşleştir. Cevap: C."
-    },
-    {
-      "kod": "TUR-PAR-12",
-      "altKonu": "Paragraftan çıkarım (uygun örnek)",
-      "soru": "Kahvaltı parçasına göre uygun kahvaltı örneği olmayan şık.",
-      "hata": "Parçadaki “yumurta” önerisini her kahvaltıda zorunlu bir kural gibi uyguladı ve yumurtası olmayan D şıkkını seçti; oysa parçanın önerdiği hiçbir besin içermeyen A şıkkı uygunsuzdu.",
-      "dogruYol": "Her şıkkın her ögesini parçadaki önerilerle ✓ ya da ✗ ile eşleştir; bütün ögeleri ✗ olan şık cevaptır. Öneri ile zorunluluk farklıdır; eksik öneri uygunsuzluk değildir. Cevap: A."
-    }
-  ],
-  "sorular": [
-    {"id": "tur-par-001", "altKonu": "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)", "kaynakKod": "TUR-PAR-1", "tur": "benzer", "metin": "“Yazarın son romanı da okurlardan yine büyük ilgi gördü.” cümlesinden hangisine ulaşılabilir?", "secenekler": ["Yazar ilk kez bir roman yazmıştır.", "Yazarın önceki romanları da ilgi görmüştür.", "Yazar artık roman yazmayacaktır.", "Romanı yalnızca eleştirmenler beğenmiştir."], "dogru": "B", "cozum": "“Yine” ile önceki romanların da ilgi gördüğü anlaşılır.", "emin": true},
-    {"id": "tur-par-002", "altKonu": "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)", "kaynakKod": "TUR-PAR-1", "tur": "benzer", "metin": "“Kütüphanemize bu yıl çok sayıda kitap geldi ama gerçekten okunmaya değer olanlar bir elin parmaklarını geçmez.” cümlesinden hangisine ulaşılamaz?", "secenekler": ["Kütüphaneye bu yıl çok kitap gelmiştir.", "Gelen kitapların az bir kısmı değerlidir.", "Gelen kitapların çoğu okunmaya değerdir.", "Konuşan kişi kitapları değerlendirmiştir."], "dogru": "C", "cozum": "Değerli kitapların “bir elin parmaklarını geçmediği” söylenmiştir; çoğunun değerli olduğu çıkarılamaz.", "emin": true},
-    {"id": "tur-par-003", "altKonu": "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)", "kaynakKod": "TUR-PAR-1", "tur": "benzer", "metin": "“Takımımız uzun süredir beklenen şampiyonluğa nihayet ulaştı.” cümlesinden hangisine ulaşılabilir?", "secenekler": ["Takım her yıl şampiyon olur.", "Takım daha önce de art arda şampiyon olmuştur.", "Takımın şampiyonluğu uzun zamandır bekleniyordu.", "Takım şampiyonluğa hiç önem vermemiştir."], "dogru": "C", "cozum": "“Uzun süredir beklenen” ifadesinden şampiyonluğun uzun zamandır beklendiği anlaşılır.", "emin": true},
-    {"id": "tur-par-004", "altKonu": "Metne göre (çözüm fikirleri)", "kaynakKod": "TUR-PAR-7", "tur": "benzer", "metin": "“Şehirlerde hava kirliliğinin başlıca nedeni kömürle ısınmadır.” Metne göre hangisi bu soruna yönelik bir çözümdür?", "secenekler": ["Doğal gaza geçiş", "Daha çok kitap okumak", "Spor yapmak", "Erken uyumak"], "dogru": "A", "cozum": "Kömürle ısınmanın yerine doğal gaza geçmek kirliliğin nedenine doğrudan çözüm getirir.", "emin": true},
-    {"id": "tur-par-005", "altKonu": "Metne göre (çözüm fikirleri)", "kaynakKod": "TUR-PAR-7", "tur": "benzer", "metin": "“Bu açıklamaya göre” ifadesi ne anlama gelir?", "secenekler": ["Kendi bilgimle cevap vermeliyim.", "Yalnızca metnin verdiği bilgiye dayanmalıyım.", "En uzun şıkkı seçmeliyim.", "Metni okumama gerek yok."], "dogru": "B", "cozum": "“Bu açıklamaya göre” sorularında yalnızca metin konuşur.", "emin": true},
-    {"id": "tur-par-006", "altKonu": "Metne göre (çözüm fikirleri)", "kaynakKod": "TUR-PAR-7", "tur": "benzer", "metin": "“Trafik kazalarının çoğu aşırı hızdan kaynaklanır.” Metne göre hangisi soruna yönelik bir çözüm DEĞİLDİR?", "secenekler": ["Hız sınırlarını denetlemek", "Hız kameraları kurmak", "Araçları renkli boyamak", "Sürücülere hız konusunda eğitim vermek"], "dogru": "C", "cozum": "Araçların renginin aşırı hızla bir ilgisi yoktur; bu bir çözüm değildir.", "emin": true},
-    {"id": "tur-par-007", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-2", "tur": "benzer", "metin": "“Kitap okumak hayal gücünü geliştirir. Okuyan çocuk farklı dünyalar tanır, kendini başkasının yerine koymayı öğrenir. Bu yüzden çocuklara küçük yaşta okuma alışkanlığı kazandırılmalıdır.” Ana düşünce hangisidir?", "secenekler": ["Kitap okumak hayal gücünü geliştiren tek etkinliktir.", "Çocuklara küçük yaşta okuma alışkanlığı kazandırılmalıdır.", "Okuyan çocuklar farklı dünyalar tanır.", "Çocuklar kitap okumayı sevmez."], "dogru": "B", "cozum": "Metnin sonuç cümlesi (“Bu yüzden…”) ana düşünceyi verir.", "emin": true},
-    {"id": "tur-par-008", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-2", "tur": "benzer", "metin": "Ana düşünce sorusunda hangi şık metinde olmayan bir genelleme yaptığı için yanlış olma ihtimali EN YÜKSEKTİR?", "secenekler": ["“… gerekir.”", "“… önemlidir.”", "“… en temel sebebidir.”", "“… katkı sağlar.”"], "dogru": "C", "cozum": "“En temel sebebi” gibi büyütücü bir sözle metinde olmayan kesin bir genelleme yapılmıştır.", "emin": true},
-    {"id": "tur-par-009", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-2", "tur": "benzer", "metin": "“Spor, insan sağlığı için önemlidir. Ancak yanlış yapılan spor sakatlıklara yol açabilir. Bu nedenle spor mutlaka bir uzman eşliğinde yapılmalıdır.” Ana düşünce hangisidir?", "secenekler": ["Spor sağlık için önemlidir.", "Spor her zaman sakatlığa yol açar.", "Spor uzman eşliğinde yapılmalıdır.", "Sadece sporcular spor yapmalıdır."], "dogru": "C", "cozum": "Metnin sonuç cümlesi, sporun uzman eşliğinde yapılması gerektiğini söyler.", "emin": true},
-    {"id": "tur-par-010", "altKonu": "Ana düşünce (vurgulanan)", "kaynakKod": "TUR-PAR-6", "tur": "benzer", "metin": "“Kahve dünyanın en çok tüketilen içeceklerindendir. Ancak günde dört fincandan fazla kahve uykusuzluk ve çarpıntı yapabilir. Uzmanlar günlük tüketimin sınırlı tutulmasını öneriyor.” Vurgulanan hangisidir?", "secenekler": ["Kahve çok tüketilen bir içecektir.", "Kahve tüketimi sınırlı tutulmalıdır.", "Kahve sağlıksız bir içecektir.", "Uzmanlar kahve içmez."], "dogru": "B", "cozum": "Metnin en çok yer ayırdığı ve sonuç cümlesi olan bilgi, tüketimin sınırlandırılması gerektiğidir.", "emin": true},
-    {"id": "tur-par-011", "altKonu": "Ana düşünce (vurgulanan)", "kaynakKod": "TUR-PAR-6", "tur": "benzer", "metin": "Bir metinde vurgulanan düşünceyi bulurken hangisi YANLIŞ bir yöntemdir?", "secenekler": ["Metnin en çok yer ayırdığı bilgiye bakmak", "Sonuç cümlelerine dikkat etmek", "Sadece ilk cümleyi okuyup karar vermek", "Şıkkın öznesini metinle karşılaştırmak"], "dogru": "C", "cozum": "Yalnızca ilk cümleye bakmak, metnin tamamını kapsayan vurguyu kaçırmaya yol açar.", "emin": true},
-    {"id": "tur-par-012", "altKonu": "Ana düşünce (vurgulanan)", "kaynakKod": "TUR-PAR-6", "tur": "benzer", "metin": "“Telefon kullanmak” ile “telefon bağımlılığı” için hangisi doğrudur?", "secenekler": ["Aynı anlamdadır.", "Biri davranış, diğeri ölçütleri olan bir sorundur.", "İkisi de hastalıktır.", "İkisi de olumlu davranıştır."], "dogru": "B", "cozum": "Telefon kullanmak bir davranıştır; bağımlılık ise ölçütleriyle tanımlanan bir sorundur.", "emin": true},
-    {"id": "tur-par-013", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "benzer", "metin": "“Halk arasında ‘ağzı var dili yok’ denir; bu söz, haksızlığa uğradığı hâlde sesini çıkarmayan kimseler için kullanılır.” Bu cümlede hangi düşünceyi geliştirme yolu kullanılmıştır?", "secenekler": ["Tanık gösterme", "Tanımlama", "Sayısal verilerden yararlanma", "Karşılaştırma"], "dogru": "B", "cozum": "Deyimin ne anlama geldiği açıklanmıştır: tanımlama.", "emin": true},
-    {"id": "tur-par-014", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "benzer", "metin": "Hangisinde tanık göstermeye başvurulmuştur?", "secenekler": ["Kitap, insanın en iyi dostudur.", "Mevlânâ'nın dediği gibi “Ya olduğun gibi görün ya göründüğün gibi ol.”", "Kitap okuyanların sayısı her yıl yüzde on artıyor.", "Okumak, bilmediğimiz dünyaların kapısını açar."], "dogru": "B", "cozum": "Bir kişinin (Mevlânâ) sözü alıntılanmıştır: tanık gösterme.", "emin": true},
-    {"id": "tur-par-015", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "benzer", "metin": "“Kediler köpeklerden daha bağımsızdır; köpekler ise sahiplerine daha bağlıdır.” cümlesinde hangi yol kullanılmıştır?", "secenekler": ["Tanımlama", "Tanık gösterme", "Karşılaştırma", "Örnekleme"], "dogru": "C", "cozum": "“Daha” ifadeleriyle iki varlık karşılaştırılmıştır.", "emin": true},
-    {"id": "tur-par-016", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "benzer", "metin": "Hangisi açıklayıcı anlatıma örnektir?", "secenekler": ["Bence herkes her gün kitap okumalı.", "Arılar topladıkları nektarı bala dönüştürür.", "Siz de doğaya sahip çıkmalısınız!", "Bu kadar ağaç kesilir mi hiç?"], "dogru": "B", "cozum": "Bilgi veren, nesnel bir cümledir.", "emin": true},
-    {"id": "tur-par-017", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "benzer", "metin": "“Sağlıklı beslenmek için sebze ve meyveyi ihmal etmemelisiniz.” cümlesinin anlatım biçimi hangisidir?", "secenekler": ["Öyküleyici", "Betimleyici", "Tartışmacı / öğretici-ikna edici", "Açıklayıcı ve nesnel"], "dogru": "C", "cozum": "“-malısınız” ile okura öğüt verilmiş ve ikna edilmeye çalışılmıştır.", "emin": true},
-    {"id": "tur-par-018", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "benzer", "metin": "Açıklayıcı bir metne hangisi eklenirse anlatım biçimi DEĞİŞİR?", "secenekler": ["Ay, Dünya'nın tek doğal uydusudur.", "Ay'ın yüzeyinde kraterler vardır.", "Ay'a gitmek için hepimiz çaba göstermeliyiz!", "Ay, Dünya'nın çevresinde yaklaşık 27 günde döner."], "dogru": "C", "cozum": "Öğüt ve okura seslenme içeren cümle anlatımı tartışmacıya çevirir.", "emin": true},
-    {"id": "tur-par-019", "altKonu": "Paragrafta boşluk tamamlama", "kaynakKod": "TUR-PAR-4", "tur": "benzer", "metin": "“Yazar, yıllar önce yazdığı romanlarda bugünkü teknoloji bağımlılığını anlatmıştı. Bu yönüyle ---- bir yazardır.” Boşluğa hangisi gelmelidir?", "secenekler": ["gelenekçi", "ileri görüşlü", "çekingen", "alçakgönüllü"], "dogru": "B", "cozum": "Yıllar önce bugünü anlatmak, geleceği önceden görmeyi, yani ileri görüşlülüğü ifade eder.", "emin": true},
-    {"id": "tur-par-020", "altKonu": "Paragrafta boşluk tamamlama", "kaynakKod": "TUR-PAR-4", "tur": "benzer", "metin": "“Konuyu bütün ayrıntılarıyla, en ince noktasına kadar ---- inceledi.” Boşluğa hangisi gelmelidir?", "secenekler": ["yüzeysel olarak", "derinlemesine", "kısaca", "çekinerek"], "dogru": "B", "cozum": "“En ince noktasına kadar” ipucu derinlemesine incelemeyi anlatır.", "emin": true},
-    {"id": "tur-par-021", "altKonu": "Paragrafta boşluk tamamlama", "kaynakKod": "TUR-PAR-4", "tur": "benzer", "metin": "“Yenilikçi” sözcüğünün anlamı hangisidir?", "secenekler": ["Geleceği önceden sezen", "Yeni düşünce ve uygulamaları benimseyen ve getiren", "Eskiye bağlı kalan", "Çok deneyimli olan"], "dogru": "B", "cozum": "Yenilikçi, yeni düşünce ve uygulamalar getiren demektir.", "emin": true},
-    {"id": "tur-par-022", "altKonu": "Hikâye unsurları", "kaynakKod": "TUR-MTÜR-1", "tur": "benzer", "metin": "Hikâyede “olayın geçtiği yer” hangi unsurdur?", "secenekler": ["Zaman", "Mekân", "Kişi", "Olay"], "dogru": "B", "cozum": "Olayın geçtiği yer mekândır.", "emin": true},
-    {"id": "tur-par-023", "altKonu": "Hikâye unsurları", "kaynakKod": "TUR-MTÜR-1", "tur": "benzer", "metin": "“Kış boyunca köyden uzakta kalan Ali, yazın dedesinin bağına döndü. Bütün gün dedesiyle üzüm topladılar.” Bu metnin asıl olayı hangisidir?", "secenekler": ["Ali'nin kışı köyden uzakta geçirmesi", "Ali'nin dedesiyle bağda üzüm toplaması", "Dedenin kışın yalnız kalması", "Ali'nin okula gitmesi"], "dogru": "B", "cozum": "Metnin büyük kısmını kaplayan olay, dedesiyle üzüm toplamadır.", "emin": true},
-    {"id": "tur-par-024", "altKonu": "Hikâye unsurları", "kaynakKod": "TUR-MTÜR-1", "tur": "benzer", "metin": "Asıl metin (Sorular kitapçığı, Soru 8):\nKırlangıçlar kış soğuğundan kaçarak sıcak yerler bulmak için uzun bir yolculuğa çıkmış. Nisan ayıyla beraber o uzun yolculuklarının da sonuna gelmişler. Kendilerine yuva yapmak için uygun birer yer bulup çalışmaya başlamışlar … İnsanlar bile kırlangıçların bu çalışmalarını gördüklerinde baharın geldiğini kolayca anlayabilirmiş. Yine böyle bir zamanda iki kız kardeş uyurken babaları heyecanla yanlarına gelmiş: \"Kalkın bakalım çocuklar, bakın kimler gelmiş!\" … Çocuklar kırlangıçları hayranlıkla izlemeye koyulmuşlar. Kırlangıçların bahçelerinin yeni kazılmış sıcak topraklarında olduklarını görmüşler … Babaları: \"Yoruldukları ve acıktıkları için … topraktaki kurtları ve zararlı böcekleri yiyerek hem karınlarını doyuracaklar hem de toprağımızı kıvama getirecekler …\"\n\nAsıl metne göre hangisi hikâyede kişi ya da varlık olarak YER ALMAZ?", "secenekler": ["Baba", "İki kız kardeş", "Kırlangıçlar", "Anne"], "dogru": "D", "cozum": "Metinde baba, iki kız kardeş ve kırlangıçlar vardır; anne yoktur.", "emin": true},
-    {"id": "tur-par-025", "altKonu": "Minimal hikâye", "kaynakKod": "TUR-MTÜR-2", "tur": "benzer", "metin": "Minimal hikâye için hangisi SÖYLENEMEZ?", "secenekler": ["Az sözle yoğun anlam aktarır.", "Okura bir ders vermeyi amaçlar.", "Bir anın saptamasıdır.", "Kısa bir anlatıdır."], "dogru": "B", "cozum": "Minimal hikâye mesaj kaygısı taşımaz; okura ders vermeyi amaçlamaz.", "emin": true},
-    {"id": "tur-par-026", "altKonu": "Minimal hikâye", "kaynakKod": "TUR-MTÜR-2", "tur": "benzer", "metin": "“Kapı çaldı. Açtım. Kimse yoktu. Sadece eski bir mektup.” metni için hangisi doğrudur?", "secenekler": ["Okura öğüt veren bir fabldır.", "Bir anı saptayan minimal hikâye örneğidir.", "Uzun bir romanın girişidir.", "Bir olayın sonucundan ders çıkaran bir anekdottur."], "dogru": "B", "cozum": "Metin kısa, mesaj vermeyen ve yalnızca bir anı saptayan bir örnektir.", "emin": true},
-    {"id": "tur-par-027", "altKonu": "Minimal hikâye", "kaynakKod": "TUR-MTÜR-2", "tur": "benzer", "metin": "Bir öğrenci üç metnin yanına şu notları almıştır: I – “mesaj var”, II – “mesaj yok”, III – “mesaj yok”. Soru “Hangileri mesaj kaygısı taşımaz?” ise doğru şık hangisidir?", "secenekler": ["Yalnız I", "I ve II", "II ve III", "I, II ve III"], "dogru": "C", "cozum": "Mesaj kaygısı taşımayanlar, notlara göre II ve III'tür.", "emin": true},
-    {"id": "tur-par-028", "altKonu": "Deneme, köşe yazısı ve diğer düşünce yazıları", "kaynakKod": "TUR-MTÜR-3", "tur": "benzer", "metin": "“Geçen hafta açılan yeni metro hattı şehrin trafik sorununu ne kadar çözecek? Bence bu hat tek başına yetmez.” Bu metin büyük olasılıkla hangi türdendir?", "secenekler": ["Deneme", "Köşe yazısı", "Masal", "Şiir"], "dogru": "B", "cozum": "Güncel bir konu (metro hattı) ele alınmış ve yazarın görüşü yorumlanmıştır: köşe yazısı.", "emin": true},
-    {"id": "tur-par-029", "altKonu": "Deneme, köşe yazısı ve diğer düşünce yazıları", "kaynakKod": "TUR-MTÜR-3", "tur": "benzer", "metin": "Denemenin özelliklerinden biri DEĞİLDİR?", "secenekler": ["Yazar kişisel görüşlerini anlatır.", "Samimi bir dil kullanılır.", "Düşünceler kanıtlarla ispatlanmaya çalışılır.", "Her konuda yazılabilir."], "dogru": "C", "cozum": "Deneme kesin hüküm ve ispat çabası taşımaz; kanıtlarla ispat makalenin özelliğidir.", "emin": true},
-    {"id": "tur-par-030", "altKonu": "Deneme, köşe yazısı ve diğer düşünce yazıları", "kaynakKod": "TUR-MTÜR-3", "tur": "benzer", "metin": "“Zaman, avucumuzdan kayıp giden kum taneleri gibidir; değerini çoğu zaman kaybettiğimizde anlarız.” Bu cümle en çok hangi türe uygundur?", "secenekler": ["Haber", "Deneme", "Makale", "Gezi yazısı"], "dogru": "B", "cozum": "Evrensel bir konu (zaman) kişisel bir dille işlenmiştir: deneme.", "emin": true},
-    {"id": "tur-par-031", "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri", "kaynakKod": "TUR-PAR-8", "tur": "benzer", "metin": "“Sabah sabah kapıyı çaldı. Elinde rengârenk balonlar vardı. Gülümsedi bize, sonra koşa koşa merdivenleri indi.” Bu parçada hangisi yoktur?", "secenekler": ["İkileme", "Devrik cümle", "Benzetme", "Olay anlatımı"], "dogru": "C", "cozum": "Parçada benzetme (“gibi”, “sanki” ile kurulan karşılaştırma) yoktur.", "emin": true},
-    {"id": "tur-par-032", "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri", "kaynakKod": "TUR-PAR-8", "tur": "benzer", "metin": "Aşağıdakilerin hangisinde ikileme vardır?", "secenekler": ["Öyle güzel, öyle sakin bir akşamdı.", "Eğri büğrü yollardan geçerek köye vardık.", "Kimi güldü, kimi ağladı.", "Bir baktı, bir daha baktı."], "dogru": "B", "cozum": "“Eğri büğrü” yan yana gelen sözcük çiftidir: ikileme.", "emin": true},
-    {"id": "tur-par-033", "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri", "kaynakKod": "TUR-PAR-8", "tur": "benzer", "metin": "“Ihlamur ağaçlarının gölgesinde ihtiyar bir adam oturuyordu. Beyaz sakalı göğsüne iniyor, mavi gözleri uzaklara bakıyordu.” Bu parça için hangisi söylenebilir?", "secenekler": ["Birinci kişi ağzından yazılmıştır.", "Betimleme ağırlıklıdır.", "Devrik cümle vardır.", "İkilemeye yer verilmiştir."], "dogru": "B", "cozum": "Parçada yaşlı adamın görünüşü anlatılmaktadır: betimleme ağırlıklıdır.", "emin": true},
-    {"id": "tur-par-034", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-9", "tur": "benzer", "metin": "“Kasabanın kütüphanesi küçüktü; yalnızca iki rafı vardı. Yine de her hafta yeni kitaplar gelir, çocuklar burada satranç öğrenir, yaşlılar gazete okurdu. Unutmayın, o yıllarda kasabada ne sinema ne de park vardı.” Ana düşünce hangisidir?", "secenekler": ["Kütüphanenin yalnızca iki rafı vardı.", "Yetersiz imkânlara rağmen kütüphane kasabanın kültür merkezi olmuştu.", "Çocuklar satrancı çok severdi.", "Kasabada sinema yoktu."], "dogru": "B", "cozum": "Metnin tamamını kapsayan düşünce, kısıtlı imkânlara rağmen kütüphanenin kültür merkezi olmasıdır.", "emin": true},
-    {"id": "tur-par-035", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-9", "tur": "benzer", "metin": "“Takımımızın ne sahası ne de antrenörü vardı. Buna rağmen oyuncular her gün okul bahçesinde çalıştı, birbirine taktik öğretti ve il birincisi oldu.” Ana düşünce hangisidir?", "secenekler": ["Takımın sahası yoktu.", "Okul bahçesi antrenman için uygundu.", "Kararlı çalışma, olumsuz koşulları aşmayı sağlar.", "Oyuncular birbirine taktik öğretti."], "dogru": "C", "cozum": "Olumsuz koşullara rağmen kararlı çalışmanın başarı getirdiği metnin bütününde görülür.", "emin": true},
-    {"id": "tur-par-036", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-9", "tur": "benzer", "metin": "Bir metnin ana düşüncesini bulurken aşağıdakilerden hangisi yanlış bir yöntemdir?", "secenekler": ["Metni kendi cümlenle tek cümlede özetlemek", "Yalnızca ilk cümleye bakıp karar vermek", "“Ama, oysa, unutmayın” gibi vurgulardan sonrasına dikkat etmek", "Şıkkın metnin bütününü kapsayıp kapsamadığını kontrol etmek"], "dogru": "B", "cozum": "Yalnızca ilk cümleye bakmak ana düşünceyi bulmada yanlış bir yöntemdir.", "emin": true},
-    {"id": "tur-par-037", "altKonu": "Asıl yargı", "kaynakKod": "TUR-PAR-10", "tur": "benzer", "metin": "“Eskiden mektuplar haftalarca yolda kalırdı. Bir an telefonun hiç icat edilmediğini düşünelim. Oysa bugün iletişim, teknolojinin sunduğu imkânlarla şekilleniyor; her mesajımızı bu araçlarla iletiyoruz.” Asıl yargı hangisidir?", "secenekler": ["Mektuplar haftalarca yolda kalırdı.", "Günümüzde iletişim teknolojiye dayanmaktadır.", "Teknoloji ekonomik kalkınmayı hızlandırır.", "Telefon icat edilmeseydi mektup kullanılırdı."], "dogru": "B", "cozum": "“Oysa”dan sonraki cümleler asıl yargıyı verir: iletişim teknolojiyle şekilleniyor.", "emin": true},
-    {"id": "tur-par-038", "altKonu": "Asıl yargı", "kaynakKod": "TUR-PAR-10", "tur": "benzer", "metin": "Bir parçada asıl yargıyı bulmak için en çok hangi sözcükten sonraki cümleye dikkat edilmelidir?", "secenekler": ["örneğin", "oysa", "ayrıca", "ve"], "dogru": "B", "cozum": "“Oysa” ile başlayan cümle genellikle asıl yargıyı verir.", "emin": true},
-    {"id": "tur-par-039", "altKonu": "Asıl yargı", "kaynakKod": "TUR-PAR-10", "tur": "benzer", "metin": "“Ormanlar havayı temizler.” cümlesi bir parçada geçmiyorsa, bu cümleyi içeren bir şık için ne söylenebilir?", "secenekler": ["Doğru olduğu için cevaptır.", "Metne dayanmadığı için o metnin asıl yargısı olamaz.", "Her zaman ana düşüncedir.", "Mutlaka yardımcı düşüncedir."], "dogru": "B", "cozum": "Metinde geçmeyen bir ifade, o metnin asıl yargısı olamaz.", "emin": true},
-    {"id": "tur-par-040", "altKonu": "Paragraftan çıkarım (ulaşılamaz)", "kaynakKod": "TUR-PAR-11", "tur": "benzer", "metin": "“Düzenli spor yapmak sağlık için önemlidir; kalbi güçlendirir, uykuyu düzenler.” Bu metinden hangisine ulaşılamaz?", "secenekler": ["Spor kalbe yararlıdır.", "Düzenli spor uykuyu olumlu etkiler.", "Düzenli spor yapan herkes hiç hastalanmaz.", "Spor sağlığı destekler."], "dogru": "C", "cozum": "“Hiç hastalanmaz” aşırı bir genellemedir; metinde yoktur.", "emin": true},
-    {"id": "tur-par-041", "altKonu": "Paragraftan çıkarım (ulaşılamaz)", "kaynakKod": "TUR-PAR-11", "tur": "benzer", "metin": "“Kitap okumak, kelime dağarcığını genişletir ve hayal gücünü besler.” Bu cümleden hangisine ulaşılamaz?", "secenekler": ["Okumak kelime bilgisini artırır.", "Kitap okuyan herkes yazar olur.", "Kitaplar hayal gücünü geliştirir.", "Okuma dil becerisine katkı sağlar."], "dogru": "B", "cozum": "Kitap okumanın herkesi yazar yaptığı metinde söylenmemiştir.", "emin": true},
-    {"id": "tur-par-042", "altKonu": "Paragraftan çıkarım (ulaşılamaz)", "kaynakKod": "TUR-PAR-11", "tur": "benzer", "metin": "Aşağıdaki sözcüklerden hangisi “ulaşılamaz” sorularında şıkkın aşırı genelleme olduğunu gösteren bir ipucu DEĞİLDİR?", "secenekler": ["her yönden", "kesinlikle", "bazen", "hiçbir zaman"], "dogru": "C", "cozum": "“Bazen” genellik bildirmez; diğerleri aşırı genellemeye işaret eder.", "emin": true},
-    {"id": "tur-par-043", "altKonu": "Paragraftan çıkarım (uygun örnek)", "kaynakKod": "TUR-PAR-12", "tur": "benzer", "metin": "“Okul çantasında su şişesi, kalem kutusu ve günün ders kitapları bulunmalıdır. Özellikle küçük öğrenciler yanlarına bir de yedek kalem almalıdır.” Buna göre hangisi uygun çanta örneği değildir?", "secenekler": ["Su şişesi, kalem kutusu, Türkçe kitabı", "Kalem kutusu, ders kitapları, su şişesi", "Oyuncak araba, çizgi roman, sakız", "Ders kitapları, su şişesi, kalem kutusu, yedek kalem"], "dogru": "C", "cozum": "Oyuncak, çizgi roman ve sakız metinde önerilen eşyalar arasında yoktur.", "emin": true},
-    {"id": "tur-par-044", "altKonu": "Paragraftan çıkarım (uygun örnek)", "kaynakKod": "TUR-PAR-12", "tur": "benzer", "metin": "“Kamp için uyku tulumu, fener ve su yanınızda olsun. Hava soğuksa kalın mont da alın.” Buna göre hangisi uygun kamp listesi DEĞİLDİR?", "secenekler": ["Uyku tulumu, fener, su", "Uyku tulumu, fener, su, kalın mont", "Fener, su, uyku tulumu, şapka", "Tablet, kulaklık, şemsiye"], "dogru": "D", "cozum": "Tablet, kulaklık ve şemsiye metinde önerilen eşyalar değildir.", "emin": true},
-    {"id": "tur-par-045", "altKonu": "Paragraftan çıkarım (uygun örnek)", "kaynakKod": "TUR-PAR-12", "tur": "benzer", "metin": "Aşağıdaki ifadelerden hangisi bir ZORUNLULUK bildirir?", "secenekler": ["Kahvaltıda meyve yararlıdır.", "Çocuklar özellikle yumurta yemelidir.", "Bu ilacı mutlaka aç karnına içmelisiniz.", "Çorba da tüketilebilir."], "dogru": "C", "cozum": "“Mutlaka” ile kesin bir zorunluluk bildirilmiştir.", "emin": true},
-    {"id": "tur-par-046", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "alistirma", "metin": "Metnin anlatım biçimini yazın (A açıklayıcı, B tartışmacı, C öyküleyici, D betimleyici).\nMetin: Odanın duvarları açık mavi boyalıydı. Pencerenin önünde sarı çiçekli bir perde, köşede eski bir ceviz sandık duruyordu.", "secenekler": ["açıklayıcı", "tartışmacı", "öyküleyici", "betimleyici"], "dogru": "D", "cozum": "Renk ve görünüş anlatılmaktadır: betimleyici.", "emin": true},
-    {"id": "tur-par-047", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "alistirma", "metin": "Metnin anlatım biçimini yazın.\nMetin: Arkadaşlar, kitaplardan uzaklaşmayın! Hayal gücünüzün körelmesini istemiyorsanız her gün en az yarım saat okumalısınız.", "secenekler": ["açıklayıcı", "tartışmacı", "öyküleyici", "betimleyici"], "dogru": "B", "cozum": "Okura seslenilmiş ve “-malısınız” ile öğüt verilmiştir: tartışmacı.", "emin": true},
-    {"id": "tur-par-048", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "alistirma", "metin": "Metnin anlatım biçimini yazın.\nMetin: Sabah erkenden kalktı, çantasını omuzladı ve köy yoluna çıktı. Yolda eski bir arkadaşıyla karşılaştı; birlikte pazara kadar yürüdüler.", "secenekler": ["açıklayıcı", "tartışmacı", "öyküleyici", "betimleyici"], "dogru": "C", "cozum": "Sıralı eylemlerle bir olay anlatılmıştır: öyküleyici.", "emin": true},
-    {"id": "tur-par-049", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "alistirma", "metin": "Metnin anlatım biçimini yazın.\nMetin: Dünya, Güneş’in çevresindeki bir turunu yaklaşık 365 günde tamamlar. Bu süre bir yıl olarak kabul edilir.", "secenekler": ["açıklayıcı", "tartışmacı", "öyküleyici", "betimleyici"], "dogru": "A", "cozum": "Nesnel bilgi verilmiştir: açıklayıcı.", "emin": true},
-    {"id": "tur-par-050", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Düşünceyi geliştirme yolunu bulun (A tanımlama, B tanık gösterme, C karşılaştırma, D örnekleme, E sayısal veri, F benzetme).\nCümle: Gazeteler günceldir ve çabuk eskir; kitaplar ise yıllarca değerini korur.", "secenekler": ["tanımlama", "tanık gösterme", "karşılaştırma", "örnekleme", "sayısal veri", "benzetme"], "dogru": "C", "cozum": "“Ise” ile iki şey karşılaştırılmıştır.", "emin": true},
-    {"id": "tur-par-051", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Atatürk, “Hayatta en hakiki mürşit ilimdir, fendir.” sözüyle bilimin yol gösterici olduğunu belirtmiştir.", "secenekler": ["tanımlama", "tanık gösterme", "karşılaştırma", "örnekleme", "sayısal veri", "benzetme"], "dogru": "B", "cozum": "Atatürk'ün sözü alıntılanmıştır: tanık gösterme.", "emin": true},
-    {"id": "tur-par-052", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Araştırmaya katılan 200 öğrencinin 150’si, yani yüzde 75’i, her gün en az bir saat kitap okuduğunu söylemiştir.", "secenekler": ["tanımlama", "tanık gösterme", "karşılaştırma", "örnekleme", "sayısal veri", "benzetme"], "dogru": "E", "cozum": "Sayı ve yüzde ile veri verilmiştir: sayısal veri.", "emin": true},
-    {"id": "tur-par-053", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Bir bölgede uzun yıllar boyunca görülen hava olaylarının ortalamasına iklim denir.", "secenekler": ["tanımlama", "tanık gösterme", "karşılaştırma", "örnekleme", "sayısal veri", "benzetme"], "dogru": "A", "cozum": "“… denir” kalıbıyla bir kavram açıklanmıştır: tanımlama.", "emin": true},
-    {"id": "tur-par-054", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Kitaplar, karanlıkta yolumuzu bulmamızı sağlayan fenerler gibidir.", "secenekler": ["tanımlama", "tanık gösterme", "karşılaştırma", "örnekleme", "sayısal veri", "benzetme"], "dogru": "F", "cozum": "“Gibi” ile kitap fenerlere benzetilmiştir: benzetme.", "emin": true},
-    {"id": "tur-par-055", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Bazı sözcükler birden fazla anlam taşır. Örneğin “çalmak” sözcüğü hem hırsızlığı hem de müzik yapmayı anlatır.", "secenekler": ["tanımlama", "tanık gösterme", "karşılaştırma", "örnekleme", "sayısal veri", "benzetme"], "dogru": "D", "cozum": "“Örneğin” ile bir örnek verilmiştir: örnekleme.", "emin": true},
-    {"id": "tur-par-056", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Odasına girdiğinde bütün eşyaların yerinin değiştiğini görünce ----. Bu cümle hangisiyle tamamlanırsa “şaşkınlık” anlamı taşır?", "secenekler": ["kan beynine sıçradı", "beyninden vurulmuşa döndü", "ağzı kulaklarına vardı", "göze geldi"], "dogru": "B", "cozum": "“Beyninden vurulmuşa dönmek” şaşkınlığı anlatır.", "emin": true},
-    {"id": "tur-par-057", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Aşağıdaki sözcük çiftlerinden hangisi yakın anlamlıdır?", "secenekler": ["cevap – yanıt", "kara – siyah", "sevinç – kıvanç", "üşümek – donmak"], "dogru": "D", "cozum": "Üşümek ile donmak derece farkı taşıyan yakın anlamlı sözcüklerdir.", "emin": true},
-    {"id": "tur-par-058", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-3", "tur": "alistirma", "metin": "“Bu şarkı gençler arasında çok tuttu.” cümlesindeki “tutmak” ile aynı anlamda kullanılmış sözcük hangisinde vardır?", "secenekler": ["Yeni çıkan oyun çocuklar arasında çok tuttu.", "Çocuk annesinin elini sıkıca tuttu.", "Verdiği sözü tutmayanlara güvenilmez.", "Yaz için deniz kenarında bir ev tuttular."], "dogru": "A", "cozum": "“Tuttu” burada benimsenmek, beğenilmek anlamındadır; A şıkkı aynı anlamdadır.", "emin": true},
-    {"id": "tur-par-059", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Hangisinde “için” sözcüğü amaç bildirir?", "secenekler": ["Çok yorulduğum için erken uyudum.", "Hava soğuk olduğu için montumu giydim.", "Sınavı kazanmak için gece gündüz çalıştı.", "Yolu bilmediği için bize sordu."], "dogru": "C", "cozum": "Sınavı kazanmak henüz olmamış bir hedeftir: amaç.", "emin": true},
-    {"id": "tur-par-060", "altKonu": "Neden, sonuç, koşul ve amaç", "kaynakKod": "TUR-CÜM-1", "tur": "alistirma", "metin": "Hangisinde koşul–sonuç ilişkisi vardır?", "secenekler": ["Yağmur yağdığı için yollar çamur oldu.", "Çalışkan olduğundan sınıfı birincilikle bitirdi.", "Erken çıkarsan treni kaçırmazsın.", "Derse yetişmek için hızlı yürüdü."], "dogru": "C", "cozum": "“-arsan” ekiyle kurulan cümle koşul–sonuç ilişkisi taşır.", "emin": true},
-    {"id": "tur-par-061", "altKonu": "Duygu ve yargı bildiren cümleler", "kaynakKod": "TUR-CÜM-2", "tur": "alistirma", "metin": "Hangi cümle beklenti bildirir?", "secenekler": ["Umarım bu yıl sınavda istediğim puanı alırım.", "Yarın kütüphaneye gitmeyi planlıyorum.", "Bu kadarcık harçlıkla ne yapılır?", "Keşke biraz daha çalışsaydım."], "dogru": "A", "cozum": "“Umarım” bir şeyin olmasını ummaktır: beklenti.", "emin": true},
-    {"id": "tur-par-062", "altKonu": "Metin türleri", "kaynakKod": "TUR-MTÜR-3", "tur": "alistirma", "metin": "“Dünkü belediye meclisi toplantısında kabul edilen otopark kararı, bence kentin trafik sorununa çare olmayacak. Çünkü karar yalnızca merkezi kapsıyor.” Bu parça hangi metin türünden alınmıştır?", "secenekler": ["Deneme", "Makale", "Anı", "Köşe yazısı"], "dogru": "D", "cozum": "Güncel bir karar (dünkü toplantı) yazarın görüşüyle yorumlanmıştır: köşe yazısı.", "emin": true},
-    {"id": "tur-par-063", "altKonu": "Ana düşünce", "kaynakKod": "TUR-PAR-2", "tur": "alistirma", "metin": "“Spor yapmak yalnızca bedeni değil zihni de dinç tutar. Düzenli spor yapan öğrenciler derslerine daha kolay odaklanır. Bu nedenle okullar spor saatlerini azaltmamalıdır.” Bu parçada asıl anlatılmak istenen hangisidir?", "secenekler": ["Spor yalnızca bedeni geliştirir.", "Okullarda spor saatleri azaltılmamalıdır.", "Spor yapan her öğrenci başarılı olur.", "Derslere odaklanmanın tek yolu spordur."], "dogru": "B", "cozum": "Sonuç cümlesi (“Bu nedenle…”) asıl anlatılmak istenen düşünceyi verir.", "emin": true},
-    {"id": "tur-par-064", "altKonu": "Paragraftan çıkarım (ulaşılamaz)", "kaynakKod": "TUR-PAR-1", "tur": "alistirma", "metin": "“Kasabamızın genç şairi, yeni kitabıyla bir kez daha ödül aldı.” cümlesinden hangisine ulaşılamaz?", "secenekler": ["Şair ilk kez ödül kazanmıştır.", "Şairin yeni bir kitabı yayımlanmıştır.", "Şair daha önce de ödül kazanmıştır.", "Şair gençtir."], "dogru": "A", "cozum": "“Bir kez daha” önceden de ödül aldığını gösterir; “ilk kez” bununla çelişir.", "emin": true},
-    {"id": "tur-par-065", "altKonu": "Metne göre (çözüm fikirleri)", "kaynakKod": "TUR-PAR-7", "tur": "alistirma", "metin": "“Okul bahçesindeki çöplerin büyük bölümü, öğrencilerin yiyecek ambalajlarını yere atmasından kaynaklanıyor.” Bu açıklamaya göre hangisi bu soruna yönelik bir çözüm olabilir?", "secenekler": ["Bahçeye yeni ağaçlar dikmek", "Okul zilini değiştirmek", "Öğrencileri ambalajları çöp kutusuna atmaları için bilinçlendirmek", "Bahçeyi her yıl yeniden boyamak"], "dogru": "C", "cozum": "Sorunun nedeni ambalajların yere atılması olduğu için çözüm buna dokunmalıdır.", "emin": true},
-    {"id": "tur-par-066", "altKonu": "Anlatım biçimleri", "kaynakKod": "TUR-PAR-5", "tur": "alistirma", "metin": "“Arılar çiçeklerden topladıkları nektarı kovanda bala dönüştürür. Bir kovandaki arılar görev paylaşımı yaparak çalışır.” Bu açıklayıcı parçaya aşağıdakilerden hangisi eklenirse anlatım biçimi değişir?", "secenekler": ["Bir arı kolonisinde tek bir kraliçe arı bulunur.", "Balın rengi çiçeğin türüne göre değişebilir.", "Arılar çiçekler arasında polen taşıyarak bitkilerin döllenmesine yardımcı olur.", "Bu yüzden arıları korumak için hepimiz üzerimize düşeni yapmalıyız!"], "dogru": "D", "cozum": "Öğüt ve okura seslenme (“hepimiz … yapmalıyız”) anlatımı tartışmacıya çevirir.", "emin": true},
-    {"id": "tur-par-067", "altKonu": "Düşünceyi geliştirme yolları", "kaynakKod": "TUR-PAR-3", "tur": "alistirma", "metin": "Hangisinde düşünceyi geliştirme yollarından tanımlama kullanılmıştır?", "secenekler": ["Atatürk, “Yurtta sulh, cihanda sulh.” demiştir.", "Çok az yağış alan, bitki örtüsü cılız bölgelere çöl denir.", "Araştırmaya katılan 200 kişinin 150’si her gün yürüyüş yapıyor.", "Kitaplar, karanlıkta yolumuzu bulmamızı sağlayan fenerler gibidir."], "dogru": "B", "cozum": "“… denir” kalıbıyla bir kavram açıklanmıştır: tanımlama.", "emin": true}
-  ]
+ "id": "tur-par",
+ "ders": "Türkçe",
+ "unite": "03 - Paragrafta Anlam",
+ "baslik": "Paragrafta Anlam",
+ "anlatim": [
+  {
+   "baslik": "Ana düşünce",
+   "metin": "Ana düşünce, paragrafın vurgulanmak istenen, metnin tamamını kapsayan düşüncesidir. Her paragrafın son cümlesine ve “bu yüzden, bu nedenle, … gerekir” gibi sonuç bağlayan ifadelere bak. Metnin en çok yer ayırdığı bilgiyi ara; giriş cümleleri çoğunlukla arka plandır. Şıkta “en, tek, ana, her zaman, kesinlikle, yalnızca” gibi büyütücü sözler varsa metinde aynı güçte bir ifade olup olmadığını kontrol et."
+  },
+  {
+   "baslik": "Paragraftan çıkarım: ulaşılabilir ve ulaşılamaz",
+   "metin": "Soru kökündeki “ulaşılamaz, söylenemez, çıkarılamaz” ifadelerini daire içine al. Her şıkkın metindeki karşılığını yanına yaz; aynı kelime şart değil, aynı anlam yeter. Küçük zarflara dikkat et: “bir kez daha” önce de olduğunu, “nihayet” ya da “ilk kez” ise önce olmadığını gösterir; bu tür zarflar çelişki yaratır."
+  },
+  {
+   "baslik": "“Olabilir” ve “kesinlikle”; “metne göre” soruları",
+   "metin": "“Olabilir” ifadesi için bir geçerli örnek yeter; “kesinlikle” ya da “her zaman” için ise hiç karşı örnek olmamalıdır. “Bu açıklamaya göre” ya da “metne göre” sorularında yalnızca metin konuşur; önce metnin söylediği nedeni yaz, sonra her öncülün bu nedene dokunup dokunmadığına bak. Fen ya da genel kültür bilgisi, metinde dayanağı yoksa cevap olamaz."
+  },
+  {
+   "baslik": "Anlatım biçimleri",
+   "metin": "Açıklayıcı anlatım bilgi verir ve nesneldir; tanım ve nesnel cümleler içerir. Tartışmacı anlatım görüş savunur; “bence, -malıyız, -malısınız” gibi öğüt ifadeleri, okura seslenme, soru sorma ve karşı görüşe cevap içerir. Öyküleyici anlatım olay, kişi, zaman ve sıralı eylemlerle kurulur. Betimleyici anlatım görünüş, renk, ses ve koku anlatır; sıfatlar yoğundur. Açıklayıcı bir metne öğüt ya da okura seslenen bir cümle eklenirse anlatım biçimi tartışmacıya döner."
+  },
+  {
+   "baslik": "Düşünceyi geliştirme yolları",
+   "metin": "Tanımlama “… nedir?” sorusunu yanıtlar ve “… denir, … demektir” gibi kalıplarla kurulabilir; cümle içine gömülü de olabilir. Tanık gösterme, bir kişinin sözünü ya da görüşünü alıntılamaktır; tırnak işareti tek başına tanık gösterme değildir. Karşılaştırma “daha, en, -den farklı olarak, oysa” ile kurulur. Örnekleme “örneğin, mesela” ile, sayısal veri ise sayı ve yüzde ile verilir. Benzetme “gibi, sanki” ile kurulur."
+  },
+  {
+   "baslik": "Metin türleri ve hikâye unsurları",
+   "metin": "Deneme kişisel ve samimi bir dille, evrensel bir konuyu (hayat, insan, zaman) işler; kesin hüküm vermez. Köşe yazısı gazetede güncel bir konuyu (olay, gündem) yazarın görüşüyle yorumlar. Makale bir düşünceyi kanıtlarla savunur. Hikâyenin unsurları olay, kişi (varlıklar dahil), zaman ve mekândır; girişte kısaca anlatılan geçmiş arka plandır, asıl olay metnin çoğunu kaplar. Minimal hikâye çok kısa olup mesaj kaygısı taşımaz; yalnızca bir anın saptamasıdır."
+  },
+  {
+   "baslik": "Boşluk tamamlama",
+   "metin": "Her boşluk için metinden ipucu kelimeyi bul, boşluğun yanına yaz ve şıktaki kelimeyi ipucuyla birebir eşleştir. Yakın anlamlı iki kelime kalırsa “hangisi ipucunu tam karşılıyor?” diye sor. Örneğin “derinliklerinde, ayrıntısına kadar” ipucu “derinlemesine” ile, “henüz o dönemlerden … tahlil etmiş” ipucu “ileri görüşlü” ile eşleşir; “yenilikçi” ise yeni şeyler getiren demektir."
+  }
+ ],
+ "tuyolar": [
+  "Ana düşünce metnin tamamını kapsar; her paragrafta yalnızca bir cümlenin altını çiz ve sonuç bağlayıcılarını takip et.",
+  "Şıktaki büyütücü sözler (en, tek, ana, her zaman, yalnızca, kesinlikle) metinde aynı güçte yoksa o şık kapsam dışıdır.",
+  "“Bir kez daha” önce de olduğunu, “nihayet / ilk kez” ise önce olmadığını gösterir; bu zarflar ulaşılamaz sorularında çelişki kaynağıdır.",
+  "“Olabilir” için bir örnek yeter; “kesinlikle / her zaman” için hiç karşı örnek olmamalıdır.",
+  "“Metne göre” sorusunda yalnızca metin konuşur; fen ya da genel kültür bilgisi cevap olamaz.",
+  "Öğüt (-malısınız), okura seslenme ve retorik soru anlatım biçimini tartışmacıya çevirir; açıklayıcı metinde bunlar biçimi değiştirir.",
+  "Tanımlama cümle içine gömülü olabilir; tırnak işareti tek başına tanık gösterme değildir, bir kişinin sözü alıntılanmalıdır.",
+  "İkileme yan yana gelen sözcük çiftidir (eğri büğrü); “öyle şirin, öyle masum” bir tekrardır.",
+  "Hikâye unsurlarını sırayla bul: kişi, mekân, zaman, olay; girişteki geçmiş arka plandır.",
+  "Minimal hikâyede “mesaj yok mu?” diye sorup her metnin yanına ✓ ya da ✗ koy.",
+  "Deneme evrensel konuyu kişisel bir dille işler; köşe yazısı gazetede güncel bir konuyu yorumlar.",
+  "Boşluk tamamlamada ipucu kelimeyi metinden bul ve şıkla birebir eşle; ileri görüşlü ile yenilikçi aynı değildir.",
+  "Asıl yargı için “oysa, ama, fakat” sonrasındaki cümleye bak; metinde geçmeyen kavram içeren şık çeldiricidir.",
+  "Öneri (yemelidir, yararlıdır) ile zorunluluk (mutlaka, şarttır) ayrılır; “uygun değildir” sorusunda tüm ögeleri uygun olmayan şık cevaptır."
+ ],
+ "hatalar": [
+  {
+   "kod": "TUR-PAR-1",
+   "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
+   "soru": "Saygın Soysal parçasından hangisine ulaşılamayacağı.",
+   "hata": "“Sinemamız” ile “Türk sineması”nın aynı anlama geldiğini eşleştiremediği için A şıkkını ulaşılamaz sandı; C şıkkındaki “nihayet” ile metindeki “bir kez daha” arasındaki çelişkiyi görmedi.",
+   "dogruYol": "Her şıkkın metindeki karşılığını yaz; aynı kelime değil aynı anlam yeter. “Nihayet / ilk kez” gibi zarflar “bir kez daha” ile çelişiyorsa o şık ulaşılamazdır. Cevap: C.",
+   "gorsel": [
+    "sorular/TUR-PAR-1.png"
+   ],
+   "cevap": "C",
+   "senin": "A",
+   "cozum": [
+    "Soru kökü olumsuz: \"ulaşılamaz\". Yani metinle ÇELİŞEN ya da metinde olmayan şıkkı arıyorsun. Her şıkkın metindeki karşılığını bul.",
+    "A: \"Sinemamız ... yükselen bir dönem\" = Türk sineması gelişti → ulaşılır ✓.",
+    "B: \"Bir elin parmaklarını geçmiyor\" = sayı az → ulaşılır ✓.",
+    "D: \"En yetenekli oyunculardan biri\", \"umut veren\" → ulaşılır ✓.",
+    "C: Metinde \"bir kez DAHA dikkat çekiyor\" yazıyor, yani Soysal daha önce de başarılıydı. C ise \"NİHAYET başarıyı yakalamış\" diyor (ilk kez başardı) → metinle çelişir ✗. Cevap C."
+   ],
+   "hataAnaliz": "A'daki ifade metinde aynı kelimelerle geçmediği için (\"Türk sineması\", \"gelişme\" yerine \"sinemamız\", \"yükselen dönem\") ulaşılamaz sandın. Aynı anda C'deki küçük ama önemli kelimeyi (\"nihayet\") metindeki \"bir kez daha\" ile karşılaştırmadın.",
+   "tuyo": "\"Ulaşılamaz\" sorularında her şıkkın metindeki karşılığını bul ve şıkkın yanına kelimeyi yaz. Aynı kelime şart değil; AYNI ANLAM yeter. Şıklardaki küçük zarflara (nihayet, ilk kez, yalnızca, her zaman, artık) özellikle bak; şıkkı yanlış yapan çoğu zaman budur.",
+   "dikkat": "\"Bir kez daha\" = daha önce de oldu. \"Nihayet / sonunda\" = daha önce olmadı. Eş anlamlı ifadeler: sinemamız = Türk sineması; yükselen dönem = gelişme; bir elin parmaklarını geçmiyor = çok az."
+  },
+  {
+   "kod": "TUR-PAR-7",
+   "altKonu": "Metne göre sorusu",
+   "soru": "Küresel ısınma metnine göre soruna yönelik çözüm olabilecek fikirler (I–III).",
+   "hata": "III. fikri (yeşil alanlar) Fen bilgisiyle doğru buldu ve metnin önüne kendi bilgisini koydu; “metne göre” koşulunu uygulamadı.",
+   "dogruYol": "Önce metnin verdiği nedeni yaz (yüksek karbondioksitli yakıtların kullanımı), sonra her fikrin bu nedene doğrudan dokunup dokunmadığına bak. Cevap: I ve II.",
+   "gorsel": [
+    "sorular/TUR-PAR-7.png"
+   ],
+   "cevap": "B) I ve II",
+   "senin": "D) I, II ve III",
+   "cozum": [
+    "\"Bu açıklamaya göre\" → yalnızca metin konuşur. Metnin söylediği NEDENİ yaz: yüksek karbondioksitli yakıtların şehirlerde ve sanayide bolca kullanılması.",
+    "I: Fosil yakıt kullanımını azaltmak → doğrudan bu nedene dokunuyor ✓.",
+    "II: Fabrika bacalarından çıkan zararlı gazları filtreyle temizlemek → karbondioksit salınımını azaltır ✓.",
+    "III: Yeşil alanları artırmak bilimsel olarak yararlı olsa da metinde nedenle ilişkilendirilmemiş. Soru \"metinde sözü edilen soruna yönelik\" diyor ✗.",
+    "Cevap: I ve II."
+   ],
+   "hataAnaliz": "\"Metne göre\" sorusunda kendi Fen bilgini (ağaçlandırma CO₂ azaltır) metnin önüne koydun. III bilimsel olarak savunulabilir ama kitap metne dayalı cevap istiyor.",
+   "tuyo": "\"Metne göre / bu açıklamaya göre\" sorularında önce metnin söylediği NEDENİ yaz (burada: CO₂'li yakıt kullanımı). Sonra her öncülün bu nedene doğrudan dokunup dokunmadığına bak. Metinde dayanağı olmayan bilgi, doğru bile olsa, cevap olamaz.",
+   "dikkat": "Türkçe sorusunda Fen bilgisi değil METİN konuşur. \"Bu açıklamaya göre\" = sadece metin. Ana düşünce (asıl anlatılmak istenen)"
+  },
+  {
+   "kod": "TUR-PAR-2",
+   "altKonu": "Ana düşünce",
+   "soru": "Dil ve dilin kuralları parçasında asıl anlatılmak istenen düşünce.",
+   "hata": "İlk cümledeki “dil kültürün en önemli ögesidir” bilgisini “dildeki bozulma kültürel yozlaşmanın en temel sebebidir” biçiminde metinde olmayan bir genellemeye çevirdi; metnin vardığı sonucu (kurallara uyulursa bozulma olmaz) gözden kaçırdı.",
+   "dogruYol": "Ana düşünce metnin vardığı sonuçtadır; son cümleleri ve “bu yüzden, çünkü” bağlayıcılarını takip et. Şıktaki “en temel, tek” gibi sözleri metinde ara. Cevap: C.",
+   "gorsel": [
+    "sorular/TUR-PAR-2.png"
+   ],
+   "cevap": "C",
+   "senin": "B",
+   "cozum": [
+    "Soru kökü: \"asıl anlatılmak istenen\". Her paragrafın son cümlesine ve sonuç bağlayan cümlelere (\"bu yüzden, çünkü, -se/-sa ... olur\") bak.",
+    "Metnin ikinci bölümü sonuca bağlanıyor: dili kurallar yönetir; kurallara uyulmazsa işleyiş bozulur → kurallara uyulursa bozulma olmaz. Bu, C ile aynı.",
+    "A: Okullar için \"yeterli olmadığı durumlarda\" deniyor, \"ana neden\" denmiyor ✗.",
+    "B: \"En temel sebep\" genellemesi metinde yok ✗. Metin dili kültürün \"en önemli ögesi\" sayıyor.",
+    "D: Aydınlara görev düştüğü söyleniyor, görevlerini yapmadıkları söylenmiyor ✗."
+   ],
+   "hataAnaliz": "Metnin ilk cümlesindeki \"dil, kültürün en önemli ögesi\" bilgisini \"dildeki bozulma kültürel yozlaşmanın EN TEMEL sebebi\" biçiminde metinde olmayan bir genellemeye çevirdin. Ana düşünceyi ilk cümlede aradın; ikinci bölümün vardığı sonucu (kurallar) gözden kaçırdın. Ayrıca metnin neredeyse tamamının altını çizmek, önemli cümleyi ayırt etmeyi zorlaştırıyor.",
+   "tuyo": "(1) Her paragrafın son cümlesine ve sonuç bağlayan cümlelere bak. (2) Şıkta metinde olmayan \"en, ana, tek, her zaman\" gibi büyütücü bir kelime varsa dikkat. (3) Ana düşünce metnin TAMAMINI kapsamalı, tek bir cümlesini değil. Altını çizerken her paragrafta yalnızca BİR cümle seç.",
+   "dikkat": "Şıktaki \"en temel / ana neden / tek\" kelimeleri metinde aynen ya da aynı anlamda yoksa şık kapsam dışıdır. Ana düşünce genellikle metnin vardığı sonuçtadır (çoğu zaman son cümlelerde)."
+  },
+  {
+   "kod": "TUR-PAR-6",
+   "altKonu": "Ana düşünce (vurgulanan)",
+   "soru": "Video oyunu oynama bozukluğu parçasında vurgulanmak istenen düşünce.",
+   "hata": "A şıkkındaki “video oyunları hastalık sınıfına alındı” ifadesini; oyun bozukluğu yerine oyunları öznesine koyarak, girişteki 50 yıllık ayrıntıya takılıp seçti.",
+   "dogruYol": "Paragrafı giriş (arka plan) ve gövde diye ikiye böl; şıkkı gövdeyle karşılaştır ve öznenin metinle aynı olup olmadığına bak. Cevap: B.",
+   "gorsel": [
+    "sorular/TUR-PAR-6.png"
+   ],
+   "cevap": "B",
+   "senin": "A",
+   "cozum": [
+    "Vurgulanan düşünce = metnin en çok yer ayırdığı bilgi. Metni ikiye böl: giriş (arka plan: 50 yıl önce ilk konsol) ve gövde (asıl konu).",
+    "Gövdede bozukluğun ölçütleri var: oynama süresi, sıklığı, günlük işlere göre öncelik, olumsuz sonuçlara rağmen devam, 12 ay. Ve DSÖ bunu hastalık sınıflandırmasına aldı. Bu, B ile aynı.",
+    "A: Hastalık sınıfına alınan OYUNLAR değil, oynama BOZUKLUĞU; ölçütler de eksik ✗.",
+    "C: \"Ancak 50 yıl sonra etkiler hâle geldi\" metinde yok ✗.",
+    "D: \"Oyunların içeriği\" metinde yok ✗."
+   ],
+   "hataAnaliz": "A, metnin girişindeki ayrıntıyla (50 yıl, çevrim içi/dışı) başlıyor ve özneyi kaydırıyor (\"oyunlar hastalık sınıfına alındı\"); metnin asıl vurguladığı ölçütleri içermiyor. TUR-PAR-2 ile aynı aile: ana fikri girişte aramak.",
+   "tuyo": "Paragrafı ikiye böl: giriş (arka plan) ve gövde. Şıkkı gövdeyle karşılaştır. Şıktaki ÖZNEYE dikkat et: \"video oyunları\" mı, \"video oyunu oynama bozukluğu\" mu?",
+   "dikkat": "Bir kelimelik özne farkı şıkkı yanlış yapabilir (oyun ≠ oyun bağımlılığı). Giriş cümleleri genellikle arka plandır."
+  },
+  {
+   "kod": "TUR-PAR-3",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "soru": "Fes ve “püsküllü bela” parçasının anlatımıyla ilgili söylenebilecek özellik.",
+   "hata": "Tanımlamayı yalnızca “X … -dır” kalıbında aradığı için cümle içine gömülü “püsküllü bela” tanımını görmedi ve tanımlamayı kabul etmeyip A şıkkını seçti.",
+   "dogruYol": "Tanımlama “… nedir?” sorusuna cevap veren, kalıba bağlı olmayan açıklamadır. Tanık gösterme bir kişinin sözünün alıntılanmasıdır. Cevap: C (tanımlama).",
+   "gorsel": [
+    "sorular/TUR-PAR-3.png"
+   ],
+   "cevap": "C",
+   "senin": "A",
+   "cozum": [
+    "Soru: anlatım için hangisi söylenebilir? Her şıkka ✓/✗ koy.",
+    "C: Son cümlede \"püsküllü bela\" deyiminin ne demek olduğu açıklanıyor (\"elinden kurtulması güç, zarara ve sıkıntıya yol açan kimse yahut şeyler için söylenen\") → tanımlama ✓.",
+    "A: Kimsenin sözü alıntılanmamış → tanık gösterme yok ✗.",
+    "B: İki şey arasında benzerlik/farklılık yok → karşılaştırma yok ✗.",
+    "D: Açıklayıcı/öyküleyici anlatım var; okuru ikna etme çabası yok → tartışmacı değil ✗."
+   ],
+   "hataAnaliz": "Tanımlamayı yalnızca \"X, ... -dır.\" kalıbında arıyorsun; cümle içine gömülü tanımı (\"... için söylenen 'püsküllü bela' deyimi\") görmedin. Ayrıca tanık göstermeyi karıştırdın: tanık gösterme, bir başkasının sözünü/görüşünü alıntılamaktır; metinde kimsenin sözü yok.",
+   "tuyo": "İpucu tablosu: Tanımlama → \"... nedir?\" sorusuna cevap veren cümle (\"... denir, ... demektir, ... için söylenir\"). Tanık gösterme → birinin sözü: tırnak içinde alıntı + kişi adı. Karşılaştırma → daha, en, -den farklı olarak, oysa. Örnekleme → örneğin, mesela. Sayısal veri → sayı, yüzde. Benzetme → gibi, sanki.",
+   "dikkat": "Bir kavramın ya da deyimin anlamının açıklandığı her yerde tanımlama vardır; kalıp şart değil. Tırnak işareti tek başına tanık gösterme değildir; bir KİŞİNİN sözü alıntılanmalı."
+  },
+  {
+   "kod": "TUR-PAR-5",
+   "altKonu": "Anlatım biçimi",
+   "soru": "Dijital bilgi çağı parçası hangi cümleyle tamamlanırsa anlatım biçimi değişmez.",
+   "hata": "B şıkkındaki “uzaklaşmalısınız” öğüdünün ve okura seslenmenin anlatımı tartışmacıya çevirdiğini fark etmedi; bu yüzden B'yi “anlatım değişmez” diye seçti.",
+   "dogruYol": "Açıklayıcı metinde öğüt (-malısınız), okura seslenme ve retorik soru anlatım biçimini tartışmacıya çevirir; bilgi vermeye devam eden şık doğru cevaptır. Cevap: C.",
+   "gorsel": [
+    "sorular/TUR-PAR-5.png"
+   ],
+   "cevap": "C",
+   "senin": "B",
+   "cozum": [
+    "Metin AÇIKLAYICI: bilgi veriyor, yorum ya da öğüt yok. Anlatım biçimi değişmesin istiyoruz.",
+    "C: Veri depolama ve sanal kütüphanelerden bilgi veriyor → açıklayıcı devam ediyor ✓.",
+    "A ve D: Soru sorup okuru düşündürmeye/ikna etmeye çalışıyor → anlatım değişir ✗.",
+    "B: \"Uzaklaşmalısınız\" diye öğüt veriyor, okura seslenip ikna ediyor → tartışmacı anlatıma geçer ✗."
+   ],
+   "hataAnaliz": "Anlatım biçimlerini karıştırdın: açıklayıcı (bilgi verir) ↔ tartışmacı (görüş savunur, öğüt verir, okura seslenir). \"-malısınız\" gibi öğüt/emir kipini ve okura doğrudan seslenmeyi tartışmacı anlatımın işareti olarak tanımadın (\"Hemen uzaklaş demiyor\" notunu almışsın).",
+   "tuyo": "İpuçları: Açıklayıcı → bilgi, tanım, nesnel cümle. Tartışmacı → \"bence, -malıyız/-malısınız, sizce, ... değil mi?\", karşı görüşe cevap, okura seslenme. Öyküleyici → olay, zaman, kişi. Betimleyici → görünüş, renk, ses (resim çizer gibi).",
+   "dikkat": "Okura \"siz\" diye seslenip öğüt veren cümle anlatım biçimini tartışmacıya çevirir."
+  },
+  {
+   "kod": "TUR-PAR-4",
+   "altKonu": "Boşluk tamamlama",
+   "soru": "Peyami Safa parçasında boşluklara düşüncenin akışına göre gelecek sözcükler.",
+   "hata": "İlk boşluğu “çekinmeden” ile doldurdu, ikinci boşlukta “yenilikçi” ile “ileri görüşlü” arasındaki farkı ayırt edemedi; “henüz o dönemlerden” ipucunu kullanmadı.",
+   "dogruYol": "Her boşluk için metinden ipucu kelimeyi bul (derinlik, ayrıntı → derinlemesine; henüz o dönemden → ileri görüşlü) ve şıkla birebir eşle. Cevap: D.",
+   "gorsel": [
+    "sorular/TUR-PAR-4.png"
+   ],
+   "cevap": "D) derinlemesine – ileri görüşlü",
+   "senin": "A) çekinmeden – yenilikçi",
+   "cozum": [
+    "Her boşluk için metinden İPUCU kelimesini bul ve boşluğun yanına yaz.",
+    "1. boşluk: \"derinliklerinde, hiçbir ayrıntıyı atlamadan\" → analizlerini DERİNLEMESİNE yapmak. (\"Çekinmeden ... kaçınmamıştır\" ise anlam tekrarı yapar.)",
+    "2. boşluk: \"Çünkü\" cümlesi açıklıyor: modern çağın yabancılaşmasını \"HENÜZ O DÖNEMLERDEN\" çok iyi tahlil etmiş → geleceği önceden gören = İLERİ GÖRÜŞLÜ.",
+    "\"Yenilikçi\" yeni şeyler getiren demektir, geleceği sezmek değil."
+   ],
+   "hataAnaliz": "\"Yenilikçi\" ile \"ileri görüşlü\" arasındaki anlam farkını ayırt edemedin; \"henüz o dönemlerden\" ipucunu anahtar olarak kullanmadın.",
+   "tuyo": "Her boşluk için metinden İPUCU kelimesini bul (1: derinlik, ayrıntı; 2: henüz o dönemden → gelecek). Sonra şıktaki kelimeyi ipucuyla birebir eşle. Yakın anlamlı iki kelime varsa \"hangisi ipucunu TAM karşılıyor?\" diye sor.",
+   "dikkat": "İleri görüşlü = olacakları önceden sezen. Yenilikçi = yeniliği seven, yeni şeyler getiren. Derinlemesine = en ince ayrıntısına kadar."
+  },
+  {
+   "kod": "TUR-MTÜR-1",
+   "altKonu": "Hikâye unsurları",
+   "soru": "Kırlangıçlar hikâyesinde hikâye unsurlarıyla ilgili yanlış olan ifade.",
+   "hata": "Cevabı büyük olasılıkla doğru buldu (D) ama emin değildi; kırlangıçların yolculuğunun girişteki arka plan olduğunu ayırt etmek için yeterince dikkat etmedi.",
+   "dogruYol": "Hikâye unsurlarını sırayla bul: kişiler, mekân, zaman, olay. Olay metnin çoğunu kaplayandır; girişteki geçmiş arka plandır. Cevap: D.",
+   "gorsel": [
+    "sorular/TUR-MTUR-1.png"
+   ],
+   "cevap": "D",
+   "senin": "Büyük olasılıkla D'yi işaretledin",
+   "cozum": [
+    "Soru \"yanlıştır\" diyor; her şıkkı hikâye unsurlarıyla ✓/✗ kontrol et.",
+    "A: Zaman → Nisan, bahar ✓.",
+    "B: Mekân → evin bahçesi ✓.",
+    "C: Kişiler ve varlıklar → baba, iki kız kardeş, kırlangıçlar ✓.",
+    "D: Kırlangıçların yolculuğu hikâyenin GİRİŞİNDEKİ arka plan bilgisidir. Asıl olay: kırlangıçların bahçeye gelmesi, çocukların onları izlemesi, babanın kırlangıçların toprağa faydasını anlatması → D yanlış."
+   ],
+   "tuyo": "Sıra: (1) Kişiler: kim konuşuyor, kim hareket ediyor? (2) Mekân: olay NEREDE geçiyor? (3) Zaman: hangi kelime zamanı söylüyor (Nisan, bahar, sabah)? (4) Olay: \"Hikâyede en çok ne anlatılıyor?\" Girişteki bilgi değil, metnin ÇOĞUNU kaplayan olay.",
+   "dikkat": "Girişte kısaca anlatılan geçmiş (kırlangıçların yolculuğu) arka plandır; ana olay metnin büyük kısmında anlatılandır. Hikâye unsurları: olay, kişiler (varlıklar dahil), zaman, mekân."
+  },
+  {
+   "kod": "TUR-MTÜR-2",
+   "altKonu": "Minimal hikâye",
+   "soru": "Hangi metinlerin minimal hikâye örneği olduğu.",
+   "hata": "Mesaj kaygısı taşımama ölçütünü ters uyguladı; mesaj içeren I ve II'yi seçti, mesaj taşımayan III'ü dışarıda bıraktı.",
+   "dogruYol": "Ölçütü soruya çevir: “Mesaj yok mu?” Her metnin yanına ✓ ya da ✗ koy, sonra ✓ olanları şıkla eşleştir. Cevap: yalnız III.",
+   "gorsel": [
+    "sorular/TUR-MTUR-2.png"
+   ],
+   "cevap": "B) Yalnız III",
+   "senin": "C) I ve II",
+   "cozum": [
+    "Tanım: minimal hikâye az kelimeyle yoğun anlam verir, MESAJ KAYGISI TAŞIMAZ, yalnızca bir anın saptamasıdır.",
+    "Ölçütü soruya çevir: \"Mesaj YOK mu?\" Her metne ✓/✗ koy.",
+    "I: \"Küçük bir iyilik bile fark yaratır\" mesajı var ✗.",
+    "II: \"Maddi yardımdan çok insanca davranış değerlidir\" mesajı var ✗.",
+    "III: Öğüt/mesaj yok, yalnızca bir anı, bir an saptaması ✓.",
+    "Cevap: yalnız III."
+   ],
+   "hataAnaliz": "Kendi notların doğru cevabı (yalnız III) gösterirken mesaj taşıyan metinleri (I ve II) işaretledin: ölçütü ters uyguladın. Matematik ve Fen'de de gördüğümüz \"doğruyu bulup başka şıkkı işaretleme\" örüntüsünün Türkçe'deki ilk örneği.",
+   "tuyo": "Ölçütlü sorularda her metnin yanına ölçüte göre ✓ / ✗ koy (burada: \"mesaj yok mu?\" → I ✗, II ✗, III ✓). Sonra ✓ alanlarını şıkla eşleştir. Not almak yetmez; not ile şık arasında köprü kur.",
+   "dikkat": "Tanımda olumsuz ölçüt varsa (\"taşımayan, olmayan, içermeyen\") ölçütü soruya çevir: \"Mesaj YOK mu?\" Evet olanlar cevaptır. Minimal hikâye: çok kısa, mesaj vermez, bir anı kaydeder."
+  },
+  {
+   "kod": "TUR-MTÜR-3",
+   "altKonu": "Deneme ve köşe yazısı",
+   "soru": "Sessizlik ve gürültü üzerine parçanın hangi metin türünden alındığı.",
+   "hata": "Kişisel görüş (“bence”) içeren her metni köşe yazısı sandı; konunun evrensel (hayat, insan ruhu) olduğunu ve güncel bir olaya dayanmadığını dikkate almadı.",
+   "dogruYol": "Konu güncel mi (haber, olay, gündem) → köşe yazısı. Konu evrensel mi (hayat, insan, zaman) → deneme. Cevap: A (deneme).",
+   "gorsel": [
+    "sorular/TUR-MTUR-3.png"
+   ],
+   "cevap": "A) Deneme",
+   "senin": "B) Köşe yazısı",
+   "cozum": [
+    "Ipuçlarını topla: \"bence\" (kişisel görüş), samimi üslup, kanıt/kaynak yok, konu evrensel (hayat, insan ruhu, sessizlik).",
+    "Bu özellikler denemeyi gösterir.",
+    "B: Köşe yazısı gazetede güncel bir konuyu (haber, olay, gündem) ele alır ✗.",
+    "C: Makale kanıtlarla bir düşünceyi savunur ✗. D: Roman olay anlatır ✗."
+   ],
+   "hataAnaliz": "Kişisel görüş içeren her metni köşe yazısı sandın. Ayırt edici ölçüt GÜNCELLİK ve gazete: köşe yazısı güncel bir konuyu işler, deneme ise evrensel konuları (hayat, insan, zaman) kişisel bir dille anlatır.",
+   "tuyo": "İki soru sor: (1) Konu güncel mi (haber, olay, gündem)? → köşe yazısı. Konu evrensel mi (hayat, insan, zaman, mutluluk)? → deneme. (2) Kanıt/kaynak var mı? → makale. Olay ve kişiler var mı? → hikâye/roman. Okura soru soran sohbet havası → sohbet (söyleşi).",
+   "dikkat": "Deneme: kişisel, samimi, evrensel konu, kesin yargı yok. Köşe yazısı: gazete, GÜNCEL konu."
+  },
+  {
+   "kod": "TUR-PAR-8",
+   "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
+   "soru": "Kapıdaki küçük çocuk parçasıyla ilgili söylenemeyecek ifade.",
+   "hata": "Betimleyici cümleleri görünce parçada olay olmadığını düşündü ve “olay ağırlıklı” şıkkını söylenemez saydı; “öyle … öyle” tekrarını ikileme sandı.",
+   "dogruYol": "Her şıkkın yanına metinden bir örnek yaz; örnek bulamadığın şık “söylenemez”in cevabıdır. İkileme yan yana gelen sözcük çiftidir (eğri büğrü). Cevap: D.",
+   "gorsel": [
+    "sorular/TUR-PAR-8.png"
+   ],
+   "cevap": "D) İkilemelere yer verilmiştir.",
+   "senin": "A) Olay ağırlıklı bir metindir. (teyit bekleniyor)",
+   "cozum": [
+    "Soru kökü olumsuz: \"söylenemez\". Her şık için metinden bir ÖRNEK bul; örnek bulamadığın şık cevaptır.",
+    "A: Çocuk kapıda belirir, babası ayakkabısını giydirir, kalabalık başını okşar → olaylar art arda anlatılıyor ✓.",
+    "B: \"Babası eğilmiş…\", \"Küçük … izliyordu\" → anlatıcı \"o\" diye anlatıyor, üçüncü kişi ✓.",
+    "C: \"belirdi kapıda\", \"giydiriyordu oğluna\", \"okşuyordu kimi\" → yüklem sonda değil, devrik ✓.",
+    "D: İkileme = yan yana duran sözcük çifti (yavaş yavaş, eğri büğrü). Metinde yok. \"Öyle şirin, öyle masum\" tekrardır, ikileme değil ✗. Cevap D."
+   ],
+   "hataAnaliz": "Metindeki betimlemeleri (ışıltılı gülümseme, şirin, masum) görünce \"olay yok\" diye düşündün; oysa çocuk kapıda beliriyor, babası ayakkabı giydiriyor, kalabalık okşuyor: olaylar var. D'yi metinde örnek arayarak kontrol etmedin; \"öyle … öyle\" tekrarını ikileme sanmış olabilirsin.",
+   "tuyo": "Anlatım özelliği şıklarında her şıkkın yanına metinden örneğini yaz (C → \"belirdi kapıda\"). Örnek yazamadığın şık \"söylenemez\"in cevabıdır.",
+   "dikkat": "İkileme ≠ tekrar. İkileme: yavaş yavaş, aşağı yukarı, çoluk çocuk, eğri büğrü. Tekrar: \"öyle şirin, öyle masum\". Betimleme olması metinde olay olmadığı anlamına gelmez. Ana düşünce (asıl anlatılmak istenen)"
+  },
+  {
+   "kod": "TUR-PAR-9",
+   "altKonu": "Ana düşünce",
+   "soru": "Köy enstitüleri parçasının ana düşüncesi.",
+   "hata": "Yalnızca ilk cümleyi karşılayan A şıkkını seçti; metnin sonundaki zor koşullara ilişkin vurguyu ve metnin bütününü kapsamadı.",
+   "dogruYol": "Şıklara bakmadan metni tek cümleyle kendin özetle; “Bir dakika”, “sakın unutmayın” gibi vurgulardan sonraki cümleyi özete kat. Ana düşünce metnin bütününü kapsar. Cevap: B.",
+   "gorsel": [
+    "sorular/TUR-PAR-9.png"
+   ],
+   "cevap": "B) Olumsuz koşullara rağmen köy enstitüleri, çok yönlü ve donanımlı gençler yetiştirmiştir.",
+   "senin": "Teyit bekleniyor (A'nın yanında tik var)",
+   "cozum": [
+    "Önce metni tek cümleyle kendin özetle: meslekler + 25 roman + müzik aleti → çok yönlü gençler; son cümle \"O koşullarda Anadolu öğretmensizdi\" → zor koşullar.",
+    "Özet: \"Zor koşullarda çok yönlü gençler yetiştirdi.\" Şimdi şıklara bak.",
+    "A: Yalnız ilk cümleyi (başka meslekler) karşılıyor; roman, müzik ve son cümle yok → ayrıntı ✗.",
+    "C ve D: \"Gençler köy enstitülerini tercih etmiş\" yargısı metinde hiç yok ✗.",
+    "B: Hem çok yönlülüğü hem olumsuz koşulları kapsıyor ✓. Cevap B."
+   ],
+   "hataAnaliz": "Ana düşünce sorusunda metnin yalnız ilk cümlesini karşılayan A şıkkı çekici geldi. Oysa ana düşünce metnin BAŞINI ve SONUNU birlikte kapsamalı; \"Bir dakika!..\" ile başlayan son cümle ipucuydu.",
+   "tuyo": "Şıklara bakmadan önce metni tek cümleyle kendin özetle. \"Bir dakika, ama, oysa, unutmayın\" gibi vurgulardan sonraki cümleyi özetine mutlaka kat.",
+   "dikkat": "Ayrıntı = metnin bir parçası. Ana düşünce = metnin bütünü. Yalnız bir cümleye karşılık gelen şık ayrıntıdır."
+  },
+  {
+   "kod": "TUR-PAR-10",
+   "altKonu": "Asıl yargı",
+   "soru": "Doğal kaynaklar parçasında üzerinde durulan asıl yargı.",
+   "hata": "Metinde geçmeyen “kalkınma” ve “enerji” sözcüklerini içeren şıkları doğru bilgiler diye değerlendirdi; “doğru olan” ile “metnin söylediği”ni karıştırdı.",
+   "dogruYol": "Asıl yargıyı “oysa” sonrasındaki cümlelerde ara; şıkta metinde olmayan bir anahtar sözcük varsa o şık çeldiricidir. Cevap: B.",
+   "gorsel": [
+    "sorular/TUR-PAR-10.png"
+   ],
+   "cevap": "B) Doğanın şekillenmesinde etkin olan tüm insan faaliyetleri için doğal kaynaklar kullanılmaktadır.",
+   "senin": "Teyit bekleniyor",
+   "cozum": [
+    "\"Asıl yargı\" = yazarın vurguladığı düşünce. \"Oysa\"dan sonraki cümleleri bul.",
+    "\"Oysa günümüzde doğa, insan faaliyetleri sonucunda şekillenmektedir. Söz konusu bütün insan faaliyetleri için doğal kaynaklar kullanılmaktadır.\"",
+    "Son cümle (araç gereçlerin tamamına yakını doğal kaynaklardan) bunu pekiştiriyor.",
+    "A'da \"kalkınma\", C'de \"enerji\" metinde yok ✗. D, metindeki \"bir an düşünelim\" varsayımını yargı gibi sunuyor ✗.",
+    "B, \"Oysa\"dan sonraki iki cümleyi birleştiriyor ✓. Cevap B."
+   ],
+   "hataAnaliz": "Daire içine aldığın sözcüklerin metinde OLMADIĞINI fark ettin ama o şıkları elemedin. A ve C kendi içinde doğru bilgiler (Fen/Sosyal); \"doğru olan\" ile \"metnin söylediği\" karıştı.",
+   "tuyo": "\"Asıl yargı\" sorusunda \"Oysa, ama, fakat\"tan sonraki cümleyi bul ve şıklarda aynısını ara. Şıktaki bir anahtar sözcük metinde yoksa o şıkkı hemen çiz.",
+   "dikkat": "\"Bir an düşünelim … O zaman …\" = kurgusal varsayım, yazarın asıl yargısı değil. Metinde geçmeyen kavram (kalkınma, enerji) = çeldirici. Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)"
+  },
+  {
+   "kod": "TUR-PAR-11",
+   "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
+   "soru": "Einstein ve eğitim parçasından hangi yargıya ulaşılamayacağı.",
+   "hata": "Seçeneklerdeki “her yönden gelişmiş” abartısını yakalamadı; D şıkkındaki “seviyeli ilişki” ile metindeki “saygılı tartışma”nın aynı anlama geldiğini görmedi.",
+   "dogruYol": "Kesin ve abartılı sözcükleri (her yönden, tamamen, kesinlikle, bütün) altını çiz; metinde aynı güçte bir ifade yoksa şık ulaşılamazdır. Farklı sözcüklerle verilen aynı anlamı eşleştir. Cevap: C.",
+   "gorsel": [
+    "sorular/TUR-PAR-11.png"
+   ],
+   "cevap": "C) Yaşamın her alanında etkili olan sistemli eğitimi uygulayan ülkeler, her yönden gelişmiş ülkelerdir.",
+   "senin": "Teyit bekleniyor",
+   "cozum": [
+    "Soru kökü olumsuz: \"ulaşılamaz\". Her şıkkın metindeki karşılığını bul.",
+    "A: \"Kısa bir otobüs yolculuğundan bile kendisine bir şeyler katar\" ✓.",
+    "B: \"Anne karnında başlayan … yaşamın her alanındadır\" → eğitim süreklidir ✓.",
+    "D: \"Tartışma ortamında saygılı, düşüncelere değer veren nesil eğitim sayesinde yaratılır\" → seviyeli ilişki = saygılı tartışma ✓.",
+    "C: Metin sistemli eğitimin ÖNEMLİ olduğunu söylüyor; uygulayan ülkelerin \"HER YÖNDEN gelişmiş\" olduğunu söylemiyor → aşırı genelleme ✗. Cevap C. Not Fotoğrafta D'nin önünde pembe bir işaret var. Kitabın cevap anahtarı D diyorsa bize bildir; metne göre doğru cevap C'dir."
+   ],
+   "hataAnaliz": "\"Her yönden gelişmiş\" ifadesindeki abartıyı yakalamadın. D'de metindeki \"saygılı tartışma\" ile şıktaki \"seviyeli ilişki\" aynı anlama geliyordu; farklı sözcükler kullanıldığı için D'yi metinde yok sanmış olabilirsin.",
+   "tuyo": "Şıklardaki kesin / abartılı sözcüklerin (her yönden, tamamen, kesinlikle, bütün, hiçbir zaman) altını çiz. Metinde aynı güçte bir ifade yoksa o şık \"ulaşılamaz\"dır.",
+   "dikkat": "\"Önemlidir\" ≠ \"her yönden gelişmiş yapar\". Aynı anlam farklı sözcükle verilebilir: önce ANLAMI eşle, kelimeyi değil."
+  },
+  {
+   "kod": "TUR-PAR-12",
+   "altKonu": "Paragraftan çıkarım (uygun örnek)",
+   "soru": "Kahvaltı parçasına göre uygun kahvaltı örneği olmayan şık.",
+   "hata": "Parçadaki “yumurta” önerisini her kahvaltıda zorunlu bir kural gibi uyguladı ve yumurtası olmayan D şıkkını seçti; oysa parçanın önerdiği hiçbir besin içermeyen A şıkkı uygunsuzdu.",
+   "dogruYol": "Her şıkkın her ögesini parçadaki önerilerle ✓ ya da ✗ ile eşleştir; bütün ögeleri ✗ olan şık cevaptır. Öneri ile zorunluluk farklıdır; eksik öneri uygunsuzluk değildir. Cevap: A.",
+   "gorsel": [
+    "sorular/TUR-PAR-12.png"
+   ],
+   "cevap": "A) 1 büyük fincan çay, 3 adet sigara böreği, 1 dilim portakallı kek",
+   "senin": "D) … (altına \"yumurta\" yazmışsın; teyit bekleniyor)",
+   "cozum": [
+    "Parçada önerilen besinleri listele: süt, yumurta, peynir; meyve-sebze; çorbalar; tahıl ürünleri; (kilo fazla değilse) bal, reçel.",
+    "Her şıktaki her besinin listede olup olmadığını işaretle (✓/✗).",
+    "B: süt ✓, tahıl ✓, meyve suyu ✓. C: süt ✓, yumurta ✓, reçel ✓, mandalina ✓. D: süt ✓, peynir ✓, domates ✓.",
+    "A: çay ✗, sigara böreği ✗, kek ✗ → önerilen hiçbir besin yok, protein kaynağı da yok.",
+    "Cevap A."
+   ],
+   "hataAnaliz": "\"Özellikle çocuklar bir adet yumurta yemelidir\" ÖNERİSİNİ her kahvaltıda olması ŞART bir kural gibi uyguladın; D'de yumurta olmadığı için onu seçtin. Oysa A'da parçanın önerdiği tek bir besin bile yoktu.",
+   "tuyo": "\"Uygun değildir\" sorusunda her şıkkın her ögesine ✓/✗ koy. Bütün ögeleri ✗ olan şık cevaptır. Bir şıkta bir öneri eksik diye o şık uygunsuz olmaz.",
+   "dikkat": "Öneri (yemelidir, yararlıdır, tüketilebilir) ≠ zorunluluk (mutlaka, şarttır). Eksik öneri ≠ uygunsuz."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "tur-par-001",
+   "altKonu": "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-1",
+   "tur": "benzer",
+   "metin": "“Yazarın son romanı da okurlardan yine büyük ilgi gördü.” cümlesinden hangisine ulaşılabilir?",
+   "secenekler": [
+    "Yazar ilk kez bir roman yazmıştır.",
+    "Yazarın önceki romanları da ilgi görmüştür.",
+    "Yazar artık roman yazmayacaktır.",
+    "Romanı yalnızca eleştirmenler beğenmiştir."
+   ],
+   "dogru": "B",
+   "cozum": "“Yine” ile önceki romanların da ilgi gördüğü anlaşılır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-002",
+   "altKonu": "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-1",
+   "tur": "benzer",
+   "metin": "“Kütüphanemize bu yıl çok sayıda kitap geldi ama gerçekten okunmaya değer olanlar bir elin parmaklarını geçmez.” cümlesinden hangisine ulaşılamaz?",
+   "secenekler": [
+    "Kütüphaneye bu yıl çok kitap gelmiştir.",
+    "Gelen kitapların az bir kısmı değerlidir.",
+    "Gelen kitapların çoğu okunmaya değerdir.",
+    "Konuşan kişi kitapları değerlendirmiştir."
+   ],
+   "dogru": "C",
+   "cozum": "Değerli kitapların “bir elin parmaklarını geçmediği” söylenmiştir; çoğunun değerli olduğu çıkarılamaz.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-003",
+   "altKonu": "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-1",
+   "tur": "benzer",
+   "metin": "“Takımımız uzun süredir beklenen şampiyonluğa nihayet ulaştı.” cümlesinden hangisine ulaşılabilir?",
+   "secenekler": [
+    "Takım her yıl şampiyon olur.",
+    "Takım daha önce de art arda şampiyon olmuştur.",
+    "Takımın şampiyonluğu uzun zamandır bekleniyordu.",
+    "Takım şampiyonluğa hiç önem vermemiştir."
+   ],
+   "dogru": "C",
+   "cozum": "“Uzun süredir beklenen” ifadesinden şampiyonluğun uzun zamandır beklendiği anlaşılır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-004",
+   "altKonu": "Metne göre (çözüm fikirleri)",
+   "kaynakKod": "TUR-PAR-7",
+   "tur": "benzer",
+   "metin": "“Şehirlerde hava kirliliğinin başlıca nedeni kömürle ısınmadır.” Metne göre hangisi bu soruna yönelik bir çözümdür?",
+   "secenekler": [
+    "Doğal gaza geçiş",
+    "Daha çok kitap okumak",
+    "Spor yapmak",
+    "Erken uyumak"
+   ],
+   "dogru": "A",
+   "cozum": "Kömürle ısınmanın yerine doğal gaza geçmek kirliliğin nedenine doğrudan çözüm getirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-005",
+   "altKonu": "Metne göre (çözüm fikirleri)",
+   "kaynakKod": "TUR-PAR-7",
+   "tur": "benzer",
+   "metin": "“Bu açıklamaya göre” ifadesi ne anlama gelir?",
+   "secenekler": [
+    "Kendi bilgimle cevap vermeliyim.",
+    "Yalnızca metnin verdiği bilgiye dayanmalıyım.",
+    "En uzun şıkkı seçmeliyim.",
+    "Metni okumama gerek yok."
+   ],
+   "dogru": "B",
+   "cozum": "“Bu açıklamaya göre” sorularında yalnızca metin konuşur.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-006",
+   "altKonu": "Metne göre (çözüm fikirleri)",
+   "kaynakKod": "TUR-PAR-7",
+   "tur": "benzer",
+   "metin": "“Trafik kazalarının çoğu aşırı hızdan kaynaklanır.” Metne göre hangisi soruna yönelik bir çözüm DEĞİLDİR?",
+   "secenekler": [
+    "Hız sınırlarını denetlemek",
+    "Hız kameraları kurmak",
+    "Araçları renkli boyamak",
+    "Sürücülere hız konusunda eğitim vermek"
+   ],
+   "dogru": "C",
+   "cozum": "Araçların renginin aşırı hızla bir ilgisi yoktur; bu bir çözüm değildir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-007",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-2",
+   "tur": "benzer",
+   "metin": "“Kitap okumak hayal gücünü geliştirir. Okuyan çocuk farklı dünyalar tanır, kendini başkasının yerine koymayı öğrenir. Bu yüzden çocuklara küçük yaşta okuma alışkanlığı kazandırılmalıdır.” Ana düşünce hangisidir?",
+   "secenekler": [
+    "Kitap okumak hayal gücünü geliştiren tek etkinliktir.",
+    "Çocuklara küçük yaşta okuma alışkanlığı kazandırılmalıdır.",
+    "Okuyan çocuklar farklı dünyalar tanır.",
+    "Çocuklar kitap okumayı sevmez."
+   ],
+   "dogru": "B",
+   "cozum": "Metnin sonuç cümlesi (“Bu yüzden…”) ana düşünceyi verir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-008",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-2",
+   "tur": "benzer",
+   "metin": "Ana düşünce sorusunda hangi şık metinde olmayan bir genelleme yaptığı için yanlış olma ihtimali EN YÜKSEKTİR?",
+   "secenekler": [
+    "“… gerekir.”",
+    "“… önemlidir.”",
+    "“… en temel sebebidir.”",
+    "“… katkı sağlar.”"
+   ],
+   "dogru": "C",
+   "cozum": "“En temel sebebi” gibi büyütücü bir sözle metinde olmayan kesin bir genelleme yapılmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-009",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-2",
+   "tur": "benzer",
+   "metin": "“Spor, insan sağlığı için önemlidir. Ancak yanlış yapılan spor sakatlıklara yol açabilir. Bu nedenle spor mutlaka bir uzman eşliğinde yapılmalıdır.” Ana düşünce hangisidir?",
+   "secenekler": [
+    "Spor sağlık için önemlidir.",
+    "Spor her zaman sakatlığa yol açar.",
+    "Spor uzman eşliğinde yapılmalıdır.",
+    "Sadece sporcular spor yapmalıdır."
+   ],
+   "dogru": "C",
+   "cozum": "Metnin sonuç cümlesi, sporun uzman eşliğinde yapılması gerektiğini söyler.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-010",
+   "altKonu": "Ana düşünce (vurgulanan)",
+   "kaynakKod": "TUR-PAR-6",
+   "tur": "benzer",
+   "metin": "“Kahve dünyanın en çok tüketilen içeceklerindendir. Ancak günde dört fincandan fazla kahve uykusuzluk ve çarpıntı yapabilir. Uzmanlar günlük tüketimin sınırlı tutulmasını öneriyor.” Vurgulanan hangisidir?",
+   "secenekler": [
+    "Kahve çok tüketilen bir içecektir.",
+    "Kahve tüketimi sınırlı tutulmalıdır.",
+    "Kahve sağlıksız bir içecektir.",
+    "Uzmanlar kahve içmez."
+   ],
+   "dogru": "B",
+   "cozum": "Metnin en çok yer ayırdığı ve sonuç cümlesi olan bilgi, tüketimin sınırlandırılması gerektiğidir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-011",
+   "altKonu": "Ana düşünce (vurgulanan)",
+   "kaynakKod": "TUR-PAR-6",
+   "tur": "benzer",
+   "metin": "Bir metinde vurgulanan düşünceyi bulurken hangisi YANLIŞ bir yöntemdir?",
+   "secenekler": [
+    "Metnin en çok yer ayırdığı bilgiye bakmak",
+    "Sonuç cümlelerine dikkat etmek",
+    "Sadece ilk cümleyi okuyup karar vermek",
+    "Şıkkın öznesini metinle karşılaştırmak"
+   ],
+   "dogru": "C",
+   "cozum": "Yalnızca ilk cümleye bakmak, metnin tamamını kapsayan vurguyu kaçırmaya yol açar.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-012",
+   "altKonu": "Ana düşünce (vurgulanan)",
+   "kaynakKod": "TUR-PAR-6",
+   "tur": "benzer",
+   "metin": "“Telefon kullanmak” ile “telefon bağımlılığı” için hangisi doğrudur?",
+   "secenekler": [
+    "Aynı anlamdadır.",
+    "Biri davranış, diğeri ölçütleri olan bir sorundur.",
+    "İkisi de hastalıktır.",
+    "İkisi de olumlu davranıştır."
+   ],
+   "dogru": "B",
+   "cozum": "Telefon kullanmak bir davranıştır; bağımlılık ise ölçütleriyle tanımlanan bir sorundur.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-013",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "benzer",
+   "metin": "“Halk arasında ‘ağzı var dili yok’ denir; bu söz, haksızlığa uğradığı hâlde sesini çıkarmayan kimseler için kullanılır.” Bu cümlede hangi düşünceyi geliştirme yolu kullanılmıştır?",
+   "secenekler": [
+    "Tanık gösterme",
+    "Tanımlama",
+    "Sayısal verilerden yararlanma",
+    "Karşılaştırma"
+   ],
+   "dogru": "B",
+   "cozum": "Deyimin ne anlama geldiği açıklanmıştır: tanımlama.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-014",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "benzer",
+   "metin": "Hangisinde tanık göstermeye başvurulmuştur?",
+   "secenekler": [
+    "Kitap, insanın en iyi dostudur.",
+    "Mevlânâ'nın dediği gibi “Ya olduğun gibi görün ya göründüğün gibi ol.”",
+    "Kitap okuyanların sayısı her yıl yüzde on artıyor.",
+    "Okumak, bilmediğimiz dünyaların kapısını açar."
+   ],
+   "dogru": "B",
+   "cozum": "Bir kişinin (Mevlânâ) sözü alıntılanmıştır: tanık gösterme.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-015",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "benzer",
+   "metin": "“Kediler köpeklerden daha bağımsızdır; köpekler ise sahiplerine daha bağlıdır.” cümlesinde hangi yol kullanılmıştır?",
+   "secenekler": [
+    "Tanımlama",
+    "Tanık gösterme",
+    "Karşılaştırma",
+    "Örnekleme"
+   ],
+   "dogru": "C",
+   "cozum": "“Daha” ifadeleriyle iki varlık karşılaştırılmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-016",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "benzer",
+   "metin": "Hangisi açıklayıcı anlatıma örnektir?",
+   "secenekler": [
+    "Bence herkes her gün kitap okumalı.",
+    "Arılar topladıkları nektarı bala dönüştürür.",
+    "Siz de doğaya sahip çıkmalısınız!",
+    "Bu kadar ağaç kesilir mi hiç?"
+   ],
+   "dogru": "B",
+   "cozum": "Bilgi veren, nesnel bir cümledir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-017",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "benzer",
+   "metin": "“Sağlıklı beslenmek için sebze ve meyveyi ihmal etmemelisiniz.” cümlesinin anlatım biçimi hangisidir?",
+   "secenekler": [
+    "Öyküleyici",
+    "Betimleyici",
+    "Tartışmacı / öğretici-ikna edici",
+    "Açıklayıcı ve nesnel"
+   ],
+   "dogru": "C",
+   "cozum": "“-malısınız” ile okura öğüt verilmiş ve ikna edilmeye çalışılmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-018",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "benzer",
+   "metin": "Açıklayıcı bir metne hangisi eklenirse anlatım biçimi DEĞİŞİR?",
+   "secenekler": [
+    "Ay, Dünya'nın tek doğal uydusudur.",
+    "Ay'ın yüzeyinde kraterler vardır.",
+    "Ay'a gitmek için hepimiz çaba göstermeliyiz!",
+    "Ay, Dünya'nın çevresinde yaklaşık 27 günde döner."
+   ],
+   "dogru": "C",
+   "cozum": "Öğüt ve okura seslenme içeren cümle anlatımı tartışmacıya çevirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-019",
+   "altKonu": "Paragrafta boşluk tamamlama",
+   "kaynakKod": "TUR-PAR-4",
+   "tur": "benzer",
+   "metin": "“Yazar, yıllar önce yazdığı romanlarda bugünkü teknoloji bağımlılığını anlatmıştı. Bu yönüyle ---- bir yazardır.” Boşluğa hangisi gelmelidir?",
+   "secenekler": [
+    "gelenekçi",
+    "ileri görüşlü",
+    "çekingen",
+    "alçakgönüllü"
+   ],
+   "dogru": "B",
+   "cozum": "Yıllar önce bugünü anlatmak, geleceği önceden görmeyi, yani ileri görüşlülüğü ifade eder.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-020",
+   "altKonu": "Paragrafta boşluk tamamlama",
+   "kaynakKod": "TUR-PAR-4",
+   "tur": "benzer",
+   "metin": "“Konuyu bütün ayrıntılarıyla, en ince noktasına kadar ---- inceledi.” Boşluğa hangisi gelmelidir?",
+   "secenekler": [
+    "yüzeysel olarak",
+    "derinlemesine",
+    "kısaca",
+    "çekinerek"
+   ],
+   "dogru": "B",
+   "cozum": "“En ince noktasına kadar” ipucu derinlemesine incelemeyi anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-021",
+   "altKonu": "Paragrafta boşluk tamamlama",
+   "kaynakKod": "TUR-PAR-4",
+   "tur": "benzer",
+   "metin": "“Yenilikçi” sözcüğünün anlamı hangisidir?",
+   "secenekler": [
+    "Geleceği önceden sezen",
+    "Yeni düşünce ve uygulamaları benimseyen ve getiren",
+    "Eskiye bağlı kalan",
+    "Çok deneyimli olan"
+   ],
+   "dogru": "B",
+   "cozum": "Yenilikçi, yeni düşünce ve uygulamalar getiren demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-022",
+   "altKonu": "Hikâye unsurları",
+   "kaynakKod": "TUR-MTÜR-1",
+   "tur": "benzer",
+   "metin": "Hikâyede “olayın geçtiği yer” hangi unsurdur?",
+   "secenekler": [
+    "Zaman",
+    "Mekân",
+    "Kişi",
+    "Olay"
+   ],
+   "dogru": "B",
+   "cozum": "Olayın geçtiği yer mekândır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-023",
+   "altKonu": "Hikâye unsurları",
+   "kaynakKod": "TUR-MTÜR-1",
+   "tur": "benzer",
+   "metin": "“Kış boyunca köyden uzakta kalan Ali, yazın dedesinin bağına döndü. Bütün gün dedesiyle üzüm topladılar.” Bu metnin asıl olayı hangisidir?",
+   "secenekler": [
+    "Ali'nin kışı köyden uzakta geçirmesi",
+    "Ali'nin dedesiyle bağda üzüm toplaması",
+    "Dedenin kışın yalnız kalması",
+    "Ali'nin okula gitmesi"
+   ],
+   "dogru": "B",
+   "cozum": "Metnin büyük kısmını kaplayan olay, dedesiyle üzüm toplamadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-024",
+   "altKonu": "Hikâye unsurları",
+   "kaynakKod": "TUR-MTÜR-1",
+   "tur": "benzer",
+   "metin": "Asıl metin (Sorular kitapçığı, Soru 8):\nKırlangıçlar kış soğuğundan kaçarak sıcak yerler bulmak için uzun bir yolculuğa çıkmış. Nisan ayıyla beraber o uzun yolculuklarının da sonuna gelmişler. Kendilerine yuva yapmak için uygun birer yer bulup çalışmaya başlamışlar … İnsanlar bile kırlangıçların bu çalışmalarını gördüklerinde baharın geldiğini kolayca anlayabilirmiş. Yine böyle bir zamanda iki kız kardeş uyurken babaları heyecanla yanlarına gelmiş: \"Kalkın bakalım çocuklar, bakın kimler gelmiş!\" … Çocuklar kırlangıçları hayranlıkla izlemeye koyulmuşlar. Kırlangıçların bahçelerinin yeni kazılmış sıcak topraklarında olduklarını görmüşler … Babaları: \"Yoruldukları ve acıktıkları için … topraktaki kurtları ve zararlı böcekleri yiyerek hem karınlarını doyuracaklar hem de toprağımızı kıvama getirecekler …\"\n\nAsıl metne göre hangisi hikâyede kişi ya da varlık olarak YER ALMAZ?",
+   "secenekler": [
+    "Baba",
+    "İki kız kardeş",
+    "Kırlangıçlar",
+    "Anne"
+   ],
+   "dogru": "D",
+   "cozum": "Metinde baba, iki kız kardeş ve kırlangıçlar vardır; anne yoktur.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-025",
+   "altKonu": "Minimal hikâye",
+   "kaynakKod": "TUR-MTÜR-2",
+   "tur": "benzer",
+   "metin": "Minimal hikâye için hangisi SÖYLENEMEZ?",
+   "secenekler": [
+    "Az sözle yoğun anlam aktarır.",
+    "Okura bir ders vermeyi amaçlar.",
+    "Bir anın saptamasıdır.",
+    "Kısa bir anlatıdır."
+   ],
+   "dogru": "B",
+   "cozum": "Minimal hikâye mesaj kaygısı taşımaz; okura ders vermeyi amaçlamaz.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-026",
+   "altKonu": "Minimal hikâye",
+   "kaynakKod": "TUR-MTÜR-2",
+   "tur": "benzer",
+   "metin": "“Kapı çaldı. Açtım. Kimse yoktu. Sadece eski bir mektup.” metni için hangisi doğrudur?",
+   "secenekler": [
+    "Okura öğüt veren bir fabldır.",
+    "Bir anı saptayan minimal hikâye örneğidir.",
+    "Uzun bir romanın girişidir.",
+    "Bir olayın sonucundan ders çıkaran bir anekdottur."
+   ],
+   "dogru": "B",
+   "cozum": "Metin kısa, mesaj vermeyen ve yalnızca bir anı saptayan bir örnektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-027",
+   "altKonu": "Minimal hikâye",
+   "kaynakKod": "TUR-MTÜR-2",
+   "tur": "benzer",
+   "metin": "Bir öğrenci üç metnin yanına şu notları almıştır: I – “mesaj var”, II – “mesaj yok”, III – “mesaj yok”. Soru “Hangileri mesaj kaygısı taşımaz?” ise doğru şık hangisidir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": "C",
+   "cozum": "Mesaj kaygısı taşımayanlar, notlara göre II ve III'tür.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-028",
+   "altKonu": "Deneme, köşe yazısı ve diğer düşünce yazıları",
+   "kaynakKod": "TUR-MTÜR-3",
+   "tur": "benzer",
+   "metin": "“Geçen hafta açılan yeni metro hattı şehrin trafik sorununu ne kadar çözecek? Bence bu hat tek başına yetmez.” Bu metin büyük olasılıkla hangi türdendir?",
+   "secenekler": [
+    "Deneme",
+    "Köşe yazısı",
+    "Masal",
+    "Şiir"
+   ],
+   "dogru": "B",
+   "cozum": "Güncel bir konu (metro hattı) ele alınmış ve yazarın görüşü yorumlanmıştır: köşe yazısı.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-029",
+   "altKonu": "Deneme, köşe yazısı ve diğer düşünce yazıları",
+   "kaynakKod": "TUR-MTÜR-3",
+   "tur": "benzer",
+   "metin": "Denemenin özelliklerinden biri DEĞİLDİR?",
+   "secenekler": [
+    "Yazar kişisel görüşlerini anlatır.",
+    "Samimi bir dil kullanılır.",
+    "Düşünceler kanıtlarla ispatlanmaya çalışılır.",
+    "Her konuda yazılabilir."
+   ],
+   "dogru": "C",
+   "cozum": "Deneme kesin hüküm ve ispat çabası taşımaz; kanıtlarla ispat makalenin özelliğidir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-030",
+   "altKonu": "Deneme, köşe yazısı ve diğer düşünce yazıları",
+   "kaynakKod": "TUR-MTÜR-3",
+   "tur": "benzer",
+   "metin": "“Zaman, avucumuzdan kayıp giden kum taneleri gibidir; değerini çoğu zaman kaybettiğimizde anlarız.” Bu cümle en çok hangi türe uygundur?",
+   "secenekler": [
+    "Haber",
+    "Deneme",
+    "Makale",
+    "Gezi yazısı"
+   ],
+   "dogru": "B",
+   "cozum": "Evrensel bir konu (zaman) kişisel bir dille işlenmiştir: deneme.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-031",
+   "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
+   "kaynakKod": "TUR-PAR-8",
+   "tur": "benzer",
+   "metin": "“Sabah sabah kapıyı çaldı. Elinde rengârenk balonlar vardı. Gülümsedi bize, sonra koşa koşa merdivenleri indi.” Bu parçada hangisi yoktur?",
+   "secenekler": [
+    "İkileme",
+    "Devrik cümle",
+    "Benzetme",
+    "Olay anlatımı"
+   ],
+   "dogru": "C",
+   "cozum": "Parçada benzetme (“gibi”, “sanki” ile kurulan karşılaştırma) yoktur.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-032",
+   "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
+   "kaynakKod": "TUR-PAR-8",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerin hangisinde ikileme vardır?",
+   "secenekler": [
+    "Öyle güzel, öyle sakin bir akşamdı.",
+    "Eğri büğrü yollardan geçerek köye vardık.",
+    "Kimi güldü, kimi ağladı.",
+    "Bir baktı, bir daha baktı."
+   ],
+   "dogru": "B",
+   "cozum": "“Eğri büğrü” yan yana gelen sözcük çiftidir: ikileme.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-033",
+   "altKonu": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
+   "kaynakKod": "TUR-PAR-8",
+   "tur": "benzer",
+   "metin": "“Ihlamur ağaçlarının gölgesinde ihtiyar bir adam oturuyordu. Beyaz sakalı göğsüne iniyor, mavi gözleri uzaklara bakıyordu.” Bu parça için hangisi söylenebilir?",
+   "secenekler": [
+    "Birinci kişi ağzından yazılmıştır.",
+    "Betimleme ağırlıklıdır.",
+    "Devrik cümle vardır.",
+    "İkilemeye yer verilmiştir."
+   ],
+   "dogru": "B",
+   "cozum": "Parçada yaşlı adamın görünüşü anlatılmaktadır: betimleme ağırlıklıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-034",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-9",
+   "tur": "benzer",
+   "metin": "“Kasabanın kütüphanesi küçüktü; yalnızca iki rafı vardı. Yine de her hafta yeni kitaplar gelir, çocuklar burada satranç öğrenir, yaşlılar gazete okurdu. Unutmayın, o yıllarda kasabada ne sinema ne de park vardı.” Ana düşünce hangisidir?",
+   "secenekler": [
+    "Kütüphanenin yalnızca iki rafı vardı.",
+    "Yetersiz imkânlara rağmen kütüphane kasabanın kültür merkezi olmuştu.",
+    "Çocuklar satrancı çok severdi.",
+    "Kasabada sinema yoktu."
+   ],
+   "dogru": "B",
+   "cozum": "Metnin tamamını kapsayan düşünce, kısıtlı imkânlara rağmen kütüphanenin kültür merkezi olmasıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-035",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-9",
+   "tur": "benzer",
+   "metin": "“Takımımızın ne sahası ne de antrenörü vardı. Buna rağmen oyuncular her gün okul bahçesinde çalıştı, birbirine taktik öğretti ve il birincisi oldu.” Ana düşünce hangisidir?",
+   "secenekler": [
+    "Takımın sahası yoktu.",
+    "Okul bahçesi antrenman için uygundu.",
+    "Kararlı çalışma, olumsuz koşulları aşmayı sağlar.",
+    "Oyuncular birbirine taktik öğretti."
+   ],
+   "dogru": "C",
+   "cozum": "Olumsuz koşullara rağmen kararlı çalışmanın başarı getirdiği metnin bütününde görülür.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-036",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-9",
+   "tur": "benzer",
+   "metin": "Bir metnin ana düşüncesini bulurken aşağıdakilerden hangisi yanlış bir yöntemdir?",
+   "secenekler": [
+    "Metni kendi cümlenle tek cümlede özetlemek",
+    "Yalnızca ilk cümleye bakıp karar vermek",
+    "“Ama, oysa, unutmayın” gibi vurgulardan sonrasına dikkat etmek",
+    "Şıkkın metnin bütününü kapsayıp kapsamadığını kontrol etmek"
+   ],
+   "dogru": "B",
+   "cozum": "Yalnızca ilk cümleye bakmak ana düşünceyi bulmada yanlış bir yöntemdir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-037",
+   "altKonu": "Asıl yargı",
+   "kaynakKod": "TUR-PAR-10",
+   "tur": "benzer",
+   "metin": "“Eskiden mektuplar haftalarca yolda kalırdı. Bir an telefonun hiç icat edilmediğini düşünelim. Oysa bugün iletişim, teknolojinin sunduğu imkânlarla şekilleniyor; her mesajımızı bu araçlarla iletiyoruz.” Asıl yargı hangisidir?",
+   "secenekler": [
+    "Mektuplar haftalarca yolda kalırdı.",
+    "Günümüzde iletişim teknolojiye dayanmaktadır.",
+    "Teknoloji ekonomik kalkınmayı hızlandırır.",
+    "Telefon icat edilmeseydi mektup kullanılırdı."
+   ],
+   "dogru": "B",
+   "cozum": "“Oysa”dan sonraki cümleler asıl yargıyı verir: iletişim teknolojiyle şekilleniyor.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-038",
+   "altKonu": "Asıl yargı",
+   "kaynakKod": "TUR-PAR-10",
+   "tur": "benzer",
+   "metin": "Bir parçada asıl yargıyı bulmak için en çok hangi sözcükten sonraki cümleye dikkat edilmelidir?",
+   "secenekler": [
+    "örneğin",
+    "oysa",
+    "ayrıca",
+    "ve"
+   ],
+   "dogru": "B",
+   "cozum": "“Oysa” ile başlayan cümle genellikle asıl yargıyı verir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-039",
+   "altKonu": "Asıl yargı",
+   "kaynakKod": "TUR-PAR-10",
+   "tur": "benzer",
+   "metin": "“Ormanlar havayı temizler.” cümlesi bir parçada geçmiyorsa, bu cümleyi içeren bir şık için ne söylenebilir?",
+   "secenekler": [
+    "Doğru olduğu için cevaptır.",
+    "Metne dayanmadığı için o metnin asıl yargısı olamaz.",
+    "Her zaman ana düşüncedir.",
+    "Mutlaka yardımcı düşüncedir."
+   ],
+   "dogru": "B",
+   "cozum": "Metinde geçmeyen bir ifade, o metnin asıl yargısı olamaz.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-040",
+   "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-11",
+   "tur": "benzer",
+   "metin": "“Düzenli spor yapmak sağlık için önemlidir; kalbi güçlendirir, uykuyu düzenler.” Bu metinden hangisine ulaşılamaz?",
+   "secenekler": [
+    "Spor kalbe yararlıdır.",
+    "Düzenli spor uykuyu olumlu etkiler.",
+    "Düzenli spor yapan herkes hiç hastalanmaz.",
+    "Spor sağlığı destekler."
+   ],
+   "dogru": "C",
+   "cozum": "“Hiç hastalanmaz” aşırı bir genellemedir; metinde yoktur.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-041",
+   "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-11",
+   "tur": "benzer",
+   "metin": "“Kitap okumak, kelime dağarcığını genişletir ve hayal gücünü besler.” Bu cümleden hangisine ulaşılamaz?",
+   "secenekler": [
+    "Okumak kelime bilgisini artırır.",
+    "Kitap okuyan herkes yazar olur.",
+    "Kitaplar hayal gücünü geliştirir.",
+    "Okuma dil becerisine katkı sağlar."
+   ],
+   "dogru": "B",
+   "cozum": "Kitap okumanın herkesi yazar yaptığı metinde söylenmemiştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-042",
+   "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-11",
+   "tur": "benzer",
+   "metin": "Aşağıdaki sözcüklerden hangisi “ulaşılamaz” sorularında şıkkın aşırı genelleme olduğunu gösteren bir ipucu DEĞİLDİR?",
+   "secenekler": [
+    "her yönden",
+    "kesinlikle",
+    "bazen",
+    "hiçbir zaman"
+   ],
+   "dogru": "C",
+   "cozum": "“Bazen” genellik bildirmez; diğerleri aşırı genellemeye işaret eder.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-043",
+   "altKonu": "Paragraftan çıkarım (uygun örnek)",
+   "kaynakKod": "TUR-PAR-12",
+   "tur": "benzer",
+   "metin": "“Okul çantasında su şişesi, kalem kutusu ve günün ders kitapları bulunmalıdır. Özellikle küçük öğrenciler yanlarına bir de yedek kalem almalıdır.” Buna göre hangisi uygun çanta örneği değildir?",
+   "secenekler": [
+    "Su şişesi, kalem kutusu, Türkçe kitabı",
+    "Kalem kutusu, ders kitapları, su şişesi",
+    "Oyuncak araba, çizgi roman, sakız",
+    "Ders kitapları, su şişesi, kalem kutusu, yedek kalem"
+   ],
+   "dogru": "C",
+   "cozum": "Oyuncak, çizgi roman ve sakız metinde önerilen eşyalar arasında yoktur.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-044",
+   "altKonu": "Paragraftan çıkarım (uygun örnek)",
+   "kaynakKod": "TUR-PAR-12",
+   "tur": "benzer",
+   "metin": "“Kamp için uyku tulumu, fener ve su yanınızda olsun. Hava soğuksa kalın mont da alın.” Buna göre hangisi uygun kamp listesi DEĞİLDİR?",
+   "secenekler": [
+    "Uyku tulumu, fener, su",
+    "Uyku tulumu, fener, su, kalın mont",
+    "Fener, su, uyku tulumu, şapka",
+    "Tablet, kulaklık, şemsiye"
+   ],
+   "dogru": "D",
+   "cozum": "Tablet, kulaklık ve şemsiye metinde önerilen eşyalar değildir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-045",
+   "altKonu": "Paragraftan çıkarım (uygun örnek)",
+   "kaynakKod": "TUR-PAR-12",
+   "tur": "benzer",
+   "metin": "Aşağıdaki ifadelerden hangisi bir ZORUNLULUK bildirir?",
+   "secenekler": [
+    "Kahvaltıda meyve yararlıdır.",
+    "Çocuklar özellikle yumurta yemelidir.",
+    "Bu ilacı mutlaka aç karnına içmelisiniz.",
+    "Çorba da tüketilebilir."
+   ],
+   "dogru": "C",
+   "cozum": "“Mutlaka” ile kesin bir zorunluluk bildirilmiştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-046",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "alistirma",
+   "metin": "Metnin anlatım biçimini yazın (A açıklayıcı, B tartışmacı, C öyküleyici, D betimleyici).\nMetin: Odanın duvarları açık mavi boyalıydı. Pencerenin önünde sarı çiçekli bir perde, köşede eski bir ceviz sandık duruyordu.",
+   "secenekler": [
+    "açıklayıcı",
+    "tartışmacı",
+    "öyküleyici",
+    "betimleyici"
+   ],
+   "dogru": "D",
+   "cozum": "Renk ve görünüş anlatılmaktadır: betimleyici.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-047",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "alistirma",
+   "metin": "Metnin anlatım biçimini yazın.\nMetin: Arkadaşlar, kitaplardan uzaklaşmayın! Hayal gücünüzün körelmesini istemiyorsanız her gün en az yarım saat okumalısınız.",
+   "secenekler": [
+    "açıklayıcı",
+    "tartışmacı",
+    "öyküleyici",
+    "betimleyici"
+   ],
+   "dogru": "B",
+   "cozum": "Okura seslenilmiş ve “-malısınız” ile öğüt verilmiştir: tartışmacı.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-048",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "alistirma",
+   "metin": "Metnin anlatım biçimini yazın.\nMetin: Sabah erkenden kalktı, çantasını omuzladı ve köy yoluna çıktı. Yolda eski bir arkadaşıyla karşılaştı; birlikte pazara kadar yürüdüler.",
+   "secenekler": [
+    "açıklayıcı",
+    "tartışmacı",
+    "öyküleyici",
+    "betimleyici"
+   ],
+   "dogru": "C",
+   "cozum": "Sıralı eylemlerle bir olay anlatılmıştır: öyküleyici.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-049",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "alistirma",
+   "metin": "Metnin anlatım biçimini yazın.\nMetin: Dünya, Güneş’in çevresindeki bir turunu yaklaşık 365 günde tamamlar. Bu süre bir yıl olarak kabul edilir.",
+   "secenekler": [
+    "açıklayıcı",
+    "tartışmacı",
+    "öyküleyici",
+    "betimleyici"
+   ],
+   "dogru": "A",
+   "cozum": "Nesnel bilgi verilmiştir: açıklayıcı.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-050",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Düşünceyi geliştirme yolunu bulun (A tanımlama, B tanık gösterme, C karşılaştırma, D örnekleme, E sayısal veri, F benzetme).\nCümle: Gazeteler günceldir ve çabuk eskir; kitaplar ise yıllarca değerini korur.",
+   "secenekler": [
+    "tanımlama",
+    "tanık gösterme",
+    "karşılaştırma",
+    "örnekleme",
+    "sayısal veri",
+    "benzetme"
+   ],
+   "dogru": "C",
+   "cozum": "“Ise” ile iki şey karşılaştırılmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-051",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Atatürk, “Hayatta en hakiki mürşit ilimdir, fendir.” sözüyle bilimin yol gösterici olduğunu belirtmiştir.",
+   "secenekler": [
+    "tanımlama",
+    "tanık gösterme",
+    "karşılaştırma",
+    "örnekleme",
+    "sayısal veri",
+    "benzetme"
+   ],
+   "dogru": "B",
+   "cozum": "Atatürk'ün sözü alıntılanmıştır: tanık gösterme.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-052",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Araştırmaya katılan 200 öğrencinin 150’si, yani yüzde 75’i, her gün en az bir saat kitap okuduğunu söylemiştir.",
+   "secenekler": [
+    "tanımlama",
+    "tanık gösterme",
+    "karşılaştırma",
+    "örnekleme",
+    "sayısal veri",
+    "benzetme"
+   ],
+   "dogru": "E",
+   "cozum": "Sayı ve yüzde ile veri verilmiştir: sayısal veri.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-053",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Bir bölgede uzun yıllar boyunca görülen hava olaylarının ortalamasına iklim denir.",
+   "secenekler": [
+    "tanımlama",
+    "tanık gösterme",
+    "karşılaştırma",
+    "örnekleme",
+    "sayısal veri",
+    "benzetme"
+   ],
+   "dogru": "A",
+   "cozum": "“… denir” kalıbıyla bir kavram açıklanmıştır: tanımlama.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-054",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Kitaplar, karanlıkta yolumuzu bulmamızı sağlayan fenerler gibidir.",
+   "secenekler": [
+    "tanımlama",
+    "tanık gösterme",
+    "karşılaştırma",
+    "örnekleme",
+    "sayısal veri",
+    "benzetme"
+   ],
+   "dogru": "F",
+   "cozum": "“Gibi” ile kitap fenerlere benzetilmiştir: benzetme.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-055",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Bazı sözcükler birden fazla anlam taşır. Örneğin “çalmak” sözcüğü hem hırsızlığı hem de müzik yapmayı anlatır.",
+   "secenekler": [
+    "tanımlama",
+    "tanık gösterme",
+    "karşılaştırma",
+    "örnekleme",
+    "sayısal veri",
+    "benzetme"
+   ],
+   "dogru": "D",
+   "cozum": "“Örneğin” ile bir örnek verilmiştir: örnekleme.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-056",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Odasına girdiğinde bütün eşyaların yerinin değiştiğini görünce ----. Bu cümle hangisiyle tamamlanırsa “şaşkınlık” anlamı taşır?",
+   "secenekler": [
+    "kan beynine sıçradı",
+    "beyninden vurulmuşa döndü",
+    "ağzı kulaklarına vardı",
+    "göze geldi"
+   ],
+   "dogru": "B",
+   "cozum": "“Beyninden vurulmuşa dönmek” şaşkınlığı anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-057",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Aşağıdaki sözcük çiftlerinden hangisi yakın anlamlıdır?",
+   "secenekler": [
+    "cevap – yanıt",
+    "kara – siyah",
+    "sevinç – kıvanç",
+    "üşümek – donmak"
+   ],
+   "dogru": "D",
+   "cozum": "Üşümek ile donmak derece farkı taşıyan yakın anlamlı sözcüklerdir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-058",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-3",
+   "tur": "alistirma",
+   "metin": "“Bu şarkı gençler arasında çok tuttu.” cümlesindeki “tutmak” ile aynı anlamda kullanılmış sözcük hangisinde vardır?",
+   "secenekler": [
+    "Yeni çıkan oyun çocuklar arasında çok tuttu.",
+    "Çocuk annesinin elini sıkıca tuttu.",
+    "Verdiği sözü tutmayanlara güvenilmez.",
+    "Yaz için deniz kenarında bir ev tuttular."
+   ],
+   "dogru": "A",
+   "cozum": "“Tuttu” burada benimsenmek, beğenilmek anlamındadır; A şıkkı aynı anlamdadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-059",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Hangisinde “için” sözcüğü amaç bildirir?",
+   "secenekler": [
+    "Çok yorulduğum için erken uyudum.",
+    "Hava soğuk olduğu için montumu giydim.",
+    "Sınavı kazanmak için gece gündüz çalıştı.",
+    "Yolu bilmediği için bize sordu."
+   ],
+   "dogru": "C",
+   "cozum": "Sınavı kazanmak henüz olmamış bir hedeftir: amaç.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-060",
+   "altKonu": "Neden, sonuç, koşul ve amaç",
+   "kaynakKod": "TUR-CÜM-1",
+   "tur": "alistirma",
+   "metin": "Hangisinde koşul–sonuç ilişkisi vardır?",
+   "secenekler": [
+    "Yağmur yağdığı için yollar çamur oldu.",
+    "Çalışkan olduğundan sınıfı birincilikle bitirdi.",
+    "Erken çıkarsan treni kaçırmazsın.",
+    "Derse yetişmek için hızlı yürüdü."
+   ],
+   "dogru": "C",
+   "cozum": "“-arsan” ekiyle kurulan cümle koşul–sonuç ilişkisi taşır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-061",
+   "altKonu": "Duygu ve yargı bildiren cümleler",
+   "kaynakKod": "TUR-CÜM-2",
+   "tur": "alistirma",
+   "metin": "Hangi cümle beklenti bildirir?",
+   "secenekler": [
+    "Umarım bu yıl sınavda istediğim puanı alırım.",
+    "Yarın kütüphaneye gitmeyi planlıyorum.",
+    "Bu kadarcık harçlıkla ne yapılır?",
+    "Keşke biraz daha çalışsaydım."
+   ],
+   "dogru": "A",
+   "cozum": "“Umarım” bir şeyin olmasını ummaktır: beklenti.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-062",
+   "altKonu": "Metin türleri",
+   "kaynakKod": "TUR-MTÜR-3",
+   "tur": "alistirma",
+   "metin": "“Dünkü belediye meclisi toplantısında kabul edilen otopark kararı, bence kentin trafik sorununa çare olmayacak. Çünkü karar yalnızca merkezi kapsıyor.” Bu parça hangi metin türünden alınmıştır?",
+   "secenekler": [
+    "Deneme",
+    "Makale",
+    "Anı",
+    "Köşe yazısı"
+   ],
+   "dogru": "D",
+   "cozum": "Güncel bir karar (dünkü toplantı) yazarın görüşüyle yorumlanmıştır: köşe yazısı.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-063",
+   "altKonu": "Ana düşünce",
+   "kaynakKod": "TUR-PAR-2",
+   "tur": "alistirma",
+   "metin": "“Spor yapmak yalnızca bedeni değil zihni de dinç tutar. Düzenli spor yapan öğrenciler derslerine daha kolay odaklanır. Bu nedenle okullar spor saatlerini azaltmamalıdır.” Bu parçada asıl anlatılmak istenen hangisidir?",
+   "secenekler": [
+    "Spor yalnızca bedeni geliştirir.",
+    "Okullarda spor saatleri azaltılmamalıdır.",
+    "Spor yapan her öğrenci başarılı olur.",
+    "Derslere odaklanmanın tek yolu spordur."
+   ],
+   "dogru": "B",
+   "cozum": "Sonuç cümlesi (“Bu nedenle…”) asıl anlatılmak istenen düşünceyi verir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-064",
+   "altKonu": "Paragraftan çıkarım (ulaşılamaz)",
+   "kaynakKod": "TUR-PAR-1",
+   "tur": "alistirma",
+   "metin": "“Kasabamızın genç şairi, yeni kitabıyla bir kez daha ödül aldı.” cümlesinden hangisine ulaşılamaz?",
+   "secenekler": [
+    "Şair ilk kez ödül kazanmıştır.",
+    "Şairin yeni bir kitabı yayımlanmıştır.",
+    "Şair daha önce de ödül kazanmıştır.",
+    "Şair gençtir."
+   ],
+   "dogru": "A",
+   "cozum": "“Bir kez daha” önceden de ödül aldığını gösterir; “ilk kez” bununla çelişir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-065",
+   "altKonu": "Metne göre (çözüm fikirleri)",
+   "kaynakKod": "TUR-PAR-7",
+   "tur": "alistirma",
+   "metin": "“Okul bahçesindeki çöplerin büyük bölümü, öğrencilerin yiyecek ambalajlarını yere atmasından kaynaklanıyor.” Bu açıklamaya göre hangisi bu soruna yönelik bir çözüm olabilir?",
+   "secenekler": [
+    "Bahçeye yeni ağaçlar dikmek",
+    "Okul zilini değiştirmek",
+    "Öğrencileri ambalajları çöp kutusuna atmaları için bilinçlendirmek",
+    "Bahçeyi her yıl yeniden boyamak"
+   ],
+   "dogru": "C",
+   "cozum": "Sorunun nedeni ambalajların yere atılması olduğu için çözüm buna dokunmalıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-066",
+   "altKonu": "Anlatım biçimleri",
+   "kaynakKod": "TUR-PAR-5",
+   "tur": "alistirma",
+   "metin": "“Arılar çiçeklerden topladıkları nektarı kovanda bala dönüştürür. Bir kovandaki arılar görev paylaşımı yaparak çalışır.” Bu açıklayıcı parçaya aşağıdakilerden hangisi eklenirse anlatım biçimi değişir?",
+   "secenekler": [
+    "Bir arı kolonisinde tek bir kraliçe arı bulunur.",
+    "Balın rengi çiçeğin türüne göre değişebilir.",
+    "Arılar çiçekler arasında polen taşıyarak bitkilerin döllenmesine yardımcı olur.",
+    "Bu yüzden arıları korumak için hepimiz üzerimize düşeni yapmalıyız!"
+   ],
+   "dogru": "D",
+   "cozum": "Öğüt ve okura seslenme (“hepimiz … yapmalıyız”) anlatımı tartışmacıya çevirir.",
+   "emin": true
+  },
+  {
+   "id": "tur-par-067",
+   "altKonu": "Düşünceyi geliştirme yolları",
+   "kaynakKod": "TUR-PAR-3",
+   "tur": "alistirma",
+   "metin": "Hangisinde düşünceyi geliştirme yollarından tanımlama kullanılmıştır?",
+   "secenekler": [
+    "Atatürk, “Yurtta sulh, cihanda sulh.” demiştir.",
+    "Çok az yağış alan, bitki örtüsü cılız bölgelere çöl denir.",
+    "Araştırmaya katılan 200 kişinin 150’si her gün yürüyüş yapıyor.",
+    "Kitaplar, karanlıkta yolumuzu bulmamızı sağlayan fenerler gibidir."
+   ],
+   "dogru": "B",
+   "cozum": "“… denir” kalıbıyla bir kavram açıklanmıştır: tanımlama.",
+   "emin": true
+  }
+ ]
 }

@@ -1,40 +1,256 @@
 {
-  "id": "ing-fri",
-  "ders": "İngilizce",
-  "unite": "Unit 1 - Friendship",
-  "baslik": "Friendship",
-  "anlatim": [
-    {"baslik": "But, however, in the end", "metin": "Bu kelimeler cümlenin yönünü değiştirir. Önce söylenen bilgi çoğunlukla bir ayrıntıdır; asıl fikir ya da karar bu bağlaçlardan sonra gelir. Örneğin 'Emre and I like the same things, however, he tells my secrets' cümlesinde asıl mesaj 'however' sonrasındadır. Metni okurken bu kelimeleri daire içine almayı alışkanlık hâline getir."},
-    {"baslik": "Amaç soruları", "metin": "'Why does she write this text?' gibi sorularda mesajın son cümlelerine bak. Kişi ne istiyor, ne yapacak? 'Can you pick me up?' gibi bir soru ya da 'I'll be there' gibi bir karar cümlesi amacı gösterir. Mesajın başındaki yakınma çoğu zaman sadece bir ayrıntıdır."},
-    {"baslik": "Davet kabulü ve reddi", "metin": "Kabul ederken 'I'd love to', 'Sure, why not?', 'I'll be there' gibi kalıplar kullanılır. Reddederken 'Sorry, I can't', 'I'm afraid I'm busy' gibi kalıplar kullanılır. Bir mesajda 'I can't refuse it' gibi ifade görürsen, bu da kabul anlamına gelebilir. Metnin tamamına bakmadan karar verme."},
-    {"baslik": "Öneri kalıpları", "metin": "Öneri yaparken kullanılan kalıplar şunlardır: What about + V-ing?, Why don't we + V?, Would you like to + V?, Shall we + V? ve Let's + V. Diyalog tamamlama sorularında boşluktan sonra gelen cümleyi oku ve önerinin o cümleyle uyumlu olup olmadığına bak. Örneğin 'We can see some new paintings' cümlesinin önerisi bir sergiyle eşleşir."},
-    {"baslik": "Olumsuz kökte eşleştirme", "metin": "'Which one DOES NOT complete the dialogue?' gibi sorularda her şıkkı boşluklardan birine yerleştir. Her şıkkın yanına uyduğu kişiyi yaz. Yanına isim yazamadığın şık cevaptır. Bu yöntem, bir kelimeyi bilmediğinde bile cümlenin geri kalanından tahmin yapmanı sağlar."},
-    {"baslik": "Önemli kelimeler", "metin": "reliable = güvenilir, keep a secret = sır tutmak, support = desteklemek, interests = ilgi alanları, refuse = reddetmek, accept = kabul etmek, exhibition = sergi, slumber party = pijama partisi, board game = kutu oyunu, attend = katılmak, suggestion = öneri. Bilmediğin kelimeyi cümlenin geri kalanından tahmin etmeye çalış."}
-  ],
-  "tuyolar": [
-    "But, however, in the end kelimelerinden sonra gelen bilgi çoğunlukla asıl fikirdir.",
-    "Amaç sorularında mesajın son cümlelerine bak: kişi ne istiyor, ne yapacak?",
-    "'Can you ...?' gibi soru cümleleri çoğunlukla mesajın amacını gösterir.",
-    "'Always', 'never', 'both' gibi kesinlik kelimelerini şıkta görürsen metinle hemen karşılaştır.",
-    "Olumsuz kökte (DOES NOT) her şıkkı bir boşluğa eşleştir; eşleşmeyen şık cevaptır.",
-    "Yanına bir kişi adı yazamadığın şık genellikle cevaptır.",
-    "Kabul kalıpları: I'd love to, Sure, why not?, I'll be there. Ret kalıpları: Sorry, I can't, I'm afraid I'm busy.",
-    "Öneri kalıplarını tanı: What about + V-ing?, Why don't we + V?, Shall we + V?, Would you like to + V?, Let's + V."
-  ],
-  "hatalar": [
-    {"kod": "İNG-FRI-1", "altKonu": "Reading: friendship and invitations", "soru": "Lucas'ın iki arkadaşı Emre ve Owen'ı anlatan metne göre CORRECT olan ifadeyi bul.", "hata": "Metnin başındaki 'Emre and I like doing the same things' cümlesine takıldı; 'However' ile gelen karşıtlığı ve 'In the end' ile gelen kararı hesaba katmadı. A şıkkındaki 'always' kelimesinin uyarısını da fark etmedi ve A'yı seçti.", "dogruYol": "But / however / in the end kelimelerini daire içine al; asıl fikir bunlardan sonra gelir. Şıklardaki always, never, both gibi kelimeleri metinle karşılaştır."},
-    {"kod": "İNG-FRI-2", "altKonu": "Reading: friendship and invitations", "soru": "Natalie'nin Nick'e yazdığı mesajın amacı nedir?", "hata": "Mesajın ilk cümlelerindeki yakınmayı (Joe hakkında) mesajın amacı sandı ve C'yi seçti. 'But' sonrasındaki kararı ve 'Can you pick me up?' isteğini hesaba katmadı.", "dogruYol": "Amaç sorularında mesajın son cümlelerine bak: kişi ne istiyor, ne yapacak? 'Can you ...?' gibi soru cümleleri çoğunlukla amacın ipucudur. Başta geçen yakınma ayrıntı olabilir."},
-    {"kod": "İNG-FRI-3", "altKonu": "Making suggestions (dialogue completion)", "soru": "Olumsuz kökte (DOES NOT), arkadaşların hafta sonu önerilerinden hangisi diyaloğu tamamlamaz?", "hata": "C şıkkını ('Would you like to visit the new art exhibition') yanlış seçti. 'Exhibition' (sergi) kelimesini bilmediği için Laura'nın 'We can see some new paintings' cümlesiyle eşleştiremedi.", "dogruYol": "Olumsuz kökte her şıkkın yanına uyduğu kişiyi yaz (A → Emma, B → Cecile, C → Laura). Yanına isim yazamadığın tek şık cevaptır. Bilmediğin kelimeyi cümlenin geri kalanından tahmin et."}
-  ],
-  "sorular": [
-    {"id": "ing-fri-001", "altKonu": "Reading: friendship and invitations", "kaynakKod": "İNG-FRI-1", "tur": "benzer", "metin": "Mia and Sara both love painting, but Sara often breaks her promises. Ella doesn't like painting; however, she always helps Mia with her homework. Mia spends most of her free time with Ella.\nWhich is CORRECT?", "secenekler": ["Mia only likes friends who paint.", "Being helpful is more important to Mia than having the same hobby.", "Sara is Mia's most reliable friend.", "Ella and Mia both hate painting."], "dogru": "B", "cozum": "Ella resim yapmayı sevmediği hâlde Mia'ya her zaman yardım eder; yani Mia için yardımseverlik ortak hobiden daha önemlidir.", "emin": true},
-    {"id": "ing-fri-002", "altKonu": "Reading: friendship and invitations", "kaynakKod": "İNG-FRI-1", "tur": "benzer", "metin": "In the text about Lucas, what does \"reliable\" mean?", "secenekler": ["funny", "talkative", "trustworthy", "sporty"], "dogru": "C", "cozum": "Reliable 'güvenilir' anlamına gelir ve trustworthy ile aynı anlamdadır.", "emin": true},
-    {"id": "ing-fri-003", "altKonu": "Reading: friendship and invitations", "kaynakKod": "İNG-FRI-1", "tur": "benzer", "metin": "Tom likes football and so do I, but he never keeps his promises. In the end, I chose to study with Ben, who always tells the truth.\nWhat is the main idea?", "secenekler": ["Football is the writer's favourite sport.", "Ben doesn't like football.", "Tom is a good student.", "The writer values honesty in a friend."], "dogru": "D", "cozum": "'In the end' sonrasındaki karar ve Ben'in her zaman doğruyu söylemesi, yazarın bir arkadaşta dürüstlüğe değer verdiğini gösterir.", "emin": true},
-    {"id": "ing-fri-004", "altKonu": "Reading: friendship and invitations", "kaynakKod": "İNG-FRI-2", "tur": "benzer", "metin": "Hi Emma, I'm really busy with my project this weekend. Sorry, I can't come to your party, but have fun!\nEmma's friend writes this message ----.", "secenekler": ["to accept the invitation", "to refuse the invitation", "to ask for help", "to complain about the party"], "dogru": "B", "cozum": "'Sorry, I can't come' bir daveti reddetme kalıbıdır; mesajın amacı daveti geri çevirmektir.", "emin": true},
-    {"id": "ing-fri-005", "altKonu": "Reading: friendship and invitations", "kaynakKod": "İNG-FRI-2", "tur": "benzer", "metin": "Your party sounds great! I don't like dancing much, but I'll be there. Should I bring some snacks?\nThe writer ----.", "secenekler": ["accepts the invitation", "refuses the invitation", "apologizes for being late", "complains about the food"], "dogru": "A", "cozum": "'I'll be there' ve 'Should I bring some snacks?' daveti kabul ettiğini gösterir.", "emin": true},
-    {"id": "ing-fri-006", "altKonu": "Reading: friendship and invitations", "kaynakKod": "İNG-FRI-2", "tur": "benzer", "metin": "Which word means \"to say no to an invitation\"?", "secenekler": ["accept", "invite", "miss", "refuse"], "dogru": "D", "cozum": "Refuse 'reddetmek' anlamına gelir; davete hayır demektir.", "emin": true},
-    {"id": "ing-fri-007", "altKonu": "Making suggestions (dialogue completion)", "kaynakKod": "İNG-FRI-3", "tur": "benzer", "metin": "Tom: I'm bored. Any ideas for this afternoon?\nSam: - - - -? There is a new action movie at the cinema.\nWhich of the following completes the dialogue?", "secenekler": ["Why don't we go to the cinema", "What about playing football in the park", "Shall we visit the science museum", "Would you like to have a picnic"], "dogru": "A", "cozum": "Sam'in cümlesi yeni bir film olduğunu söylüyor; sinemaya gitmeyi öneren Why don't we + V kalıbı uyar.", "emin": true},
-    {"id": "ing-fri-008", "altKonu": "Making suggestions (dialogue completion)", "kaynakKod": "İNG-FRI-3", "tur": "benzer", "metin": "Which of the following is NOT a suggestion?", "secenekler": ["Let's make a cake together.", "What about going swimming?", "I made a cake yesterday.", "Why don't we play chess?"], "dogru": "C", "cozum": "'I made a cake yesterday' geçmiş zamanlı bir bilgi cümlesidir; bir öneri değildir.", "emin": true},
-    {"id": "ing-fri-009", "altKonu": "Making suggestions (dialogue completion)", "kaynakKod": "İNG-FRI-3", "tur": "benzer", "metin": "Ayşe: Let's meet this weekend!\nCan: - - - -? I want to try the new pizza place.\nEce: - - - -? We can buy new clothes.\nMert: - - - -? The weather will be sunny.\nWhich of the following suggestions DOES NOT complete the dialogue?", "secenekler": ["Why don't we go shopping at the mall", "What about eating out on Saturday", "Shall we go cycling by the lake", "Would you like to stay at home and do homework"], "dogru": "D", "cozum": "Diğer üç öneri sırasıyla yemek (pizza), alışveriş (kıyafet) ve güneşli hava ile uyumludur; evde ödev yapmak hiçbir boşluğa uymaz.", "emin": true}
-  ]
+ "id": "ing-fri",
+ "ders": "İngilizce",
+ "unite": "Unit 1 - Friendship",
+ "baslik": "Friendship",
+ "anlatim": [
+  {
+   "baslik": "But, however, in the end",
+   "metin": "Bu kelimeler cümlenin yönünü değiştirir. Önce söylenen bilgi çoğunlukla bir ayrıntıdır; asıl fikir ya da karar bu bağlaçlardan sonra gelir. Örneğin 'Emre and I like the same things, however, he tells my secrets' cümlesinde asıl mesaj 'however' sonrasındadır. Metni okurken bu kelimeleri daire içine almayı alışkanlık hâline getir."
+  },
+  {
+   "baslik": "Amaç soruları",
+   "metin": "'Why does she write this text?' gibi sorularda mesajın son cümlelerine bak. Kişi ne istiyor, ne yapacak? 'Can you pick me up?' gibi bir soru ya da 'I'll be there' gibi bir karar cümlesi amacı gösterir. Mesajın başındaki yakınma çoğu zaman sadece bir ayrıntıdır."
+  },
+  {
+   "baslik": "Davet kabulü ve reddi",
+   "metin": "Kabul ederken 'I'd love to', 'Sure, why not?', 'I'll be there' gibi kalıplar kullanılır. Reddederken 'Sorry, I can't', 'I'm afraid I'm busy' gibi kalıplar kullanılır. Bir mesajda 'I can't refuse it' gibi ifade görürsen, bu da kabul anlamına gelebilir. Metnin tamamına bakmadan karar verme."
+  },
+  {
+   "baslik": "Öneri kalıpları",
+   "metin": "Öneri yaparken kullanılan kalıplar şunlardır: What about + V-ing?, Why don't we + V?, Would you like to + V?, Shall we + V? ve Let's + V. Diyalog tamamlama sorularında boşluktan sonra gelen cümleyi oku ve önerinin o cümleyle uyumlu olup olmadığına bak. Örneğin 'We can see some new paintings' cümlesinin önerisi bir sergiyle eşleşir."
+  },
+  {
+   "baslik": "Olumsuz kökte eşleştirme",
+   "metin": "'Which one DOES NOT complete the dialogue?' gibi sorularda her şıkkı boşluklardan birine yerleştir. Her şıkkın yanına uyduğu kişiyi yaz. Yanına isim yazamadığın şık cevaptır. Bu yöntem, bir kelimeyi bilmediğinde bile cümlenin geri kalanından tahmin yapmanı sağlar."
+  },
+  {
+   "baslik": "Önemli kelimeler",
+   "metin": "reliable = güvenilir, keep a secret = sır tutmak, support = desteklemek, interests = ilgi alanları, refuse = reddetmek, accept = kabul etmek, exhibition = sergi, slumber party = pijama partisi, board game = kutu oyunu, attend = katılmak, suggestion = öneri. Bilmediğin kelimeyi cümlenin geri kalanından tahmin etmeye çalış."
+  }
+ ],
+ "tuyolar": [
+  "But, however, in the end kelimelerinden sonra gelen bilgi çoğunlukla asıl fikirdir.",
+  "Amaç sorularında mesajın son cümlelerine bak: kişi ne istiyor, ne yapacak?",
+  "'Can you ...?' gibi soru cümleleri çoğunlukla mesajın amacını gösterir.",
+  "'Always', 'never', 'both' gibi kesinlik kelimelerini şıkta görürsen metinle hemen karşılaştır.",
+  "Olumsuz kökte (DOES NOT) her şıkkı bir boşluğa eşleştir; eşleşmeyen şık cevaptır.",
+  "Yanına bir kişi adı yazamadığın şık genellikle cevaptır.",
+  "Kabul kalıpları: I'd love to, Sure, why not?, I'll be there. Ret kalıpları: Sorry, I can't, I'm afraid I'm busy.",
+  "Öneri kalıplarını tanı: What about + V-ing?, Why don't we + V?, Shall we + V?, Would you like to + V?, Let's + V."
+ ],
+ "hatalar": [
+  {
+   "kod": "İNG-FRI-1",
+   "altKonu": "Reading: friendship and invitations",
+   "soru": "Lucas'ın iki arkadaşı Emre ve Owen'ı anlatan metne göre CORRECT olan ifadeyi bul.",
+   "hata": "Metnin başındaki 'Emre and I like doing the same things' cümlesine takıldı; 'However' ile gelen karşıtlığı ve 'In the end' ile gelen kararı hesaba katmadı. A şıkkındaki 'always' kelimesinin uyarısını da fark etmedi ve A'yı seçti.",
+   "dogruYol": "But / however / in the end kelimelerini daire içine al; asıl fikir bunlardan sonra gelir. Şıklardaki always, never, both gibi kelimeleri metinle karşılaştır.",
+   "gorsel": [
+    "sorular/ING-FRI-1.png"
+   ],
+   "cevap": "C) Trust is more important to Lucas than having the same interests.",
+   "senin": "A (teyit bekleniyor)",
+   "cozum": [
+    "Metni iki arkadaşa göre ikiye böl. Emre: aynı ilgi alanları (+) ama sırları başkalarına anlatıyor (–).",
+    "Owen: farklı ilgi alanları ama \"However\" → sır tutuyor, yardım ediyor (+).",
+    "\"In the end, I chose Owen's plan.\" → Lucas güvendiği arkadaşı seçti.",
+    "A: \"always true friends\" – tam tersi ✗. B: reliable (güvenilir) olan Emre değil ✗. D: konserden hoşlanmadıkları yazmıyor ✗.",
+    "Cevap C."
+   ],
+   "hataAnaliz": "Metnin başındaki \"Emre and I like doing the same things\" cümlesine takıldın. \"However\" ile gelen karşıtlığı ve \"In the end\" ile gelen kararı hesaba katmadın. A'daki \"always\" kelimesi de bir uyarıydı: metin bunun tersini anlatıyor.",
+   "tuyo": "\"But, however, in the end\" kelimelerini daire içine al: asıl fikir bunlardan SONRA gelir. Şıklardaki \"always, never, both, because\" kelimelerini metinde kontrol et.",
+   "dikkat": "reliable = güvenilir · keep a secret = sır tutmak · support = desteklemek · interests = ilgi alanları · in the end = sonunda · however = ancak."
+  },
+  {
+   "kod": "İNG-FRI-2",
+   "altKonu": "Reading: friendship and invitations",
+   "soru": "Natalie'nin Nick'e yazdığı mesajın amacı nedir?",
+   "hata": "Mesajın ilk cümlelerindeki yakınmayı (Joe hakkında) mesajın amacı sandı ve C'yi seçti. 'But' sonrasındaki kararı ve 'Can you pick me up?' isteğini hesaba katmadı.",
+   "dogruYol": "Amaç sorularında mesajın son cümlelerine bak: kişi ne istiyor, ne yapacak? 'Can you ...?' gibi soru cümleleri çoğunlukla amacın ipucudur. Başta geçen yakınma ayrıntı olabilir.",
+   "gorsel": [
+    "sorular/ING-FRI-2.png"
+   ],
+   "cevap": "B) to accept Nick's invitation",
+   "senin": "C (teyit bekleniyor)",
+   "cozum": [
+    "Mesajı ikiye böl: önce yakınma (\"I don't get on well with him\"), sonra \"But\" ile karar.",
+    "\"But, I can't refuse it. I don't want to miss the concert.\" → reddedemem, kaçırmak istemiyorum.",
+    "\"Can you pick me up, too?\" → Beni de alır mısın? Yani geliyor.",
+    "C: Joe hakkında yakınıyor ama bu mesajın AMACI değil, bir ayrıntı ✗. A ve D metinde yok ✗.",
+    "Cevap B."
+   ],
+   "hataAnaliz": "Mesajın ilk cümlelerindeki yakınmayı mesajın amacı sandın. \"But\" kelimesinden sonra Natalie kararını veriyor ve Nick'ten bir şey istiyor: bu kısım amacı gösterir.",
+   "tuyo": "\"Why does she write this text?\" sorularında mesajın SON cümlelerine bak: kişi ne İSTİYOR, ne YAPACAK? Soru cümlesi (\"Can you …?\") çoğu zaman amacın ipucudur.",
+   "dikkat": "accept = kabul etmek · refuse = reddetmek · get on well with = iyi geçinmek · miss = kaçırmak · pick up = (arabayla) almak · complain = şikâyet etmek · invitee = davetli. Making suggestions (dialogue completion)"
+  },
+  {
+   "kod": "İNG-FRI-3",
+   "altKonu": "Making suggestions (dialogue completion)",
+   "soru": "Olumsuz kökte (DOES NOT), arkadaşların hafta sonu önerilerinden hangisi diyaloğu tamamlamaz?",
+   "hata": "C şıkkını ('Would you like to visit the new art exhibition') yanlış seçti. 'Exhibition' (sergi) kelimesini bilmediği için Laura'nın 'We can see some new paintings' cümlesiyle eşleştiremedi.",
+   "dogruYol": "Olumsuz kökte her şıkkın yanına uyduğu kişiyi yaz (A → Emma, B → Cecile, C → Laura). Yanına isim yazamadığın tek şık cevaptır. Bilmediğin kelimeyi cümlenin geri kalanından tahmin et.",
+   "gorsel": [
+    "sorular/ING-FRI-3.png"
+   ],
+   "cevap": "D) Shall we attend a local music band concert",
+   "senin": "C) Would you like to visit the new art exhibition",
+   "cozum": [
+    "Soru kökü: DOES NOT → üç şık boşluklara uyar, uymayan şıkkı seç.",
+    "Her boşluğu, arkasından gelen cümleyle eşleştir: Laura \"We can see some new paintings\" → C) art exhibition (sanat sergisi) ✓.",
+    "Cecile \"We all love board games\" → B) chess tournament ✓ (satranç bir kutu oyunudur).",
+    "Emma \"We can chat about many things all night\" → A) slumber party ✓ (pijama partisi: gece birlikte kalınır).",
+    "D) concert: müzikle ilgili; hiçbir boşluğun arkasında müzik yok ✗. Cevap D."
+   ],
+   "hataAnaliz": "C'yi Laura'nın cümlesiyle eşleştiremedin; büyük ihtimalle exhibition (sergi) kelimesini tanımadın. D'yi de bir kişiye bağlamadan eledin: \"concert\" için metinde hiçbir ipucu yoktu.",
+   "tuyo": "Olumsuz kökte her şıkkın yanına uyduğu kişinin adını yaz (A → Emma, B → Cecile, C → Laura). Yanına isim yazamadığın tek şık cevaptır.",
+   "dikkat": "Kelimeler: exhibition = sergi · slumber party = pijama partisi · board game = kutu oyunu · attend = katılmak · suggestion = öneri. Öneri kalıpları: What about + V-ing? · Why don't we + V? · Would you like to + V? · Shall we + V? · Let's + V."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "ing-fri-001",
+   "altKonu": "Reading: friendship and invitations",
+   "kaynakKod": "İNG-FRI-1",
+   "tur": "benzer",
+   "metin": "Mia and Sara both love painting, but Sara often breaks her promises. Ella doesn't like painting; however, she always helps Mia with her homework. Mia spends most of her free time with Ella.\nWhich is CORRECT?",
+   "secenekler": [
+    "Mia only likes friends who paint.",
+    "Being helpful is more important to Mia than having the same hobby.",
+    "Sara is Mia's most reliable friend.",
+    "Ella and Mia both hate painting."
+   ],
+   "dogru": "B",
+   "cozum": "Ella resim yapmayı sevmediği hâlde Mia'ya her zaman yardım eder; yani Mia için yardımseverlik ortak hobiden daha önemlidir.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-002",
+   "altKonu": "Reading: friendship and invitations",
+   "kaynakKod": "İNG-FRI-1",
+   "tur": "benzer",
+   "metin": "In the text about Lucas, what does \"reliable\" mean?",
+   "secenekler": [
+    "funny",
+    "talkative",
+    "trustworthy",
+    "sporty"
+   ],
+   "dogru": "C",
+   "cozum": "Reliable 'güvenilir' anlamına gelir ve trustworthy ile aynı anlamdadır.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-003",
+   "altKonu": "Reading: friendship and invitations",
+   "kaynakKod": "İNG-FRI-1",
+   "tur": "benzer",
+   "metin": "Tom likes football and so do I, but he never keeps his promises. In the end, I chose to study with Ben, who always tells the truth.\nWhat is the main idea?",
+   "secenekler": [
+    "Football is the writer's favourite sport.",
+    "Ben doesn't like football.",
+    "Tom is a good student.",
+    "The writer values honesty in a friend."
+   ],
+   "dogru": "D",
+   "cozum": "'In the end' sonrasındaki karar ve Ben'in her zaman doğruyu söylemesi, yazarın bir arkadaşta dürüstlüğe değer verdiğini gösterir.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-004",
+   "altKonu": "Reading: friendship and invitations",
+   "kaynakKod": "İNG-FRI-2",
+   "tur": "benzer",
+   "metin": "Hi Emma, I'm really busy with my project this weekend. Sorry, I can't come to your party, but have fun!\nEmma's friend writes this message ----.",
+   "secenekler": [
+    "to accept the invitation",
+    "to refuse the invitation",
+    "to ask for help",
+    "to complain about the party"
+   ],
+   "dogru": "B",
+   "cozum": "'Sorry, I can't come' bir daveti reddetme kalıbıdır; mesajın amacı daveti geri çevirmektir.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-005",
+   "altKonu": "Reading: friendship and invitations",
+   "kaynakKod": "İNG-FRI-2",
+   "tur": "benzer",
+   "metin": "Your party sounds great! I don't like dancing much, but I'll be there. Should I bring some snacks?\nThe writer ----.",
+   "secenekler": [
+    "accepts the invitation",
+    "refuses the invitation",
+    "apologizes for being late",
+    "complains about the food"
+   ],
+   "dogru": "A",
+   "cozum": "'I'll be there' ve 'Should I bring some snacks?' daveti kabul ettiğini gösterir.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-006",
+   "altKonu": "Reading: friendship and invitations",
+   "kaynakKod": "İNG-FRI-2",
+   "tur": "benzer",
+   "metin": "Which word means \"to say no to an invitation\"?",
+   "secenekler": [
+    "accept",
+    "invite",
+    "miss",
+    "refuse"
+   ],
+   "dogru": "D",
+   "cozum": "Refuse 'reddetmek' anlamına gelir; davete hayır demektir.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-007",
+   "altKonu": "Making suggestions (dialogue completion)",
+   "kaynakKod": "İNG-FRI-3",
+   "tur": "benzer",
+   "metin": "Tom: I'm bored. Any ideas for this afternoon?\nSam: - - - -? There is a new action movie at the cinema.\nWhich of the following completes the dialogue?",
+   "secenekler": [
+    "Why don't we go to the cinema",
+    "What about playing football in the park",
+    "Shall we visit the science museum",
+    "Would you like to have a picnic"
+   ],
+   "dogru": "A",
+   "cozum": "Sam'in cümlesi yeni bir film olduğunu söylüyor; sinemaya gitmeyi öneren Why don't we + V kalıbı uyar.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-008",
+   "altKonu": "Making suggestions (dialogue completion)",
+   "kaynakKod": "İNG-FRI-3",
+   "tur": "benzer",
+   "metin": "Which of the following is NOT a suggestion?",
+   "secenekler": [
+    "Let's make a cake together.",
+    "What about going swimming?",
+    "I made a cake yesterday.",
+    "Why don't we play chess?"
+   ],
+   "dogru": "C",
+   "cozum": "'I made a cake yesterday' geçmiş zamanlı bir bilgi cümlesidir; bir öneri değildir.",
+   "emin": true
+  },
+  {
+   "id": "ing-fri-009",
+   "altKonu": "Making suggestions (dialogue completion)",
+   "kaynakKod": "İNG-FRI-3",
+   "tur": "benzer",
+   "metin": "Ayşe: Let's meet this weekend!\nCan: - - - -? I want to try the new pizza place.\nEce: - - - -? We can buy new clothes.\nMert: - - - -? The weather will be sunny.\nWhich of the following suggestions DOES NOT complete the dialogue?",
+   "secenekler": [
+    "Why don't we go shopping at the mall",
+    "What about eating out on Saturday",
+    "Shall we go cycling by the lake",
+    "Would you like to stay at home and do homework"
+   ],
+   "dogru": "D",
+   "cozum": "Diğer üç öneri sırasıyla yemek (pizza), alışveriş (kıyafet) ve güneşli hava ile uyumludur; evde ödev yapmak hiçbir boşluğa uymaz.",
+   "emin": true
+  }
+ ]
 }

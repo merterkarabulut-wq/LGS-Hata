@@ -1,0 +1,428 @@
+{
+ "din-kad": {
+  "anlatim": {
+   "Kader ve kaza": "Kader ve kaza",
+   "İlim, irade ve kudret": "Kader ve kaza",
+   "Evrendeki yasalar": "Evrendeki yasalar",
+   "Emek ve rızık": "Rızık, emek ve tevekkül",
+   "Tevekkül ve tedbir": "Rızık, emek ve tevekkül",
+   "Cüz'i irade ve sorumluluk": "Kader ve insan iradesi"
+  },
+  "sorular": {
+   "Kader ve kaza": "Kader ve kaza",
+   "Evrendeki yasalar": "Evrendeki yasalar",
+   "Rızık, emek ve tevekkül": "Rızık, emek ve tevekkül",
+   "Kader ve insan iradesi": "Kader ve insan iradesi"
+  },
+  "tuyolar": {
+   "Kader = plan, kaza = gerçekleşme; gerçekleşen her olay kaza kapsamındadır.": "Kader ve kaza",
+   "Levh-i Mahfuz, kitap ve 'yazılmış' ifadeleri görünce aklına KADER gelsin; 'gerçekleşti, oldu' görünce KAZA.": "Kader ve kaza",
+   "İlim = bilmek, irade = dilemek, kudret = gücü yetmek. 'Dilemesi dışında olmaz' varsa irade düşün.": "Kader ve insan iradesi",
+   "Yasa sorusunda duyguyu bırak, olayı bul: madde mi, canlı mı, toplum mu? Canlıysa biyolojik.": "Evrendeki yasalar",
+   "Öncül sorularında her öncülün yanına kanıt cümlesinden 2-3 sözcük yaz; paragrafın son cümlesini atlama.": null,
+   "Olumsuz kökte her şıkka 'kader inancında var mı?' diye sor; fazladan yargı içeren (sorumlusu, her zaman, hiç) şık genelde yanlıştır.": null,
+   "'Yaratıcı' ile 'sorumlu' aynı şey değildir.": "Kader ve insan iradesi",
+   "Ana fikir sorularında her şıkka 'Bu metinde yazıyor mu?' diye sor; kanıt gösteremediğin şık yanlıştır.": null
+  }
+ },
+ "fen-dna": {
+  "anlatim": {
+   "Nükleotid": null,
+   "Baz eşleşmesi": "Baz eşleşmesi ve gen",
+   "Gen, DNA ve kromozom": "Baz eşleşmesi ve gen",
+   "Aynı kişinin hücreleri": "Aynı kişinin hücreleri",
+   "Farklı insanlar": null,
+   "Çift zincirli DNA'da sayım": "Maket ve baz eşitliği"
+  },
+  "sorular": {
+   "Baz eşleşmesi": "Baz eşleşmesi ve gen",
+   "Farklı basamaktaki bazlar": "Baz eşleşmesi ve gen",
+   "Gen": "Baz eşleşmesi ve gen",
+   "Hücreler arasındaki fark": "Aynı kişinin hücreleri",
+   "Bireyler arası DNA": null,
+   "Hücre farkı ve genler": "Aynı kişinin hücreleri",
+   "Baz eşitliği": "Maket ve baz eşitliği",
+   "Nükleotid ve fosfat sayısı": null,
+   "Maket ve baz eşitliği": "Maket ve baz eşitliği"
+  },
+  "tuyolar": {
+   "Nükleotid = 1 fosfat + 1 deoksiriboz şekeri + 1 organik baz; nükleotidin adını bazı verir.": "Baz eşleşmesi ve gen",
+   "Gen bir nükleotid dizisidir; tek bir nükleotid kalıtsal bir özelliği taşımaz.": "Baz eşleşmesi ve gen",
+   "Baz eşleşmesi (A–T, G–C) yalnızca aynı basamakta karşılıklı duran bazlar için geçerlidir.": "Baz eşleşmesi ve gen",
+   "'Olabilir' ifadesi bir örnek bile mümkünse doğrudur; 'kesinlikle / her zaman / tek başına' ifadelerinde tek bir karşı örnek ara.": null,
+   "Aynı kişinin bütün vücut hücrelerinde DNA aynıdır; hücreler arasındaki fark hangi genlerin çalıştığından gelir.": "Aynı kişinin hücreleri",
+   "Fosfat sayısı = şeker sayısı = nükleotid sayısı; 40 nükleotidli bir DNA modelinde 40 fosfat vardır.": "Maket ve baz eşitliği",
+   "'Yanlıştır' ya da 'ulaşılamaz' sorularında her şıkka ✓ / ✗ yaz; sonunda tek bir ✗ kalmalı.": null,
+   "Çift zincirli DNA'da A = T ve G = C; bu eşitlik renkler ya da harfler tanımlıysa kontrol edilebilir.": "Maket ve baz eşitliği"
+  }
+ },
+ "fen-mev": {
+  "anlatim": {
+   "Dik ve eğik ışın": "Dik ve eğik ışın",
+   "Dört önemli tarih": "Yarım küre ve tarihler",
+   "Gündüz süresi ve kutuplar": "Gölge ve gündüz süresi",
+   "Gölge ve yarım küre": "Gölge ve gündüz süresi",
+   "Hava olayı mı, iklim mi?": "Hava durumu ve iklim",
+   "Çiy, kırağı, sis ve kar": "Hava olayları (çiy, kırağı, sis, kar)",
+   "Basınç, rüzgâr ve meltem": "Basınç ve rüzgâr",
+   "Sera etkisi": "Sera etkisi"
+  },
+  "sorular": {
+   "Hava olayları (çiy, kırağı, sis, kar)": "Hava olayları (çiy, kırağı, sis, kar)",
+   "Basınç ve rüzgâr": "Basınç ve rüzgâr",
+   "Meltem": "Meltem",
+   "Rüzgârgülü": "Rüzgârgülü",
+   "Dik ve eğik ışın": "Dik ve eğik ışın",
+   "Günizi": "Günizi",
+   "Gölge ve gündüz süresi": "Gölge ve gündüz süresi",
+   "Yarım küre ve tarihler": "Yarım küre ve tarihler",
+   "Hava durumu ve iklim": "Hava durumu ve iklim",
+   "Sera etkisi": "Sera etkisi"
+  },
+  "tuyolar": {
+   "Işın dik gelince gölge kısalır ve enerji artar; Kuzey Yarım Küre'de 'en uzun gündüz' ile 'en uzun gölge' aynı gün olmaz.": "Gölge ve gündüz süresi",
+   "Güney Yarım Küre'de her şey Kuzey'in tersidir; önce yarım küreyi bul, sonra tarihe bak.": "Yarım küre ve tarihler",
+   "Gece ile gündüz eşitliği yılda iki kez (21 Mart, 23 Eylül) olur; bu bilgiyle tarih kesin bulunamaz.": "Yarım küre ve tarihler",
+   "'En az / en çok enerji' yalnızca 21 Aralık ve 21 Haziran için geçerlidir; 'en soğuk ay' (Ocak–Şubat) ile karıştırma.": "Yarım küre ve tarihler",
+   "'Kesinlikle / her yerinde' içeren şık tek bir karşı örnekle çürür; 'olabilir' içeren şık tek bir örnekle doğrulanır.": null,
+   "Hava olayı mı iklim mi? Tek soru sor: bu cümle bir kez mi oluyor, her yıl mı tekrarlanıyor?": "Hava durumu ve iklim",
+   "Rüzgârgülünde en uzun kol, rüzgârın en sık geldiği yöndür.": "Rüzgârgülü",
+   "Soru kökündeki 'söylenemez / değildir' gibi olumsuzlukları daire içine al ve ✗ olanı seç.": null,
+   "'Bilgi yok' yazdığın bir şık doğru olamaz.": null,
+   "'Kısalmaya başlar' ile '12 saatten kısa olmaya başlar' aynı tarih değildir.": "Yarım küre ve tarihler"
+  }
+ },
+ "ing-fri": {
+  "anlatim": {
+   "But, however, in the end": "Reading: friendship and invitations",
+   "Amaç soruları": "Reading: friendship and invitations",
+   "Davet kabulü ve reddi": "Reading: friendship and invitations",
+   "Öneri kalıpları": "Making suggestions (dialogue completion)",
+   "Olumsuz kökte eşleştirme": "Making suggestions (dialogue completion)",
+   "Önemli kelimeler": null
+  },
+  "sorular": {
+   "Reading: friendship and invitations": "Reading: friendship and invitations",
+   "Making suggestions (dialogue completion)": "Making suggestions (dialogue completion)"
+  },
+  "tuyolar": {
+   "But, however, in the end kelimelerinden sonra gelen bilgi çoğunlukla asıl fikirdir.": "Reading: friendship and invitations",
+   "Amaç sorularında mesajın son cümlelerine bak: kişi ne istiyor, ne yapacak?": "Reading: friendship and invitations",
+   "'Can you ...?' gibi soru cümleleri çoğunlukla mesajın amacını gösterir.": "Reading: friendship and invitations",
+   "'Always', 'never', 'both' gibi kesinlik kelimelerini şıkta görürsen metinle hemen karşılaştır.": "Reading: friendship and invitations",
+   "Olumsuz kökte (DOES NOT) her şıkkı bir boşluğa eşleştir; eşleşmeyen şık cevaptır.": null,
+   "Yanına bir kişi adı yazamadığın şık genellikle cevaptır.": null,
+   "Kabul kalıpları: I'd love to, Sure, why not?, I'll be there. Ret kalıpları: Sorry, I can't, I'm afraid I'm busy.": "Making suggestions (dialogue completion)",
+   "Öneri kalıplarını tanı: What about + V-ing?, Why don't we + V?, Shall we + V?, Would you like to + V?, Let's + V.": "Making suggestions (dialogue completion)"
+  }
+ },
+ "ink-kah": {
+  "anlatim": {
+   "Tanzimat ve Islahat fermanları": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "Yönetim şekli ne zaman değişti?": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "Millî kimlik düşüncesi": "Mustafa Kemal'in düşünce dünyası",
+   "Halkın yönetime katılması ve çağdaşlaşma": "Mustafa Kemal'in düşünce dünyası",
+   "Dönem ipucu": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "Dikkat edilecek tarihler": "Mustafa Kemal'in fikir hayatı ve dönem"
+  },
+  "sorular": {
+   "Mustafa Kemal'in düşünce dünyası": "Mustafa Kemal'in düşünce dünyası",
+   "Mustafa Kemal'in fikir hayatı ve dönem": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "Osmanlı Devleti'nde yenileşme hareketleri": "Osmanlı Devleti'nde yenileşme hareketleri"
+  },
+  "tuyolar": {
+   "Ferman ilan etmek yönetim şeklini değiştirmez; mutlak monarşiden meşrutiyete geçiş için anayasa ve meclis gerekir (1876).": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "Şıkları kelimeyle değil anlamla eşleştir: “emriyle” ile “onayıyla” aynı anlama gelir.": null,
+   "“Hem … hem de …” diyen bir yargı iki parçadır; her parçayı karşılayan öncülü ayrı ayrı bul.": null,
+   "“Ulaşılamaz” sorularında önce şıklardaki en güçlü yargıyı bul (yönetim şekli değişti, tamamen, kesinlikle); metin bunu söylemiyorsa cevap odur.": null,
+   "“Yaşadığı dönemde” ifadesi varsa şıkların tarihlerini yan yana yaz; 1881–1938 dışında kalan olay cevaptır.": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "“Birlikte kullanması daha uygun” sorularında her öncülün yanına 1, 2 ya da – yaz; “–” olan öncül seçilmez.": null,
+   "Doğru bilgi, yargıyı destekleyen bilgi olmak zorunda değildir; desteklemeyen öncülü seçme.": null
+  }
+ },
+ "ink-mil": {
+  "anlatim": {
+   "Birinci Dünya Savaşı'nın görünen nedeni": "Birinci Dünya Savaşı",
+   "Birinci Dünya Savaşı'nın asıl nedenleri": "Birinci Dünya Savaşı",
+   "“Bu bilgiye göre” soruları": "Birinci Dünya Savaşı",
+   "Ulaşılabilir ve ulaşılamaz yargılar": "Birinci Dünya Savaşı"
+  },
+  "sorular": {
+   "Birinci Dünya Savaşı'nın nedenleri": "Birinci Dünya Savaşı",
+   "“Bu bilgiye göre” soruları": "Birinci Dünya Savaşı"
+  },
+  "tuyolar": {
+   "“Bu bilgiye göre” sorusunda kendi bildiğin doğru bilgi değil, sadece metin konuşur.": null,
+   "Her öncülün anahtar kelimesini metinde ara; metinde yoksa o öncül ulaşılabilir değildir.": null,
+   "Birinci Dünya Savaşı'nın görünen nedeni suikast (1914), asıl nedenleri ekonomik ve siyasi rekabettir; metinde hangisi yazıyorsa onu esas al.": "Birinci Dünya Savaşı"
+  }
+ },
+ "mat-ck": {
+  "anlatim": {
+   "EBOB: en büyük ortak bölen": "EBOB – EKOK",
+   "EKOK ve zaman problemleri": "EBOB – EKOK",
+   "Parça ve kesim farkı": "EBOB – EKOK",
+   "Şartları sırayla uygula": null,
+   "Aralarında asal sayılar": "Aralarında asal sayılar",
+   "Asal çarpanlara ayırma": "Asal çarpanlara ayırma ve bölünebilme",
+   "Asal çarpanlarla EBOB ve EKOK": "EBOB – EKOK",
+   "Bir sayının çarpanları": "Bir sayının çarpanları (bölenleri)"
+  },
+  "sorular": {
+   "EBOB – EKOK": "EBOB – EKOK",
+   "Aralarında asal sayılar": "Aralarında asal sayılar",
+   "Asal çarpanlara ayırma ve bölünebilme": "Asal çarpanlara ayırma ve bölünebilme",
+   "Bir sayının çarpanları (bölenleri)": "Bir sayının çarpanları (bölenleri)",
+   "Bilimsel gösterim": null,
+   "Üslü ifadelerle işlemler": null,
+   "Üslü ifadelerde örüntü": null,
+   "Negatif üslü sayılar": null,
+   "Tam kare ve karekök": null,
+   "Üslü ifadelerde işaret ve sıfırıncı kuvvet": null
+  },
+  "tuyolar": {
+   "EBOB parçanın büyüklüğünü verir; kaç parça olduğu için bir adım daha vardır: böl ve topla. Sonuca birimini yaz (18 kg mı, 7 torba mı?).": "EBOB – EKOK",
+   "EKOK bir ARALIKTIR, bir AN değildir: önce ilk ortak anı bul, sonra EKOK'u ekle.": "EBOB – EKOK",
+   "n parça = n − 1 kesim; tahtalar ayrı kesiliyorsa her tahta için ayrı hesapla.": "EBOB – EKOK",
+   "Asal çarpan gösteriminde EBOB → en KÜÇÜK üs, EKOK → en BÜYÜK üs.": "EBOB – EKOK",
+   "Aralarında asal sayılarda EBOB = 1 ve EKOK = çarpım; yasak çarpanları listele ve adayları tek tek tik.": "Aralarında asal sayılar",
+   "Asal çarpanlara ayırmayı sonuna kadar götür; her parça asal olmadan bitirme.": "Asal çarpanlara ayırma ve bölünebilme",
+   "'En büyük / en küçük' sorularında tüm adayları tabloya yaz, sonra karşılaştır.": null,
+   "Sonuç şıklarda yoksa işlemi baştan kontrol et; toplamayı çıkararak, bölmeyi çarparak doğrula.": null
+  }
+ },
+ "mat-kk": {
+  "anlatim": {
+   "Tam kare ve karekök": "Tam kare ve karekök",
+   "Karekök ne zaman tam sayı olur?": "Tam kare ve karekök",
+   "0 ve 1 unutulmasın": "Tam kare ve karekök",
+   "Sayarken sistemli tara": "Tam kare ve karekök"
+  },
+  "sorular": {
+   "Tam kare ve karekök": "Tam kare ve karekök"
+  },
+  "tuyolar": {
+   "Karekökü tam sayı olan sayılar tam karelerdir; saymaya 0'dan başla, √0 = 0 de bir tam sayıdır.": "Tam kare ve karekök",
+   "Bir şıktaki sayıların hepsinin karekökünün tam sayı olduğunu iddia ediyorsan her sayıyı tek tek kontrol et; tek bir tam kare olmayan sayı şıkkı eler.": "Tam kare ve karekök",
+   "Soru 'kaç tane' diye soruyorsa bulduğun listeyi sayarken 0'ı ve 1'i de say.": "Tam kare ve karekök"
+  }
+ },
+ "mat-us": {
+  "anlatim": {
+   "Negatif üs": "Negatif taban ve negatif üs",
+   "Parantez ve eksi işareti": "Negatif üs ve parantez",
+   "Sıfırıncı kuvvet ve (−1)'in kuvvetleri": "Sıfırıncı kuvvet",
+   "Farklı tabanları aynı tabana çevirmek": "Üslü ifadelerle çarpma ve bölme",
+   "Örüntüler ve üs tablosu": "Örüntü ve üs",
+   "Bilimsel gösterim ve birim dönüşümü": "Bilimsel gösterim ve birim dönüşümü",
+   "Aralıklar, oranlar ve toplam": "Negatif üs ve aralık"
+  },
+  "sorular": {
+   "Bilimsel gösterim ve birim dönüşümü": "Bilimsel gösterim ve birim dönüşümü",
+   "Bilimsel gösterim ve uzunluk birimi": "Bilimsel gösterim ve birim dönüşümü",
+   "Doğal sayılar ve en küçük değer": "Doğal sayılar ve sıfırıncı kuvvet",
+   "Doğal sayılar ve sıfırıncı kuvvet": "Doğal sayılar ve sıfırıncı kuvvet",
+   "Farklı tabanları eşitlemek": "Üslü ifadelerle çarpma ve bölme",
+   "Kartların kutulara ayrılması": "Negatif taban ve negatif üs",
+   "Kütle eşitliğinden adet bulma": "Kütle eşitliğinden adet bulma",
+   "Negatif taban ve negatif üs": "Negatif taban ve negatif üs",
+   "Negatif taban ve çift üs": "Negatif taban ve negatif üs",
+   "Negatif üs": "Negatif üs ve parantez",
+   "Negatif üs ve aralık": "Negatif üs ve aralık",
+   "Negatif üs ve eşitlik": "Negatif üs ve parantez",
+   "Negatif üs ve kare zemin": "Negatif üs ve kare zemin",
+   "Negatif üs ve tam sayı aralığı": "Negatif üs ve aralık",
+   "Ortak çarpan parantezi": "Üslü ifadelerle çarpma ve bölme",
+   "Parantez ve negatif üs": "Negatif üs ve parantez",
+   "Parantez ve üs": "Negatif üs ve parantez",
+   "Pascal üçgeni ve satır sayısı": "Örüntü ve üs",
+   "Pascal üçgeni ve satır toplamı": "Örüntü ve üs",
+   "Pascal üçgeni ve örüntü": "Örüntü ve üs",
+   "Pozitif tam sayılar ve en küçük değer": "Doğal sayılar ve sıfırıncı kuvvet",
+   "Tablo ve yanlış ifade": "Üslü ifadelerle oran ve tablo",
+   "Tablo ve üslü ifadeler": "Üslü ifadelerle oran ve tablo",
+   "Örüntü ve kırmızı sıralar": "Örüntü ve sıra numarası",
+   "Örüntü ve sıra numarası": "Örüntü ve sıra numarası",
+   "Örüntü ve tek-çift sıra": "Örüntü ve sıra numarası",
+   "Üslü ifadelerle bölme": "Üslü ifadelerle çarpma ve bölme",
+   "Üslü ifadelerle bölme ve çarpma": "Üslü ifadelerle çarpma ve bölme",
+   "Üslü ifadelerle çarpma": "Üslü ifadelerle çarpma ve bölme",
+   "Şekil ve alan": "Şekil ve üslü ifadeler",
+   "Şekil ve üslü ifadeler (uzun kenar değişince)": "Şekil ve üslü ifadeler",
+   "Üslü ifadelerde örüntü": "Örüntü ve üs",
+   "Bilimsel gösterim": "Bilimsel gösterim ve birim dönüşümü",
+   "Negatif üslü sayılar": "Negatif taban ve negatif üs",
+   "Üslü ifadelerle işlemler": "Üslü ifadelerle çarpma ve bölme",
+   "Üslü ifadelerde işaret ve sıfırıncı kuvvet": "Doğal sayılar ve sıfırıncı kuvvet"
+  },
+  "tuyolar": {
+   "Negatif üs sayıyı negatif yapmaz, sadece ters çevirir: (4)⁻² = 1/16.": "Negatif taban ve negatif üs",
+   "Üs, hemen solundaki sayıya ya da parantez içine aittir: −3⁴ = −81, (−3)⁴ = 81.": "Negatif üs ve parantez",
+   "Sıfırdan farklı her sayının 0. kuvveti 1'dir; doğal sayılar 0'ı da içerir.": "Doğal sayılar ve sıfırıncı kuvvet",
+   "Şıklar farklı tabanlarda ise ortak tabana (2 gibi) çevirip karşılaştır: 4³ = 2⁶, 16² = 2⁸.": "En büyük sayı ve tarama",
+   "Bulduğun sonucu şıkla kelimesi kelimesine karşılaştır; 2¹⁹ ile 2¹⁹ + 1 farklı sayılardır.": null,
+   "Bir torba × torba sayısı = toplam; soru toplam istiyorsa son adımı unutma.": "Kütle eşitliğinden adet bulma",
+   "Bilimsel gösterimde kilogram istendiyse gramı 10³'e böl; üs 3 azalır.": "Bilimsel gösterim ve birim dönüşümü",
+   "'x, y'nin kaç katıdır?' sorusunda kesir x ÷ y olarak kurulur.": "Üslü ifadelerle oran ve tablo",
+   "'Yanlıştır' sorularında her şıkka ✓ / ✗ yaz; sonunda tek ✗ kalmalı.": null,
+   "En büyük ya da en küçük sorularında tek bir yolu deneyip bırakma; adayları tabloyla listele.": "En büyük sayı ve tarama"
+  }
+ },
+ "tur-cum": {
+  "anlatim": {
+   "Neden, sonuç, koşul ve amaç": "Neden, sonuç, koşul ve amaç",
+   "“İçin” neden mi, amaç mı?": "Neden ve koşul ayrımı",
+   "Tasarı ve beklenti": null,
+   "Azımsama, küçümseme, sitem ve pişmanlık": "Duygu ve yargı bildiren cümleler",
+   "Özlem, beğeni ve yargı türleri": "Duygu ve yargı bildiren cümleler"
+  },
+  "sorular": {
+   "Neden, sonuç, koşul ve amaç": "Neden, sonuç, koşul ve amaç",
+   "Neden ve koşul ayrımı": "Neden ve koşul ayrımı",
+   "Duygu ve yargı bildiren cümleler": "Duygu ve yargı bildiren cümleler"
+  },
+  "tuyolar": {
+   "“Çünkü” ile başlayan cümle kendinden önceki cümlenin nedenidir, sonucu değildir.": "Neden, sonuç, koşul ve amaç",
+   "“-dıkça” ve “-se/-sa” ekleri koşul bildirir; olay henüz gerçekleşmemişse koşuldur.": "Neden ve koşul ayrımı",
+   "Neden gerçekleşmiş bir sebeptir (“-dığı için”); amaç ise henüz olmamış, istenen bir hedeftir (“-mek için”).": "Neden, sonuç, koşul ve amaç",
+   "“İçin” sözcüğünde “olduğundan” koyup anlam tutuyorsa neden, tutmuyorsa amaçtır.": "Neden, sonuç, koşul ve amaç",
+   "Dizeleri ya da cümleleri “… için / … olduğundan” ile bağlayabiliyorsan neden; “-se/-sa” ile bağlanıyorsa koşuldur.": "Neden ve koşul ayrımı",
+   "Plan tasarıdır, umut beklentidir: “planlıyorum” ile “umarım” birbirine karıştırılmamalıdır.": "Duygu ve yargı bildiren cümleler",
+   "Miktarı az bulmak azımsamadır (“bu kadarcık”), birini değersiz görmek küçümsemedir.": "Duygu ve yargı bildiren cümleler",
+   "Sitem kırgınlıkla yapılan serzenişdir; pişmanlık “keşke” ve “-meseydim” ile anlatılır.": "Duygu ve yargı bildiren cümleler"
+  }
+ },
+ "tur-fii": {
+  "anlatim": {
+   "Fiilimsi nedir?": null,
+   "İsim-fiil": "İsim-fiil",
+   "Sıfat-fiil": "Adlaşmış sıfat-fiil",
+   "Zarf-fiil": null,
+   "Adlaşmış sıfat-fiil": "Adlaşmış sıfat-fiil",
+   "Fiilimsi taraması": "İsim-fiil"
+  },
+  "sorular": {
+   "Adlaşmış sıfat-fiil": "Adlaşmış sıfat-fiil",
+   "İsim-fiil": "İsim-fiil"
+  },
+  "tuyolar": {
+   "Kelimenin yerine “o iş” koyabiliyorsan isim-fiildir.": "İsim-fiil",
+   "“-mak için” kalıbındaki -mak isim-fiildir.": "İsim-fiil",
+   "Sıfat-fiilden sonra isim varsa adlaşmamıştır (koşar adımlar); isim düşmüşse adlaşmıştır (söyleyen-ler).": "Adlaşmış sıfat-fiil",
+   "Çekimli fiil (yüklem) fiilimsi değildir; “gelme!” (emir) ile “gelmesi” (isim-fiil) farklıdır.": "İsim-fiil",
+   "“Kim? ne?” sorusuna cevap veren sıfat-fiil çoğu zaman adlaşmıştır (söyleyen = söyleyen kişi).": "Adlaşmış sıfat-fiil"
+  }
+ },
+ "tur-man": {
+  "anlatim": {
+   "“Kesinlikle söylenebilir” soruları": "Kişi–alan eşleştirme",
+   "Yerleşim kurma ve bozma": "Kişi–alan eşleştirme",
+   "Kişi–alan eşleştirme": "Kişi–alan eşleştirme",
+   "“Olabilir” ile “kesinlikle” farkı": "Kişi–alan eşleştirme"
+  },
+  "sorular": {
+   "Kişi–alan eşleştirme": "Kişi–alan eşleştirme",
+   "“Kesinlikle” ve “olabilir” ayrımı": "Kişi–alan eşleştirme"
+  },
+  "tuyolar": {
+   "“Kesinlikle söylenebilir” sorusunda tek bir yerleşime bakmak yetmez; her şık için bozma denemesi yap.": "Kişi–alan eşleştirme",
+   "Koşulların zorunlu kıldığı kişiden başla; örneğin bir alanda yalnız biri varsa onu o alana sabitle.": "Kişi–alan eşleştirme",
+   "“Olabilir” bir örnek yeter; “kesinlikle” her durumda doğru olmalıdır.": null,
+   "Kendi tablonda birden fazla şık doğru çıkıyorsa ve soru “kesinlikle” diyorsa, bozma denemesini her şık için ayrıca yap.": "Kişi–alan eşleştirme"
+  }
+ },
+ "tur-par": {
+  "anlatim": {
+   "Ana düşünce": "Ana düşünce",
+   "Paragraftan çıkarım: ulaşılabilir ve ulaşılamaz": "Paragraftan çıkarım (ulaşılamaz)",
+   "“Olabilir” ve “kesinlikle”; “metne göre” soruları": "Metne göre sorusu",
+   "Anlatım biçimleri": "Anlatım biçimi",
+   "Düşünceyi geliştirme yolları": "Düşünceyi geliştirme yolları",
+   "Metin türleri ve hikâye unsurları": "Deneme ve köşe yazısı",
+   "Boşluk tamamlama": "Boşluk tamamlama"
+  },
+  "sorular": {
+   "Ana düşünce": "Ana düşünce",
+   "Ana düşünce (vurgulanan)": "Ana düşünce (vurgulanan)",
+   "Anlatım biçimleri": "Anlatım biçimi",
+   "Asıl yargı": "Asıl yargı",
+   "Deneme, köşe yazısı ve diğer düşünce yazıları": "Deneme ve köşe yazısı",
+   "Deyimler": null,
+   "Duygu ve yargı bildiren cümleler": null,
+   "Düşünceyi geliştirme yolları": "Düşünceyi geliştirme yolları",
+   "Düşünceyi geliştirme yolları ve anlatım özellikleri": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
+   "Eş ve yakın anlamlı sözcükler": null,
+   "Hikâye unsurları": "Hikâye unsurları",
+   "Metin türleri": "Deneme ve köşe yazısı",
+   "Metne göre (çözüm fikirleri)": "Metne göre sorusu",
+   "Minimal hikâye": "Minimal hikâye",
+   "Neden, sonuç, koşul ve amaç": null,
+   "Paragrafta boşluk tamamlama": "Boşluk tamamlama",
+   "Paragraftan çıkarım (ulaşılabilir / ulaşılamaz)": "Paragraftan çıkarım (ulaşılamaz)",
+   "Paragraftan çıkarım (ulaşılamaz)": "Paragraftan çıkarım (ulaşılamaz)",
+   "Paragraftan çıkarım (uygun örnek)": "Paragraftan çıkarım (uygun örnek)",
+   "Çok anlamlılık": null
+  },
+  "tuyolar": {
+   "Ana düşünce metnin tamamını kapsar; her paragrafta yalnızca bir cümlenin altını çiz ve sonuç bağlayıcılarını takip et.": "Ana düşünce",
+   "Şıktaki büyütücü sözler (en, tek, ana, her zaman, yalnızca, kesinlikle) metinde aynı güçte yoksa o şık kapsam dışıdır.": "Ana düşünce",
+   "“Bir kez daha” önce de olduğunu, “nihayet / ilk kez” ise önce olmadığını gösterir; bu zarflar ulaşılamaz sorularında çelişki kaynağıdır.": "Paragraftan çıkarım (ulaşılamaz)",
+   "“Olabilir” için bir örnek yeter; “kesinlikle / her zaman” için hiç karşı örnek olmamalıdır.": null,
+   "“Metne göre” sorusunda yalnızca metin konuşur; fen ya da genel kültür bilgisi cevap olamaz.": "Metne göre sorusu",
+   "Öğüt (-malısınız), okura seslenme ve retorik soru anlatım biçimini tartışmacıya çevirir; açıklayıcı metinde bunlar biçimi değiştirir.": "Anlatım biçimi",
+   "Tanımlama cümle içine gömülü olabilir; tırnak işareti tek başına tanık gösterme değildir, bir kişinin sözü alıntılanmalıdır.": "Düşünceyi geliştirme yolları",
+   "İkileme yan yana gelen sözcük çiftidir (eğri büğrü); “öyle şirin, öyle masum” bir tekrardır.": "Düşünceyi geliştirme yolları ve anlatım özellikleri",
+   "Hikâye unsurlarını sırayla bul: kişi, mekân, zaman, olay; girişteki geçmiş arka plandır.": "Hikâye unsurları",
+   "Minimal hikâyede “mesaj yok mu?” diye sorup her metnin yanına ✓ ya da ✗ koy.": "Minimal hikâye",
+   "Deneme evrensel konuyu kişisel bir dille işler; köşe yazısı gazetede güncel bir konuyu yorumlar.": "Deneme ve köşe yazısı",
+   "Boşluk tamamlamada ipucu kelimeyi metinden bul ve şıkla birebir eşle; ileri görüşlü ile yenilikçi aynı değildir.": "Boşluk tamamlama",
+   "Asıl yargı için “oysa, ama, fakat” sonrasındaki cümleye bak; metinde geçmeyen kavram içeren şık çeldiricidir.": "Asıl yargı",
+   "Öneri (yemelidir, yararlıdır) ile zorunluluk (mutlaka, şarttır) ayrılır; “uygun değildir” sorusunda tüm ögeleri uygun olmayan şık cevaptır.": null
+  }
+ },
+ "tur-soz": {
+  "anlatim": {
+   "Gerçek, yan, mecaz ve terim anlam": "Çok anlamlılık",
+   "Çok anlamlılık": "Çok anlamlılık",
+   "Eş anlamlı ve yakın anlamlı sözcükler": "Eş ve yakın anlamlı sözcükler",
+   "Deyimler: duyguya göre öğrenme": "Deyimler",
+   "Benzetme": "Benzetme"
+  },
+  "sorular": {
+   "Çok anlamlılık": "Çok anlamlılık",
+   "Eş ve yakın anlamlı sözcükler": "Eş ve yakın anlamlı sözcükler",
+   "Deyimler": "Deyimler",
+   "Benzetme": "Benzetme"
+  },
+  "tuyolar": {
+   "Çok anlamlı sözcükte anlamı yalnızca cümlede yazan bilgiyle seç; cümlede olmayan bir hikâye kurma.": "Çok anlamlılık",
+   "Farklı anlam sayısını, sözcüğün yerine geçemeyen karşılıkları yazıp sayarak bul.": "Çok anlamlılık",
+   "“Çalmak” yalnız hırsızlık ya da çalgı çalmak değildir; sürmek, bulaştırmak (yüzüne allık çalmak) ve bir renge benzemek anlamları da vardır.": "Çok anlamlılık",
+   "Eş anlamlı sözcükler her cümlede birbirinin yerine geçer; yakın anlamlı sözcüklerde derece ya da ayrıntı farkı vardır.": "Eş ve yakın anlamlı sözcükler",
+   "Olumsuz soru kökünde her şıkkın metindeki karşılığını yanına yaz; karşılığı bulunamayan şık cevaptır.": null,
+   "Deyimi gerçek anlamıyla değil, anlattığı duyguyla öğren.": "Deyimler",
+   "“Göz doldurmak” (beğeni) ile “göze gelmek” (nazar) farklı deyimlerdir; kelimeye değil anlama göre karar ver.": "Deyimler",
+   "Bilmediğin deyimde deyimin kendi kelimelerinin mecazını düşün ve metindeki başka bir sıfatı deyimin anlamı sanma.": "Deyimler",
+   "Benzetmenin anlamını çoğunlukla hemen ardından gelen açıklama cümlelerinde ara.": "Benzetme"
+  }
+ },
+ "tur-yaz": {
+  "anlatim": {
+   "İki nokta (:)": "İki nokta ve noktalı virgül",
+   "Noktalı virgül (;)": "İki nokta ve noktalı virgül",
+   "Virgül (,)": null,
+   "Cümle sonu": null
+  },
+  "sorular": {
+   "Açıklama öncesi iki nokta": "İki nokta ve noktalı virgül",
+   "Hitaptan sonra virgül": null,
+   "Virgülle ayrılmış grupları noktalı virgülle ayırma": "İki nokta ve noktalı virgül"
+  },
+  "tuyolar": {
+   "“şöyle / şunlar” gibi bir ifade görürsen aradaki işaret iki nokta (:) olur.": "İki nokta ve noktalı virgül",
+   "Ögeleri arasında virgül bulunan sıralı cümleleri ayırmak için noktalı virgül (;) kullanılır.": "İki nokta ve noktalı virgül",
+   "Hitaptan (“Arkadaşlar,”) sonra virgül (,) gelir.": null,
+   "Alıntıdan ve açıklama yapılacak cümleden önce iki nokta (:) gelir.": "İki nokta ve noktalı virgül"
+  }
+ }
+}

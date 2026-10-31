@@ -53,259 +53,787 @@
    "altKonu": "EBOB – EKOK",
    "soru": "72 kg un ve 54 kg şeker, karıştırılmadan ve artmadan eş torbalara; en az kaç torba?",
    "hata": "Torbadaki miktarı (18 kg) torba sayısıyla karıştırdı; EBOB'u doğru buldu ama torba sayısını bulmadı (D: 18 seçti).",
-   "dogruYol": "EBOB ile torbadaki miktarı bul (18 kg), sonra her maddeyi bu miktara böl ve topla: 4 + 3 = 7 torba."
+   "dogruYol": "EBOB ile torbadaki miktarı bul (18 kg), sonra her maddeyi bu miktara böl ve topla: 4 + 3 = 7 torba.",
+   "gorsel": [
+    "sorular/MAT-CK-1.png"
+   ],
+   "cevap": "B) 7",
+   "senin": "D) 18",
+   "cozum": [
+    "Un ve şeker karışmayacak, hiç artmayacak ve torbalar eş olacak: torba başına en çok EBOB(72, 54) = 18 kg konur.",
+    "Un: 72 ÷ 18 = 4 torba. Şeker: 54 ÷ 18 = 3 torba.",
+    "Toplam torba sayısı = 4 + 3 = 7."
+   ],
+   "hataAnaliz": "Torbadaki miktarı (18 kg) torba sayısıyla karıştırdın. Konuyu biliyorsun; son adımda sorulana dönmek kaldı.",
+   "tuyo": "Bulduğun sayıya birimini yaz ve kendine sor: \"Bu kg mı, torba sayısı mı?\"",
+   "dikkat": "Kaç torba/paket soruluyorsa böl ve topla. Şıktaki EBOB bir tuzak olabilir."
   },
   {
    "kod": "MAT-ÇK-7",
    "altKonu": "EBOB – EKOK",
    "soru": "Bölme merdiveni ile A ve B sayılarının EBOB'u kaçtır?",
    "hata": "Merdivende küçük bir işlem hatası yaptı (H = 5 · 3 = 15 yerine 13); hata yukarı taşındı ve EBOB 6 çıktı. Şüphelendiği sayıyı hemen kontrol etmedi.",
-   "dogruYol": "Merdivendeki her sayının bölenine gerçekten bölündüğünü kontrol et; EBOB, iki sayının birlikte bölündüğü satırların bölenlerinin çarpımıdır."
+   "dogruYol": "Merdivendeki her sayının bölenine gerçekten bölündüğünü kontrol et; EBOB, iki sayının birlikte bölündüğü satırların bölenlerinin çarpımıdır.",
+   "gorsel": [
+    "sorular/MAT-CK-7.png"
+   ],
+   "cevap": "D) 18",
+   "senin": "A) 6",
+   "cozum": [
+    "Merdiveni alttan yukarı çöz. A sütunu: 72, 36, 18, 9, 3, 1, yani A = 2³·3² = 72.",
+    "B sütunu: J = 5; H = J · 3 = 5 · 3 = 15; D = H · 3 = 45; B = D · 2 = 90.",
+    "İki sayının BİRLİKTE bölündüğü satırların bölenleri 2, 3, 3 → EBOB = 2 · 3 · 3 = 18."
+   ],
+   "hataAnaliz": "Küçük bir işlem hatası: H = 5 · 3 = 15 olmalıyken 13 yazdın. Hata yukarı taşındı (B = 78) ve EBOB(72, 78) = 6 çıktı. 13'ü yuvarlak içine alman, bir şeyden şüphelendiğini gösteriyor; o şüpheyi hemen kontrol edebilirdin.",
+   "tuyo": "Merdivende bulduğun her sayının o satırdaki bölene gerçekten bölündüğünü kontrol et (13, 3'e bölünmüyor!). Şüphelendiğin sayıyı hemen yeniden hesapla.",
+   "dikkat": "Bölme merdiveninde EBOB = iki sayının BİRLİKTE bölündüğü satırlardaki bölenlerin çarpımı; EKOK = tüm bölenlerin çarpımı. Yuvarlak içine almak yetmez, hemen kontrol et."
   },
   {
    "kod": "MAT-ÇK-8",
    "altKonu": "EBOB – EKOK",
    "soru": "Üç ahşap kalastan iki yan ayak (1,5 m'lik) ayrıldıktan sonra kalanlarla eşit boyda basamaklar; merdiven en az kaç basamaklı?",
    "hata": "İki yan ayak şartını en başta uygulamadı; üç kalasın tamamını basamak sayıp ayakları sonradan çıkarmaya çalıştı (D: 12 seçti).",
-   "dogruYol": "Şartları numaralandır; ayrılan parçaları (iki yan ayak) en başta çıkar, sonra kalanların EBOB'unu al: EBOB(90, 150) = 30 → 3 + 5 = 8 basamak."
+   "dogruYol": "Şartları numaralandır; ayrılan parçaları (iki yan ayak) en başta çıkar, sonra kalanların EBOB'unu al: EBOB(90, 150) = 30 → 3 + 5 = 8 basamak.",
+   "gorsel": [
+    "sorular/MAT-CK-8.png"
+   ],
+   "cevap": "B) 8",
+   "senin": "D) 12",
+   "cozum": [
+    "Önce iki yan ayağı ayır: 2 × 150 cm = 300 cm. Bu, 300 cm'lik kalasın tamamıdır.",
+    "Basamaklar için kalan kalaslar: 90 cm ve 150 cm.",
+    "Hiç artmayacak, eşit boyda: EBOB(90, 150) = 30 cm.",
+    "Parça sayısı: 90 ÷ 30 = 3 ve 150 ÷ 30 = 5 → 3 + 5 = 8 basamak."
+   ],
+   "hataAnaliz": "\"İki yan ayak için 1,5 m'lik İKİ parça\" şartını en başta uygulamadın: üç kalasın tamamını basamak gibi hesaplayıp (18 parça) ayakları sonradan çıkarmaya çalıştın. Ayrılan parçaları EN BAŞTA çıkarınca sorun kalmıyor.",
+   "tuyo": "Şartları numaralandır (\"iki ayak\", \"her biri 1,5 m\", \"kalanlar eşit\", \"artmayacak\"). Sorunun ayırdığı parçaları en başta çıkar, sonra hesapla.",
+   "dikkat": "Bir kısım başka iş için ayrılıyorsa önce onu çıkar. \"İki\" kelimesinin altını çiz. EBOB'u yalnızca GERÇEKTEN bölünecek parçalar için al."
   },
   {
    "kod": "MAT-ÇK-9",
    "altKonu": "EBOB – EKOK",
    "soru": "Selin ve Kaan'ın kumbarası (yüzde ve sabit aylık tutarlar); kalan paralar eşit, fiyatlar 5000 TL'den az; toplam en fazla kaç TL?",
    "hata": "Çok adımlı problemde çözüm yolunu kuramadı; EKOK(180, 240) = 720'yi buldu ama yüzde ve '5000'den az' şartını birleştiremedi, boş bıraktı.",
-   "dogruYol": "Bilinmeyene harf ver: kalan para 720'nin katıdır; Selin'in kalanı fiyatın %90'ı, Kaan'ınki %80'i. Şartı sağlayan en büyük katı seç: 3600 → 4000 + 4500 = 8500 TL."
+   "dogruYol": "Bilinmeyene harf ver: kalan para 720'nin katıdır; Selin'in kalanı fiyatın %90'ı, Kaan'ınki %80'i. Şartı sağlayan en büyük katı seç: 3600 → 4000 + 4500 = 8500 TL.",
+   "gorsel": [
+    "sorular/MAT-CK-9.png"
+   ],
+   "cevap": "C) 8500",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "Kalan para her ay sabit miktarla (180 TL ve 240 TL) tamamlanıyor, iki kalan para eşit: kalan, 180 ve 240'ın ORTAK katıdır → EKOK(180, 240) = 720'nin katı.",
+    "Selin'in kalanı = fiyatın %90'ı. Kaan'ın kalanı = fiyatın %80'i.",
+    "Kaan'ın fiyatı 5000'den az → kalan 4000'den az → 720'nin katı olarak 3600 (720 · 5).",
+    "Selin: 3600 ÷ 0,9 = 4000 TL. Kaan: 3600 ÷ 0,8 = 4500 TL.",
+    "Toplam = 4000 + 4500 = 8500 TL."
+   ],
+   "hataAnaliz": "Çözüm yolunu kuramadın. EKOK'u yüzde bilgisiyle (kalan = fiyatın %90'ı / %80'i) ve \"5000'den az\" şartıyla birleştirmek gerekiyordu. Çok adımlı bir problemdi; süre de etkili olmuş olabilir.",
+   "tuyo": "Çok adımlı problemde bilinmeyene harf ver, şartları denklem gibi yaz. Sırayla ilerle: önce EKOK, sonra yüzde, sonra \"5000'den az\" şartı.",
+   "dikkat": "\"Kalan para sabit miktarla tamamlanıyor\" = kalan, o miktarın katıdır. İki kalan eşitse kalan, ortak katıdır (EKOK'un katı). \"En fazla\" + \"5000'den az\": şartı sağlayan en büyük katı seç; küçük olan sınır belirleyicidir."
   },
   {
    "kod": "MAT-ÇK-10",
    "altKonu": "EBOB – EKOK",
    "soru": "A = 2⁴ · 3 · 5ˣ ve B = 2ʸ · 3² · 5³ sayılarının EBOB'u 120 ise y − x kaçtır?",
    "hata": "Üslü sayıları açıp hesaplamaya çalıştı; EBOB'da en küçük üslerin alındığını kullanamadı (B: −1 seçti).",
-   "dogruYol": "EBOB'da her asalın en küçük üssü alınır: 120 = 2³ · 3 · 5 → y = 3, x = 1 → y − x = 2."
+   "dogruYol": "EBOB'da her asalın en küçük üssü alınır: 120 = 2³ · 3 · 5 → y = 3, x = 1 → y − x = 2.",
+   "gorsel": [
+    "sorular/MAT-CK-10.png"
+   ],
+   "cevap": "D) 2",
+   "senin": "B) −1",
+   "cozum": [
+    "EBOB = 120 = 2³ · 3 · 5 (asal çarpanlarına ayır).",
+    "EBOB, her asalın EN KÜÇÜK üssünü alır.",
+    "2 için: min(4, y) = 3 → y = 3.",
+    "5 için: min(x, 3) = 1 → x = 1.",
+    "y − x = 3 − 1 = 2."
+   ],
+   "hataAnaliz": "Üslü verilen sayıları açıp hesaplamaya çalıştın (125, 240, 2250...). Oysa asal çarpanlarına ayrılmış sayılarda EBOB, ortak asalların en küçük üslülerinin çarpımıdır. 120'yi çarpanlarına ayırıp üsleri karşılaştırma yolu henüz oturmamış.",
+   "tuyo": "EBOB = en küçük üsler, EKOK = en büyük üsler. Önce verilen EBOB/EKOK'u asal çarpanlarına ayır, sonra asal asal karşılaştır.",
+   "dikkat": "Sayılar üslü verilmişse açıp hesaplama; üsleri karşılaştır. EBOB → küçük üs, EKOK → büyük üs."
   },
   {
    "kod": "MAT-ÇK-12",
    "altKonu": "EBOB – EKOK",
    "soru": "Üç makine 6, 7 ve 9 dakikada 100 sayfa basıyor; 200 sayfalık kitap için 14 saat boyunca üçü birlikte kaç defa ilk sayfayı basmaya başlar?",
    "hata": "Başlangıç anını (0. dakika) saymadı; 4 yerine 3 buldu (B: 3 seçti).",
-   "dogruYol": "'Aynı anda başlatılarak … kaç defa' sorularında başlangıç anı da sayılır: 0, 252, 504, 756 → 4 kez (1008 > 840)."
+   "dogruYol": "'Aynı anda başlatılarak … kaç defa' sorularında başlangıç anı da sayılır: 0, 252, 504, 756 → 4 kez (1008 > 840).",
+   "gorsel": [
+    "sorular/MAT-CK-12.png"
+   ],
+   "cevap": "A) 4",
+   "senin": "B) 3",
+   "cozum": [
+    "Kitap 200 sayfa: 1. makine 6 · 2 = 12 dk, 2. makine 7 · 2 = 14 dk, 3. makine 9 · 2 = 18 dk'da bir kitabı basar.",
+    "EKOK(12, 14, 18) = 252 dk.",
+    "14 saat = 14 · 60 = 840 dk.",
+    "Birlikte başlama anları: 0, 252, 504, 756 (1008 > 840 olduğu için yok) → 4 kez."
+   ],
+   "hataAnaliz": "Başlangıç anını saymadın. Makineler en başta (0. dakikada) da ilk sayfayı birlikte basmaya başlıyor; o an da sayılır. Bu yüzden 4 yerine 3 buldun.",
+   "tuyo": "Zaman çizelgesi çiz: 0 ✓, 252 ✓, 504 ✓, 756 ✓, 1008 ✗. Saati dakikaya çevirmeyi unutma.",
+   "dikkat": "\"Kaç defa birlikte\" sorularında önce \"başlangıç sayılıyor mu?\" diye sor. \"Aynı anda başlatılarak … kaç defa\" → başlangıç dahil. \"İlk kez birlikte yaptıktan sonra kaç kez daha\" → başlangıç hariç."
   },
   {
    "kod": "MAT-ÇK-13",
    "altKonu": "EBOB – EKOK",
    "soru": "Halterin iki tarafı eşit yüklü; sağda 6 kg, solda 7 kg'lık diskler ve 3 kg'lık çubuk. Halterin tamamının ağırlığı kaç kg?",
    "hata": "Toplamda yalnızca bir tarafı ekledi (42 + 3 = 45); iki tarafın da 42 kg olduğunu kendi kâğıdında yazdığı hâlde toplamı kontrol etmedi (A: 45 seçti).",
-   "dogruYol": "Halterin tamamı = sol taraf + sağ taraf + çubuk = 42 + 42 + 3 = 87 kg."
+   "dogruYol": "Halterin tamamı = sol taraf + sağ taraf + çubuk = 42 + 42 + 3 = 87 kg.",
+   "gorsel": [
+    "sorular/MAT-CK-13.png"
+   ],
+   "cevap": "C) 87",
+   "senin": "A) 45",
+   "cozum": [
+    "Her taraf eşit yüklü olmalı: sağda 6 kg'lık, solda 7 kg'lık diskler → her taraf EKOK(6, 7) = 42 kg.",
+    "Halterin tamamı = sol + sağ + çubuk = 42 + 42 + 3 = 87 kg."
+   ],
+   "hataAnaliz": "Toplamda iki tarafın yalnızca birini ekledin (42 + 3 = 45). Kendi karalamanda iki tane 42 olduğu hâlde toplamı kontrol etmedin.",
+   "tuyo": "Soruyu yeniden oku: \"Neyin ağırlığı isteniyor?\" Halterin TAMAMI = sol + sağ + çubuk. Şekildeki her parçayı tek tek işaretle.",
+   "dikkat": "Toplam sorularında şekildeki her parçayı say. Yarım toplam (42 + 3 = 45) şıklarda tuzak olarak durur."
   },
   {
    "kod": "MAT-ÇK-15",
    "altKonu": "EBOB – EKOK",
    "soru": "Silgi ve kalem birim fiyatları; toplam en az kaç adet silgi ve kalem alındı? (Kalemin birim fiyatı 20 TL'den az.)",
    "hata": "Doğru değerleri (silgi 16 TL, kalem 14 TL) buldu, ancak adetleri hesaplarken kaydı; C (34) seçti.",
-   "dogruYol": "En az adet için birim fiyat olabildiğince büyük olmalı: silgi için EBOB(96, 112) = 16, kalem için 20'den küçük en büyük ortak bölen 14. Adetler: 13 + 16 = 29."
+   "dogruYol": "En az adet için birim fiyat olabildiğince büyük olmalı: silgi için EBOB(96, 112) = 16, kalem için 20'den küçük en büyük ortak bölen 14. Adetler: 13 + 16 = 29.",
+   "gorsel": [
+    "sorular/MAT-CK-15.png"
+   ],
+   "cevap": "D) 29",
+   "senin": "C) 34",
+   "cozum": [
+    "\"En az adet\" demek birim fiyatın olabildiğince BÜYÜK olması demek → EBOB.",
+    "Silgi: x, 96 ve 112'yi böler → EBOB = 16.",
+    "Kalem: y, 140 ve 84'ü böler → EBOB = 28; ama y < 20 olmalı, 28'in 20'den küçük en büyük böleni 14.",
+    "Silgi adedi: (96 + 112) ÷ 16 = 13. Kalem adedi: (140 + 84) ÷ 14 = 16.",
+    "Toplam = 13 + 16 = 29."
+   ],
+   "hataAnaliz": "Doğru değerleri bulduktan sonra adetleri hesaplarken bir kayma oldu. 34'ü veren tek uygun kombinasyon silgi 8 TL, kalem 28 TL (26 + 8); yani son hesapta bulduğun 16 ve 14 yerine başka değerler kullanılmış olabilir.",
+   "tuyo": "Bulduğun değerleri (x = 16, y = 14) kenara net yaz ve hesapta tam onları kullan. Adetleri kişi kişi hesaplayıp topla (6 + 7 + 10 + 6).",
+   "dikkat": "\"En az adet\" → birim fiyat olabildiğince büyük → EBOB. Ek şart varsa (20'den az) EBOB'un bu şartı sağlayan en büyük bölenini al. Son hesapta kendi bulduğun değerleri kullan."
   },
   {
    "kod": "MAT-ÇK-18",
    "altKonu": "EBOB – EKOK",
    "soru": "A = K · 3 · 5 ve B = 2² · L · M, EKOK(A, B) = 600 ise K + L + M kaçtır?",
    "hata": "600'ün bölen çiftlerini tek tek yazarak uzun yola girdi; süre yetmedi ve boş bıraktı.",
-   "dogruYol": "EKOK'u asal çarpanlarına ayır (600 = 2³ · 3 · 5²) ve üslere bak: K = 2³ = 8, L = 3, M = 5² = 25; toplam 36."
+   "dogruYol": "EKOK'u asal çarpanlarına ayır (600 = 2³ · 3 · 5²) ve üslere bak: K = 2³ = 8, L = 3, M = 5² = 25; toplam 36.",
+   "gorsel": [
+    "sorular/MAT-CK-18.png"
+   ],
+   "cevap": "D) 36",
+   "senin": "Boş bıraktın (sınavdan sonra çalışırken 36'ya kendin ulaştın)",
+   "cozum": [
+    "EKOK = 600 = 2³ · 3 · 5².",
+    "A = K · 3 · 5, B = 2² · L · M. EKOK en büyük üsleri alır.",
+    "2'nin en büyük üssü 3; B'de sadece 2² var → bu 2³ A'dan gelmeli: K = 2³ = 8.",
+    "3'ün en büyük üssü 1 (A'da var) → B'de 3 olabilir: L = 3.",
+    "5'in en büyük üssü 2; A'da sadece 5¹ var → B'de 5² olmalı: M = 25.",
+    "K + L + M = 8 + 3 + 25 = 36."
+   ],
+   "hataAnaliz": "Uzun yola girdin: 600'ün bölen çiftlerini tek tek yazdın, süre yetmedi. Asal çarpan gösteriminde \"EKOK = en büyük üsler\" kuralını doğrudan kullanmak çok daha hızlı. MAT-ÇK-10 ile aynı konu: üslü gösterimde EBOB/EKOK kuralı henüz otomatik değil.",
+   "tuyo": "Önce verilen EKOK/EBOB'u asal çarpanlarına ayır, sonra asal asal tablo yap (A'da / B'de / EKOK'ta).",
+   "dikkat": "Sayılar asal çarpanlarıyla verilmişse bölen listesi yazma; verilen EKOK/EBOB'u çarpanlarına ayır ve üsleri karşılaştır. EBOB → küçük üs, EKOK → büyük üs."
   },
   {
    "kod": "MAT-ÇK-20",
    "altKonu": "EBOB – EKOK",
    "soru": "İki tahta en büyük eşit parçalara ayrı ayrı kesiliyor; toplam kesim süresi 240 saniye ise bir kesim kaç saniye sürer?",
    "hata": "Parça sayısı ile kesim sayısını karıştırdı; 240'ı toplam parça sayısına (12) böldü (A: 20 seçti).",
-   "dogruYol": "n parça için n − 1 kesim gerekir: EBOB(150, 210) = 30 → 5 ve 7 parça → 4 + 6 = 10 kesim; 240 ÷ 10 = 24 saniye."
+   "dogruYol": "n parça için n − 1 kesim gerekir: EBOB(150, 210) = 30 → 5 ve 7 parça → 4 + 6 = 10 kesim; 240 ÷ 10 = 24 saniye.",
+   "gorsel": [
+    "sorular/MAT-CK-20.png"
+   ],
+   "cevap": "B) 24",
+   "senin": "A) 20",
+   "cozum": [
+    "EBOB(150, 210) = 30 cm (en büyük eş parça).",
+    "150 cm → 150 ÷ 30 = 5 parça → 4 kesim. 210 cm → 7 parça → 6 kesim.",
+    "Toplam kesim = 4 + 6 = 10.",
+    "Bir kesim = 240 ÷ 10 = 24 saniye."
+   ],
+   "hataAnaliz": "Parça sayısıyla kesim sayısını karıştırdın. 240 ÷ 20 = 12 diyerek toplam parça sayısıyla (5 + 7 = 12) böldün; oysa süreyi kesim sayısına (10) bölmek gerekiyordu.",
+   "tuyo": "Bir çubuğu 3 parçaya ayırmak için 2 kesim gerekir; n parça için n − 1 kesim. Her tahta için parça ve kesim sayısını ayrı sütunlara yaz.",
+   "dikkat": "Parça ≠ kesim. Bir tahtayı n eşit parçaya ayırmak için n − 1 kesim gerekir. Tahtalar AYRI AYRI kesiliyorsa her tahta için 1 çıkar."
   },
   {
    "kod": "MAT-ÇK-21",
    "altKonu": "EBOB – EKOK",
    "soru": "Sekiz şeklinde pistte iki araba O noktasında ikinci kez kaçıncı saniyede karşılaşır? (Sol yol 20 saniye/5 parça, sağ yol 16 saniye/4 parça.)",
    "hata": "İlk karşılaşmanın 8. saniyede olduğunu buldu ama ikinci karşılaşmayı 80. saniye aldı; 8 + 80 toplamını yapmadı (A: 1 dk 20 sn seçti).",
-   "dogruYol": "Zaman çizelgesi: ilk karşılaşma 8. saniye, sonra her EKOK(20, 16) = 80 saniyede bir; ikinci karşılaşma 8 + 80 = 88 sn = 1 dk 28 sn."
+   "dogruYol": "Zaman çizelgesi: ilk karşılaşma 8. saniye, sonra her EKOK(20, 16) = 80 saniyede bir; ikinci karşılaşma 8 + 80 = 88 sn = 1 dk 28 sn.",
+   "gorsel": [
+    "sorular/MAT-CK-21.png"
+   ],
+   "cevap": "C) 1 dakika 28 saniye",
+   "senin": "A) 1 dakika 20 saniye",
+   "cozum": [
+    "Sol yol: 20 ÷ 5 = 4 sn/parça. A'dan O'ya 2 parça = 8 sn.",
+    "Sağ yol: 16 ÷ 4 = 4 sn/parça. B'den O'ya 2 parça = 8 sn.",
+    "İki araba da O'ya 8. saniyede varır → ilk karşılaşma 8. saniye.",
+    "Sonraki karşılaşmalar EKOK(20, 16) = 80 saniye arayla olur.",
+    "İkinci karşılaşma = 8 + 80 = 88 sn = 1 dk 28 sn."
+   ],
+   "hataAnaliz": "İlk karşılaşmanın 8. saniyede olduğunu bulduğun hâlde ikinci karşılaşmayı 80. saniye aldın; 8 + 80 toplamasını yapmadın. MAT-ÇK-12'deki hatayla aynı aile: \"olaylar ne zaman başlıyor?\" kontrolü.",
+   "tuyo": "Zaman çizelgesi çiz: 0 → 8 (1. karşılaşma) → 88 (2.) → 168 (3.). EKOK bir \"aralık\"tır, \"an\" değildir; anı bulmak için ilk karşılaşma anına eklenir.",
+   "dikkat": "Olaylar 0. saniyede değil 8. saniyede başlıyorsa her karşılaşma anı = ilk an + EKOK · k. Bulduğun ara sonuç (80) şıklarda tuzak olarak durur."
   },
   {
    "kod": "MAT-ÇK-22",
    "altKonu": "EBOB – EKOK",
    "soru": "Kare şeklinde bir halı 15 cm ve 16 cm'lik çubuklarla tam kaplanabiliyorsa halının en az çevresi kaç cm'dir?",
    "hata": "Kenarı (240 cm) buldu ama çevre istendiği hâlde 4 ile çarpmadı; boş bıraktı.",
-   "dogruYol": "Sorulan büyüklüğü işaretle: kenar 240 cm ise çevre 4 · 240 = 960 cm."
+   "dogruYol": "Sorulan büyüklüğü işaretle: kenar 240 cm ise çevre 4 · 240 = 960 cm.",
+   "gorsel": [
+    "sorular/MAT-CK-22.png"
+   ],
+   "cevap": "D) 960",
+   "senin": "Boş bıraktın (EKOK = 240'ı bulup \"bir kenar\" diye not almıştın)",
+   "cozum": [
+    "Kare olduğu için AB = CB. Kenar hem 15'in hem 16'nın katı olmalı.",
+    "En az: EKOK(15, 16) = 240 cm (kenar).",
+    "Çevre = 4 · 240 = 960 cm."
+   ],
+   "hataAnaliz": "240'ı bulduktan sonra sorunun ÇEVREyi istediğini uygulamadın. 240, A şıkkında vardı ama işaretlemedin; bir şeyin eksik olduğunu sezmişsin, bu çok iyi bir sezgi. Eksik olan: 4 ile çarpmak.",
+   "tuyo": "Bulunca şekle dön ve sor: \"Bulduğum kenar mı, çevre mi, alan mı?\" Geometrik problemlerde sorulan büyüklüğü işaretle.",
+   "dikkat": "Karenin çevresi = 4 · kenar, alanı = kenar · kenar. EKOK sana KENARI verir; soru çevre ya da alan istiyorsa bir adım daha var."
   },
   {
    "kod": "MAT-ÇK-2",
    "altKonu": "Aralarında asal sayılar",
    "soru": "2×2 tablonun satır ve sütun toplamları verilmiş; aynı satır ve sütundaki sayılar aralarında asal. x + y kaçtır?",
    "hata": "Şeklin altındaki 'aralarında asal' şartını kontrol etmedi (21–12, 7–21, 3–12 ortak bölen içeriyor); C (19) seçti.",
-   "dogruYol": "Tüm şartları numaralandır ve her adayı komşu bütün çiftlere göre kontrol et; bu soruda yalnızca x = 3, y = 8 tutar (toplam 11)."
+   "dogruYol": "Tüm şartları numaralandır ve her adayı komşu bütün çiftlere göre kontrol et; bu soruda yalnızca x = 3, y = 8 tutar (toplam 11).",
+   "gorsel": [
+    "sorular/MAT-CK-2.png"
+   ],
+   "cevap": "B) 11",
+   "senin": "C) 19 (karalama: 7 | 3 / 21 | 12)",
+   "cozum": [
+    "Tabloya x'i yaz: sağ üst 10 − x, sol alt 28 − x, sağ alt x + 5 (33 − (28 − x)).",
+    "x = 2, 3, 4, ... diye dene; her seferinde \"aynı satır ve aynı sütundaki sayılar aralarında asal mı?\" diye bak.",
+    "Yalnızca x = 3 çalışıyor: tablo 3 | 7 / 25 | 8. (x = 7 olsaydı 7 ve 21 ortak bölen 7 olurdu.)",
+    "x = 3, y = 8 → x + y = 11."
+   ],
+   "hataAnaliz": "Şeklin altındaki \"aralarında asal\" şartını kontrol etmedin: 21–12 (ortak bölen 3), 7–21 (7), 3–12 (3) aralarında asal değil.",
+   "tuyo": "\"Sorudaki TÜM şartları listele, cevabı her birine göre kontrol et.\" Şartları 1, 2, 3 diye numaralandır.",
+   "dikkat": "Şekilden sonra gelen cümleler de şarttır. Aralarında asal = 1'den başka ortak böleni yok (sayıların kendisinin asal olması gerekmez)."
   },
   {
    "kod": "MAT-ÇK-3",
    "altKonu": "Aralarında asal sayılar",
    "soru": "Okul numaraları: Ali 24, Ece 40, Can 77. Deniz'in numarası farklı iki basamaklı bir sayıdır; Ali ve Ece ile aralarında asal, Can ile aralarında asal değildir. Kaç farklı değer alabilir?",
    "hata": "91'i saydı; ancak 91, Sezgi'nin numarası olduğu için ve 7 ortak çarpanı nedeniyle elenmeliydi. Şartları birleştirmedi (B: 2 seçti).",
-   "dogruYol": "Her adayı tüm şartlara tek tek tikle: 11, 49 ve 91 için kontrol et; 'farklı olan' şartını ve yasak çarpan listesini birlikte uygula."
+   "dogruYol": "Her adayı tüm şartlara tek tek tikle: 11, 49 ve 91 için kontrol et; 'farklı olan' şartını ve yasak çarpan listesini birlikte uygula.",
+   "gorsel": [
+    "sorular/MAT-CK-3.png"
+   ],
+   "cevap": "A) 1",
+   "senin": "B) 2 (13 ve 91'i saydın)",
+   "cozum": [
+    "30 = 2·3·5, 77 = 7·11, 91 = 7·13 diye asal çarpanlara ayır.",
+    "Çağrı'nın sayısı Melek ve Selim'inkiyle aralarında asal → 2, 3, 5, 7, 11 çarpanı olamaz.",
+    "Sezgi'ninkiyle aralarında asal değil → 7 ya da 13 ile ortak çarpanı olmalı; 7 yasak olduğundan 13'ün katı olmalı.",
+    "İki basamaklı 13 katları: 13, 26, 39, 52, 65, 78, 91. 26, 52, 78 (2 çarpanı), 39 (3), 65 (5) elenir. 91 hem Sezgi'nin numarası (\"farklı olmalı\") hem 7·13 (77 ile ortak çarpan 7) olduğu için elenir.",
+    "Geriye yalnız 13 kalır → 1 değer."
+   ],
+   "hataAnaliz": "91'i saydın; oysa iki şartla eleniyor: (1) \"sınıftaki öğrencilerin numarasından farklı\" → 91 Sezgi'nin numarası, (2) 91 = 7·13 ve 7, Selim'in 77'si ile ortak çarpan. 91'in 7'ye bölündüğünü fark ettin ama bunu 77 şartıyla birleştirmedin.",
+   "tuyo": "Bulduğun her adayı TÜM şartlara tek tek tikle (yasak çarpan listesi + \"farklı olan\" şartı). Asal çarpan tablosu kur.",
+   "dikkat": "Aralarında asal soruları asal çarpan sorularıdır. Önce verilen tüm sayıları çarpanlarına ayır, sonra \"yasak çarpanlar\" ve \"gerekli çarpanlar\" listesi yap. \"Farklı olan\" gibi şartları da listeye ekle. Verilen sayılardan biri adaylar arasında çıkarsa ekstra şüphelen."
   },
   {
    "kod": "MAT-ÇK-5",
    "altKonu": "Aralarında asal sayılar",
    "soru": "A4 iki basamaklı sayısı ile 35 aralarında asal değildir. A'nın alabileceği değerlerin toplamı kaçtır?",
    "hata": "A'ların toplamı yerine tahmini bir değer seçti (D: 13 seçti); adayları 7 ile tek tek test etmedi.",
-   "dogruYol": "35 = 5 · 7; A4 sayısı 5'e bölünmez (4 ile biter), 7'ye bölünmeli: 14 ve 84 → A = 1 ve 8 → toplam 9."
+   "dogruYol": "35 = 5 · 7; A4 sayısı 5'e bölünmez (4 ile biter), 7'ye bölünmeli: 14 ve 84 → A = 1 ve 8 → toplam 9.",
+   "gorsel": [
+    "sorular/MAT-CK-5.png"
+   ],
+   "cevap": "B) 9",
+   "senin": "D) 13",
+   "cozum": [
+    "35 = 5 · 7. Aralarında asal OLMAMASI için A4 sayısı 5 ya da 7 ile bölünmeli.",
+    "A4 sayısı 4 ile bittiği için 5'e bölünemez → 7'nin katı olmalı.",
+    "Adayları dene: 14, 24, 34, 44, 54, 64, 74, 84, 94. 7'ye bölünenler: 14 ve 84.",
+    "A = 1 ve A = 8 → A'ların toplamı 1 + 8 = 9."
+   ],
+   "hataAnaliz": "13'e nasıl ulaştığın karalamadan net değil. Büyük olasılıkla A4 sayılarını (14, 24, ..., 94) 7 ile tek tek test etmedin ya da soruyu farklı yorumladın.",
+   "tuyo": "Önce 35'in asal çarpanları (5, 7). Sonra adayları yaz (14, 24, ..., 94) ve her birini 5 ve 7 ile test et. Son basamak 4 → 5 ile bölünme hemen elenir.",
+   "dikkat": "\"A4\" = onlar basamağı A, birler basamağı 4 olan sayı (10A + 4); A ile 4'ün çarpımı değil. Aralarında asal OLMAMAK = en az bir ortak asal çarpan var. Soru A'ların toplamını istiyor, sayıların toplamını değil."
   },
   {
    "kod": "MAT-ÇK-11",
    "altKonu": "Aralarında asal sayılar",
    "soru": "K ve L aralarında asal doğal sayılardır; EKOK(K, L) = 112 ise K + L en az kaç olur?",
    "hata": "Aralarında asal sayılarda EKOK'un çarpım olduğunu kullanamadı; 112 ÷ 2 işlemini yanlış yaptı; boş bıraktı.",
-   "dogruYol": "Aralarında asal sayılarda EKOK = K · L; 112 = 2⁴ · 7 → 16 ve 7 → toplam 23."
+   "dogruYol": "Aralarında asal sayılarda EKOK = K · L; 112 = 2⁴ · 7 → 16 ve 7 → toplam 23.",
+   "gorsel": [
+    "sorular/MAT-CK-11.png"
+   ],
+   "cevap": "B) 23",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "Aralarında asal sayıların EBOB'u 1, EKOK'u çarpımlarıdır: K · L = 112.",
+    "112 = 2⁴ · 7. Ortak asal çarpan olamayacağı için 2⁴ = 16 tamamen aynı sayıda toplanmalı.",
+    "Seçenekler: (16, 7) → toplam 23 veya (1, 112) → 113.",
+    "En az toplam = 23."
+   ],
+   "hataAnaliz": "\"Aralarında asal sayıların EKOK'u çarpımlarıdır\" özelliğini kullanamadın; ayrıca 112 ÷ 2 = 61 yazdın (doğrusu 56) ve çarpanlara ayırma baştan bozuldu.",
+   "tuyo": "Aralarında asal sayılarda EBOB = 1, EKOK = K · L. EKOK'u asal çarpanlarına ayır; aynı asalın tüm kuvveti tek sayıya gitmeli. Bölmeyi çarparak kontrol et (56 · 2 = 112).",
+   "dikkat": "Aralarında asal → ortak asal çarpan yok → 2⁴'ün tamamı ya K'da ya L'de (8 ve 14 olmaz, ikisi de çift). \"En az toplam\" için sayıları birbirine yakın seç."
   },
   {
    "kod": "MAT-ÇK-14",
    "altKonu": "Aralarında asal sayılar",
    "soru": "İki dörtgenin ortak köşesi ve köşe çarpımları x ve y aralarında asal; x + y en az kaçtır?",
    "hata": "Yerleşimi doğru kurdu (2, 1, 5, 7, 11) ama son hesapta yanlış işlem yaptı (18 · 5 = 80); sonuç şıklarda olmadığı için boş bıraktı.",
-   "dogruYol": "Yerleşimden sonra x ve y'yi ayrı satırlarda çarp ve toplamı kontrol et: x = 72, y = 385 → 457."
+   "dogruYol": "Yerleşimden sonra x ve y'yi ayrı satırlarda çarp ve toplamı kontrol et: x = 72, y = 385 → 457.",
+   "gorsel": [
+    "sorular/MAT-CK-14.png"
+   ],
+   "cevap": "B) 457",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "İki dörtgenin ORTAK köşesi hem x'i hem y'yi böler. x ve y aralarında asal olduğundan ortak köşe 1 olmalı.",
+    "Sol dörtgen: 9, 4, 1 ve bir sayı daha. En küçük uygun farklı sayı 2 → x = 9 · 4 · 2 · 1 = 72.",
+    "Sağ dörtgen: 1 ile birlikte üç sayı daha. x = 72 = 2³·3² ile aralarında asal olmak için 2 ve 3'e bölünmeyen, daha önce kullanılmamış en küçük sayılar: 5, 7, 11 → y = 1 · 5 · 7 · 11 = 385.",
+    "x + y = 72 + 385 = 457."
+   ],
+   "hataAnaliz": "Doğru yerleşimden sonra son hesapta takıldın: x = 72, y = 385 ve toplam 457 yerine karalamanda 466, 427, 426 gibi sonuçlar ve 18 · 5 = 80 (doğrusu 90) var. Sonuç şıklarda olmayınca rastgele işaretlemeyip boş bırakman olumlu bir davranış.",
+   "tuyo": "Çarpımları adım adım yaz (5 · 7 = 35, 35 · 11 = 385) ve toplamı tersinden kontrol et. Bulduğun sonuç şıklarda yoksa işlemi baştan yap.",
+   "dikkat": "Ortak köşe (iki sayının ortak çarpanı) varsa ve sayılar aralarında asalsa o ortak çarpan 1 olmak zorunda. \"En az\" için sol tarafı en küçük sayılarla, sağ tarafı sol tarafın asal çarpanlarını içermeyen en küçük sayılarla doldur."
   },
   {
    "kod": "MAT-ÇK-24",
    "altKonu": "Aralarında asal sayılar",
    "soru": "A ve B bitkilerinin uzaması iki asal çarpanlı ve aralarında asal; son boyların toplamının en az değeri kaçtır?",
    "hata": "B'nin son boyunu uzama gibi kullandı; B'nin ilk boyunu (20 cm) çıkarmadı (D: 121 seçti).",
-   "dogruYol": "Uzama = son boy − ilk boy. A'nın uzaması 21 = 3 · 7, B'ninki 55 = 5 · 11 → B'nin son boyu 65 cm; toplam 36 + 65 = 101 cm."
+   "dogruYol": "Uzama = son boy − ilk boy. A'nın uzaması 21 = 3 · 7, B'ninki 55 = 5 · 11 → B'nin son boyu 65 cm; toplam 36 + 65 = 101 cm.",
+   "gorsel": [
+    "sorular/MAT-CK-24.png"
+   ],
+   "cevap": "C) 113",
+   "senin": "D) 121",
+   "cozum": [
+    "A'nın uzaması = 54 − 26 = 28 = 2² · 7.",
+    "B'nin uzaması u: tam 2 asal çarpanı olmalı, 28 ile aralarında asal olmalı (2 ve 7 çarpanı yok).",
+    "Şekil-2'de B > A: 20 + u > 54 → u > 34. Ayrıca 20 + u ile 54 aralarında asal olmalı.",
+    "En küçük uygun u = 39 = 3 · 13 → B'nin son boyu = 20 + 39 = 59 (59 ile 54 aralarında asal ✓).",
+    "Boyların toplamı = 54 + 59 = 113 cm."
+   ],
+   "hataAnaliz": "(1) Şıktan 54'ü çıkarınca B'nin SON BOYUNU buldun ama onu B'nin uzaması gibi kullandın; B'nin ilk boyu olan 20'yi çıkarmadın (113 için 59 − 20 = 39 = 3·13 ✓ çıkacaktı). (2) 121 − 54'ü 57 buldun (doğrusu 67). (3) Aralarında asal şartlarını kontrol etmedin.",
+   "tuyo": "Çok şartlı problemlerde şartları numaralandır; şık denerken her şartı tek tek tikle. Uzama = son boy − ilk boy; her bitki için ayrı satır yaz. Çıkarmayı toplayarak kontrol et (57 + 54 = 111, 121 değil).",
+   "dikkat": "Şıktan geriye gitme stratejisi iyi, ama her şıkta TÜM şartları kontrol et. B bitkisi 20 cm'den başladığı için uzaması = son boy − 20."
   },
   {
    "kod": "MAT-ÇK-4",
    "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
    "soru": "Çerçeve iç alanlarından (324, 361, 484, 900 dm²) hangisi yalnız bir farklı asal çarpana sahip olduğu için 'asimetrik eser'dir?",
    "hata": "1089'u asal sanıp 1. ve 2. çerçeveyi eledi (7'ye bölünmeyince bıraktı); A (4. çerçeve) seçti.",
-   "dogruYol": "Kare alanlarda önce kenarı çarpanlarına ayır: 1089 = 33² = 3² · 11² (iki asal); tek asal çarpanlı alan 289 = 17² → 3. çerçeve."
+   "dogruYol": "Kare alanlarda önce kenarı çarpanlarına ayır: 1089 = 33² = 3² · 11² (iki asal); tek asal çarpanlı alan 289 = 17² → 3. çerçeve.",
+   "gorsel": [
+    "sorular/MAT-CK-4.png"
+   ],
+   "cevap": "B) 3. Çerçeve",
+   "senin": "A) 4. Çerçeve",
+   "cozum": [
+    "Çerçeveler kare olduğu için alanlar tam kare: 576 = 24², 441 = 21², 289 = 17², 1089 = 33². Kenarı çarpanlarına ayırmak daha kolay.",
+    "576 = 2⁶ · 3² → 2 asal çarpan. 441 = 3² · 7² → 2 asal çarpan.",
+    "289 = 17² → yalnız 1 asal çarpan (17).",
+    "1089 = 3² · 11² → 2 asal çarpan (rakamlar toplamı 1+0+8+9 = 18, 3'e ve 9'a bölünür).",
+    "Asal çarpan sayısı 1 olan tek alan 289 → 3. çerçeve \"asimetrik eser\"."
+   ],
+   "hataAnaliz": "1089'u 7'ye bölmeye çalıştın, tam bölünmeyince büyük olasılıkla 1089'u asal ya da tek çarpanlı sandın. Rakamları toplamak (1+0+8+9 = 18) 3'e ve 9'a bölündüğünü hemen gösterirdi.",
+   "tuyo": "Çarpanlara ayırırken her zaman en küçük asaldan başla (2, 3, 5, 7, 11, 13...) ve önce bölünebilme kurallarına bak (2, 3, 5, 9, 10). Kare alanlarda önce kenarı bul: 24 = 2³·3, 21 = 3·7, 17 asal, 33 = 3·11.",
+   "dikkat": "Bir sayı bir asala bölünmüyorsa asal olduğu anlamına gelmez; sıradaki asala geç."
   },
   {
    "kod": "MAT-ÇK-16",
    "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
    "soru": "2ᵃ · 3ᵇ biçiminde yazılabilen iki basamaklı en büyük sayının rakamları toplamı kaçtır?",
    "hata": "3'ün kuvvetini en büyük tutup yalnız 2'nin kuvvetini değiştirdi; 2⁵ · 3 = 96 denemedi (A: 9 seçti, 54 → 9).",
-   "dogruYol": "Tüm adayları tabloda listele: 12, 18, 24, 36, 48, 54, 72, 96; en büyük 96 → rakamlar toplamı 15."
+   "dogruYol": "Tüm adayları tabloda listele: 12, 18, 24, 36, 48, 54, 72, 96; en büyük 96 → rakamlar toplamı 15.",
+   "gorsel": [
+    "sorular/MAT-CK-16.png"
+   ],
+   "cevap": "C) 15",
+   "senin": "A) 9",
+   "cozum": [
+    "a ve b en az 1: 2ᵃ · 3ᵇ biçimindeki iki basamaklı sayıları sistemli yaz.",
+    "b = 1: 6 · 2ᵃ → 12, 24, 48, 96. b = 2: 9 · 2ᵃ → 18, 36, 72. b = 3: 27 · 2ᵃ → 54 (108 üç basamaklı).",
+    "Hepsi: 12, 18, 24, 36, 48, 54, 72, 96. En büyüğü 96 = 2⁵ · 3.",
+    "Rakamlar toplamı = 9 + 6 = 15."
+   ],
+   "hataAnaliz": "3'ün kuvvetini en büyük tutup (27) yalnızca 2'nin kuvvetini değiştirdin; 3'ün kuvvetini küçültüp 2'ninkini büyütmeyi (2⁵ · 3 = 96) denemedin. \"En büyük\" için tek bir tabanı büyütmenin yeteceğini varsaydın.",
+   "tuyo": "Sistemli tablo kur: b = 1, 2, 3 için 2ᵃ'yı iki basamak sınırına kadar büyüt; her satırın en büyüğünü yaz, sonra karşılaştır.",
+   "dikkat": "\"En büyük\" sorularında tek bir yolu değil, TÜM durumları tablo hâlinde dene. Büyük tabanın büyük kuvveti her zaman en büyük sonucu vermez."
   },
   {
    "kod": "MAT-ÇK-17",
    "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
    "soru": "Okçuluk hedeflerinin puanı farklı asal çarpanların toplamıdır; hangi hedef en çok puanı verir?",
    "hata": "143'ü çarpanlarına ayıramadı (11 ve 13'ü denemeden bıraktı); B (2. hedef) seçti.",
-   "dogruYol": "Asal çarpanlara ayırmada sırayla 2, 3, 5, 7, 11, 13 dene: 143 = 11 · 13 → puan 24, en çok puan budur."
+   "dogruYol": "Asal çarpanlara ayırmada sırayla 2, 3, 5, 7, 11, 13 dene: 143 = 11 · 13 → puan 24, en çok puan budur.",
+   "gorsel": [
+    "sorular/MAT-CK-17.png"
+   ],
+   "cevap": "C) 3. Hedef",
+   "senin": "B) 2. Hedef",
+   "cozum": [
+    "Her hedefi asal çarpanlarına ayır; FARKLI asal çarpanları topla (her asal bir kez).",
+    "90 = 2 · 3² · 5 → 2 + 3 + 5 = 10.",
+    "84 = 2² · 3 · 7 → 2 + 3 + 7 = 12.",
+    "143 = 11 · 13 → 11 + 13 = 24.",
+    "128 = 2⁷ → 2.",
+    "En çok puan 24 → 3. hedef."
+   ],
+   "hataAnaliz": "143'ü büyük olasılıkla çarpanlarına ayıramadın: 2, 3, 5, 7'ye bölünmeyince 11 ve 13'ü denemeden bıraktın.",
+   "tuyo": "Asal çarpanlara ayırırken sırayla 2, 3, 5, 7, 11, 13... dene; bir asalın karesi sayıyı geçene kadar devam et (143 için 11 · 11 = 121 < 143, yani 11 ve 13 denenmeli). Karalama yap.",
+   "dikkat": "Bir sayı küçük asallara bölünmüyorsa asal ya da \"ayrılamaz\" değildir; 11 ve 13'e de bak. \"Farklı asal çarpan\" = her asal bir kez sayılır (128 → sadece 2)."
   },
   {
    "kod": "MAT-ÇK-23",
    "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
    "soru": "'Toplam asal sayı' tanımına göre (farklı asal bölenlerinin toplamı asal olan sayı) hangisi toplam asal sayıdır?",
    "hata": "78 = 2 · 39 deyip 39'u asal sandı (2 + 39 = 41 zannetti); D (78) seçti.",
-   "dogruYol": "Asal çarpanlara sonuna kadar ayır: 68 = 2² · 17 → 2 + 17 = 19 asal (doğru); 78 = 2 · 3 · 13 → 18 asal değil."
+   "dogruYol": "Asal çarpanlara sonuna kadar ayır: 68 = 2² · 17 → 2 + 17 = 19 asal (doğru); 78 = 2 · 3 · 13 → 18 asal değil.",
+   "gorsel": [
+    "sorular/MAT-CK-23.png"
+   ],
+   "cevap": "B) 68",
+   "senin": "D) 78",
+   "cozum": [
+    "\"Toplam asal sayı\": farklı asal bölenlerinin toplamı asal olmalı. Her şıkkı çarpanlarına ayır.",
+    "55 = 5 · 11 → 5 + 11 = 16 (asal değil).",
+    "68 = 2² · 17 → 2 + 17 = 19 (asal) ✓.",
+    "69 = 3 · 23 → 26 (asal değil).",
+    "78 = 2 · 3 · 13 → 2 + 3 + 13 = 18 (asal değil).",
+    "Cevap 68."
+   ],
+   "hataAnaliz": "Büyük olasılıkla 78 = 2 · 39 deyip 39'u asal sandın (2 + 39 = 41 asal olurdu). Oysa 39 = 3 · 13. MAT-ÇK-4 (1089) ve MAT-ÇK-17 (143) ile aynı örüntü: çarpanlara ayırmayı sona kadar götürmemek.",
+   "tuyo": "Asal çarpanlara ayırmayı sona kadar götür; elde kalan her sayının asal olup olmadığını kontrol et (39 → rakamlar toplamı 12 → 3'e bölünür). Karalama yap.",
+   "dikkat": "\"Bölen\" bulmak yetmez, ASAL bölen bulmak gerekir. Her parçayı asal olana kadar ayır. Yeni tanım verilen sorularda tanımı örnek üzerinde bir kez daha uygula. Bir Sayının Çarpanları (Bölenleri)"
   },
   {
    "kod": "MAT-ÇK-6",
    "altKonu": "Bir sayının çarpanları (bölenleri)",
    "soru": "Çarpan listesinde eksik çarpanlar (1·Y = 2·57 = 3·X = 6·19); X + Y'nin çarpanı hangisi?",
    "hata": "114 + 38'i 162 olarak hesapladı (doğrusu 152); sonucu şıklarla kontrol etmedi (D: 12 seçti).",
-   "dogruYol": "Y = 114, X = 38, X + Y = 152 = 2³ · 19; çarpanları arasında 4 var. Toplamı tersinden kontrol et: 152 − 38 = 114."
+   "dogruYol": "Y = 114, X = 38, X + Y = 152 = 2³ · 19; çarpanları arasında 4 var. Toplamı tersinden kontrol et: 152 − 38 = 114.",
+   "gorsel": [
+    "sorular/MAT-CK-6.png"
+   ],
+   "cevap": "A) 4",
+   "senin": "D) 12",
+   "cozum": [
+    "Çarpanlar eşleşir: 1·Y = 2·57 = 3·X = 6·19. Buradan Y = 6 · 19 = 114.",
+    "X = 114 ÷ 3 = 38. (Kontrol: 2 · 57 = 114 ✓.)",
+    "X + Y = 38 + 114 = 152 = 2³ · 19.",
+    "152'nin çarpanları 1, 2, 4, 8, 19, 38, 76, 152 → şıklardan 4 çarpandır."
+   ],
+   "hataAnaliz": "114 + 38 toplamını 162 yaptın (doğrusu 152); karalamanda 114'ü 174 gibi yazmışsın, kendi yazını yanlış okumuş olabilirsin. 162'nin çarpanları arasında da şıklardan hiçbiri yok, yine de 12'yi işaretledin; sonucu şıklarla kontrol etmedin.",
+   "tuyo": "Toplamayı tersinden kontrol et (152 − 38 = 114 ✓); rakamları net yaz. Bulduğun sayı hiçbir şıkka uymuyorsa işlemi tekrar kontrol et.",
+   "dikkat": "Çarpan listesinde baştan ve sondan eşleşen çarpanların çarpımı hep sayının kendisini verir (1·Y = 2·57 = 3·X = 6·19). Hiçbir şık uymuyorsa bu bir işlem hatası alarmıdır."
   },
   {
    "kod": "MAT-ÇK-19",
    "altKonu": "Bir sayının çarpanları (bölenleri)",
    "soru": "Çarpan tablosunda (36, 45, 50, 119 ve 56, 30, 91 gibi satırlar) kaç tanesinin çarpanları doğru verilmiştir?",
    "hata": "Soru DOĞRU olanların sayısını sorduğu hâlde hatalı olanları saydı; 3 bulup C seçti.",
-   "dogruYol": "Soru kökündeki 'doğru' kelimesinin altını çiz; her satırı tek tek kontrol et: yalnız 49 = 1 · 7 · 49 doğrudur; sayı 1'dir."
+   "dogruYol": "Soru kökündeki 'doğru' kelimesinin altını çiz; her satırı tek tek kontrol et: yalnız 49 = 1 · 7 · 49 doğrudur; sayı 1'dir.",
+   "gorsel": [
+    "sorular/MAT-CK-19.png"
+   ],
+   "cevap": "A) 1",
+   "senin": "C) 3",
+   "cozum": [
+    "Her satırı kontrol et: sayının tüm çarpanları yazılmış mı, yazılan her sayı gerçekten çarpan mı?",
+    "56: 6 çarpan değil (56 ÷ 6 tam bölünmez) → hatalı.",
+    "49: 1, 7, 49 → doğru ✓.",
+    "30: 9 çarpan değil, 6 eksik → hatalı.",
+    "91: 7 ve 13 eksik (91 = 7 · 13) → hatalı.",
+    "Doğru verilmiş olan 1 tane: 49. Not Kitabın cevap anahtarında hata olabilir; doğrusu A) 1. Kitapta cevap B görünüyor, ama tablodaki çarpan listelerine göre doğru olanı yalnız 49."
+   ],
+   "hataAnaliz": "Soru DOĞRU olanların sayısını (1) soruyordu, sen HATALI olanları saydın (3). Tüm işi doğru yapıp yalnızca son adımda kaybettin.",
+   "tuyo": "Soru kökündeki \"doğru / yanlış / değildir\" kelimelerinin altını çiz; işaretlemeden önce \"ben neyi saydım?\" diye sor.",
+   "dikkat": "\"Kaç tanesi DOĞRU\" ile \"kaç tanesi YANLIŞ\" farklı sorulardır. Kendi işaretlediğin satırları say ve sorunun istediğiyle karşılaştır. Çarpanları çift çift kontrol et (30 = 1·30, 2·15, 3·10, 5·6)."
   },
   {
    "kod": "MAT-ÇK-25",
    "altKonu": "EBOB – EKOK",
    "soru": "Samsun otobüs seferleri: iki yöne 2. kez aynı anda kalkış saati (A 40 dk, B 50 dk aralıklı).",
    "hata": "EKOK'u ilk ortak kalkışa (13.50) değil, saatin gösterdiği ana (11.00) ekledi; B (14.20) seçti.",
-   "dogruYol": "Önce ilk ortak kalkışı bul (13.50), sonra EKOK(40, 50) = 200 dakika ekle: 13.50 + 3 sa 20 dk = 17.10."
+   "dogruYol": "Önce ilk ortak kalkışı bul (13.50), sonra EKOK(40, 50) = 200 dakika ekle: 13.50 + 3 sa 20 dk = 17.10.",
+   "gorsel": [
+    "sorular/MAT-CK-25.png"
+   ],
+   "cevap": "D) 17.10",
+   "senin": "B) 14.20",
+   "cozum": [
+    "Ankara: 40 dakikada bir, ilk kalkış 11.10 → 11.10, 11.50, 12.30, 13.10, 13.50 ...",
+    "İzmir: 50 dakikada bir, ilk kalkış 11.20 → 11.20, 12.10, 13.00, 13.50 ...",
+    "İlk ortak kalkış 13.50.",
+    "EKOK(40, 50) = 200 dk = 3 sa 20 dk. İkinci ortak kalkış = 13.50 + 3 sa 20 dk = 17.10."
+   ],
+   "hataAnaliz": "EKOK'u ilk ortak kalkışa (13.50) değil, saatin gösterdiği ana (11.00) ekledin. Otobüsler 11.00'de birlikte kalkmıyor. Bu, MAT-ÇK-21 (80 sn'yi ilk karşılaşmaya eklemeyi unutma) ile aynı örüntü. Ayrıca listeleri yazarken küçük toplama hataları oldu.",
+   "tuyo": "Önce İLK ortak anı bul (iki listeyi ilk eşleşmeye kadar yaz), sonra EKOK ekle. Zaman çizelgesi: 11.00 (şimdi) → 13.50 (1. kez) → 17.10 (2. kez). Listede her adımı +40 / +50 diye kontrol et.",
+   "dikkat": "EKOK bir ARALIKTIR, bir AN değildir. \"Şimdi\" ile \"ilk birlikte\" aynı an değilse EKOK'u ilk birlikte olunan ana ekle. Şıklardaki 13.50 (1. kez) ve 14.20 (11.00 + EKOK) tuzaktır."
   },
   {
    "kod": "MAT-ÇK-26",
    "altKonu": "EBOB – EKOK",
    "soru": "Atlas Bey'in kibrit kutuları: EKOK ile düzendeki toplam kutu sayısı.",
    "hata": "Bulduğu 10 değerini (blok sayısı k) toplam kutu sayısı sandı; A (10) seçti.",
-   "dogruYol": "Bilinmeyen k neyin sayısı? Bir blokta 3 yatay + 7 dikey = 10 kutu; k = 10 ise toplam 100 kutu."
+   "dogruYol": "Bilinmeyen k neyin sayısı? Bir blokta 3 yatay + 7 dikey = 10 kutu; k = 10 ise toplam 100 kutu.",
+   "gorsel": [
+    "sorular/MAT-CK-26.png"
+   ],
+   "cevap": "D) 100",
+   "senin": "A) 10",
+   "cozum": [
+    "Alt sıra dikey (24 mm), üst sıra yatay (56 mm) kutular, iki sıra aynı uzunlukta: sıra uzunluğu EKOK(56, 24) = 168 mm'nin katı, yani 168k.",
+    "Yatay kutu sayısı 3k (168 ÷ 56), dikey kutu sayısı 7k (168 ÷ 24).",
+    "Çöpler: dikey 18 · 7k = 126k, yatay 16 · 3k = 48k. Fark 780: 126k − 48k = 78k = 780 → k = 10.",
+    "Toplam kutu = 3k + 7k = 10k = 100."
+   ],
+   "hataAnaliz": "Bulduğun 10, \"kaç blok\" (k) sayısıydı; soru toplam kutu sayısını (10k = 100) istiyordu. MAT-ÇK-1 (bir torbadaki miktar ↔ torba sayısı) ve MAT-ÜS-7 (bir torba ↔ toplam) ile aynı örüntü.",
+   "tuyo": "Kendine sor: \"Bulduğum sayı neyin sayısı? Blok mu, kutu mu?\" Bilinmeyene harf verdiysen (k) cevabı k cinsinden yaz (10k), sonra yerine koy.",
+   "dikkat": "Ara bilinmeyeni (k) bulmak işin sonu değildir. Şıklarda k'nin kendisi (10) genellikle tuzaktır."
   },
   {
    "kod": "MAT-ÇK-27",
    "altKonu": "EBOB – EKOK",
    "soru": "Mimar Hasan Bey'in gökdeleni: kat yüksekliği EBOB ile, en az kat sayısı.",
    "hata": "EBOB'u (25 br) bulduktan sonra kat sayısı yerine kat yüksekliğini verdi; C (25) seçti.",
-   "dogruYol": "Sonuca birimini yaz: 25 br kat yüksekliğidir; kat sayısı 575 ÷ 25 = 23."
+   "dogruYol": "Sonuca birimini yaz: 25 br kat yüksekliğidir; kat sayısı 575 ÷ 25 = 23.",
+   "gorsel": [
+    "sorular/MAT-CK-27.png"
+   ],
+   "cevap": "B) 23",
+   "senin": "C) 25",
+   "cozum": [
+    "Kat yüksekliği tam sayı ve hem 575'i hem 250'yi bölmeli. En az kat için kat yüksekliği en büyük olmalı.",
+    "EBOB(575, 250) = 25 br (bir katın yüksekliği).",
+    "Kat sayısı = 575 ÷ 25 = 23."
+   ],
+   "hataAnaliz": "EBOB bir katın YÜKSEKLİĞİNİ (25 br) verir; soru KAT SAYISINI (23) istiyordu. 23 senin karalamanda zaten vardı. Bu, MAT-ÇK-1, MAT-ÜS-7 ve MAT-ÇK-26 ile aynı örüntü.",
+   "tuyo": "Sonuca birimini yaz (25 br) ve sor: \"Bulduğum 25 br mi, 25 kat mı?\" Soru \"kaç kat\" diyorsa bir adım daha var: bölme.",
+   "dikkat": "EBOB \"bir parçanın büyüklüğünü\" verir; EBOB'a bölmek \"kaç parça\" olduğunu verir. Sonucunun yanına mutlaka birimini yaz."
   },
   {
    "kod": "MAT-ÇK-28",
    "altKonu": "EBOB – EKOK",
    "soru": "Terazi dengesi, 5 kg ve 8 kg ağırlıklar, dara ile toplam ağırlık.",
    "hata": "Toplamda kefelerden yalnızca birini ekledi (40 + 2 = 42); B (42) seçti.",
-   "dogruYol": "Toplam = sol kefe + sağ kefe + dara = 40 + 40 + 2 = 82 kg."
+   "dogruYol": "Toplam = sol kefe + sağ kefe + dara = 40 + 40 + 2 = 82 kg.",
+   "gorsel": [
+    "sorular/MAT-CK-28.png"
+   ],
+   "cevap": "D) 82",
+   "senin": "B) 42",
+   "cozum": [
+    "Terazi dengede: iki kefedeki ağırlık eşit. Sol kefe 5'in katı, sağ kefe 8'in katı → en az EKOK(5, 8) = 40 kg.",
+    "Toplam = sol kefe + sağ kefe + dara = 40 + 40 + 2 = 82 kg."
+   ],
+   "hataAnaliz": "Toplamda kefelerden yalnızca birini ekledin (40 + 2 = 42). Bu, MAT-ÇK-13'teki halter hatasının (42 + 3 = 45) aynısı. İki kefeye de 40 yazdığın hâlde toplamda biri unutuldu.",
+   "tuyo": "Şekildeki her parçayı numaralandır ve tek tek topla: sol kefe + sağ kefe + dara. Toplamı yazmadan önce parmağınla parçaları say.",
+   "dikkat": "\"Toplam ağırlık\" = sol + sağ + dara/çubuk. Şıklarda \"tek taraf + dara\" (42) ve \"iki taraf ama darasız\" (80) tuzaktır."
   },
   {
    "kod": "MAT-ÇK-29",
    "altKonu": "EBOB – EKOK",
    "soru": "K ve L kartları: EBOB'tan a + b'nin en küçük değeri.",
    "hata": "Bulduğu 6 sonucunu şıkla eşleştirirken D (5) işaretledi; şık eşleştirme hatası yaptı.",
-   "dogruYol": "İşaretlemeden önce bulduğun sonucu şıkla kelimesi kelimesine eşleştir: a = 2, b = 4 → 6."
+   "dogruYol": "İşaretlemeden önce bulduğun sonucu şıkla kelimesi kelimesine eşleştir: a = 2, b = 4 → 6.",
+   "gorsel": [
+    "sorular/MAT-CK-29.png"
+   ],
+   "cevap": "C) 6",
+   "senin": "D) 5",
+   "cozum": [
+    "EBOB, her asalın küçük üssünü alır. EBOB(K, L) = 2² · 3⁴ · 5².",
+    "3 için: min(5, b) = 4 → b = 4.",
+    "5 için: min(a, 2) = 2 → a en az 2 olmalı. En az: a = 2.",
+    "a + b = 2 + 4 = 6."
+   ],
+   "hataAnaliz": "Karalamanda 6'yı bulduğun hâlde D) 5'i işaretledin. Bu bir şık eşleştirme hatası. MAT-ÜS-2'de 2¹⁹'u yazıp başka şık seçmenle aynı örüntü.",
+   "tuyo": "İşaretlemeden önce bulduğun sonucu şıkla kelimesi kelimesine eşleştir (kontrol listesi madde 5).",
+   "dikkat": "EBOB'da her asalın üssü, iki sayıdaki üslerden KÜÇÜK olanıdır. Bilinmeyen üs EBOB'daki üsten büyük ya da eşit olabiliyorsa \"en az\" için eşit al. a için 1 yazarsan min(1, 2) = 1 olur, 2 olmaz."
   },
   {
    "kod": "MAT-ÇK-30",
    "altKonu": "EBOB – EKOK",
    "soru": "Zeytinyağı; yarısı 250 mL, yarısı 400 mL şişelere; toplam şişe 100'den az, en fazla litre.",
    "hata": "Toplam şişe şartını iki şişe türü birlikte kontrol etmedi; 40 L → 130 şişe (A: 40 seçti); ayrıca 4000 ÷ 250 hesabını yanlış yaptı.",
-   "dogruYol": "Bilinmeyene harf ver: yarı = 2000k mL; toplam şişe 13k < 100 → k ≤ 7 → 28 L."
+   "dogruYol": "Bilinmeyene harf ver: yarı = 2000k mL; toplam şişe 13k < 100 → k ≤ 7 → 28 L.",
+   "gorsel": [
+    "sorular/MAT-CK-30.png"
+   ],
+   "cevap": "B) 28",
+   "senin": "A) 40",
+   "cozum": [
+    "Yarı miktar hem 250'nin hem 400'ün katı olmalı → EKOK(250, 400) = 2000 mL'nin katı: yarı = 2000k mL.",
+    "Şişe sayısı: 2000k ÷ 250 = 8k ve 2000k ÷ 400 = 5k → toplam 13k şişe.",
+    "13k < 100 → k en fazla 7.",
+    "Toplam yağ = 2 · 2000 · 7 = 28 000 mL = 28 L."
+   ],
+   "hataAnaliz": "\"Toplam şişe 100'den az\" şartını, iki şişe türünü birlikte sayarak kontrol etmedin. 40 L şartı sağlamıyor: yarı = 20 000 mL → 80 + 50 = 130 şişe, 100'den fazla. Karalamanda ayrıca 4000 ÷ 250 = 15 yazmışsın (doğrusu 16).",
+   "tuyo": "Bilinmeyene harf ver ve neyi temsil ettiğini yaz: \"Yarı = 2000k mL\". Toplamı ayrı satırda yaz: \"Toplam = 2 · yarı\". mL → L çevirmeyi en sona bırak.",
+   "dikkat": "Seçtiğin şıkkı şarta geri koy: 40 L → 130 şişe ✗. \"Yarısı\" bilgisi hem şişe hesabında hem toplamda kullanılır. Şıklarda yarı miktar (14) ve şartı aşan değer (40) tuzaktır."
   },
   {
    "kod": "MAT-ÇK-31",
    "altKonu": "EBOB – EKOK",
    "soru": "Emel Hanım ve Hasan Bey'in nöbetleri: bir yılda en fazla kaç kez birlikte?",
    "hata": "Yılın ilk gününü (1. gün) saymadı; 365 ÷ 105 ile yetindi (A: 3 seçti).",
-   "dogruYol": "En fazla için ilk ortak nöbeti yılın ilk gününe koy: 1, 106, 211, 316 → 4 kez."
+   "dogruYol": "En fazla için ilk ortak nöbeti yılın ilk gününe koy: 1, 106, 211, 316 → 4 kez.",
+   "gorsel": [
+    "sorular/MAT-CK-31.png"
+   ],
+   "cevap": "B) 4",
+   "senin": "A) 3",
+   "cozum": [
+    "EKOK(15, 21) = 105 gün: iki nöbet 105 günde bir çakışır.",
+    "\"En fazla\" dendiği için ilk ortak nöbeti yılın 1. gününe koy.",
+    "Ortak nöbet günleri: 1., 106., 211., 316. gün (421 > 365).",
+    "Bir yılda en fazla 4 kez."
+   ],
+   "hataAnaliz": "\"En fazla\" ifadesi, ilk ortak nöbetin yılın İLK GÜNÜ olabileceğini söylüyor; bu günü saymadın (365 ÷ 105 ≈ 3 ile yetindin). Bu, MAT-ÇK-12 ile aynı örüntü. Ayrıca katları yazarken 105 + 210 = 305 yazmışsın (doğrusu 315).",
+   "tuyo": "\"En fazla / en az kaç kez\" sorularında zaman çizelgesi çiz ve ilk ortak anı en elverişli yere koy (en fazla → en başa). Say: başlangıç + her EKOK adımı.",
+   "dikkat": "Bölme (365 ÷ 105) yalnızca ARALIK sayısını verir; karşılaşma sayısı aralık sayısından 1 fazla olabilir (çit direği mantığı). Katları yazarken toplamayı kontrol et."
   },
   {
    "kod": "MAT-ÇK-32",
    "altKonu": "EBOB – EKOK",
    "soru": "Okuldaki öğrenciler 15'erli ve 18'erli gruplarda artıyor (kalanlı EKOK); 400'den fazla en küçük öğrenci sayısı.",
    "hata": "Kalanların 13 ve 16 olduğunu, eksiklerin 2 olduğunu fark etmeden 450'yi seçti; 450 ÷ 15 kalan 0 verir.",
-   "dogruYol": "Eksikler 15 − 13 = 2 ve 18 − 16 = 2; N + 2, EKOK(15, 18) = 90'ın katıdır: N = 90k − 2; 400'den büyük en küçük değer 448."
+   "dogruYol": "Eksikler 15 − 13 = 2 ve 18 − 16 = 2; N + 2, EKOK(15, 18) = 90'ın katıdır: N = 90k − 2; 400'den büyük en küçük değer 448.",
+   "gorsel": [
+    "sorular/MAT-CK-32.png"
+   ],
+   "cevap": "448",
+   "senin": "450",
+   "cozum": [
+    "İlk durum: 15'er gruplarda 13 artıyor → 15 − 13 = 2 kişi eksik. İkinci durum: 18'er gruplarda 16 artıyor → 18 − 16 = 2 kişi eksik.",
+    "İki durumda da eksik 2 olduğu için öğrenci sayısına 2 eklenirse hem 15'e hem 18'e tam bölünür: N + 2, EKOK(15, 18) = 90'ın katı.",
+    "N = 90k − 2 ve N > 400 → k = 5 → N = 450 − 2 = 448.",
+    "Kontrol: 448 ÷ 15 = 29 kalan 13 ✓. 448 ÷ 18 = 24 kalan 16 ✓."
+   ],
+   "hataAnaliz": "Kalanlar sıfır olmadığı için sayı EKOK'un tam katı değil, katından 2 EKSİKTİR. 450'yi 15'e bölersen kalan 0 çıkar, 13 değil; ters kontrol yapsaydın hatayı hemen görürdün. Bu konu (kalanlı EKOK) için kısa bir konu anlatımı faydalı olur.",
+   "tuyo": "(1) Kalanlar aynıysa N = EKOK · k + kalan. (2) Kalanlar farklı ama \"bölen − kalan\" aynıysa N = EKOK · k − eksik. Sonucu iki bölmeye geri koyarak kontrol et.",
+   "dikkat": "\"… artıyor\" = kalan var → sayı EKOK'un tam katı OLAMAZ. Her bölene ne kadar EKSİK olduğuna bak: 15 − 13 = 2, 18 − 16 = 2."
   },
   {
    "kod": "MAT-ÇK-20",
    "altKonu": "EBOB – EKOK",
    "soru": "İki tahta (150 cm ve 210 cm), eşit ve en büyük parçalar; toplam kesim süresi 240 sn; bir kesim kaç sn? (Tekrar testi hata analizi)",
    "hata": "240'ı parça sayısıyla ya da karışık bir sayıyla böldü (A: 20 seçti); parça ve kesim kavramları karışıyor.",
-   "dogruYol": "n parça için n − 1 kesim; EBOB(150, 210) = 30 → 5 ve 7 parça → 4 + 6 = 10 kesim; 240 ÷ 10 = 24 sn."
+   "dogruYol": "n parça için n − 1 kesim; EBOB(150, 210) = 30 → 5 ve 7 parça → 4 + 6 = 10 kesim; 240 ÷ 10 = 24 sn.",
+   "gorsel": [
+    "sorular/MAT-CK-20.png"
+   ],
+   "cevap": "B) 24",
+   "senin": "A) 20",
+   "cozum": [
+    "EBOB(150, 210) = 30 cm (en büyük eş parça).",
+    "150 cm → 150 ÷ 30 = 5 parça → 4 kesim. 210 cm → 7 parça → 6 kesim.",
+    "Toplam kesim = 4 + 6 = 10.",
+    "Bir kesim = 240 ÷ 10 = 24 saniye."
+   ],
+   "hataAnaliz": "Parça sayısıyla kesim sayısını karıştırdın. 240 ÷ 20 = 12 diyerek toplam parça sayısıyla (5 + 7 = 12) böldün; oysa süreyi kesim sayısına (10) bölmek gerekiyordu.",
+   "tuyo": "Bir çubuğu 3 parçaya ayırmak için 2 kesim gerekir; n parça için n − 1 kesim. Her tahta için parça ve kesim sayısını ayrı sütunlara yaz.",
+   "dikkat": "Parça ≠ kesim. Bir tahtayı n eşit parçaya ayırmak için n − 1 kesim gerekir. Tahtalar AYRI AYRI kesiliyorsa her tahta için 1 çıkar."
   },
   {
    "kod": "MAT-ÇK-21",
    "altKonu": "EBOB – EKOK",
    "soru": "Sekiz şeklinde pistte arabaların O noktasında ikinci kez karşılaşması (tekrar testi hata analizi).",
    "hata": "İlk karşılaşmanın 8. saniyede olduğunu gözden kaçırdı; 2. karşılaşmayı 80. saniye sandı (A: 1 dk 20 sn seçti).",
-   "dogruYol": "Zaman çizelgesi: 0 → 8 (ilk) → 88 (ikinci). EKOK bir aralık, an değil; ilk ana eklenir."
+   "dogruYol": "Zaman çizelgesi: 0 → 8 (ilk) → 88 (ikinci). EKOK bir aralık, an değil; ilk ana eklenir.",
+   "gorsel": [
+    "sorular/MAT-CK-21.png"
+   ],
+   "cevap": "C) 1 dakika 28 saniye",
+   "senin": "A) 1 dakika 20 saniye",
+   "cozum": [
+    "Sol yol: 20 ÷ 5 = 4 sn/parça. A'dan O'ya 2 parça = 8 sn.",
+    "Sağ yol: 16 ÷ 4 = 4 sn/parça. B'den O'ya 2 parça = 8 sn.",
+    "İki araba da O'ya 8. saniyede varır → ilk karşılaşma 8. saniye.",
+    "Sonraki karşılaşmalar EKOK(20, 16) = 80 saniye arayla olur.",
+    "İkinci karşılaşma = 8 + 80 = 88 sn = 1 dk 28 sn."
+   ],
+   "hataAnaliz": "İlk karşılaşmanın 8. saniyede olduğunu bulduğun hâlde ikinci karşılaşmayı 80. saniye aldın; 8 + 80 toplamasını yapmadın. MAT-ÇK-12'deki hatayla aynı aile: \"olaylar ne zaman başlıyor?\" kontrolü.",
+   "tuyo": "Zaman çizelgesi çiz: 0 → 8 (1. karşılaşma) → 88 (2.) → 168 (3.). EKOK bir \"aralık\"tır, \"an\" değildir; anı bulmak için ilk karşılaşma anına eklenir.",
+   "dikkat": "Olaylar 0. saniyede değil 8. saniyede başlıyorsa her karşılaşma anı = ilk an + EKOK · k. Bulduğun ara sonuç (80) şıklarda tuzak olarak durur."
   },
   {
    "kod": "MAT-ÇK-14",
    "altKonu": "Aralarında asal sayılar",
    "soru": "İki dörtgen; ortak köşe; x ve y aralarında asal; x + y en az kaç? (Tekrar testi hata analizi)",
    "hata": "Yerleşim doğru; son hesapta çarpmada hata yaptı (18 · 5 = 80, doğrusu 90); sonuç şıklarda olmadığı için boş bıraktı.",
-   "dogruYol": "x ve y'yi ayrı satırlarda çarp: x = 72, y = 385; toplam 457. Her çarpmayı tersinden kontrol et."
+   "dogruYol": "x ve y'yi ayrı satırlarda çarp: x = 72, y = 385; toplam 457. Her çarpmayı tersinden kontrol et.",
+   "gorsel": [
+    "sorular/MAT-CK-14.png"
+   ],
+   "cevap": "B) 457",
+   "senin": "Boş bıraktın",
+   "cozum": [
+    "İki dörtgenin ORTAK köşesi hem x'i hem y'yi böler. x ve y aralarında asal olduğundan ortak köşe 1 olmalı.",
+    "Sol dörtgen: 9, 4, 1 ve bir sayı daha. En küçük uygun farklı sayı 2 → x = 9 · 4 · 2 · 1 = 72.",
+    "Sağ dörtgen: 1 ile birlikte üç sayı daha. x = 72 = 2³·3² ile aralarında asal olmak için 2 ve 3'e bölünmeyen, daha önce kullanılmamış en küçük sayılar: 5, 7, 11 → y = 1 · 5 · 7 · 11 = 385.",
+    "x + y = 72 + 385 = 457."
+   ],
+   "hataAnaliz": "Doğru yerleşimden sonra son hesapta takıldın: x = 72, y = 385 ve toplam 457 yerine karalamanda 466, 427, 426 gibi sonuçlar ve 18 · 5 = 80 (doğrusu 90) var. Sonuç şıklarda olmayınca rastgele işaretlemeyip boş bırakman olumlu bir davranış.",
+   "tuyo": "Çarpımları adım adım yaz (5 · 7 = 35, 35 · 11 = 385) ve toplamı tersinden kontrol et. Bulduğun sonuç şıklarda yoksa işlemi baştan yap.",
+   "dikkat": "Ortak köşe (iki sayının ortak çarpanı) varsa ve sayılar aralarında asalsa o ortak çarpan 1 olmak zorunda. \"En az\" için sol tarafı en küçük sayılarla, sağ tarafı sol tarafın asal çarpanlarını içermeyen en küçük sayılarla doldur."
   },
   {
    "kod": "MAT-ÇK-16",
    "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
    "soru": "2ᵃ · 3ᵇ biçiminde yazılabilen iki basamaklı en büyük sayının rakamları toplamı kaçtır? (Tekrar testi hata analizi)",
    "hata": "3'ün kuvvetini en büyük tutup yalnız 2'yi değiştirdi; A (9) seçti (54 → 9).",
-   "dogruYol": "Tüm adayları tabloya yaz: 12, 18, 24, 36, 48, 54, 72, 96; en büyük 96 → 15."
+   "dogruYol": "Tüm adayları tabloya yaz: 12, 18, 24, 36, 48, 54, 72, 96; en büyük 96 → 15.",
+   "gorsel": [
+    "sorular/MAT-CK-16.png"
+   ],
+   "cevap": "C) 15",
+   "senin": "A) 9",
+   "cozum": [
+    "a ve b en az 1: 2ᵃ · 3ᵇ biçimindeki iki basamaklı sayıları sistemli yaz.",
+    "b = 1: 6 · 2ᵃ → 12, 24, 48, 96. b = 2: 9 · 2ᵃ → 18, 36, 72. b = 3: 27 · 2ᵃ → 54 (108 üç basamaklı).",
+    "Hepsi: 12, 18, 24, 36, 48, 54, 72, 96. En büyüğü 96 = 2⁵ · 3.",
+    "Rakamlar toplamı = 9 + 6 = 15."
+   ],
+   "hataAnaliz": "3'ün kuvvetini en büyük tutup (27) yalnızca 2'nin kuvvetini değiştirdin; 3'ün kuvvetini küçültüp 2'ninkini büyütmeyi (2⁵ · 3 = 96) denemedin. \"En büyük\" için tek bir tabanı büyütmenin yeteceğini varsaydın.",
+   "tuyo": "Sistemli tablo kur: b = 1, 2, 3 için 2ᵃ'yı iki basamak sınırına kadar büyüt; her satırın en büyüğünü yaz, sonra karşılaştır.",
+   "dikkat": "\"En büyük\" sorularında tek bir yolu değil, TÜM durumları tablo hâlinde dene. Büyük tabanın büyük kuvveti her zaman en büyük sonucu vermez."
   },
   {
    "kod": "MAT-ÇK-23",
    "altKonu": "Asal çarpanlara ayırma ve bölünebilme",
    "soru": "'Toplam asal sayı' tanımına göre hangisi toplam asal sayıdır? (Tekrar testi hata analizi)",
    "hata": "78 = 2 · 39 deyip 39'u asal sandı (2 + 39 = 41 zannetti); D (78) seçti.",
-   "dogruYol": "Asal çarpanlarına sonuna kadar ayır: 68 = 2² · 17 → 19 asal; 78 = 2 · 3 · 13 → 18 asal değil."
+   "dogruYol": "Asal çarpanlarına sonuna kadar ayır: 68 = 2² · 17 → 19 asal; 78 = 2 · 3 · 13 → 18 asal değil.",
+   "gorsel": [
+    "sorular/MAT-CK-23.png"
+   ],
+   "cevap": "B) 68",
+   "senin": "D) 78",
+   "cozum": [
+    "\"Toplam asal sayı\": farklı asal bölenlerinin toplamı asal olmalı. Her şıkkı çarpanlarına ayır.",
+    "55 = 5 · 11 → 5 + 11 = 16 (asal değil).",
+    "68 = 2² · 17 → 2 + 17 = 19 (asal) ✓.",
+    "69 = 3 · 23 → 26 (asal değil).",
+    "78 = 2 · 3 · 13 → 2 + 3 + 13 = 18 (asal değil).",
+    "Cevap 68."
+   ],
+   "hataAnaliz": "Büyük olasılıkla 78 = 2 · 39 deyip 39'u asal sandın (2 + 39 = 41 asal olurdu). Oysa 39 = 3 · 13. MAT-ÇK-4 (1089) ve MAT-ÇK-17 (143) ile aynı örüntü: çarpanlara ayırmayı sona kadar götürmemek.",
+   "tuyo": "Asal çarpanlara ayırmayı sona kadar götür; elde kalan her sayının asal olup olmadığını kontrol et (39 → rakamlar toplamı 12 → 3'e bölünür). Karalama yap.",
+   "dikkat": "\"Bölen\" bulmak yetmez, ASAL bölen bulmak gerekir. Her parçayı asal olana kadar ayır. Yeni tanım verilen sorularda tanımı örnek üzerinde bir kez daha uygula. Bir Sayının Çarpanları (Bölenleri)"
   }
  ],
  "sorular": [

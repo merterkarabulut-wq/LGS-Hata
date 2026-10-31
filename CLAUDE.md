@@ -37,7 +37,12 @@ Proje dosyaları:
   - `ogrenci/SARTNAME.md` — sayfanın tam şartnamesi (db koleksiyonları: konular, bankalar, odevler, denemeler, ayarlar; veli = artifact sahibi).
   - `ogrenci/icerik/_GOREV.md` — PDF'lerden ünite JSON'u çıkarma görevi ve şeması.
   - `ogrenci/icerik/<id>.json` — ünite başına içerik (`<ders kısaltması>-<ünite kısaltması>`). 15 ünite hazır: din-kad, fen-dna, fen-mev, ing-fri, ink-kah, ink-mil, mat-ck, mat-kk, mat-us, tur-cum, tur-fii, tur-man, tur-par, tur-soz, tur-yaz.
-  - `ogrenci/index.html` — sayfa kaynağı (`#duru` öğrenci görünümü, `#veli` yalnız sahibe görünür).
+  - `ogrenci/index.html` — sayfa kaynağı. Rotalar: `#duru` (Derslerim: 3+3 ders kartı — üst Türkçe/Mat/Fen, alt İnkılap/Din/İng), `#ders-<id>` (ders bandı + konu kutuları), `#konu-<id>` (sekmeler Hatalarım/Alıştırma/Sınav), `#veli`, `#veli-<id>` (yalnız sahip). Sayfa içi ekranlar `history.pushState` ile tarayıcı geri tuşuna bağlı.
+  - Hatalarım: alt konu satırları → tek kart (solda soru görseli, sağda doğru cevap/Duru'nun cevabı/hata analizi/doğru yol/tüyo/çözüm), Geri/İleri; alt konunun kısa anlatımı kart altında. Ayrı "Kısa anlatım" sekmesi yok. Alıştırma da satır satır + Geri/İleri. Sınav sonunda karne + "Benzer sorularla yeniden dene".
+  - Tamamlanma: görülen hatalar `denemeler/inceleme-<konuId>-<uid>` belgesinde (`tur:"inceleme"`, `gorulen:{anahtar:ISO}`) — bu belgeler `S.denemeler`'den ayrılır, istatistiklere girmez; velinin kayıtları Duru'nun ilerlemesine sayılmaz. Alıştırma: her soru alıştırmada en az bir kez çözülmüş. Sınav: hatalar+alıştırma bittikten sonra bitirilen sınav. Yeni hata/soru gelince ilgili bölüm yeniden "tamamlanmadı" olur.
+  - `ogrenci/sorular/` — hata sorularının PDF'ten kesilmiş PNG'leri (`<ASCII kod>.png`) + `detay.json` (kod → gorsel, cevap, senin, cozum, hataAnaliz, tuyo, dikkat). Sayfa bunu `fetch` ile okur (db'ye yazılmaz). Üretici: `scripts/soru_gorsel.py` (içerik JSON'larına da bu alanları ekler).
+  - `ogrenci/sira.json` — ünite başına anlatım bölümü / soru altKonu / tüyo → hata alt konusu eşlemesi (Hatalarım sırası tek kaynak). Yeni ünitede elle/Haiku ile eklenir; `icerik/` içine koyma (icerik_hazirla.py oradaki her JSON'u ünite sanar).
+  - Artifact slug: `6b2b4a28-e1d5-4d6d-bdb2-7f1dd875075f`. Yayın `publish_files` ile (index.html, sira.json, sorular/*); patch modunda listelenmeyen dosyalar korunur.
 - `scripts/icerik_hazirla.py` — ünite JSON'larını artifact db'ye yazılacak `konular`/`bankalar` belgelerine hazırlar.
 
 ## Komutlar
@@ -51,6 +56,9 @@ python3 -I -c "import json,sys;json.load(open(sys.argv[1]))" ogrenci/icerik/<id>
 
 # Ünite JSON'larını Çalışma Masası db'sine hazırla (sonra db batch yazımı)
 python3 -I scripts/icerik_hazirla.py ogrenci/icerik <çıktı klasörü>
+
+# Hata sorularının görsellerini ve çözüm alanlarını üret (yeni ünite/set sonrası), sonra ogrenci/sorular/* yayımlanır
+python3 -I scripts/soru_gorsel.py /home/merterk/Belgeler/LGS ogrenci/icerik ogrenci/sorular
 
 # PDF metni oku (bozuk üs/kesir/şekilde sayfayı Read ile görsel oku, tahmin etme)
 pdftotext -layout "<dosya>.pdf" -

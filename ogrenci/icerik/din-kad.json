@@ -1,64 +1,677 @@
 {
-  "id": "din-kad",
-  "ders": "Din Kültürü ve Ahlak Bilgisi",
-  "unite": "01 - Kader İnancı",
-  "baslik": "Kader İnancı",
-  "anlatim": [
-    {"baslik": "Kader ve kaza", "metin": "Kader, Allah'ın evrende olacak her olayı önceden bilip takdir etmesidir; bunu bir plan gibi düşün. Kaza ise bu takdirin zamanı geldiğinde gerçekleşmesidir. Aynı olay için ikisi de doğru olabilir. Metinde 'önceden bilme, takdir, yazılma, Levh-i Mahfuz' geçiyorsa kader; 'oldu, gerçekleşti, zamanı gelince meydana geldi' geçiyorsa kaza sorulmuştur."},
-    {"baslik": "İlim, irade ve kudret", "metin": "Kader inancı üç sıfata dayanır. İlim, Allah'ın her şeyi bilmesidir. İrade, Allah'ın dilemesidir; 'dilemesi ve takdiri dışında olmaz' ifadesi iradeyle ilgilidir. Kudret, Allah'ın her şeye gücünün yetmesidir. Kavram çiftlerinde önce kader olup olmadığına bak, sonra ikinci kavramı metnin vurgusuyla eşleştir."},
-    {"baslik": "Evrendeki yasalar", "metin": "Allah evrene değişmeyen düzenler, yani yasalar koymuştur. Fiziksel yasalar madde ve enerjiyle ilgilidir; köprü hesabı, yer çekimi gibi. Biyolojik yasalar canlıların doğuşu, büyümesi ve beslenmesiyle ilgilidir. Toplumsal yasalar insanlar arasındaki kurallar ve yardımlaşmayla ilgilidir. Yasa türünü duygu sözcükleri değil, olayın kendisi belirler."},
-    {"baslik": "Emek ve rızık", "metin": "Peygamberlerin çoğu çalışarak geçimini sağlamıştır; Hz. Davud kendi emeğiyle geçinmiştir. İslam'da helal kazanç için çalışmak ibadet sayılır ve insan ancak çabasının karşılığını alır. Rızık için çalışmadan beklemek bu anlayışa uymaz."},
-    {"baslik": "Tevekkül ve tedbir", "metin": "Başarının temel etkenleri emek ve gayret, sorumluluk bilinci ve tedbir ile tevekküldür. Tevekkül, üzerine düşeni yaptıktan sonra sonucu Allah'a bırakmaktır. Tedbir almadan 'Allah şifa verir' diyerek beklemek tevekkül değildir. Tedbir ve tevekkül birlikte düşünülür."},
-    {"baslik": "Cüz'i irade ve sorumluluk", "metin": "Allah yaratıcıdır; insan ise cüz'i iradesiyle seçim yapar ve yaptığı seçimlerden sorumludur. 'Yaratıcı' ile 'sorumlu' aynı şey değildir. Kaderi bahane ederek hatasını kadere yüklemek, sorumluluktan kaçmak anlamına gelir. Kader, insanın iradesini ortadan kaldırmaz."}
-  ],
-  "tuyolar": [
-    "Kader = plan, kaza = gerçekleşme; gerçekleşen her olay kaza kapsamındadır.",
-    "Levh-i Mahfuz, kitap ve 'yazılmış' ifadeleri görünce aklına KADER gelsin; 'gerçekleşti, oldu' görünce KAZA.",
-    "İlim = bilmek, irade = dilemek, kudret = gücü yetmek. 'Dilemesi dışında olmaz' varsa irade düşün.",
-    "Yasa sorusunda duyguyu bırak, olayı bul: madde mi, canlı mı, toplum mu? Canlıysa biyolojik.",
-    "Öncül sorularında her öncülün yanına kanıt cümlesinden 2-3 sözcük yaz; paragrafın son cümlesini atlama.",
-    "Olumsuz kökte her şıkka 'kader inancında var mı?' diye sor; fazladan yargı içeren (sorumlusu, her zaman, hiç) şık genelde yanlıştır.",
-    "'Yaratıcı' ile 'sorumlu' aynı şey değildir.",
-    "Ana fikir sorularında her şıkka 'Bu metinde yazıyor mu?' diye sor; kanıt gösteremediğin şık yanlıştır."
-  ],
-  "hatalar": [
-    {"kod": "DİN-KAD-3", "altKonu": "Kader ve kaza", "soru": "Mevsimlerin ardışıklığı, bahar ve yağmur olaylarından hangileri 'kaza' kapsamında değerlendirilebilir?", "hata": "I. öncüle 'planlanmış ama gerçekleşmiş, kader' dedi. Oysa mevsimlerin birbirini takip etmesi gerçekleşen bir olaydır, yani kazadır. C şıkkını (II ve III) seçti.", "dogruYol": "Fiil gerçekleşen bir olayı anlatıyorsa (gelmesi, kaplanması, yağması) kaza; 'önceden bilme, takdir, yazılma' varsa kader. Planlanmış olması olayı kader yapmaz."},
-    {"kod": "DİN-KAD-4", "altKonu": "Kader ve kaza", "soru": "'Gökte ve yerde gizli olan hiçbir şey yoktur ki apaçık bir kitapta (Levh-i Mahfuz) olmasın.' ayeti hangi kavramla ilişkilidir?", "hata": "Allah'ın her şeyi bilip yazmasını kaza ile karıştırdı ve B şıkkını seçti. Ayette gerçekleşme değil, yazılı olma vardır.", "dogruYol": "'Levh-i Mahfuz, kitap, yazılmış' görünce aklına KADER gelsin; 'gerçekleşti, oldu, zamanı gelince' görünce KAZA."},
-    {"kod": "DİN-KAD-5", "altKonu": "Kader ve kaza", "soru": "Hadis-i şerifte geçen 'Allah'ın takdiri dışında faydalı olamazlar / zarar veremezler; kalemler kaldırılmış, sayfalar kurumuştur' ifadeleri hangi kavram çiftleriyle ilgilidir?", "hata": "Hadisin kader konusu olduğunu görmedi ve 'Kudret-İlim' çiftini seçti. 'Kalemler kaldırılmış' ifadesinin takdirden, yani kaderden söz ettiğini fark etmedi.", "dogruYol": "Önce çiftte 'kader' olup olmadığına bak. Sonra ikinci kavramı hadisin vurgusuyla sına: 'dilemesi, takdiri dışında olmaz' → irade (külli irade)."},
-    {"kod": "DİN-KAD-6", "altKonu": "Kader ve kaza", "soru": "Cibril hadisindeki 'hayrı ve şerriyle kadere inanmak' ifadesinin anlatmak istediği olmayan yargı hangisidir?", "hata": "B şıkkını (kudret) kadere uzak sandı ve seçti; oysa kudret kader inancının dayanaklarından biridir. C şıkkındaki 'sorumlusu' kelimesini kaçırdı; yaratıcı ile sorumlu aynı şey değildir.", "dogruYol": "Olumsuz kökte her şıkka 'kader inancında var mı?' diye sor. İlim, irade ve kudret ✓; 'sorumlusu' gibi fazladan yargı içeren şık ✗."},
-    {"kod": "DİN-KAD-1", "altKonu": "Evrendeki yasalar", "soru": "Yeni doğan bir çocuğun dünyaya gelişini anlatan metin hangi yasa ile daha çok ilişkilidir?", "hata": "Metindeki aile, sevinç ve mutluluk sözcüklerinin etkisiyle toplumsal yasayı seçti. Oysa metindeki olay bir canlının doğuşudur.", "dogruYol": "Yasa sorusunda duyguyu bırak, olayı bul: madde mi, canlı mı, toplum mu? Canlıysa biyolojik yasa; duygu sözcükleri yasa türünü belirlemez."},
-    {"kod": "DİN-KAD-2", "altKonu": "Evrendeki yasalar", "soru": "Mimar Sinan'ın zemin, malzeme ve hesapları planlaması kaderle ilgili hangi kavrama doğrudan bir örnektir?", "hata": "Kader konusundaki 'planlamak' ve 'kaderle ilgili' sözlerinden etkilenip rızık'ı seçti. Metinde rızıkla ilgili bir ipucu yoktu.", "dogruYol": "Metinden somut sözcükler seç (zemin, malzeme, hesap) ve 'Bunlar hangi alana ait?' diye sor. Madde, fizik ve hesap → fiziksel yasalar."},
-    {"kod": "DİN-KAD-7", "altKonu": "Rızık, emek ve tevekkül", "soru": "Peygamberlerin emeği ve helal kazancı ile ilgili metinden hangi çıkarımlar yapılabilir?", "hata": "III. öncülün kanıtını paragrafın son cümlesinde ('çalışmayı ibadet sayarak') aramadı; III'ü dışarıda bırakıp B şıkkını seçti.", "dogruYol": "Her öncülün yanına kanıt cümlesinden 2-3 sözcük yaz; paragrafın son cümlesi öncüllerden birinin dayanağı olabilir. Üçünde de kanıt varsa 'I, II ve III' cevaptır."},
-    {"kod": "DİN-KAD-8", "altKonu": "Rızık, emek ve tevekkül", "soru": "Başarının etkenleriyle (emek ve gayret, sorumluluk bilinci, tedbir ve tevekkül) doğrudan ilişkilendirilemeyen ayet hangisidir?", "hata": "Tevekkül ayetini (A) emekten uzak sandı ve onu eledi. Tevekkülün de başarı etkeni olduğunu ve rızıkta farklılığın (B) bu listede yer almadığını görmedi.", "dogruYol": "Her ayetin yanına etiket yaz (tevekkül, sorumluluk, emek). Etiketi çıkmayan şık, olumsuz kökün cevabıdır. Tevekkül üzerine düşeni yaptıktan sonra güvenmektir."},
-    {"kod": "DİN-KAD-9", "altKonu": "Kader ve insan iradesi", "soru": "Kaderi bahane eden insanlarla ilgili metinde asıl anlatılmak istenen hangisidir?", "hata": "C şıkkındaki 'olumsuzluklar birer imtihan vesilesidir' ifadesi doğru bir dinî bilgi olduğu için cazip geldi; ama metinde bu fikir geçmiyordu. Metnin söylediği ile doğru bilgiyi karıştırdı.", "dogruYol": "Ana fikir sorularında her şıkka 'Bu metinde yazıyor mu?' diye sor ve kanıt cümlesini göster. Kanıt gösteremediğin şık, ne kadar doğru görünürse görünsün yanlıştır."}
-  ],
-  "sorular": [
-    {"id": "din-kad-001", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-3", "tur": "benzer", "metin": "I. Güneş'in her gün belirli bir saatte doğup batması\nII. Bir tohumun uygun şartlarda filizlenmesi\nIII. Allah'ın olayları önceden bilip takdir etmesi\nifadelerinden hangileri \"kaza\" kapsamında değerlendirilebilir?", "secenekler": ["Yalnız III", "I ve II", "I ve III", "II ve III"], "dogru": "B", "cozum": "Kaza, takdir edilen olayın zamanı gelince gerçekleşmesidir. I ve II gerçekleşen olaylardır; III ise kaderdir (takdir).", "emin": true},
-    {"id": "din-kad-002", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-3", "tur": "benzer", "metin": "Aşağıdakilerden hangisi \"kader\" kavramını ifade eder?", "secenekler": ["Allah'ın yağmurun yerini ve zamanını önceden bilip takdir etmesi", "Yağmurun yağması", "Çocuğun dünyaya gelmesi", "Baharda çiçeklerin açması"], "dogru": "A", "cozum": "Kader, olayların önceden bilinip takdir edilmesidir; diğer şıklar gerçekleşen olaylardır (kaza).", "emin": true},
-    {"id": "din-kad-003", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-3", "tur": "benzer", "metin": "I. Yaz mevsiminde havaların ısınması\nII. Allah'ın kâinatı belli ölçülerle takdir etmesi\nIII. Takdir edilmiş bir depremin zamanı gelince meydana gelmesi\nifadelerinden hangileri \"kaza\" kapsamındadır?", "secenekler": ["Yalnız II", "I ve II", "I ve III", "I, II ve III"], "dogru": "C", "cozum": "I ve III gerçekleşen olaylardır (kaza); II takdirin kendisi, yani kaderdir.", "emin": true},
-    {"id": "din-kad-004", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-4", "tur": "benzer", "metin": "Allah'ın evrende olacak her şeyi önceden bilip Levh-i Mahfuz'a yazması aşağıdaki kavramlardan hangisiyle ilişkilidir?", "secenekler": ["Kader", "Kaza", "Ecel", "Tevekkül"], "dogru": "A", "cozum": "Önceden bilinip yazılan olaylar kaderle ilişkilidir.", "emin": true},
-    {"id": "din-kad-005", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-4", "tur": "benzer", "metin": "\"Yeryüzünde ve kendi nefislerinizde meydana gelen hiçbir musibet yoktur ki, biz onu yaratmadan önce bir kitapta (Levh-i Mahfuz) yazılmış olmasın.\" (Hadid suresi, 22. ayet) Bu ayet hangi kavramla ilişkilidir?", "secenekler": ["Kaza", "Kader", "Tevekkül", "Cüz'i irade"], "dogru": "B", "cozum": "Ayette olayların önceden kitapta yazılı olması anlatılır; bu kaderdir.", "emin": true},
-    {"id": "din-kad-006", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-4", "tur": "benzer", "metin": "Allah'ın takdir ettiği bir olayın zamanı geldiğinde O'nun bilgisine uygun şekilde gerçekleşmesi hangi kavramla ifade edilir?", "secenekler": ["Tevekkül", "Ecel", "Kaza", "Rızık"], "dogru": "C", "cozum": "Takdir edilen olayın zamanı gelince gerçekleşmesi kazadır.", "emin": true},
-    {"id": "din-kad-007", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-5", "tur": "benzer", "metin": "\"Allah bir şeyi dilediği zaman O'nun emri sadece 'ol' demesidir, o da hemen oluverir.\" (Yasin suresi, 82. ayet) Bu ayet aşağıdaki kavram çiftlerinden hangileri ile ilgilidir?", "secenekler": ["İlim-Kader", "Rızık-Tevekkül", "Külli irade-Kudret", "İlim-Ecel"], "dogru": "C", "cozum": "Ayetteki 'dilediği zaman' külli iradeyi, 'ol demesi' ise kudreti gösterir.", "emin": true},
-    {"id": "din-kad-008", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-5", "tur": "benzer", "metin": "\"Allah'ın dilemesi dışında bir yaprağın bile düşmediği\" inancı hangi kavramla ilgilidir?", "secenekler": ["Cüz'i irade", "Külli irade", "Ecel", "Tevekkül"], "dogru": "B", "cozum": "Allah'ın dilemesi dışında hiçbir şeyin olmaması külli iradeyle ilgilidir.", "emin": true},
-    {"id": "din-kad-009", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-5", "tur": "benzer", "metin": "Allah'ın her şeyi bilmesi ve olacakları önceden takdir etmesi aşağıdaki kavram çiftlerinden hangisi ile ilgilidir?", "secenekler": ["Kudret-Rızık", "Külli irade-Kudret", "Cüz'i irade-Tevekkül", "İlim-Kader"], "dogru": "D", "cozum": "Her şeyi bilmek ilim, önceden takdir etmek kaderdir.", "emin": true},
-    {"id": "din-kad-010", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-6", "tur": "benzer", "metin": "Kadere iman ile ilgili aşağıdaki yargılardan hangisi yanlıştır?", "secenekler": ["Allah, insanın seçimlerini önceden bilir.", "İnsan, cüz'i iradesiyle yaptığı davranışlardan sorumludur.", "Allah, bütün olayların yaratıcısıdır.", "Allah, insanın yaptığı kötülüklerden dolayı sorumlu tutulur."], "dogru": "D", "cozum": "Allah yaratıcıdır ama insanın kötülüklerinden sorumlu tutulmaz; sorumluluk insanın cüz'i iradesine aittir.", "emin": true},
-    {"id": "din-kad-011", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-6", "tur": "benzer", "metin": "Cüz'i irade ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?", "secenekler": ["İnsanın seçim yapabilme gücüdür.", "İnsan, seçimlerinden sorumlu tutulur.", "İnsanı yaptığı eylemlerin sorumluluğundan kurtarır.", "Ödül ve cezanın dayanağıdır."], "dogru": "C", "cozum": "Cüz'i irade insanı sorumluluktan kurtarmaz; aksine sorumluluğun dayanağıdır.", "emin": true},
-    {"id": "din-kad-012", "altKonu": "Kader ve kaza", "kaynakKod": "DİN-KAD-6", "tur": "benzer", "metin": "Kader inancı ile ilgili aşağıdakilerden hangisi söylenemez?", "secenekler": ["İnsan yaptığı seçimlerden sorumlu değildir; çünkü her şey önceden yazılmıştır.", "Allah evrendeki her şeyi önceden bilir.", "Olayların gerçekleşmesi Allah'ın takdirine uygundur.", "İnsanın seçimleri Allah'ın ilmi dışında gerçekleşmez."], "dogru": "A", "cozum": "İnsan seçimlerinden sorumludur; 'sorumlu değildir, her şey yazılmıştır' yargısı kader inancına aykırıdır.", "emin": true},
-    {"id": "din-kad-013", "altKonu": "Evrendeki yasalar", "kaynakKod": "DİN-KAD-1", "tur": "benzer", "metin": "Annesi ve babası, yeni doğan kuzularının ilk günlerde süt emmesini ve hızla büyümesini sevgiyle izledi. Bu durum aşağıdaki yasalardan hangisi ile daha çok ilişkilidir?", "secenekler": ["Toplumsal yasa", "Fiziksel yasa", "Biyolojik yasa", "Kimyasal yasa"], "dogru": "C", "cozum": "Süt emme ve büyüme canlıların yaşam olaylarıdır; biyolojik yasayla ilgilidir.", "emin": true},
-    {"id": "din-kad-014", "altKonu": "Evrendeki yasalar", "kaynakKod": "DİN-KAD-1", "tur": "benzer", "metin": "Bir köyde komşuların birbirinin sıkıntısında yardımlaşması ve bayramlarda büyükleri ziyaret etmesi aşağıdaki yasalardan hangisi ile daha çok ilişkilidir?", "secenekler": ["Toplumsal yasa", "Biyolojik yasa", "Fiziksel yasa", "Kimyasal yasa"], "dogru": "A", "cozum": "Komşuluk, yardımlaşma ve büyüklere saygı insanlar arası kurallardır; toplumsal yasadır.", "emin": true},
-    {"id": "din-kad-015", "altKonu": "Evrendeki yasalar", "kaynakKod": "DİN-KAD-1", "tur": "benzer", "metin": "Elinden bırakılan bir bardağın yere düşüp kırılması aşağıdaki yasalardan hangisinin örneğidir?", "secenekler": ["Biyolojik yasa", "Toplumsal yasa", "Ahlaki yasa", "Fiziksel yasa"], "dogru": "D", "cozum": "Bardağın düşmesi madde ve yerçekimiyle ilgili bir olaydır; fiziksel yasadır.", "emin": true},
-    {"id": "din-kad-016", "altKonu": "Evrendeki yasalar", "kaynakKod": "DİN-KAD-2", "tur": "benzer", "metin": "Bir mühendis, köprünün rüzgâra ve ağırlığa dayanması için yük hesaplarını yapmış ve çelik kalitesini denetlemiştir. Bu durum kaderle ilgili aşağıdaki kavramlardan hangisine doğrudan örnektir?", "secenekler": ["Ecel", "Fiziksel yasalar", "Rızık", "Toplumsal yasalar"], "dogru": "B", "cozum": "Yük hesabı ve malzeme denetimi madde ve fizik kurallarına uygun davranmaktır.", "emin": true},
-    {"id": "din-kad-017", "altKonu": "Evrendeki yasalar", "kaynakKod": "DİN-KAD-2", "tur": "benzer", "metin": "Bir pilot, uçuş öncesi hava durumunu, yakıt miktarını ve uçağın aerodinamik hesaplarını kontrol etmiştir. Bu davranış evrendeki hangi yasalara uygun hareket etmeye örnektir?", "secenekler": ["Ahlaki yasalar", "Toplumsal yasalar", "Biyolojik yasalar", "Fiziksel yasalar"], "dogru": "D", "cozum": "Hava, yakıt ve aerodinamik hesaplar fiziksel yasalarla ilgilidir.", "emin": true},
-    {"id": "din-kad-018", "altKonu": "Evrendeki yasalar", "kaynakKod": "DİN-KAD-2", "tur": "benzer", "metin": "Aşağıdakilerden hangisi Allah'ın evrene koyduğu fiziksel yasalara uygun davranmaya örnek DEĞİLDİR?", "secenekler": ["Yüksekten atlayan birinin yer çekimini hesaba katmadan hiçbir önlem almaması", "Bina yaparken zemin etüdü yaptırılması", "Araçta emniyet kemeri takılması", "Köprü için yük hesabı yapılması"], "dogru": "A", "cozum": "Yer çekimini hesaba katmadan önlem almamak fiziksel yasalara aykırıdır; diğer üçü yasalara uygun davranıştır.", "emin": true},
-    {"id": "din-kad-019", "altKonu": "Rızık, emek ve tevekkül", "kaynakKod": "DİN-KAD-7", "tur": "benzer", "metin": "Hz. Muhammed: \"Hiç kimse, kendi elinin emeğinden daha hayırlı bir yemek yememiştir. Allah'ın peygamberi Davud da kendi elinin emeğiyle geçinirdi.\" (Buhari)\nI. Helal kazanç için çalışmak değerli görülmüştür.\nII. Peygamberler de geçimlerini emekle sağlamıştır.\nIII. Rızık için çalışmayan kimseye de rızık yetişir.\nçıkarımlarından hangileri yapılabilir?", "secenekler": ["Yalnız I", "I ve II", "II ve III", "I, II ve III"], "dogru": "B", "cozum": "I ve II hadisten çıkarılabilir. III, hadiste olmayan ve emek anlayışına aykırı bir yargıdır.", "emin": true},
-    {"id": "din-kad-020", "altKonu": "Rızık, emek ve tevekkül", "kaynakKod": "DİN-KAD-7", "tur": "benzer", "metin": "Ahmet her gün düzenli çalışmış; sınav günü \"Üzerime düşeni yaptım, gerisini Allah'a bırakıyorum.\" demiştir. Buna göre\nI. Ahmet emek vermiştir.\nII. Ahmet tevekkül etmiştir.\nIII. Ahmet başarıyı tesadüfe bırakmıştır.\nçıkarımlarından hangileri yapılabilir?", "secenekler": ["Yalnız I", "I ve III", "II ve III", "I ve II"], "dogru": "D", "cozum": "Ahmet düzenli çalıştığı için emek vermiştir (I) ve üzerine düşeni yapıp Allah'a bıraktığı için tevekkül etmiştir (II). Başarıyı tesadüfe bırakmamıştır (III yanlış).", "emin": true},
-    {"id": "din-kad-021", "altKonu": "Rızık, emek ve tevekkül", "kaynakKod": "DİN-KAD-7", "tur": "benzer", "metin": "Peygamberlerin çoğu meslek sahibi olmuştur: Hz. Davud demircilik, Hz. Zekeriyya marangozluk yapmıştır.\nI. Peygamberlerin bir kısmı geçimini kendi emeğiyle sağlamıştır.\nII. İslam'da çalışmak küçümsenmemiştir.\nIII. Bir mesleğin sahibi olmak peygamberlere yakışmayan bir durum değildir.\nçıkarımlarından hangileri yapılabilir?", "secenekler": ["Yalnız I", "I ve II", "I, II ve III", "II ve III"], "dogru": "C", "cozum": "Üç öncül de metindeki örneklerden çıkarılabilir: meslek sahibi olan peygamberler, çalışmanın küçümsenmemesi ve mesleğin yakışmazlığının olmaması.", "emin": true},
-    {"id": "din-kad-022", "altKonu": "Rızık, emek ve tevekkül", "kaynakKod": "DİN-KAD-8", "tur": "benzer", "metin": "Aşağıdaki ayetlerden hangisi, başarının etkenlerinden (emek ve gayret, sorumluluk bilinci, tedbir ve tevekkül) herhangi biriyle doğrudan ilişkilendirilemez?", "secenekler": ["\"İnsan için ancak çalıştığının karşılığı vardır.\" (Necm, 39)", "\"Kim zerre kadar iyilik yaparsa karşılığını görür.\" (Zilzal, 7)", "\"Allah, rızkı dilediğine bol verir, dilediğine kısar.\" (Ra'd, 26)", "\"Karar verdiğin zaman Allah'a tevekkül et.\" (Âl-i İmran, 159)"], "dogru": "C", "cozum": "Rızkın bolluğu ve darlığı Allah'ın dilemesine bağlıdır; bu ayet emek, sorumluluk veya tevekkül etkenleriyle doğrudan ilgili değildir.", "emin": true},
-    {"id": "din-kad-023", "altKonu": "Rızık, emek ve tevekkül", "kaynakKod": "DİN-KAD-8", "tur": "benzer", "metin": "Aşağıdakilerden hangisi emek ve rızık ilişkisi ile doğrudan ilişkilendirilemez?", "secenekler": ["Çiftçinin tarlasını mevsiminde sürüp ekmesi", "Öğrencinin ders çalışması", "Esnafın dükkânını erken açması", "İnsanların gelir düzeyinin birbirinden farklı olması"], "dogru": "D", "cozum": "Gelir düzeyinin farklılığı emek ilişkisiyle doğrudan bağlanmayan bir durumdur; diğer üçü emeğin örnekleridir.", "emin": true},
-    {"id": "din-kad-024", "altKonu": "Rızık, emek ve tevekkül", "kaynakKod": "DİN-KAD-8", "tur": "benzer", "metin": "Tedbir ve tevekkül ilkesine örnek olarak aşağıdakilerden hangisi gösterilemez?", "secenekler": ["Yağmurlu havada şemsiye alıp sonucu Allah'a bırakmak", "Hasta olunca doktora gitmeyip yalnızca \"Allah şifa verir\" diyerek beklemek", "Sınava hazırlanıp sonucu Allah'a bırakmak", "Aracın kapısını kilitleyip Allah'a güvenmek"], "dogru": "B", "cozum": "Tedbir almadan yalnızca beklemek tedbir ve tevekkül ilkesine aykırıdır.", "emin": true},
-    {"id": "din-kad-025", "altKonu": "Kader ve insan iradesi", "kaynakKod": "DİN-KAD-9", "tur": "benzer", "metin": "Sınava hiç çalışmayan Mert, düşük not alınca \"Benim kaderim buymuş, ne yapsam olmazdı.\" dedi. Mert'in bu tutumu için aşağıdakilerden hangisi söylenebilir?", "secenekler": ["Kadere doğru şekilde iman ettiğini gösterir.", "Kaderi, sorumluluğundan kaçmak için bahane etmiştir.", "Tevekkülün güzel bir örneğidir.", "Allah'ın kudretini kabul ettiğini gösterir."], "dogru": "B", "cozum": "Mert hatasının sorumluluğunu kadere yükleyerek sorumluluktan kaçmaktadır.", "emin": true},
-    {"id": "din-kad-026", "altKonu": "Kader ve insan iradesi", "kaynakKod": "DİN-KAD-9", "tur": "benzer", "metin": "Aşağıdakilerden hangisi kaderi bahane etmeye örnektir?", "secenekler": ["Hastalanan Ayşe'nin doktora gidip tedavisini aksatmadan sürdürmesi", "Trafik kurallarına uymayıp kaza yapan sürücünün \"Alın yazısıymış.\" demesi", "Maçı kaybeden takımın eksiklerini konuşup yeni bir antrenman planı yapması", "Tarlasını zamanında eken çiftçinin bereketli bir hasat için dua etmesi"], "dogru": "B", "cozum": "Kendi hatasını alın yazısına yükleyen sürücü kaderi bahane etmektedir.", "emin": true},
-    {"id": "din-kad-027", "altKonu": "Kader ve insan iradesi", "kaynakKod": "DİN-KAD-9", "tur": "benzer", "metin": "\"İnsan, Allah'ın kendisine verdiği akıl ve irade ile seçim yapar ve bu seçimlerinin sonucundan sorumludur. Ancak bazı insanlar hatalarının sonucunu kadere yükler.\" Bu metinden aşağıdakilerden hangisine ulaşılamaz?", "secenekler": ["İnsan iradesiyle seçim yapabilir.", "İnsan seçimlerinin sonucundan sorumludur.", "İnsanın yaptığı her şey ona zorla yaptırılır.", "Bazı insanlar hatalarını kadere yükler."], "dogru": "C", "cozum": "Metin insanın iradeyle seçim yaptığını söyler; 'her şeyin zorla yaptırıldığı' yargısına metinden ulaşılamaz.", "emin": true}
-  ]
+ "id": "din-kad",
+ "ders": "Din Kültürü ve Ahlak Bilgisi",
+ "unite": "01 - Kader İnancı",
+ "baslik": "Kader İnancı",
+ "anlatim": [
+  {
+   "baslik": "Kader ve kaza",
+   "metin": "Kader, Allah'ın evrende olacak her olayı önceden bilip takdir etmesidir; bunu bir plan gibi düşün. Kaza ise bu takdirin zamanı geldiğinde gerçekleşmesidir. Aynı olay için ikisi de doğru olabilir. Metinde 'önceden bilme, takdir, yazılma, Levh-i Mahfuz' geçiyorsa kader; 'oldu, gerçekleşti, zamanı gelince meydana geldi' geçiyorsa kaza sorulmuştur."
+  },
+  {
+   "baslik": "İlim, irade ve kudret",
+   "metin": "Kader inancı üç sıfata dayanır. İlim, Allah'ın her şeyi bilmesidir. İrade, Allah'ın dilemesidir; 'dilemesi ve takdiri dışında olmaz' ifadesi iradeyle ilgilidir. Kudret, Allah'ın her şeye gücünün yetmesidir. Kavram çiftlerinde önce kader olup olmadığına bak, sonra ikinci kavramı metnin vurgusuyla eşleştir."
+  },
+  {
+   "baslik": "Evrendeki yasalar",
+   "metin": "Allah evrene değişmeyen düzenler, yani yasalar koymuştur. Fiziksel yasalar madde ve enerjiyle ilgilidir; köprü hesabı, yer çekimi gibi. Biyolojik yasalar canlıların doğuşu, büyümesi ve beslenmesiyle ilgilidir. Toplumsal yasalar insanlar arasındaki kurallar ve yardımlaşmayla ilgilidir. Yasa türünü duygu sözcükleri değil, olayın kendisi belirler."
+  },
+  {
+   "baslik": "Emek ve rızık",
+   "metin": "Peygamberlerin çoğu çalışarak geçimini sağlamıştır; Hz. Davud kendi emeğiyle geçinmiştir. İslam'da helal kazanç için çalışmak ibadet sayılır ve insan ancak çabasının karşılığını alır. Rızık için çalışmadan beklemek bu anlayışa uymaz."
+  },
+  {
+   "baslik": "Tevekkül ve tedbir",
+   "metin": "Başarının temel etkenleri emek ve gayret, sorumluluk bilinci ve tedbir ile tevekküldür. Tevekkül, üzerine düşeni yaptıktan sonra sonucu Allah'a bırakmaktır. Tedbir almadan 'Allah şifa verir' diyerek beklemek tevekkül değildir. Tedbir ve tevekkül birlikte düşünülür."
+  },
+  {
+   "baslik": "Cüz'i irade ve sorumluluk",
+   "metin": "Allah yaratıcıdır; insan ise cüz'i iradesiyle seçim yapar ve yaptığı seçimlerden sorumludur. 'Yaratıcı' ile 'sorumlu' aynı şey değildir. Kaderi bahane ederek hatasını kadere yüklemek, sorumluluktan kaçmak anlamına gelir. Kader, insanın iradesini ortadan kaldırmaz."
+  }
+ ],
+ "tuyolar": [
+  "Kader = plan, kaza = gerçekleşme; gerçekleşen her olay kaza kapsamındadır.",
+  "Levh-i Mahfuz, kitap ve 'yazılmış' ifadeleri görünce aklına KADER gelsin; 'gerçekleşti, oldu' görünce KAZA.",
+  "İlim = bilmek, irade = dilemek, kudret = gücü yetmek. 'Dilemesi dışında olmaz' varsa irade düşün.",
+  "Yasa sorusunda duyguyu bırak, olayı bul: madde mi, canlı mı, toplum mu? Canlıysa biyolojik.",
+  "Öncül sorularında her öncülün yanına kanıt cümlesinden 2-3 sözcük yaz; paragrafın son cümlesini atlama.",
+  "Olumsuz kökte her şıkka 'kader inancında var mı?' diye sor; fazladan yargı içeren (sorumlusu, her zaman, hiç) şık genelde yanlıştır.",
+  "'Yaratıcı' ile 'sorumlu' aynı şey değildir.",
+  "Ana fikir sorularında her şıkka 'Bu metinde yazıyor mu?' diye sor; kanıt gösteremediğin şık yanlıştır."
+ ],
+ "hatalar": [
+  {
+   "kod": "DİN-KAD-3",
+   "altKonu": "Kader ve kaza",
+   "soru": "Mevsimlerin ardışıklığı, bahar ve yağmur olaylarından hangileri 'kaza' kapsamında değerlendirilebilir?",
+   "hata": "I. öncüle 'planlanmış ama gerçekleşmiş, kader' dedi. Oysa mevsimlerin birbirini takip etmesi gerçekleşen bir olaydır, yani kazadır. C şıkkını (II ve III) seçti.",
+   "dogruYol": "Fiil gerçekleşen bir olayı anlatıyorsa (gelmesi, kaplanması, yağması) kaza; 'önceden bilme, takdir, yazılma' varsa kader. Planlanmış olması olayı kader yapmaz.",
+   "gorsel": [
+    "sorular/DIN-KAD-3.png"
+   ],
+   "cevap": "D) I, II ve III",
+   "senin": "C) II ve III (teyit bekleniyor)",
+   "cozum": [
+    "Önce iki tanımı oku: kader = Allah'ın olacakları önceden bilip takdir etmesi (plan). Kaza = takdir edilenin zamanı gelince gerçekleşmesi.",
+    "Soru \"kaza\" soruyor, yani GERÇEKLEŞEN olaylar. Her öncüle sor: bu bir plan mı, yoksa gerçekleşen bir olay mı?",
+    "I: mevsimlerin birbiri ardınca GELMESİ gerçekleşen bir olay ✓. II: baharda etrafın çiçekle KAPLANMASI gerçekleşen olay ✓. III: şartlar oluşunca yağmurun YAĞMASI gerçekleşen olay ✓.",
+    "Üçü de planın gerçekleşmesi. \"Planlanmış\" demek tek başına olayı kader yapmaz: plan kader, gerçekleşme kaza.",
+    "Üçü de kaza. Cevap D."
+   ],
+   "hataAnaliz": "I'in yanına \"Planlanmış ama gerçekleşmiş – kader\" yazmışsın: işte kopma tam burada. Planlanmış olması kader tarafı; ama mevsimlerin gerçekten birbirini takip etmesi planın gerçekleşmesi, yani kaza. Aynı olayın iki yüzü var; soru hangisini soruyorsa ona bak.",
+   "tuyo": "Fiil gerçekleşen olayı anlatıyorsa (gelmesi, kaplanması, yağması) kaza; \"önceden bilme, takdir, yazılma\" varsa kader.",
+   "dikkat": "Kader = plan (önceden bilip takdir). Kaza = planın zamanı gelince gerçekleşmesi. Gerçekleşen her olay kaza kapsamındadır. Öncüllerde üçüne de ✓ koyabilirsin; \"I, II ve III\" cevabını baştan dışlama."
+  },
+  {
+   "kod": "DİN-KAD-4",
+   "altKonu": "Kader ve kaza",
+   "soru": "'Gökte ve yerde gizli olan hiçbir şey yoktur ki apaçık bir kitapta (Levh-i Mahfuz) olmasın.' ayeti hangi kavramla ilişkilidir?",
+   "hata": "Allah'ın her şeyi bilip yazmasını kaza ile karıştırdı ve B şıkkını seçti. Ayette gerçekleşme değil, yazılı olma vardır.",
+   "dogruYol": "'Levh-i Mahfuz, kitap, yazılmış' görünce aklına KADER gelsin; 'gerçekleşti, oldu, zamanı gelince' görünce KAZA.",
+   "gorsel": [
+    "sorular/DIN-KAD-4.png"
+   ],
+   "cevap": "D) Kader",
+   "senin": "B) Kaza (iki kez daire içine alınmış)",
+   "cozum": [
+    "Ayeti oku: \"Gökte ve yerde gizli olan hiçbir şey yoktur ki apaçık bir kitapta (Levh-i Mahfuz) olmasın.\"",
+    "Anahtar: \"kitapta olmak\", yani her şey olmadan ÖNCE yazılmış. Levh-i Mahfuz kaderin yazılı olduğu yerdir.",
+    "A (ilim): bilgiyle ilgili ama soru kavram olarak ayetin odağını soruyor, yazılı olma kader. C (tevekkül): ayette güvenme yok, doğru eledin.",
+    "B (kaza): kaza gerçekleşmedir; ayette hiçbir olay gerçekleşmiyor, sadece \"yazılmış\" deniyor.",
+    "\"Yazılmış, Levh-i Mahfuz, takdir\" = kader. Cevap D."
+   ],
+   "hataAnaliz": "İlk bakışta \"Allah her şeyi biliyor ve yazmış\" fikri kaza ile birleşmiş. Ama kaza, yazılanın gerçekleşmesidir; ayette gerçekleşme yok, yazılı olma var.",
+   "tuyo": "\"Levh-i Mahfuz / kitap / yazılmış\" görünce aklına KADER gelsin. \"Gerçekleşti / oldu / zamanı gelince\" görünce KAZA.",
+   "dikkat": "Levh-i Mahfuz = kaderin yazılı olduğu yer. Kader (plan) ve kaza (gerçekleşme) farklıdır. İlim ile yakın ama soru kavramı \"kader\" olarak ister."
+  },
+  {
+   "kod": "DİN-KAD-5",
+   "altKonu": "Kader ve kaza",
+   "soru": "Hadis-i şerifte geçen 'Allah'ın takdiri dışında faydalı olamazlar / zarar veremezler; kalemler kaldırılmış, sayfalar kurumuştur' ifadeleri hangi kavram çiftleriyle ilgilidir?",
+   "hata": "Hadisin kader konusu olduğunu görmedi ve 'Kudret-İlim' çiftini seçti. 'Kalemler kaldırılmış' ifadesinin takdirden, yani kaderden söz ettiğini fark etmedi.",
+   "dogruYol": "Önce çiftte 'kader' olup olmadığına bak. Sonra ikinci kavramı hadisin vurgusuyla sına: 'dilemesi, takdiri dışında olmaz' → irade (külli irade).",
+   "gorsel": [
+    "sorular/DIN-KAD-5.png"
+   ],
+   "cevap": "A) Külli irade – Kader",
+   "senin": "D) Kudret – İlim (daire içine alınmış)",
+   "cozum": [
+    "Hadisteki anahtar ifadeleri bul: \"Allah'ın takdiri dışında … faydalı olamazlar / zarar veremezler\" ve \"kalemler kaldırılmış, sayfalar kurumuştur\".",
+    "\"Kalemler kaldırılmış, sayfalar kurumuş\" = takdir kesinleşmiş, yani KADER. Çiftte \"kader\" olan şıklara (A, B) bak; C ve D'de kader yok.",
+    "\"Allah'ın takdiri dışında olmaz\" = hiçbir şey Allah'ın dilemesi dışında gerçekleşmez; bu irade (külli irade) vurgusudur. B'deki \"ilim\" de kadere yakın ama hadis bilmekten çok dilemeyi ve takdirin kesinleşmesini öne çıkarıyor.",
+    "C (Rezzak–Kudret): rızık hadiste yok, eledin. D (Kudret–İlim): kader yok, hadisin konusu kader.",
+    "Külli irade + kader. Cevap A. Not Kitabın anahtarı A; B de yakın bir çeldiricidir."
+   ],
+   "hataAnaliz": "Kudret ve ilim kader konusunun parçaları ama D'de \"kader\" kavramı yok, oysa hadis kalemlerin kaldırılmasından, yani takdirden söz ediyor. B de (İlim–Kader) güçlü çeldirici; ikisi arasında hadisin vurgusuna bakmak gerekiyordu.",
+   "tuyo": "Önce çiftte \"kader\" var mı diye bak (hadis kader konusu ise), sonra ikinci kavramı hadisin vurgusuyla sına: \"dilemesi/izni dışında\" → irade.",
+   "dikkat": "İlim = bilmek. İrade = dilemek, seçmek. Kudret = gücü yetmek. \"Allah'ın dilemesi dışında olmaz\" → irade. \"Her şeyi bilir\" → ilim. \"Her şeye gücü yeter\" → kudret."
+  },
+  {
+   "kod": "DİN-KAD-6",
+   "altKonu": "Kader ve kaza",
+   "soru": "Cibril hadisindeki 'hayrı ve şerriyle kadere inanmak' ifadesinin anlatmak istediği olmayan yargı hangisidir?",
+   "hata": "B şıkkını (kudret) kadere uzak sandı ve seçti; oysa kudret kader inancının dayanaklarından biridir. C şıkkındaki 'sorumlusu' kelimesini kaçırdı; yaratıcı ile sorumlu aynı şey değildir.",
+   "dogruYol": "Olumsuz kökte her şıkka 'kader inancında var mı?' diye sor. İlim, irade ve kudret ✓; 'sorumlusu' gibi fazladan yargı içeren şık ✗.",
+   "gorsel": [
+    "sorular/DIN-KAD-6.png"
+   ],
+   "cevap": "C) Allah'ın gerçekleşen tüm olayların yaratıcısı ve sorumlusu olduğuna iman etmek",
+   "senin": "B) Allah'ın kudretiyle bütün varlıklardan üstün olduğunu kabul etmek (daire içine alınmış)",
+   "cozum": [
+    "Soru kökü olumsuz: \"yer almaz\". Doğru ifadeler elenecek, yanlış olan aranacak.",
+    "Altı çizili ifade: \"hayrı ve şerriyle kadere inanmak\". Kader inancı üç sıfata dayanır: ilim (bilmek), irade (dilemek), kudret (gücü yetmek).",
+    "A: ilim ✓ yer alır. B: kudret ✓ yer alır. D: irade ✓ yer alır.",
+    "C: \"yaratıcısı ve SORUMLUSU\": Allah yaratıcıdır ama sorumlu değildir; insan, cüz'i iradesiyle yaptığı seçimlerden kendisi sorumludur ✗.",
+    "Sorumlu sözcüğü yanlış. Cevap C."
+   ],
+   "hataAnaliz": "B'yi kadere uzak sandın; oysa kudret, kader inancının üç dayanağından biri. C'deki \"sorumlusu\" sözcüğü gözünden kaçtı; \"yaratıcı\" ile \"sorumlu\" aynı şey değil.",
+   "tuyo": "Olumsuz kökte her şıka \"bu kader inancında var mı?\" diye sor ve ✓/✗ koy. İlim, irade, kudret = ✓. Fazladan yargı sokan sözcük (sorumlusu) ✗.",
+   "dikkat": "\"Yaratıcı\" ≠ \"sorumlu\". Allah olayları yaratır; sorumluluk insanın cüz'i iradesiyle yaptığı seçimlere aittir. Kader, insanı sorumluluktan kurtarmaz."
+  },
+  {
+   "kod": "DİN-KAD-1",
+   "altKonu": "Evrendeki yasalar",
+   "soru": "Yeni doğan bir çocuğun dünyaya gelişini anlatan metin hangi yasa ile daha çok ilişkilidir?",
+   "hata": "Metindeki aile, sevinç ve mutluluk sözcüklerinin etkisiyle toplumsal yasayı seçti. Oysa metindeki olay bir canlının doğuşudur.",
+   "dogruYol": "Yasa sorusunda duyguyu bırak, olayı bul: madde mi, canlı mı, toplum mu? Canlıysa biyolojik yasa; duygu sözcükleri yasa türünü belirlemez.",
+   "gorsel": [
+    "sorular/DIN-KAD-1.png"
+   ],
+   "cevap": "A) Biyolojik yasa",
+   "senin": "B) Toplumsal yasa (teyit bekleniyor)",
+   "cozum": [
+    "Önce soruyu oku: metin hangi OLAYI anlatıyor? Duygulara değil, olaya bak.",
+    "Olay: Ali dünyaya geliyor, minicik elleri, gözleri, sesi var. Bir bebeğin doğması bir canlılık olayıdır.",
+    "\"Hayatın ne kadar mucizevi ve düzenli işlediği\": canlıların doğum ve büyüme düzeni demek.",
+    "C (fiziksel: madde ve enerji) ve D (kimyasal) ile ilgisi yok, zaten eledin. B (toplumsal) toplum kurallarını ve insan ilişkilerini anlatır; metinde böyle bir kural yok.",
+    "Doğum, büyüme, canlılık = biyolojik yasa. Cevap A."
+   ],
+   "hataAnaliz": "Metinde aile, sevinç, mutluluk gibi sözcükler çok; bunlar sana \"toplum\" dedirtti. Oysa yasa türünü duygu sözcükleri değil, olayın kendisi belirler: burada olay bir canlının doğuşu.",
+   "tuyo": "Yasa sorusunda duyguyu bırak, olayı bul: \"Bu olay madde mi, canlı mı, toplum mu?\" Canlıysa biyolojik.",
+   "dikkat": "Fiziksel: madde ve enerji (düşme, kaynama). Biyolojik: canlılar (doğum, büyüme, beslenme). Toplumsal: insanlar arası kurallar (komşuluk, adalet). Duygu sözcükleri yasa türünü belirlemez."
+  },
+  {
+   "kod": "DİN-KAD-2",
+   "altKonu": "Evrendeki yasalar",
+   "soru": "Mimar Sinan'ın zemin, malzeme ve hesapları planlaması kaderle ilgili hangi kavrama doğrudan bir örnektir?",
+   "hata": "Kader konusundaki 'planlamak' ve 'kaderle ilgili' sözlerinden etkilenip rızık'ı seçti. Metinde rızıkla ilgili bir ipucu yoktu.",
+   "dogruYol": "Metinden somut sözcükler seç (zemin, malzeme, hesap) ve 'Bunlar hangi alana ait?' diye sor. Madde, fizik ve hesap → fiziksel yasalar.",
+   "gorsel": [
+    "sorular/DIN-KAD-2.png"
+   ],
+   "cevap": "D) Fiziksel Yasalar",
+   "senin": "B) Rızık (teyit bekleniyor)",
+   "cozum": [
+    "Soru kökü: \"kaderle ilgili hangi kavrama doğrudan örnektir?\" Metindeki somut şeyleri bul.",
+    "Mimar Sinan neleri planlamış? Zemin yapısı, malzeme kalitesi, mimari hesaplar. Bunlar madde ve fizik kurallarıyla ilgili.",
+    "\"Sadece şansa veya duaya bırakmamıştır\": yani Allah'ın evrene koyduğu düzene (yasalara) uygun davranmış.",
+    "A (ecel) ve C (toplumsal yasalar) ile bağı yok, doğru eledin. B (rızık): metinde kazanç, geçim ya da emekle rızık ilişkisi yok.",
+    "Zemin, malzeme, hesap = fiziksel yasalara uygun davranmak. Cevap D."
+   ],
+   "hataAnaliz": "Rızık kader konusunun bir parçası ama bu metinde rızıkla ilgili tek bir ipucu yok. \"Planlamıştır\" ve \"kaderle ilgili\" sözlerini görünce aklındaki kavramlardan birini seçmiş olabilirsin; metindeki somut ögelere (zemin, malzeme, hesap) bakmak seni D'ye götürürdü.",
+   "tuyo": "Metinden 2-3 somut sözcük seç (zemin, malzeme, hesap) ve \"Bunlar hangi alana ait?\" diye sor. Fizik, madde, hesap → fiziksel yasalar.",
+   "dikkat": "Evrendeki yasalar (fiziksel, biyolojik, toplumsal, ahlaki) Allah'ın koyduğu düzendir. Bu yasalara uygun davranmak kaderi doğru anlamaktır; sonucu \"şansa veya duaya\" bırakmak yanlıştır."
+  },
+  {
+   "kod": "DİN-KAD-7",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "soru": "Peygamberlerin emeği ve helal kazancı ile ilgili metinden hangi çıkarımlar yapılabilir?",
+   "hata": "III. öncülün kanıtını paragrafın son cümlesinde ('çalışmayı ibadet sayarak') aramadı; III'ü dışarıda bırakıp B şıkkını seçti.",
+   "dogruYol": "Her öncülün yanına kanıt cümlesinden 2-3 sözcük yaz; paragrafın son cümlesi öncüllerden birinin dayanağı olabilir. Üçünde de kanıt varsa 'I, II ve III' cevaptır.",
+   "gorsel": [
+    "sorular/DIN-KAD-7.png"
+   ],
+   "cevap": "D) I, II ve III",
+   "senin": "B) I ve II (teyit bekleniyor)",
+   "cozum": [
+    "Soru \"çıkarımlardan hangileri yapılabilir?\" Her öncül için metinden KANIT cümlesi bul.",
+    "I: \"İslam dini de insanın ancak kendi çabasının karşılığını alacağını belirtmiş\" + \"çalışmadan rızık beklememiş\" → çaba göstermeli ✓.",
+    "II: peygamberler \"insanlara örnek olacak şekilde bizzat çalışıp emek vermişlerdir\" ✓.",
+    "III: cümlenin sonunda \"helal kazanç için çalışmayı ibadet sayarak\" yazıyor ✓.",
+    "Üçü de metinde var. Cevap D."
+   ],
+   "hataAnaliz": "III. öncül dışarıda kalmış. Kanıtı paragrafın son cümlesinde: \"çalışmayı ibadet sayarak\". Cümlenin sonu gözden kaçmış ya da \"ibadet\" sözcüğünü metin dışı bilgi sanmış olabilirsin.",
+   "tuyo": "Her öncülün yanına kanıt cümlesinden 2-3 sözcük yaz (I: ancak çabasının karşılığı; II: örnek olacak şekilde; III: ibadet sayarak). Kanıtı bulduğuna ✓ koy.",
+   "dikkat": "Öncül sorularında şıklardan değil öncüllerden başla. Paragrafın son cümlesi sık sık öncüllerden birinin dayanağıdır; sonuna kadar oku."
+  },
+  {
+   "kod": "DİN-KAD-8",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "soru": "Başarının etkenleriyle (emek ve gayret, sorumluluk bilinci, tedbir ve tevekkül) doğrudan ilişkilendirilemeyen ayet hangisidir?",
+   "hata": "Tevekkül ayetini (A) emekten uzak sandı ve onu eledi. Tevekkülün de başarı etkeni olduğunu ve rızıkta farklılığın (B) bu listede yer almadığını görmedi.",
+   "dogruYol": "Her ayetin yanına etiket yaz (tevekkül, sorumluluk, emek). Etiketi çıkmayan şık, olumsuz kökün cevabıdır. Tevekkül üzerine düşeni yaptıktan sonra güvenmektir.",
+   "gorsel": [
+    "sorular/DIN-KAD-8.png"
+   ],
+   "cevap": "B) Nahl 71 (rızıkta üstünlük)",
+   "senin": "A (teyit bekleniyor)",
+   "cozum": [
+    "Soru kökü olumsuz: \"doğrudan ilişkilendirilemez\". Üç etkeni yaz: emek ve gayret, sorumluluk bilinci, tedbir ve tevekkül.",
+    "A: \"yalnız Allah'a dayanıp güvensinler\" = tevekkül ✓.",
+    "C: \"kim iyi iş yaparsa kendi lehine, kötülük yaparsa kendi aleyhine\" = sorumluluk bilinci ✓. D: \"ancak çalıştığının karşılığı\" = emek ve gayret ✓.",
+    "B: \"Allah rızık konusunda kiminizi kiminizden üstün kıldı\" = rızıkta farklılık; üç etkenden hiçbiriyle doğrudan bağlantısı yok ✗.",
+    "Etiket bulamadığın ayet B. Cevap B."
+   ],
+   "hataAnaliz": "A'daki \"yalnız Allah'a dayanıp güvensinler\" sözü sana emekten uzak göründü. Oysa tevekkül de listedeki üç etkenden biri: üzerine düşeni yaptıktan sonra güvenmek. B'nin ayrı bir konu (rızıkta farklılık) olduğunu görmedin.",
+   "tuyo": "Her ayetin yanına etiket yaz: A → tevekkül, B → ?, C → sorumluluk, D → emek. Etiketi çıkmayan şık olumsuz kökün cevabıdır.",
+   "dikkat": "Tevekkül = üzerine düşeni yaptıktan sonra Allah'a güvenmek; yani başarı etkenidir. Rızıkta farklılık (Nahl 71) başarı etkenleri listesinde yer almaz."
+  },
+  {
+   "kod": "DİN-KAD-9",
+   "altKonu": "Kader ve insan iradesi",
+   "soru": "Kaderi bahane eden insanlarla ilgili metinde asıl anlatılmak istenen hangisidir?",
+   "hata": "C şıkkındaki 'olumsuzluklar birer imtihan vesilesidir' ifadesi doğru bir dinî bilgi olduğu için cazip geldi; ama metinde bu fikir geçmiyordu. Metnin söylediği ile doğru bilgiyi karıştırdı.",
+   "dogruYol": "Ana fikir sorularında her şıkka 'Bu metinde yazıyor mu?' diye sor ve kanıt cümlesini göster. Kanıt gösteremediğin şık, ne kadar doğru görünürse görünsün yanlıştır.",
+   "gorsel": [
+    "sorular/DIN-KAD-9.png"
+   ],
+   "cevap": "D) İnsan bazen sorumluluktan kaçmak için kaderi bahane edebilir",
+   "senin": "C) Olumsuzluklar da birer imtihan vesilesidir",
+   "cozum": [
+    "Soru kökü: \"asıl anlatılmak istenen\" = metnin ana fikri. Tek bir cümleye değil, metnin bütününe bak.",
+    "İlk cümleler: \"Kısmet değilmiş, yazgım buymuş\" diyerek kendi sorumluluğundan uzaklaşır. Son cümle: \"kişinin başına gelen olaylarda kendi tercih ve davranışlarının da etkisi büyüktür.\" İkisini birleştir: kaderi bahane edip sorumluluktan kaçmak.",
+    "A (Allah adildir): doğru bir bilgi ama metin Allah'ın adaletini anlatmıyor ✗.",
+    "B (tamamen kendi elindedir): metin \"da etkisi büyüktür\" diyor, \"tamamen\" demiyor; aşırı genelleme ✗.",
+    "C (imtihan vesilesi): doğru bir dinî bilgi ama metinde \"imtihan\" fikri hiç geçmiyor ✗.",
+    "D, metnin ilk ve son cümlesinin özeti ✓. Cevap D."
+   ],
+   "hataAnaliz": "C doğru bir dinî bilgi olduğu için cazip geldi. Ama soru \"metinde anlatılan\"ı soruyor; \"doğru bilgi\" ile \"metnin söylediği\" karıştı. Kontrol listesi madde 6: metinde ya da ayette geçmeyen yargıyı ele.",
+   "tuyo": "Ana fikir sorularında her şıkka \"Bu metinde yazıyor mu?\" diye sor ve kanıt cümlesini göster. Kanıt cümlesi gösteremediğin şık, ne kadar doğru görünse de ✗.",
+   "dikkat": "İslam'a göre kader insanın iradesini ortadan kaldırmaz; insan cüz'i iradesiyle yaptığı seçimlerden sorumludur. \"Kaderim buymuş\" deyip hatasını kadere yüklemek bu sorumluluktan kaçmaktır."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "din-kad-001",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-3",
+   "tur": "benzer",
+   "metin": "I. Güneş'in her gün belirli bir saatte doğup batması\nII. Bir tohumun uygun şartlarda filizlenmesi\nIII. Allah'ın olayları önceden bilip takdir etmesi\nifadelerinden hangileri \"kaza\" kapsamında değerlendirilebilir?",
+   "secenekler": [
+    "Yalnız III",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": "B",
+   "cozum": "Kaza, takdir edilen olayın zamanı gelince gerçekleşmesidir. I ve II gerçekleşen olaylardır; III ise kaderdir (takdir).",
+   "emin": true
+  },
+  {
+   "id": "din-kad-002",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-3",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi \"kader\" kavramını ifade eder?",
+   "secenekler": [
+    "Allah'ın yağmurun yerini ve zamanını önceden bilip takdir etmesi",
+    "Yağmurun yağması",
+    "Çocuğun dünyaya gelmesi",
+    "Baharda çiçeklerin açması"
+   ],
+   "dogru": "A",
+   "cozum": "Kader, olayların önceden bilinip takdir edilmesidir; diğer şıklar gerçekleşen olaylardır (kaza).",
+   "emin": true
+  },
+  {
+   "id": "din-kad-003",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-3",
+   "tur": "benzer",
+   "metin": "I. Yaz mevsiminde havaların ısınması\nII. Allah'ın kâinatı belli ölçülerle takdir etmesi\nIII. Takdir edilmiş bir depremin zamanı gelince meydana gelmesi\nifadelerinden hangileri \"kaza\" kapsamındadır?",
+   "secenekler": [
+    "Yalnız II",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": "C",
+   "cozum": "I ve III gerçekleşen olaylardır (kaza); II takdirin kendisi, yani kaderdir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-004",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-4",
+   "tur": "benzer",
+   "metin": "Allah'ın evrende olacak her şeyi önceden bilip Levh-i Mahfuz'a yazması aşağıdaki kavramlardan hangisiyle ilişkilidir?",
+   "secenekler": [
+    "Kader",
+    "Kaza",
+    "Ecel",
+    "Tevekkül"
+   ],
+   "dogru": "A",
+   "cozum": "Önceden bilinip yazılan olaylar kaderle ilişkilidir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-005",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-4",
+   "tur": "benzer",
+   "metin": "\"Yeryüzünde ve kendi nefislerinizde meydana gelen hiçbir musibet yoktur ki, biz onu yaratmadan önce bir kitapta (Levh-i Mahfuz) yazılmış olmasın.\" (Hadid suresi, 22. ayet) Bu ayet hangi kavramla ilişkilidir?",
+   "secenekler": [
+    "Kaza",
+    "Kader",
+    "Tevekkül",
+    "Cüz'i irade"
+   ],
+   "dogru": "B",
+   "cozum": "Ayette olayların önceden kitapta yazılı olması anlatılır; bu kaderdir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-006",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-4",
+   "tur": "benzer",
+   "metin": "Allah'ın takdir ettiği bir olayın zamanı geldiğinde O'nun bilgisine uygun şekilde gerçekleşmesi hangi kavramla ifade edilir?",
+   "secenekler": [
+    "Tevekkül",
+    "Ecel",
+    "Kaza",
+    "Rızık"
+   ],
+   "dogru": "C",
+   "cozum": "Takdir edilen olayın zamanı gelince gerçekleşmesi kazadır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-007",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-5",
+   "tur": "benzer",
+   "metin": "\"Allah bir şeyi dilediği zaman O'nun emri sadece 'ol' demesidir, o da hemen oluverir.\" (Yasin suresi, 82. ayet) Bu ayet aşağıdaki kavram çiftlerinden hangileri ile ilgilidir?",
+   "secenekler": [
+    "İlim-Kader",
+    "Rızık-Tevekkül",
+    "Külli irade-Kudret",
+    "İlim-Ecel"
+   ],
+   "dogru": "C",
+   "cozum": "Ayetteki 'dilediği zaman' külli iradeyi, 'ol demesi' ise kudreti gösterir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-008",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-5",
+   "tur": "benzer",
+   "metin": "\"Allah'ın dilemesi dışında bir yaprağın bile düşmediği\" inancı hangi kavramla ilgilidir?",
+   "secenekler": [
+    "Cüz'i irade",
+    "Külli irade",
+    "Ecel",
+    "Tevekkül"
+   ],
+   "dogru": "B",
+   "cozum": "Allah'ın dilemesi dışında hiçbir şeyin olmaması külli iradeyle ilgilidir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-009",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-5",
+   "tur": "benzer",
+   "metin": "Allah'ın her şeyi bilmesi ve olacakları önceden takdir etmesi aşağıdaki kavram çiftlerinden hangisi ile ilgilidir?",
+   "secenekler": [
+    "Kudret-Rızık",
+    "Külli irade-Kudret",
+    "Cüz'i irade-Tevekkül",
+    "İlim-Kader"
+   ],
+   "dogru": "D",
+   "cozum": "Her şeyi bilmek ilim, önceden takdir etmek kaderdir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-010",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-6",
+   "tur": "benzer",
+   "metin": "Kadere iman ile ilgili aşağıdaki yargılardan hangisi yanlıştır?",
+   "secenekler": [
+    "Allah, insanın seçimlerini önceden bilir.",
+    "İnsan, cüz'i iradesiyle yaptığı davranışlardan sorumludur.",
+    "Allah, bütün olayların yaratıcısıdır.",
+    "Allah, insanın yaptığı kötülüklerden dolayı sorumlu tutulur."
+   ],
+   "dogru": "D",
+   "cozum": "Allah yaratıcıdır ama insanın kötülüklerinden sorumlu tutulmaz; sorumluluk insanın cüz'i iradesine aittir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-011",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-6",
+   "tur": "benzer",
+   "metin": "Cüz'i irade ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "secenekler": [
+    "İnsanın seçim yapabilme gücüdür.",
+    "İnsan, seçimlerinden sorumlu tutulur.",
+    "İnsanı yaptığı eylemlerin sorumluluğundan kurtarır.",
+    "Ödül ve cezanın dayanağıdır."
+   ],
+   "dogru": "C",
+   "cozum": "Cüz'i irade insanı sorumluluktan kurtarmaz; aksine sorumluluğun dayanağıdır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-012",
+   "altKonu": "Kader ve kaza",
+   "kaynakKod": "DİN-KAD-6",
+   "tur": "benzer",
+   "metin": "Kader inancı ile ilgili aşağıdakilerden hangisi söylenemez?",
+   "secenekler": [
+    "İnsan yaptığı seçimlerden sorumlu değildir; çünkü her şey önceden yazılmıştır.",
+    "Allah evrendeki her şeyi önceden bilir.",
+    "Olayların gerçekleşmesi Allah'ın takdirine uygundur.",
+    "İnsanın seçimleri Allah'ın ilmi dışında gerçekleşmez."
+   ],
+   "dogru": "A",
+   "cozum": "İnsan seçimlerinden sorumludur; 'sorumlu değildir, her şey yazılmıştır' yargısı kader inancına aykırıdır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-013",
+   "altKonu": "Evrendeki yasalar",
+   "kaynakKod": "DİN-KAD-1",
+   "tur": "benzer",
+   "metin": "Annesi ve babası, yeni doğan kuzularının ilk günlerde süt emmesini ve hızla büyümesini sevgiyle izledi. Bu durum aşağıdaki yasalardan hangisi ile daha çok ilişkilidir?",
+   "secenekler": [
+    "Toplumsal yasa",
+    "Fiziksel yasa",
+    "Biyolojik yasa",
+    "Kimyasal yasa"
+   ],
+   "dogru": "C",
+   "cozum": "Süt emme ve büyüme canlıların yaşam olaylarıdır; biyolojik yasayla ilgilidir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-014",
+   "altKonu": "Evrendeki yasalar",
+   "kaynakKod": "DİN-KAD-1",
+   "tur": "benzer",
+   "metin": "Bir köyde komşuların birbirinin sıkıntısında yardımlaşması ve bayramlarda büyükleri ziyaret etmesi aşağıdaki yasalardan hangisi ile daha çok ilişkilidir?",
+   "secenekler": [
+    "Toplumsal yasa",
+    "Biyolojik yasa",
+    "Fiziksel yasa",
+    "Kimyasal yasa"
+   ],
+   "dogru": "A",
+   "cozum": "Komşuluk, yardımlaşma ve büyüklere saygı insanlar arası kurallardır; toplumsal yasadır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-015",
+   "altKonu": "Evrendeki yasalar",
+   "kaynakKod": "DİN-KAD-1",
+   "tur": "benzer",
+   "metin": "Elinden bırakılan bir bardağın yere düşüp kırılması aşağıdaki yasalardan hangisinin örneğidir?",
+   "secenekler": [
+    "Biyolojik yasa",
+    "Toplumsal yasa",
+    "Ahlaki yasa",
+    "Fiziksel yasa"
+   ],
+   "dogru": "D",
+   "cozum": "Bardağın düşmesi madde ve yerçekimiyle ilgili bir olaydır; fiziksel yasadır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-016",
+   "altKonu": "Evrendeki yasalar",
+   "kaynakKod": "DİN-KAD-2",
+   "tur": "benzer",
+   "metin": "Bir mühendis, köprünün rüzgâra ve ağırlığa dayanması için yük hesaplarını yapmış ve çelik kalitesini denetlemiştir. Bu durum kaderle ilgili aşağıdaki kavramlardan hangisine doğrudan örnektir?",
+   "secenekler": [
+    "Ecel",
+    "Fiziksel yasalar",
+    "Rızık",
+    "Toplumsal yasalar"
+   ],
+   "dogru": "B",
+   "cozum": "Yük hesabı ve malzeme denetimi madde ve fizik kurallarına uygun davranmaktır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-017",
+   "altKonu": "Evrendeki yasalar",
+   "kaynakKod": "DİN-KAD-2",
+   "tur": "benzer",
+   "metin": "Bir pilot, uçuş öncesi hava durumunu, yakıt miktarını ve uçağın aerodinamik hesaplarını kontrol etmiştir. Bu davranış evrendeki hangi yasalara uygun hareket etmeye örnektir?",
+   "secenekler": [
+    "Ahlaki yasalar",
+    "Toplumsal yasalar",
+    "Biyolojik yasalar",
+    "Fiziksel yasalar"
+   ],
+   "dogru": "D",
+   "cozum": "Hava, yakıt ve aerodinamik hesaplar fiziksel yasalarla ilgilidir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-018",
+   "altKonu": "Evrendeki yasalar",
+   "kaynakKod": "DİN-KAD-2",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi Allah'ın evrene koyduğu fiziksel yasalara uygun davranmaya örnek DEĞİLDİR?",
+   "secenekler": [
+    "Yüksekten atlayan birinin yer çekimini hesaba katmadan hiçbir önlem almaması",
+    "Bina yaparken zemin etüdü yaptırılması",
+    "Araçta emniyet kemeri takılması",
+    "Köprü için yük hesabı yapılması"
+   ],
+   "dogru": "A",
+   "cozum": "Yer çekimini hesaba katmadan önlem almamak fiziksel yasalara aykırıdır; diğer üçü yasalara uygun davranıştır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-019",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "kaynakKod": "DİN-KAD-7",
+   "tur": "benzer",
+   "metin": "Hz. Muhammed: \"Hiç kimse, kendi elinin emeğinden daha hayırlı bir yemek yememiştir. Allah'ın peygamberi Davud da kendi elinin emeğiyle geçinirdi.\" (Buhari)\nI. Helal kazanç için çalışmak değerli görülmüştür.\nII. Peygamberler de geçimlerini emekle sağlamıştır.\nIII. Rızık için çalışmayan kimseye de rızık yetişir.\nçıkarımlarından hangileri yapılabilir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": "B",
+   "cozum": "I ve II hadisten çıkarılabilir. III, hadiste olmayan ve emek anlayışına aykırı bir yargıdır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-020",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "kaynakKod": "DİN-KAD-7",
+   "tur": "benzer",
+   "metin": "Ahmet her gün düzenli çalışmış; sınav günü \"Üzerime düşeni yaptım, gerisini Allah'a bırakıyorum.\" demiştir. Buna göre\nI. Ahmet emek vermiştir.\nII. Ahmet tevekkül etmiştir.\nIII. Ahmet başarıyı tesadüfe bırakmıştır.\nçıkarımlarından hangileri yapılabilir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I ve II"
+   ],
+   "dogru": "D",
+   "cozum": "Ahmet düzenli çalıştığı için emek vermiştir (I) ve üzerine düşeni yapıp Allah'a bıraktığı için tevekkül etmiştir (II). Başarıyı tesadüfe bırakmamıştır (III yanlış).",
+   "emin": true
+  },
+  {
+   "id": "din-kad-021",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "kaynakKod": "DİN-KAD-7",
+   "tur": "benzer",
+   "metin": "Peygamberlerin çoğu meslek sahibi olmuştur: Hz. Davud demircilik, Hz. Zekeriyya marangozluk yapmıştır.\nI. Peygamberlerin bir kısmı geçimini kendi emeğiyle sağlamıştır.\nII. İslam'da çalışmak küçümsenmemiştir.\nIII. Bir mesleğin sahibi olmak peygamberlere yakışmayan bir durum değildir.\nçıkarımlarından hangileri yapılabilir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I, II ve III",
+    "II ve III"
+   ],
+   "dogru": "C",
+   "cozum": "Üç öncül de metindeki örneklerden çıkarılabilir: meslek sahibi olan peygamberler, çalışmanın küçümsenmemesi ve mesleğin yakışmazlığının olmaması.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-022",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "kaynakKod": "DİN-KAD-8",
+   "tur": "benzer",
+   "metin": "Aşağıdaki ayetlerden hangisi, başarının etkenlerinden (emek ve gayret, sorumluluk bilinci, tedbir ve tevekkül) herhangi biriyle doğrudan ilişkilendirilemez?",
+   "secenekler": [
+    "\"İnsan için ancak çalıştığının karşılığı vardır.\" (Necm, 39)",
+    "\"Kim zerre kadar iyilik yaparsa karşılığını görür.\" (Zilzal, 7)",
+    "\"Allah, rızkı dilediğine bol verir, dilediğine kısar.\" (Ra'd, 26)",
+    "\"Karar verdiğin zaman Allah'a tevekkül et.\" (Âl-i İmran, 159)"
+   ],
+   "dogru": "C",
+   "cozum": "Rızkın bolluğu ve darlığı Allah'ın dilemesine bağlıdır; bu ayet emek, sorumluluk veya tevekkül etkenleriyle doğrudan ilgili değildir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-023",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "kaynakKod": "DİN-KAD-8",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi emek ve rızık ilişkisi ile doğrudan ilişkilendirilemez?",
+   "secenekler": [
+    "Çiftçinin tarlasını mevsiminde sürüp ekmesi",
+    "Öğrencinin ders çalışması",
+    "Esnafın dükkânını erken açması",
+    "İnsanların gelir düzeyinin birbirinden farklı olması"
+   ],
+   "dogru": "D",
+   "cozum": "Gelir düzeyinin farklılığı emek ilişkisiyle doğrudan bağlanmayan bir durumdur; diğer üçü emeğin örnekleridir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-024",
+   "altKonu": "Rızık, emek ve tevekkül",
+   "kaynakKod": "DİN-KAD-8",
+   "tur": "benzer",
+   "metin": "Tedbir ve tevekkül ilkesine örnek olarak aşağıdakilerden hangisi gösterilemez?",
+   "secenekler": [
+    "Yağmurlu havada şemsiye alıp sonucu Allah'a bırakmak",
+    "Hasta olunca doktora gitmeyip yalnızca \"Allah şifa verir\" diyerek beklemek",
+    "Sınava hazırlanıp sonucu Allah'a bırakmak",
+    "Aracın kapısını kilitleyip Allah'a güvenmek"
+   ],
+   "dogru": "B",
+   "cozum": "Tedbir almadan yalnızca beklemek tedbir ve tevekkül ilkesine aykırıdır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-025",
+   "altKonu": "Kader ve insan iradesi",
+   "kaynakKod": "DİN-KAD-9",
+   "tur": "benzer",
+   "metin": "Sınava hiç çalışmayan Mert, düşük not alınca \"Benim kaderim buymuş, ne yapsam olmazdı.\" dedi. Mert'in bu tutumu için aşağıdakilerden hangisi söylenebilir?",
+   "secenekler": [
+    "Kadere doğru şekilde iman ettiğini gösterir.",
+    "Kaderi, sorumluluğundan kaçmak için bahane etmiştir.",
+    "Tevekkülün güzel bir örneğidir.",
+    "Allah'ın kudretini kabul ettiğini gösterir."
+   ],
+   "dogru": "B",
+   "cozum": "Mert hatasının sorumluluğunu kadere yükleyerek sorumluluktan kaçmaktadır.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-026",
+   "altKonu": "Kader ve insan iradesi",
+   "kaynakKod": "DİN-KAD-9",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi kaderi bahane etmeye örnektir?",
+   "secenekler": [
+    "Hastalanan Ayşe'nin doktora gidip tedavisini aksatmadan sürdürmesi",
+    "Trafik kurallarına uymayıp kaza yapan sürücünün \"Alın yazısıymış.\" demesi",
+    "Maçı kaybeden takımın eksiklerini konuşup yeni bir antrenman planı yapması",
+    "Tarlasını zamanında eken çiftçinin bereketli bir hasat için dua etmesi"
+   ],
+   "dogru": "B",
+   "cozum": "Kendi hatasını alın yazısına yükleyen sürücü kaderi bahane etmektedir.",
+   "emin": true
+  },
+  {
+   "id": "din-kad-027",
+   "altKonu": "Kader ve insan iradesi",
+   "kaynakKod": "DİN-KAD-9",
+   "tur": "benzer",
+   "metin": "\"İnsan, Allah'ın kendisine verdiği akıl ve irade ile seçim yapar ve bu seçimlerinin sonucundan sorumludur. Ancak bazı insanlar hatalarının sonucunu kadere yükler.\" Bu metinden aşağıdakilerden hangisine ulaşılamaz?",
+   "secenekler": [
+    "İnsan iradesiyle seçim yapabilir.",
+    "İnsan seçimlerinin sonucundan sorumludur.",
+    "İnsanın yaptığı her şey ona zorla yaptırılır.",
+    "Bazı insanlar hatalarını kadere yükler."
+   ],
+   "dogru": "C",
+   "cozum": "Metin insanın iradeyle seçim yaptığını söyler; 'her şeyin zorla yaptırıldığı' yargısına metinden ulaşılamaz.",
+   "emin": true
+  }
+ ]
 }

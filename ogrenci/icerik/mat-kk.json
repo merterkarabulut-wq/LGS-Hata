@@ -32,7 +32,19 @@
    "altKonu": "Tam kare ve karekök",
    "soru": "Rakam kartları: üzerindeki rakamın karekökü tam sayı olan kaç kart vardır? (Veli analizinde yer alan soru)",
    "hata": "Listeyi 0'dan başlayarak taramadı, 0'ı aday olarak düşünmedi ve A (3) seçti. Karekökü tam sayı olan rakamlar 0, 1, 4, 9 idi.",
-   "dogruYol": "Sayarken en baştan (0 dâhil) tek tek tara: √0 = 0, √1 = 1, √4 = 2, √9 = 3 tam sayıdır; toplam 4 kart."
+   "dogruYol": "Sayarken en baştan (0 dâhil) tek tek tara: √0 = 0, √1 = 1, √4 = 2, √9 = 3 tam sayıdır; toplam 4 kart.",
+   "gorsel": [
+    "sorular/MAT-KK-1.png"
+   ],
+   "cevap": "B) 4",
+   "senin": "A) 3",
+   "cozum": [
+    "Karekökü tam sayı olan sayılar tam karelerdir: 0² = 0, 1² = 1, 2² = 4, 3² = 9.",
+    "Kartları 0'dan başlayarak tek tek tara: 0 ✓, 1 ✓, 2 ✗, 3 ✗, 4 ✓, 5–8 ✗, 9 ✓.",
+    "√0 = 0, √1 = 1, √4 = 2, √9 = 3 → 4 kart. Cevap B."
+   ],
+   "hataAnaliz": "0'ı aday olarak hiç düşünmedin. √0 = 0 bir tam sayıdır. Listeyi baştan (0'dan) taramadın; ÇK-16 ve ÇK-23'teki “taramayı yarıda bırakma” alışkanlığının yeni bir görünümü.",
+   "tuyo": "Sayarken listeyi EN BAŞTAN tara: 0 ve 1 de tam karedir. 0–100 arası tam kareler: 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100."
   }
  ],
  "sorular": []

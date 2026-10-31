@@ -42,7 +42,7 @@ const uid = await user?.id();
 4. `denemeler/<otoId>` (Duru ve sahip yazar): `{"konuId","odevId":null|id,"tur":"alistirma"|"sinav"|"odev","soruIds":[...],"cevaplar":{"<soruId>":"A"|null},"dogru":n,"yanlis":n,"bos":n,"sureSn":n,"baslangic":ISO,"bitis":ISO,"kullanici":uid,"veliDenemesi":sahip}`. Ödev tamamlandı sayılır = o odevId'li bir deneme varsa. Denemeler koleksiyonu tümüyle (orderBy bitis desc, limit 500) bir kez dinlenir.
 5. `ayarlar/genel`: `{"lgsTarihi":"2027-06-13"}` (sahip değiştirebilir).
 
-## Görünüm 1 — Duru'nun alanı (`#duru`, herkes)
+## Görünüm 1 — Duru'nun Paneli (`#duru`, herkes)
 - Üst şerit: "Merhaba Duru", LGS'ye kalan gün (ayarlar/genel), bu hafta çözdüğü soru sayısı ve doğru oranı.
 - "Sana verilen tekrar çalışmaları": iptal edilmemiş ve tamamlanmamış ödevler (konu, başlık, veli notu, soru sayısı, "Başla" düğmesi). Yoksa sakin bir "Bekleyen ödevin yok" satırı.
 - Dersler: ders başlıkları altında konu kartları. Kart: konu adı, durum rozeti (Çalışıyor / Tekrar et — veli istedi / Tamamlandı ✓), hata sayısı, son sınav skoru, ilerleme çubuğu (son 3 denemenin doğru oranı). Tamamlananlar ders içinde en sonda ve soluk.
@@ -57,7 +57,7 @@ const uid = await user?.id();
 - `window.claude?.hot?.snapshot(() => durum)` ve `window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {})` ile açık sınav durumunu yeni sürüme taşı.
 
 ## Görünüm 2 — Veli paneli (`#veli`, yalnız `sahip === true`)
-Sahip için üstte iki sekme: "Duru'nun alanı" | "Veli paneli". Sahip değilse veli sekmesi hiç görünmez ve `#veli` → `#duru`'ya düşer.
+Sahip için üstte iki sekme: "Duru'nun Paneli" | "Veli Paneli". Sahip değilse veli sekmesi hiç görünmez ve `#veli` → `#duru`'ya düşer.
 - Özet satırı: son 7 günde deneme sayısı, çözülen soru, doğru oranı, bekleyen ödev sayısı, "tekrar" durumundaki konu sayısı.
 - "Son etkinlik": son 15 deneme (tarih-saat, konu, tür, D/Y/B, net, süre; veli denemesi ise "(senin denemen)" etiketi; kişi adı `user.profiles([...ids])` ile, `name || "Biri"`).
 - Konu tablosu (ders bazlı gruplu): konu, durum, deneme sayısı, son skor, son 5 denemenin mini çubuk grafiği (SVG, `viewBox`, `width="100%"`, token renkleri), en zayıf altKonu, işlemler.

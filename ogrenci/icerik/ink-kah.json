@@ -1,39 +1,255 @@
 {
-  "id": "ink-kah",
-  "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
-  "unite": "01 - Bir Kahraman Doğuyor",
-  "baslik": "Bir Kahraman Doğuyor",
-  "anlatim": [
-    {"baslik": "Tanzimat ve Islahat fermanları", "metin": "Tanzimat Fermanı (1839) ve Islahat Fermanı (1856) eşitlik, can-mal güvenliği ve hukuk gibi ilkeler getirdi. Ancak bu fermanlar yönetim şeklini değiştirmedi; padişah yine mutlak yönetimin başındaydı. Bir ferman ilan edilmesi ile yönetim şeklinin değişmesi aynı şey değildir."},
-    {"baslik": "Yönetim şekli ne zaman değişti?", "metin": "Mutlak monarşiden meşrutiyete geçiş için anayasa ve meclis gerekir. Bu, 1876'da Kanun-i Esasi'nin ilanı ve Meclis-i Mebusan'ın açılmasıyla gerçekleşti. Bu gelişmeyle halkın yönetime katılması ilk kez Osmanlı'da mümkün oldu."},
-    {"baslik": "Millî kimlik düşüncesi", "metin": "Millî kimlik ve milliyetçilik düşüncesi Ziya Gökalp ve Mehmet Emin Yurdakul ile ilişkilendirilir. Bu düşünceler Mustafa Kemal'in vatan sevgisi ve millî kimlik anlayışını etkiledi."},
-    {"baslik": "Halkın yönetime katılması ve çağdaşlaşma", "metin": "Hürriyet, eşitlik, cumhuriyet ve halkın yönetime katılması düşüncesi Rousseau, Montesquieu ve Namık Kemal ile anılır. Çağdaşlaşma ve yenilikçilik düşüncesi ise Tevfik Fikret ile ilişkilendirilir."},
-    {"baslik": "Dönem ipucu", "metin": "Soruda “yaşadığı dönemde” gibi bir zaman ifadesi varsa şıkların yanına tarihlerini yaz. Mustafa Kemal 1881–1938 yılları arasında yaşadı. Rönesans ve reform (15–16. yüzyıl) ile Fransız İhtilali (1789) onun döneminden çok önce gerçekleşti."},
-    {"baslik": "Dikkat edilecek tarihler", "metin": "Türk-Yunan Savaşı: 1897 (Mustafa Kemal'in askerî öğrencilik yıllarında). II. Meşrutiyet: 1908. Trablusgarp: 1911. Balkan Savaşları: 1912–13."}
-  ],
-  "tuyolar": [
-    "Ferman ilan etmek yönetim şeklini değiştirmez; mutlak monarşiden meşrutiyete geçiş için anayasa ve meclis gerekir (1876).",
-    "Şıkları kelimeyle değil anlamla eşleştir: “emriyle” ile “onayıyla” aynı anlama gelir.",
-    "“Hem … hem de …” diyen bir yargı iki parçadır; her parçayı karşılayan öncülü ayrı ayrı bul.",
-    "“Ulaşılamaz” sorularında önce şıklardaki en güçlü yargıyı bul (yönetim şekli değişti, tamamen, kesinlikle); metin bunu söylemiyorsa cevap odur.",
-    "“Yaşadığı dönemde” ifadesi varsa şıkların tarihlerini yan yana yaz; 1881–1938 dışında kalan olay cevaptır.",
-    "“Birlikte kullanması daha uygun” sorularında her öncülün yanına 1, 2 ya da – yaz; “–” olan öncül seçilmez.",
-    "Doğru bilgi, yargıyı destekleyen bilgi olmak zorunda değildir; desteklemeyen öncülü seçme."
-  ],
-  "hatalar": [
-    {"kod": "İNK-KAH-1", "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri", "soru": "Tanzimat Fermanı'nın içeriğinden hangi çıkarıma ulaşılamayacağı", "hata": "Metinde “onayladı” kelimesi geçmediği için padişahın fermanı onayladığı ve hukukun üstünlüğünü kabul ettiği yargısını (D) metinden çıkmıyor sanarak D'yi seçti. Oysa “padişahın emriyle hazırlandı” onaylamakla aynı anlamdadır. Ulaşılamayan yargı C'ydi (yönetim şekli değişti). Cevabı D oldu.", "dogruYol": "Şıkları kelimeyle değil anlamla eşleştir (emriyle = onayıyla). “Ulaşılamaz” sorusunda en güçlü yargıyı (yönetim şekli değişti) bul; metin bunu söylemiyorsa o şık cevaptır."},
-    {"kod": "İNK-KAH-2", "altKonu": "Mustafa Kemal'in düşünce dünyası", "soru": "Millî kimlik ve halkın yönetime katılması düşüncelerini desteklemek için hangi bilgilerin birlikte kullanılacağı", "hata": "Üç bilginin de doğru olduğunu gördü ve hepsini seçti (D). Oysa III (Tevfik Fikret) doğru bir bilgi olmasına rağmen yargının hiçbir parçasını desteklemiyordu. Cevabı D oldu; doğrusu A (I ve II).", "dogruYol": "Yargıyı parçalara ayır (millî kimlik / halkın yönetime katılması). Her öncülün yanına hangi parçayı karşıladığını yaz; karşılığı olmayan (–) öncül seçilmez."},
-    {"kod": "İNK-KAH-3", "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem", "soru": "Mustafa Kemal'in yaşadığı dönemde fikir hayatını etkileyen olaylardan hangisinin değildir (zaman ölçütüyle) sorusu", "hata": "D şıkkını (bilim ve teknikte geride kalma) “olay değil, bir durum” diye düşündü ve D'yi seçti. Reform hareketlerinin tarihini yerleştirmedi; B'nin Mustafa Kemal'den çok önce kaldığını görmedi. Cevabı D oldu; doğrusu B.", "dogruYol": "“Yaşadığı dönemde” ifadesi varsa her şıkkın yanına tarihini yaz (Mustafa Kemal 1881–1938). Bu aralığın dışında kalan olay cevaptır."}
-  ],
-  "sorular": [
-    {"id": "ink-kah-001", "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri", "kaynakKod": "İNK-KAH-1", "tur": "benzer", "metin": "1856 Islahat Fermanı ile gayrimüslimlere memur olma, okul açma ve mülk edinme hakları genişletilmiştir. Bu bilgiye göre hangisine ulaşılamaz?", "secenekler": ["Gayrimüslimlerin hakları artırılmıştır.", "Eşitlik anlayışı geliştirilmiştir.", "Osmanlı'da meşrutiyet yönetimine geçilmiştir.", "Gayrimüslimler devlet görevlerinde yer alabilecektir."], "dogru": "C", "cozum": "Metin hakların genişletildiğini söyler; A, B ve D bu bilgiden çıkar. Meşrutiyet için anayasa ve meclis gerekir; metinde bu bilgi yoktur.", "emin": true},
-    {"id": "ink-kah-002", "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri", "kaynakKod": "İNK-KAH-1", "tur": "benzer", "metin": "1876'da Kanun-i Esasi ilan edilmiş ve Meclis-i Mebusan açılmıştır. Bu gelişmeyle ilgili hangisi söylenebilir?", "secenekler": ["Osmanlı'da ilk kez halk yönetime katılmıştır.", "Padişahın yetkileri tamamen kaldırılmıştır.", "Cumhuriyet ilan edilmiştir.", "Saltanat sona ermiştir."], "dogru": "A", "cozum": "Meclis-i Mebusan'ın açılmasıyla halkın yönetime katılması Osmanlı'da ilk kez gerçekleşti. Padişahın yetkilerinin tamamen kalkması, cumhuriyet ve saltanatın sonu bu gelişmede yer almaz.", "emin": true},
-    {"id": "ink-kah-003", "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri", "kaynakKod": "İNK-KAH-1", "tur": "benzer", "metin": "“Padişah, fermanın hükümlerine kendisinin de uyacağına yemin etmiştir.” Bu bilgi en çok hangisini destekler?", "secenekler": ["Yönetim şeklinin değiştiğini", "Hukukun üstünlüğünün kabul edildiğini", "Saltanatın kaldırıldığını", "Halkın seçimle yönetime katıldığını"], "dogru": "B", "cozum": "Padişahın kendi çıkardığı fermana da uyacağını taahhüt etmesi hukukun üstünlüğü ilkesini gösterir. Yönetim şekli, saltanat ve seçim bu bilgiyle desteklenmez.", "emin": true},
-    {"id": "ink-kah-004", "altKonu": "Mustafa Kemal'in düşünce dünyası", "kaynakKod": "İNK-KAH-2", "tur": "benzer", "metin": "I. Namık Kemal: vatan ve hürriyet düşüncesi\nII. Ziya Gökalp: Türkçülük\nIII. Montesquieu: kuvvetler ayrılığı\n“Mustafa Kemal'de vatan sevgisi ve millî kimlik düşünceleri etkilidir.” yargısını desteklemek için hangileri birlikte kullanılmalıdır?", "secenekler": ["Yalnız I", "I ve II", "II ve III", "I, II ve III"], "dogru": "B", "cozum": "Yargının iki parçası vardır: vatan sevgisi (I, Namık Kemal) ve millî kimlik (II, Ziya Gökalp). III, kuvvetler ayrılığı ile ilgilidir ve yargıyı desteklemez.", "emin": true},
-    {"id": "ink-kah-005", "altKonu": "Mustafa Kemal'in düşünce dünyası", "kaynakKod": "İNK-KAH-2", "tur": "benzer", "metin": "“Halk egemenliği” düşüncesini en iyi destekleyen isim hangisidir?", "secenekler": ["Tevfik Fikret – yenilikçilik", "Mehmet Emin Yurdakul – Türkçülük", "Ziya Gökalp – milliyetçilik", "Rousseau – cumhuriyet ve eşitlik"], "dogru": "D", "cozum": "Halk egemenliği, halkın yönetime katılması düşüncesidir ve Rousseau'nun cumhuriyet ve eşitlik düşünceleriyle desteklenir. Diğer üç isim millî kimlik ya da çağdaşlaşma ile ilişkilidir.", "emin": true},
-    {"id": "ink-kah-006", "altKonu": "Mustafa Kemal'in düşünce dünyası", "kaynakKod": "İNK-KAH-2", "tur": "benzer", "metin": "Bir öğrenci “Mustafa Kemal'in çağdaşlaşma düşüncesi” konusunda yazı hazırlıyor. Hangi bilgiyi kullanması en uygundur?", "secenekler": ["Mehmet Emin Yurdakul'un Türkçülük düşüncesi", "Rousseau'nun cumhuriyet düşüncesi", "Tevfik Fikret'in yenilikçi ve çağdaş düşünceleri", "Namık Kemal'in vatan düşüncesi"], "dogru": "C", "cozum": "Çağdaşlaşma düşüncesiyle anılan isim Tevfik Fikret'tir; yenilikçi ve çağdaş düşünceleri konunun doğrudan bilgisidir.", "emin": true},
-    {"id": "ink-kah-007", "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem", "kaynakKod": "İNK-KAH-3", "tur": "benzer", "metin": "Aşağıdakilerden hangisi Mustafa Kemal'in yaşadığı dönemde gerçekleşmemiştir?", "secenekler": ["II. Meşrutiyet'in ilanı", "Balkan Savaşları", "Fransız İhtilali", "Trablusgarp Savaşı"], "dogru": "C", "cozum": "Mustafa Kemal 1881–1938 yılları arasında yaşadı. II. Meşrutiyet (1908), Trablusgarp Savaşı (1911) ve Balkan Savaşları (1912–13) bu aralıktadır; Fransız İhtilali 1789'dadır.", "emin": true},
-    {"id": "ink-kah-008", "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem", "kaynakKod": "İNK-KAH-3", "tur": "benzer", "metin": "Mustafa Kemal'in askerî öğrenciliği sırasında (1890'lar) yaşanan ve onu etkileyen olay hangisidir?", "secenekler": ["Rönesans", "1897 Türk-Yunan Savaşı", "Coğrafi Keşifler", "Reform"], "dogru": "B", "cozum": "1890'larda askerî öğrencilik dönemiyle örtüşen olay 1897 Türk-Yunan Savaşı'dır. Rönesans, coğrafi keşifler ve reform 15–16. yüzyıllara aittir.", "emin": true},
-    {"id": "ink-kah-009", "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem", "kaynakKod": "İNK-KAH-3", "tur": "benzer", "metin": "Aşağıdakilerden hangisi Osmanlı Devleti'nin son döneminde aydınların fikirlerini etkileyen bir gelişme DEĞİLDİR?", "secenekler": ["Fransız İhtilali'nin yaydığı milliyetçilik", "Meşrutiyetin ilanı", "Gazete ve dergilerin yaygınlaşması", "İstanbul'un Fethi"], "dogru": "D", "cozum": "İstanbul'un Fethi (1453), Osmanlı'nın son dönemine değil kuruluş ve yükseliş dönemine aittir. Diğer üç gelişme aydınların fikirlerini etkileyen son dönem olaylarıdır.", "emin": true}
-  ]
+ "id": "ink-kah",
+ "ders": "T.C. İnkılap Tarihi ve Atatürkçülük",
+ "unite": "01 - Bir Kahraman Doğuyor",
+ "baslik": "Bir Kahraman Doğuyor",
+ "anlatim": [
+  {
+   "baslik": "Tanzimat ve Islahat fermanları",
+   "metin": "Tanzimat Fermanı (1839) ve Islahat Fermanı (1856) eşitlik, can-mal güvenliği ve hukuk gibi ilkeler getirdi. Ancak bu fermanlar yönetim şeklini değiştirmedi; padişah yine mutlak yönetimin başındaydı. Bir ferman ilan edilmesi ile yönetim şeklinin değişmesi aynı şey değildir."
+  },
+  {
+   "baslik": "Yönetim şekli ne zaman değişti?",
+   "metin": "Mutlak monarşiden meşrutiyete geçiş için anayasa ve meclis gerekir. Bu, 1876'da Kanun-i Esasi'nin ilanı ve Meclis-i Mebusan'ın açılmasıyla gerçekleşti. Bu gelişmeyle halkın yönetime katılması ilk kez Osmanlı'da mümkün oldu."
+  },
+  {
+   "baslik": "Millî kimlik düşüncesi",
+   "metin": "Millî kimlik ve milliyetçilik düşüncesi Ziya Gökalp ve Mehmet Emin Yurdakul ile ilişkilendirilir. Bu düşünceler Mustafa Kemal'in vatan sevgisi ve millî kimlik anlayışını etkiledi."
+  },
+  {
+   "baslik": "Halkın yönetime katılması ve çağdaşlaşma",
+   "metin": "Hürriyet, eşitlik, cumhuriyet ve halkın yönetime katılması düşüncesi Rousseau, Montesquieu ve Namık Kemal ile anılır. Çağdaşlaşma ve yenilikçilik düşüncesi ise Tevfik Fikret ile ilişkilendirilir."
+  },
+  {
+   "baslik": "Dönem ipucu",
+   "metin": "Soruda “yaşadığı dönemde” gibi bir zaman ifadesi varsa şıkların yanına tarihlerini yaz. Mustafa Kemal 1881–1938 yılları arasında yaşadı. Rönesans ve reform (15–16. yüzyıl) ile Fransız İhtilali (1789) onun döneminden çok önce gerçekleşti."
+  },
+  {
+   "baslik": "Dikkat edilecek tarihler",
+   "metin": "Türk-Yunan Savaşı: 1897 (Mustafa Kemal'in askerî öğrencilik yıllarında). II. Meşrutiyet: 1908. Trablusgarp: 1911. Balkan Savaşları: 1912–13."
+  }
+ ],
+ "tuyolar": [
+  "Ferman ilan etmek yönetim şeklini değiştirmez; mutlak monarşiden meşrutiyete geçiş için anayasa ve meclis gerekir (1876).",
+  "Şıkları kelimeyle değil anlamla eşleştir: “emriyle” ile “onayıyla” aynı anlama gelir.",
+  "“Hem … hem de …” diyen bir yargı iki parçadır; her parçayı karşılayan öncülü ayrı ayrı bul.",
+  "“Ulaşılamaz” sorularında önce şıklardaki en güçlü yargıyı bul (yönetim şekli değişti, tamamen, kesinlikle); metin bunu söylemiyorsa cevap odur.",
+  "“Yaşadığı dönemde” ifadesi varsa şıkların tarihlerini yan yana yaz; 1881–1938 dışında kalan olay cevaptır.",
+  "“Birlikte kullanması daha uygun” sorularında her öncülün yanına 1, 2 ya da – yaz; “–” olan öncül seçilmez.",
+  "Doğru bilgi, yargıyı destekleyen bilgi olmak zorunda değildir; desteklemeyen öncülü seçme."
+ ],
+ "hatalar": [
+  {
+   "kod": "İNK-KAH-1",
+   "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "soru": "Tanzimat Fermanı'nın içeriğinden hangi çıkarıma ulaşılamayacağı",
+   "hata": "Metinde “onayladı” kelimesi geçmediği için padişahın fermanı onayladığı ve hukukun üstünlüğünü kabul ettiği yargısını (D) metinden çıkmıyor sanarak D'yi seçti. Oysa “padişahın emriyle hazırlandı” onaylamakla aynı anlamdadır. Ulaşılamayan yargı C'ydi (yönetim şekli değişti). Cevabı D oldu.",
+   "dogruYol": "Şıkları kelimeyle değil anlamla eşleştir (emriyle = onayıyla). “Ulaşılamaz” sorusunda en güçlü yargıyı (yönetim şekli değişti) bul; metin bunu söylemiyorsa o şık cevaptır.",
+   "gorsel": [
+    "sorular/INK-KAH-1.png"
+   ],
+   "cevap": "C) Osmanlı Devleti'nin yönetim şeklinde değişikliğe gidilmiştir.",
+   "senin": "D (teyit bekleniyor)",
+   "cozum": [
+    "Soru kökü olumsuz: \"ulaşılamaz\". Her şıkkın metindeki ANLAM karşılığını bul.",
+    "A: \"Hangi dinden olursa olsun bütün vatandaşlar hukuk önünde eşittir\" ✓.",
+    "B: \"Can, mal, namus güvenliği hukukun garantisi altındadır\" ✓.",
+    "D: Ferman \"Padişah Abdülmecit'in EMRİYLE\" hazırlandı = padişah onayladı. Kendi yetkisinin üstünde bir hukuku (eşitlik, açık mahkeme) kabul etti = hukukun üstünlüğü ✓.",
+    "C: Maddelerin hiçbiri yönetim şeklini değiştirmiyor; padişah yine devletin başında, mutlak monarşi devam ediyor ✗. Cevap C."
+   ],
+   "hataAnaliz": "\"Ferman onaylaması dememiş\" diye not almışsın: Metinde \"onayladı\" kelimesi yok ama \"padişahın emriyle hazırlandı\" yazıyor; bu, onaylamakla aynı anlama gelir. Kelime değil anlam aranır. Asıl güçlü yargı C'deydi: \"yönetim şekli değişti\" demek için meşrutiyet, meclis, cumhuriyet gibi bir değişiklik olması gerekir.",
+   "tuyo": "\"Ulaşılamaz\" sorularında önce şıklardaki en GÜÇLÜ yargıyı bul (yönetim şekli değişti, tamamen, kesinlikle). Metin bunu söylemiyorsa cevap odur. Diğer şıklarda aynı kelimeyi değil, aynı ANLAMI ara.",
+   "dikkat": "Yönetim şekli: 1839 Tanzimat ve 1856 Islahat → yine mutlak monarşi. İlk değişiklik 1876 I. Meşrutiyet (Kanun-i Esasi + Meclis-i Mebusan). Emriyle = onayıyla."
+  },
+  {
+   "kod": "İNK-KAH-2",
+   "altKonu": "Mustafa Kemal'in düşünce dünyası",
+   "soru": "Millî kimlik ve halkın yönetime katılması düşüncelerini desteklemek için hangi bilgilerin birlikte kullanılacağı",
+   "hata": "Üç bilginin de doğru olduğunu gördü ve hepsini seçti (D). Oysa III (Tevfik Fikret) doğru bir bilgi olmasına rağmen yargının hiçbir parçasını desteklemiyordu. Cevabı D oldu; doğrusu A (I ve II).",
+   "dogruYol": "Yargıyı parçalara ayır (millî kimlik / halkın yönetime katılması). Her öncülün yanına hangi parçayı karşıladığını yaz; karşılığı olmayan (–) öncül seçilmez.",
+   "gorsel": [
+    "sorular/INK-KAH-2.png"
+   ],
+   "cevap": "A) I ve II",
+   "senin": "D (teyit bekleniyor)",
+   "cozum": [
+    "Yargıyı parçalara ayır: (1) millî kimlik, (2) halkın yönetime katılması.",
+    "I. Mehmet Emin Yurdakul: Türkçülük, milliyetçilik → (1) millî kimlik ✓.",
+    "II. Rousseau: hürriyet, eşitlik, cumhuriyet → (2) halkın yönetime katılması ✓.",
+    "III. Tevfik Fikret: yenilikçi, çağdaş düşünce → ne (1) ne (2); doğru bir bilgi ama bu yargıyı desteklemez ✗.",
+    "Cevap A."
+   ],
+   "hataAnaliz": "Üç bilgi de DOĞRU olduğu için hepsini seçtin. Ama soru \"doğru mu?\" diye değil, \"bu yargıyı DESTEKLER mi?\" diye soruyor. III doğru ama yargının hiçbir parçasına karşılık gelmiyor.",
+   "tuyo": "\"Birlikte kullanması daha uygun\" sorularında her öncülün yanına yargının hangi parçasını karşıladığını yaz (1 / 2 / –). \"–\" yazdığın öncül seçilmez.",
+   "dikkat": "Millî kimlik = milliyetçilik, Türkçülük (Mehmet Emin Yurdakul, Ziya Gökalp). Halkın yönetime katılması = cumhuriyet, demokrasi (Rousseau, Montesquieu, Namık Kemal). Çağdaşlaşma = Tevfik Fikret."
+  },
+  {
+   "kod": "İNK-KAH-3",
+   "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "soru": "Mustafa Kemal'in yaşadığı dönemde fikir hayatını etkileyen olaylardan hangisinin değildir (zaman ölçütüyle) sorusu",
+   "hata": "D şıkkını (bilim ve teknikte geride kalma) “olay değil, bir durum” diye düşündü ve D'yi seçti. Reform hareketlerinin tarihini yerleştirmedi; B'nin Mustafa Kemal'den çok önce kaldığını görmedi. Cevabı D oldu; doğrusu B.",
+   "dogruYol": "“Yaşadığı dönemde” ifadesi varsa her şıkkın yanına tarihini yaz (Mustafa Kemal 1881–1938). Bu aralığın dışında kalan olay cevaptır.",
+   "gorsel": [
+    "sorular/INK-KAH-3.png"
+   ],
+   "cevap": "B) Reform hareketlerinin Avrupa'da taraftar toplaması",
+   "senin": "D (teyit bekleniyor)",
+   "cozum": [
+    "Soru kökü olumsuz: \"değildir\". Metindeki zaman ölçütünü bul: \"Mustafa Kemal'in YAŞADIĞI DÖNEMDE\".",
+    "Mustafa Kemal'in yaşam aralığı: 1881–1938. Her şıkkın yanına yaklaşık tarihini yaz.",
+    "A: Türk-Yunan Savaşı 1897 (16 yaşında) ✓. C: Meşrutiyet 1908 ve aydınlar ✓. D: Osmanlı'nın bilim ve teknikte geride kalması, onun döneminde yaşanan bir durum ✓.",
+    "B: Reform hareketleri 16. yüzyılda (1517) başladı; Mustafa Kemal doğmadan yaklaşık 360 yıl önce ✗.",
+    "Cevap B."
+   ],
+   "hataAnaliz": "D'yi \"olay değil, bir durum\" diye düşünmüş olabilirsin; ama soru, onun fikir hayatını etkileyen gelişmeleri soruyor ve Osmanlı'nın geri kalmışlığı onu çok etkiledi. Asıl ipucu \"yaşadığı dönemde\" ifadesiydi: Reform'un tarihini yerleştirseydin B hemen ayrılırdı.",
+   "tuyo": "Soruda zaman ölçütü (yaşadığı dönem, çocukluğu, öğrenciliği) varsa her şıkkın yanına tarihini yaz. 1881–1938 dışında kalan şık cevaptır.",
+   "dikkat": "Rönesans–Reform: 15–16. yy. · Fransız İhtilali: 1789 · Türk-Yunan Savaşı: 1897 · II. Meşrutiyet: 1908 · Trablusgarp: 1911 · Balkan Savaşları: 1912–13."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "ink-kah-001",
+   "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "kaynakKod": "İNK-KAH-1",
+   "tur": "benzer",
+   "metin": "1856 Islahat Fermanı ile gayrimüslimlere memur olma, okul açma ve mülk edinme hakları genişletilmiştir. Bu bilgiye göre hangisine ulaşılamaz?",
+   "secenekler": [
+    "Gayrimüslimlerin hakları artırılmıştır.",
+    "Eşitlik anlayışı geliştirilmiştir.",
+    "Osmanlı'da meşrutiyet yönetimine geçilmiştir.",
+    "Gayrimüslimler devlet görevlerinde yer alabilecektir."
+   ],
+   "dogru": "C",
+   "cozum": "Metin hakların genişletildiğini söyler; A, B ve D bu bilgiden çıkar. Meşrutiyet için anayasa ve meclis gerekir; metinde bu bilgi yoktur.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-002",
+   "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "kaynakKod": "İNK-KAH-1",
+   "tur": "benzer",
+   "metin": "1876'da Kanun-i Esasi ilan edilmiş ve Meclis-i Mebusan açılmıştır. Bu gelişmeyle ilgili hangisi söylenebilir?",
+   "secenekler": [
+    "Osmanlı'da ilk kez halk yönetime katılmıştır.",
+    "Padişahın yetkileri tamamen kaldırılmıştır.",
+    "Cumhuriyet ilan edilmiştir.",
+    "Saltanat sona ermiştir."
+   ],
+   "dogru": "A",
+   "cozum": "Meclis-i Mebusan'ın açılmasıyla halkın yönetime katılması Osmanlı'da ilk kez gerçekleşti. Padişahın yetkilerinin tamamen kalkması, cumhuriyet ve saltanatın sonu bu gelişmede yer almaz.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-003",
+   "altKonu": "Osmanlı Devleti'nde yenileşme hareketleri",
+   "kaynakKod": "İNK-KAH-1",
+   "tur": "benzer",
+   "metin": "“Padişah, fermanın hükümlerine kendisinin de uyacağına yemin etmiştir.” Bu bilgi en çok hangisini destekler?",
+   "secenekler": [
+    "Yönetim şeklinin değiştiğini",
+    "Hukukun üstünlüğünün kabul edildiğini",
+    "Saltanatın kaldırıldığını",
+    "Halkın seçimle yönetime katıldığını"
+   ],
+   "dogru": "B",
+   "cozum": "Padişahın kendi çıkardığı fermana da uyacağını taahhüt etmesi hukukun üstünlüğü ilkesini gösterir. Yönetim şekli, saltanat ve seçim bu bilgiyle desteklenmez.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-004",
+   "altKonu": "Mustafa Kemal'in düşünce dünyası",
+   "kaynakKod": "İNK-KAH-2",
+   "tur": "benzer",
+   "metin": "I. Namık Kemal: vatan ve hürriyet düşüncesi\nII. Ziya Gökalp: Türkçülük\nIII. Montesquieu: kuvvetler ayrılığı\n“Mustafa Kemal'de vatan sevgisi ve millî kimlik düşünceleri etkilidir.” yargısını desteklemek için hangileri birlikte kullanılmalıdır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": "B",
+   "cozum": "Yargının iki parçası vardır: vatan sevgisi (I, Namık Kemal) ve millî kimlik (II, Ziya Gökalp). III, kuvvetler ayrılığı ile ilgilidir ve yargıyı desteklemez.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-005",
+   "altKonu": "Mustafa Kemal'in düşünce dünyası",
+   "kaynakKod": "İNK-KAH-2",
+   "tur": "benzer",
+   "metin": "“Halk egemenliği” düşüncesini en iyi destekleyen isim hangisidir?",
+   "secenekler": [
+    "Tevfik Fikret – yenilikçilik",
+    "Mehmet Emin Yurdakul – Türkçülük",
+    "Ziya Gökalp – milliyetçilik",
+    "Rousseau – cumhuriyet ve eşitlik"
+   ],
+   "dogru": "D",
+   "cozum": "Halk egemenliği, halkın yönetime katılması düşüncesidir ve Rousseau'nun cumhuriyet ve eşitlik düşünceleriyle desteklenir. Diğer üç isim millî kimlik ya da çağdaşlaşma ile ilişkilidir.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-006",
+   "altKonu": "Mustafa Kemal'in düşünce dünyası",
+   "kaynakKod": "İNK-KAH-2",
+   "tur": "benzer",
+   "metin": "Bir öğrenci “Mustafa Kemal'in çağdaşlaşma düşüncesi” konusunda yazı hazırlıyor. Hangi bilgiyi kullanması en uygundur?",
+   "secenekler": [
+    "Mehmet Emin Yurdakul'un Türkçülük düşüncesi",
+    "Rousseau'nun cumhuriyet düşüncesi",
+    "Tevfik Fikret'in yenilikçi ve çağdaş düşünceleri",
+    "Namık Kemal'in vatan düşüncesi"
+   ],
+   "dogru": "C",
+   "cozum": "Çağdaşlaşma düşüncesiyle anılan isim Tevfik Fikret'tir; yenilikçi ve çağdaş düşünceleri konunun doğrudan bilgisidir.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-007",
+   "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "kaynakKod": "İNK-KAH-3",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi Mustafa Kemal'in yaşadığı dönemde gerçekleşmemiştir?",
+   "secenekler": [
+    "II. Meşrutiyet'in ilanı",
+    "Balkan Savaşları",
+    "Fransız İhtilali",
+    "Trablusgarp Savaşı"
+   ],
+   "dogru": "C",
+   "cozum": "Mustafa Kemal 1881–1938 yılları arasında yaşadı. II. Meşrutiyet (1908), Trablusgarp Savaşı (1911) ve Balkan Savaşları (1912–13) bu aralıktadır; Fransız İhtilali 1789'dadır.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-008",
+   "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "kaynakKod": "İNK-KAH-3",
+   "tur": "benzer",
+   "metin": "Mustafa Kemal'in askerî öğrenciliği sırasında (1890'lar) yaşanan ve onu etkileyen olay hangisidir?",
+   "secenekler": [
+    "Rönesans",
+    "1897 Türk-Yunan Savaşı",
+    "Coğrafi Keşifler",
+    "Reform"
+   ],
+   "dogru": "B",
+   "cozum": "1890'larda askerî öğrencilik dönemiyle örtüşen olay 1897 Türk-Yunan Savaşı'dır. Rönesans, coğrafi keşifler ve reform 15–16. yüzyıllara aittir.",
+   "emin": true
+  },
+  {
+   "id": "ink-kah-009",
+   "altKonu": "Mustafa Kemal'in fikir hayatı ve dönem",
+   "kaynakKod": "İNK-KAH-3",
+   "tur": "benzer",
+   "metin": "Aşağıdakilerden hangisi Osmanlı Devleti'nin son döneminde aydınların fikirlerini etkileyen bir gelişme DEĞİLDİR?",
+   "secenekler": [
+    "Fransız İhtilali'nin yaydığı milliyetçilik",
+    "Meşrutiyetin ilanı",
+    "Gazete ve dergilerin yaygınlaşması",
+    "İstanbul'un Fethi"
+   ],
+   "dogru": "D",
+   "cozum": "İstanbul'un Fethi (1453), Osmanlı'nın son dönemine değil kuruluş ve yükseliş dönemine aittir. Diğer üç gelişme aydınların fikirlerini etkileyen son dönem olaylarıdır.",
+   "emin": true
+  }
+ ]
 }

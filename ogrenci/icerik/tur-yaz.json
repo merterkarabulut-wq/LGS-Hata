@@ -1,26 +1,104 @@
 {
-  "id": "tur-yaz",
-  "ders": "Türkçe",
-  "unite": "07 - Yazım Kuralları ve Noktalama İşaretleri",
-  "baslik": "Yazım ve Noktalama",
-  "anlatim": [
-    {"baslik": "İki nokta (:)", "metin": "İki nokta; “şöyle, şu, şunlar, aşağıdaki” gibi açıklama ya da alıntı bildiren sözlerden sonra gelir: “Annem bana şunu söyledi: Her zaman dürüst ol.” Açıklama yapılacak cümleden, alıntıdan ve örnek ya da sıralamadan önce kullanılır."},
-    {"baslik": "Noktalı virgül (;)", "metin": "Noktalı virgül, ögeleri arasında virgül bulunan sıralı cümleleri ya da virgülle ayrılmış eş görevli grupları birbirinden ayırır: “Erkekler, kadınlar; gençler, yaşlılar meydanda toplanmıştı.”"},
-    {"baslik": "Virgül (,)", "metin": "Hitap sözünden sonra virgül gelir: “Sevgili öğrenciler, yarın müzeye gidiyoruz.” Cümle başındaki özneden sonra gelen açıklama da virgülle ayrılır: “Ömer Seyfettin, Yeni Lisan makalesinde ...”"},
-    {"baslik": "Cümle sonu", "metin": "Anlatım cümlesinin sonunda nokta (.) kullanılır. Bir cümlede birkaç noktalama işareti birlikte yer alabilir; her yeri tek tek düşünerek belirle."}
-  ],
-  "tuyolar": [
-    "“şöyle / şunlar” gibi bir ifade görürsen aradaki işaret iki nokta (:) olur.",
-    "Ögeleri arasında virgül bulunan sıralı cümleleri ayırmak için noktalı virgül (;) kullanılır.",
-    "Hitaptan (“Arkadaşlar,”) sonra virgül (,) gelir.",
-    "Alıntıdan ve açıklama yapılacak cümleden önce iki nokta (:) gelir."
-  ],
-  "hatalar": [
-    {"kod": "TUR-NOK-1", "altKonu": "İki nokta ve noktalı virgül", "soru": "Ömer Seyfettin'in Yeni Lisan makalesinden alınan cümlede yay ayraçlı yerlere sırasıyla hangi noktalama işaretlerinin gelmesi gerektiği", "hata": "İki nokta (:) ile noktalı virgül (;) karıştı; “şöyle” sözünden sonra noktalı virgül yazdı. Cevabı B oldu; doğrusu C. Virgülleri ve sondaki noktayı doğru bildi.", "dogruYol": "“şöyle, şunlar, aşağıdaki” gibi açıklama ya da alıntı bildiren sözlerden sonra iki nokta (:) gelir. Hitaptan sonra virgül (,) gelir, cümle sonunda nokta (.) kullanılır."}
-  ],
-  "sorular": [
-    {"id": "tur-yaz-001", "altKonu": "Açıklama öncesi iki nokta", "kaynakKod": "TUR-NOK-1", "tur": "benzer", "metin": "“Annem bana şunu söyledi ( ) Her zaman dürüst ol.” Ayraç yerine hangisi gelmelidir?", "secenekler": ["(;)", "(:)", "(,)", "(.)"], "dogru": "B", "cozum": "“Şunu” sözü, bundan sonra bir alıntının geleceğini bildirdiği için aradaki işaret iki nokta (:) olmalıdır.", "emin": true},
-    {"id": "tur-yaz-002", "altKonu": "Hitaptan sonra virgül", "kaynakKod": "TUR-NOK-1", "tur": "benzer", "metin": "“Sevgili öğrenciler ( ) yarın müzeye gidiyoruz.” Ayraç yerine hangisi gelmelidir?", "secenekler": ["(,)", "(:)", "(;)", "(!)"], "dogru": "A", "cozum": "“Sevgili öğrenciler” bir hitap sözüdür; hitaptan sonra virgül (,) kullanılır.", "emin": true},
-    {"id": "tur-yaz-003", "altKonu": "Virgülle ayrılmış grupları noktalı virgülle ayırma", "kaynakKod": "TUR-NOK-1", "tur": "benzer", "metin": "“Erkekler, kadınlar ( ) gençler, yaşlılar meydanda toplanmıştı.” Virgülle ayrılmış grupları ayırmak için ayraç yerine hangisi gelmelidir?", "secenekler": ["(:)", "(;)", "(.)", "(?)"], "dogru": "B", "cozum": "Her grubun kendi içindeki öğeleri virgülle ayrılmıştır; gruplar arasında noktalı virgül (;) kullanılır.", "emin": true}
-  ]
+ "id": "tur-yaz",
+ "ders": "Türkçe",
+ "unite": "07 - Yazım Kuralları ve Noktalama İşaretleri",
+ "baslik": "Yazım ve Noktalama",
+ "anlatim": [
+  {
+   "baslik": "İki nokta (:)",
+   "metin": "İki nokta; “şöyle, şu, şunlar, aşağıdaki” gibi açıklama ya da alıntı bildiren sözlerden sonra gelir: “Annem bana şunu söyledi: Her zaman dürüst ol.” Açıklama yapılacak cümleden, alıntıdan ve örnek ya da sıralamadan önce kullanılır."
+  },
+  {
+   "baslik": "Noktalı virgül (;)",
+   "metin": "Noktalı virgül, ögeleri arasında virgül bulunan sıralı cümleleri ya da virgülle ayrılmış eş görevli grupları birbirinden ayırır: “Erkekler, kadınlar; gençler, yaşlılar meydanda toplanmıştı.”"
+  },
+  {
+   "baslik": "Virgül (,)",
+   "metin": "Hitap sözünden sonra virgül gelir: “Sevgili öğrenciler, yarın müzeye gidiyoruz.” Cümle başındaki özneden sonra gelen açıklama da virgülle ayrılır: “Ömer Seyfettin, Yeni Lisan makalesinde ...”"
+  },
+  {
+   "baslik": "Cümle sonu",
+   "metin": "Anlatım cümlesinin sonunda nokta (.) kullanılır. Bir cümlede birkaç noktalama işareti birlikte yer alabilir; her yeri tek tek düşünerek belirle."
+  }
+ ],
+ "tuyolar": [
+  "“şöyle / şunlar” gibi bir ifade görürsen aradaki işaret iki nokta (:) olur.",
+  "Ögeleri arasında virgül bulunan sıralı cümleleri ayırmak için noktalı virgül (;) kullanılır.",
+  "Hitaptan (“Arkadaşlar,”) sonra virgül (,) gelir.",
+  "Alıntıdan ve açıklama yapılacak cümleden önce iki nokta (:) gelir."
+ ],
+ "hatalar": [
+  {
+   "kod": "TUR-NOK-1",
+   "altKonu": "İki nokta ve noktalı virgül",
+   "soru": "Ömer Seyfettin'in Yeni Lisan makalesinden alınan cümlede yay ayraçlı yerlere sırasıyla hangi noktalama işaretlerinin gelmesi gerektiği",
+   "hata": "İki nokta (:) ile noktalı virgül (;) karıştı; “şöyle” sözünden sonra noktalı virgül yazdı. Cevabı B oldu; doğrusu C. Virgülleri ve sondaki noktayı doğru bildi.",
+   "dogruYol": "“şöyle, şunlar, aşağıdaki” gibi açıklama ya da alıntı bildiren sözlerden sonra iki nokta (:) gelir. Hitaptan sonra virgül (,) gelir, cümle sonunda nokta (.) kullanılır.",
+   "gorsel": [
+    "sorular/TUR-NOK-1.png"
+   ],
+   "cevap": "C) (,) (:) (,) (.)",
+   "senin": "B) (,) (;) (,) (.)",
+   "cozum": [
+    "1. boşluk: \"Ömer Seyfettin ( ) Yeni Lisan makalesinde ...\" özneden sonra → virgül ( , ).",
+    "2. boşluk: \"... dil anlayışını şöyle açıklar ( )\" → \"şöyle\" sözü açıklama/alıntı haber veriyor → iki nokta ( : ).",
+    "3. boşluk: \"Genç dostlarım ( )\" → hitap sözünden sonra → virgül ( , ).",
+    "4. boşluk: cümlenin sonu → nokta ( . ).",
+    "Sıra: , : , . → C."
+   ],
+   "hataAnaliz": "İki nokta ( : ) ile noktalı virgül ( ; ) karıştı. \"Şöyle, şunlar, aşağıdaki\" gibi açıklama/alıntı haber veren sözlerden sonra iki nokta kullanılır.",
+   "tuyo": "İki nokta kuralları: (1) açıklama yapılacak cümleden önce (\"şöyle dedi:\", \"şunları aldım:\"), (2) alıntıdan önce, (3) örnek ve sıralama öncesi. Noktalı virgül: ögeleri arasında virgül bulunan sıralı cümleleri veya virgülle ayrılmış eş görevli grupları ayırır. İpucu: \"şöyle / şu / şunlar\" görürsen → ( : ).",
+   "dikkat": "Alıntıdan ve \"şöyle/şunlar\" sözünden sonra ( : ) gelir. Hitaptan (\"Arkadaşlar,\") sonra ( , ) gelir."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "tur-yaz-001",
+   "altKonu": "Açıklama öncesi iki nokta",
+   "kaynakKod": "TUR-NOK-1",
+   "tur": "benzer",
+   "metin": "“Annem bana şunu söyledi ( ) Her zaman dürüst ol.” Ayraç yerine hangisi gelmelidir?",
+   "secenekler": [
+    "(;)",
+    "(:)",
+    "(,)",
+    "(.)"
+   ],
+   "dogru": "B",
+   "cozum": "“Şunu” sözü, bundan sonra bir alıntının geleceğini bildirdiği için aradaki işaret iki nokta (:) olmalıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-yaz-002",
+   "altKonu": "Hitaptan sonra virgül",
+   "kaynakKod": "TUR-NOK-1",
+   "tur": "benzer",
+   "metin": "“Sevgili öğrenciler ( ) yarın müzeye gidiyoruz.” Ayraç yerine hangisi gelmelidir?",
+   "secenekler": [
+    "(,)",
+    "(:)",
+    "(;)",
+    "(!)"
+   ],
+   "dogru": "A",
+   "cozum": "“Sevgili öğrenciler” bir hitap sözüdür; hitaptan sonra virgül (,) kullanılır.",
+   "emin": true
+  },
+  {
+   "id": "tur-yaz-003",
+   "altKonu": "Virgülle ayrılmış grupları noktalı virgülle ayırma",
+   "kaynakKod": "TUR-NOK-1",
+   "tur": "benzer",
+   "metin": "“Erkekler, kadınlar ( ) gençler, yaşlılar meydanda toplanmıştı.” Virgülle ayrılmış grupları ayırmak için ayraç yerine hangisi gelmelidir?",
+   "secenekler": [
+    "(:)",
+    "(;)",
+    "(.)",
+    "(?)"
+   ],
+   "dogru": "B",
+   "cozum": "Her grubun kendi içindeki öğeleri virgülle ayrılmıştır; gruplar arasında noktalı virgül (;) kullanılır.",
+   "emin": true
+  }
+ ]
 }

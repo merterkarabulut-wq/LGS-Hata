@@ -1,40 +1,255 @@
 {
-  "id": "fen-dna",
-  "ders": "Fen Bilimleri",
-  "unite": "02 - DNA ve Genetik Kod",
-  "baslik": "DNA ve Genetik Kod",
-  "anlatim": [
-    {"baslik": "Nükleotid", "metin": "Nükleotid üç parçadan oluşur: bir fosfat, bir deoksiriboz şekeri ve bir organik baz. Nükleotidin adı bazından gelir: adenin (A), timin (T), guanin (G) ya da sitozin (C). Her nükleotidde fosfat sayısı, şeker sayısı ve nükleotid sayısı birbirine eşittir."},
-    {"baslik": "Baz eşleşmesi", "metin": "DNA çift zincirlidir ve bazlar basamaklar hâlinde karşılıklı durur. Adenin yalnızca timinle, guanin yalnızca sitozinle eşleşir (A–T, G–C). Farklı basamaklardaki bazlar birbiriyle eşleşmez; bu yüzden onlar için 'herhangi bir baz olabilir' ifadesi doğrudur."},
-    {"baslik": "Gen, DNA ve kromozom", "metin": "Belirli bir kalıtsal özelliği tek bir nükleotid değil, nükleotid dizisinden oluşan gen sağlar. Yapılar arasındaki sıra şöyledir: nükleotid → gen → DNA → kromozom. Gen ne kadar uzun bir dizi ise o kadar çok bilgi taşıyabilir."},
-    {"baslik": "Aynı kişinin hücreleri", "metin": "Aynı kişinin bütün vücut hücrelerinde DNA aynıdır: nükleotid sayısı, nükleotid çeşidi, diziliş ve uzunluk değişmez. Deri, kas, sinir ya da göz hücrelerinin farklı görevler yapması, bu hücrelerde farklı genlerin çalışmasından kaynaklanır."},
-    {"baslik": "Farklı insanlar", "metin": "İki farklı insanın DNA'sında nükleotid çeşitleri (A, T, G, C) aynıdır. Ama nükleotidlerin dizilişi kişiden kişiye değişir; bu yüzden insanlar birbirinden farklıdır."},
-    {"baslik": "Çift zincirli DNA'da sayım", "metin": "Çift zincirli bir DNA molekülünde adenin sayısı timin sayısına, guanin sayısı sitozin sayısına eşittir (A = T, G = C). Renkli kartlarla yapılan maketlerde hangi rengin hangi bazı temsil ettiği verilmemişse, renk eşitliğine dair her zaman ifadesine karar verme."}
-  ],
-  "tuyolar": [
-    "Nükleotid = 1 fosfat + 1 deoksiriboz şekeri + 1 organik baz; nükleotidin adını bazı verir.",
-    "Gen bir nükleotid dizisidir; tek bir nükleotid kalıtsal bir özelliği taşımaz.",
-    "Baz eşleşmesi (A–T, G–C) yalnızca aynı basamakta karşılıklı duran bazlar için geçerlidir.",
-    "'Olabilir' ifadesi bir örnek bile mümkünse doğrudur; 'kesinlikle / her zaman / tek başına' ifadelerinde tek bir karşı örnek ara.",
-    "Aynı kişinin bütün vücut hücrelerinde DNA aynıdır; hücreler arasındaki fark hangi genlerin çalıştığından gelir.",
-    "Fosfat sayısı = şeker sayısı = nükleotid sayısı; 40 nükleotidli bir DNA modelinde 40 fosfat vardır.",
-    "'Yanlıştır' ya da 'ulaşılamaz' sorularında her şıkka ✓ / ✗ yaz; sonunda tek bir ✗ kalmalı.",
-    "Çift zincirli DNA'da A = T ve G = C; bu eşitlik renkler ya da harfler tanımlıysa kontrol edilebilir."
-  ],
-  "hatalar": [
-    {"kod": "FEN-DNA-1", "altKonu": "Baz eşleşmesi ve gen", "soru": "DNA parçasının açılımındaki numaralı yapılardan hangisi yanlıştır?", "hata": "III ve IV numaralı bazları karşılıklı eşleşen bir çift sandı; oysa farklı basamaklardadırlar ve 'herhangi bir baz olabilir' ifadesi doğrudur. Bu yüzden B şıkkını doğru sanıp B'yi seçti.", "dogruYol": "Baz eşleşmesi yalnızca aynı basamakta karşılıklı duran bazlar için geçerlidir; farklı basamaklardaki bazlar için 'olabilir' ifadesi doğrudur. 'Tek başına' gibi ifadeler genellikle yanlış şıktır."},
-    {"kod": "FEN-DNA-2", "altKonu": "Aynı kişinin hücreleri", "soru": "Aynı kişinin akciğer ve mide hücrelerindeki DNA'lar hangisine ulaşılamaz?", "hata": "Farklı organların hücrelerinde DNA'nın farklı olabileceğini düşündü ve B şıkkını doğru sandı. Toplam nükleotid sayısının eşit olduğunu kabul edip uzunluğun farklı olduğunu düşünmesi de çelişkili oldu; D seçti.", "dogruYol": "Aynı canlının bütün vücut hücrelerinde DNA aynıdır; hücre farkı hangi genlerin çalıştığından gelir. Şıklar birbiriyle tutarlı olmalı: nükleotid sayısı aynıysa uzunluk da aynıdır."},
-    {"kod": "FEN-DNA-3", "altKonu": "Maket ve baz eşitliği", "soru": "Kartondan yapılan kalıtsal yapı maketi için hangisi doğrudur?", "hata": "Baz eşleşme kuralını, renklerin hangi bazları temsil ettiği bilinmeden 'her zaman' ifadesine uyguladı ve C şıkkını seçti.", "dogruYol": "'Her zaman / kesinlikle' içeren şıkta karşı örnek ara; eşitlik kurmadan önce renklerin hangi bazı temsil ettiğini kontrol et. Her nükleotidde fosfat ve şeker sayısı eşittir."}
-  ],
-  "sorular": [
-    {"id": "fen-dna-001", "altKonu": "Baz eşleşmesi", "kaynakKod": "FEN-DNA-1", "tur": "benzer", "metin": "DNA'da aynı basamakta karşılıklı duran iki organik bazdan biri adenin ise diğeri hangisidir?", "secenekler": ["Adenin", "Timin", "Guanin", "Sitozin"], "dogru": "B", "cozum": "Adenin yalnızca timinle, aynı basamakta karşılıklı eşleşir (A–T).", "emin": true},
-    {"id": "fen-dna-002", "altKonu": "Farklı basamaktaki bazlar", "kaynakKod": "FEN-DNA-1", "tur": "benzer", "metin": "DNA'nın aynı zincirinde, farklı basamaklarda bulunan iki organik baz için hangisi kesinlikle doğrudur?", "secenekler": ["Biri adenin ise diğeri timindir.", "İkisi aynı çeşit olamaz.", "İkisi de bir deoksiriboz şekerine bağlıdır.", "İkisi arasında zayıf hidrojen bağı vardır."], "dogru": "C", "cozum": "Farklı basamaklardaki bazlar eşleşmez; ama her baz nükleotidin parçası olarak bir deoksiriboz şekerine bağlıdır.", "emin": true},
-    {"id": "fen-dna-003", "altKonu": "Gen", "kaynakKod": "FEN-DNA-1", "tur": "benzer", "metin": "Belirli bir kalıtsal özelliğin ortaya çıkmasını sağlayan, nükleotidlerden oluşan DNA parçasına ne ad verilir?", "secenekler": ["Nükleotid", "Gen", "Kromozom", "Organik baz"], "dogru": "B", "cozum": "Kalıtsal bir özelliği taşıyan nükleotid dizisine gen denir.", "emin": true},
-    {"id": "fen-dna-004", "altKonu": "Hücreler arasındaki fark", "kaynakKod": "FEN-DNA-2", "tur": "benzer", "metin": "Aynı kişinin deri ve kas hücreleri karşılaştırıldığında hangisi farklıdır?", "secenekler": ["Nükleotid dizilişi", "Adenin sayısı", "Hücrede çalışan (aktif) genler", "DNA uzunluğu"], "dogru": "C", "cozum": "Aynı kişinin bütün hücrelerinde DNA aynıdır; farklılık hangi genlerin çalıştığındadır.", "emin": true},
-    {"id": "fen-dna-005", "altKonu": "Bireyler arası DNA", "kaynakKod": "FEN-DNA-2", "tur": "benzer", "metin": "Farklı iki insanın DNA'ları için hangisi kesinlikle aynıdır?", "secenekler": ["Nükleotid dizilişi", "Nükleotid çeşitleri", "Toplam nükleotid sayısı", "Gen dizilişi"], "dogru": "B", "cozum": "Dört nükleotid çeşidi (A, T, G, C) bütün insanlarda aynıdır; diziliş ve gen dizilişi kişiden kişiye değişir.", "emin": true},
-    {"id": "fen-dna-006", "altKonu": "Hücre farkı ve genler", "kaynakKod": "FEN-DNA-2", "tur": "benzer", "metin": "Bir insanın sinir hücresi ile göz hücresinin farklı görevler yapmasının nedeni hangisidir?", "secenekler": ["DNA'larının farklı olması", "Farklı genlerinin çalışması", "Nükleotid çeşitlerinin farklı olması", "DNA uzunluklarının farklı olması"], "dogru": "B", "cozum": "DNA aynıdır; sinir ve göz hücreleri farklı genleri çalıştırdığı için farklı görev yapar.", "emin": true},
-    {"id": "fen-dna-007", "altKonu": "Baz eşitliği", "kaynakKod": "FEN-DNA-3", "tur": "benzer", "metin": "Çift zincirli bir DNA molekülünde aşağıdakilerden hangisi her zaman eşittir?", "secenekler": ["Adenin ve guanin sayısı", "Adenin ve timin sayısı", "Timin ve sitozin sayısı", "Guanin ve adenin sayısı"], "dogru": "B", "cozum": "Çift zincirli DNA'da A = T ve G = C'dir; adenin ve timin sayısı her zaman eşittir.", "emin": true},
-    {"id": "fen-dna-008", "altKonu": "Nükleotid ve fosfat sayısı", "kaynakKod": "FEN-DNA-3", "tur": "benzer", "metin": "Bir DNA modelinde 40 nükleotid kullanılmıştır. Bu modelde kaç fosfat bulunur?", "secenekler": ["10", "20", "40", "80"], "dogru": "C", "cozum": "Her nükleotidde bir fosfat bulunur; 40 nükleotid, 40 fosfat demektir.", "emin": true},
-    {"id": "fen-dna-009", "altKonu": "Maket ve baz eşitliği", "kaynakKod": "FEN-DNA-3", "tur": "benzer", "metin": "Bir maket için sarı = adenin, yeşil = timin, mor = guanin, turuncu = sitozin olarak belirlenmiştir. Çift zincirli bir DNA modelinde hangisi kesinlikle doğrudur?", "secenekler": ["Sarı kart sayısı yeşil kart sayısına eşittir.", "Sarı kart sayısı mor kart sayısına eşittir.", "Yeşil kart sayısı turuncu kart sayısına eşittir.", "Dört renkten eşit sayıda kart kullanılır."], "dogru": "A", "cozum": "Çift zincirli DNA'da A = T olduğundan sarı (A) ve yeşil (T) kart sayısı eşittir.", "emin": true}
-  ]
+ "id": "fen-dna",
+ "ders": "Fen Bilimleri",
+ "unite": "02 - DNA ve Genetik Kod",
+ "baslik": "DNA ve Genetik Kod",
+ "anlatim": [
+  {
+   "baslik": "Nükleotid",
+   "metin": "Nükleotid üç parçadan oluşur: bir fosfat, bir deoksiriboz şekeri ve bir organik baz. Nükleotidin adı bazından gelir: adenin (A), timin (T), guanin (G) ya da sitozin (C). Her nükleotidde fosfat sayısı, şeker sayısı ve nükleotid sayısı birbirine eşittir."
+  },
+  {
+   "baslik": "Baz eşleşmesi",
+   "metin": "DNA çift zincirlidir ve bazlar basamaklar hâlinde karşılıklı durur. Adenin yalnızca timinle, guanin yalnızca sitozinle eşleşir (A–T, G–C). Farklı basamaklardaki bazlar birbiriyle eşleşmez; bu yüzden onlar için 'herhangi bir baz olabilir' ifadesi doğrudur."
+  },
+  {
+   "baslik": "Gen, DNA ve kromozom",
+   "metin": "Belirli bir kalıtsal özelliği tek bir nükleotid değil, nükleotid dizisinden oluşan gen sağlar. Yapılar arasındaki sıra şöyledir: nükleotid → gen → DNA → kromozom. Gen ne kadar uzun bir dizi ise o kadar çok bilgi taşıyabilir."
+  },
+  {
+   "baslik": "Aynı kişinin hücreleri",
+   "metin": "Aynı kişinin bütün vücut hücrelerinde DNA aynıdır: nükleotid sayısı, nükleotid çeşidi, diziliş ve uzunluk değişmez. Deri, kas, sinir ya da göz hücrelerinin farklı görevler yapması, bu hücrelerde farklı genlerin çalışmasından kaynaklanır."
+  },
+  {
+   "baslik": "Farklı insanlar",
+   "metin": "İki farklı insanın DNA'sında nükleotid çeşitleri (A, T, G, C) aynıdır. Ama nükleotidlerin dizilişi kişiden kişiye değişir; bu yüzden insanlar birbirinden farklıdır."
+  },
+  {
+   "baslik": "Çift zincirli DNA'da sayım",
+   "metin": "Çift zincirli bir DNA molekülünde adenin sayısı timin sayısına, guanin sayısı sitozin sayısına eşittir (A = T, G = C). Renkli kartlarla yapılan maketlerde hangi rengin hangi bazı temsil ettiği verilmemişse, renk eşitliğine dair her zaman ifadesine karar verme."
+  }
+ ],
+ "tuyolar": [
+  "Nükleotid = 1 fosfat + 1 deoksiriboz şekeri + 1 organik baz; nükleotidin adını bazı verir.",
+  "Gen bir nükleotid dizisidir; tek bir nükleotid kalıtsal bir özelliği taşımaz.",
+  "Baz eşleşmesi (A–T, G–C) yalnızca aynı basamakta karşılıklı duran bazlar için geçerlidir.",
+  "'Olabilir' ifadesi bir örnek bile mümkünse doğrudur; 'kesinlikle / her zaman / tek başına' ifadelerinde tek bir karşı örnek ara.",
+  "Aynı kişinin bütün vücut hücrelerinde DNA aynıdır; hücreler arasındaki fark hangi genlerin çalıştığından gelir.",
+  "Fosfat sayısı = şeker sayısı = nükleotid sayısı; 40 nükleotidli bir DNA modelinde 40 fosfat vardır.",
+  "'Yanlıştır' ya da 'ulaşılamaz' sorularında her şıkka ✓ / ✗ yaz; sonunda tek bir ✗ kalmalı.",
+  "Çift zincirli DNA'da A = T ve G = C; bu eşitlik renkler ya da harfler tanımlıysa kontrol edilebilir."
+ ],
+ "hatalar": [
+  {
+   "kod": "FEN-DNA-1",
+   "altKonu": "Baz eşleşmesi ve gen",
+   "soru": "DNA parçasının açılımındaki numaralı yapılardan hangisi yanlıştır?",
+   "hata": "III ve IV numaralı bazları karşılıklı eşleşen bir çift sandı; oysa farklı basamaklardadırlar ve 'herhangi bir baz olabilir' ifadesi doğrudur. Bu yüzden B şıkkını doğru sanıp B'yi seçti.",
+   "dogruYol": "Baz eşleşmesi yalnızca aynı basamakta karşılıklı duran bazlar için geçerlidir; farklı basamaklardaki bazlar için 'olabilir' ifadesi doğrudur. 'Tek başına' gibi ifadeler genellikle yanlış şıktır.",
+   "gorsel": [
+    "sorular/FEN-DNA-1.png"
+   ],
+   "cevap": "D",
+   "senin": "B",
+   "cozum": [
+    "Soru \"yanlıştır\" diyor; her şıkka ✓/✗ koy.",
+    "A: Şeker ve fosfat tüm nükleotidlerde aynıdır; çeşit farkı bazdan gelir ✓.",
+    "B: III ve IV farklı basamaklarda, birbiriyle eşleşmiyor → herhangi bir baz olabilir (adenin, guanin) ✓.",
+    "C: Nükleotid adını organik bazından alır (IV) ✓.",
+    "D: V bir nükleotiddir. Belirli bir kalıtsal özelliği ortaya çıkaran yapı tek bir nükleotid değil, nükleotid dizisinden oluşan GEN'dir → \"tek başına\" yanlış ✗. Cevap D."
+   ],
+   "hataAnaliz": "III ve IV'ü karşılıklı eşleşen çift sandın; oysa farklı basamaklarda duruyorlar (III üçüncü, IV beşinci basamakta). Eşleşmeyen iki baz için \"olabilir\" ifadesi doğrudur. Ayrıca D'de gen–nükleotid ayrımında tereddüt etmiş olabilirsin.",
+   "tuyo": "Şekilde numaralı yapıların yerini parmağınla takip et: aynı basamakta mı, karşılıklı mı? \"Olabilir\" ifadesi bir örnek bile mümkünse doğrudur; \"kesinlikle / tek başına\" ifadeleri şüphe uyandırmalı. Sıra: nükleotid → gen → DNA → kromozom.",
+   "dikkat": "Baz eşleşme kuralı (A–T, G–C) yalnızca aynı basamakta KARŞILIKLI duran bazlar için geçerlidir. \"Tek başına\", \"kesinlikle\", \"her zaman\" gibi kelimeler \"yanlıştır\" sorularında genellikle aranan şıktır."
+  },
+  {
+   "kod": "FEN-DNA-2",
+   "altKonu": "Aynı kişinin hücreleri",
+   "soru": "Aynı kişinin akciğer ve mide hücrelerindeki DNA'lar hangisine ulaşılamaz?",
+   "hata": "Farklı organların hücrelerinde DNA'nın farklı olabileceğini düşündü ve B şıkkını doğru sandı. Toplam nükleotid sayısının eşit olduğunu kabul edip uzunluğun farklı olduğunu düşünmesi de çelişkili oldu; D seçti.",
+   "dogruYol": "Aynı canlının bütün vücut hücrelerinde DNA aynıdır; hücre farkı hangi genlerin çalıştığından gelir. Şıklar birbiriyle tutarlı olmalı: nükleotid sayısı aynıysa uzunluk da aynıdır.",
+   "gorsel": [
+    "sorular/FEN-DNA-2.png"
+   ],
+   "cevap": "B",
+   "senin": "D",
+   "cozum": [
+    "Soru \"ulaşılamaz\" diyor: verilen bilgiden çıkarılamayan, yanlış olan şıkkı bul.",
+    "Aynı kişinin bütün vücut hücreleri tek bir zigottan bölünerek oluşur → DNA'ları aynıdır (nükleotid sayısı, çeşidi, dizilişi, uzunluğu).",
+    "A, C, D doğru ve ulaşılabilir. B: \"Nükleotid dizilişleri farklıdır\" yanlış → buna ulaşılamaz.",
+    "Hücreleri farklı yapan DNA değil, hangi genlerin çalıştığıdır."
+   ],
+   "hataAnaliz": "\"Farklı organların hücrelerinde DNA farklıdır\" düşüncesi nedeniyle B'yi doğru sandın. Ayrıca bir tutarsızlık oldu: toplam nükleotid sayısının eşit olduğunu kabul edip (A) uzunluğun farklı olduğunu düşünmek çelişkili; uzunluk nükleotid sayısına bağlıdır.",
+   "tuyo": "Aynı canlının vücut hücrelerinde DNA AYNIDIR; hücre farkı, hangi genlerin aktif olduğundan kaynaklanır. Şıklar arasında birbirine bağlı bilgiler (nükleotid sayısı ↔ uzunluk) aynı sonucu vermeli; tutarlılığı kontrol et.",
+   "dikkat": "\"Aynı kişi\" gördüğünde: DNA aynı. \"Farklı kişi\" gördüğünde: nükleotid çeşidi (4 çeşit: A, T, G, C) aynı, diziliş farklı."
+  },
+  {
+   "kod": "FEN-DNA-3",
+   "altKonu": "Maket ve baz eşitliği",
+   "soru": "Kartondan yapılan kalıtsal yapı maketi için hangisi doğrudur?",
+   "hata": "Baz eşleşme kuralını, renklerin hangi bazları temsil ettiği bilinmeden 'her zaman' ifadesine uyguladı ve C şıkkını seçti.",
+   "dogruYol": "'Her zaman / kesinlikle' içeren şıkta karşı örnek ara; eşitlik kurmadan önce renklerin hangi bazı temsil ettiğini kontrol et. Her nükleotidde fosfat ve şeker sayısı eşittir.",
+   "gorsel": [
+    "sorular/FEN-DNA-3.png"
+   ],
+   "cevap": "D",
+   "senin": "C",
+   "cozum": [
+    "Her nükleotid = 1 fosfat (kırmızı raptiye) + 1 deoksiriboz şekeri (mavi raptiye) + 1 organik baz (kart).",
+    "Bu yüzden her nükleotidde mavi ve kırmızı raptiye sayısı eşit → D doğru ✓.",
+    "A ✗: gen, farklı bazların dizilişinden oluşur, tek bir çeşitten değil.",
+    "B ✗: farklı genleri raptiyeler değil, BAZLARIN (kartların) dizilişi oluşturur.",
+    "C ✗: hangi rengin hangi bazı temsil ettiği verilmemiş; sarı kart turuncu kartla eşleşmiyor olabilir. Gen modeli tek zincir de olabilir. \"Her zaman\" denemez."
+   ],
+   "hataAnaliz": "Baz eşleşme kuralını, renklerin hangi bazlara karşılık geldiği bilinmeden \"her zaman\" ifadesine uyguladın. FEN-DNA-1'deki \"olabilir ↔ her zaman\" karışıklığıyla bağlantılı.",
+   "tuyo": "\"Her zaman / kesinlikle\" içeren şıkta tek bir karşı örnek ara: sarı = adenin, turuncu = guanin olsaydı eşit olur muydu? Kuralı uygulamak için gerekli bilgi verilmiş mi diye kontrol et.",
+   "dikkat": "Her nükleotid = 1 fosfat + 1 şeker + 1 baz → fosfat sayısı = şeker sayısı = nükleotid sayısı (her zaman). Baz eşitliği (A = T, G = C) yalnızca karşılıklı eşleşen bazlar için ve çift zincirde geçerlidir."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "fen-dna-001",
+   "altKonu": "Baz eşleşmesi",
+   "kaynakKod": "FEN-DNA-1",
+   "tur": "benzer",
+   "metin": "DNA'da aynı basamakta karşılıklı duran iki organik bazdan biri adenin ise diğeri hangisidir?",
+   "secenekler": [
+    "Adenin",
+    "Timin",
+    "Guanin",
+    "Sitozin"
+   ],
+   "dogru": "B",
+   "cozum": "Adenin yalnızca timinle, aynı basamakta karşılıklı eşleşir (A–T).",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-002",
+   "altKonu": "Farklı basamaktaki bazlar",
+   "kaynakKod": "FEN-DNA-1",
+   "tur": "benzer",
+   "metin": "DNA'nın aynı zincirinde, farklı basamaklarda bulunan iki organik baz için hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    "Biri adenin ise diğeri timindir.",
+    "İkisi aynı çeşit olamaz.",
+    "İkisi de bir deoksiriboz şekerine bağlıdır.",
+    "İkisi arasında zayıf hidrojen bağı vardır."
+   ],
+   "dogru": "C",
+   "cozum": "Farklı basamaklardaki bazlar eşleşmez; ama her baz nükleotidin parçası olarak bir deoksiriboz şekerine bağlıdır.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-003",
+   "altKonu": "Gen",
+   "kaynakKod": "FEN-DNA-1",
+   "tur": "benzer",
+   "metin": "Belirli bir kalıtsal özelliğin ortaya çıkmasını sağlayan, nükleotidlerden oluşan DNA parçasına ne ad verilir?",
+   "secenekler": [
+    "Nükleotid",
+    "Gen",
+    "Kromozom",
+    "Organik baz"
+   ],
+   "dogru": "B",
+   "cozum": "Kalıtsal bir özelliği taşıyan nükleotid dizisine gen denir.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-004",
+   "altKonu": "Hücreler arasındaki fark",
+   "kaynakKod": "FEN-DNA-2",
+   "tur": "benzer",
+   "metin": "Aynı kişinin deri ve kas hücreleri karşılaştırıldığında hangisi farklıdır?",
+   "secenekler": [
+    "Nükleotid dizilişi",
+    "Adenin sayısı",
+    "Hücrede çalışan (aktif) genler",
+    "DNA uzunluğu"
+   ],
+   "dogru": "C",
+   "cozum": "Aynı kişinin bütün hücrelerinde DNA aynıdır; farklılık hangi genlerin çalıştığındadır.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-005",
+   "altKonu": "Bireyler arası DNA",
+   "kaynakKod": "FEN-DNA-2",
+   "tur": "benzer",
+   "metin": "Farklı iki insanın DNA'ları için hangisi kesinlikle aynıdır?",
+   "secenekler": [
+    "Nükleotid dizilişi",
+    "Nükleotid çeşitleri",
+    "Toplam nükleotid sayısı",
+    "Gen dizilişi"
+   ],
+   "dogru": "B",
+   "cozum": "Dört nükleotid çeşidi (A, T, G, C) bütün insanlarda aynıdır; diziliş ve gen dizilişi kişiden kişiye değişir.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-006",
+   "altKonu": "Hücre farkı ve genler",
+   "kaynakKod": "FEN-DNA-2",
+   "tur": "benzer",
+   "metin": "Bir insanın sinir hücresi ile göz hücresinin farklı görevler yapmasının nedeni hangisidir?",
+   "secenekler": [
+    "DNA'larının farklı olması",
+    "Farklı genlerinin çalışması",
+    "Nükleotid çeşitlerinin farklı olması",
+    "DNA uzunluklarının farklı olması"
+   ],
+   "dogru": "B",
+   "cozum": "DNA aynıdır; sinir ve göz hücreleri farklı genleri çalıştırdığı için farklı görev yapar.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-007",
+   "altKonu": "Baz eşitliği",
+   "kaynakKod": "FEN-DNA-3",
+   "tur": "benzer",
+   "metin": "Çift zincirli bir DNA molekülünde aşağıdakilerden hangisi her zaman eşittir?",
+   "secenekler": [
+    "Adenin ve guanin sayısı",
+    "Adenin ve timin sayısı",
+    "Timin ve sitozin sayısı",
+    "Guanin ve adenin sayısı"
+   ],
+   "dogru": "B",
+   "cozum": "Çift zincirli DNA'da A = T ve G = C'dir; adenin ve timin sayısı her zaman eşittir.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-008",
+   "altKonu": "Nükleotid ve fosfat sayısı",
+   "kaynakKod": "FEN-DNA-3",
+   "tur": "benzer",
+   "metin": "Bir DNA modelinde 40 nükleotid kullanılmıştır. Bu modelde kaç fosfat bulunur?",
+   "secenekler": [
+    "10",
+    "20",
+    "40",
+    "80"
+   ],
+   "dogru": "C",
+   "cozum": "Her nükleotidde bir fosfat bulunur; 40 nükleotid, 40 fosfat demektir.",
+   "emin": true
+  },
+  {
+   "id": "fen-dna-009",
+   "altKonu": "Maket ve baz eşitliği",
+   "kaynakKod": "FEN-DNA-3",
+   "tur": "benzer",
+   "metin": "Bir maket için sarı = adenin, yeşil = timin, mor = guanin, turuncu = sitozin olarak belirlenmiştir. Çift zincirli bir DNA modelinde hangisi kesinlikle doğrudur?",
+   "secenekler": [
+    "Sarı kart sayısı yeşil kart sayısına eşittir.",
+    "Sarı kart sayısı mor kart sayısına eşittir.",
+    "Yeşil kart sayısı turuncu kart sayısına eşittir.",
+    "Dört renkten eşit sayıda kart kullanılır."
+   ],
+   "dogru": "A",
+   "cozum": "Çift zincirli DNA'da A = T olduğundan sarı (A) ve yeşil (T) kart sayısı eşittir.",
+   "emin": true
+  }
+ ]
 }

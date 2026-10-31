@@ -1,174 +1,1274 @@
 {
-  "id": "tur-soz",
-  "ders": "Türkçe",
-  "unite": "01 - Sözcükte Anlam",
-  "baslik": "Sözcükte Anlam",
-  "anlatim": [
-    {
-      "baslik": "Gerçek, yan, mecaz ve terim anlam",
-      "metin": "Gerçek anlam, sözcüğün akla ilk gelen somut anlamıdır (“Bu çorba çok sıcak.”). Yan anlam, gerçek anlamdan genişleyen anlamdır (masanın ayağı, dağın eteği). Mecaz anlam, gerçek anlamdan benzetme yoluyla uzaklaşan anlamdır (“Sıcak bir karşılama gördük.”). Terim anlam, bir bilim, sanat ya da meslek dalına özgü anlamdır (kütle, bileşik, fiil). Sözcüğü tek başına değil cümlede değerlendir; “Gerçekten öyle mi, elle tutulur mu?” diye sor, hayırsa mecazdır."
-    },
-    {
-      "baslik": "Çok anlamlılık",
-      "metin": "Bulmak, bırakmak, çalmak ve tutmak gibi sözcükler birden fazla anlam taşır. Her cümlede sözcüğün yerine geçen kelimeyi yaz ve bu kelimeleri say: birbirinin yerine geçemeyen kaç karşılık varsa o kadar farklı anlam vardır. Anlamı yalnızca cümlede yazana göre seç; cümlede olmayan bir olayı (örneğin bir kaybetme durumunu) varsayma."
-    },
-    {
-      "baslik": "Eş anlamlı ve yakın anlamlı sözcükler",
-      "metin": "Eş anlamlı sözcükler yazılışı farklı, anlamı birebir aynı sözcüklerdir (siyah–kara, okul–mektep, sevinç–kıvanç). Yakın anlamlı sözcükler anlamca benzer ama aralarında derece ya da ayrıntı farkı olan sözcüklerdir (üşümek–donmak, bakmak–seyretmek). Ayırt etmek için yer değiştirme testi uygula: cümlede yer değiştirince anlam hiç bozulmuyorsa eş, biraz değişiyorsa yakın anlamlıdır. “Mutluluk evi” denir ama “sevinç evi” denmez; bu yüzden sevinç ile mutluluk yakın anlamlıdır."
-    },
-    {
-      "baslik": "Deyimler: duyguya göre öğrenme",
-      "metin": "Deyimleri anlamına ve anlattığı duyguya göre grupla: öfke için “kan beynine sıçramak”, korku için “tüyleri diken diken olmak”, şaşkınlık için “beyninden vurulmuşa dönmek”, üzüntü için “başından aşağı kaynar sular dökülmek”, sevinç için “ağzı kulaklarına varmak”. Aynı kelimeyle başlayan deyimleri yan yana öğren: “göz doldurmak” (beğeni kazanmak) ile “göze gelmek” (nazara uğramak) farklı anlamlardır. Bilmediğin deyimde deyimin kendi kelimelerinin mecazını düşün; “can damarı” en önemli yer, “basmak” dokunmak demektir."
-    },
-    {
-      "baslik": "Benzetme",
-      "metin": "Benzetmede benzeyen (asıl varlık), kendisine benzetilen ve ortak özellik vardır; çoğunlukla “… gibi” ile kurulur. Benzetmenin hangi özellik için yapıldığı genellikle hemen ardından gelen açıklama cümlelerinde anlatılır. Örneğin “her tüyünde farklı bir renk parlayan bir tavus kuşu gibidir” benzetmesinde ortak özellik çok yönlülüktür; şair, öykücü, oymacı ve ebru ustası olması bunu açıklar."
-    }
-  ],
-  "tuyolar": [
-    "Çok anlamlı sözcükte anlamı yalnızca cümlede yazan bilgiyle seç; cümlede olmayan bir hikâye kurma.",
-    "Farklı anlam sayısını, sözcüğün yerine geçemeyen karşılıkları yazıp sayarak bul.",
-    "“Çalmak” yalnız hırsızlık ya da çalgı çalmak değildir; sürmek, bulaştırmak (yüzüne allık çalmak) ve bir renge benzemek anlamları da vardır.",
-    "Eş anlamlı sözcükler her cümlede birbirinin yerine geçer; yakın anlamlı sözcüklerde derece ya da ayrıntı farkı vardır.",
-    "Olumsuz soru kökünde her şıkkın metindeki karşılığını yanına yaz; karşılığı bulunamayan şık cevaptır.",
-    "Deyimi gerçek anlamıyla değil, anlattığı duyguyla öğren.",
-    "“Göz doldurmak” (beğeni) ile “göze gelmek” (nazar) farklı deyimlerdir; kelimeye değil anlama göre karar ver.",
-    "Bilmediğin deyimde deyimin kendi kelimelerinin mecazını düşün ve metindeki başka bir sıfatı deyimin anlamı sanma.",
-    "Benzetmenin anlamını çoğunlukla hemen ardından gelen açıklama cümlelerinde ara."
-  ],
-  "hatalar": [
-    {
-      "kod": "TUR-SÖZ-3",
-      "altKonu": "Çok anlamlılık",
-      "soru": "“Arabanın anahtarını masanın üstünde buldum” cümlesinde “bulmak”ın anlamı.",
-      "hata": "Cümlede olmayan “kaybetme” bilgisini varsayıp “kaybedileni yeniden ele geçirmek” anlamını seçti.",
-      "dogruYol": "Anlamı yalnızca cümlede yazana göre seç; seçtiğin anlamı cümleye yerleştirip oku. Cevap: karşılaşmak."
-    },
-    {
-      "kod": "TUR-SÖZ-9",
-      "altKonu": "Çok anlamlılık",
-      "soru": "Dört cümlede “bırakmak” sözcüğünün kaç farklı anlamda kullanıldığı.",
-      "hata": "“Komşuya bıraktı” (emanet etmek) ile “yolun ortasına bıraktı” (terk etmek) cümlelerini aynı anlam saydı ve toplam anlam sayısını 3 buldu.",
-      "dogruYol": "Her cümlede yerine geçen kelimeyi yaz (emanet etti, terk etti, erteledi, unuttu); birbirinin yerine geçmeyen karşılıklar farklı anlam demektir. Cevap: 4."
-    },
-    {
-      "kod": "TUR-SÖZ-10",
-      "altKonu": "Çok anlamlılık",
-      "soru": "“Bayrağa kanının alı çalınmayan” dizesinde “çalınmak”ın cümleye kattığı anlam.",
-      "hata": "“Çalmak”ı yalnızca hırsızlık ve çalgı çalma anlamlarıyla bildiği için “sürmek, bulaşmak” anlamını göremedi ve yanlış şıkkı seçti.",
-      "dogruYol": "Çalmak sözcüğünün anlamlarını (hırsızlık, çalgı, sürmek/bulaşmak, renge benzemek, zaman almak) şiirdeki yere tek tek koyup dene."
-    },
-    {
-      "kod": "TUR-SÖZ-2",
-      "altKonu": "Eş ve yakın anlamlı sözcükler",
-      "soru": "Altı çizili sözcüğün (sevinçten) yerine yazılabilecek eş anlamlı sözcük.",
-      "hata": "“Sevinç” ile “mutluluk”u eş anlamlı saydı; oysa mutluluk sevince yakın anlamlıdır.",
-      "dogruYol": "Eş anlamlı testi: iki sözcük her cümlede birbirinin yerine geçebiliyorsa eşittir. Sevinç–kıvanç eştir; sevinç–mutluluk yakın anlamlıdır. Cevap: kıvançtan."
-    },
-    {
-      "kod": "TUR-SÖZ-8",
-      "altKonu": "Eş ve yakın anlamlı sözcükler",
-      "soru": "Hangi sözcük çiftlerinin yakın anlamlı olduğu (üşümek–donmak, ara sıra–bazen gibi çiftler arasından).",
-      "hata": "“Ara sıra – bazen” çiftini, birbirinin yerini tamamen tutan eş anlamlı olduğu hâlde, yakın anlamlı saydı.",
-      "dogruYol": "Yer değiştirme testi: anlam hiç değişmiyorsa eş (ara sıra–bazen), biraz değişiyorsa yakın (üşümek–donmak). Cevap: I ve IV."
-    },
-    {
-      "kod": "TUR-SÖZ-7",
-      "altKonu": "Eş ve yakın anlamlı sözcükler",
-      "soru": "Metinde anlamı karşılanmayan şık (olumsuz soru kökü: “kullanılmamıştır”).",
-      "hata": "Olumsuz kökte eşleşen şıkkı aradı; “rastgele = gelişigüzel” eşleşmesini kuramadığı için A şıkkını seçti.",
-      "dogruYol": "Olumsuz kökte her şıkkın metindeki karşılığını yanına yaz; karşılığı bulunamayan şık cevaptır. Cevap: kısa ve öz anlatım (veciz)."
-    },
-    {
-      "kod": "TUR-SÖZ-1",
-      "altKonu": "Deyimler",
-      "soru": "Boşluklara getirilemeyecek deyim (ateşle oynamak, göz doldurmak, başım gözüm üstüne, göze gelmek).",
-      "hata": "“Göz doldurmak” (beğeni kazanmak) ile “göze gelmek” (nazar) deyimlerini karıştırdı; ikisi de “göz” ile başladığı için kelimeye göre karar verdi.",
-      "dogruYol": "Deyimi anlamına göre öğren; aynı kelimeyle başlayanları yan yana tut (göz doldurmak, göze gelmek, göz atmak, göz yummak). Cevap: göze gelmek."
-    },
-    {
-      "kod": "TUR-SÖZ-4",
-      "altKonu": "Deyimler",
-      "soru": "“Şaşırma” anlamı taşıyan deyim (“… ----” boşluğu için).",
-      "hata": "“Tüyleri diken diken olmak” (korku) ile “beynimden vurulmuşa dönmek” (şaşkınlık) deyimlerinin duygusunu karıştırdı.",
-      "dogruYol": "Önce cümledeki duyguyu belirle (şaşkınlık), sonra o duyguya ait deyimi ara. Cevap: beynimden vurulmuşa döndüm."
-    },
-    {
-      "kod": "TUR-SÖZ-6",
-      "altKonu": "Deyimler",
-      "soru": "“Can damarına basmak” sözüyle anlatılmak istenen.",
-      "hata": "Deyimin anlamını bilmediği için metindeki “farklı” sözcüğüne bağlanıp “dil ve anlatımıyla farklı olmak” şıkkını seçti.",
-      "dogruYol": "Deyimin kendi kelimelerinin mecazını düşün (can damarı = en önemli yer, basmak = dokunmak); metindeki başka sözcüğü deyimin anlamı sanma. Cevap: bir işin en önemli yönü üzerinde durmak."
-    },
-    {
-      "kod": "TUR-SÖZ-5",
-      "altKonu": "Benzetme",
-      "soru": "Tavus kuşu benzetmesiyle anlatılmak istenen (altı çizili sözle).",
-      "hata": "Doğru cevabı (değişik sanat dallarında eser vermesi) buldu ama emin değildi; benzetmenin anlamını hemen ardındaki açıklama cümlelerinde doğrulamadı.",
-      "dogruYol": "Benzetmenin anlamını hemen ardından gelen açıklama cümlelerinde (şair, öykücü, oymacı, ebru ustası) ara; çok yönlülüğü bu cümlelerden çıkar."
-    }
-  ],
-  "sorular": [
-    {"id": "tur-soz-001", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-3", "tur": "benzer", "metin": "“Kaybettiğim kolyemi sonunda yatağın altında buldum.” cümlesinde “bulmak” hangi anlamdadır?", "secenekler": ["Bir yargıya varmak", "Kaybedilen bir şeyi yeniden ele geçirmek", "İcat etmek", "Hesaplamak"], "dogru": "B", "cozum": "Cümlede kolyenin kaybedildiği söylendiği için “bulmak” yeniden ele geçirmek anlamındadır.", "emin": true},
-    {"id": "tur-soz-002", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-3", "tur": "benzer", "metin": "“Bu filmi çok sıkıcı buldum.” cümlesinde “bulmak” hangi anlamdadır?", "secenekler": ["Bir görüşe, yargıya varmak", "Kaybedileni ele geçirmek", "Karşılaşmak", "Keşfetmek"], "dogru": "A", "cozum": "Filme ilişkin bir yargıya varılmıştır.", "emin": true},
-    {"id": "tur-soz-003", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-3", "tur": "benzer", "metin": "“Parkta eski bir arkadaşımı buldum.” cümlesinde “bulmak” hangi anlamdadır?", "secenekler": ["Bir yargıya varmak", "Arayarak veya aramadan biriyle karşılaşmak", "Kaybedileni ele geçirmek", "Satın almak"], "dogru": "B", "cozum": "Arkadaşla aramadan karşılaşılmıştır.", "emin": true},
-    {"id": "tur-soz-004", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-9", "tur": "benzer", "metin": "“Çocuğu sabah okula bıraktı.” ve “Kötü alışkanlıklarını bıraktı.” cümlelerinde “bırakmak” hangi anlamlardadır?", "secenekler": ["İkisinde de unutmak", "Götürüp bir yere ulaştırmak – vazgeçmek", "İkisinde de ertelemek", "Satmak – almak"], "dogru": "B", "cozum": "Okula bırakmak götürüp ulaştırmak; alışkanlığı bırakmak vazgeçmek anlamındadır.", "emin": true},
-    {"id": "tur-soz-005", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-9", "tur": "benzer", "metin": "“Tut” sözcüğü hangi cümlede “benimsemek, beğenilmek” anlamındadır?", "secenekler": ["Elimi tut.", "Bu şarkı çok tuttu.", "Odayı on dakikada tuttu.", "Sıra tuttum."], "dogru": "B", "cozum": "Şarkının benimsenip beğenilmesi söz konusudur.", "emin": true},
-    {"id": "tur-soz-006", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-9", "tur": "benzer", "metin": "“Kitabı masada unuttum.” cümlesindeki “unutmak” yerine hangisi kullanılabilir?", "secenekler": ["Bıraktım", "Erteledim", "Emanet ettim", "Aldım"], "dogru": "A", "cozum": "Bir yerde unutmak anlamı “bıraktım” ile karşılanır.", "emin": true},
-    {"id": "tur-soz-007", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-10", "tur": "benzer", "metin": "“Yüzüne biraz allık çaldı.” cümlesinde “çalmak” hangi anlamdadır?", "secenekler": ["Hırsızlık yapmak", "Sürmek", "Müzik aleti çalmak", "Zil çalmak"], "dogru": "B", "cozum": "Allığın yüze sürülmesi söz konusudur.", "emin": true},
-    {"id": "tur-soz-008", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-10", "tur": "benzer", "metin": "“Bu kumaşın rengi maviye çalıyor.” cümlesinde “çalmak” hangi anlamdadır?", "secenekler": ["Benzemek, andırmak", "Sürmek", "Hırsızlık yapmak", "Vurmak"], "dogru": "A", "cozum": "Rengin maviye benzemesi anlatılıyor.", "emin": true},
-    {"id": "tur-soz-009", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-10", "tur": "benzer", "metin": "“Bu iş bütün günümü çaldı.” cümlesinde “çalmak” hangi anlamdadır?", "secenekler": ["Zamanını almak", "Sürmek", "Müzik yapmak", "Benzemek"], "dogru": "A", "cozum": "İş, günün zamanını almıştır.", "emin": true},
-    {"id": "tur-soz-010", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "benzer", "metin": "“Sevinç” sözcüğünün eş anlamlısı hangisidir?", "secenekler": ["Mutluluk", "Kıvanç", "Heyecan", "Gülümseme"], "dogru": "B", "cozum": "Sevinç ile kıvanç birebir aynı anlamdadır.", "emin": true},
-    {"id": "tur-soz-011", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "benzer", "metin": "Hangisi eş anlamlı bir sözcük çifti DEĞİLDİR?", "secenekler": ["siyah – kara", "yanıt – cevap", "mutluluk – neşe", "okul – mektep"], "dogru": "C", "cozum": "Mutluluk ile neşe yakın anlamlıdır; diğer üç çift eştir.", "emin": true},
-    {"id": "tur-soz-012", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "benzer", "metin": "“Bu güzel ve hoş hediye için teşekkür ederim.” cümlesindeki anlatım bozukluğunun nedeni hangisidir?", "secenekler": ["Eş anlamlı sözcüklerin birlikte kullanılması", "Yüklem eksikliği", "Yazım yanlışı", "Noktalama hatası"], "dogru": "A", "cozum": "Aynı varlık için eş anlamlı “güzel ve hoş” birlikte kullanılmıştır; bu gereksiz kullanım anlatım bozukluğu yaratır.", "emin": true},
-    {"id": "tur-soz-013", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "benzer", "metin": "Hangisi yakın anlamlı bir sözcük çiftidir?", "secenekler": ["siyah – kara", "kırmızı – al", "bakmak – seyretmek", "cevap – yanıt"], "dogru": "C", "cozum": "Bakmak ile seyretmek arasında derece ve ayrıntı farkı vardır.", "emin": true},
-    {"id": "tur-soz-014", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "benzer", "metin": "“Ara sıra” ve “bazen” sözcükleri için hangisi doğrudur?", "secenekler": ["Zıt anlamlıdır.", "Eş anlamlıdır.", "Yakın anlamlıdır.", "Sesteştir."], "dogru": "B", "cozum": "İki sözcük birbirinin yerini tamamen tutar; eş anlamlıdır.", "emin": true},
-    {"id": "tur-soz-015", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "benzer", "metin": "Hangi sözcük çifti yakın anlamlıdır?", "secenekler": ["okul – mektep", "cevap – yanıt", "kara – siyah", "ağlamak – gözleri dolmak"], "dogru": "D", "cozum": "Ağlamak ile gözleri dolmak anlamca yakındır ama birebir aynı değildir.", "emin": true},
-    {"id": "tur-soz-016", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-7", "tur": "benzer", "metin": "“Kitapları rafa gelişigüzel dizmişti.” cümlesindeki “gelişigüzel” yerine hangisi kullanılabilir?", "secenekler": ["Özenle", "Rastgele", "Sırayla", "Dikkatle"], "dogru": "B", "cozum": "Gelişigüzel ile rastgele aynı anlamdadır.", "emin": true},
-    {"id": "tur-soz-017", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-7", "tur": "benzer", "metin": "“Çetrefilli bir konu” ne demektir?", "secenekler": ["Kolay anlaşılan", "Karışık, anlaşılması güç", "Kısa", "Eğlenceli"], "dogru": "B", "cozum": "Çetrefilli, anlaşılması güç demektir.", "emin": true},
-    {"id": "tur-soz-018", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-7", "tur": "benzer", "metin": "“Kısa ve öz anlatım” anlamındaki sözcük hangisidir?", "secenekler": ["Veciz", "Akıcı", "Süslü", "Ağır"], "dogru": "A", "cozum": "Veciz, kısa ve öz anlatım demektir.", "emin": true},
-    {"id": "tur-soz-019", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-1", "tur": "benzer", "metin": "“Yeni aldığımız araba ilk görüşte herkesin ----.” Boşluğa hangisi gelmelidir?", "secenekler": ["gözüne geldi", "gözünü doldurdu", "gözünü yumdu", "gözüne battı"], "dogru": "B", "cozum": "“Göz doldurmak” görünüşüyle beğeni kazanmak demektir.", "emin": true},
-    {"id": "tur-soz-020", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-1", "tur": "benzer", "metin": "“Çocuğu o kadar övdüler ki sonunda ---- hastalandı derler.” Boşluğa hangisi gelmelidir?", "secenekler": ["göze geldi", "göz doldurdu", "göz attı", "göz yumdu"], "dogru": "A", "cozum": "“Göze gelmek” nazara uğramak demektir; cümledeki anlama uygundur.", "emin": true},
-    {"id": "tur-soz-021", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-1", "tur": "benzer", "metin": "“Çok tehlikeli bir işe girişmek” anlamındaki deyim hangisidir?", "secenekler": ["Ateşle oynamak", "Ağzı kulaklarına varmak", "Burnu havada olmak", "Kulak vermek"], "dogru": "A", "cozum": "“Ateşle oynamak” çok tehlikeli bir işle uğraşmak demektir.", "emin": true},
-    {"id": "tur-soz-022", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "benzer", "metin": "“Kapının ardında ani bir ses duyunca ----.” Korku anlamı için hangisi gelmelidir?", "secenekler": ["tüylerim diken diken oldu", "ağzım kulaklarıma vardı", "gözüm tuttu", "kulak kabarttım"], "dogru": "A", "cozum": "“Tüyleri diken diken olmak” korku duygusunu anlatır.", "emin": true},
-    {"id": "tur-soz-023", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "benzer", "metin": "Hangisi “çok şaşırmak” anlamındadır?", "secenekler": ["Küçük dilini yutmak", "Göz atmak", "Ağzı kulaklarına varmak", "Burnu havada olmak"], "dogru": "A", "cozum": "“Küçük dilini yutmak” şaşkınlığı anlatır.", "emin": true},
-    {"id": "tur-soz-024", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "benzer", "metin": "“Kan beynine sıçramak” deyimi hangi duyguyu anlatır?", "secenekler": ["Sevinç", "Öfke", "Korku", "Özlem"], "dogru": "B", "cozum": "“Kan beynine sıçramak” öfkelenmeyi anlatır.", "emin": true},
-    {"id": "tur-soz-025", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-6", "tur": "benzer", "metin": "“Toplantıda sorunun can damarına bastı, herkes ne demek istediğini hemen anladı.” Altı çizili söz ne anlama gelir?", "secenekler": ["Konuyu uzattı", "Sorunun en önemli noktasını ortaya koydu", "Konuyu değiştirdi", "Kızgınlıkla konuştu"], "dogru": "B", "cozum": "“Can damarına basmak” bir şeyin en önemli noktasına dokunmak demektir.", "emin": true},
-    {"id": "tur-soz-026", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-6", "tur": "benzer", "metin": "“Can alıcı nokta” ifadesi neyi anlatır?", "secenekler": ["En önemli nokta", "En tehlikeli yer", "En kolay soru", "Konunun başlangıcı"], "dogru": "A", "cozum": "“Can alıcı nokta” en önemli, en belirleyici noktadır.", "emin": true},
-    {"id": "tur-soz-027", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-6", "tur": "benzer", "metin": "Bir deyimin anlamını bilmiyorsan hangisi en doğru yoldur?", "secenekler": ["Metindeki herhangi bir sıfatı seçmek", "Deyimin kendi kelimelerinin mecaz anlamını ve metindeki kullanımını birlikte düşünmek", "En kısa şıkkı seçmek", "Soruyu atlamak"], "dogru": "B", "cozum": "Deyimin kelimelerinin mecazı ile metindeki kullanım birlikte düşünülmelidir.", "emin": true},
-    {"id": "tur-soz-028", "altKonu": "Benzetme", "kaynakKod": "TUR-SÖZ-5", "tur": "benzer", "metin": "“O, her mevsim başka bir meyve veren bahçe gibidir; bazen şiir yazar, bazen beste yapar, bazen resim çizer.” Benzetmeyle anlatılmak istenen nedir?", "secenekler": ["Çok yönlü olması", "Bahçıvan olması", "Yalnızca şiir yazması", "Çok çalışmaması"], "dogru": "A", "cozum": "Bahçenin her mevsim farklı meyve vermesi, kişinin farklı alanlarda üretmesine benzetilmiştir: çok yönlülük.", "emin": true},
-    {"id": "tur-soz-029", "altKonu": "Benzetme", "kaynakKod": "TUR-SÖZ-5", "tur": "benzer", "metin": "“… gibi” ile kurulan söz sanatının adı nedir?", "secenekler": ["Kişileştirme", "Benzetme", "Abartma", "Konuşturma"], "dogru": "B", "cozum": "“… gibi” ile kurulan anlatım benzetmedir.", "emin": true},
-    {"id": "tur-soz-030", "altKonu": "Benzetme", "kaynakKod": "TUR-SÖZ-5", "tur": "benzer", "metin": "“Dağlar gibi sağlam bir insandır.” cümlesinde vurgulanan özellik hangisidir?", "secenekler": ["Boyunun uzunluğu", "Güçlü ve güvenilir olması", "Yaşlı olması", "Dağcı olması"], "dogru": "B", "cozum": "Dağın sağlamlığı, insanın güçlü ve güvenilir olmasına benzetilmiştir.", "emin": true},
-    {"id": "tur-soz-031", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: üşümek – donmak. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "Derece farkı vardır; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-032", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: siyah – kara. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Yer değiştirme testinde anlam bozulmaz; eş anlamlıdır.", "emin": true},
-    {"id": "tur-soz-033", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: sevinç – mutluluk. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "“Mutluluk evi” denir, “sevinç evi” denmez; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-034", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: okul – mektep. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Anlamları birebir aynıdır; eştir.", "emin": true},
-    {"id": "tur-soz-035", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: bakmak – seyretmek. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "Aralarında ayrıntı farkı vardır; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-036", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: ara sıra – bazen. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "İki sözcük birbirinin yerini tamamen tutar; eştir.", "emin": true},
-    {"id": "tur-soz-037", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: gülümsemek – gülmek. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "Gülmek gülümsemekten daha şiddetlidir; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-038", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: cevap – yanıt. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Anlamları birebir aynıdır; eştir.", "emin": true},
-    {"id": "tur-soz-039", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: sevinç – kıvanç. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Sevinç ile kıvanç birebir aynı anlamdadır; eştir.", "emin": true},
-    {"id": "tur-soz-040", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: serin – soğuk. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "Soğuk, serinden daha şiddetlidir; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-041", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: hediye – armağan. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Anlamları birebir aynıdır; eştir.", "emin": true},
-    {"id": "tur-soz-042", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: ağlamak – gözleri dolmak. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "Anlamca yakındır ama birebir aynı değildir; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-043", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: vakit – zaman. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Anlamları birebir aynıdır; eştir.", "emin": true},
-    {"id": "tur-soz-044", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-8", "tur": "alistirma", "metin": "Sözcük çifti: mutluluk – neşe. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "B", "cozum": "Mutluluk sürekli bir hâl, neşe ise daha çok anlık bir duygudur; yakın anlamlıdır.", "emin": true},
-    {"id": "tur-soz-045", "altKonu": "Eş ve yakın anlamlı sözcükler", "kaynakKod": "TUR-SÖZ-2", "tur": "alistirma", "metin": "Sözcük çifti: özgürlük – hürriyet. Eş anlamlı mı, yakın anlamlı mı?", "secenekler": ["Eş anlamlı", "Yakın anlamlı"], "dogru": "A", "cozum": "Anlamları birebir aynıdır; eştir.", "emin": true},
-    {"id": "tur-soz-046", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “ağzı kulaklarına vardı”.\nCümle: Karne notlarını görünce ağzı kulaklarına vardı.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "E", "cozum": "“Ağzı kulaklarına varmak” sevinci anlatır.", "emin": true},
-    {"id": "tur-soz-047", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-1", "tur": "alistirma", "metin": "Altı çizili deyim: “başım gözüm üstüne”.\nCümle: “Bahçeyi temizler misin?” “Başım gözüm üstüne!”\nDeyimin anlattığı anlam hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "J", "cozum": "“Başım gözüm üstüne” isteği içtenlikle kabul etmek demektir.", "emin": true},
-    {"id": "tur-soz-048", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “kan beynine sıçradı”.\nCümle: Haksız yere suçlanınca kan beynine sıçradı.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "A", "cozum": "“Kan beynine sıçramak” öfkeyi anlatır.", "emin": true},
-    {"id": "tur-soz-049", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-6", "tur": "alistirma", "metin": "Altı çizili deyim: “can damarına bastı”.\nCümle: Öğretmen konunun can damarına basınca herkes sustu.\nDeyimin anlattığı anlam hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "H", "cozum": "“Can damarına basmak” bir işin en önemli noktasına dokunmak demektir.", "emin": true},
-    {"id": "tur-soz-050", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “beyninden vurulmuşa döndü”.\nCümle: Kapıdan içeri babasını görünce beyninden vurulmuşa döndü.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "C", "cozum": "“Beyninden vurulmuşa dönmek” şaşkınlığı anlatır.", "emin": true},
-    {"id": "tur-soz-051", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “gözünü doldurdu”.\nCümle: Yeni kesilen saçı ona çok yakıştı ve gören herkesin gözünü doldurdu.\nDeyimin anlattığı anlam hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "F", "cozum": "“Göz doldurmak” görünüşüyle beğeni kazanmak demektir.", "emin": true},
-    {"id": "tur-soz-052", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “küçük dilini yuttu”.\nCümle: Yarışmayı kazandığını duyunca küçük dilini yuttu.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "C", "cozum": "“Küçük dilini yutmak” şaşkınlığı anlatır.", "emin": true},
-    {"id": "tur-soz-053", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “ödü koptu”.\nCümle: Karanlık odada garip bir ses duyunca ödü koptu.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "B", "cozum": "“Ödü kopmak” korkuyu anlatır.", "emin": true},
-    {"id": "tur-soz-054", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “tepesi attı”.\nCümle: Tartışma uzayınca tepesi attı ve kapıyı çarparak çıktı.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "A", "cozum": "“Tepesi atmak” öfkelenmeyi anlatır.", "emin": true},
-    {"id": "tur-soz-055", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-4", "tur": "alistirma", "metin": "Altı çizili deyim: “yüreği burkuldu”.\nCümle: Yaşlı komşusunun hasta olduğunu duyunca yüreği burkuldu.\nDeyimin anlattığı duygu hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "D", "cozum": "“Yüreği burkulmak” üzüntüyü anlatır.", "emin": true},
-    {"id": "tur-soz-056", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-1", "tur": "alistirma", "metin": "Altı çizili deyim: “ateşle oynamaktır”.\nCümle: Yanan ormanın yanında piknik yapmak ateşle oynamaktır.\nDeyimin anlattığı anlam hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "I", "cozum": "“Ateşle oynamak” çok tehlikeli bir işe girişmek demektir.", "emin": true},
-    {"id": "tur-soz-057", "altKonu": "Deyimler", "kaynakKod": "TUR-SÖZ-1", "tur": "alistirma", "metin": "Altı çizili deyim: “göze geldi”.\nCümle: Çocuğa o kadar iltifat ettiler ki sonunda göze geldi derler.\nDeyimin anlattığı anlam hangisidir?", "secenekler": ["öfke", "korku", "şaşkınlık", "üzüntü", "sevinç", "görünüşüyle beğeni kazanma", "nazara uğrama", "en önemli noktaya dokunma", "çok tehlikeli bir işe girişme", "isteği içtenlikle kabul etme"], "dogru": "G", "cozum": "“Göze gelmek” nazara uğramak demektir.", "emin": true},
-    {"id": "tur-soz-058", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-9", "tur": "alistirma", "metin": "Aşağıdaki üç cümlede altı çizili “bırakmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(1) Çantasını kapının önüne bıraktı.\n(2) Annem beni her sabah okulun kapısına bırakır.\n(3) Bu işi yarına bırakma.", "secenekler": ["1", "2", "3", "4"], "dogru": "C", "cozum": "Bir yere koymak, götürüp ulaştırmak ve ertelemek olmak üzere 3 farklı anlam vardır.", "emin": true},
-    {"id": "tur-soz-059", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-10", "tur": "alistirma", "metin": "Aşağıdaki üç cümlede altı çizili “çalmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(4) Komşumuz akşamları gitar çalar.\n(5) Bando takımı törende marşı çaldı.\n(6) Hırsız kasadaki parayı çalmış.", "secenekler": ["1", "2", "3", "4"], "dogru": "B", "cozum": "Cümle 4 ve 5 çalgı çalmak, cümle 6 hırsızlık yapmak anlamındadır: 2 farklı anlam.", "emin": true},
-    {"id": "tur-soz-060", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-3", "tur": "alistirma", "metin": "Aşağıdaki üç cümlede altı çizili “bulmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(7) Kaybettiğim kalemi çantamın dibinde buldum.\n(8) Bu kitabı hiç sıkıcı bulmadım.\n(9) Bu soruyu çok kolay buldum.", "secenekler": ["1", "2", "3", "4"], "dogru": "B", "cozum": "Cümle 7 kaybedileni yeniden bulmak, cümle 8 ve 9 bir yargıya varmak anlamındadır: 2 farklı anlam.", "emin": true},
-    {"id": "tur-soz-061", "altKonu": "Çok anlamlılık", "kaynakKod": "TUR-SÖZ-3", "tur": "alistirma", "metin": "Aşağıdaki üç cümlede altı çizili “tutmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(10) Çocuk annesinin elini sıkıca tuttu.\n(11) Bu moda gençler arasında çok tuttu.\n(12) Verdiği sözü her zaman tutar.", "secenekler": ["1", "2", "3", "4"], "dogru": "C", "cozum": "Elle kavramak, benimsenmek/beğenilmek ve yerine getirmek olmak üzere 3 farklı anlam vardır.", "emin": true}
-  ]
+ "id": "tur-soz",
+ "ders": "Türkçe",
+ "unite": "01 - Sözcükte Anlam",
+ "baslik": "Sözcükte Anlam",
+ "anlatim": [
+  {
+   "baslik": "Gerçek, yan, mecaz ve terim anlam",
+   "metin": "Gerçek anlam, sözcüğün akla ilk gelen somut anlamıdır (“Bu çorba çok sıcak.”). Yan anlam, gerçek anlamdan genişleyen anlamdır (masanın ayağı, dağın eteği). Mecaz anlam, gerçek anlamdan benzetme yoluyla uzaklaşan anlamdır (“Sıcak bir karşılama gördük.”). Terim anlam, bir bilim, sanat ya da meslek dalına özgü anlamdır (kütle, bileşik, fiil). Sözcüğü tek başına değil cümlede değerlendir; “Gerçekten öyle mi, elle tutulur mu?” diye sor, hayırsa mecazdır."
+  },
+  {
+   "baslik": "Çok anlamlılık",
+   "metin": "Bulmak, bırakmak, çalmak ve tutmak gibi sözcükler birden fazla anlam taşır. Her cümlede sözcüğün yerine geçen kelimeyi yaz ve bu kelimeleri say: birbirinin yerine geçemeyen kaç karşılık varsa o kadar farklı anlam vardır. Anlamı yalnızca cümlede yazana göre seç; cümlede olmayan bir olayı (örneğin bir kaybetme durumunu) varsayma."
+  },
+  {
+   "baslik": "Eş anlamlı ve yakın anlamlı sözcükler",
+   "metin": "Eş anlamlı sözcükler yazılışı farklı, anlamı birebir aynı sözcüklerdir (siyah–kara, okul–mektep, sevinç–kıvanç). Yakın anlamlı sözcükler anlamca benzer ama aralarında derece ya da ayrıntı farkı olan sözcüklerdir (üşümek–donmak, bakmak–seyretmek). Ayırt etmek için yer değiştirme testi uygula: cümlede yer değiştirince anlam hiç bozulmuyorsa eş, biraz değişiyorsa yakın anlamlıdır. “Mutluluk evi” denir ama “sevinç evi” denmez; bu yüzden sevinç ile mutluluk yakın anlamlıdır."
+  },
+  {
+   "baslik": "Deyimler: duyguya göre öğrenme",
+   "metin": "Deyimleri anlamına ve anlattığı duyguya göre grupla: öfke için “kan beynine sıçramak”, korku için “tüyleri diken diken olmak”, şaşkınlık için “beyninden vurulmuşa dönmek”, üzüntü için “başından aşağı kaynar sular dökülmek”, sevinç için “ağzı kulaklarına varmak”. Aynı kelimeyle başlayan deyimleri yan yana öğren: “göz doldurmak” (beğeni kazanmak) ile “göze gelmek” (nazara uğramak) farklı anlamlardır. Bilmediğin deyimde deyimin kendi kelimelerinin mecazını düşün; “can damarı” en önemli yer, “basmak” dokunmak demektir."
+  },
+  {
+   "baslik": "Benzetme",
+   "metin": "Benzetmede benzeyen (asıl varlık), kendisine benzetilen ve ortak özellik vardır; çoğunlukla “… gibi” ile kurulur. Benzetmenin hangi özellik için yapıldığı genellikle hemen ardından gelen açıklama cümlelerinde anlatılır. Örneğin “her tüyünde farklı bir renk parlayan bir tavus kuşu gibidir” benzetmesinde ortak özellik çok yönlülüktür; şair, öykücü, oymacı ve ebru ustası olması bunu açıklar."
+  }
+ ],
+ "tuyolar": [
+  "Çok anlamlı sözcükte anlamı yalnızca cümlede yazan bilgiyle seç; cümlede olmayan bir hikâye kurma.",
+  "Farklı anlam sayısını, sözcüğün yerine geçemeyen karşılıkları yazıp sayarak bul.",
+  "“Çalmak” yalnız hırsızlık ya da çalgı çalmak değildir; sürmek, bulaştırmak (yüzüne allık çalmak) ve bir renge benzemek anlamları da vardır.",
+  "Eş anlamlı sözcükler her cümlede birbirinin yerine geçer; yakın anlamlı sözcüklerde derece ya da ayrıntı farkı vardır.",
+  "Olumsuz soru kökünde her şıkkın metindeki karşılığını yanına yaz; karşılığı bulunamayan şık cevaptır.",
+  "Deyimi gerçek anlamıyla değil, anlattığı duyguyla öğren.",
+  "“Göz doldurmak” (beğeni) ile “göze gelmek” (nazar) farklı deyimlerdir; kelimeye değil anlama göre karar ver.",
+  "Bilmediğin deyimde deyimin kendi kelimelerinin mecazını düşün ve metindeki başka bir sıfatı deyimin anlamı sanma.",
+  "Benzetmenin anlamını çoğunlukla hemen ardından gelen açıklama cümlelerinde ara."
+ ],
+ "hatalar": [
+  {
+   "kod": "TUR-SÖZ-3",
+   "altKonu": "Çok anlamlılık",
+   "soru": "“Arabanın anahtarını masanın üstünde buldum” cümlesinde “bulmak”ın anlamı.",
+   "hata": "Cümlede olmayan “kaybetme” bilgisini varsayıp “kaybedileni yeniden ele geçirmek” anlamını seçti.",
+   "dogruYol": "Anlamı yalnızca cümlede yazana göre seç; seçtiğin anlamı cümleye yerleştirip oku. Cevap: karşılaşmak.",
+   "gorsel": [
+    "sorular/TUR-SOZ-3.png"
+   ],
+   "cevap": "c) Arayarak veya aramadan bir şeyle, bir kimse ile karşılaşmak",
+   "senin": "b) Kaybedilen bir şeyi yeniden ele geçirmek",
+   "cozum": [
+    "Cümle: \"Arabanın anahtarını masanın üstünde buldum.\"",
+    "Cümlede anahtarın kaybolduğu YAZMIYOR. Arayıp ya da aramadan masada karşılaşılmış.",
+    "b (\"kaybedilen şeyi yeniden ele geçirmek\") için cümlede kaybetme bilgisi olmalı: \"Dün kaybettiğim anahtarı buldum.\"",
+    "Anlamı cümleye yerleştirip oku: \"Anahtarı masanın üstünde karşılaştım/gördüm\" ✓. Cevap c."
+   ],
+   "hataAnaliz": "Cümlede OLMAYAN bir bilgiyi (anahtarın kaybolması) varsayıp anlam seçtin. İki anlam birbirine yakın; ayrımı cümlede \"kaybettim\" bilgisinin olup olmaması yapıyor.",
+   "tuyo": "Çok anlamlı sözcükte anlam seçerken yalnızca cümlede YAZAN bilgiyi kullan. Seçtiğin anlamı cümleye yerleştirip oku.",
+   "dikkat": "Anlamı cümle belirler; cümlede olmayan bir hikâye kurma."
+  },
+  {
+   "kod": "TUR-SÖZ-9",
+   "altKonu": "Çok anlamlılık",
+   "soru": "Dört cümlede “bırakmak” sözcüğünün kaç farklı anlamda kullanıldığı.",
+   "hata": "“Komşuya bıraktı” (emanet etmek) ile “yolun ortasına bıraktı” (terk etmek) cümlelerini aynı anlam saydı ve toplam anlam sayısını 3 buldu.",
+   "dogruYol": "Her cümlede yerine geçen kelimeyi yaz (emanet etti, terk etti, erteledi, unuttu); birbirinin yerine geçmeyen karşılıklar farklı anlam demektir. Cevap: 4.",
+   "gorsel": [
+    "sorular/TUR-SOZ-9.png"
+   ],
+   "cevap": "D) 4",
+   "senin": "C) 3",
+   "cozum": [
+    "Her cümlede \"bırakmak\" yerine geçen kelimeyi yaz.",
+    "1. cümle: paketi komşuya bırakmış → emanet etmek / teslim etmek.",
+    "2. cümle: yolun ortasına bıraktı → elinden koyup orada terk etmek.",
+    "3. cümle: ava gitmeyi başka zamana bıraktık → ertelemek.",
+    "4. cümle: gözlüklerimi nerede bıraktım → unutmak / bir yerde unutup gitmek.",
+    "4 farklı karşılık = 4 farklı anlam."
+   ],
+   "hataAnaliz": "1. ve 2. cümleleri \"koymak\" diye aynı saydın. 1'de amaç birine teslim etmek (emanet), 2'de yükten kurtulup orada terk etmek. Kendi notunda \"vermiş (emanet)\" yazarak farkı görmüştün, ama sayarken birleştirdin.",
+   "tuyo": "Her cümle için sözcüğün yerine geçen kelimeyi yaz ve YAZDIKLARINI say: emanet etti / terk etti / erteledi / unuttu → 4 farklı kelime = 4 anlam. İki cümleye aynı kelimeyi yazdıysan ikisinde de TAM oturuyor mu diye kontrol et.",
+   "dikkat": "Farklı anlam sayısı = birbirinin yerine geçemeyen karşılık sayısı. \"Komşuya koymuş\" denmez → 1 ile 2 farklı anlam."
+  },
+  {
+   "kod": "TUR-SÖZ-10",
+   "altKonu": "Çok anlamlılık",
+   "soru": "“Bayrağa kanının alı çalınmayan” dizesinde “çalınmak”ın cümleye kattığı anlam.",
+   "hata": "“Çalmak”ı yalnızca hırsızlık ve çalgı çalma anlamlarıyla bildiği için “sürmek, bulaşmak” anlamını göremedi ve yanlış şıkkı seçti.",
+   "dogruYol": "Çalmak sözcüğünün anlamlarını (hırsızlık, çalgı, sürmek/bulaşmak, renge benzemek, zaman almak) şiirdeki yere tek tek koyup dene.",
+   "gorsel": [
+    "sorular/TUR-SOZ-10.png"
+   ],
+   "cevap": "C",
+   "senin": "A",
+   "cozum": [
+    "\"Kanının alı çalınmak\": al (kırmızı) renk sürülmek, bulaşmak → bayrağa kanın kırmızısı sürülmek.",
+    "Yani \"çalınmak\" burada \"sürülmek, bulaşmak, bir rengin bir yere geçmesi\" anlamında.",
+    "C: \"Boyaların hepsi üstüne bulaşmış\" → aynı anlam ✓.",
+    "A, B, D'de bu anlam yok ✗."
+   ],
+   "hataAnaliz": "\"Çalmak/çalınmak\"ı yalnızca \"hırsızlık\" ya da \"çalgı çalmak\" anlamıyla biliyorsun; \"sürmek, bulaştırmak\" (yüzüne allık çalmak) anlamını henüz bilmiyorsun.",
+   "tuyo": "\"Çalmak\" sözcüğünün anlamları: 1. hırsızlık yapmak 2. çalgı çalmak 3. kapı/zil çalmak 4. sürmek, bulaştırmak (yüzüne allık çalmak) 5. bir renge benzemek (sarıya çalan yeşil) 6. zaman almak (vaktimi çaldı). Şiirdeki sözcüğün yerine her anlamı koyup dene.",
+   "dikkat": "\"Bayrağa kanının alı çalınmak\" = bayrak kanla boyanmak. \"Al\" = kırmızı."
+  },
+  {
+   "kod": "TUR-SÖZ-2",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "soru": "Altı çizili sözcüğün (sevinçten) yerine yazılabilecek eş anlamlı sözcük.",
+   "hata": "“Sevinç” ile “mutluluk”u eş anlamlı saydı; oysa mutluluk sevince yakın anlamlıdır.",
+   "dogruYol": "Eş anlamlı testi: iki sözcük her cümlede birbirinin yerine geçebiliyorsa eşittir. Sevinç–kıvanç eştir; sevinç–mutluluk yakın anlamlıdır. Cevap: kıvançtan.",
+   "gorsel": [
+    "sorular/TUR-SOZ-2.png"
+   ],
+   "cevap": "c) Sevinçten → kıvançtan",
+   "senin": "c için \"Mutluluktan\" yazdın",
+   "cozum": [
+    "Eş anlamlı testi: iki kelime HER cümlede birbirinin yerine geçebiliyor mu?",
+    "a: kısa bir zaman → süre/vakit. b: gökyüzü → sema, özgürlük → hürriyet. ç: duygu → his.",
+    "c: sevinç ↔ kıvanç birebir aynı anlamda → \"kıvançtan\".",
+    "Neşe ve mutluluk yakın anlamlıdır, birebir aynı değildir."
+   ],
+   "hataAnaliz": "Eş anlamlı ile yakın anlamlıyı karıştırdın: \"mutluluk\" sevince yakın ama aynı değil (mutluluk sürekli bir hâl, sevinç anlık bir duygu). TUR-SÖZ-8 ile aynı karışıklık.",
+   "tuyo": "Eş anlamlı testi: iki kelime HER cümlede birbirinin yerine geçebiliyor mu? Sevinç ↔ kıvanç: evet. Sevinç ↔ mutluluk: \"Mutluluk evi\" denir, \"sevinç evi\" denmez → yakın anlamlı.",
+   "dikkat": "Eş anlamlı = yazılışı farklı, anlamı aynı (siyah–kara, okul–mektep, sevinç–kıvanç). Yakın anlamlı = arada anlam ayrıntısı var (sevinç–mutluluk, üşümek–donmak)."
+  },
+  {
+   "kod": "TUR-SÖZ-8",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "soru": "Hangi sözcük çiftlerinin yakın anlamlı olduğu (üşümek–donmak, ara sıra–bazen gibi çiftler arasından).",
+   "hata": "“Ara sıra – bazen” çiftini, birbirinin yerini tamamen tutan eş anlamlı olduğu hâlde, yakın anlamlı saydı.",
+   "dogruYol": "Yer değiştirme testi: anlam hiç değişmiyorsa eş (ara sıra–bazen), biraz değişiyorsa yakın (üşümek–donmak). Cevap: I ve IV.",
+   "gorsel": [
+    "sorular/TUR-SOZ-8.png"
+   ],
+   "cevap": "B) I ve IV",
+   "senin": "C) II ve III",
+   "cozum": [
+    "Yakın anlamlı = benzer ama aralarında DERECE/AYRINTI farkı var. Eş anlamlı = birebir aynı.",
+    "Yer değiştirme testi: kelimeleri cümlede yer değiştir. Anlam HİÇ değişmiyorsa eş anlamlı, biraz değişiyorsa yakın anlamlı.",
+    "I ve IV: üşümek ↔ donmak, ikisi de soğukla ilgili ama dereceleri farklı → yakın anlamlı ✓.",
+    "II ve III: ara sıra ↔ bazen, birbirinin yerini tamamen tutar → EŞ anlamlı ✗."
+   ],
+   "hataAnaliz": "Anlamı \"en çok benzeyen\" çifti seçtin; oysa tamamen aynı olan eş anlamlıdır, yakın anlamlı değildir. TUR-SÖZ-2 ile aynı karışıklık (aynı gün ikinci kez).",
+   "tuyo": "Yer değiştirme testi: Anlam HİÇ değişmiyorsa → eş anlamlı (ara sıra ↔ bazen). Anlam biraz değişiyorsa (derece, ton) → yakın anlamlı (üşümek ↔ donmak, bakmak ↔ seyretmek).",
+   "dikkat": "Yakın anlamlı = benzer ama aralarında DERECE/AYRINTI farkı var. Eş anlamlı = birebir aynı."
+  },
+  {
+   "kod": "TUR-SÖZ-7",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "soru": "Metinde anlamı karşılanmayan şık (olumsuz soru kökü: “kullanılmamıştır”).",
+   "hata": "Olumsuz kökte eşleşen şıkkı aradı; “rastgele = gelişigüzel” eşleşmesini kuramadığı için A şıkkını seçti.",
+   "dogruYol": "Olumsuz kökte her şıkkın metindeki karşılığını yanına yaz; karşılığı bulunamayan şık cevaptır. Cevap: kısa ve öz anlatım (veciz).",
+   "gorsel": [
+    "sorular/TUR-SOZ-7.png"
+   ],
+   "cevap": "C) Kısa ve öz anlatım",
+   "senin": "A",
+   "cozum": [
+    "Soru kökü olumsuz: \"kullanılmamıştır\". Yani metinde karşılığı OLMAYAN şıkkı arıyorsun. Her şıkkın metindeki karşılığını bul ve yanına yaz.",
+    "A: Gelişigüzel ↔ metinde \"rastgele\" ✓.",
+    "B: Anlaşılması güç ↔ metinde \"çetrefilli\" ✓.",
+    "D: Kendine has ↔ metinde \"özgün\" ✓.",
+    "C: \"Kısa ve öz anlatım\" (veciz, özlü) karşılığı metinde yok ✗. Cevap C."
+   ],
+   "hataAnaliz": "\"Rastgele = gelişigüzel\" eşleşmesini kuramadın (metinde \"rastgele\"yi daire içine aldığın hâlde). Olumsuz soru kökünde (\"kullanılmamıştır\") eşleşeni değil, eşleşmeyeni aramak gerekiyordu.",
+   "tuyo": "Her şıkkın metindeki karşılığını bulup şıkkın yanına yaz (A – rastgele, B – çetrefilli, D – özgün). Karşılığı bulunamayan şık cevaptır.",
+   "dikkat": "Rastgele = gelişigüzel = plansız. Çetrefil(li) = karışık, anlaşılması güç. Özgün = orijinal, kendine has. Veciz/özlü = kısa ve öz."
+  },
+  {
+   "kod": "TUR-SÖZ-1",
+   "altKonu": "Deyimler",
+   "soru": "Boşluklara getirilemeyecek deyim (ateşle oynamak, göz doldurmak, başım gözüm üstüne, göze gelmek).",
+   "hata": "“Göz doldurmak” (beğeni kazanmak) ile “göze gelmek” (nazar) deyimlerini karıştırdı; ikisi de “göz” ile başladığı için kelimeye göre karar verdi.",
+   "dogruYol": "Deyimi anlamına göre öğren; aynı kelimeyle başlayanları yan yana tut (göz doldurmak, göze gelmek, göz atmak, göz yummak). Cevap: göze gelmek.",
+   "gorsel": [
+    "sorular/TUR-SOZ-1.png"
+   ],
+   "cevap": "D) göze gelmek",
+   "senin": "C) göz doldurmak",
+   "cozum": [
+    "Her boşluğun anlamını deyimle eşleştir.",
+    "Tehlikeli bir işle uğraşmak → ateşle oynamak.",
+    "Görünüşüyle beklenenden çok etkilemek → göz doldurmak.",
+    "İstekleri içtenlikle kabul etmek → başım gözüm üstüne.",
+    "Göze gelmek = nazara uğramak; hiçbir boşluğa uymaz. Cevap D."
+   ],
+   "hataAnaliz": "\"Göz doldurmak\" (görünüşüyle beğeni kazanmak) ile \"göze gelmek\" (nazar değmek) karıştı; ikisi de \"göz\" kelimesiyle başladığı için kelimeye göre karar verdin.",
+   "tuyo": "Deyim defteri tut: her yeni deyimi anlamı ve kendi kurduğun bir örnek cümleyle yaz. Aynı kelimeyle başlayan deyimleri yan yana öğren (göz doldurmak / göze gelmek / göz yummak / göz atmak).",
+   "dikkat": "Göz doldurmak = görünüşüyle beğeni kazanmak. Göze gelmek = nazara uğramak. Başım gözüm üstüne = isteğini memnuniyetle yaparım."
+  },
+  {
+   "kod": "TUR-SÖZ-4",
+   "altKonu": "Deyimler",
+   "soru": "“Şaşırma” anlamı taşıyan deyim (“… ----” boşluğu için).",
+   "hata": "“Tüyleri diken diken olmak” (korku) ile “beynimden vurulmuşa dönmek” (şaşkınlık) deyimlerinin duygusunu karıştırdı.",
+   "dogruYol": "Önce cümledeki duyguyu belirle (şaşkınlık), sonra o duyguya ait deyimi ara. Cevap: beynimden vurulmuşa döndüm.",
+   "gorsel": [
+    "sorular/TUR-SOZ-4.png"
+   ],
+   "cevap": "D) beynimden vurulmuşa döndüm",
+   "senin": "C) tüylerim diken diken oldu",
+   "cozum": [
+    "Cümle: \"Dün akşam ansızın onun geldiğini görünce ----.\" Duygu: şaşırma.",
+    "D: Beyninden vurulmuşa dönmek = birden çok şaşırmak, sersemlemek ✓.",
+    "A: Kan beynine sıçramak = öfkelenmek ✗.",
+    "B: Başından aşağı kaynar sular dökülmek = kötü bir haber karşısında büyük üzüntü/sarsıntı ✗.",
+    "C: Tüyleri diken diken olmak = korku, dehşet ya da çok etkilenme ✗."
+   ],
+   "hataAnaliz": "\"Tüylerim diken diken oldu\" (korku/ürperme) ile \"beynimden vurulmuşa döndüm\" (şaşkınlık) karıştı.",
+   "tuyo": "Duygu deyimlerini duyguya göre grupla: Öfke → kan beynine sıçramak, tepesi atmak. Korku → tüyleri diken diken olmak, ödü kopmak. Şaşkınlık → beyninden vurulmuşa dönmek, küçük dilini yutmak. Üzüntü → başından aşağı kaynar sular dökülmek, yüreği parçalanmak.",
+   "dikkat": "Deyimi gerçek anlamıyla değil, hangi DUYGUYU anlattığıyla öğren."
+  },
+  {
+   "kod": "TUR-SÖZ-6",
+   "altKonu": "Deyimler",
+   "soru": "“Can damarına basmak” sözüyle anlatılmak istenen.",
+   "hata": "Deyimin anlamını bilmediği için metindeki “farklı” sözcüğüne bağlanıp “dil ve anlatımıyla farklı olmak” şıkkını seçti.",
+   "dogruYol": "Deyimin kendi kelimelerinin mecazını düşün (can damarı = en önemli yer, basmak = dokunmak); metindeki başka sözcüğü deyimin anlamı sanma. Cevap: bir işin en önemli yönü üzerinde durmak.",
+   "gorsel": [
+    "sorular/TUR-SOZ-6.png"
+   ],
+   "cevap": "C) Bir işin en önemli yönü üzerinde durmak",
+   "senin": "A) Dil ve anlatımıyla farklı olmak",
+   "cozum": [
+    "Deyimin KENDİ kelimelerini düşün: can damarı = hayati, en önemli yer; basmak = oraya dokunmak.",
+    "Can damarına basmak = bir şeyin en önemli, en hassas noktasına dokunmak.",
+    "Metinde yazarlar, okurun en önemli noktasına dokunan konular buluyor → C ✓."
+   ],
+   "hataAnaliz": "Deyimin anlamını bilmeyince metindeki yakın bir kelimeye (\"farklı\") bağlayıp tahmin ettin: çeldiriciye takıldın.",
+   "tuyo": "Deyimin anlamını tahmin ederken deyimin KENDİ kelimelerinin mecaz anlamını düşün (can damarı → en önemli yer). Metindeki başka bir sıfatı (\"farklı\") deyimin anlamı sanma.",
+   "dikkat": "Can damarı = en önemli, hayati nokta. Can damarına basmak = bir işin/konunun en önemli noktasını yakalamak. Söz sanatları (benzetme)"
+  },
+  {
+   "kod": "TUR-SÖZ-5",
+   "altKonu": "Benzetme",
+   "soru": "Tavus kuşu benzetmesiyle anlatılmak istenen (altı çizili sözle).",
+   "hata": "Doğru cevabı (değişik sanat dallarında eser vermesi) buldu ama emin değildi; benzetmenin anlamını hemen ardındaki açıklama cümlelerinde doğrulamadı.",
+   "dogruYol": "Benzetmenin anlamını hemen ardından gelen açıklama cümlelerinde (şair, öykücü, oymacı, ebru ustası) ara; çok yönlülüğü bu cümlelerden çıkar.",
+   "gorsel": [
+    "sorular/TUR-SOZ-5.png"
+   ],
+   "cevap": "C) Değişik sanat dallarında eser vermesi",
+   "senin": "C",
+   "cozum": [
+    "Benzetme: \"her tüyünde farklı bir renk parlayan bir tavus kuşu gibi.\"",
+    "Anlamı, metnin hemen ardından gelen cümlelerde açıklanıyor: şair, öykücü, ahşap oymacısı, ebru ustası.",
+    "Her tüyünde farklı renk = çok yönlülük, farklı sanat dallarında eser vermek → C ✓."
+   ],
+   "hataAnaliz": "A'ya “düşen” yazınca farklı sandın; ama düşmek de inmek de yukarıdan aşağıya hareket. Kelime değişti, ANLAM ÇEKİRDEĞİ aynı kaldı. C ile D'nin yanına “Aynı” yazdın; oysa C'de “taşıttan çıkmak” anlamı var. Asıl şiirdeki sanatı “kişileştirme” diye belirledin. “Dönmeyen gemiler olduk” dizesinde gemiye insan özelliği verilmiyor; tersine İNSAN (biz) GEMİYE benzetiliyor. Bu yüzden kişileştirme olan B'yi seçtin. D'de tezat görünce benzetmeyi aramayı bıraktın.",
+   "tuyo": "Benzetmenin anlamını hemen ardından gelen açıklama cümlelerinde ara.",
+   "dikkat": "Benzetme (… gibi) sorularında cevap çoğunlukla metnin devamında açıklanır."
+  }
+ ],
+ "sorular": [
+  {
+   "id": "tur-soz-001",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-3",
+   "tur": "benzer",
+   "metin": "“Kaybettiğim kolyemi sonunda yatağın altında buldum.” cümlesinde “bulmak” hangi anlamdadır?",
+   "secenekler": [
+    "Bir yargıya varmak",
+    "Kaybedilen bir şeyi yeniden ele geçirmek",
+    "İcat etmek",
+    "Hesaplamak"
+   ],
+   "dogru": "B",
+   "cozum": "Cümlede kolyenin kaybedildiği söylendiği için “bulmak” yeniden ele geçirmek anlamındadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-002",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-3",
+   "tur": "benzer",
+   "metin": "“Bu filmi çok sıkıcı buldum.” cümlesinde “bulmak” hangi anlamdadır?",
+   "secenekler": [
+    "Bir görüşe, yargıya varmak",
+    "Kaybedileni ele geçirmek",
+    "Karşılaşmak",
+    "Keşfetmek"
+   ],
+   "dogru": "A",
+   "cozum": "Filme ilişkin bir yargıya varılmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-003",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-3",
+   "tur": "benzer",
+   "metin": "“Parkta eski bir arkadaşımı buldum.” cümlesinde “bulmak” hangi anlamdadır?",
+   "secenekler": [
+    "Bir yargıya varmak",
+    "Arayarak veya aramadan biriyle karşılaşmak",
+    "Kaybedileni ele geçirmek",
+    "Satın almak"
+   ],
+   "dogru": "B",
+   "cozum": "Arkadaşla aramadan karşılaşılmıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-004",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-9",
+   "tur": "benzer",
+   "metin": "“Çocuğu sabah okula bıraktı.” ve “Kötü alışkanlıklarını bıraktı.” cümlelerinde “bırakmak” hangi anlamlardadır?",
+   "secenekler": [
+    "İkisinde de unutmak",
+    "Götürüp bir yere ulaştırmak – vazgeçmek",
+    "İkisinde de ertelemek",
+    "Satmak – almak"
+   ],
+   "dogru": "B",
+   "cozum": "Okula bırakmak götürüp ulaştırmak; alışkanlığı bırakmak vazgeçmek anlamındadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-005",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-9",
+   "tur": "benzer",
+   "metin": "“Tut” sözcüğü hangi cümlede “benimsemek, beğenilmek” anlamındadır?",
+   "secenekler": [
+    "Elimi tut.",
+    "Bu şarkı çok tuttu.",
+    "Odayı on dakikada tuttu.",
+    "Sıra tuttum."
+   ],
+   "dogru": "B",
+   "cozum": "Şarkının benimsenip beğenilmesi söz konusudur.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-006",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-9",
+   "tur": "benzer",
+   "metin": "“Kitabı masada unuttum.” cümlesindeki “unutmak” yerine hangisi kullanılabilir?",
+   "secenekler": [
+    "Bıraktım",
+    "Erteledim",
+    "Emanet ettim",
+    "Aldım"
+   ],
+   "dogru": "A",
+   "cozum": "Bir yerde unutmak anlamı “bıraktım” ile karşılanır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-007",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-10",
+   "tur": "benzer",
+   "metin": "“Yüzüne biraz allık çaldı.” cümlesinde “çalmak” hangi anlamdadır?",
+   "secenekler": [
+    "Hırsızlık yapmak",
+    "Sürmek",
+    "Müzik aleti çalmak",
+    "Zil çalmak"
+   ],
+   "dogru": "B",
+   "cozum": "Allığın yüze sürülmesi söz konusudur.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-008",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-10",
+   "tur": "benzer",
+   "metin": "“Bu kumaşın rengi maviye çalıyor.” cümlesinde “çalmak” hangi anlamdadır?",
+   "secenekler": [
+    "Benzemek, andırmak",
+    "Sürmek",
+    "Hırsızlık yapmak",
+    "Vurmak"
+   ],
+   "dogru": "A",
+   "cozum": "Rengin maviye benzemesi anlatılıyor.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-009",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-10",
+   "tur": "benzer",
+   "metin": "“Bu iş bütün günümü çaldı.” cümlesinde “çalmak” hangi anlamdadır?",
+   "secenekler": [
+    "Zamanını almak",
+    "Sürmek",
+    "Müzik yapmak",
+    "Benzemek"
+   ],
+   "dogru": "A",
+   "cozum": "İş, günün zamanını almıştır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-010",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "benzer",
+   "metin": "“Sevinç” sözcüğünün eş anlamlısı hangisidir?",
+   "secenekler": [
+    "Mutluluk",
+    "Kıvanç",
+    "Heyecan",
+    "Gülümseme"
+   ],
+   "dogru": "B",
+   "cozum": "Sevinç ile kıvanç birebir aynı anlamdadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-011",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "benzer",
+   "metin": "Hangisi eş anlamlı bir sözcük çifti DEĞİLDİR?",
+   "secenekler": [
+    "siyah – kara",
+    "yanıt – cevap",
+    "mutluluk – neşe",
+    "okul – mektep"
+   ],
+   "dogru": "C",
+   "cozum": "Mutluluk ile neşe yakın anlamlıdır; diğer üç çift eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-012",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "benzer",
+   "metin": "“Bu güzel ve hoş hediye için teşekkür ederim.” cümlesindeki anlatım bozukluğunun nedeni hangisidir?",
+   "secenekler": [
+    "Eş anlamlı sözcüklerin birlikte kullanılması",
+    "Yüklem eksikliği",
+    "Yazım yanlışı",
+    "Noktalama hatası"
+   ],
+   "dogru": "A",
+   "cozum": "Aynı varlık için eş anlamlı “güzel ve hoş” birlikte kullanılmıştır; bu gereksiz kullanım anlatım bozukluğu yaratır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-013",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "benzer",
+   "metin": "Hangisi yakın anlamlı bir sözcük çiftidir?",
+   "secenekler": [
+    "siyah – kara",
+    "kırmızı – al",
+    "bakmak – seyretmek",
+    "cevap – yanıt"
+   ],
+   "dogru": "C",
+   "cozum": "Bakmak ile seyretmek arasında derece ve ayrıntı farkı vardır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-014",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "benzer",
+   "metin": "“Ara sıra” ve “bazen” sözcükleri için hangisi doğrudur?",
+   "secenekler": [
+    "Zıt anlamlıdır.",
+    "Eş anlamlıdır.",
+    "Yakın anlamlıdır.",
+    "Sesteştir."
+   ],
+   "dogru": "B",
+   "cozum": "İki sözcük birbirinin yerini tamamen tutar; eş anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-015",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "benzer",
+   "metin": "Hangi sözcük çifti yakın anlamlıdır?",
+   "secenekler": [
+    "okul – mektep",
+    "cevap – yanıt",
+    "kara – siyah",
+    "ağlamak – gözleri dolmak"
+   ],
+   "dogru": "D",
+   "cozum": "Ağlamak ile gözleri dolmak anlamca yakındır ama birebir aynı değildir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-016",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-7",
+   "tur": "benzer",
+   "metin": "“Kitapları rafa gelişigüzel dizmişti.” cümlesindeki “gelişigüzel” yerine hangisi kullanılabilir?",
+   "secenekler": [
+    "Özenle",
+    "Rastgele",
+    "Sırayla",
+    "Dikkatle"
+   ],
+   "dogru": "B",
+   "cozum": "Gelişigüzel ile rastgele aynı anlamdadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-017",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-7",
+   "tur": "benzer",
+   "metin": "“Çetrefilli bir konu” ne demektir?",
+   "secenekler": [
+    "Kolay anlaşılan",
+    "Karışık, anlaşılması güç",
+    "Kısa",
+    "Eğlenceli"
+   ],
+   "dogru": "B",
+   "cozum": "Çetrefilli, anlaşılması güç demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-018",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-7",
+   "tur": "benzer",
+   "metin": "“Kısa ve öz anlatım” anlamındaki sözcük hangisidir?",
+   "secenekler": [
+    "Veciz",
+    "Akıcı",
+    "Süslü",
+    "Ağır"
+   ],
+   "dogru": "A",
+   "cozum": "Veciz, kısa ve öz anlatım demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-019",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-1",
+   "tur": "benzer",
+   "metin": "“Yeni aldığımız araba ilk görüşte herkesin ----.” Boşluğa hangisi gelmelidir?",
+   "secenekler": [
+    "gözüne geldi",
+    "gözünü doldurdu",
+    "gözünü yumdu",
+    "gözüne battı"
+   ],
+   "dogru": "B",
+   "cozum": "“Göz doldurmak” görünüşüyle beğeni kazanmak demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-020",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-1",
+   "tur": "benzer",
+   "metin": "“Çocuğu o kadar övdüler ki sonunda ---- hastalandı derler.” Boşluğa hangisi gelmelidir?",
+   "secenekler": [
+    "göze geldi",
+    "göz doldurdu",
+    "göz attı",
+    "göz yumdu"
+   ],
+   "dogru": "A",
+   "cozum": "“Göze gelmek” nazara uğramak demektir; cümledeki anlama uygundur.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-021",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-1",
+   "tur": "benzer",
+   "metin": "“Çok tehlikeli bir işe girişmek” anlamındaki deyim hangisidir?",
+   "secenekler": [
+    "Ateşle oynamak",
+    "Ağzı kulaklarına varmak",
+    "Burnu havada olmak",
+    "Kulak vermek"
+   ],
+   "dogru": "A",
+   "cozum": "“Ateşle oynamak” çok tehlikeli bir işle uğraşmak demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-022",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "benzer",
+   "metin": "“Kapının ardında ani bir ses duyunca ----.” Korku anlamı için hangisi gelmelidir?",
+   "secenekler": [
+    "tüylerim diken diken oldu",
+    "ağzım kulaklarıma vardı",
+    "gözüm tuttu",
+    "kulak kabarttım"
+   ],
+   "dogru": "A",
+   "cozum": "“Tüyleri diken diken olmak” korku duygusunu anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-023",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "benzer",
+   "metin": "Hangisi “çok şaşırmak” anlamındadır?",
+   "secenekler": [
+    "Küçük dilini yutmak",
+    "Göz atmak",
+    "Ağzı kulaklarına varmak",
+    "Burnu havada olmak"
+   ],
+   "dogru": "A",
+   "cozum": "“Küçük dilini yutmak” şaşkınlığı anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-024",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "benzer",
+   "metin": "“Kan beynine sıçramak” deyimi hangi duyguyu anlatır?",
+   "secenekler": [
+    "Sevinç",
+    "Öfke",
+    "Korku",
+    "Özlem"
+   ],
+   "dogru": "B",
+   "cozum": "“Kan beynine sıçramak” öfkelenmeyi anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-025",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-6",
+   "tur": "benzer",
+   "metin": "“Toplantıda sorunun can damarına bastı, herkes ne demek istediğini hemen anladı.” Altı çizili söz ne anlama gelir?",
+   "secenekler": [
+    "Konuyu uzattı",
+    "Sorunun en önemli noktasını ortaya koydu",
+    "Konuyu değiştirdi",
+    "Kızgınlıkla konuştu"
+   ],
+   "dogru": "B",
+   "cozum": "“Can damarına basmak” bir şeyin en önemli noktasına dokunmak demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-026",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-6",
+   "tur": "benzer",
+   "metin": "“Can alıcı nokta” ifadesi neyi anlatır?",
+   "secenekler": [
+    "En önemli nokta",
+    "En tehlikeli yer",
+    "En kolay soru",
+    "Konunun başlangıcı"
+   ],
+   "dogru": "A",
+   "cozum": "“Can alıcı nokta” en önemli, en belirleyici noktadır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-027",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-6",
+   "tur": "benzer",
+   "metin": "Bir deyimin anlamını bilmiyorsan hangisi en doğru yoldur?",
+   "secenekler": [
+    "Metindeki herhangi bir sıfatı seçmek",
+    "Deyimin kendi kelimelerinin mecaz anlamını ve metindeki kullanımını birlikte düşünmek",
+    "En kısa şıkkı seçmek",
+    "Soruyu atlamak"
+   ],
+   "dogru": "B",
+   "cozum": "Deyimin kelimelerinin mecazı ile metindeki kullanım birlikte düşünülmelidir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-028",
+   "altKonu": "Benzetme",
+   "kaynakKod": "TUR-SÖZ-5",
+   "tur": "benzer",
+   "metin": "“O, her mevsim başka bir meyve veren bahçe gibidir; bazen şiir yazar, bazen beste yapar, bazen resim çizer.” Benzetmeyle anlatılmak istenen nedir?",
+   "secenekler": [
+    "Çok yönlü olması",
+    "Bahçıvan olması",
+    "Yalnızca şiir yazması",
+    "Çok çalışmaması"
+   ],
+   "dogru": "A",
+   "cozum": "Bahçenin her mevsim farklı meyve vermesi, kişinin farklı alanlarda üretmesine benzetilmiştir: çok yönlülük.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-029",
+   "altKonu": "Benzetme",
+   "kaynakKod": "TUR-SÖZ-5",
+   "tur": "benzer",
+   "metin": "“… gibi” ile kurulan söz sanatının adı nedir?",
+   "secenekler": [
+    "Kişileştirme",
+    "Benzetme",
+    "Abartma",
+    "Konuşturma"
+   ],
+   "dogru": "B",
+   "cozum": "“… gibi” ile kurulan anlatım benzetmedir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-030",
+   "altKonu": "Benzetme",
+   "kaynakKod": "TUR-SÖZ-5",
+   "tur": "benzer",
+   "metin": "“Dağlar gibi sağlam bir insandır.” cümlesinde vurgulanan özellik hangisidir?",
+   "secenekler": [
+    "Boyunun uzunluğu",
+    "Güçlü ve güvenilir olması",
+    "Yaşlı olması",
+    "Dağcı olması"
+   ],
+   "dogru": "B",
+   "cozum": "Dağın sağlamlığı, insanın güçlü ve güvenilir olmasına benzetilmiştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-031",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: üşümek – donmak. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "Derece farkı vardır; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-032",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: siyah – kara. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Yer değiştirme testinde anlam bozulmaz; eş anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-033",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: sevinç – mutluluk. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "“Mutluluk evi” denir, “sevinç evi” denmez; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-034",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: okul – mektep. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Anlamları birebir aynıdır; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-035",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: bakmak – seyretmek. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "Aralarında ayrıntı farkı vardır; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-036",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: ara sıra – bazen. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "İki sözcük birbirinin yerini tamamen tutar; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-037",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: gülümsemek – gülmek. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "Gülmek gülümsemekten daha şiddetlidir; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-038",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: cevap – yanıt. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Anlamları birebir aynıdır; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-039",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: sevinç – kıvanç. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Sevinç ile kıvanç birebir aynı anlamdadır; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-040",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: serin – soğuk. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "Soğuk, serinden daha şiddetlidir; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-041",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: hediye – armağan. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Anlamları birebir aynıdır; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-042",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: ağlamak – gözleri dolmak. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "Anlamca yakındır ama birebir aynı değildir; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-043",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: vakit – zaman. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Anlamları birebir aynıdır; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-044",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-8",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: mutluluk – neşe. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "B",
+   "cozum": "Mutluluk sürekli bir hâl, neşe ise daha çok anlık bir duygudur; yakın anlamlıdır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-045",
+   "altKonu": "Eş ve yakın anlamlı sözcükler",
+   "kaynakKod": "TUR-SÖZ-2",
+   "tur": "alistirma",
+   "metin": "Sözcük çifti: özgürlük – hürriyet. Eş anlamlı mı, yakın anlamlı mı?",
+   "secenekler": [
+    "Eş anlamlı",
+    "Yakın anlamlı"
+   ],
+   "dogru": "A",
+   "cozum": "Anlamları birebir aynıdır; eştir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-046",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “ağzı kulaklarına vardı”.\nCümle: Karne notlarını görünce ağzı kulaklarına vardı.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "E",
+   "cozum": "“Ağzı kulaklarına varmak” sevinci anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-047",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-1",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “başım gözüm üstüne”.\nCümle: “Bahçeyi temizler misin?” “Başım gözüm üstüne!”\nDeyimin anlattığı anlam hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "J",
+   "cozum": "“Başım gözüm üstüne” isteği içtenlikle kabul etmek demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-048",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “kan beynine sıçradı”.\nCümle: Haksız yere suçlanınca kan beynine sıçradı.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "A",
+   "cozum": "“Kan beynine sıçramak” öfkeyi anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-049",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-6",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “can damarına bastı”.\nCümle: Öğretmen konunun can damarına basınca herkes sustu.\nDeyimin anlattığı anlam hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "H",
+   "cozum": "“Can damarına basmak” bir işin en önemli noktasına dokunmak demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-050",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “beyninden vurulmuşa döndü”.\nCümle: Kapıdan içeri babasını görünce beyninden vurulmuşa döndü.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "C",
+   "cozum": "“Beyninden vurulmuşa dönmek” şaşkınlığı anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-051",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “gözünü doldurdu”.\nCümle: Yeni kesilen saçı ona çok yakıştı ve gören herkesin gözünü doldurdu.\nDeyimin anlattığı anlam hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "F",
+   "cozum": "“Göz doldurmak” görünüşüyle beğeni kazanmak demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-052",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “küçük dilini yuttu”.\nCümle: Yarışmayı kazandığını duyunca küçük dilini yuttu.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "C",
+   "cozum": "“Küçük dilini yutmak” şaşkınlığı anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-053",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “ödü koptu”.\nCümle: Karanlık odada garip bir ses duyunca ödü koptu.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "B",
+   "cozum": "“Ödü kopmak” korkuyu anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-054",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “tepesi attı”.\nCümle: Tartışma uzayınca tepesi attı ve kapıyı çarparak çıktı.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "A",
+   "cozum": "“Tepesi atmak” öfkelenmeyi anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-055",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-4",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “yüreği burkuldu”.\nCümle: Yaşlı komşusunun hasta olduğunu duyunca yüreği burkuldu.\nDeyimin anlattığı duygu hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "D",
+   "cozum": "“Yüreği burkulmak” üzüntüyü anlatır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-056",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-1",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “ateşle oynamaktır”.\nCümle: Yanan ormanın yanında piknik yapmak ateşle oynamaktır.\nDeyimin anlattığı anlam hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "I",
+   "cozum": "“Ateşle oynamak” çok tehlikeli bir işe girişmek demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-057",
+   "altKonu": "Deyimler",
+   "kaynakKod": "TUR-SÖZ-1",
+   "tur": "alistirma",
+   "metin": "Altı çizili deyim: “göze geldi”.\nCümle: Çocuğa o kadar iltifat ettiler ki sonunda göze geldi derler.\nDeyimin anlattığı anlam hangisidir?",
+   "secenekler": [
+    "öfke",
+    "korku",
+    "şaşkınlık",
+    "üzüntü",
+    "sevinç",
+    "görünüşüyle beğeni kazanma",
+    "nazara uğrama",
+    "en önemli noktaya dokunma",
+    "çok tehlikeli bir işe girişme",
+    "isteği içtenlikle kabul etme"
+   ],
+   "dogru": "G",
+   "cozum": "“Göze gelmek” nazara uğramak demektir.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-058",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-9",
+   "tur": "alistirma",
+   "metin": "Aşağıdaki üç cümlede altı çizili “bırakmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(1) Çantasını kapının önüne bıraktı.\n(2) Annem beni her sabah okulun kapısına bırakır.\n(3) Bu işi yarına bırakma.",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "C",
+   "cozum": "Bir yere koymak, götürüp ulaştırmak ve ertelemek olmak üzere 3 farklı anlam vardır.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-059",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-10",
+   "tur": "alistirma",
+   "metin": "Aşağıdaki üç cümlede altı çizili “çalmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(4) Komşumuz akşamları gitar çalar.\n(5) Bando takımı törende marşı çaldı.\n(6) Hırsız kasadaki parayı çalmış.",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "B",
+   "cozum": "Cümle 4 ve 5 çalgı çalmak, cümle 6 hırsızlık yapmak anlamındadır: 2 farklı anlam.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-060",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-3",
+   "tur": "alistirma",
+   "metin": "Aşağıdaki üç cümlede altı çizili “bulmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(7) Kaybettiğim kalemi çantamın dibinde buldum.\n(8) Bu kitabı hiç sıkıcı bulmadım.\n(9) Bu soruyu çok kolay buldum.",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "B",
+   "cozum": "Cümle 7 kaybedileni yeniden bulmak, cümle 8 ve 9 bir yargıya varmak anlamındadır: 2 farklı anlam.",
+   "emin": true
+  },
+  {
+   "id": "tur-soz-061",
+   "altKonu": "Çok anlamlılık",
+   "kaynakKod": "TUR-SÖZ-3",
+   "tur": "alistirma",
+   "metin": "Aşağıdaki üç cümlede altı çizili “tutmak” sözcüğü kaç farklı anlamda kullanılmıştır?\n(10) Çocuk annesinin elini sıkıca tuttu.\n(11) Bu moda gençler arasında çok tuttu.\n(12) Verdiği sözü her zaman tutar.",
+   "secenekler": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "dogru": "C",
+   "cozum": "Elle kavramak, benimsenmek/beğenilmek ve yerine getirmek olmak üzere 3 farklı anlam vardır.",
+   "emin": true
+  }
+ ]
 }
