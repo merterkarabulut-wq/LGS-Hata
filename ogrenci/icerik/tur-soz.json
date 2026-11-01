@@ -115,7 +115,7 @@
    "senin": "c için \"Mutluluktan\" yazdın",
    "cozum": [
     "Eş anlamlı testi: iki kelime HER cümlede birbirinin yerine geçebiliyor mu?",
-    "a: kısa bir zaman → süre/vakit. b: gökyüzü → sema, özgürlük → hürriyet. ç: duygu → his.",
+    "a: kısa bir zaman → süre/vakit. b: gökyüzü → sema, özgürlük → hürriyet. d: duygu → his.",
     "c: sevinç ↔ kıvanç birebir aynı anlamda → \"kıvançtan\".",
     "Neşe ve mutluluk yakın anlamlıdır, birebir aynı değildir."
    ],
@@ -949,18 +949,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “ağzı kulaklarına vardı”.\nCümle: Karne notlarını görünce ağzı kulaklarına vardı.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
     "şaşkınlık",
     "üzüntü",
-    "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "öfke",
+    "sevinç"
    ],
-   "dogru": "E",
+   "dogru": "D",
    "cozum": "“Ağzı kulaklarına varmak” sevinci anlatır.",
    "emin": true
   },
@@ -971,18 +965,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “başım gözüm üstüne”.\nCümle: “Bahçeyi temizler misin?” “Başım gözüm üstüne!”\nDeyimin anlattığı anlam hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
-    "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
     "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "görünüşüyle beğeni kazanma",
+    "isteği içtenlikle kabul etme",
+    "nazara uğrama"
    ],
-   "dogru": "J",
+   "dogru": "C",
    "cozum": "“Başım gözüm üstüne” isteği içtenlikle kabul etmek demektir.",
    "emin": true
   },
@@ -994,15 +982,9 @@
    "metin": "Altı çizili deyim: “kan beynine sıçradı”.\nCümle: Haksız yere suçlanınca kan beynine sıçradı.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
     "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
     "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "korku",
+    "şaşkınlık"
    ],
    "dogru": "A",
    "cozum": "“Kan beynine sıçramak” öfkeyi anlatır.",
@@ -1015,18 +997,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “can damarına bastı”.\nCümle: Öğretmen konunun can damarına basınca herkes sustu.\nDeyimin anlattığı anlam hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
-    "sevinç",
     "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
     "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "en önemli noktaya dokunma",
+    "nazara uğrama"
    ],
-   "dogru": "H",
+   "dogru": "C",
    "cozum": "“Can damarına basmak” bir işin en önemli noktasına dokunmak demektir.",
    "emin": true
   },
@@ -1037,18 +1013,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “beyninden vurulmuşa döndü”.\nCümle: Kapıdan içeri babasını görünce beyninden vurulmuşa döndü.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
-    "öfke",
     "korku",
-    "şaşkınlık",
-    "üzüntü",
+    "öfke",
     "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "şaşkınlık"
    ],
-   "dogru": "C",
+   "dogru": "D",
    "cozum": "“Beyninden vurulmuşa dönmek” şaşkınlığı anlatır.",
    "emin": true
   },
@@ -1059,18 +1029,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “gözünü doldurdu”.\nCümle: Yeni kesilen saçı ona çok yakıştı ve gören herkesin gözünü doldurdu.\nDeyimin anlattığı anlam hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
-    "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
     "en önemli noktaya dokunma",
+    "görünüşüyle beğeni kazanma",
     "çok tehlikeli bir işe girişme",
     "isteği içtenlikle kabul etme"
    ],
-   "dogru": "F",
+   "dogru": "B",
    "cozum": "“Göz doldurmak” görünüşüyle beğeni kazanmak demektir.",
    "emin": true
   },
@@ -1081,16 +1045,10 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “küçük dilini yuttu”.\nCümle: Yarışmayı kazandığını duyunca küçük dilini yuttu.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
-    "öfke",
     "korku",
-    "şaşkınlık",
-    "üzüntü",
     "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "şaşkınlık",
+    "üzüntü"
    ],
    "dogru": "C",
    "cozum": "“Küçük dilini yutmak” şaşkınlığı anlatır.",
@@ -1103,18 +1061,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “ödü koptu”.\nCümle: Karanlık odada garip bir ses duyunca ödü koptu.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
     "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "üzüntü",
+    "şaşkınlık",
+    "korku"
    ],
-   "dogru": "B",
+   "dogru": "D",
    "cozum": "“Ödü kopmak” korkuyu anlatır.",
    "emin": true
   },
@@ -1125,18 +1077,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “tepesi attı”.\nCümle: Tartışma uzayınca tepesi attı ve kapıyı çarparak çıktı.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
     "üzüntü",
     "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "şaşkınlık",
+    "öfke"
    ],
-   "dogru": "A",
+   "dogru": "D",
    "cozum": "“Tepesi atmak” öfkelenmeyi anlatır.",
    "emin": true
   },
@@ -1147,18 +1093,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “yüreği burkuldu”.\nCümle: Yaşlı komşusunun hasta olduğunu duyunca yüreği burkuldu.\nDeyimin anlattığı duygu hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
     "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
-    "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "üzüntü",
+    "öfke",
+    "şaşkınlık"
    ],
-   "dogru": "D",
+   "dogru": "B",
    "cozum": "“Yüreği burkulmak” üzüntüyü anlatır.",
    "emin": true
   },
@@ -1169,18 +1109,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “ateşle oynamaktır”.\nCümle: Yanan ormanın yanında piknik yapmak ateşle oynamaktır.\nDeyimin anlattığı anlam hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
-    "sevinç",
-    "görünüşüyle beğeni kazanma",
+    "isteği içtenlikle kabul etme",
     "nazara uğrama",
     "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "çok tehlikeli bir işe girişme"
    ],
-   "dogru": "I",
+   "dogru": "D",
    "cozum": "“Ateşle oynamak” çok tehlikeli bir işe girişmek demektir.",
    "emin": true
   },
@@ -1191,18 +1125,12 @@
    "tur": "alistirma",
    "metin": "Altı çizili deyim: “göze geldi”.\nCümle: Çocuğa o kadar iltifat ettiler ki sonunda göze geldi derler.\nDeyimin anlattığı anlam hangisidir?",
    "secenekler": [
-    "öfke",
-    "korku",
-    "şaşkınlık",
-    "üzüntü",
-    "sevinç",
-    "görünüşüyle beğeni kazanma",
-    "nazara uğrama",
     "en önemli noktaya dokunma",
-    "çok tehlikeli bir işe girişme",
-    "isteği içtenlikle kabul etme"
+    "nazara uğrama",
+    "isteği içtenlikle kabul etme",
+    "görünüşüyle beğeni kazanma"
    ],
-   "dogru": "G",
+   "dogru": "B",
    "cozum": "“Göze gelmek” nazara uğramak demektir.",
    "emin": true
   },

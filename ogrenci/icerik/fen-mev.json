@@ -442,20 +442,20 @@
   {
    "kod": "FEN-MI-20",
    "altKonu": "Hava durumu ve iklim",
-   "soru": "Verilen ifadeleri iklim ya da hava olayı olarak sınıflandır (ç maddesi: 'Atmosferde meydana gelen olaylardır').",
-   "hata": "On maddenin dokuzunu doğru sınıflandırdı; ç maddesini ('Atmosferde meydana gelen olaylardır') iklim sandı. 'Atmosfer' kelimesini geniş, genel bir kavram gibi yorumladı.",
+   "soru": "Verilen ifadeleri iklim ya da hava olayı olarak sınıflandır (d maddesi: 'Atmosferde meydana gelen olaylardır').",
+   "hata": "On maddenin dokuzunu doğru sınıflandırdı; d maddesini ('Atmosferde meydana gelen olaylardır') iklim sandı. 'Atmosfer' kelimesini geniş, genel bir kavram gibi yorumladı.",
    "dogruYol": "'Atmosferde meydana gelen olaylar' hava olayının tanımıdır. İklim ise bu olayların uzun yıllık ortalamasıdır ve 'ortalama, uzun yıllar, geniş alan' gibi ifadelerle anlatılır.",
    "gorsel": [
     "sorular/FEN-MI-20.png"
    ],
-   "cevap": "İklim: a, c, g, ğ. Hava olayı: b, ç, d, e, f, h.",
-   "senin": "ç maddesini \"İklim\" olarak işaretledin; diğer 9 madde doğru",
+   "cevap": "İklim: a, c, h, i. Hava olayı: b, d, e, f, g, j.",
+   "senin": "d maddesini \"İklim\" olarak işaretledin; diğer 9 madde doğru",
    "cozum": [
-    "İklim: a (yazlar sıcak ve kurak geçer), c (klimatologlar inceler), g (kış ayları kar yağışlı geçer), ğ (35–40 yıllık ortalama).",
-    "Hava olayı: b (dar alan, kısa süre), d (yarın), e (sabah kırağı görüldü), f (günlük 07.00–14.00–21.00 gözlemi), h (akşam %80 kar bekleniyor).",
-    "ç: \"Atmosferde meydana gelen olaylardır\" = hava olaylarının TANIMI. Yağmur, kar, rüzgâr, sis atmosferde olur → hava olayı."
+    "İklim: a (yazlar sıcak ve kurak geçer), c (klimatologlar inceler), h (kış ayları kar yağışlı geçer), i (35–40 yıllık ortalama).",
+    "Hava olayı: b (dar alan, kısa süre), e (yarın), f (sabah kırağı görüldü), g (günlük 07.00–14.00–21.00 gözlemi), j (akşam %80 kar bekleniyor).",
+    "d: \"Atmosferde meydana gelen olaylardır\" = hava olaylarının TANIMI. Yağmur, kar, rüzgâr, sis atmosferde olur → hava olayı."
    ],
-   "hataAnaliz": "\"Atmosfer\" kelimesini geniş/genel bir kavram sanıp ç'yi iklime bağladın. Oysa hava olayları atmosferde meydana gelir; iklim ise bu olayların UZUN YILLAR ortalamasıdır.",
+   "hataAnaliz": "\"Atmosfer\" kelimesini geniş/genel bir kavram sanıp d'yi iklime bağladın. Oysa hava olayları atmosferde meydana gelir; iklim ise bu olayların UZUN YILLAR ortalamasıdır.",
    "tuyo": "İki tanım cümlesini aklında tut: \"Hava olayları: atmosferde meydana gelen olaylardır (yağmur, kar, rüzgâr, sis...).\" \"İklim: geniş bir bölgede hava olaylarının 35–40 yıllık ortalamasıdır.\" İklim tanımında her zaman \"ortalama / uzun süre / geniş alan\" geçer.",
    "dikkat": "\"Atmosferde meydana gelen olay\" → hava olayı. \"Ortalaması, uzun yıllar\" → iklim."
   },

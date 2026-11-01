@@ -213,6 +213,66 @@ def cozum_ayristir(pdf):
 DETAY_ALANLARI = ("gorsel", "cevap", "senin", "cozum", "hataAnaliz", "tuyo", "dikkat")
 
 
+# Kullanıcının istediği elle düzeltmeler (yeniden kesimde kaybolmasın diye burada).
+# TUR-SÖZ-2: kitapçıktaki "ç." maddesi A-B-C-D düzenine uysun diye "d." gösterilir.
+# Görselde "b" harfi aynalanıp "ç"nin yerine konur (150 dpi kesime göre piksel konumları).
+FEN20_METIN = [  # (alan, eski, yeni) — madde harfleri a..ğ,h → a..j
+    ("cevap", "İklim: a, c, g, ğ. Hava olayı: b, ç, d, e, f, h.", "İklim: a, c, h, i. Hava olayı: b, d, e, f, g, j."),
+    ("senin", "ç maddesini", "d maddesini"),
+    ("hataAnaliz", "ç'yi", "d'yi"),
+    ("soru", "ç maddesi", "d maddesi"),
+    ("hata", "ç maddesini", "d maddesini"),
+]
+FEN20_COZUM = [
+    ("g (kış ayları", "h (kış ayları"), ("ğ (35–40", "i (35–40"),
+    ("d (yarın)", "e (yarın)"), ("e (sabah", "f (sabah"), ("f (günlük", "g (günlük"), ("h (akşam", "j (akşam"),
+    ("ç: \"Atmosferde", "d: \"Atmosferde"),
+]
+FEN20_MAGICK = [
+    "-fill", "white",
+    "-draw", "rectangle 70,286 94,322", "-draw", "rectangle 70,330 94,366", "-draw", "rectangle 70,378 94,404",
+    "-draw", "rectangle 70,446 94,474", "-draw", "rectangle 70,516 94,552", "-draw", "rectangle 70,560 94,596",
+    "-draw", "rectangle 70,604 94,634",
+    "-font", "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf", "-pointsize", "20", "-fill", "#1F2A44",
+    "-annotate", "+72+311", "d.", "-annotate", "+72+355", "e.", "-annotate", "+72+399", "f.",
+    "-annotate", "+72+468", "g.", "-annotate", "+72+540", "h.", "-annotate", "+72+584", "i.", "-annotate", "+72+627", "j.",
+    "(", "+clone", "-crop", "555x30+95+446", "+repage", ")", "-geometry", "+100+446", "-composite",
+    "-fill", "white", "-draw", "rectangle 95,446 99,475",
+    "(", "+clone", "-crop", "555x34+95+289", "+repage", ")", "-geometry", "+98+289", "-composite",
+    "-fill", "white", "-draw", "rectangle 95,289 97,322",
+]
+
+
+def elle_duzelt(kod, x, cikti, dpi):
+    if kod == "FEN-MI-20":
+        for alan, eski, yeni in FEN20_METIN:
+            if isinstance(x.get(alan), str):
+                x[alan] = x[alan].replace(eski, yeni)
+        if isinstance(x.get("cozum"), list):
+            yeni_c = []
+            for a in x["cozum"]:
+                for eski, yeni in FEN20_COZUM:
+                    a = a.replace(eski, yeni)
+                yeni_c.append(a)
+            x["cozum"] = yeni_c
+        png = os.path.join(cikti, "FEN-MI-20.png")
+        if dpi == 150 and os.path.exists(png):
+            subprocess.run(["magick", png, *FEN20_MAGICK, png], check=False)
+        return
+    if kod != "TUR-SÖZ-2":
+        return
+    for k in ("cozum",):
+        if isinstance(x.get(k), list):
+            x[k] = [a.replace(" ç: ", " d: ") for a in x[k]]
+    if dpi != 150:
+        return
+    png = os.path.join(cikti, "TUR-SOZ-2.png")
+    if os.path.exists(png):
+        subprocess.run(["magick", png, "(", "+clone", "-crop", "15x19+72+234", "+repage", "-flop", ")",
+                        "(", "-clone", "0", "-fill", "white", "-draw", "rectangle 70,300 84,323", ")",
+                        "-delete", "0", "-swap", "0,1", "-geometry", "+70+301", "-composite", png], check=False)
+
+
 def main(lgs, icerik, cikti, dpi=150):
     os.makedirs(cikti, exist_ok=True)
     soru_pdf, coz_pdf = {}, {}
@@ -258,6 +318,7 @@ def main(lgs, icerik, cikti, dpi=150):
                     t += 1
             else:
                 bulunamayan.append(f"{kod} (çözümler)")
+            elle_duzelt(kod, x, cikti, dpi)
         with open(f, "w", encoding="utf-8") as fh:
             json.dump(d, fh, ensure_ascii=False, indent=1)
         rapor.append(f"{d['id']:8} hata={n:3} gorsel={g:3} cevap={c:3} tuyo={t:3}")

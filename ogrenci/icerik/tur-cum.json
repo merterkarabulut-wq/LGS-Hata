@@ -492,16 +492,12 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun (A tasarı, B beklenti, C azımsama, D küçümseme, E sitem, F pişmanlık, G özlem, H beğeni).\nCümle: Sen mi bu işi başaracaksın, kendine bir bak!",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Sen mi bu işi başaracaksın, kendine bir bak!",
    "secenekler": [
-    "tasarı",
-    "beklenti",
     "azımsama",
-    "küçümseme",
-    "sitem",
+    "beğeni",
     "pişmanlık",
-    "özlem",
-    "beğeni"
+    "küçümseme"
    ],
    "dogru": "D",
    "cozum": "Bir kişiyi değersiz görme vardır: küçümseme.",
@@ -512,18 +508,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Ressamın renkleri kullanışı gerçekten çok etkileyici.",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Ressamın renkleri kullanışı gerçekten çok etkileyici.",
    "secenekler": [
-    "tasarı",
-    "beklenti",
-    "azımsama",
-    "küçümseme",
-    "sitem",
+    "beğeni",
     "pişmanlık",
-    "özlem",
-    "beğeni"
+    "azımsama",
+    "küçümseme"
    ],
-   "dogru": "H",
+   "dogru": "A",
    "cozum": "Bir şeyin etkileyiciliğine hayranlık duyulmuştur: beğeni.",
    "emin": true
   },
@@ -532,18 +524,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Hafta sonu ailemle piknik yapmayı düşünüyorum.",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Hafta sonu ailemle piknik yapmayı düşünüyorum.",
    "secenekler": [
-    "tasarı",
-    "beklenti",
     "azımsama",
-    "küçümseme",
-    "sitem",
-    "pişmanlık",
-    "özlem",
-    "beğeni"
+    "tasarı",
+    "beğeni",
+    "beklenti"
    ],
-   "dogru": "A",
+   "dogru": "B",
    "cozum": "Kendi yapılacak bir plan anlatılmıştır: tasarı.",
    "emin": true
   },
@@ -552,18 +540,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Keşke o gün sana kızmasaydım.",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Keşke o gün sana kızmasaydım.",
    "secenekler": [
-    "tasarı",
-    "beklenti",
-    "azımsama",
-    "küçümseme",
     "sitem",
-    "pişmanlık",
-    "özlem",
-    "beğeni"
+    "tasarı",
+    "beğeni",
+    "pişmanlık"
    ],
-   "dogru": "F",
+   "dogru": "D",
    "cozum": "“Keşke” ve “-masaydım” pişmanlık bildirir.",
    "emin": true
   },
@@ -572,18 +556,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Umarım yarınki sınavda sorular kolay çıkar.",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Umarım yarınki sınavda sorular kolay çıkar.",
    "secenekler": [
-    "tasarı",
     "beklenti",
     "azımsama",
     "küçümseme",
-    "sitem",
-    "pişmanlık",
-    "özlem",
-    "beğeni"
+    "özlem"
    ],
-   "dogru": "B",
+   "dogru": "A",
    "cozum": "“Umarım” ile bir şeyin olması umulmaktadır: beklenti.",
    "emin": true
   },
@@ -592,18 +572,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Keşke zamanında çalışsaydım, şimdi bu kadar zorlanmazdım.",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Keşke zamanında çalışsaydım, şimdi bu kadar zorlanmazdım.",
    "secenekler": [
-    "tasarı",
-    "beklenti",
-    "azımsama",
-    "küçümseme",
-    "sitem",
     "pişmanlık",
-    "özlem",
-    "beğeni"
+    "tasarı",
+    "sitem",
+    "küçümseme"
    ],
-   "dogru": "F",
+   "dogru": "A",
    "cozum": "“Keşke” ve geçmiş bir fırsatın kaçırılması pişmanlıktır.",
    "emin": true
   },
@@ -612,18 +588,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Bunca yıldır bir kere olsun aramadın beni!",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Bunca yıldır bir kere olsun aramadın beni!",
    "secenekler": [
-    "tasarı",
     "beklenti",
-    "azımsama",
-    "küçümseme",
+    "tasarı",
     "sitem",
-    "pişmanlık",
-    "özlem",
-    "beğeni"
+    "azımsama"
    ],
-   "dogru": "E",
+   "dogru": "C",
    "cozum": "Kırgınlıkla yapılan serzeniş sitemdir.",
    "emin": true
   },
@@ -632,18 +604,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Çocukluğumun geçtiği o sokakları ne çok özledim.",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Çocukluğumun geçtiği o sokakları ne çok özledim.",
    "secenekler": [
-    "tasarı",
-    "beklenti",
-    "azımsama",
-    "küçümseme",
     "sitem",
-    "pişmanlık",
     "özlem",
+    "küçümseme",
     "beğeni"
    ],
-   "dogru": "G",
+   "dogru": "B",
    "cozum": "Bir şeyin yokluğunu duymak özlemdir.",
    "emin": true
   },
@@ -652,18 +620,14 @@
    "altKonu": "Duygu ve yargı bildiren cümleler",
    "kaynakKod": "TUR-CÜM-2",
    "tur": "alistirma",
-   "metin": "Cümlenin bildirdiği anlamı listeden bulun.\nCümle: Bu kadarcık yemekle bu kalabalık doyar mı?",
+   "metin": "Cümlenin bildirdiği anlamı seçin.\nCümle: Bu kadarcık yemekle bu kalabalık doyar mı?",
    "secenekler": [
-    "tasarı",
-    "beklenti",
     "azımsama",
-    "küçümseme",
-    "sitem",
     "pişmanlık",
-    "özlem",
-    "beğeni"
+    "beğeni",
+    "sitem"
    ],
-   "dogru": "C",
+   "dogru": "A",
    "cozum": "“Bu kadarcık” ile bir miktarın az bulunduğu azımsamadır.",
    "emin": true
   },

@@ -1168,16 +1168,14 @@
    "altKonu": "Düşünceyi geliştirme yolları",
    "kaynakKod": "TUR-PAR-3",
    "tur": "alistirma",
-   "metin": "Düşünceyi geliştirme yolunu bulun (A tanımlama, B tanık gösterme, C karşılaştırma, D örnekleme, E sayısal veri, F benzetme).\nCümle: Gazeteler günceldir ve çabuk eskir; kitaplar ise yıllarca değerini korur.",
+   "metin": "Düşünceyi geliştirme yolunu seçin.\nCümle: Gazeteler günceldir ve çabuk eskir; kitaplar ise yıllarca değerini korur.",
    "secenekler": [
-    "tanımlama",
-    "tanık gösterme",
     "karşılaştırma",
     "örnekleme",
-    "sayısal veri",
-    "benzetme"
+    "tanımlama",
+    "tanık gösterme"
    ],
-   "dogru": "C",
+   "dogru": "A",
    "cozum": "“Ise” ile iki şey karşılaştırılmıştır.",
    "emin": true
   },
@@ -1186,16 +1184,14 @@
    "altKonu": "Düşünceyi geliştirme yolları",
    "kaynakKod": "TUR-PAR-3",
    "tur": "alistirma",
-   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Atatürk, “Hayatta en hakiki mürşit ilimdir, fendir.” sözüyle bilimin yol gösterici olduğunu belirtmiştir.",
+   "metin": "Düşünceyi geliştirme yolunu seçin.\nCümle: Atatürk, “Hayatta en hakiki mürşit ilimdir, fendir.” sözüyle bilimin yol gösterici olduğunu belirtmiştir.",
    "secenekler": [
+    "benzetme",
     "tanımlama",
     "tanık gösterme",
-    "karşılaştırma",
-    "örnekleme",
-    "sayısal veri",
-    "benzetme"
+    "karşılaştırma"
    ],
-   "dogru": "B",
+   "dogru": "C",
    "cozum": "Atatürk'ün sözü alıntılanmıştır: tanık gösterme.",
    "emin": true
   },
@@ -1204,16 +1200,14 @@
    "altKonu": "Düşünceyi geliştirme yolları",
    "kaynakKod": "TUR-PAR-3",
    "tur": "alistirma",
-   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Araştırmaya katılan 200 öğrencinin 150’si, yani yüzde 75’i, her gün en az bir saat kitap okuduğunu söylemiştir.",
+   "metin": "Düşünceyi geliştirme yolunu seçin.\nCümle: Araştırmaya katılan 200 öğrencinin 150’si, yani yüzde 75’i, her gün en az bir saat kitap okuduğunu söylemiştir.",
    "secenekler": [
-    "tanımlama",
     "tanık gösterme",
-    "karşılaştırma",
-    "örnekleme",
+    "tanımlama",
     "sayısal veri",
     "benzetme"
    ],
-   "dogru": "E",
+   "dogru": "C",
    "cozum": "Sayı ve yüzde ile veri verilmiştir: sayısal veri.",
    "emin": true
   },
@@ -1222,16 +1216,14 @@
    "altKonu": "Düşünceyi geliştirme yolları",
    "kaynakKod": "TUR-PAR-3",
    "tur": "alistirma",
-   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Bir bölgede uzun yıllar boyunca görülen hava olaylarının ortalamasına iklim denir.",
+   "metin": "Düşünceyi geliştirme yolunu seçin.\nCümle: Bir bölgede uzun yıllar boyunca görülen hava olaylarının ortalamasına iklim denir.",
    "secenekler": [
-    "tanımlama",
     "tanık gösterme",
-    "karşılaştırma",
     "örnekleme",
-    "sayısal veri",
-    "benzetme"
+    "tanımlama",
+    "sayısal veri"
    ],
-   "dogru": "A",
+   "dogru": "C",
    "cozum": "“… denir” kalıbıyla bir kavram açıklanmıştır: tanımlama.",
    "emin": true
   },
@@ -1240,16 +1232,14 @@
    "altKonu": "Düşünceyi geliştirme yolları",
    "kaynakKod": "TUR-PAR-3",
    "tur": "alistirma",
-   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Kitaplar, karanlıkta yolumuzu bulmamızı sağlayan fenerler gibidir.",
+   "metin": "Düşünceyi geliştirme yolunu seçin.\nCümle: Kitaplar, karanlıkta yolumuzu bulmamızı sağlayan fenerler gibidir.",
    "secenekler": [
-    "tanımlama",
-    "tanık gösterme",
+    "benzetme",
     "karşılaştırma",
     "örnekleme",
-    "sayısal veri",
-    "benzetme"
+    "tanık gösterme"
    ],
-   "dogru": "F",
+   "dogru": "A",
    "cozum": "“Gibi” ile kitap fenerlere benzetilmiştir: benzetme.",
    "emin": true
   },
@@ -1258,14 +1248,12 @@
    "altKonu": "Düşünceyi geliştirme yolları",
    "kaynakKod": "TUR-PAR-3",
    "tur": "alistirma",
-   "metin": "Düşünceyi geliştirme yolunu bulun.\nCümle: Bazı sözcükler birden fazla anlam taşır. Örneğin “çalmak” sözcüğü hem hırsızlığı hem de müzik yapmayı anlatır.",
+   "metin": "Düşünceyi geliştirme yolunu seçin.\nCümle: Bazı sözcükler birden fazla anlam taşır. Örneğin “çalmak” sözcüğü hem hırsızlığı hem de müzik yapmayı anlatır.",
    "secenekler": [
+    "benzetme",
     "tanımlama",
-    "tanık gösterme",
     "karşılaştırma",
-    "örnekleme",
-    "sayısal veri",
-    "benzetme"
+    "örnekleme"
    ],
    "dogru": "D",
    "cozum": "“Örneğin” ile bir örnek verilmiştir: örnekleme.",

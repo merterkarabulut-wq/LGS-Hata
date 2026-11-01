@@ -40,7 +40,7 @@ const uid = await user?.id();
 2. `bankalar/<konuId>` (veya çok büyükse `<konuId>-2`): `{"konuId":"mat-us","sorular":[{"id":"mat-us-001","altKonu":"...","kaynakKod":"MAT-ÜS-3","tur":"benzer|alistirma|tekrar","metin":"...","secenekler":["..","..","..",".."],"dogru":"B","cozum":"...","emin":true}]}`. Konu açılınca `db.collection("bankalar").where("konuId","==",id).get()` ile yükle, önbellekte tut, birden çok belgeyi birleştir. Metinlerde `\n` → `white-space: pre-line`. Şık sayısı 4 veya 5 olabilir.
 3. `odevler/<otoId>` (yalnız sahip yazar): `{"konuId","baslik","not","soruIds":[...],"olusturma":ISO,"sureDk":number|null,"iptal":false}`.
 4. `denemeler/<otoId>` (Duru ve sahip yazar): `{"konuId","odevId":null|id,"tur":"alistirma"|"sinav"|"odev","soruIds":[...],"cevaplar":{"<soruId>":"A"|null},"dogru":n,"yanlis":n,"bos":n,"sureSn":n,"baslangic":ISO,"bitis":ISO,"kullanici":uid,"veliDenemesi":sahip}`. Ödev tamamlandı sayılır = o odevId'li bir deneme varsa. Denemeler koleksiyonu tümüyle (orderBy bitis desc, limit 500) bir kez dinlenir.
-5. `ayarlar/genel`: `{"lgsTarihi":"2027-06-13"}` (sahip değiştirebilir).
+5. `ayarlar/genel`: `{"lgsTarihi":"2027-06-13","plan":{...}}` (sahip değiştirebilir; `plan` için "Program, planlayıcı ve koçluk sistemi" bölümüne bak). `program` ve yeni `denemeler` türleri (gunPlan, gorevKayit) aynı bölümde.
 
 ## Görünüm 1 — Duru'nun Paneli (`#duru`, herkes)
 - Üst şerit: "Merhaba Duru", LGS'ye kalan gün (ayarlar/genel), bu hafta çözdüğü soru sayısı ve doğru oranı.
@@ -56,8 +56,8 @@ const uid = await user?.id();
 - Devam eden sınav localStorage'a (`duruCalisma.taslak`) yazılır; sayfa yeniden açılınca "Yarım kalan sınavın var: devam et / sil".
 - `window.claude?.hot?.snapshot(() => durum)` ve `window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {})` ile açık sınav durumunu yeni sürüme taşı.
 
-## Görünüm 2 — Veli paneli (`#veli`, yalnız `sahip === true`)
-Sahip için üstte iki sekme: "Duru'nun Paneli" | "Veli Paneli". Sahip değilse veli sekmesi hiç görünmez ve `#veli` → `#duru`'ya düşer.
+## Görünüm 2 — Veli paneli (`#veli`, `#veli-program`, `#veli-analiz`; yalnız `sahip === true`)
+Sahip için üstte iki sekme: "Duru'nun Paneli" | "Veli Paneli". Sahip değilse veli sekmesi hiç görünmez ve veli rotaları `#duru`'ya düşer. Sayfanın Hazırlık/Program/Rapor sekmeleri aşağıda; bu bölümdeki özet/konu tablosu/ödev verme Rapor sekmesindedir.
 - Özet satırı: son 7 günde deneme sayısı, çözülen soru, doğru oranı, bekleyen ödev sayısı, "tekrar" durumundaki konu sayısı.
 - "Son etkinlik": son 15 deneme (tarih-saat, konu, tür, D/Y/B, net, süre; veli denemesi ise "(senin denemen)" etiketi; kişi adı `user.profiles([...ids])` ile, `name || "Biri"`).
 - Konu tablosu (ders bazlı gruplu): konu, durum, deneme sayısı, son skor, son 5 denemenin mini çubuk grafiği (SVG, `viewBox`, `width="100%"`, token renkleri), en zayıf altKonu, işlemler.
@@ -74,3 +74,54 @@ Sahip için üstte iki sekme: "Duru'nun Paneli" | "Veli Paneli". Sahip değilse 
 - Tüm butonlar gerçek `<button>`, form alanlarına sabit `id`.
 - Kod okunur: küçük fonksiyonlar, tek `render()` durumu çizer; abonelikler yalnız başlangıçta.
 - Bitince `node --check` için script içeriğini ayrı bir geçici dosyaya çıkarıp sözdizimi kontrolü yap (`/home/merterk/.claude/jobs/085381a2/tmp/` altında). Başka dosyaya dokunma.
+
+## Program, planlayıcı ve koçluk sistemi
+
+Veli girdileri hazırlar (sabit program, sınavlar, koç ödevleri, okul ödevleri, kaynak kitaplar, yeni hata yüklemesi); site her gün Duru için bir **görev listesi** kurar ve "şimdi ne yapmalıyım"ı söyler. Yük sınırı aşılmaz, iş teslim tarihine kadar günlere yayılır, yapılmayan iş ertesi güne kayar, yetişmeyecekse veliye uyarı çıkar.
+
+### Rotalar ve sekmeler (`panelSekmeleri(rol, aktif)`)
+- Duru: **Programım** `#duru` (varsayılan: selam + LGS'ye kalan gün, "Sıradaki görevin" kartı [üstte "2 / 4" sırası ve "~40 dk" süresi; Başla / Bitti ✓ / Ertele], bugünün listesi [numaralı, saatsiz; üstte soluk "Bugün: Okul 08:00–16:30 · Etüt …" satırı — sabit dersler ve günün olayları listeye girmez], yaklaşanlar, kapalı "Haftayı göster" takvimi, bu haftanın koç ilerlemesi) ve **Derslerim** `#derslerim` (`#ders-<id>`, `#konu-<id>` bu sekmeye aittir). Programım'dan "Başla" ile konu sayfasına gelince "◀ Programıma dön" (`S.programdanGeldi`).
+- Veli (yalnız sahip, aksi `#duru`): **Hazırlık** `#veli` | **Program** `#veli-program` | **Rapor** `#veli-analiz` (`#veli-<dersId>`, `#veli-konu-<id>` Rapor'a aittir). Eski `#program` → `#duru`.
+
+### Veri
+`program` koleksiyonu (yalnız veli yazar; `tur` belirler):
+- `sabit` (haftalık ders), `olay` (sınav/ödev/deneme: `tarih, saat, kategori, ders, baslik, konular, konuIds, uniteler, not`), `hafta` (id `hafta-<Pazartesi>`: `degisiklik`, `ekstra`, `onaylandi`) — değişmedi. Duru'nun eski `denemeler/olay` belgeleri okunur.
+- `blok` — velinin elle **sabitlediği görev**: `tarih, bas, bit, is:{tip, konuId?, konuAd?, odevId?, soruAdet?, kocId?}, baslik, ders, not`. Planlayıcı bunlara dokunmaz; günün planına aynen girer ve yüke sayılır. Eski öneri motorunun yazdığı bloklar (`onerildi:true` ya da `is.tip:"bos"`) geçersizdir: `blokEski(b)` ile `S.program.eskiBlok`'a ayrılır, hiçbir yerde gösterilmez/sayılmaz. Boş kutu otomatiği ve "Planı hazırla" önerisi yoktur.
+- `koc` — koç ödevi: `{ders, konu, konuId?, soruAdet, baslangic, teslim, not, olusturma}`.
+- `kaynak` — kaynak kitap: `{ders, ad, aktif, olusturma}`.
+- `yukleme` — id `yukleme-<ts>`: yeni hatalı soru yüklemesi bildirimi `{tarih, not, durum:"bekliyor"|"islendi", olusturma}`.
+
+`denemeler` koleksiyonu (Duru da yazar; `S.denemeler` filtresi bu türleri deneme saymaz; her tür için ayrı `where("tur","==",X)` aboneliği):
+- `gunPlan` — id `gunplan-<YYYY-MM-DD>`: günün dondurulmuş planı `{tarih, gorevler:[{gid, bas, bit, tip, baslik, ders, neden, konuId?, kocId?, odevId?, olayId?, kaynakId?, blokId?, soruAdet?}], olusturan, olusturma}`. Bugünün planı yoksa sayfayı açan (Duru ya da veli) kurar; yalnız bugün yazılır, ileri günler canlı hesaplanır.
+- `gorevKayit` — id `gorev-<gid>-<uid>`: `{gid, tarih, tip, ders, kocId?, kaynakId?, konuId?, durum:"bitti"|"ertelendi", cozulen?, dogru?, yanlis?, sureDk?, kullanici, veliDenemesi, zaman}`. `veliDenemesi:true` Duru'nun ilerlemesine sayılmaz. Geri alma = belgeyi sil.
+- `planIsaret` (eski blok işareti; sabit bloklar için), `olay`, `inceleme` aynen.
+
+`ayarlar/genel`: `{lgsTarihi, plan:{haftaIciDk:180, haftaSonuDk:240, blokDk:40, araDk:10, soruBlok:20}}` (`planAyar()` varsayılanlarla birleştirir; sahip yazar).
+
+### Görev tipleri
+`IS_TIP`: koc, kaynak, okulOdevi, sinavCalisma, hatalar, alistirma, yanlislar, sinav, odev (+ sabit blok tipleri). Sitede yapılanlar (hatalar, alistirma, yanlislar, sinav, odev): "Başla" ilgili ekrana götürür; tamamlanma kendiliğinden algılanır (`blokOtomatik`) ya da "Bitti". Diğerlerinde "Başla" süre sayacı başlatır (localStorage `duruCalisma.aktifGorev`), "Bitti" koç/kaynak/soru için "Kaç soru çözdün? / Doğru / Yanlış" formunu açar. `gorevDurum(g, tarih)`: bitti | ertelendi | simdi (sayaç açık) | sirada (bekliyor) | yarina (geçmiş gün, kayıt yok = "yarına kaldı"). "kacti" yoktur; Duru ekranında saat/kırmızı durum gösterilmez (etiketler: Yapıldı ✓ yeşil, Ertelendi turuncu, Şu an çalışıyorsun mavi, Bekliyor gri). Görevlerin `bas`/`bit` alanları yalnız sıralama ve kapasite için tutulur. Sıradaki görev = listede bitti/ertelendi olmayan ilk görev (aktif sayaç ya da `S.seciliGorev` "Öne al" ile öne geçer).
+
+### Planlayıcı kuralları (`planSimule(baslangic, gunSayisi)`, saf fonksiyon; yazanlar `gunPlanKur`, `gunPlanYenile`, `gorevKaydet`)
+- Çalışma penceresi: hafta içi 17:30, hafta sonu 10:00 – 23:00; sabit ders/olay/blok `mesgulAraliklar` ile düşülür (dış derslerden sonra 30 dk tampon); bugün için şu andan sonrası. Yuvalar `blokDk`, aralarında `araDk`.
+- Kapasite = min(yuva sayısı, günlük süre / blokDk); ertesi gün sınav varsa +1 blok. Sabit bloklar önce yerleşir ve kapasiteden düşer.
+- Öncelik: (1) sınav hazırlığı (sınavdan 1–3 gün önce: hatalar, yanlislar, sinav, sinavCalisma), (2) koç ödevleri — kalan = soruAdet − Duru'nun bitti kayıtlarındaki çözülen; kalan günlere eşit yayılır (pay = ceil(kalan/kalanGün), bloklar `soruBlok`), `baslangic`'tan önce planlanmaz; teslim geçtiyse/yetmiyorsa `yetismeyen`, (3) okul ödevleri (7 gün içinde, teslimden önceki uygun gün), (4) velinin verdiği site ödevleri, (5) yeni içerik/eksik bölümler (günde en çok 2), (6) yanlışlar tekrarı (günde en çok 1, son çalışmadan ≥3 gün sonra), (7) kaynak kitap dolgusu (günde en çok 1, aktif kaynaklar arasında dönüşümlü).
+- Bugün dondurulmuşsa 0. gün dondurulmuş görevlerdir; ertelenen/kaçan iş kalan hesabından doğal olarak sonraki günlere düşer.
+- `gunPlanYenile` (yalnız veli): yalnız bitti/ertelendi kaydı olan görevleri tutar; bekleyenler (saati geçmiş olsa da) yeniden hesaplanır.
+- Hatırlatma (`hatirlatKontrol`, Programım açıkken 30 sn'de bir render): görev başına değil, gün başına tek kez — günün ilk görevinin (gizli) başlangıç saati gelmiş ve henüz hiçbir görev bitmemişse "Bugün N görevin var, ilki: …" bildirimi + başlığa "⏰" + kısa bip (`S.hatirlatilan` "gun-<tarih>"). Gün geçince kaydı olmayan görevler "yarına kaldı" sayılır; iş kalandan hesaplandığı için planlayıcı sonraki günlere dağıtır.
+
+### Veli · Hazırlık (`#veli`, `hazirlikSayfasi`)
+Tek sütun, ~900 px ortalı (`.hz-tek`). Sıra: **Senden beklenenler** (eski Uyarılar: yetişmeyen işler, geride koç ödevi [beklenen doğrusal − çözülen ≥ soruBlok], son 7 günde ≥3 yarına kalan/ertelenen, 14 gün içinde konusuz sınav ["Konuları seç"], bekleyen yükleme başına "İşlendi ✓", haftalık `kontrolKarti`; yoksa "Her şey yolunda ✓") · **Duru'nun bugünü** (numaralı saatsiz liste, Yapıldı/Ertelendi/Bekliyor, "N / M yapıldı", "Bugünün planını yeniden kur") · **+ Ekle çubuğu** (Koç ödevi · Okul ödevi / sınav · Kaynak kitap · Hata yükledim; bir anda yalnız bir form, çubuğun altında açılır, Vazgeç/kayıtla kapanır — `ekleAcik()`/`ekleAc()`; koç ve olay formu `S.hz.koc`/`S.hz.olay`, diğerleri `S.hz.ekleKaynak`/`ekleYuk`) · kapalı başlayan `<details>` bölümleri, özetlerinde sayılar: "Koç ödevleri · 2 aktif · 1 geride", "Sınavlar ve okul ödevleri · 30 gün içinde 6", "Kaynak kitaplar · 2 aktif", "Önümüzdeki 7 gün" (günlük yük çubuğu, saatsiz görev listesi), "Plan ayarları" (haftaIciDk, haftaSonuDk, soruBlok). İçerikleri eski kartların listeleri (düzenle/sil aynen). Açık/kapalı durum `S.hz.acik` (Set) + `ontoggle` ile render'lar arasında korunur (`hzDetay`).
+
+### Veli · Program (`#veli-program`, `programSayfasi(true)`)
+Kontrol kartı, hafta araç çubuğu, renk açıklaması, düzenlenebilir hafta takvimi (planlayıcının tahmini görevleri kesikli kenarlı gösterilir). Takvimden ekleme/düzenleme: sabit ders (yalnız bu hafta / her hafta), sınav/ödev/deneme (ders + ünite kutucukları), çalışma bloğu (sabitlenen görev); "Değiştir", onaylı "Sil" (blok belgesi silinir), "Bu hafta yok", "Sonraki saatleri de kaydır". Taslaklar `S`'te (`takvimDuzen`, `blokDuzen`, `gunEkle`, `hz`); tek seferde bir form açık (`formlariKapat`).
+Değişken dersler: `sabit.degisken:true` etiketi; haftalık kontrol: hedef hafta Cuma–Pazar gelecek hafta, aksi bu hafta; `kontrolKarti` "Değişiklik yok, aynen devam ✓" (`hafta-<key>.onaylandi`) ya da "Takvimde değiştir".
+
+### Veli · Rapor (`#veli-analiz`)
+Üstte **Koçluk raporu** (Bu hafta / Geçen hafta): planlanan/yapılan/ertelenen/yarına kalan görev, plan uyumu (bekleyenler hariç), çalışma süresi (sureDk toplamı); ders ders çözülen/doğru/yanlış/oran tablosu; haftaya düşen koç ödevi ilerlemesi; sitedeki çalışmalar (görülen hata, alıştırma, sınav, ortalama başarı); kurala dayalı kısa yorumlar. Altında mevcut Analiz (özet kutuları, son etkinlik, dersler, ayarlar).
+
+## Görünüm (temalar, seri, günlük söz, konfeti)
+
+- Üç tema: Lavanta (varsayılan), Şeftali, Deniz. `render()` her çizimde `<html data-tema>` koyar; seçim localStorage `duruCalisma.tema`. Yalnız Duru'nun panelinde geçerli; `#veli…` rotalarında nitelik kaldırılır ve sade açık renkler (turuncu veli vurgusu) kalır. Ders renkleri (`--c-*`) ve ok/bad renkleri temalardan bağımsızdır.
+- Karanlık mod yoktur (site her zaman açık tema). Vurgu renkleri WCAG AA için önizlemeye göre biraz koyulaştırıldı (lavanta #6f42bf, şeftali #b73d28, deniz #0b6b7c).
+- Selamlama satırında "🎨 Görünüm" düğmesi üç renkli seçeneği açar (`aria-pressed`). Seri rozeti "🔥 N gündür planındasın" (N ≥ 2): planı ve en az bir "bitti" görevi olup bekleyen/yarına kalan görevi olmayan günler; plansız günler atlanır, bugün bitmediyse seri dünden sayılır (en çok 60 gün). Veli "Duru'nun bugünü" başlığında küçük rozet.
+- Selamlamanın altında yılın gününe göre sabit günlük söz (30 cümle). "Bugünlük bitti" durumuna geçişte gün başına bir kez konfeti (`duruCalisma.konfeti` = tarih; body'de fixed katman, 3 sn sonra silinir; `prefers-reduced-motion` ise yok).
